@@ -3,25 +3,27 @@ import { FadeIn } from '@/components/ui/FadeIn';
 import { Tag } from '@/components/ui/Tag';
 import { IMAGES } from '@/lib/constants';
 
-export const ProblemShift: React.FC = () => (
+export const Reality: React.FC = () => (
     <section className="py-32 px-6 md:px-12 lg:px-20 max-w-[1800px] mx-auto">
         <div className="grid lg:grid-cols-12 gap-16 items-center">
             <div className="lg:col-span-7">
                 <FadeIn>
-                    <Tag text="Reality Check" />
+                    <Tag text="Realität" />
                     <h2 className="text-4xl md:text-6xl font-semibold leading-[1.05] mb-12 text-black tracking-tight">
-                        Kaufentscheidungen starten immer öfter in KI-Systemen.
-                        <span className="text-gray-400 block mt-2 font-normal">Reicht Google SEO nicht mehr? Nein.</span>
+                        Was sich gerade verändert
                     </h2>
                     <div className="grid md:grid-cols-2 gap-12 text-lg leading-relaxed text-gray-700 font-medium">
                         <p>
-                            Während klassische Suche Listen liefert, liefern LLMs Antworten.
-                            Wer dort nicht auftaucht, wird nicht empfohlen.
+                            KI-Antworten werden zum neuen Einstieg in Entscheidungen. Statt zehn Links lesen viele Nutzer eine direkte Empfehlung – besonders bei lokalen Fragen und erklärungsbedürftigen Angeboten.
                         </p>
-                        <p>
-                            Die Sichtbarkeit verlagert sich von 10 blauen Links zu einer einzigen, synthetisierten Wahrheit.
-                            <strong className="block mt-4 text-black font-bold">Entweder man ist die Antwort, oder man existiert nicht.</strong>
-                        </p>
+                        <div>
+                            <p className="mb-4">
+                                Nutzer fragen direkt: „Bester Steuerberater für Freelancer in Hamburg?“. Die KI liefert eine kurze Liste. Viele entscheiden direkt hier.
+                            </p>
+                            <strong className="block text-black font-bold">
+                                Es geht nicht darum, ob KI-Suche kommt. Sie ist bereits da. Die Frage ist: Kann die KI dein Angebot eindeutig verstehen – und dich nennen?
+                            </strong>
+                        </div>
                     </div>
                 </FadeIn>
             </div>
@@ -41,3 +43,4 @@ export const ProblemShift: React.FC = () => (
         </div>
     </section>
 );
+

@@ -3,18 +3,18 @@ import { FadeIn } from '@/components/ui/FadeIn';
 import { Tag } from '@/components/ui/Tag';
 
 const STEPS = [
-    { step: "01", title: "Basisinfos", desc: "Du lieferst Webseite, Zielgruppe und Kernangebot." },
-    { step: "02", title: "Analyse", desc: "Ich prüfe die KI-Readiness und Potentiale tiefgehend." },
-    { step: "03", title: "Klarheit", desc: "Du bekommst ein Ergebnis, kein Meeting-Chaos." }
+    { step: "01", title: "AI-Check (kostenlos)", desc: "Klarer Ist-Stand + Potenzial + 3 Prioritäten." },
+    { step: "02", title: "Kurzes Gespräch (15 Min)", desc: "Nur wenn es Sinn macht: Ziel, Scope, realistische Erwartung." },
+    { step: "03", title: "Umsetzung", desc: "Struktur, Inhalte, technische Sauberkeit – Updates, messbare Schritte." }
 ];
 
 export const Process: React.FC = () => (
     <section id="process" className="py-32 px-6 md:px-12 lg:px-20 max-w-[1800px] mx-auto">
         <FadeIn>
             <div className="text-center max-w-3xl mx-auto mb-20">
-                <Tag text="Der Prozess" />
-                <h2 className="text-4xl md:text-5xl font-semibold text-black mb-6 tracking-tight">Wie aufwendig ist das?</h2>
-                <p className="text-2xl text-gray-500 font-medium">Sehr wenig. Ich übernehme die Komplexität.</p>
+                <Tag text="Prozess" />
+                <h2 className="text-4xl md:text-5xl font-semibold text-black mb-6 tracking-tight">So läuft das ab</h2>
+                <p className="text-xl text-gray-500 font-medium">Kein Agentur-Sprech. Keine 47-seitigen Reports. Nur das, was wirkt.</p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
@@ -31,3 +31,4 @@ export const Process: React.FC = () => (
         </FadeIn>
     </section>
 );
+

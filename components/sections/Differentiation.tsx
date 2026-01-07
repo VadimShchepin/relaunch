@@ -9,25 +9,36 @@ export const Differentiation: React.FC = () => (
             {/* Left: Content */}
             <div className="lg:col-span-7 order-2 lg:order-1">
                 <FadeIn delay={200}>
-                    <Tag text="Warum du?" />
+                    <Tag text="Differenzierung" />
                     <h2 className="text-4xl md:text-6xl font-semibold leading-[0.95] mb-12 text-black tracking-tight">
-                        Websites für Menschen <br /><span className="text-gray-400 font-normal">und</span> KI gleichzeitig.
+                        Was mich von SEO-Agenturen unterscheidet
                     </h2>
                     <div className="space-y-12">
-                        <div className="flex gap-8 items-start group">
-                            <span className="text-6xl font-semibold text-gray-200 leading-none group-hover:text-brand-accent transition-colors">01</span>
-                            <div>
-                                <h4 className="text-2xl font-bold text-black mb-2">Kein Bullshit-Bingo.</h4>
-                                <p className="text-gray-600 text-lg font-medium leading-relaxed">Wir optimieren auf Semantik, not auf Hacks. Das hält auch dem nächsten Update stand.</p>
+                        {[
+                            {
+                                title: "Verständnis statt Texte",
+                                agency: "Typische Agentur: nutzt KI für Texte",
+                                me: "Ich optimiere dafür, von KI verstanden zu werden"
+                            },
+                            {
+                                title: "Nennungen statt Rankings",
+                                agency: "Typische Agentur: verkauft Rankings",
+                                me: "Ich arbeite auf Nennungen + messbare Anfragen hin"
+                            },
+                            {
+                                title: "Fokus statt Masse",
+                                agency: "Typische Agentur: Templates für viele Kunden",
+                                me: "Ich fokussiere auf wenige Projekte mit klarer Ausgangslage"
+                            }
+                        ].map((item, i) => (
+                            <div key={i} className="flex gap-8 items-start group">
+                                <span className="text-6xl font-semibold text-gray-200 leading-none group-hover:text-brand-accent transition-colors">0{i + 1}</span>
+                                <div>
+                                    <h4 className="text-xl font-bold text-gray-400 mb-1 line-through decoration-gray-300 decoration-2">{item.agency}</h4>
+                                    <p className="text-black text-2xl font-bold leading-relaxed">{item.me}</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="flex gap-8 items-start group">
-                            <span className="text-6xl font-semibold text-gray-200 leading-none group-hover:text-brand-accent transition-colors">02</span>
-                            <div>
-                                <h4 className="text-2xl font-bold text-black mb-2">Nachhaltig.</h4>
-                                <p className="text-gray-600 text-lg font-medium leading-relaxed">Was für KI gut ist (Klarheit, Struktur), ist meistens auch für deine menschlichen Nutzer besser.</p>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </FadeIn>
             </div>
@@ -39,8 +50,8 @@ export const Differentiation: React.FC = () => (
                         <img src={IMAGES.hero_person} alt="Expert" className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-black/10"></div>
                         <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md p-8 rounded-[30px]">
-                            <p className="font-bold text-xl text-black mb-1">Expertise zählt.</p>
-                            <p className="text-base text-gray-600 font-medium">Kein Outsourcing. Du sprichst mit dem, der den Code schreibt.</p>
+                            <p className="font-bold text-xl text-black mb-1">Echte Ergebnisse.</p>
+                            <p className="text-base text-gray-600 font-medium">Viele schreiben „KI“. Wenige können zeigen, dass sie in KI-Antworten auftauchen.</p>
                         </div>
                     </div>
                 </FadeIn>
@@ -48,3 +59,4 @@ export const Differentiation: React.FC = () => (
         </div>
     </section>
 );
+
