@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@iconify/react": "^6.0.2",
     "@tailwindcss/postcss": "^4.1.18",
     "autoprefixer": "^10.4.23",
     "next": "^16.1.1",

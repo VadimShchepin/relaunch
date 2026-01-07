@@ -1,6 +1,7 @@
 import React from 'react';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
+import { Icon } from '@iconify/react';
 
 export const Newsletter: React.FC = () => (
     <section id="newsletter" className="py-24 px-6 md:px-12 lg:px-20 max-w-[1600px] mx-auto text-center">
@@ -19,7 +20,7 @@ export const Newsletter: React.FC = () => (
                             "Taktiken, die ich selbst teste"
                         ].map((item, i) => (
                             <div key={i} className="flex gap-3 bg-white/5 p-4 rounded-xl">
-                                <span className="text-brand-accent">✓</span>
+                                <Icon icon="meteor-icons:check" className="w-5 h-5 text-brand-accent flex-shrink-0" />
                                 <span className="text-sm text-gray-300 font-medium">{item}</span>
                             </div>
                         ))}
@@ -38,3 +39,4 @@ export const Newsletter: React.FC = () => (
         </FadeIn>
     </section>
 );
+

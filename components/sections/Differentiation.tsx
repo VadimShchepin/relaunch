@@ -47,7 +47,8 @@ export const Differentiation: React.FC = () => (
             <div className="lg:col-span-5 order-1 lg:order-2">
                 <FadeIn>
                     <div className="relative rounded-[40px] overflow-hidden aspect-[3/4] rotate-2 hover:rotate-0 transition-all duration-500 shadow-2xl">
-                        <img src={IMAGES.hero_person} alt="Expert" className="w-full h-full object-cover" />
+                        <img src={IMAGES.hero_person} alt="Vadim Shchepin" className="w-full h-full object-cover" />
+
                         <div className="absolute inset-0 bg-black/10"></div>
                         <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md p-8 rounded-[30px]">
                             <p className="font-bold text-xl text-black mb-1">Echte Ergebnisse.</p>

@@ -1,28 +1,30 @@
 import React from 'react';
 import { FadeIn } from '@/components/ui/FadeIn';
+import { Icon } from '@iconify/react';
 
 const TARGETS = [
     {
         title: "Spezialisierte Dienstleister",
         desc: "Steuerberater, Fachanwälte, Berater",
-        icon: "⚖️"
+        icon: "meteor-icons:scales"
     },
     {
         title: "Lokale Anbieter",
         desc: "Handwerker, Praxen, Agenturen mit klarem Fokus",
-        icon: "📍"
+        icon: "meteor-icons:pin"
     },
     {
         title: "B2B Unternehmen",
         desc: "Tech, SaaS, Consulting, erklärungsbedürftige Produkte",
-        icon: "🚀"
+        icon: "meteor-icons:rocket"
     },
     {
         title: "Vertrauens-Branchen",
         desc: "Finanzen, Gesundheit, Recht",
-        icon: "🤝"
+        icon: "meteor-icons:users"
     }
 ];
+
 
 export const TargetGroup: React.FC = () => (
     <section className="py-24 px-6 md:px-12 lg:px-20 max-w-[1800px] mx-auto bg-black text-white rounded-[40px] my-12">
@@ -42,7 +44,9 @@ export const TargetGroup: React.FC = () => (
             {TARGETS.map((item, i) => (
                 <FadeIn key={i} delay={i * 100} className="h-full">
                     <div className="bg-white/5 border border-white/10 p-8 rounded-[32px] h-full hover:bg-white/10 transition-colors">
-                        <div className="text-4xl mb-6">{item.icon}</div>
+                        <div className="mb-6">
+                            <Icon icon={item.icon} className="w-10 h-10 text-brand-accent" />
+                        </div>
                         <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                         <p className="text-gray-400">{item.desc}</p>
                     </div>
@@ -51,3 +55,4 @@ export const TargetGroup: React.FC = () => (
         </div>
     </section>
 );
+
