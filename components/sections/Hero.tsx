@@ -49,12 +49,15 @@ export const Hero: React.FC = () => (
                     <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 blur-[60px] rounded-full pointer-events-none transform translate-x-1/3 -translate-y-1/3"></div>
                 </div>
 
-                {/* Card 2: Image - Motion Blur - Angled Right */}
+                {/* Card 2: Video - ChatGPT - Angled Right */}
                 <div className="flex-1 min-h-[420px] bg-gray-100 rounded-[32px] overflow-hidden relative group hover:z-20 transition-transform duration-500 transform rotate-1 translate-y-8 hover:translate-y-0 hover:rotate-0 origin-bottom-left hover:scale-105 shadow-xl">
                     <FadeIn delay={200} className="h-full w-full">
-                        <img
-                            src={IMAGES.hero_motion}
-                            alt="Motion"
+                        <video
+                            src="/video/chatgpt.mov"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                         />
                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
@@ -75,12 +78,15 @@ export const Hero: React.FC = () => (
                     <div className="absolute bottom-0 left-0 w-64 h-64 bg-yellow-300/20 blur-[60px] rounded-full pointer-events-none transform -translate-x-1/3 translate-y-1/3"></div>
                 </div>
 
-                {/* Card 4: Image - Person - Angled Right */}
+                {/* Card 4: Video - Gemini - Angled Right */}
                 <div className="flex-1 min-h-[420px] bg-gray-100 rounded-[32px] overflow-hidden relative group hover:z-20 transition-transform duration-500 transform rotate-3 hover:rotate-0 origin-top-left hover:scale-105 shadow-xl">
                     <FadeIn delay={400} className="h-full w-full">
-                        <img
-                            src={IMAGES.hero_car}
-                            alt="Result"
+                        <video
+                            src="/video/gemini.mov"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                         />
                         <div className="absolute bottom-8 left-8 bg-white/90 backdrop-blur-md px-4 py-2 rounded-lg">
@@ -88,6 +94,7 @@ export const Hero: React.FC = () => (
                         </div>
                     </FadeIn>
                 </div>
+
             </div>
         </div>
     </section>

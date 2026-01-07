@@ -1,6 +1,7 @@
 import React from 'react';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
+import { Icon } from '@iconify/react';
 
 export const Offer: React.FC = () => (
     <section id="audit" className="py-24 px-4 md:px-8 lg:px-12 max-w-[1600px] mx-auto">
@@ -27,7 +28,9 @@ export const Offer: React.FC = () => (
                                 "3 Prioritäten: Die wichtigsten Hebel"
                             ].map((item, i) => (
                                 <li key={i} className="flex gap-4 items-center text-lg text-gray-300">
-                                    <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-xs text-brand-accent">✓</div>
+                                    <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-brand-accent">
+                                        <Icon icon="meteor-icons:check" className="w-3.5 h-3.5" />
+                                    </div>
                                     {item}
                                 </li>
                             ))}
@@ -50,4 +53,5 @@ export const Offer: React.FC = () => (
         </FadeIn>
     </section>
 );
+
 
