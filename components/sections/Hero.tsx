@@ -9,32 +9,27 @@ export const Hero: React.FC = () => (
             {/* Top Text Content */}
             <div className="max-w-5xl mb-32">
                 <FadeIn>
+                    <div className="inline-block px-4 py-1.5 mb-8 border border-gray-200 bg-white/50 backdrop-blur-sm rounded-full shadow-sm">
+                        <span className="text-xs uppercase tracking-widest font-semibold text-gray-500">Für KMU mit klarem Angebot (Dienstleistung/B2B)</span>
+                    </div>
                     <h1 className="text-[3.5rem] md:text-[5.5rem] lg:text-[7rem] leading-[0.95] font-semibold tracking-tight text-black mb-10">
-                        Dein Business. <br />
-                        Von ChatGPT <br />
-                        empfohlen.
+                        Wenn Kunden ChatGPT fragen, zählt eine Sache: <br />
+                        wirst du genannt?
                     </h1>
-                    <p className="text-xl md:text-2xl font-normal text-gray-600 leading-relaxed max-w-2xl mb-12">
-                        Ich mache Unternehmen in ChatGPT & anderen KI-Systemen sichtbar.
-                        Kein Marketing-Bla-Bla, sondern messbare Ergebnisse.
+                    <p className="text-xl md:text-2xl font-normal text-gray-600 leading-relaxed max-w-3xl mb-12">
+                        Ich helfe Hamburger Unternehmen dabei, in ChatGPT, Perplexity und Google AI (AI Overviews) sichtbar zu werden – und messe, ob daraus echte Anfragen entstehen.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-8 items-start">
+                    <div className="flex flex-col sm:flex-row gap-8 items-center">
                         <Button
-                            text="AI-Sichtbarkeit prüfen"
+                            text="AI-Sichtbarkeits-Check anfordern"
                             primary={true}
                             onClick={() => document.getElementById('audit')?.scrollIntoView({ behavior: 'smooth' })}
                         />
-                        <div className="flex items-center gap-4 py-3">
-                            <div className="flex -space-x-3">
-                                {[1, 2, 3].map(i => (
-                                    <div key={i} className="w-10 h-10 rounded-full border-2 border-[#F7F5F2] bg-gray-200 overflow-hidden">
-                                        <img src={`https://randomuser.me/api/portraits/men/${i * 12}.jpg`} className="w-full h-full object-cover grayscale opacity-80" />
-                                    </div>
-                                ))}
-                            </div>
-                            <span className="text-sm font-medium text-gray-500">20+ Audits diesen Monat</span>
-                        </div>
+                        <a href="#newsletter" className="text-sm font-semibold text-black hover:text-brand-accent transition-colors flex items-center gap-2">
+                            KI-Sichtbarkeits-Newsletter <span className="text-xl">→</span>
+                        </a>
                     </div>
+                    <p className="mt-6 text-sm text-gray-400 font-medium">Kein Verkaufsgespräch. Eine klare Einschätzung – auch wenn sie „Nein“ lautet.</p>
                 </FadeIn>
             </div>
 
@@ -44,11 +39,11 @@ export const Hero: React.FC = () => (
                 <div className="flex-1 min-h-[420px] bg-[#2563EB] rounded-[32px] p-8 md:p-10 text-white flex flex-col justify-between relative overflow-hidden group hover:z-20 transition-transform duration-500 transform -rotate-2 hover:rotate-0 origin-bottom-right hover:scale-105 shadow-xl">
                     <FadeIn delay={100} className="h-full flex flex-col justify-between relative z-10">
                         <div>
-                            <span className="font-bold text-sm tracking-widest opacity-70 uppercase">Organische Views</span>
+                            <span className="font-bold text-sm tracking-widest opacity-70 uppercase">Eigene Projekte</span>
                         </div>
                         <div>
-                            <span className="text-[4rem] lg:text-[5rem] leading-none font-semibold tracking-tighter block mb-2">+400%</span>
-                            <p className="text-xl font-medium leading-tight opacity-90">Durch KI-Optimierung.</p>
+                            <span className="text-[3.5rem] lg:text-[4.5rem] leading-none font-semibold tracking-tighter block mb-4">Rankings</span>
+                            <p className="text-xl font-medium leading-tight opacity-90">Erscheinen in KI-Antworten.</p>
                         </div>
                     </FadeIn>
                     <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 blur-[60px] rounded-full pointer-events-none transform translate-x-1/3 -translate-y-1/3"></div>
@@ -70,11 +65,11 @@ export const Hero: React.FC = () => (
                 <div className="flex-1 min-h-[420px] bg-[#10B981] rounded-[32px] p-8 md:p-10 text-white flex flex-col justify-between relative overflow-hidden group hover:z-20 transition-transform duration-500 transform -rotate-1 translate-y-4 hover:translate-y-0 hover:rotate-0 origin-top-right hover:scale-105 shadow-xl">
                     <FadeIn delay={300} className="h-full flex flex-col justify-between relative z-10">
                         <div>
-                            <span className="font-bold text-sm tracking-widest opacity-70 uppercase">Merken Geholfen</span>
+                            <span className="font-bold text-sm tracking-widest opacity-70 uppercase">Dokumentiert</span>
                         </div>
                         <div>
-                            <span className="text-[4rem] lg:text-[5rem] leading-none font-semibold tracking-tighter block mb-2">30+</span>
-                            <p className="text-xl font-medium leading-tight opacity-90">Von Startup bis Corp.</p>
+                            <span className="text-[3.5rem] lg:text-[4.5rem] leading-none font-semibold tracking-tighter block mb-4">Proof</span>
+                            <p className="text-xl font-medium leading-tight opacity-90">Screenshots mit Datum.</p>
                         </div>
                     </FadeIn>
                     <div className="absolute bottom-0 left-0 w-64 h-64 bg-yellow-300/20 blur-[60px] rounded-full pointer-events-none transform -translate-x-1/3 translate-y-1/3"></div>
@@ -97,3 +92,4 @@ export const Hero: React.FC = () => (
         </div>
     </section>
 );
+
