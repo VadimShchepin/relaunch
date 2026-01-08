@@ -25,19 +25,25 @@ const FAQS = [
 ];
 
 export const FAQ: React.FC = () => (
-    <section className="py-24 px-6 md:px-12 lg:px-20 max-w-[1200px] mx-auto">
+    <section className="py-40 px-6 md:px-12 lg:px-20 max-w-[1200px] mx-auto">
         <FadeIn>
-            <h2 className="text-4xl font-semibold text-black mb-12 tracking-tight text-center">
-                Fragen & Antworten
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-black mb-20 tracking-[-0.04em] text-center">
+                Häufige <br />
+                <span className="text-gray-300">Fragen.</span>
             </h2>
-            <div className="space-y-6">
+            <div className="space-y-4">
                 {FAQS.map((item, i) => (
-                    <div key={i} className="bg-white p-8 rounded-3xl border border-gray-100 hover:border-brand-accent/30 transition-colors">
-                        <h3 className="text-xl font-bold mb-3 text-gray-900">{item.q}</h3>
-                        <p className="text-gray-600 leading-relaxed font-medium">{item.a}</p>
+                    <div key={i} className="bg-white p-10 rounded-card border border-gray-100 hover:shadow-xl transition-all duration-500 group">
+                        <h3 className="text-xl font-semibold mb-4 text-black tracking-tight flex justify-between items-center text-left">
+                            {item.q}
+                            <span className="text-gray-200 group-hover:text-brand-accent transition-colors">+</span>
+                        </h3>
+                        <p className="text-gray-500 text-base leading-relaxed font-medium">{item.a}</p>
                     </div>
                 ))}
             </div>
         </FadeIn>
     </section>
 );
+
+

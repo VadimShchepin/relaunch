@@ -9,21 +9,24 @@ const STEPS = [
 ];
 
 export const Process: React.FC = () => (
-    <section id="process" className="py-32 px-6 md:px-12 lg:px-20 max-w-[1800px] mx-auto">
+    <section id="process" className="py-40 px-6 md:px-12 lg:px-20 max-w-[1800px] mx-auto">
         <FadeIn>
-            <div className="text-center max-w-3xl mx-auto mb-20">
+            <div className="max-w-4xl mb-32">
                 <Tag text="Prozess" />
-                <h2 className="text-4xl md:text-5xl font-semibold text-black mb-6 tracking-tight">So läuft das ab</h2>
-                <p className="text-xl text-gray-500 font-medium">Kein Agentur-Sprech. Keine 47-seitigen Reports. Nur das, was wirkt.</p>
+                <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold text-black mb-10 tracking-[-0.04em] leading-[1.0]">
+                    Klarer Plan. <br />
+                    <span className="text-gray-300">Kein Bullshit.</span>
+                </h2>
+                <p className="text-xl md:text-2xl text-gray-500 font-medium leading-tight">Kein Agentur-Sprech. Keine 47-seitigen Reports. Nur das, was wirkt.</p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
                 {STEPS.map((item, i) => (
-                    <div key={i} className="bg-white p-12 rounded-[40px] border border-gray-100 shadow-sm relative overflow-hidden group hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
-                        <span className="text-[6rem] font-bold text-gray-50 absolute -top-6 -right-6 group-hover:text-brand-accent/10 transition-colors">{item.step}</span>
-                        <div className="relative z-10 pt-4">
-                            <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
-                            <p className="text-gray-600 text-lg leading-relaxed font-medium">{item.desc}</p>
+                    <div key={i} className={`bg-white p-12 rounded-section border border-gray-100 shadow-sm relative overflow-hidden group hover:shadow-2xl transition-all duration-700 ${i === 1 ? 'lg:translate-y-12' : ''}`}>
+                        <span className="text-[8rem] font-semibold text-gray-50 absolute -bottom-8 -right-8 group-hover:text-brand-accent/5 transition-all duration-700 leading-none select-none">{item.step}</span>
+                        <div className="relative z-10">
+                            <h3 className="text-2xl font-semibold mb-6 tracking-tight text-black">{item.title}</h3>
+                            <p className="text-gray-500 text-lg leading-snug font-medium">{item.desc}</p>
                         </div>
                     </div>
                 ))}
@@ -31,4 +34,6 @@ export const Process: React.FC = () => (
         </FadeIn>
     </section>
 );
+
+
 

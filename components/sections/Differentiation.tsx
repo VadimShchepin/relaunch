@@ -4,16 +4,18 @@ import { Tag } from '@/components/ui/Tag';
 import { IMAGES } from '@/lib/constants';
 
 export const Differentiation: React.FC = () => (
-    <section className="py-24 px-6 md:px-12 lg:px-20 max-w-[1600px] mx-auto">
-        <div className="grid lg:grid-cols-12 gap-16 items-center">
+    <section className="py-40 px-6 md:px-12 lg:px-20 max-w-[1800px] mx-auto">
+        <div className="grid lg:grid-cols-12 gap-16 items-start">
             {/* Left: Content */}
-            <div className="lg:col-span-7 order-2 lg:order-1">
-                <FadeIn delay={200}>
+            <div className="lg:col-span-6">
+                <FadeIn>
                     <Tag text="Differenzierung" />
-                    <h2 className="text-4xl md:text-6xl font-semibold leading-[0.95] mb-12 text-black tracking-tight">
-                        Was mich von SEO-Agenturen unterscheidet
+                    <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold leading-[1.0] text-black tracking-[-0.05em] mb-16">
+                        Agentur-Masse <br />
+                        <span className="text-gray-300">vs. Echtheit.</span>
                     </h2>
-                    <div className="space-y-12">
+                    <div className="space-y-6">
+
                         {[
                             {
                                 title: "Verständnis statt Texte",
@@ -28,36 +30,44 @@ export const Differentiation: React.FC = () => (
                             {
                                 title: "Fokus statt Masse",
                                 agency: "Typische Agentur: Templates für viele Kunden",
-                                me: "Ich fokussiere auf wenige Projekte mit klarer Ausgangslage"
+                                me: "Ich fokussiere auf wenige Projekte pro Quartal"
                             }
                         ].map((item, i) => (
-                            <div key={i} className="flex gap-8 items-start group">
-                                <span className="text-6xl font-semibold text-gray-200 leading-none group-hover:text-brand-accent transition-colors">0{i + 1}</span>
-                                <div>
-                                    <h4 className="text-xl font-bold text-gray-400 mb-1 line-through decoration-gray-300 decoration-2">{item.agency}</h4>
-                                    <p className="text-black text-2xl font-bold leading-relaxed">{item.me}</p>
+                            <FadeIn key={i} delay={i * 100}>
+                                <div className="bg-white p-10 rounded-card border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                                    <h4 className="text-base font-semibold text-gray-400 mb-4 line-through decoration-gray-300 decoration-1">{item.agency}</h4>
+                                    <p className="text-black text-xl font-semibold leading-tight">{item.me}</p>
                                 </div>
-                            </div>
+                            </FadeIn>
                         ))}
                     </div>
                 </FadeIn>
             </div>
 
-            {/* Right: Image/Persona */}
-            <div className="lg:col-span-5 order-1 lg:order-2">
-                <FadeIn>
-                    <div className="relative rounded-[40px] overflow-hidden aspect-[3/4] rotate-2 hover:rotate-0 transition-all duration-500 shadow-2xl">
-                        <img src={IMAGES.hero_person} alt="Vadim Shchepin" className="w-full h-full object-cover" />
-
-                        <div className="absolute inset-0 bg-black/10"></div>
-                        <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md p-8 rounded-[30px]">
-                            <p className="font-bold text-xl text-black mb-1">Echte Ergebnisse.</p>
-                            <p className="text-base text-gray-600 font-medium">Viele schreiben „KI“. Wenige können zeigen, dass sie in KI-Antworten auftauchen.</p>
+            {/* Right: Persona & Image Cluster */}
+            <div className="lg:col-span-6 sticky top-32">
+                <FadeIn delay={400}>
+                    <div className="relative">
+                        <div className="rounded-[24px] overflow-hidden aspect-[4/5] shadow-2xl relative group bg-white p-3">
+                            <div className="w-full h-full rounded-[16px] overflow-hidden relative">
+                                <img src={IMAGES.hero_person} alt="Vadim Shchepin" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+                            </div>
+                            <div className="absolute bottom-10 left-10 right-10 text-white">
+                                <p className="font-semibold text-2xl mb-2 tracking-tight">Echte Ergebnisse.</p>
+                                <p className="text-white/80 text-base font-medium leading-tight">Viele schreiben „KI“. Wenige können zeigen, dass sie in KI-Antworten auftauchen.</p>
+                            </div>
                         </div>
+                        {/* Decorative Element */}
+                        <div className="absolute -top-6 -right-6 w-32 h-32 bg-brand-accent rounded-[24px] -z-10 rotate-12 opacity-10"></div>
                     </div>
                 </FadeIn>
             </div>
         </div>
     </section>
 );
+
+
+
+
 
