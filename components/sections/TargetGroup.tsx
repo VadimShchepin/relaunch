@@ -27,32 +27,37 @@ const TARGETS = [
 
 
 export const TargetGroup: React.FC = () => (
-    <section className="py-24 px-6 md:px-12 lg:px-20 max-w-[1800px] mx-auto bg-black text-white rounded-[40px] my-12">
-        <div className="text-center max-w-3xl mx-auto mb-20">
-            <FadeIn>
-                <span className="text-brand-accent font-bold uppercase tracking-widest text-xs mb-4 block">Für Wen</span>
-                <h2 className="text-4xl md:text-5xl font-semibold mb-6 tracking-tight">
-                    Für wen KI-Sichtbarkeit besonders gut funktioniert
-                </h2>
-                <p className="text-xl text-gray-400 font-medium">
-                    In diesen Bereichen sind die Fragen komplexer – eine kuratierte Antwort hilft mehr als zehn Links.
-                </p>
-            </FadeIn>
-        </div>
-
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {TARGETS.map((item, i) => (
-                <FadeIn key={i} delay={i * 100} className="h-full">
-                    <div className="bg-white/5 border border-white/10 p-8 rounded-[32px] h-full hover:bg-white/10 transition-colors">
-                        <div className="mb-6">
-                            <Icon icon={item.icon} className="w-10 h-10 text-brand-accent" />
-                        </div>
-                        <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                        <p className="text-gray-400">{item.desc}</p>
-                    </div>
+    <section className="py-40 px-6 md:px-12 lg:px-20 max-w-[1800px] mx-auto bg-[#121212] text-white rounded-section my-20">
+        <div className="max-w-7xl mx-auto">
+            <div className="max-w-4xl mb-24">
+                <FadeIn>
+                    <span className="text-brand-accent font-semibold uppercase tracking-[0.2em] text-[10px] mb-6 block">Für wen</span>
+                    <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold mb-10 tracking-[-0.04em] leading-[1.0]">
+                        Komplexität braucht <br />
+                        <span className="text-gray-500">Kuration.</span>
+                    </h2>
+                    <p className="text-lg md:text-xl text-gray-400 font-medium max-w-2xl leading-relaxed">
+                        In diesen Bereichen sind die Fragen komplexer – eine kuratierte KI-Antwort hilft dem Nutzer mehr als zehn veraltete Links.
+                    </p>
                 </FadeIn>
-            ))}
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                {TARGETS.map((item, i) => (
+                    <FadeIn key={i} delay={i * 100} className="h-full">
+                        <div className="bg-white/5 border border-white/5 p-10 rounded-card h-full hover:bg-white/[0.08] transition-all duration-500 group">
+                            <div className="mb-8 transform group-hover:-translate-y-1 transition-transform duration-500">
+                                <Icon icon={item.icon} className="w-10 h-10 text-brand-accent" />
+                            </div>
+                            <h3 className="text-xl font-semibold mb-4 tracking-tight">{item.title}</h3>
+                            <p className="text-gray-400 text-base leading-snug font-medium">{item.desc}</p>
+                        </div>
+                    </FadeIn>
+                ))}
+            </div>
         </div>
     </section>
 );
+
+
 
