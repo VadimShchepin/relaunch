@@ -19,9 +19,9 @@ export const Button: React.FC<ButtonProps> = ({ text, onClick, primary = false, 
       ${className}
     `}
     >
-        {/* Growing Circle Background Effect */}
+        {/* Growing Circle Background Effect - Starts from the Icon */}
         {primary && (
-            <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] aspect-square bg-brand-accent rounded-full scale-0 transition-transform duration-700 ease-out group-hover:scale-100" />
+            <span className="absolute right-12 top-1/2 -translate-y-1/2 translate-x-1/2 w-[500%] aspect-square bg-brand-accent rounded-full scale-0 transition-transform duration-1000 ease-out group-hover:scale-100 origin-center" />
         )}
 
         <span className="relative z-10 flex items-center gap-2">
