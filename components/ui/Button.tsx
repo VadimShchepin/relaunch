@@ -1,29 +1,38 @@
 import React from 'react';
 
 interface ButtonProps {
-    text: string;
+    text?: string;
     onClick?: () => void;
     primary?: boolean;
     className?: string;
+    children?: React.ReactNode;
 }
 
-export const Button: React.FC<ButtonProps> = ({ text, onClick, primary = false, className = "" }) => (
+export const Button: React.FC<ButtonProps> = ({ text, onClick, primary = false, className = "", children }) => (
     <button
         onClick={onClick}
         className={`
-      relative px-8 py-4 rounded-full text-base font-medium transition-all duration-300 inline-flex items-center gap-2
+      relative px-8 py-4 rounded-full text-base font-medium transition-all duration-500 inline-flex items-center gap-2 overflow-hidden group
       ${primary
-                ? 'bg-[#111111] text-white hover:bg-black shadow-sm'
+                ? 'bg-[#111111] text-white border border-brand-accent/30 hover:border-brand-accent shadow-[0_0_20px_rgba(79,175,140,0.25)] hover:shadow-[0_0_35px_rgba(79,175,140,0.4)] hover:scale-[1.03]'
                 : 'bg-transparent border border-gray-200 text-brand-text hover:bg-gray-50'}
       ${className}
     `}
     >
-        {text}
+        {/* Growing Circle Background Effect */}
         {primary && (
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-1">
-                <path d="M5 12h14m-7-7 7 7-7 7" />
-            </svg>
+            <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] aspect-square bg-brand-accent rounded-full scale-0 transition-transform duration-700 ease-out group-hover:scale-100" />
         )}
+
+        <span className="relative z-10 flex items-center gap-2">
+            {text}
+            {children}
+            {primary && !children && (
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-1">
+                    <path d="M5 12h14m-7-7 7 7-7 7" />
+                </svg>
+            )}
+        </span>
     </button>
 );
 

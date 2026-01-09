@@ -1,6 +1,9 @@
+'use client';
+
 import React, { useEffect, useRef } from 'react';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
+import { PlatformIconLoop } from '@/components/ui/PlatformIconLoop';
 import { IMAGES } from '@/lib/constants';
 import { Icon } from '@iconify/react';
 
@@ -34,9 +37,11 @@ export const Hero: React.FC = () => {
                             <div className="hidden lg:block pt-[82px]">
                                 <Button
                                     primary
-                                    text="Ki-Sichtbarkeit Prüfen"
-                                    className="!text-xl !px-12 !py-6 shadow-2xl hover:scale-105 transition-transform duration-300"
-                                />
+                                    text="KI-Sichtbarkeit prüfen"
+                                    className="!text-xl !px-12 !py-6 shadow-2xl transition-transform duration-300"
+                                >
+                                    <PlatformIconLoop className="bg-white/10 w-9 h-9 rounded-full ml-4 shrink-0" iconClassName="text-base text-white" />
+                                </Button>
                             </div>
                         </div>
                         <p className="text-xl md:text-2xl font-medium text-gray-800/80 leading-relaxed max-w-2xl mt-12">
@@ -45,9 +50,11 @@ export const Hero: React.FC = () => {
                         <div className="lg:hidden mt-8">
                             <Button
                                 primary
-                                text="Ki-Sichtbarkeit Prüfen"
+                                text="KI-Sichtbarkeit prüfen"
                                 className="w-full justify-center !text-lg !py-4 shadow-xl"
-                            />
+                            >
+                                <PlatformIconLoop className="bg-white/10 w-8 h-8 rounded-full shrink-0" iconClassName="text-sm text-white" />
+                            </Button>
                         </div>
                     </FadeIn>
                 </div>
