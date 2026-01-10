@@ -77,6 +77,35 @@ Ergebnisse variieren je nach Branche, Wettbewerb, Website-Zustand und Suchintent
 
 ---
 
+## ÜBER MICH
+
+**H2:** Wer hinter aiseo.hamburg steht
+
+Ich bin **[Dein Name]**, unabhängiger Entwickler und Unternehmer aus Hamburg.  
+Ich arbeite nicht als Agentur, sondern selbstständig – mit wenigen, klar passenden Projekten.
+
+Mein Fokus liegt darauf, komplexe Systeme **verständlich** zu machen:  
+für Menschen, für Suchmaschinen und für KI-Modelle.
+
+**Warum das relevant ist:**
+- KI-Systeme bevorzugen **klare, konsistente Quellen**  
+- Echte Personen + nachvollziehbare Expertise erhöhen Vertrauen (auch für KI)  
+- Entscheidungen werden zunehmend **personenbezogen**, nicht anonym
+
+**Hintergrund & Projekte:**
+- Langjährige Arbeit an eigenen produktiven Websites  
+- Praktische Erfahrung mit SEO, Strukturierung, Tracking & Automatisierung  
+- Fokus auf reale Nutzung statt theoretische Optimierung
+
+**Externe Profile & Projekte (freiwillig, transparent):**
+- LinkedIn: [Link]  
+- Weitere Projekte/Websites: [Link / Liste]
+
+**Visual:**  
+1 ruhiges, professionelles Foto (kein Stock, kein Agentur-Look)
+
+---
+
 ## TRANSFORMATION
 
 **H2:** Was sich für dich ändern kann
