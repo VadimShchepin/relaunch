@@ -3,21 +3,23 @@ import { FadeIn } from '@/components/ui/FadeIn';
 import { Icon } from '@iconify/react';
 import { IMAGES } from '@/lib/constants';
 
+const AUTHORITY = {
+    name: "Vadim Shchepin",
+    role: "AI SEO / GEO Berater",
+    location: "Hamburg",
+    focus: "KI-Sichtbarkeit für Unternehmen. Testet Strategien an eigenen Projekten."
+};
+
 const TARGETS = [
     {
         title: "Spezialisierte Dienstleister",
-        desc: "Steuerberater, Fachanwälte, Berater",
+        desc: "Steuerberater, Fachanwälte, Berater, B2B",
         icon: "meteor-icons:scales"
     },
     {
         title: "Lokale Anbieter",
-        desc: "Handwerker, Praxen, Agenturen mit klarem Fokus",
+        desc: "Handwerker, Praxen, Agenturen",
         icon: "meteor-icons:pin"
-    },
-    {
-        title: "B2B Unternehmen",
-        desc: "Tech, SaaS, Consulting",
-        icon: "meteor-icons:rocket"
     },
     {
         title: "Vertrauens-Branchen",
@@ -44,7 +46,7 @@ export const Differentiation: React.FC = () => (
                     </FadeIn>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                     {TARGETS.map((item, i) => (
                         <FadeIn key={i} delay={i * 100} className="h-full">
                             <div className="bg-white/5 border border-white/5 p-10 rounded-card h-full hover:bg-white/[0.08] transition-all duration-500 group">
@@ -68,7 +70,7 @@ export const Differentiation: React.FC = () => (
                             Agentur-Masse <br />
                             <span className="text-gray-500">vs. Echtheit.</span>
                         </h2>
-                        <div className="space-y-6">
+                        <div className="space-y-4">
                             {[
                                 {
                                     agency: "Typische Agentur: nutzt KI für Texte",
@@ -84,7 +86,7 @@ export const Differentiation: React.FC = () => (
                                 }
                             ].map((item, i) => (
                                 <FadeIn key={i} delay={i * 100}>
-                                    <div className="bg-white/5 p-8 rounded-card border border-white/5 hover:bg-white/[0.08] transition-all">
+                                    <div className="bg-white/5 p-6 rounded-card border border-white/5 hover:bg-white/[0.08] transition-all">
                                         <p className="text-base text-gray-500 mb-3 line-through decoration-gray-600">{item.agency}</p>
                                         <p className="text-white text-lg font-semibold leading-tight">{item.me}</p>
                                     </div>
@@ -104,7 +106,12 @@ export const Differentiation: React.FC = () => (
                                 </div>
                                 <div className="absolute bottom-10 left-10 right-10 text-white">
                                     <p className="font-semibold text-2xl mb-2 tracking-tight">Echte Ergebnisse.</p>
-                                    <p className="text-white/80 text-base font-medium leading-tight">Viele schreiben „KI". Wenige können zeigen, dass sie in KI-Antworten auftauchen.</p>
+                                    <p className="text-white/80 text-base font-medium leading-tight mb-4">Viele schreiben „KI". Wenige können zeigen, dass sie in KI-Antworten auftauchen.</p>
+                                    <div className="text-sm text-white/70 leading-tight space-y-0.5 pt-3 border-t border-white/20">
+                                        <p className="font-medium text-white/90">{AUTHORITY.name}</p>
+                                        <p>{AUTHORITY.role} · {AUTHORITY.location}</p>
+                                        <p>{AUTHORITY.focus}</p>
+                                    </div>
                                 </div>
                             </div>
                             <div className="absolute -top-6 -right-6 w-32 h-32 bg-brand-accent rounded-[24px] -z-10 rotate-12 opacity-20"></div>
