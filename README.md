@@ -1,20 +1,41 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# AI SEO Relaunch
 
-# Run and deploy your AI Studio app
+A premium, high-conversion landing page for AI-driven SEO services, focusing on German-market localized KI optimization.
 
-This contains everything you need to run your app locally.
+## 🚀 Key Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1XBRIwiNjzrY9GVtveHTRyljyz0KoDr8E
+- **Dynamic Hero Section**: Optimized for engagement with smooth animations and "hot" CTA interactions.
+- **Premium CTA Design**:
+  - Consistent green "glow" aura shadows.
+  - Contextual "Circular Fill" hover effects originating from the icon area.
+  - Rotating `PlatformIconLoop` (ChatGPT → Perplexity → Gemini) with smooth transitions.
+- **Refined Reality Section**: Premium LE CAMP-inspired layout with split headlines, narrow content columns, and a staggered triple-image gallery.
+- **Micro-Interactions**: Custom `FadeIn` and internal state animations for a high-end Feel.
+- **Responsive & Minimalist**: Mobile-first design with a focus on typography and intentional white space.
 
-## Run Locally
+## 🛠 Tech Stack
 
-**Prerequisites:**  Node.js
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Icons**: [Iconify](https://iconify.design/)
+- **Runtime**: React 19
 
+## 💻 Setup & Development
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+2. **Set API Keys**:
+   Add your `GEMINI_API_KEY` to `.env.local`.
+
+3. **Start Development Server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Production Build**:
+   ```bash
+   npm run build
+   ```
