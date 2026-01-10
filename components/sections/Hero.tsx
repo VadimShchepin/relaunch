@@ -62,23 +62,48 @@ export const Hero: React.FC = () => {
                 {/* Staggered Card Row - Matching Reference Style */}
                 <div className="flex flex-col lg:flex-row gap-8 items-start lg:items-center -mx-4 lg:-mx-0">
 
-                    {/* Card 1: Blue Stats */}
-                    <div className="w-full lg:w-1/4 bg-[#017eff] p-10 rounded-card text-white aspect-[3/4] flex flex-col justify-between transform -rotate-1 hover:rotate-0 transition-all duration-500 shadow-xl relative z-10">
+                    {/* Card 1: Blue Stats - $750B Market Shift */}
+                    <div className="w-full lg:w-1/4 bg-[#017eff] p-6 rounded-card text-white aspect-[3/4] flex flex-col justify-between transform -rotate-1 hover:rotate-0 transition-all duration-500 shadow-xl relative z-10">
                         <FadeIn delay={100} className="h-full flex flex-col justify-between">
-                            <span className="text-[4rem] font-semibold tracking-tighter leading-none block">90 %</span>
+                            {/* Top: Main Stat */}
                             <div>
-                                <p className="text-xl font-semibold mb-4 tracking-tight leading-snug">
-                                    der ersten Anbieter, die KI nennt, bekommen die Anfrage.
+                                <span className="text-[2.5rem] font-semibold tracking-tighter leading-none block">$750 Mrd.</span>
+                                <p className="text-sm font-medium mt-1 tracking-tight leading-snug opacity-90">
+                                    Umsatz fließt bis 2028 über KI-Suche.
                                 </p>
-                                <div className="h-px w-full bg-white/20 mb-6"></div>
-                                <div className="flex items-center gap-4 mb-3">
-                                    <Icon icon="simple-icons:openai" className="w-5 h-5 opacity-80" />
-                                    <Icon icon="simple-icons:perplexity" className="w-5 h-5 opacity-80" />
-                                    <Icon icon="simple-icons:google" className="w-5 h-5 opacity-80" />
+                            </div>
+
+                            {/* Middle: Additional Stats */}
+                            <div className="space-y-3 py-4">
+                                <div className="bg-white/10 rounded-lg p-3">
+                                    <p className="text-xs font-medium leading-snug">
+                                        <span className="text-white font-bold">+1.24%</span> höhere Conversion bei optimierten Seiten
+                                    </p>
+                                    <a href="https://www.amsive.com/insights/seo/does-llm-traffic-convert-better-than-organic-a-new-data-backed-study/" target="_blank" rel="noopener noreferrer" className="text-[9px] opacity-60 hover:opacity-100 underline">Amsive 2025</a>
                                 </div>
-                                <p className="text-xs font-medium opacity-60 tracking-wider">
-                                    ChatGPT · Perplexity · Google AI
-                                </p>
+                                <div className="bg-white/10 rounded-lg p-3">
+                                    <p className="text-xs font-medium leading-snug">
+                                        <span className="text-white font-bold">20-50%</span> weniger Traffic ohne GEO-Optimierung
+                                    </p>
+                                    <a href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/new-front-door-to-the-internet-winning-in-the-age-of-ai-search" target="_blank" rel="noopener noreferrer" className="text-[9px] opacity-60 hover:opacity-100 underline">McKinsey 2025</a>
+                                </div>
+                            </div>
+
+                            {/* Bottom: Icons & Main Source */}
+                            <div>
+                                <div className="flex items-center gap-3 mb-2">
+                                    <Icon icon="simple-icons:openai" className="w-4 h-4 opacity-80" />
+                                    <Icon icon="simple-icons:perplexity" className="w-4 h-4 opacity-80" />
+                                    <Icon icon="simple-icons:google" className="w-4 h-4 opacity-80" />
+                                </div>
+                                <a
+                                    href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/new-front-door-to-the-internet-winning-in-the-age-of-ai-search"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-[9px] font-medium opacity-60 hover:opacity-100 transition-opacity underline"
+                                >
+                                    Hauptquelle: McKinsey & Company
+                                </a>
                             </div>
                         </FadeIn>
                     </div>
