@@ -3,6 +3,12 @@ import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 import { Icon } from '@iconify/react';
 
+const STEPS = [
+    { step: "01", title: "AI-Check", desc: "Klarer Ist-Stand + Potenzial + 3 Prioritäten" },
+    { step: "02", title: "Gespräch (15 Min)", desc: "Nur wenn es Sinn macht: Ziel & Erwartung" },
+    { step: "03", title: "Umsetzung", desc: "Struktur, Inhalte, messbare Schritte" }
+];
+
 export const Offer: React.FC = () => (
     <section id="audit" className="py-40 px-6 md:px-12 lg:px-20 max-w-[1800px] mx-auto">
         <FadeIn>
@@ -10,7 +16,7 @@ export const Offer: React.FC = () => (
                 {/* Background accent */}
                 <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-accent/5 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
 
-                <div className="relative z-10 grid lg:grid-cols-2 gap-24 items-center">
+                <div className="relative z-10 grid lg:grid-cols-2 gap-24 items-start">
                     <div>
                         <span className="text-brand-accent font-semibold uppercase tracking-[0.2em] text-[10px] mb-8 block">Kostenlos</span>
                         <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold mb-10 tracking-[-0.04em] leading-[1.0]">
@@ -21,7 +27,7 @@ export const Offer: React.FC = () => (
                             Bevor wir über Umsetzung reden, schauen wir uns an, <strong className="text-white">wo du stehst</strong>.
                         </p>
 
-                        <ul className="space-y-6 mb-12">
+                        <ul className="space-y-5 mb-12">
                             {[
                                 "KI-Status: Was sagen ChatGPT/Perplexity aktuell?",
                                 "Konkurrenz-Check: Wer wird stattdessen genannt?",
@@ -35,13 +41,27 @@ export const Offer: React.FC = () => (
                             ))}
                         </ul>
 
-                        <div className="text-sm text-gray-500 font-medium space-y-2">
+                        <div className="text-sm text-gray-500 font-medium space-y-2 mb-16">
                             <span className="block italic">Format: 5–10 Min. Loom-Video oder 1 Seite Summary.</span>
                             <span className="block italic">Innerhalb von 48h. Keine Verpflichtung.</span>
                         </div>
+
+                        {/* Process Steps - Inline */}
+                        <div className="border-t border-white/10 pt-12">
+                            <span className="text-brand-accent font-semibold uppercase tracking-[0.2em] text-[10px] mb-8 block">So läuft's ab</span>
+                            <div className="grid grid-cols-3 gap-4">
+                                {STEPS.map((item, i) => (
+                                    <div key={i} className="text-center">
+                                        <span className="text-3xl font-semibold text-white/10 block mb-2">{item.step}</span>
+                                        <h4 className="text-sm font-semibold text-white mb-1">{item.title}</h4>
+                                        <p className="text-xs text-gray-500 leading-snug">{item.desc}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
 
-                    <div className="bg-white p-12 md:p-16 rounded-card shadow-2xl text-center flex flex-col items-center">
+                    <div className="bg-white p-12 md:p-16 rounded-card shadow-2xl text-center flex flex-col items-center sticky top-32">
                         <h3 className="text-2xl font-semibold mb-4 text-black tracking-tight">Jetzt anfragen</h3>
                         <p className="text-gray-500 text-base mb-10 font-medium">Finde heraus, ob du in KI-Antworten stattfindest.</p>
                         <Button text="Check anfordern" primary={true} className="w-full justify-center py-5 text-lg" />
