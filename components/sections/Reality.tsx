@@ -1,6 +1,5 @@
 import React from 'react';
 import { FadeIn } from '@/components/ui/FadeIn';
-import { Button } from '@/components/ui/Button';
 
 export const Reality: React.FC = () => (
     <section className="py-20 px-6 md:px-12 lg:px-20 max-w-[1600px] mx-auto bg-white">
@@ -16,14 +15,9 @@ export const Reality: React.FC = () => (
                             KI-Antworten ersetzen klassische Suchlisten. Statt zehn Links erhalten Nutzer heute eine direkte Empfehlung – besonders bei lokalen und erklärungsbedürftigen Angeboten.
                         </p>
 
-                        <p className="text-base text-gray-700 leading-[1.7] mb-10">
+                        <p className="text-base text-gray-700 leading-[1.7]">
                             Entscheidend ist nicht mehr, ob du gefunden wirst, sondern ob KI dein Angebot eindeutig versteht und nennt.
                         </p>
-
-                        <Button
-                            text="Mehr erfahren"
-                            className="!bg-black !text-white !border-black hover:!bg-gray-900 !rounded-xl !px-6 !py-3 !text-sm"
-                        />
                     </FadeIn>
                 </div>
 

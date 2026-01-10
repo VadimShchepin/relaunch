@@ -22,7 +22,7 @@ export const Navbar: React.FC = () => {
             <div className="hidden md:block pointer-events-auto">
                 <Button
                     primary
-                    text="KI-Vorsprung sichern"
+                    text="KI-Sichtbarkeit prüfen"
                     className="!py-2 !px-2 !pl-6 !text-[10px] uppercase tracking-wider font-bold"
                 >
                     <PlatformIconLoop />

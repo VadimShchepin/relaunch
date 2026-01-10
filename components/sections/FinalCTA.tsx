@@ -14,7 +14,7 @@ export const FinalCTA: React.FC = () => (
             </p>
             <div className="flex justify-center">
                 <Button
-                    text="Kostenloser Check"
+                    text="Check anfordern"
                     primary={true}
                     className="text-lg py-5 px-10"
                     onClick={() => document.getElementById('audit')?.scrollIntoView({ behavior: 'smooth' })}
