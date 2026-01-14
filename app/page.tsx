@@ -5,6 +5,7 @@ import { Navbar } from '@/components/sections/Navbar';
 import { Hero } from '@/components/sections/Hero';
 import { Reality } from '@/components/sections/Reality';
 import { Proof } from '@/components/sections/Proof';
+import { FuerWen } from '@/components/sections/FuerWen';
 import { Differentiation } from '@/components/sections/Differentiation';
 import { Offer } from '@/components/sections/Offer';
 import { Objections } from '@/components/sections/Objections';
@@ -19,6 +20,7 @@ export default function Page() {
             <Hero />
             <Reality />
             <Proof />
+            <FuerWen />
             <Differentiation />
             <Offer />
             <Objections />
