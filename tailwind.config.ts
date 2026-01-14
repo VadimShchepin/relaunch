@@ -16,6 +16,10 @@ const config: Config = {
                     text: '#111111',
                     accent: '#4FAF8C',
                     dark: '#1C1917',
+                    olive: '#9CA38A', // Muted Olive
+                    slate: '#7D8C9E', // Dark Grey/Blue
+                    orange: '#FF5E3A', // Vibrant Orange
+                    pink: '#E6A5A5', // Nexus Card Pink
                 }
             },
             borderRadius: {
