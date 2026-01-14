@@ -176,13 +176,6 @@ export const Proof: React.FC = () => {
                 style={{ backgroundImage: `url('/image/proof/kinderalbum bg.png')` }}
             />
 
-            {/* Header / Title */}
-            <div className="absolute top-6 left-6 md:top-10 md:left-10 z-20">
-                <div className="bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full inline-flex items-center border border-white/10 mb-4 shadow-lg">
-                    <span className="text-white text-xs font-bold uppercase tracking-wider text-shadow-sm">Proof</span>
-                </div>
-            </div>
-
             {/* Cards Wrapper - Vertically centered */}
             <div ref={wrapper} className="relative w-full h-full max-w-[1400px] mx-auto flex items-center justify-center px-4">
 
