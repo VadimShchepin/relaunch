@@ -130,29 +130,15 @@ export const Proof: React.FC = () => {
                 {CARDS.map((card, index) => (
                     <div
                         key={card.id}
-                        className="absolute w-full max-w-5xl aspect-[1.8/1] bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row will-change-transform z-10"
+                        className="absolute w-full max-w-4xl h-[85vh] md:h-[80vh] flex flex-col items-center justify-start will-change-transform z-10"
                         style={{ zIndex: index + 10 }}
                     >
-                        {/* LEFT: Content Column */}
-                        <div className="w-full md:w-[45%] p-8 md:p-14 flex flex-col justify-center bg-white relative">
+                        {/* 1. Text Card (White) */}
+                        <div className="w-full bg-white rounded-3xl shadow-2xl p-8 md:p-12 mb-8 relative z-20">
 
-                            {/* Logos Row */}
-                            <div className="flex items-center gap-5 mb-10">
-                                {/* AI Logo */}
-                                <div className="flex items-center gap-2">
-                                    <div className={`w-8 h-8 ${card.textClass}`}>
-                                        <svg viewBox="0 0 256 260" fill="currentColor" className="w-full h-full">
-                                            <path d={card.iconData} />
-                                        </svg>
-                                    </div>
-                                    <span className="font-bold text-lg md:text-xl tracking-tight">{card.aiToolName}</span>
-                                </div>
-
-                                {/* Divider */}
-                                <div className="w-1.5 h-1.5 rounded-full bg-gray-300" />
-
-                                {/* Client Logo */}
-                                <div className="relative h-8 w-24">
+                            {/* Client Logo Row */}
+                            <div className="flex items-center gap-5 mb-8">
+                                <div className="relative h-10 w-32">
                                     <Image
                                         src={card.clientLogo}
                                         alt={card.clientName}
@@ -167,7 +153,7 @@ export const Proof: React.FC = () => {
                                 <span className={`text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] mb-3 block ${card.textClass}`}>
                                     {card.resultLabel}
                                 </span>
-                                <h3 className="text-2xl md:text-3xl font-bold text-brand-text leading-[1.15]">
+                                <h3 className="text-2xl md:text-3xl font-bold text-brand-text leading-[1.15] max-w-2xl">
                                     {card.resultHeadline}
                                 </h3>
                             </div>
@@ -179,29 +165,37 @@ export const Proof: React.FC = () => {
                                 <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-gray-400 mb-2 block">
                                     {card.relevanceLabel}
                                 </span>
-                                <p className="text-base md:text-lg text-gray-500 font-medium leading-relaxed">
+                                <p className="text-base md:text-lg text-gray-500 font-medium leading-relaxed max-w-2xl">
                                     {card.relevanceText}
                                 </p>
                             </div>
                         </div>
 
-                        {/* RIGHT: Visual Column */}
-                        <div className="w-full md:w-[55%] h-[300px] md:h-full bg-gray-50 relative flex items-center justify-center p-8 md:p-12 overflow-hidden group">
+                        {/* 2. Screenshot (Raw Image) */}
+                        <div className="relative w-full flex-grow flex items-start justify-center mt-4">
 
-                            {/* The Screenshot (with shadow/glare) */}
-                            <div className="relative w-full h-full shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] rounded-lg overflow-hidden transition-transform duration-700 ease-out group-hover:scale-[1.02]">
+                            {/* The Screenshot - Raw, no container styling */}
+                            <div className="relative w-full h-full">
                                 <Image
                                     src={card.imageSrc}
                                     alt={`${card.clientName} Proof`}
                                     fill
-                                    className="object-contain"
+                                    className="object-contain object-top drop-shadow-2xl"
                                     priority={index === 0}
                                 />
                             </div>
 
-                            {/* Decorative Background Blob (Optional subtle splash) */}
-                            <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-current opacity-[0.03] rounded-full blur-3xl pointer-events-none text-gray-400" />
+                            {/* LLM Logo Overlay - Bottom Right */}
+                            <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-md px-3 py-2 rounded-xl shadow-lg border border-white/50 flex items-center gap-2">
+                                <div className={`w-5 h-5 ${card.textClass}`}>
+                                    <svg viewBox="0 0 256 260" fill="currentColor" className="w-full h-full">
+                                        <path d={card.iconData} />
+                                    </svg>
+                                </div>
+                                <span className="text-xs font-bold text-gray-700 tracking-tight">{card.aiToolName}</span>
+                            </div>
                         </div>
+
                     </div>
                 ))}
             </div>
