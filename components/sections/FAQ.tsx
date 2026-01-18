@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { Icon } from '@iconify/react';
 
@@ -7,61 +7,64 @@ interface FAQItem {
     a: string;
 }
 
-const FAQS: FAQItem[] = [
+const HOMEPAGE_FAQS: FAQItem[] = [
     {
-        q: "Was kostet das?",
-        a: "Der AI-Check ist kostenlos. Alles Weitere nur, wenn es für dich Sinn ergibt."
+        q: "Was ist KI-Sichtbarkeit?",
+        a: "KI-Sichtbarkeit bedeutet, dass dein Unternehmen von KI-Systemen wie ChatGPT, Perplexity oder Google AI aktiv genannt und empfohlen wird – nicht nur gefunden, sondern ausgewählt."
     },
     {
-        q: "Wie lange dauert es bis zu Ergebnissen?",
-        a: "Abhängig von Branche und Ausgangslage. Erste Veränderungen oft nach Wochen, solide Effekte typischerweise in 3–6 Monaten."
+        q: "Warum reicht klassische SEO nicht mehr aus?",
+        a: "KI zeigt keine Suchlisten. Sie wählt wenige Quellen aus und fasst sie zu einer Empfehlung zusammen. Wer dort nicht erscheint, wird nicht verglichen – sondern ignoriert."
     },
     {
-        q: "Funktioniert das auch für kleine Unternehmen?",
-        a: "Oft besonders gut – KI-Systeme bevorzugen Klarheit und Kontext, nicht nur große Marken."
+        q: "Wie entscheidet KI, welche Unternehmen sie nennt?",
+        a: "KI bewertet Klarheit, Relevanz, Autorität und Konsistenz. In der Regel werden nur 5–10 präzise Quellen berücksichtigt – alle anderen spielen keine Rolle in der Entscheidung."
     },
     {
-        q: "Ist das nur 'ChatGPT-SEO'?",
-        a: "Nein. Es geht um Sichtbarkeit in KI-Systemen (AEO/GEO) zusätzlich zu klassischer SEO."
+        q: "Was macht AISEO konkret für mein Unternehmen?",
+        a: "Ich entwickle und setze eine klare Struktur für Website, Inhalte und Autorität um, sodass KI dein Angebot eindeutig versteht, korrekt einordnet und aktiv nennt."
     },
     {
-        q: "Woran erkenne ich, ob es funktioniert?",
-        a: "An konkreten Nennungen/Quellen + messbaren Signalen (Anfragen mit Kontext, Tracking-Muster, wiederholbare Tests)."
+        q: "Ist KI-Sichtbarkeit für jedes Unternehmen sinnvoll?",
+        a: "Nein. Sie ist nur sinnvoll für Unternehmen, die Kontrolle über ihre Positionierung übernehmen wollen – nicht für diejenigen, die auf Rankings, Zufall oder Hoffnung setzen."
+    },
+    {
+        q: "Wie arbeitest du konkret?",
+        a: "Ich arbeite nicht mit Tricks oder Prompt-Optimierung. Ich analysiere, wie KI dein Unternehmen aktuell einordnet, und baue die Website so um, dass KI dein Angebot klar versteht, einordnet und als Quelle nennt."
     }
 ];
 
-const FAQItem: React.FC<{ item: FAQItem; isOpen: boolean; onToggle: () => void }> = ({ item, isOpen, onToggle }) => (
-    <div className="border-b border-gray-100 last:border-b-0" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
-        <button
-            onClick={onToggle}
-            className="w-full py-8 flex justify-between items-center text-left group"
-            aria-expanded={isOpen}
+const FAQItem: React.FC<{ item: FAQItem }> = ({ item }) => (
+    <div
+        className="border-b border-gray-100 last:border-b-0 pb-6 last:pb-0"
+        itemScope
+        itemProp="mainEntity"
+        itemType="https://schema.org/Question"
+    >
+        <h3
+            className="text-base md:text-lg font-semibold text-black tracking-tight mb-3"
+            itemProp="name"
         >
-            <h3 className="text-lg md:text-xl font-semibold text-black tracking-tight pr-8 group-hover:text-brand-accent transition-colors" itemProp="name">
-                {item.q}
-            </h3>
-            <Icon
-                icon={isOpen ? "meteor-icons:minus" : "meteor-icons:plus"}
-                className={`w-5 h-5 flex-shrink-0 transition-colors ${isOpen ? 'text-brand-accent' : 'text-gray-300 group-hover:text-brand-accent'}`}
-            />
-        </button>
+            {item.q}
+        </h3>
+
         <div
-            className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-48 pb-8' : 'max-h-0'}`}
-            itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"
+            className="text-gray-600 text-sm md:text-base leading-relaxed"
+            itemProp="acceptedAnswer"
+            itemScope
+            itemType="https://schema.org/Answer"
         >
-            <p className="text-gray-500 text-base leading-relaxed font-medium pr-12" itemProp="text">{item.a}</p>
+            <p itemProp="text">{item.a}</p>
         </div>
     </div>
 );
 
 export const FAQ: React.FC = () => {
-    const [openIndex, setOpenIndex] = useState<number>(0);
-
     // Generate JSON-LD schema for FAQPage
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": FAQS.map(item => ({
+        "mainEntity": HOMEPAGE_FAQS.map(item => ({
             "@type": "Question",
             "name": item.q,
             "acceptedAnswer": {
@@ -72,25 +75,41 @@ export const FAQ: React.FC = () => {
     };
 
     return (
-        <section className="py-40 px-6 md:px-12 lg:px-20 max-w-[1000px] mx-auto" itemScope itemType="https://schema.org/FAQPage">
+        <section
+            className="py-20 md:py-24 lg:py-32 px-6 md:px-12 lg:px-20 max-w-[800px] mx-auto bg-white"
+            itemScope
+            itemType="https://schema.org/FAQPage"
+        >
+            {/* Schema.org JSON-LD */}
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
+
             <FadeIn>
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-black mb-16 tracking-[-0.04em] text-center">
-                    Häufige <br />
-                    <span className="text-gray-300">Fragen.</span>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-black mb-12 md:mb-16 tracking-[-0.04em] text-center">
+                    Häufige <span className="text-gray-300">Fragen.</span>
                 </h2>
-                <div className="bg-white rounded-card border border-gray-100 px-10">
-                    {FAQS.map((item, i) => (
-                        <FAQItem
-                            key={i}
-                            item={item}
-                            isOpen={openIndex === i}
-                            onToggle={() => setOpenIndex(openIndex === i ? -1 : i)}
-                        />
+
+                {/* SEO: List of FAQs always visible for crawlers */}
+                <div className="space-y-6">
+                    {HOMEPAGE_FAQS.map((item, index) => (
+                        <FAQItem key={index} item={item} />
                     ))}
+                </div>
+
+                {/* Link to full FAQ page */}
+                <div className="text-center mt-12">
+                    <a
+                        href="/faq"
+                        className="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-black transition-colors group"
+                    >
+                        Alle Fragen ansehen
+                        <Icon
+                            icon="meteor-icons:arrow-right"
+                            className="w-4 h-4 transition-transform group-hover:translate-x-1"
+                        />
+                    </a>
                 </div>
             </FadeIn>
         </section>
