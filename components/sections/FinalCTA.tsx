@@ -17,7 +17,12 @@ export const FinalCTA: React.FC = () => (
                     text="Check anfordern"
                     primary={true}
                     className="text-lg py-5 px-10"
-                    onClick={() => document.getElementById('audit')?.scrollIntoView({ behavior: 'smooth' })}
+                    onClick={() => {
+                        const offerSection = document.getElementById('offer');
+                        if (offerSection) {
+                            offerSection.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }}
                 />
             </div>
         </FadeIn>

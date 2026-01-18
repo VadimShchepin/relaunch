@@ -2,11 +2,12 @@ import React from 'react';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 import { Icon } from '@iconify/react';
+import Link from 'next/link';
 
 
 
 export const Offer: React.FC = () => (
-    <section id="audit" className="py-40 px-6 md:px-12 lg:px-20 max-w-[1800px] mx-auto">
+    <section className="py-40 px-6 md:px-12 lg:px-20 max-w-[1800px] mx-auto">
         <FadeIn>
             <div className="bg-[#121212] text-white rounded-section p-16 md:p-24 lg:p-28 relative overflow-hidden">
                 {/* Background accent */}
@@ -49,7 +50,9 @@ export const Offer: React.FC = () => (
                     <div className="bg-white p-12 md:p-16 rounded-card shadow-2xl text-center flex flex-col items-center sticky top-32">
                         <h3 className="text-2xl font-semibold mb-4 text-black tracking-tight">Jetzt anfragen</h3>
                         <p className="text-gray-500 text-base mb-10 font-medium">Finde heraus, ob du in KI-Antworten stattfindest.</p>
-                        <Button text="Check anfordern" primary={true} className="w-full justify-center py-5 text-lg" />
+                        <Link href="/contact">
+                            <Button text="Check anfordern" primary={true} className="w-full justify-center py-5 text-lg" />
+                        </Link>
                         <p className="mt-8 text-[10px] text-gray-400 font-semibold tracking-wide uppercase">100% kostenlos & unverbindlich.</p>
                     </div>
                 </div>

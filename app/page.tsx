@@ -18,13 +18,13 @@ export default function Page() {
         <div className="relative w-full overflow-hidden bg-brand-bg text-brand-text font-sans selection:bg-brand-accent selection:text-white">
             <Navbar />
             <Hero />
-            <Reality />
-            <Proof />
-            <Differentiation />
-            <Process />
-            <Offer />
-            <FAQ />
-            <FinalCTA />
+            <div id="reality"><Reality /></div>
+            <div id="proof"><Proof /></div>
+            <div id="differentiation"><Differentiation /></div>
+            <div id="process"><Process /></div>
+            <div id="offer"><Offer /></div>
+            <div id="faq"><FAQ /></div>
+            <div id="contact"><FinalCTA /></div>
             <Footer />
         </div>
     );
