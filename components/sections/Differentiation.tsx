@@ -12,9 +12,18 @@ export const Differentiation: React.FC = () => {
                             <h2 className="text-6xl md:text-8xl lg:text-[10rem] font-bold tracking-tighter leading-[0.85] text-brand-text mb-6 lg:mb-8">
                                 Für Profis.
                             </h2>
-                            <p className="text-5xl md:text-7xl lg:text-8xl font-bold text-brand-accent tracking-tight leading-[0.9]">
+                            <p className="text-5xl md:text-7xl lg:text-8xl font-bold text-brand-accent tracking-tight leading-[0.9] mb-12 lg:mb-16">
                                 Nicht für alle.
                             </p>
+                            <div>
+                                <a
+                                    href="#audit"
+                                    className="inline-flex items-center text-lg font-bold tracking-tight text-brand-text hover:text-brand-accent transition-colors group"
+                                >
+                                    AI-Check anfordern
+                                    <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
+                                </a>
+                            </div>
                         </FadeIn>
                     </div>
 
@@ -28,20 +37,11 @@ export const Differentiation: React.FC = () => {
                                 </p>
                             </div>
 
-                            <div className="space-y-4 mb-16 lg:mb-24 border-l-2 border-stone-300 pl-6">
-                                <p className="text-base md:text-lg text-stone-700 leading-relaxed">Du willst nicht wissen, was KI über dein Unternehmen behauptet.</p>
-                                <p className="text-base md:text-lg text-stone-700 leading-relaxed">Du findest es okay, wenn Kunden deine Website nie sehen.</p>
-                                <p className="text-base md:text-lg text-stone-700 leading-relaxed">Du glaubst, dass Google-Rankings 2026 noch ausreichen.</p>
-                            </div>
-
-                            <div>
-                                <a
-                                    href="#audit"
-                                    className="inline-flex items-center text-lg font-bold tracking-tight text-brand-text hover:text-brand-accent transition-colors group"
-                                >
-                                    AI-Check anfordern
-                                    <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
-                                </a>
+                            <p className="text-lg md:text-xl font-medium text-brand-text/70 mb-8">Nicht für dich, wenn …</p>
+                            <div className="space-y-6 mb-16 lg:mb-24">
+                                <p className="text-lg md:text-xl font-semibold text-black leading-tight">du <span className="underline decoration-2 decoration-brand-accent underline-offset-4">Kontrolle abgibst</span>, statt sie zu übernehmen.</p>
+                                <p className="text-lg md:text-xl font-semibold text-black leading-tight">es dir <span className="underline decoration-2 decoration-brand-accent underline-offset-4">egal ist</span>, wie KI dein Unternehmen beschreibt.</p>
+                                <p className="text-lg md:text-xl font-semibold text-black leading-tight">du Sichtbarkeit mit <span className="underline decoration-2 decoration-brand-accent underline-offset-4">Hoffnung verwechselst</span>.</p>
                             </div>
                         </FadeIn>
                     </div>
