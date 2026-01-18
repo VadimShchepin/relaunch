@@ -17,10 +17,10 @@ export const Differentiation: React.FC = () => {
                             </p>
                             <div>
                                 <a
-                                    href="/#contact"
+                                    href="/contact"
                                     className="inline-flex items-center text-lg font-bold tracking-tight text-brand-text hover:text-brand-accent transition-colors group"
                                 >
-                                    AI-Check anfordern
+                                    KI-Sichtbarkeit prüfen
                                     <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
                                 </a>
                             </div>

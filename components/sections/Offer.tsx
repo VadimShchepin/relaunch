@@ -51,7 +51,7 @@ export const Offer: React.FC = () => (
                         <h3 className="text-2xl font-semibold mb-4 text-black tracking-tight">Jetzt anfragen</h3>
                         <p className="text-gray-500 text-base mb-10 font-medium">Finde heraus, ob du in KI-Antworten stattfindest.</p>
                         <Link href="/contact">
-                            <Button text="Check anfordern" primary={true} className="w-full justify-center py-5 text-lg" />
+                            <Button text="KI-Sichtbarkeit prüfen" primary={true} className="w-full justify-center py-5 text-lg" />
                         </Link>
                         <p className="mt-8 text-[10px] text-gray-400 font-semibold tracking-wide uppercase">100% kostenlos & unverbindlich.</p>
                     </div>

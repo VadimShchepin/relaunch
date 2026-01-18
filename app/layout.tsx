@@ -2,8 +2,17 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "aiseo.hamburg — AI SEO Expert",
-    description: "AI Visibility Audit & Optimization",
+    title: "aiseo.hamburg — KI-Sichtbarkeit für Hamburger Unternehmen",
+    description: "Professionelle KI-Optimierung (AI SEO/GEO/AEO) für bessere Sichtbarkeit in ChatGPT, Perplexity & Co. Spezialist für Hamburg.",
+    keywords: "AI SEO, KI Sichtbarkeit, GEO, AEO, Hamburg, ChatGPT Optimierung",
+    openGraph: {
+        title: "aiseo.hamburg — KI-Sichtbarkeit für Hamburger Unternehmen",
+        description: "Professionelle KI-Optimierung für bessere Sichtbarkeit in ChatGPT, Perplexity & Co.",
+        url: "https://aiseo.hamburg",
+        siteName: "aiseo.hamburg",
+        locale: "de_DE",
+        type: "website",
+    },
 };
 
 export default function RootLayout({

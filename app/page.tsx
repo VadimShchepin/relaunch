@@ -27,7 +27,7 @@ export default function Page() {
             <div id="about"><AboutMe /></div>
             <div id="offer"><Offer /></div>
             <div id="faq"><FAQ /></div>
-            <div id="contact"><FinalCTA /></div>
+            <FinalCTA />
             <div id="newsletter"><Newsletter /></div>
             <Footer />
         </div>
