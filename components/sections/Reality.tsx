@@ -6,17 +6,25 @@ export const Reality: React.FC = () => (
         <div className="max-w-[1400px] mx-auto">
 
             {/* Top Section: Text Left + Headline Right */}
-            <div className="flex flex-col lg:flex-row lg:items-start gap-12 lg:gap-20 mb-16">
+            <div className="flex mt-5 flex-col lg:flex-row lg:items-start gap-12 lg:gap-20 mb-16">
 
                 {/* Left Column - Simple Text Block */}
                 <div className="w-full lg:w-[38%] lg:max-w-[380px]">
                     <FadeIn>
-                        <p className="text-base text-gray-700 leading-[1.7] mb-6">
-                            KI-Antworten ersetzen klassische Suchlisten. Statt zehn Links erhalten Nutzer heute eine direkte Empfehlung – besonders bei lokalen und erklärungsbedürftigen Angeboten.
+                        <p className="text-base text-gray-700 leading-[1.7] mb-4">
+                            KI-Systeme zeigen keine Suchlisten.
+                            Sie wählen wenige Quellen – oft 5–10 – und nennen diese als Empfehlung.
+                        </p>
+
+                        <p className="text-base text-gray-700 leading-[1.7] mb-4">
+                            Alles andere wird nicht geprüft,
+                            nicht verglichen,
+                            nicht gesehen.
                         </p>
 
                         <p className="text-base text-gray-700 leading-[1.7]">
-                            Entscheidend ist nicht mehr, ob du gefunden wirst, sondern ob KI dein Angebot eindeutig versteht und nennt.
+                            Wenn dein Unternehmen nicht zu diesen Quellen gehört,
+                            findet die Entscheidung ohne dich statt.
                         </p>
                     </FadeIn>
                 </div>
@@ -37,22 +45,22 @@ export const Reality: React.FC = () => (
             <div className="flex flex-col md:flex-row items-end justify-end gap-4 lg:gap-5">
 
                 {/* Image 1 - Smallest */}
-                <FadeIn delay={200} className="w-full md:w-[18%]">
-                    <div className="h-[120px] md:h-[140px] lg:h-[180px] rounded-xl overflow-hidden">
+                <FadeIn delay={200} className="w-full md:w-[30%]">
+                    <div className="h-[150px] md:h-[190px] lg:h-[200px] rounded-xl overflow-hidden">
                         <img
-                            src="/images/reality/growth.png"
-                            alt="Growth Analytics"
-                            className="w-full h-full object-cover"
+                            src="/images/reality/Impressions after ai.png"
+                            alt="Impressions after AI"
+                            className="w-full h-full object-contain object-left-bottom"
                         />
                     </div>
                 </FadeIn>
 
                 {/* Image 2 - Medium */}
-                <FadeIn delay={350} className="w-full md:w-[26%]">
-                    <div className="h-[180px] md:h-[220px] lg:h-[280px] rounded-xl overflow-hidden">
+                <FadeIn delay={350} className="w-full md:w-[14%]">
+                    <div className="h-[160px] md:h-[190px] lg:h-[260px] rounded-xl overflow-hidden">
                         <img
-                            src="/images/reality/search.png"
-                            alt="AI Search Interface"
+                            src="/images/reality/growth.png"
+                            alt="Growth Analytics"
                             className="w-full h-full object-cover"
                         />
                     </div>
