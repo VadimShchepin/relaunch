@@ -26,6 +26,10 @@ export const Reality: React.FC = () => (
                             Wenn dein Unternehmen nicht zu diesen Quellen gehört,
                             findet die Entscheidung ohne dich statt.
                         </p>
+
+                        <p className="text-lg font-semibold text-black mt-6 leading-tight">
+                            KI vergleicht nicht. Sie entscheidet.
+                        </p>
                     </FadeIn>
                 </div>
 

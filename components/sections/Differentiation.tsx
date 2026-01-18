@@ -41,7 +41,7 @@ export const Differentiation: React.FC = () => {
                             <div className="space-y-6 mb-16 lg:mb-24">
                                 <p className="text-lg md:text-xl font-semibold text-black leading-tight">du <span className="underline decoration-2 decoration-brand-accent underline-offset-4">Kontrolle abgibst</span>, statt sie zu übernehmen.</p>
                                 <p className="text-lg md:text-xl font-semibold text-black leading-tight">es dir <span className="underline decoration-2 decoration-brand-accent underline-offset-4">egal ist</span>, wie KI dein Unternehmen beschreibt.</p>
-                                <p className="text-lg md:text-xl font-semibold text-black leading-tight">du Sichtbarkeit mit <span className="underline decoration-2 decoration-brand-accent underline-offset-4">Hoffnung verwechselst</span>.</p>
+                                <p className="text-lg md:text-xl font-semibold text-black leading-tight">du Sichtbarkeit <span className="underline decoration-2 decoration-brand-accent underline-offset-4">dem Zufall überlässt</span>.</p>
                             </div>
                         </FadeIn>
                     </div>
