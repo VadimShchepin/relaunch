@@ -7,6 +7,7 @@ import { Reality } from '@/components/sections/Reality';
 import { Proof } from '@/components/sections/Proof';
 
 import { Differentiation } from '@/components/sections/Differentiation';
+import { Process } from '@/components/sections/Process';
 import { Offer } from '@/components/sections/Offer';
 import { FAQ } from '@/components/sections/FAQ';
 import { FinalCTA } from '@/components/sections/FinalCTA';
@@ -20,6 +21,7 @@ export default function Page() {
             <Reality />
             <Proof />
             <Differentiation />
+            <Process />
             <Offer />
             <FAQ />
             <FinalCTA />
