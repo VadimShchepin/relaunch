@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/Button';
+import { Icon } from '@iconify/react';
 
 export const Footer: React.FC = () => (
     <footer className="relative text-white py-12 md:py-16 px-6 md:px-12 overflow-hidden">
@@ -19,16 +20,19 @@ export const Footer: React.FC = () => (
 
                     <div className="flex flex-col gap-3">
                         <h4 className="font-bold uppercase tracking-widest text-xs mb-1 opacity-70">Navigation</h4>
-                        <a href="#expertise" className="hover:text-white/80 transition-colors">Expertises</a>
-                        <a href="#process" className="hover:text-white/80 transition-colors">Work</a>
-                        <a href="#about" className="hover:text-white/80 transition-colors">About</a>
-                        <a href="#contact" className="hover:text-white/80 transition-colors">Contact</a>
+                        <a href="/#reality" className="hover:text-white/80 transition-colors">Realität</a>
+                        <a href="/#proof" className="hover:text-white/80 transition-colors">Proof</a>
+                        <a href="/#process" className="hover:text-white/80 transition-colors">Prozess</a>
+                        <a href="/#faq" className="hover:text-white/80 transition-colors">FAQ</a>
+                        <a href="/faq" className="hover:text-white/80 transition-colors">Alle Fragen</a>
+                        <a href="/contact" className="hover:text-white/80 transition-colors">Kontakt</a>
                     </div>
 
                     <div className="flex flex-col gap-3">
                         <h4 className="font-bold uppercase tracking-widest text-xs mb-1 opacity-70">Rechtliches</h4>
-                        <a href="#" className="hover:text-white/80 transition-colors">Impressum</a>
-                        <a href="#" className="hover:text-white/80 transition-colors">Datenschutz</a>
+                        <a href="/impressum" className="hover:text-white/80 transition-colors">Impressum</a>
+                        <a href="/datenschutz" className="hover:text-white/80 transition-colors">Datenschutz</a>
+                        <a href="/agb" className="hover:text-white/80 transition-colors">AGB</a>
                     </div>
 
                 </div>
@@ -56,9 +60,49 @@ export const Footer: React.FC = () => (
                 </div>
             </div>
 
-            <div className="flex justify-between items-center text-xs text-white/40 mt-12 pt-8 border-t border-white/10">
-                <p>© 2026 AI SEO. Alle Rechte vorbehalten.</p>
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40 mt-12 pt-8 border-t border-white/10">
+                <p>© 2026 aiseo.hamburg. Alle Rechte vorbehalten.</p>
                 <p>Made in Hamburg.</p>
+
+                {/* Social Media Links */}
+                <div className="flex items-center gap-4">
+                    <a
+                        href="https://www.linkedin.com/in/vadim-shchepin/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-white/80 transition-colors"
+                        aria-label="LinkedIn"
+                    >
+                        <Icon icon="mdi:linkedin" className="w-5 h-5" />
+                    </a>
+                    <a
+                        href="https://www.instagram.com/snapsite.me/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-white/80 transition-colors"
+                        aria-label="Instagram"
+                    >
+                        <Icon icon="mdi:instagram" className="w-5 h-5" />
+                    </a>
+                    <a
+                        href="https://x.com/www_snapsite_me"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-white/80 transition-colors"
+                        aria-label="X (Twitter)"
+                    >
+                        <Icon icon="mdi:twitter" className="w-5 h-5" />
+                    </a>
+                    <a
+                        href="https://share.google/bkLeWZ9kPt2G8Lwtg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-white/80 transition-colors"
+                        aria-label="Google Business"
+                    >
+                        <Icon icon="mdi:google" className="w-5 h-5" />
+                    </a>
+                </div>
             </div>
 
         </div>
