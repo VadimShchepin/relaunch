@@ -3,11 +3,7 @@ import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 import { Icon } from '@iconify/react';
 
-const STEPS = [
-    { step: "01", title: "AI-Check", desc: "Klarer Ist-Stand + Potenzial + 3 Prioritäten" },
-    { step: "02", title: "Gespräch (15 Min)", desc: "Nur wenn es Sinn macht: Ziel & Erwartung" },
-    { step: "03", title: "Umsetzung", desc: "Struktur, Inhalte, messbare Schritte" }
-];
+
 
 export const Offer: React.FC = () => (
     <section id="audit" className="py-40 px-6 md:px-12 lg:px-20 max-w-[1800px] mx-auto">
@@ -47,18 +43,7 @@ export const Offer: React.FC = () => (
                         </div>
 
                         {/* Process Steps - Inline */}
-                        <div className="border-t border-white/10 pt-12">
-                            <span className="text-brand-accent font-semibold uppercase tracking-[0.2em] text-[10px] mb-8 block">So läuft's ab</span>
-                            <div className="grid grid-cols-3 gap-4">
-                                {STEPS.map((item, i) => (
-                                    <div key={i} className="text-center">
-                                        <span className="text-3xl font-semibold text-white/10 block mb-2">{item.step}</span>
-                                        <h4 className="text-sm font-semibold text-white mb-1">{item.title}</h4>
-                                        <p className="text-xs text-gray-500 leading-snug">{item.desc}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
+
                     </div>
 
                     <div className="bg-white p-12 md:p-16 rounded-card shadow-2xl text-center flex flex-col items-center sticky top-32">
