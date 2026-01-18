@@ -12,6 +12,8 @@ import { Offer } from '@/components/sections/Offer';
 import { FAQ } from '@/components/sections/FAQ';
 import { FinalCTA } from '@/components/sections/FinalCTA';
 import { Footer } from '@/components/sections/Footer';
+import { AboutMe } from '@/components/sections/AboutMe';
+import { Newsletter } from '@/components/sections/Newsletter';
 
 export default function Page() {
     return (
@@ -22,9 +24,11 @@ export default function Page() {
             <div id="proof"><Proof /></div>
             <div id="differentiation"><Differentiation /></div>
             <div id="process"><Process /></div>
+            <div id="about"><AboutMe /></div>
             <div id="offer"><Offer /></div>
             <div id="faq"><FAQ /></div>
             <div id="contact"><FinalCTA /></div>
+            <div id="newsletter"><Newsletter /></div>
             <Footer />
         </div>
     );
