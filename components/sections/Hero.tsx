@@ -45,7 +45,7 @@ export const Hero: React.FC = () => {
                             </div>
                         </div>
                         <p className="text-xl md:text-2xl font-medium text-gray-800/80 leading-relaxed max-w-2xl mt-12">
-                            Ich helfe Hamburger Unternehmen dabei, in ChatGPT, Perplexity und Google AI sichtbar zu werden – und messe, ob daraus echte Anfragen entstehen.
+                            Ich helfe Hamburger Unternehmen, von KI empfohlen zu werden – nicht nur gefunden.
                         </p>
                         <div className="lg:hidden mt-8">
                             <Button
@@ -77,7 +77,7 @@ export const Hero: React.FC = () => {
                             <div className="space-y-3 py-4">
                                 <div className="bg-white/10 rounded-lg p-3">
                                     <p className="text-xs font-medium leading-snug">
-                                        <span className="text-white font-bold">+1.24%</span> höhere Conversion bei optimierten Seiten
+                                        <span className="text-white font-bold">Höhere Abschlussquote</span> durch KI-Empfehlungen
                                     </p>
                                     <a href="https://www.amsive.com/insights/seo/does-llm-traffic-convert-better-than-organic-a-new-data-backed-study/" target="_blank" rel="noopener noreferrer" className="text-[9px] opacity-60 hover:opacity-100 underline">Amsive 2025</a>
                                 </div>
