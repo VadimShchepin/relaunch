@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 import { PlatformIconLoop } from '@/components/ui/PlatformIconLoop';
@@ -8,20 +8,6 @@ import { IMAGES } from '@/lib/constants';
 import { Icon } from '@iconify/react';
 
 export const Hero: React.FC = () => {
-    const video1Ref = useRef<HTMLVideoElement>(null);
-    const video2Ref = useRef<HTMLVideoElement>(null);
-
-    useEffect(() => {
-        const playVideo = (video: HTMLVideoElement | null) => {
-            if (video) {
-                video.muted = true;
-                video.play().catch(err => console.error("Video play failed", err));
-            }
-        };
-
-        playVideo(video1Ref.current);
-        playVideo(video2Ref.current);
-    }, []);
 
     return (
         <section className="relative pt-44 pb-32 px-6 md:px-12 lg:px-20 max-w-[1920px] mx-auto overflow-hidden">
@@ -36,6 +22,7 @@ export const Hero: React.FC = () => {
                             </h1>
                             <div className="hidden lg:block pt-[82px]">
                                 <Button
+                                    href="/contact"
                                     primary
                                     text="KI-Sichtbarkeit prüfen"
                                     className="!text-xl !px-12 !py-6 shadow-2xl transition-transform duration-300"
@@ -49,6 +36,7 @@ export const Hero: React.FC = () => {
                         </p>
                         <div className="lg:hidden mt-8">
                             <Button
+                                href="/contact"
                                 primary
                                 text="KI-Sichtbarkeit prüfen"
                                 className="w-full justify-center !text-lg !py-4 shadow-xl"
@@ -108,14 +96,13 @@ export const Hero: React.FC = () => {
                         </FadeIn>
                     </div>
 
-                    {/* Card 2: ChatGPT Video - Offset Down */}
+                    {/* Card 2: ChatGPT Image - Offset Down */}
                     <div className="w-full lg:w-1/4 bg-white rounded-card overflow-hidden aspect-[3/4] lg:translate-y-12 transform rotate-1 hover:rotate-0 hover:scale-[1.25] hover:z-50 transition-all duration-500 shadow-2xl border border-gray-100 p-1 group">
                         <div className="w-full h-full rounded-[12px] overflow-hidden bg-black">
                             <FadeIn delay={200} className="h-full w-full flex items-center justify-center relative">
-                                <video
-                                    ref={video1Ref}
-                                    src="/video/chatgpt.mov"
-                                    autoPlay muted loop playsInline
+                                <img
+                                    src="/image/proof/ChatGPT visits.png"
+                                    alt="ChatGPT Traffic Analytics"
                                     className="w-full h-full object-contain"
                                 />
                                 {/* Overlay to indicate focus on hover */}
@@ -148,14 +135,13 @@ export const Hero: React.FC = () => {
                         </div>
                     </div>
 
-                    {/* Card 4: Gemini Video - Offset Down */}
+                    {/* Card 4: AI Search Results Image - Offset Down */}
                     <div className="w-full lg:w-1/4 bg-white rounded-card overflow-hidden aspect-[3/4] lg:translate-y-20 transform rotate-1 hover:rotate-0 hover:scale-[1.25] hover:z-50 transition-all duration-500 shadow-2xl border border-gray-100 p-1 group">
                         <div className="w-full h-full rounded-[12px] overflow-hidden bg-black">
                             <FadeIn delay={400} className="h-full w-full flex items-center justify-center relative">
-                                <video
-                                    ref={video2Ref}
-                                    src="/video/gemini.mov"
-                                    autoPlay muted loop playsInline
+                                <img
+                                    src="/image/proof/Blitz-ChatGPTProof.png"
+                                    alt="AI Search Results Proof"
                                     className="w-full h-full object-contain"
                                 />
                                 {/* Overlay to indicate focus on hover */}

@@ -14,15 +14,10 @@ export const FinalCTA: React.FC = () => (
             </p>
             <div className="flex justify-center">
                 <Button
-                    text="Check anfordern"
+                    href="/contact"
+                    text="KI-Sichtbarkeit prüfen"
                     primary={true}
                     className="text-lg py-5 px-10"
-                    onClick={() => {
-                        const offerSection = document.getElementById('offer');
-                        if (offerSection) {
-                            offerSection.scrollIntoView({ behavior: 'smooth' });
-                        }
-                    }}
                 />
             </div>
         </FadeIn>

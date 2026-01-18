@@ -56,7 +56,7 @@ export const Footer: React.FC = () => (
                     <p className="text-lg md:text-xl font-light max-w-lg text-white/80">
                         Lassen Sie uns gemeinsam wachsen. Starten Sie jetzt Ihre Optimierung.
                     </p>
-                    <Button text="Kontakt aufnehmen" className="!bg-white !text-black hover:!bg-gray-100 !py-3 !px-8 !text-base !rounded-lg" />
+                    <Button href="/contact" text="KI-Sichtbarkeit prüfen" className="!bg-white !text-black hover:!bg-gray-100 !py-3 !px-8 !text-base !rounded-lg" />
                 </div>
             </div>
 
