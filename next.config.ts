@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  // Optimize for static export builds
+  typescript: {
+    tsconfigPath: './tsconfig.json',
+  },
 };
 
 export default nextConfig;
