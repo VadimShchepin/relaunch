@@ -17,7 +17,7 @@ export const Differentiation: React.FC = () => {
                             </p>
                             <div>
                                 <a
-                                    href="#audit"
+                                    href="/#contact"
                                     className="inline-flex items-center text-lg font-bold tracking-tight text-brand-text hover:text-brand-accent transition-colors group"
                                 >
                                     AI-Check anfordern
