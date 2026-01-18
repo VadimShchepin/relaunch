@@ -7,7 +7,7 @@ export const Footer: React.FC = () => (
         {/* Background Image */}
         <div
             className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: 'url(/footer-bg.png)' }}
+            style={{ backgroundImage: 'url(/footer-bg.webp)' }}
         >
             <div className="absolute inset-0 bg-black/40" /> {/* Slightly darker overlay for better text readability */}
         </div>
