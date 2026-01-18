@@ -52,7 +52,7 @@ export const Reality: React.FC = () => (
                 <FadeIn delay={200} className="w-full md:w-[30%]">
                     <div className="h-[150px] md:h-[190px] lg:h-[200px] rounded-xl overflow-hidden">
                         <img
-                            src="/images/reality/Impressions after ai.png"
+                            src="/images/reality/Impressions after ai.webp"
                             alt="Impressions after AI"
                             className="w-full h-full object-contain object-left-bottom"
                         />
@@ -63,7 +63,7 @@ export const Reality: React.FC = () => (
                 <FadeIn delay={350} className="w-full md:w-[14%]">
                     <div className="h-[160px] md:h-[190px] lg:h-[260px] rounded-xl overflow-hidden">
                         <img
-                            src="/images/reality/growth.png"
+                            src="/images/reality/growth.webp"
                             alt="Growth Analytics"
                             className="w-full h-full object-cover"
                         />
@@ -83,7 +83,7 @@ export const Reality: React.FC = () => (
                     </div>
                     <div className="h-[260px] md:h-[320px] lg:h-[400px] rounded-2xl overflow-hidden">
                         <img
-                            src="/images/reality/hamburg.png"
+                            src="/images/reality/hamburg.webp"
                             alt="Hamburg Business Meeting"
                             className="w-full h-full object-cover"
                         />

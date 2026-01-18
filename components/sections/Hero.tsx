@@ -101,7 +101,7 @@ export const Hero: React.FC = () => {
                         <div className="w-full h-full rounded-[12px] overflow-hidden bg-black">
                             <FadeIn delay={200} className="h-full w-full flex items-center justify-center relative">
                                 <img
-                                    src="/image/proof/ChatGPT visits.png"
+                                    src="/images/ChatGPT visits.webp"
                                     alt="ChatGPT Traffic Analytics"
                                     className="w-full h-full object-contain"
                                 />
@@ -127,7 +127,7 @@ export const Hero: React.FC = () => {
                         <div className="px-6 pb-6">
                             <div className="bg-black/5 rounded-xl overflow-hidden border border-black/10 p-2 shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
                                 <img
-                                    src="/image/kinderAlbum/proof3.png"
+                                    src="/image/kinderAlbum/proof3.webp"
                                     alt="Proof Example"
                                     className="w-full h-auto rounded-lg"
                                 />
@@ -140,7 +140,7 @@ export const Hero: React.FC = () => {
                         <div className="w-full h-full rounded-[12px] overflow-hidden bg-black">
                             <FadeIn delay={400} className="h-full w-full flex items-center justify-center relative">
                                 <img
-                                    src="/image/proof/Blitz-ChatGPTProof.png"
+                                    src="/image/proof/Blitz-ChatGPTProof.webp"
                                     alt="AI Search Results Proof"
                                     className="w-full h-full object-contain"
                                 />
