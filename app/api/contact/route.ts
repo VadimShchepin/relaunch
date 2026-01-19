@@ -28,6 +28,7 @@ export async function POST(req: Request) {
         const smtpPort = Number(process.env.BREVO_SMTP_PORT);
         const smtpUser = process.env.BREVO_ANMELDUNG;
         const smtpPassword = process.env.BREVO_SMTP_KEY;
+        const recipientEmail = process.env.CONTACT_RECIPIENT_EMAIL || "hello@aiseo.hamburg";
 
         if (!smtpServer || !smtpPort || !smtpUser || !smtpPassword) {
             console.error("Missing SMTP configuration");
@@ -91,7 +92,7 @@ Diese E-Mail wurde über das Kontaktformular auf aiseo.hamburg gesendet.
         // Send email
         await transporter.sendMail({
             from: `"AISEO Kontaktformular" <${smtpUser}>`,
-            to: "hello@aiseo.hamburg", // Your email address
+            to: recipientEmail,
             subject: subject,
             text: textContent,
             html: htmlContent,
