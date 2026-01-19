@@ -2,10 +2,28 @@
 
 import { Button } from '@/components/ui/Button';
 import { PlatformIconLoop } from '@/components/ui/PlatformIconLoop';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export const Navbar: React.FC = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    // Lock/unlock body scroll when menu opens/closes
+    useEffect(() => {
+        if (isMobileMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+
+        // Cleanup on unmount
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [isMobileMenuOpen]);
+
+    const closeMobileMenu = () => {
+        setIsMobileMenuOpen(false);
+    };
 
     return (
         <>
@@ -58,41 +76,41 @@ export const Navbar: React.FC = () => {
             {/* Mobile Menu Overlay */}
             {isMobileMenuOpen && (
                 <div className="fixed inset-0 z-40 lg:hidden">
-                    <div className="fixed inset-0 bg-black/20 backdrop-blur-sm" onClick={() => setIsMobileMenuOpen(false)} />
-                    <div className="fixed top-20 right-6 bg-white/95 backdrop-blur-md border border-gray-100 shadow-2xl rounded-2xl p-6 min-w-[200px]">
+                    <div className="fixed inset-0 bg-black/20 backdrop-blur-sm cursor-pointer" onClick={closeMobileMenu} aria-label="Close menu" />
+                    <div className="fixed top-20 right-6 bg-white/95 backdrop-blur-md border border-gray-100 shadow-2xl rounded-2xl p-6 min-w-[200px]" onClick={(e) => e.stopPropagation()}>
                         <div className="flex flex-col space-y-4">
                             <a
                                 href="/#reality"
                                 className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2"
-                                onClick={() => setIsMobileMenuOpen(false)}
+                                onClick={closeMobileMenu}
                             >
                                 Realität
                             </a>
                             <a
                                 href="/#proof"
                                 className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2"
-                                onClick={() => setIsMobileMenuOpen(false)}
+                                onClick={closeMobileMenu}
                             >
                                 Proof
                             </a>
                             <a
                                 href="/#process"
                                 className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2"
-                                onClick={() => setIsMobileMenuOpen(false)}
+                                onClick={closeMobileMenu}
                             >
                                 Prozess
                             </a>
                             <a
                                 href="/#faq"
                                 className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2"
-                                onClick={() => setIsMobileMenuOpen(false)}
+                                onClick={closeMobileMenu}
                             >
                                 FAQ
                             </a>
                             <a
                                 href="/contact"
                                 className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2"
-                                onClick={() => setIsMobileMenuOpen(false)}
+                                onClick={closeMobileMenu}
                             >
                                 Kontakt
                             </a>
