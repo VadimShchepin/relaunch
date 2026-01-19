@@ -41,15 +41,20 @@ export async function POST(req: Request) {
                 includeListIds: [listId], // List 4 (Pending DOI)
                 templateId,
                 redirectionUrl,
-                // Only include SOURCE attribute - create this in Brevo first
-                attributes: {
-                    SOURCE: "aiseo-website",
-                },
+                // Removed attributes to avoid Brevo validation errors
             }),
         });
 
         if (!response.ok) {
             const errorText = await response.text();
+
+            // Log detailed error for debugging
+            console.error("Brevo API error details:", {
+                status: response.status,
+                statusText: response.statusText,
+                error: errorText,
+                requestBody: { email, includeListIds: [listId], templateId, redirectionUrl }
+            });
 
             // Treat "already subscribed" scenarios as success to avoid email enumeration
             if (errorText.includes("already exists") ||
@@ -59,7 +64,6 @@ export async function POST(req: Request) {
                 return NextResponse.json({ ok: true });
             }
 
-            console.error("Brevo API error:", response.status, errorText);
             return NextResponse.json({ ok: false, error: "BREVO_ERROR" }, { status: 400 });
         }
 
