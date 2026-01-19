@@ -90,7 +90,7 @@ ${message}
 Diese E-Mail wurde über das Kontaktformular auf aiseo.hamburg gesendet.
     `;
 
-        // Send email
+        // Send email with configured sender and recipient
         await transporter.sendMail({
             from: `"AISEO Kontaktformular" <${senderEmail}>`,
             to: recipientEmail,
