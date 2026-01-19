@@ -20,7 +20,7 @@ export async function POST(req: Request) {
 
         const apiKey = process.env.BREVO_API_KEY!;
         const templateId = Number(process.env.BREVO_DOI_TEMPLATE_ID);
-        const listId = Number(process.env.BREVO_NEWSLETTER_LIST_ID); // Should be 4 (Pending DOI)
+        const listId = Number(process.env.BREVO_NEWSLETTER_LIST_ID); // Should be 5 (Confirmed list)
         const redirectionUrl = process.env.BREVO_DOI_REDIRECT_URL!;
 
         if (!apiKey || !templateId || !listId || !redirectionUrl) {
@@ -38,7 +38,7 @@ export async function POST(req: Request) {
             },
             body: JSON.stringify({
                 email,
-                includeListIds: [listId], // List 4 (Pending DOI)
+                includeListIds: [listId], // List 5 (Confirmed list)
                 templateId,
                 redirectionUrl,
                 // Removed attributes to avoid Brevo validation errors
@@ -64,7 +64,16 @@ export async function POST(req: Request) {
                 return NextResponse.json({ ok: true });
             }
 
-            return NextResponse.json({ ok: false, error: "BREVO_ERROR" }, { status: 400 });
+            // Return detailed error for debugging (temporary)
+            return NextResponse.json(
+                {
+                    ok: false,
+                    error: "BREVO_ERROR",
+                    status: response.status,
+                    detail: errorText.slice(0, 500)
+                },
+                { status: response.status }
+            );
         }
 
         // 201 Created => success
