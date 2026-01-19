@@ -1,7 +1,13 @@
 {
     "redirects": [
         {
-            "source": "https://www.aiseo.hamburg/:path*",
+            "source": "/:path*",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "www.aiseo.hamburg"
+                }
+            ],
             "destination": "https://aiseo.hamburg/:path*",
             "permanent": true
         }
