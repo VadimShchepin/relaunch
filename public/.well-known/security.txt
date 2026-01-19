@@ -1,0 +1,19 @@
+Contact: mailto:hello@aiseo.hamburg
+Contact: https://www.aiseo.hamburg/contact
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: de, en
+Canonical: https://www.aiseo.hamburg/.well-known/security.txt
+
+# Security Policy for aiseo.hamburg
+# 
+# If you discover a security vulnerability, please report it to:
+# Email: hello@aiseo.hamburg
+# 
+# Please include:
+# - Description of the vulnerability
+# - Steps to reproduce
+# - Potential impact
+# 
+# We will respond within 48 hours and work to resolve issues promptly.
+# 
+# Thank you for helping keep aiseo.hamburg secure.

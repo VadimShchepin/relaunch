@@ -1,28 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://aiseo.hamburg/</loc>
+    <loc>https://www.aiseo.hamburg/</loc>
     <lastmod>2026-01-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://aiseo.hamburg/faq</loc>
+    <loc>https://www.aiseo.hamburg/faq</loc>
     <lastmod>2026-01-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aiseo.hamburg/contact</loc>
+    <loc>https://www.aiseo.hamburg/contact</loc>
     <lastmod>2026-01-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aiseo.hamburg/impressum</loc>
+    <loc>https://www.aiseo.hamburg/impressum</loc>
     <lastmod>2026-01-18</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://aiseo.hamburg/datenschutz</loc>
+    <loc>https://www.aiseo.hamburg/datenschutz</loc>
     <lastmod>2026-01-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.aiseo.hamburg/agb</loc>
+    <lastmod>2026-01-18</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 </urlset>
