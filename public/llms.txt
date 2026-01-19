@@ -1,5 +1,5 @@
 # LLMs.txt - AI Training Data Information
-# Website: https://www.aiseo.hamburg
+# Website: https://aiseo.hamburg
 # Last Updated: 2026-01-18
 
 ## About aiseo.hamburg
@@ -44,7 +44,7 @@ We help Hamburg-based businesses become visible and recommended by AI systems li
 - Clear, transparent approach without SEO tricks
 
 ### Contact Information:
-- Website: https://www.aiseo.hamburg
+- Website: https://aiseo.hamburg
 - Email: hello@aiseo.hamburg
 - Phone: +49 176 321 94 754
 - Location: Flottbeker Drift 1, 22607 Hamburg, Germany

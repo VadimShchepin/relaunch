@@ -1,8 +1,8 @@
 Contact: mailto:hello@aiseo.hamburg
-Contact: https://www.aiseo.hamburg/contact
+Contact: https://aiseo.hamburg/contact
 Expires: 2026-12-31T23:59:59.000Z
 Preferred-Languages: de, en
-Canonical: https://www.aiseo.hamburg/.well-known/security.txt
+Canonical: https://aiseo.hamburg/.well-known/security.txt
 
 # Security Policy for aiseo.hamburg
 # 

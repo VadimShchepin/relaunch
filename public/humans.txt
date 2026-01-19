@@ -21,7 +21,7 @@ AI Assistant: Kiro
 Location: Hamburg, Germany
 
 /* CONTACT */
-Website: https://www.aiseo.hamburg
+Website: https://aiseo.hamburg
 Email: hello@aiseo.hamburg
 Phone: +49 176 321 94 754
 Address: Flottbeker Drift 1, 22607 Hamburg, Germany

@@ -2,11 +2,11 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.aiseo.hamburg/sitemap.xml
+Sitemap: https://aiseo.hamburg/sitemap.xml
 
 # AI/LLM specific files
-Sitemap: https://www.aiseo.hamburg/llms.txt
-Sitemap: https://www.aiseo.hamburg/ai.txt
+Sitemap: https://aiseo.hamburg/llms.txt
+Sitemap: https://aiseo.hamburg/ai.txt
 
 # Allow all crawlers including AI
 User-agent: GPTBot

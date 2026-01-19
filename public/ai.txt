@@ -1,5 +1,5 @@
 # AI.txt - AI Crawler Instructions
-# Website: https://www.aiseo.hamburg
+# Website: https://aiseo.hamburg
 # Purpose: AI SEO and Generative Engine Optimization for Hamburg businesses
 
 ## Crawling Permissions
@@ -13,7 +13,7 @@ business-type: AI SEO Consulting
 location: Hamburg, Germany
 contact-email: hello@aiseo.hamburg
 contact-phone: +49 176 321 94 754
-website: https://www.aiseo.hamburg
+website: https://aiseo.hamburg
 
 ## Services Summary
 primary-service: KI-Sichtbarkeit (AI Visibility Optimization)
