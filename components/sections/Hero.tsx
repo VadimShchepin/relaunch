@@ -15,12 +15,12 @@ export const Hero: React.FC = () => {
                 {/* Left Aligned Content */}
                 <div className="max-w-7xl mb-32">
                     <FadeIn>
-                        <div className="flex flex-col lg:flex-row gap-12 items-start lg:items-center justify-between">
-                            <h1 className="text-[4rem] md:text-[5.5rem] lg:text-[6.5rem] leading-[1.0] font-semibold tracking-[-0.04em] text-black shrink-0">
+                        <div className="flex flex-col xl:flex-row gap-8 lg:gap-12 items-start xl:items-center justify-between">
+                            <h1 className="text-[3.5rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[6.5rem] leading-[1.0] font-semibold tracking-[-0.04em] text-black shrink-0">
                                 Wirst du genannt,<br />
                                 wenn KI gefragt wird?
                             </h1>
-                            <div className="hidden lg:block pt-[82px]">
+                            <div className="hidden xl:block pt-[82px]">
                                 <Button
                                     href="/contact"
                                     primary
@@ -31,15 +31,15 @@ export const Hero: React.FC = () => {
                                 </Button>
                             </div>
                         </div>
-                        <p className="text-xl md:text-2xl font-medium text-gray-800/80 leading-relaxed max-w-2xl mt-12">
+                        <p className="text-lg sm:text-xl md:text-xl lg:text-2xl font-medium text-gray-800/80 leading-relaxed max-w-2xl mt-8 lg:mt-12">
                             Ich helfe Hamburger Unternehmen, von KI empfohlen zu werden – nicht nur gefunden.
                         </p>
-                        <div className="lg:hidden mt-8">
+                        <div className="xl:hidden mt-6 lg:mt-8">
                             <Button
                                 href="/contact"
                                 primary
                                 text="KI-Sichtbarkeit prüfen"
-                                className="w-full justify-center !text-lg !py-4 shadow-xl"
+                                className="w-full sm:w-auto justify-center !text-base lg:!text-lg !py-4 shadow-xl"
                             >
                                 <PlatformIconLoop className="bg-white/10 w-8 h-8 rounded-full shrink-0" iconClassName="text-sm text-white" />
                             </Button>
@@ -47,48 +47,48 @@ export const Hero: React.FC = () => {
                     </FadeIn>
                 </div>
 
-                {/* Staggered Card Row - Matching Reference Style */}
-                <div className="flex flex-col lg:flex-row gap-8 items-start lg:items-center -mx-4 lg:-mx-0">
+                {/* Staggered Card Row - Responsive Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8 items-start">
 
                     {/* Card 1: Blue Stats - $750B Market Shift */}
-                    <div className="w-full lg:w-1/4 bg-[#017eff] p-6 rounded-card text-white aspect-[3/4] flex flex-col justify-between transform -rotate-1 hover:rotate-0 transition-all duration-500 shadow-xl relative z-10">
+                    <div className="w-full bg-[#017eff] p-4 lg:p-6 rounded-card text-white aspect-[3/4] flex flex-col justify-between transform -rotate-1 hover:rotate-0 transition-all duration-500 shadow-xl relative z-10 xl:translate-y-0">
                         <FadeIn delay={100} className="h-full flex flex-col justify-between">
                             {/* Top: Main Stat */}
                             <div>
-                                <span className="text-[2.5rem] font-semibold tracking-tighter leading-none block">$750 Mrd.</span>
-                                <p className="text-sm font-medium mt-1 tracking-tight leading-snug opacity-90">
+                                <span className="text-[2rem] lg:text-[2.5rem] font-semibold tracking-tighter leading-none block">$750 Mrd.</span>
+                                <p className="text-xs lg:text-sm font-medium mt-1 tracking-tight leading-snug opacity-90">
                                     Umsatz fließt bis 2028 über KI-Suche.
                                 </p>
                             </div>
 
                             {/* Middle: Additional Stats */}
-                            <div className="space-y-3 py-4">
-                                <div className="bg-white/10 rounded-lg p-3">
-                                    <p className="text-xs font-medium leading-snug">
+                            <div className="space-y-2 lg:space-y-3 py-3 lg:py-4">
+                                <div className="bg-white/10 rounded-lg p-2 lg:p-3">
+                                    <p className="text-[10px] lg:text-xs font-medium leading-snug">
                                         <span className="text-white font-bold">Höhere Abschlussquote</span> durch KI-Empfehlungen
                                     </p>
-                                    <a href="https://www.amsive.com/insights/seo/does-llm-traffic-convert-better-than-organic-a-new-data-backed-study/" target="_blank" rel="noopener noreferrer" className="text-[9px] opacity-60 hover:opacity-100 underline">Amsive 2025</a>
+                                    <a href="https://www.amsive.com/insights/seo/does-llm-traffic-convert-better-than-organic-a-new-data-backed-study/" target="_blank" rel="noopener noreferrer" className="text-[8px] lg:text-[9px] opacity-60 hover:opacity-100 underline">Amsive 2025</a>
                                 </div>
-                                <div className="bg-white/10 rounded-lg p-3">
-                                    <p className="text-xs font-medium leading-snug">
+                                <div className="bg-white/10 rounded-lg p-2 lg:p-3">
+                                    <p className="text-[10px] lg:text-xs font-medium leading-snug">
                                         <span className="text-white font-bold">20-50%</span> weniger Traffic ohne GEO-Optimierung
                                     </p>
-                                    <a href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/new-front-door-to-the-internet-winning-in-the-age-of-ai-search" target="_blank" rel="noopener noreferrer" className="text-[9px] opacity-60 hover:opacity-100 underline">McKinsey 2025</a>
+                                    <a href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/new-front-door-to-the-internet-winning-in-the-age-of-ai-search" target="_blank" rel="noopener noreferrer" className="text-[8px] lg:text-[9px] opacity-60 hover:opacity-100 underline">McKinsey 2025</a>
                                 </div>
                             </div>
 
                             {/* Bottom: Icons & Main Source */}
                             <div>
-                                <div className="flex items-center gap-3 mb-2">
-                                    <Icon icon="simple-icons:openai" className="w-4 h-4 opacity-80" />
-                                    <Icon icon="simple-icons:perplexity" className="w-4 h-4 opacity-80" />
-                                    <Icon icon="simple-icons:google" className="w-4 h-4 opacity-80" />
+                                <div className="flex items-center gap-2 lg:gap-3 mb-2">
+                                    <Icon icon="simple-icons:openai" className="w-3 h-3 lg:w-4 lg:h-4 opacity-80" />
+                                    <Icon icon="simple-icons:perplexity" className="w-3 h-3 lg:w-4 lg:h-4 opacity-80" />
+                                    <Icon icon="simple-icons:google" className="w-3 h-3 lg:w-4 lg:h-4 opacity-80" />
                                 </div>
                                 <a
                                     href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/new-front-door-to-the-internet-winning-in-the-age-of-ai-search"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-[9px] font-medium opacity-60 hover:opacity-100 transition-opacity underline"
+                                    className="text-[8px] lg:text-[9px] font-medium opacity-60 hover:opacity-100 transition-opacity underline"
                                 >
                                     Hauptquelle: McKinsey & Company
                                 </a>
@@ -97,7 +97,7 @@ export const Hero: React.FC = () => {
                     </div>
 
                     {/* Card 2: ChatGPT Image - Offset Down */}
-                    <div className="w-full lg:w-1/4 bg-white rounded-card overflow-hidden aspect-[3/4] lg:translate-y-12 transform rotate-1 hover:rotate-0 hover:scale-[1.25] hover:z-50 transition-all duration-500 shadow-2xl border border-gray-100 p-1 group">
+                    <div className="w-full bg-white rounded-card overflow-hidden aspect-[3/4] xl:translate-y-12 transform rotate-1 hover:rotate-0 hover:scale-105 xl:hover:scale-[1.25] hover:z-50 transition-all duration-500 shadow-2xl border border-gray-100 p-1 group">
                         <div className="w-full h-full rounded-[12px] overflow-hidden bg-black">
                             <FadeIn delay={200} className="h-full w-full flex items-center justify-center relative">
                                 <img
@@ -112,19 +112,19 @@ export const Hero: React.FC = () => {
                     </div>
 
                     {/* Card 3: Zitate/Quellen - Offset Up */}
-                    <div className="w-full lg:w-1/4 bg-[#2ec88e] rounded-card text-brand-dark aspect-[3/4] lg:-translate-y-8 transform -rotate-1 hover:rotate-0 hover:scale-[1.25] hover:z-50 transition-all duration-500 shadow-xl relative z-2 overflow-hidden flex flex-col justify-between group">
-                        <div className="p-10 pb-0">
-                            <span className="text-[3.5rem] font-semibold tracking-tighter leading-none block">Zitate</span>
-                            <p className="text-xl font-semibold mt-4 mb-2 tracking-tight leading-snug">
+                    <div className="w-full bg-[#2ec88e] rounded-card text-brand-dark aspect-[3/4] xl:-translate-y-8 transform -rotate-1 hover:rotate-0 hover:scale-105 xl:hover:scale-[1.25] hover:z-50 transition-all duration-500 shadow-xl relative z-2 overflow-hidden flex flex-col justify-between group">
+                        <div className="p-6 lg:p-8 xl:p-10 pb-0">
+                            <span className="text-[2.5rem] lg:text-[3rem] xl:text-[3.5rem] font-semibold tracking-tighter leading-none block">Zitate</span>
+                            <p className="text-base lg:text-lg xl:text-xl font-semibold mt-3 lg:mt-4 mb-2 tracking-tight leading-snug">
                                 KI nennt keine Websites – sie nennt Quellen.
                             </p>
-                            <p className="text-sm text-brand-dark/70 font-medium leading-tight">
+                            <p className="text-xs lg:text-sm text-brand-dark/70 font-medium leading-tight">
                                 Wir sorgen dafür, dass dein Unternehmen diese Quelle ist.
                             </p>
                         </div>
 
                         {/* Proof Image Integration */}
-                        <div className="px-6 pb-6">
+                        <div className="px-4 lg:px-6 pb-4 lg:pb-6">
                             <div className="bg-black/5 rounded-xl overflow-hidden border border-black/10 p-2 shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
                                 <img
                                     src="/image/kinderAlbum/proof3.webp"
@@ -136,7 +136,7 @@ export const Hero: React.FC = () => {
                     </div>
 
                     {/* Card 4: AI Search Results Image - Offset Down */}
-                    <div className="w-full lg:w-1/4 bg-white rounded-card overflow-hidden aspect-[3/4] lg:translate-y-20 transform rotate-1 hover:rotate-0 hover:scale-[1.25] hover:z-50 transition-all duration-500 shadow-2xl border border-gray-100 p-1 group">
+                    <div className="w-full bg-white rounded-card overflow-hidden aspect-[3/4] xl:translate-y-20 transform rotate-1 hover:rotate-0 hover:scale-105 xl:hover:scale-[1.25] hover:z-50 transition-all duration-500 shadow-2xl border border-gray-100 p-1 group">
                         <div className="w-full h-full rounded-[12px] overflow-hidden bg-black">
                             <FadeIn delay={400} className="h-full w-full flex items-center justify-center relative">
                                 <img

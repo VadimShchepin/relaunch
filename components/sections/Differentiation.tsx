@@ -9,10 +9,10 @@ export const Differentiation: React.FC = () => {
                     {/* Headline (Right on Desktop, Top on Mobile) */}
                     <div className="lg:col-span-7 lg:col-start-6 lg:row-start-1 order-1 lg:order-2">
                         <FadeIn>
-                            <h2 className="text-6xl md:text-8xl lg:text-[10rem] font-bold tracking-tighter leading-[0.85] text-brand-text mb-6 lg:mb-8">
+                            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-[10rem] font-bold tracking-tighter leading-[0.85] text-brand-text mb-6 lg:mb-8">
                                 Für Profis.
                             </h2>
-                            <p className="text-5xl md:text-7xl lg:text-8xl font-bold text-brand-accent tracking-tight leading-[0.9] mb-12 lg:mb-16">
+                            <p className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-bold text-brand-accent tracking-tight leading-[0.9] mb-12 lg:mb-16">
                                 Nicht für alle.
                             </p>
                             <div>
