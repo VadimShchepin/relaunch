@@ -15,17 +15,50 @@ export default function ContactPage() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError("");
 
-    // TODO: Implement actual form submission
-    // For now, just show success state
-    setTimeout(() => {
-      setSubmitted(true);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (data.ok) {
+        setSubmitted(true);
+        setFormData({ name: "", email: "", company: "", message: "" });
+      } else {
+        setError(getErrorMessage(data.error));
+      }
+    } catch (error) {
+      setError("Ein Fehler ist aufgetreten. Bitte versuche es später erneut.");
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
+  };
+
+  const getErrorMessage = (error: string) => {
+    switch (error) {
+      case 'MISSING_FIELDS':
+        return 'Bitte fülle alle Pflichtfelder aus.';
+      case 'INVALID_EMAIL':
+        return 'Bitte gib eine gültige E-Mail-Adresse ein.';
+      case 'SEND_FAILED':
+        return 'Die E-Mail konnte nicht gesendet werden. Bitte versuche es später erneut.';
+      case 'SERVER_MISCONFIG':
+        return 'Technischer Fehler. Bitte kontaktiere uns direkt unter hello@aiseo.hamburg.';
+      default:
+        return 'Ein unbekannter Fehler ist aufgetreten.';
+    }
   };
 
   return (
@@ -217,6 +250,12 @@ export default function ContactPage() {
                         </>
                       )}
                     </button>
+
+                    {error && (
+                      <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
+                        <p className="text-red-700 text-sm">{error}</p>
+                      </div>
+                    )}
 
                     <p className="text-xs text-gray-500 text-center">
                       Mit dem Absenden erklärst du dich mit unserer{' '}
