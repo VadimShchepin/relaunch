@@ -48,6 +48,7 @@ export async function POST(req: Request) {
                 user: smtpUser,
                 pass: smtpPassword,
             },
+            requireTLS: true,
         });
 
         // Email content
@@ -93,6 +94,7 @@ Diese E-Mail wurde über das Kontaktformular auf aiseo.hamburg gesendet.
         // Send email with configured sender and recipient
         await transporter.sendMail({
             from: `"AISEO Kontaktformular" <${senderEmail}>`,
+            sender: senderEmail, // Explicit sender header for Brevo
             to: recipientEmail,
             subject: subject,
             text: textContent,
