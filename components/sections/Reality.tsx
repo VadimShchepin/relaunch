@@ -5,11 +5,22 @@ export const Reality: React.FC = () => (
     <section className="py-20 px-6 md:px-12 lg:px-20 max-w-[1600px] mx-auto bg-white">
         <div className="max-w-[1400px] mx-auto">
 
-            {/* Top Section: Text Left + Headline Right */}
+            {/* Top Section: Headline First on Mobile, Text Left + Headline Right on Desktop */}
             <div className="flex mt-5 flex-col lg:flex-row lg:items-start gap-12 lg:gap-20 mb-16">
 
-                {/* Left Column - Simple Text Block */}
-                <div className="w-full lg:w-[38%] lg:max-w-[380px]">
+                {/* Headline - First on Mobile, Right on Desktop */}
+                <div className="w-full lg:w-[62%] lg:flex lg:justify-end order-1 lg:order-2">
+                    <FadeIn delay={100}>
+                        <h2 className="text-[2.8rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] xl:text-[6rem] font-semibold leading-[1.0] tracking-[-0.03em] text-black text-left lg:text-right">
+                            KI verändert,<br />
+                            wie Kunden<br />
+                            entscheiden
+                        </h2>
+                    </FadeIn>
+                </div>
+
+                {/* Text Block - Second on Mobile, Left on Desktop */}
+                <div className="w-full lg:w-[38%] lg:max-w-[380px] order-2 lg:order-1">
                     <FadeIn>
                         <p className="text-base text-gray-700 leading-[1.7] mb-4">
                             KI-Systeme zeigen keine Suchlisten.
@@ -32,17 +43,6 @@ export const Reality: React.FC = () => (
                         </p>
                     </FadeIn>
                 </div>
-
-                {/* Right Column - Headline */}
-                <div className="w-full lg:w-[62%] lg:flex lg:justify-end">
-                    <FadeIn delay={100}>
-                        <h2 className="text-[2.8rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] xl:text-[6rem] font-semibold leading-[1.0] tracking-[-0.03em] text-black text-left lg:text-right">
-                            KI verändert,<br />
-                            wie Kunden<br />
-                            entscheiden
-                        </h2>
-                    </FadeIn>
-                </div>
             </div>
 
             {/* Bottom Gallery - Staggered Layout, aligned right */}
@@ -59,9 +59,9 @@ export const Reality: React.FC = () => (
                     </div>
                 </FadeIn>
 
-                {/* Image 2 - Medium */}
-                <FadeIn delay={350} className="w-full md:w-[14%]">
-                    <div className="h-[160px] md:h-[190px] lg:h-[260px] rounded-xl overflow-hidden">
+                {/* Image 2 - Medium - Hidden on Mobile */}
+                <FadeIn delay={350} className="hidden md:block md:w-[14%]">
+                    <div className="h-[190px] lg:h-[260px] rounded-xl overflow-hidden">
                         <img
                             src="/images/reality/growth.webp"
                             alt="Growth Analytics"
