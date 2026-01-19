@@ -169,8 +169,8 @@ export const Proof: React.FC = () => {
     return (
         <section ref={container} className="relative w-full h-screen bg-brand-olive overflow-hidden">
             {/* Section Label */}
-            <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-30">
-                <span className="text-sm font-semibold uppercase tracking-[0.2em] text-white/70 bg-black/20 px-4 py-2 rounded-full backdrop-blur-sm">
+            <div className="absolute top-6 md:top-8 left-1/2 transform -translate-x-1/2 z-30 px-4">
+                <span className="text-xs md:text-sm font-semibold uppercase tracking-[0.15em] md:tracking-[0.2em] text-white/70 bg-black/20 px-3 md:px-4 py-2 rounded-full backdrop-blur-sm whitespace-nowrap">
                     Echte KI-Anfragen & Antworten
                 </span>
             </div>

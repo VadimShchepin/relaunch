@@ -50,25 +50,37 @@ export const Hero: React.FC = () => {
                 {/* Mobile: Lightweight Proof Block */}
                 <div className="block xl:hidden">
                     <FadeIn delay={100}>
-                        <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center max-w-md mx-auto">
-                            <div className="flex items-center justify-center gap-3 mb-4">
-                                <div className="w-8 h-8 bg-[#2ec88e] rounded-full flex items-center justify-center">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                        <path d="M9 12l2 2 4-4" />
-                                    </svg>
-                                </div>
-                                <span className="text-sm font-semibold text-gray-600 uppercase tracking-wider">Von KI empfohlen</span>
+                        <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 max-w-sm mx-auto">
+                            {/* Screenshot */}
+                            <div className="mb-4 rounded-xl overflow-hidden border border-gray-100">
+                                <img
+                                    src="/image/kinderAlbum/proof4-kinderAlbum-perplexity.webp"
+                                    alt="KinderAlbum Perplexity Empfehlung"
+                                    className="w-full h-auto"
+                                />
                             </div>
-                            <p className="text-lg font-semibold text-black mb-3 leading-tight">
-                                „Blitz Hamburg wird von ChatGPT als Top-Anbieter genannt."
-                            </p>
-                            <div className="flex items-center justify-center gap-2 text-xs text-gray-500">
-                                <span>Quelle:</span>
-                                <div className="flex items-center gap-1">
-                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 19.7a6.0462 6.0462 0 0 0 4.0179-2.9003 6.0651 6.0651 0 0 0-.7475-7.0785zm-9.022 12.6508a4.5 4.5 0 0 1-2.8094-1.0394 4.4 4.4 0 0 1-1.3137-3.1496 4.5 4.5 0 0 1 1.3137-3.1496 4.5 4.5 0 0 1 2.8094-1.0394 4.5 4.5 0 0 1 2.8094 1.0394 4.4 4.4 0 0 1 1.3137 3.1496 4.5 4.5 0 0 1-1.3137 3.1496 4.5 4.5 0 0 1-2.8094 1.0394z" />
-                                    </svg>
-                                    <span>ChatGPT</span>
+
+                            {/* Proof Text */}
+                            <div className="text-center">
+                                <div className="flex items-center justify-center gap-2 mb-3">
+                                    <div className="w-6 h-6 bg-[#2ec88e] rounded-full flex items-center justify-center">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                            <path d="M9 12l2 2 4-4" />
+                                        </svg>
+                                    </div>
+                                    <span className="text-xs font-semibold text-gray-600 uppercase tracking-wider">Von KI empfohlen</span>
+                                </div>
+                                <p className="text-base font-semibold text-black mb-2 leading-tight">
+                                    „Spezialisierte, DSGVO-konforme Foto-Plattform für Schulen."
+                                </p>
+                                <div className="flex items-center justify-center gap-2 text-xs text-gray-500">
+                                    <span>Quelle:</span>
+                                    <div className="flex items-center gap-1">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                                        </svg>
+                                        <span>Perplexity</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
