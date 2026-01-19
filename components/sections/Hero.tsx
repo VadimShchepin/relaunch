@@ -47,11 +47,39 @@ export const Hero: React.FC = () => {
                     </FadeIn>
                 </div>
 
-                {/* Staggered Card Row - Responsive Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8 items-start">
+                {/* Mobile: Lightweight Proof Block */}
+                <div className="block xl:hidden">
+                    <FadeIn delay={100}>
+                        <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center max-w-md mx-auto">
+                            <div className="flex items-center justify-center gap-3 mb-4">
+                                <div className="w-8 h-8 bg-[#2ec88e] rounded-full flex items-center justify-center">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M9 12l2 2 4-4" />
+                                    </svg>
+                                </div>
+                                <span className="text-sm font-semibold text-gray-600 uppercase tracking-wider">Von KI empfohlen</span>
+                            </div>
+                            <p className="text-lg font-semibold text-black mb-3 leading-tight">
+                                „Blitz Hamburg wird von ChatGPT als Top-Anbieter genannt."
+                            </p>
+                            <div className="flex items-center justify-center gap-2 text-xs text-gray-500">
+                                <span>Quelle:</span>
+                                <div className="flex items-center gap-1">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 19.7a6.0462 6.0462 0 0 0 4.0179-2.9003 6.0651 6.0651 0 0 0-.7475-7.0785zm-9.022 12.6508a4.5 4.5 0 0 1-2.8094-1.0394 4.4 4.4 0 0 1-1.3137-3.1496 4.5 4.5 0 0 1 1.3137-3.1496 4.5 4.5 0 0 1 2.8094-1.0394 4.5 4.5 0 0 1 2.8094 1.0394 4.4 4.4 0 0 1 1.3137 3.1496 4.5 4.5 0 0 1-1.3137 3.1496 4.5 4.5 0 0 1-2.8094 1.0394z" />
+                                    </svg>
+                                    <span>ChatGPT</span>
+                                </div>
+                            </div>
+                        </div>
+                    </FadeIn>
+                </div>
+
+                {/* Desktop: Full Card Experience */}
+                <div className="hidden xl:grid xl:grid-cols-4 gap-6 lg:gap-8 items-start">
 
                     {/* Card 1: Blue Stats - $750B Market Shift */}
-                    <div className="w-full bg-[#017eff] p-4 lg:p-6 rounded-card text-white aspect-[3/4] flex flex-col justify-between transform -rotate-1 hover:rotate-0 transition-all duration-500 shadow-xl relative z-10 xl:translate-y-0">
+                    <div className="w-full bg-[#017eff] p-4 lg:p-6 rounded-card text-white aspect-[3/4] flex flex-col justify-between transform -rotate-1 hover:rotate-0 transition-all duration-500 shadow-xl relative z-10">
                         <FadeIn delay={100} className="h-full flex flex-col justify-between">
                             {/* Top: Main Stat */}
                             <div>
@@ -97,7 +125,7 @@ export const Hero: React.FC = () => {
                     </div>
 
                     {/* Card 2: ChatGPT Image - Offset Down */}
-                    <div className="w-full bg-white rounded-card overflow-hidden aspect-[3/4] xl:translate-y-12 transform rotate-1 hover:rotate-0 hover:scale-105 xl:hover:scale-[1.25] hover:z-50 transition-all duration-500 shadow-2xl border border-gray-100 p-1 group">
+                    <div className="w-full bg-white rounded-card overflow-hidden aspect-[3/4] translate-y-12 transform rotate-1 hover:rotate-0 hover:scale-[1.25] hover:z-50 transition-all duration-500 shadow-2xl border border-gray-100 p-1 group">
                         <div className="w-full h-full rounded-[12px] overflow-hidden bg-black">
                             <FadeIn delay={200} className="h-full w-full flex items-center justify-center relative">
                                 <img
@@ -112,7 +140,7 @@ export const Hero: React.FC = () => {
                     </div>
 
                     {/* Card 3: Zitate/Quellen - Offset Up */}
-                    <div className="w-full bg-[#2ec88e] rounded-card text-brand-dark aspect-[3/4] xl:-translate-y-8 transform -rotate-1 hover:rotate-0 hover:scale-105 xl:hover:scale-[1.25] hover:z-50 transition-all duration-500 shadow-xl relative z-2 overflow-hidden flex flex-col justify-between group">
+                    <div className="w-full bg-[#2ec88e] rounded-card text-brand-dark aspect-[3/4] -translate-y-8 transform -rotate-1 hover:rotate-0 hover:scale-[1.25] hover:z-50 transition-all duration-500 shadow-xl relative z-2 overflow-hidden flex flex-col justify-between group">
                         <div className="p-6 lg:p-8 xl:p-10 pb-0">
                             <span className="text-[2.5rem] lg:text-[3rem] xl:text-[3.5rem] font-semibold tracking-tighter leading-none block">Zitate</span>
                             <p className="text-base lg:text-lg xl:text-xl font-semibold mt-3 lg:mt-4 mb-2 tracking-tight leading-snug">
@@ -136,7 +164,7 @@ export const Hero: React.FC = () => {
                     </div>
 
                     {/* Card 4: AI Search Results Image - Offset Down */}
-                    <div className="w-full bg-white rounded-card overflow-hidden aspect-[3/4] xl:translate-y-20 transform rotate-1 hover:rotate-0 hover:scale-105 xl:hover:scale-[1.25] hover:z-50 transition-all duration-500 shadow-2xl border border-gray-100 p-1 group">
+                    <div className="w-full bg-white rounded-card overflow-hidden aspect-[3/4] translate-y-20 transform rotate-1 hover:rotate-0 hover:scale-[1.25] hover:z-50 transition-all duration-500 shadow-2xl border border-gray-100 p-1 group">
                         <div className="w-full h-full rounded-[12px] overflow-hidden bg-black">
                             <FadeIn delay={400} className="h-full w-full flex items-center justify-center relative">
                                 <img
