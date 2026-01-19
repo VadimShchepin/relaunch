@@ -15,15 +15,6 @@ export const Differentiation: React.FC = () => {
                             <p className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-bold text-brand-accent tracking-tight leading-[0.9] mb-12 lg:mb-16">
                                 Nicht für alle.
                             </p>
-                            <div>
-                                <a
-                                    href="/contact"
-                                    className="inline-flex items-center text-lg font-bold tracking-tight text-brand-text hover:text-brand-accent transition-colors group"
-                                >
-                                    KI-Sichtbarkeit prüfen
-                                    <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
-                                </a>
-                            </div>
                         </FadeIn>
                     </div>
 
@@ -38,10 +29,25 @@ export const Differentiation: React.FC = () => {
                             </div>
 
                             <p className="text-lg md:text-xl font-medium text-brand-text/70 mb-8">Nicht für dich, wenn …</p>
-                            <div className="space-y-6">
+                            <div className="space-y-6 mb-10">
                                 <p className="text-lg md:text-xl font-semibold text-black leading-tight">du <span className="underline decoration-2 decoration-brand-accent underline-offset-4">Kontrolle abgibst</span>, statt sie zu übernehmen.</p>
                                 <p className="text-lg md:text-xl font-semibold text-black leading-tight">es dir <span className="underline decoration-2 decoration-brand-accent underline-offset-4">egal ist</span>, wie KI dein Unternehmen beschreibt.</p>
                                 <p className="text-lg md:text-xl font-semibold text-black leading-tight">du Sichtbarkeit <span className="underline decoration-2 decoration-brand-accent underline-offset-4">dem Zufall überlässt</span>.</p>
+                            </div>
+
+                            {/* CTA Button - More prominent and clearly clickable */}
+                            <div className="pt-4">
+                                <a
+                                    href="/contact"
+                                    className="inline-flex items-center gap-3 bg-black text-white px-6 py-4 rounded-full font-semibold text-base hover:bg-gray-800 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl group"
+                                >
+                                    <span>KI-Sichtbarkeit prüfen</span>
+                                    <div className="w-6 h-6 bg-brand-accent rounded-full flex items-center justify-center group-hover:translate-x-1 transition-transform duration-300">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                            <path d="M5 12h14m-7-7 7 7-7 7" />
+                                        </svg>
+                                    </div>
+                                </a>
                             </div>
                         </FadeIn>
                     </div>
