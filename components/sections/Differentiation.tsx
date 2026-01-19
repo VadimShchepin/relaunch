@@ -3,9 +3,9 @@ import { FadeIn } from '@/components/ui/FadeIn';
 
 export const Differentiation: React.FC = () => {
     return (
-        <section className="min-h-screen lg:h-screen flex items-center px-6 md:px-12 lg:px-20 max-w-[1800px] mx-auto bg-[#FBF9F7] rounded-section my-20">
-            <div className="max-w-[1600px] mx-auto w-full py-20 lg:py-0">
-                <div className="grid lg:grid-cols-12 gap-12 lg:gap-24 items-center">
+        <section className="py-16 md:py-20 lg:py-24 xl:py-32 px-6 md:px-12 lg:px-20 max-w-[1800px] mx-auto bg-[#FBF9F7] rounded-section my-12 lg:my-20">
+            <div className="max-w-[1600px] mx-auto w-full">
+                <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 xl:gap-24 items-start lg:items-center">
                     {/* Headline (Right on Desktop, Top on Mobile) */}
                     <div className="lg:col-span-7 lg:col-start-6 lg:row-start-1 order-1 lg:order-2">
                         <FadeIn>
