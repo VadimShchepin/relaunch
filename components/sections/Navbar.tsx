@@ -29,13 +29,13 @@ export const Navbar: React.FC = () => {
         <>
             <nav className="fixed top-0 left-0 w-full px-6 py-6 z-50 flex justify-between items-center pointer-events-none">
                 {/* Logo */}
-                <div className="pointer-events-auto">
+                <a href="/" className="pointer-events-auto" aria-label="Zur Startseite">
                     <div className="bg-white/90 backdrop-blur-md border border-gray-100 shadow-[0_4px_30px_rgba(0,0,0,0.06)] px-4 py-2 rounded-full transition-all hover:scale-105">
                         <div className="font-bold text-xl tracking-tighter text-black uppercase leading-none">
                             aiseo<span className="text-brand-accent">.</span>
                         </div>
                     </div>
-                </div>
+                </a>
 
                 {/* Center Pill Nav - Visible on Desktop */}
                 <div className="hidden lg:flex pointer-events-auto bg-white/90 backdrop-blur-md px-1 py-1 rounded-full shadow-[0_4px_30px_rgba(0,0,0,0.06)] border border-gray-100 gap-1">
