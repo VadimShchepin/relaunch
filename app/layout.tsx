@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "aiseo.hamburg — KI-Sichtbarkeit für Hamburger Unternehmen",
         description: "Professionelle KI-Optimierung für bessere Sichtbarkeit in ChatGPT, Perplexity & Co.",
-        url: "https://aiseo.hamburg",
+        url: "https://www.aiseo.hamburg",
         siteName: "aiseo.hamburg",
         locale: "de_DE",
         type: "website",
@@ -24,6 +24,8 @@ export default function RootLayout({
         <html lang="de">
             <head>
                 <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet" />
+                <link rel="manifest" href="/manifest.json" />
+                <meta name="theme-color" content="#4FAF8C" />
             </head>
             <body className="antialiased">
                 {children}

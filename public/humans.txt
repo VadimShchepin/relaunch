@@ -1,0 +1,30 @@
+/* TEAM */
+Founder & AI SEO Specialist: Vadim Shchepin
+Contact: hello@aiseo.hamburg
+Location: Hamburg, Germany
+LinkedIn: https://www.linkedin.com/in/vadim-shchepin/
+
+/* SITE */
+Last update: 2026-01-18
+Language: German / English
+Doctype: HTML5
+IDE: Kiro AI Assistant
+Technologies: Next.js, TypeScript, Tailwind CSS
+Hosting: Static Export
+Standards: HTML5, CSS3, Accessibility
+
+/* THANKS */
+Built with: Next.js 16, Tailwind CSS
+Fonts: General Sans (Fontshare)
+Icons: Iconify
+AI Assistant: Kiro
+Location: Hamburg, Germany
+
+/* CONTACT */
+Website: https://www.aiseo.hamburg
+Email: hello@aiseo.hamburg
+Phone: +49 176 321 94 754
+Address: Flottbeker Drift 1, 22607 Hamburg, Germany
+
+Specializing in KI-Sichtbarkeit (AI Visibility) for Hamburg businesses.
+Making companies discoverable and recommendable by AI systems.

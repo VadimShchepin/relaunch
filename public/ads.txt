@@ -1,0 +1,4 @@
+# ads.txt for aiseo.hamburg
+# This file is currently empty as we do not run programmatic advertising
+# Contact hello@aiseo.hamburg for advertising inquiries
+# Last updated: 2026-01-18
