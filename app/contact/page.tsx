@@ -82,7 +82,7 @@ export default function ContactPage() {
                     <div>
                       <p>Flottbeker Drift 1</p>
                       <p>22607 Hamburg</p>
-                      <p className="text-gray-500 mt-2">Fokus: Hamburg & Umgebung</p>
+                      <p className="text-gray-500 mt-2">Fokus: DACH, Hamburg & Umgebung</p>
                     </div>
                   </div>
                 </div>
