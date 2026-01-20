@@ -1,6 +1,6 @@
 import React from 'react';
 import { FadeIn } from '@/components/ui/FadeIn';
-import { Icon } from '@iconify/react';
+import { ArrowRightIcon } from '@/components/ui/Icons';
 
 interface FAQItem {
     q: string;
@@ -34,27 +34,31 @@ const HOMEPAGE_FAQS: FAQItem[] = [
     }
 ];
 
-const FAQItem: React.FC<{ item: FAQItem }> = ({ item }) => (
+const FAQItem: React.FC<{ item: FAQItem; includeSchema?: boolean }> = ({ item, includeSchema = false }) => (
     <div
         className="border-b border-gray-100 last:border-b-0 pb-6 last:pb-0"
-        itemScope
-        itemProp="mainEntity"
-        itemType="https://schema.org/Question"
+        {...(includeSchema && {
+            itemScope: true,
+            itemProp: "mainEntity",
+            itemType: "https://schema.org/Question"
+        })}
     >
         <h3
             className="text-base md:text-lg font-semibold text-black tracking-tight mb-3"
-            itemProp="name"
+            {...(includeSchema && { itemProp: "name" })}
         >
             {item.q}
         </h3>
 
         <div
             className="text-gray-600 text-sm md:text-base leading-relaxed"
-            itemProp="acceptedAnswer"
-            itemScope
-            itemType="https://schema.org/Answer"
+            {...(includeSchema && {
+                itemProp: "acceptedAnswer",
+                itemScope: true,
+                itemType: "https://schema.org/Answer"
+            })}
         >
-            <p itemProp="text">{item.a}</p>
+            <p {...(includeSchema && { itemProp: "text" })}>{item.a}</p>
         </div>
     </div>
 );
@@ -102,7 +106,7 @@ export const FAQ: React.FC<FAQProps> = ({ includeFAQPageSchema = false }) => {
                 {/* SEO: List of FAQs always visible for crawlers */}
                 <div className="space-y-6">
                     {HOMEPAGE_FAQS.map((item, index) => (
-                        <FAQItem key={index} item={item} />
+                        <FAQItem key={index} item={item} includeSchema={includeFAQPageSchema} />
                     ))}
                 </div>
 
@@ -113,10 +117,7 @@ export const FAQ: React.FC<FAQProps> = ({ includeFAQPageSchema = false }) => {
                         className="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-black transition-colors group"
                     >
                         Alle Fragen ansehen
-                        <Icon
-                            icon="meteor-icons:arrow-right"
-                            className="w-4 h-4 transition-transform group-hover:translate-x-1"
-                        />
+                        <ArrowRightIcon className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                     </a>
                 </div>
             </FadeIn>
