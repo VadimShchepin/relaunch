@@ -42,7 +42,7 @@ export const Navbar: React.FC = () => {
                     <a href="/#reality" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Realität</a>
                     <a href="/#proof" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Proof</a>
                     <a href="/#process" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Prozess</a>
-                    <a href="/#faq" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">FAQ</a>
+                    <a href="/faq" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">FAQ</a>
                     <a href="/contact" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Kontakt</a>
                 </div>
 
@@ -101,7 +101,7 @@ export const Navbar: React.FC = () => {
                                 Prozess
                             </a>
                             <a
-                                href="/#faq"
+                                href="/faq"
                                 className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2"
                                 onClick={closeMobileMenu}
                             >

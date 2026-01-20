@@ -87,11 +87,7 @@ export default function FAQPage() {
       <Navbar />
 
       <main className="min-h-screen bg-[#F7F5F2]">
-        <section
-          className="px-6 md:px-12 lg:px-20 py-16 md:py-24 max-w-[900px] mx-auto"
-          itemScope
-          itemType="https://schema.org/FAQPage"
-        >
+        <section className="px-6 md:px-12 lg:px-20 py-16 md:py-24 max-w-[900px] mx-auto">
           {/* JSON-LD */}
           <script
             type="application/ld+json"
@@ -113,24 +109,13 @@ export default function FAQPage() {
               <article
                 key={idx}
                 className="border-b border-black/10 pb-10 last:border-b-0 last:pb-0"
-                itemScope
-                itemProp="mainEntity"
-                itemType="https://schema.org/Question"
               >
-                <h2
-                  className="text-lg md:text-xl font-semibold text-black tracking-tight"
-                  itemProp="name"
-                >
+                <h2 className="text-lg md:text-xl font-semibold text-black tracking-tight">
                   {item.q}
                 </h2>
 
-                <div
-                  className="mt-3 text-gray-700 text-base leading-relaxed"
-                  itemProp="acceptedAnswer"
-                  itemScope
-                  itemType="https://schema.org/Answer"
-                >
-                  <p itemProp="text">{item.a}</p>
+                <div className="mt-3 text-gray-700 text-base leading-relaxed">
+                  <p>{item.a}</p>
                 </div>
               </article>
             ))}
