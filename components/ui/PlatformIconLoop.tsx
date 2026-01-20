@@ -16,7 +16,7 @@ interface PlatformIconLoopProps {
 
 export const PlatformIconLoop: React.FC<PlatformIconLoopProps> = ({
     className = "bg-white/10 w-7 h-7 rounded-full shadow-sm transition-all duration-500 group-hover:scale-110 group-hover:bg-white/20 shrink-0",
-    iconClassName = "text-xs text-white"
+    iconClassName = "w-3 h-3 text-white"
 }) => {
     const [iconIndex, setIconIndex] = useState(0);
 
