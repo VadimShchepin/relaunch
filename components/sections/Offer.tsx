@@ -1,7 +1,7 @@
 import React from 'react';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
-import { Icon } from '@iconify/react';
+import { CheckIcon } from '@/components/ui/Icons';
 import Link from 'next/link';
 
 
@@ -32,7 +32,7 @@ export const Offer: React.FC = () => (
                                 "3 Prioritäten: Die wichtigsten Hebel"
                             ].map((item, i) => (
                                 <li key={i} className="flex gap-4 items-center text-lg text-gray-300 font-medium">
-                                    <Icon icon="meteor-icons:check" className="w-5 h-5 text-brand-accent flex-shrink-0" />
+                                    <CheckIcon className="w-5 h-5 text-brand-accent flex-shrink-0" />
                                     {item}
                                 </li>
                             ))}
