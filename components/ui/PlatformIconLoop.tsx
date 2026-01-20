@@ -1,9 +1,13 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Icon } from '@iconify/react';
+import { OpenAIIcon, PerplexityIcon, GoogleIcon } from '@/components/ui/Icons';
 
-const ICONS = ["simple-icons:openai", "simple-icons:perplexity", "simple-icons:google"];
+const ICONS = [
+    { Component: OpenAIIcon, key: 'openai' },
+    { Component: PerplexityIcon, key: 'perplexity' },
+    { Component: GoogleIcon, key: 'google' }
+];
 
 interface PlatformIconLoopProps {
     className?: string;
@@ -25,15 +29,15 @@ export const PlatformIconLoop: React.FC<PlatformIconLoopProps> = ({
 
     return (
         <div className={`flex items-center justify-center overflow-hidden relative ${className}`}>
-            {ICONS.map((icon, idx) => (
+            {ICONS.map(({ Component, key }, idx) => (
                 <div
-                    key={icon}
+                    key={key}
                     className={`absolute inset-0 flex items-center justify-center transition-all duration-1000 ${idx === iconIndex
                         ? 'opacity-100 scale-100 rotate-0'
                         : 'opacity-0 scale-50 rotate-90'
                         }`}
                 >
-                    <Icon icon={icon} className={iconClassName} />
+                    <Component className={iconClassName} />
                 </div>
             ))}
         </div>

@@ -5,7 +5,7 @@ import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 import { PlatformIconLoop } from '@/components/ui/PlatformIconLoop';
 import { IMAGES } from '@/lib/constants';
-import { Icon } from '@iconify/react';
+import { OpenAIIcon, PerplexityIcon, GoogleIcon } from '@/components/ui/Icons';
 
 export const Hero: React.FC = () => {
 
@@ -120,9 +120,9 @@ export const Hero: React.FC = () => {
                             {/* Bottom: Icons & Main Source */}
                             <div>
                                 <div className="flex items-center gap-2 lg:gap-3 mb-2">
-                                    <Icon icon="simple-icons:openai" className="w-3 h-3 lg:w-4 lg:h-4 opacity-80" />
-                                    <Icon icon="simple-icons:perplexity" className="w-3 h-3 lg:w-4 lg:h-4 opacity-80" />
-                                    <Icon icon="simple-icons:google" className="w-3 h-3 lg:w-4 lg:h-4 opacity-80" />
+                                    <OpenAIIcon className="w-3 h-3 lg:w-4 lg:h-4 opacity-80" />
+                                    <PerplexityIcon className="w-3 h-3 lg:w-4 lg:h-4 opacity-80" />
+                                    <GoogleIcon className="w-3 h-3 lg:w-4 lg:h-4 opacity-80" />
                                 </div>
                                 <a
                                     href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/new-front-door-to-the-internet-winning-in-the-age-of-ai-search"

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { FadeIn } from "@/components/ui/FadeIn";
-import { Icon } from "@iconify/react";
+import { EmailIcon, PhoneIcon, MapMarkerIcon, LinkedInIcon, InstagramIcon, TwitterIcon, CheckIcon, LoadingIcon, ArrowRightIcon } from "@/components/ui/Icons";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -93,14 +93,14 @@ export default function ContactPage() {
                       href="mailto:hello@aiseo.hamburg"
                       className="flex items-center gap-3 text-lg text-black hover:text-brand-accent transition-colors group"
                     >
-                      <Icon icon="mdi:email" className="w-5 h-5 text-gray-400 group-hover:text-brand-accent" />
+                      <EmailIcon className="w-5 h-5 text-gray-400 group-hover:text-brand-accent" />
                       hello@aiseo.hamburg
                     </a>
                     <a
                       href="tel:+4917632194754"
                       className="flex items-center gap-3 text-lg text-black hover:text-brand-accent transition-colors group"
                     >
-                      <Icon icon="mdi:phone" className="w-5 h-5 text-gray-400 group-hover:text-brand-accent" />
+                      <PhoneIcon className="w-5 h-5 text-gray-400 group-hover:text-brand-accent" />
                       +49 176 321 94 754
                     </a>
                   </div>
@@ -111,7 +111,7 @@ export default function ContactPage() {
                     Standort
                   </h2>
                   <div className="flex items-start gap-3 text-gray-700">
-                    <Icon icon="mdi:map-marker" className="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" />
+                    <MapMarkerIcon className="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" />
                     <div>
                       <p>Flottbeker Drift 1</p>
                       <p>22607 Hamburg</p>
@@ -132,7 +132,7 @@ export default function ContactPage() {
                       className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:text-black hover:border-black transition-all"
                       aria-label="LinkedIn"
                     >
-                      <Icon icon="mdi:linkedin" className="w-5 h-5" />
+                      <LinkedInIcon className="w-5 h-5" />
                     </a>
                     <a
                       href="https://www.instagram.com/snapsite.me/"
@@ -141,7 +141,7 @@ export default function ContactPage() {
                       className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:text-black hover:border-black transition-all"
                       aria-label="Instagram"
                     >
-                      <Icon icon="mdi:instagram" className="w-5 h-5" />
+                      <InstagramIcon className="w-5 h-5" />
                     </a>
                     <a
                       href="https://x.com/www_snapsite_me"
@@ -150,7 +150,7 @@ export default function ContactPage() {
                       className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:text-black hover:border-black transition-all"
                       aria-label="X (Twitter)"
                     >
-                      <Icon icon="mdi:twitter" className="w-5 h-5" />
+                      <TwitterIcon className="w-5 h-5" />
                     </a>
                   </div>
                 </div>
@@ -163,7 +163,7 @@ export default function ContactPage() {
                 {submitted ? (
                   <div className="text-center py-12">
                     <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                      <Icon icon="mdi:check" className="w-8 h-8 text-green-600" />
+                      <CheckIcon className="w-8 h-8 text-green-600" />
                     </div>
                     <h3 className="text-2xl font-semibold text-black mb-2">
                       Vielen Dank!
@@ -240,13 +240,13 @@ export default function ContactPage() {
                     >
                       {isSubmitting ? (
                         <>
-                          <Icon icon="mdi:loading" className="w-5 h-5 animate-spin" />
+                          <LoadingIcon className="w-5 h-5" />
                           Wird gesendet...
                         </>
                       ) : (
                         <>
                           Nachricht senden
-                          <Icon icon="mdi:arrow-right" className="w-5 h-5" />
+                          <ArrowRightIcon className="w-5 h-5" />
                         </>
                       )}
                     </button>

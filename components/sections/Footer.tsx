@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/Button';
-import { Icon } from '@iconify/react';
+import { LinkedInIcon, InstagramIcon, TwitterIcon, GoogleIcon } from '@/components/ui/Icons';
 
 export const Footer: React.FC = () => (
     <footer className="relative text-white py-12 md:py-16 px-6 md:px-12 overflow-hidden">
@@ -73,7 +73,7 @@ export const Footer: React.FC = () => (
                         className="hover:text-white/80 transition-colors"
                         aria-label="LinkedIn"
                     >
-                        <Icon icon="mdi:linkedin" className="w-5 h-5" />
+                        <LinkedInIcon className="w-5 h-5" />
                     </a>
                     <a
                         href="https://www.instagram.com/snapsite.me/"
@@ -82,7 +82,7 @@ export const Footer: React.FC = () => (
                         className="hover:text-white/80 transition-colors"
                         aria-label="Instagram"
                     >
-                        <Icon icon="mdi:instagram" className="w-5 h-5" />
+                        <InstagramIcon className="w-5 h-5" />
                     </a>
                     <a
                         href="https://x.com/www_snapsite_me"
@@ -91,7 +91,7 @@ export const Footer: React.FC = () => (
                         className="hover:text-white/80 transition-colors"
                         aria-label="X (Twitter)"
                     >
-                        <Icon icon="mdi:twitter" className="w-5 h-5" />
+                        <TwitterIcon className="w-5 h-5" />
                     </a>
                     <a
                         href="https://share.google/bkLeWZ9kPt2G8Lwtg"
@@ -100,7 +100,7 @@ export const Footer: React.FC = () => (
                         className="hover:text-white/80 transition-colors"
                         aria-label="Google Business"
                     >
-                        <Icon icon="mdi:google" className="w-5 h-5" />
+                        <GoogleIcon className="w-5 h-5" />
                     </a>
                 </div>
             </div>
