@@ -186,15 +186,15 @@ export const Proof: React.FC = () => {
             />
 
             {/* Cards Wrapper - Vertically centered */}
-            <div ref={wrapper} className="relative w-full h-full max-w-[1400px] mx-auto flex items-center justify-center px-4">
+            <div ref={wrapper} className="relative w-full h-full max-w-[1400px] mx-auto flex items-center justify-center px-4 md:px-8">
 
                 {CARDS.map((card, index) => (
                     <div
                         key={card.id}
-                        className="absolute w-full max-w-3xl flex flex-col items-center justify-center will-change-transform"
+                        className="absolute w-full flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-12 will-change-transform"
                     >
-                        {/* Text Card */}
-                        <div className="w-full bg-white rounded-2xl shadow-2xl p-6 md:p-8 mb-6">
+                        {/* Text Card - Left Side */}
+                        <div className="w-full lg:w-1/2 bg-white rounded-2xl shadow-2xl p-6 md:p-8 flex-shrink-0">
                             {/* Header Row: Client Logo + LLM Badge */}
                             <div className="flex items-center justify-between mb-5">
                                 <div className="relative h-7 w-24">
@@ -255,13 +255,13 @@ export const Proof: React.FC = () => {
                             )}
                         </div>
 
-                        {/* Screenshot - Clean, no frame */}
-                        <div className="relative w-full h-[300px] md:h-[380px]">
+                        {/* Screenshot - Right Side */}
+                        <div className="relative w-full lg:w-1/2 h-[280px] md:h-[400px] lg:h-[500px] flex-shrink-0">
                             <Image
                                 src={card.imageSrc}
                                 alt={`${card.clientName} Proof`}
                                 fill
-                                className="object-contain object-top drop-shadow-2xl"
+                                className="object-contain object-center drop-shadow-2xl"
                                 priority={index === 0}
                             />
                         </div>
