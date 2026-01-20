@@ -39,6 +39,7 @@ export const Navbar: React.FC = () => {
 
                 {/* Center Pill Nav - Visible on Desktop */}
                 <div className="hidden lg:flex pointer-events-auto bg-white/90 backdrop-blur-md px-1 py-1 rounded-full shadow-[0_4px_30px_rgba(0,0,0,0.06)] border border-gray-100 gap-1">
+                    <a href="/ai-sichtbarkeit" className="px-3 lg:px-5 py-2 rounded-full bg-brand-accent text-white hover:bg-brand-accent/90 transition-colors text-xs font-bold">KI-Sichtbarkeit</a>
                     <a href="/#reality" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Realität</a>
                     <a href="/#proof" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Proof</a>
                     <a href="/#process" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Prozess</a>
@@ -48,7 +49,7 @@ export const Navbar: React.FC = () => {
 
                 <div className="hidden lg:block pointer-events-auto">
                     <Button
-                        href="/contact"
+                        href="/ai-sichtbarkeit"
                         primary
                         text="KI-Sichtbarkeit prüfen"
                         className="!py-2 !px-2 !pl-4 lg:!pl-6 !text-[9px] lg:!text-[10px] uppercase tracking-wider font-bold shadow-lg shadow-black/5"
@@ -80,43 +81,52 @@ export const Navbar: React.FC = () => {
                     <div className="fixed top-20 right-6 bg-white/95 backdrop-blur-md border border-gray-100 shadow-2xl rounded-2xl p-6 min-w-[200px]" onClick={(e) => e.stopPropagation()}>
                         <div className="flex flex-col space-y-4">
                             <a
-                                href="/#reality"
-                                className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2"
+                                href="/ai-sichtbarkeit"
+                                className="text-sm font-bold text-white bg-brand-accent hover:bg-brand-accent/90 transition-colors py-3 px-4 rounded-lg text-center"
                                 onClick={closeMobileMenu}
                             >
-                                Realität
+                                KI-Sichtbarkeit
                             </a>
-                            <a
-                                href="/#proof"
-                                className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2"
-                                onClick={closeMobileMenu}
-                            >
-                                Proof
-                            </a>
-                            <a
-                                href="/#process"
-                                className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2"
-                                onClick={closeMobileMenu}
-                            >
-                                Prozess
-                            </a>
-                            <a
-                                href="/faq"
-                                className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2"
-                                onClick={closeMobileMenu}
-                            >
-                                FAQ
-                            </a>
-                            <a
-                                href="/contact"
-                                className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2"
-                                onClick={closeMobileMenu}
-                            >
-                                Kontakt
-                            </a>
+                            <div className="border-t border-gray-200 pt-4">
+                                <a
+                                    href="/#reality"
+                                    className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2 block"
+                                    onClick={closeMobileMenu}
+                                >
+                                    Realität
+                                </a>
+                                <a
+                                    href="/#proof"
+                                    className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2 block"
+                                    onClick={closeMobileMenu}
+                                >
+                                    Proof
+                                </a>
+                                <a
+                                    href="/#process"
+                                    className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2 block"
+                                    onClick={closeMobileMenu}
+                                >
+                                    Prozess
+                                </a>
+                                <a
+                                    href="/faq"
+                                    className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2 block"
+                                    onClick={closeMobileMenu}
+                                >
+                                    FAQ
+                                </a>
+                                <a
+                                    href="/contact"
+                                    className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2 block"
+                                    onClick={closeMobileMenu}
+                                >
+                                    Kontakt
+                                </a>
+                            </div>
                             <div className="pt-4 border-t border-gray-200">
                                 <Button
-                                    href="/contact"
+                                    href="/ai-sichtbarkeit"
                                     primary
                                     text="KI-Sichtbarkeit prüfen"
                                     className="w-full justify-center !text-xs !py-3"
