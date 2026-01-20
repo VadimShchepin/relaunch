@@ -9,7 +9,7 @@ import { CheckIcon, ArrowRightIcon, LoadingIcon } from '@/components/ui/Icons';
 
 // Hero Section
 const HeroSection: React.FC = () => (
-    <section className="relative pt-32 pb-20 md:pt-44 md:pb-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
+    <section className="relative pt-32 pb-20 md:pt-52 lg:pt-44 md:pb-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
         <FadeIn>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-[-0.04em] text-black mb-6 leading-[1.05]">
                 Wirst du genannt,<br />wenn KI gefragt wird?
