@@ -16,7 +16,7 @@ export const Footer: React.FC = () => (
 
             {/* Top Navigation */}
             <div className="flex flex-col md:flex-row justify-between items-start gap-12 w-full border-b border-white/20 pb-12">
-                <div className="grid grid-cols-2 gap-x-12 gap-y-8 text-sm">
+                <div className="grid grid-cols-3 gap-x-12 gap-y-8 text-sm">
 
                     <div className="flex flex-col gap-3">
                         <h4 className="font-bold uppercase tracking-widest text-xs mb-1 opacity-70">Navigation</h4>
@@ -33,6 +33,11 @@ export const Footer: React.FC = () => (
                         <a href="/impressum" className="hover:text-white/80 transition-colors">Impressum</a>
                         <a href="/datenschutz" className="hover:text-white/80 transition-colors">Datenschutz</a>
                         <a href="/agb" className="hover:text-white/80 transition-colors">AGB</a>
+                    </div>
+
+                    <div className="flex flex-col gap-3">
+                        <h4 className="font-bold uppercase tracking-widest text-xs mb-1 opacity-70">Presse</h4>
+                        <a href="/pressekit" className="hover:text-white/80 transition-colors">Pressekit</a>
                     </div>
 
                 </div>
