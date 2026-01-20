@@ -59,9 +59,13 @@ const FAQItem: React.FC<{ item: FAQItem }> = ({ item }) => (
     </div>
 );
 
-export const FAQ: React.FC = () => {
-    // Generate JSON-LD schema for FAQPage
-    const faqSchema = {
+interface FAQProps {
+    includeFAQPageSchema?: boolean;
+}
+
+export const FAQ: React.FC<FAQProps> = ({ includeFAQPageSchema = false }) => {
+    // Generate JSON-LD schema for FAQPage only when explicitly requested
+    const faqSchema = includeFAQPageSchema ? {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": HOMEPAGE_FAQS.map(item => ({
@@ -72,19 +76,23 @@ export const FAQ: React.FC = () => {
                 "text": item.a
             }
         }))
-    };
+    } : null;
 
     return (
         <section
             className="py-20 md:py-24 lg:py-32 px-6 md:px-12 lg:px-20 max-w-[800px] mx-auto bg-white"
-            itemScope
-            itemType="https://schema.org/FAQPage"
+            {...(includeFAQPageSchema && {
+                itemScope: true,
+                itemType: "https://schema.org/FAQPage"
+            })}
         >
-            {/* Schema.org JSON-LD */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-            />
+            {/* Schema.org JSON-LD - only include when requested */}
+            {faqSchema && (
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+                />
+            )}
 
             <FadeIn>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-black mb-12 md:mb-16 tracking-[-0.04em] text-center">
