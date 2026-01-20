@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
                                     text="KI-Sichtbarkeit prüfen"
                                     className="!text-xl !px-12 !py-6 shadow-2xl transition-transform duration-300"
                                 >
-                                    <PlatformIconLoop className="bg-white/10 w-9 h-9 rounded-full ml-4 shrink-0" iconClassName="text-base text-white" />
+                                    <PlatformIconLoop className="bg-white/10 w-9 h-9 rounded-full ml-4 shrink-0" iconClassName="w-4 h-4 text-white" />
                                 </Button>
                             </div>
                         </div>
@@ -41,7 +41,7 @@ export const Hero: React.FC = () => {
                                 text="KI-Sichtbarkeit prüfen"
                                 className="w-full sm:w-auto justify-center !text-base lg:!text-lg !py-4 shadow-xl"
                             >
-                                <PlatformIconLoop className="bg-white/10 w-8 h-8 rounded-full shrink-0" iconClassName="text-sm text-white" />
+                                <PlatformIconLoop className="bg-white/10 w-8 h-8 rounded-full shrink-0" iconClassName="w-3.5 h-3.5 text-white" />
                             </Button>
                         </div>
                     </FadeIn>
