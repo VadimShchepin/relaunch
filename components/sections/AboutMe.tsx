@@ -21,7 +21,7 @@ export const AboutMe: React.FC = () => {
                         <img
                             src="/vadim_shchepin_2.jpeg"
                             alt="Vadim Shchepin"
-                            className="w-32 h-32 rounded-full grayscale mb-6 object-cover"
+                            className="w-160 h-160 rounded-full mb-6 object-cover"
                         />
                         <div className="text-center">
                             <h3 className="text-xl font-semibold text-black">Vadim Shchepin</h3>
