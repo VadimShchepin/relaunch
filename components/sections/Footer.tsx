@@ -81,7 +81,7 @@ export const Footer: React.FC = () => (
                         <LinkedInIcon className="w-5 h-5" />
                     </a>
                     <a
-                        href="https://www.instagram.com/snapsite.me/"
+                        href="https://www.instagram.com/aiseo.hamburg/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-white/80 transition-colors"
@@ -90,7 +90,7 @@ export const Footer: React.FC = () => (
                         <InstagramIcon className="w-5 h-5" />
                     </a>
                     <a
-                        href="https://x.com/www_snapsite_me"
+                        href="https://x.com/aiseo.hamburg"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-white/80 transition-colors"

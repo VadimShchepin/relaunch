@@ -135,7 +135,7 @@ export default function ContactPage() {
                       <LinkedInIcon className="w-5 h-5" />
                     </a>
                     <a
-                      href="https://www.instagram.com/snapsite.me/"
+                      href="https://www.instagram.com/aiseo.hamburg/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:text-black hover:border-black transition-all"
@@ -144,7 +144,7 @@ export default function ContactPage() {
                       <InstagramIcon className="w-5 h-5" />
                     </a>
                     <a
-                      href="https://x.com/www_snapsite_me"
+                      href="https://x.com/aiseo.hamburg"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:text-black hover:border-black transition-all"
