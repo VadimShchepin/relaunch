@@ -52,7 +52,19 @@ export default function NewsletterPage() {
                             <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4">
                                 Fast fertig.
                             </h1>
-                            <p className="text-xl text-gray-700">{message}</p>
+                            <p className="text-xl text-gray-700 mb-12">{message}</p>
+
+                            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                                <a href="/" className="px-6 py-3 bg-black text-white font-medium rounded-xl hover:bg-black/80 transition-colors text-base whitespace-nowrap">
+                                    Zur Startseite
+                                </a>
+                                <a href="/ai-sichtbarkeit" className="px-6 py-3 bg-white border border-gray-200 text-black font-medium rounded-xl hover:bg-gray-50 transition-colors text-base whitespace-nowrap">
+                                    KI-Sichtbarkeit
+                                </a>
+                                <a href="/contact" className="px-6 py-3 bg-brand-accent text-white font-medium rounded-xl hover:bg-brand-accent/90 transition-colors text-base whitespace-nowrap">
+                                    Kontakt
+                                </a>
+                            </div>
                         </div>
                     ) : (
                         <div className="text-center">
@@ -97,6 +109,23 @@ export default function NewsletterPage() {
                             <p className="text-xs text-gray-500 mt-8 max-w-sm mx-auto leading-relaxed">
                                 Kein Spam. Doppelt-Opt-In. Jederzeit abmeldest.
                             </p>
+
+                            <div className="mt-16 pt-8 border-t border-gray-200">
+                                <p className="text-sm text-gray-600 mb-4">Oder direkt zu:</p>
+                                <div className="flex flex-wrap items-center justify-center gap-3 text-sm">
+                                    <a href="/" className="text-gray-800 hover:text-black underline decoration-gray-300 hover:decoration-black underline-offset-2 transition-all">
+                                        Startseite
+                                    </a>
+                                    <span className="text-gray-300">•</span>
+                                    <a href="/ai-sichtbarkeit" className="text-gray-800 hover:text-black underline decoration-gray-300 hover:decoration-black underline-offset-2 transition-all">
+                                        KI-Sichtbarkeit
+                                    </a>
+                                    <span className="text-gray-300">•</span>
+                                    <a href="/contact" className="text-gray-800 hover:text-black underline decoration-gray-300 hover:decoration-black underline-offset-2 transition-all">
+                                        Kontakt
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     )}
                 </div>
