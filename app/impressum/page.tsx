@@ -57,12 +57,12 @@ export default function ImpressumPage() {
                 <p>
                   Instagram:{' '}
                   <a
-                    href="https://www.instagram.com/snapsite.me/"
+                    href="https://www.instagram.com/aiseo.hamburg/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-black underline hover:no-underline"
                   >
-                    instagram.com/snapsite.me
+                    instagram.com/aiseo.hamburg
                   </a>
                 </p>
                 <p>
@@ -73,7 +73,7 @@ export default function ImpressumPage() {
                     rel="noopener noreferrer"
                     className="text-black underline hover:no-underline"
                   >
-                    x.com/www_snapsite_me
+                    x.com/aiseo.hamburg
                   </a>
                 </p>
                 <p>
