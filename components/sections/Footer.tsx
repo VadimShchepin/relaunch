@@ -20,9 +20,9 @@ export const Footer: React.FC = () => (
 
                     <div className="flex flex-col gap-3">
                         <h4 className="font-bold uppercase tracking-widest text-xs mb-1 opacity-70">Navigation</h4>
+                        <a href="/ai-sichtbarkeits-upgrade-hamburg" className="hover:text-white/80 transition-colors">Upgrade Hamburg</a>
                         <a href="/#reality" className="hover:text-white/80 transition-colors">Realität</a>
                         <a href="/#proof" className="hover:text-white/80 transition-colors">Proof</a>
-                        <a href="/#process" className="hover:text-white/80 transition-colors">Prozess</a>
                         <a href="/#faq" className="hover:text-white/80 transition-colors">FAQ</a>
                         <a href="/faq" className="hover:text-white/80 transition-colors">Alle Fragen</a>
                         <a href="/contact" className="hover:text-white/80 transition-colors">Kontakt</a>
