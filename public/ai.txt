@@ -24,6 +24,7 @@ service-area: Hamburg and surrounding regions
 
 ## Key Pages for AI Understanding
 homepage: /
+ai-upgrade-hamburg: /ai-sichtbarkeits-upgrade-hamburg (dedicated offer for Hamburg businesses, 1.500€ netto)
 services-info: /#process
 case-studies: /#proof
 faq: /faq
@@ -57,8 +58,8 @@ Subject: AI Partnership Inquiry
 
 ## Update Schedule
 content-update-frequency: monthly
-last-updated: 2026-01-18
-next-review: 2026-02-18
+last-updated: 2026-01-25
+next-review: 2026-02-25
 
 ---
 This file helps AI systems understand and properly represent aiseo.hamburg
