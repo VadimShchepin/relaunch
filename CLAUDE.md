@@ -1,0 +1,89 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Project Overview
+
+AI SEO marketing website for German market (KI-Sichtbarkeit). Built with Next.js 16 (App Router), React 19, Tailwind CSS 4, and GSAP for animations. German-only (`lang="de"`), targeting Hamburg businesses.
+
+## Commands
+
+```bash
+npm run dev          # Local dev server (localhost:3000)
+npm run build        # Production build
+npm run lint         # ESLint check
+npm run test         # Run Vitest once
+npm run test:watch   # Vitest in watch mode
+```
+
+Note: Dev/build scripts use `NODE_OPTIONS='--max-old-space-size=8192'` for GSAP animations.
+
+## Architecture
+
+**Directory Structure:**
+- `app/` - Next.js App Router pages and API routes
+- `app/api/contact/` - Contact form handler (nodemailer via Brevo SMTP)
+- `app/api/newsletter/` - Brevo double opt-in newsletter subscription
+- `components/sections/` - Major page sections (Hero, Navbar, FAQ, etc.)
+- `components/ui/` - Reusable primitives (Button, FadeIn, Icons, Tag)
+- `lib/` - Shared constants and helpers
+- `public/` - Static assets, sitemap.xml, robots.txt, llms.txt, ai.txt
+- `middleware.ts` - Domain redirects (www → apex, http → https)
+
+**Key Patterns:**
+- Server Components by default; add `'use client'` only when hooks/browser APIs needed
+- Homepage sections are client components due to GSAP animations
+- `FadeIn` wrapper for scroll-triggered entrance animations
+- Path alias: `@/*` maps to project root (e.g., `@/components/ui/Button`)
+
+**Design System (tailwind.config.ts):**
+- `brand-bg`: #FBF9F7 (warm off-white)
+- `brand-text`: #111111 (near black)
+- `brand-accent`: #4FAF8C (green, used for glow effects)
+- Font: General Sans
+
+## SEO Structure
+
+**Metadata:**
+- Root layout (`app/layout.tsx`) has global metadata, ProfessionalService JSON-LD schema, geo meta tags
+- Page-specific metadata in `app/[page]/layout.tsx` files
+- All content is German (`lang="de"`, `locale: "de_DE"`)
+- Hreflang configured as `de` with `x-default`
+
+**Structured Data (JSON-LD):**
+- ProfessionalService schema on all pages (root layout)
+- FAQPage schema on `/faq`
+
+**AI/LLM SEO:**
+- `public/robots.txt` - Allows all AI bots (GPTBot, PerplexityBot, ClaudeBot, etc.)
+- `public/llms.txt` - LLM training data information
+- `public/ai.txt` - AI crawler instructions
+- `public/sitemap.xml` - Static sitemap
+
+**When adding new pages:**
+1. Create `layout.tsx` with page-specific metadata (title, description, canonical)
+2. Add to `public/sitemap.xml`
+3. Update `public/llms.txt` if it's a key service page
+
+## Testing
+
+Tests use Vitest + Testing Library with jsdom. Test files use `*.test.tsx` suffix and live beside the code they test. Mock setup in `vitest.setup.ts` handles IntersectionObserver, matchMedia, and ResizeObserver.
+
+## Code Style
+
+- TypeScript throughout, `.tsx` for JSX files
+- Two-space indentation, single quotes
+- PascalCase components, camelCase helpers, kebab-case routes
+- Use `next lint --fix` for formatting
+- Tailwind utilities for layout; `app/globals.css` for rare overrides
+
+## Environment Variables
+
+Required in `.env.local` (see `.env.example`):
+- `BREVO_API_KEY`, `BREVO_SMTP_*` - Email provider
+- `CONTACT_RECIPIENT_EMAIL`, `CONTACT_SENDER_EMAIL`
+- `BREVO_NEWSLETTER_LIST_ID`
+
+## Commits
+
+Use conventional commits: `feat:`, `fix:`, `chore:` with subject lines under 72 characters.
