@@ -5,10 +5,14 @@ import "./globals.css";
 export const metadata: Metadata = {
     title: "aiseo.hamburg — KI-Sichtbarkeit für Hamburger Unternehmen",
     description: "Professionelle KI-Optimierung (AI SEO/GEO/AEO) für bessere Sichtbarkeit in ChatGPT, Perplexity & Co. Spezialist für Hamburg.",
-    keywords: "AI SEO, KI Sichtbarkeit, GEO, AEO, Hamburg, ChatGPT Optimierung",
+    keywords: "AI SEO, KI Sichtbarkeit, GEO, AEO, Hamburg, ChatGPT Optimierung, Perplexity, Google AI",
     metadataBase: new URL('https://aiseo.hamburg'),
     alternates: {
         canonical: '/',
+        languages: {
+            'de': '/',
+            'x-default': '/',
+        },
     },
     icons: {
         icon: [
@@ -32,6 +36,25 @@ export const metadata: Metadata = {
         locale: "de_DE",
         type: "website",
     },
+    twitter: {
+        card: "summary_large_image",
+        title: "aiseo.hamburg — KI-Sichtbarkeit für Hamburger Unternehmen",
+        description: "Professionelle KI-Optimierung für bessere Sichtbarkeit in ChatGPT, Perplexity & Co.",
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+        },
+    },
+    verification: {
+        // Add when you have these: google: 'your-google-verification-code',
+    },
 };
 
 export default function RootLayout({
@@ -45,7 +68,55 @@ export default function RootLayout({
                 <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet" />
                 <link rel="manifest" href="/manifest.json" />
                 <meta name="theme-color" content="#4FAF8C" />
+                <meta name="geo.region" content="DE-HH" />
+                <meta name="geo.placename" content="Hamburg" />
                 <script defer src="https://umami.dsgvoschulfotos.de/script.js" data-website-id="994bf95f-79f8-4fcd-b77f-48abe6baee1d"></script>
+                {/* LocalBusiness Schema for AI SEO Hamburg */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "ProfessionalService",
+                            "@id": "https://aiseo.hamburg/#organization",
+                            "name": "aiseo.hamburg",
+                            "alternateName": "AI SEO Hamburg",
+                            "description": "KI-Sichtbarkeit und AI SEO Optimierung für Hamburger Unternehmen. Spezialisiert auf ChatGPT, Perplexity und Google AI Optimierung.",
+                            "url": "https://aiseo.hamburg",
+                            "telephone": "+49 176 321 94 754",
+                            "email": "hello@aiseo.hamburg",
+                            "address": {
+                                "@type": "PostalAddress",
+                                "streetAddress": "Flottbeker Drift 1",
+                                "addressLocality": "Hamburg",
+                                "postalCode": "22607",
+                                "addressCountry": "DE",
+                                "addressRegion": "Hamburg"
+                            },
+                            "geo": {
+                                "@type": "GeoCoordinates",
+                                "latitude": "53.5511",
+                                "longitude": "9.9937"
+                            },
+                            "areaServed": {
+                                "@type": "City",
+                                "name": "Hamburg",
+                                "sameAs": "https://de.wikipedia.org/wiki/Hamburg"
+                            },
+                            "serviceType": ["AI SEO", "KI-Sichtbarkeit", "GEO", "AEO", "ChatGPT Optimierung"],
+                            "priceRange": "€€",
+                            "sameAs": [
+                                "https://www.linkedin.com/in/vadim-shchepin/",
+                                "https://www.instagram.com/aiseo.hamburg/"
+                            ],
+                            "founder": {
+                                "@type": "Person",
+                                "name": "Vadim Shchepin",
+                                "jobTitle": "AI SEO Specialist"
+                            }
+                        })
+                    }}
+                />
             </head>
             <body className="antialiased">
                 {children}
