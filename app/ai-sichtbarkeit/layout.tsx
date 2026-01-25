@@ -19,6 +19,10 @@ export const metadata: Metadata = {
     },
     alternates: {
         canonical: "https://aiseo.hamburg/ai-sichtbarkeit",
+        languages: {
+            'de': '/ai-sichtbarkeit',
+            'x-default': '/ai-sichtbarkeit',
+        },
     },
 };
 
