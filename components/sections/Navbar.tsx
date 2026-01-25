@@ -40,9 +40,9 @@ export const Navbar: React.FC = () => {
                 {/* Center Pill Nav - Visible on Desktop */}
                 <div className="hidden lg:flex pointer-events-auto bg-white/90 backdrop-blur-md px-1 py-1 rounded-full shadow-[0_4px_30px_rgba(0,0,0,0.06)] border border-gray-100 gap-1">
                     <a href="/ai-sichtbarkeit" className="px-3 lg:px-5 py-2 rounded-full bg-brand-accent text-white hover:bg-brand-accent/90 transition-colors text-xs font-bold">KI-Sichtbarkeit</a>
+                    <a href="/ai-sichtbarkeits-upgrade-hamburg" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Upgrade Hamburg</a>
                     <a href="/#reality" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Realität</a>
                     <a href="/#proof" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Proof</a>
-                    <a href="/#process" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Prozess</a>
                     <a href="/faq" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">FAQ</a>
                     <a href="/contact" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Kontakt</a>
                 </div>
@@ -87,6 +87,13 @@ export const Navbar: React.FC = () => {
                             >
                                 KI-Sichtbarkeit
                             </a>
+                            <a
+                                href="/ai-sichtbarkeits-upgrade-hamburg"
+                                className="text-sm font-bold text-brand-accent bg-brand-accent/10 hover:bg-brand-accent/20 transition-colors py-3 px-4 rounded-lg text-center"
+                                onClick={closeMobileMenu}
+                            >
+                                Upgrade Hamburg
+                            </a>
                             <div className="border-t border-gray-200 pt-4">
                                 <a
                                     href="/#reality"
@@ -101,13 +108,6 @@ export const Navbar: React.FC = () => {
                                     onClick={closeMobileMenu}
                                 >
                                     Proof
-                                </a>
-                                <a
-                                    href="/#process"
-                                    className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2 block"
-                                    onClick={closeMobileMenu}
-                                >
-                                    Prozess
                                 </a>
                                 <a
                                     href="/faq"
