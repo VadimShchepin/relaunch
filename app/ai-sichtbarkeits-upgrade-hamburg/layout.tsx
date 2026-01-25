@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'AI-Sichtbarkeits-Upgrade Hamburg | KI-Optimierung für Hamburger Unternehmen',
-    description: 'Einmaliges AI-Sichtbarkeits-Upgrade für Hamburger Unternehmen. Werden Sie in ChatGPT, Perplexity & Google AI als lokale Empfehlung sichtbar. 1.500€ netto, 10-14 Tage.',
+    title: 'AI-Sichtbarkeits-Upgrade Hamburg (einmalig) | Startseite + 2 Seiten + Schema',
+    description: 'Einmaliges AI-Sichtbarkeits-Upgrade für Hamburg: Startseite + 2 Unterseiten + Schema + Indexierung. 1.500€ netto, 10–14 Tage. Direkt vom Software-Engineer.',
     keywords: [
         'AI Sichtbarkeit Hamburg',
         'KI Optimierung Hamburg',
