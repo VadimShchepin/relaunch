@@ -1,12 +1,6 @@
-import type { Metadata } from "next";
 import React from "react";
 import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
-
-export const metadata: Metadata = {
-  title: "FAQ — KI-Sichtbarkeit und AI SEO Fragen | aiseo.hamburg",
-  description: "Häufige Fragen zu KI-Sichtbarkeit, AI SEO, GEO und AEO. Wie funktioniert Optimierung für ChatGPT und andere KI-Systeme?",
-};
 
 type FAQItem = {
   q: string;
