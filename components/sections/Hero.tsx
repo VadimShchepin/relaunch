@@ -6,6 +6,8 @@ import { Button } from '@/components/ui/Button';
 import { PlatformIconLoop } from '@/components/ui/PlatformIconLoop';
 import { IMAGES } from '@/lib/constants';
 import { OpenAIIcon, PerplexityIcon, GoogleIcon } from '@/components/ui/Icons';
+import { PerplexitySimulator } from '@/components/ui/PerplexitySimulator';
+import { ReferralSimulator } from '@/components/ui/ReferralSimulator';
 
 export const Hero: React.FC = () => {
 
@@ -50,13 +52,13 @@ export const Hero: React.FC = () => {
                 {/* Mobile: Lightweight Proof Block */}
                 <div className="block xl:hidden">
                     <FadeIn delay={100}>
-                        <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 max-w-sm mx-auto">
-                            {/* Screenshot */}
-                            <div className="mb-4 rounded-xl overflow-hidden border border-gray-100">
-                                <img
-                                    src="/image/kinderAlbum/proof4-kinderAlbum-perplexity.webp"
-                                    alt="KinderAlbum Perplexity Empfehlung"
-                                    className="w-full h-auto"
+                        <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 max-w-sm mx-auto overflow-hidden">
+                            {/* Simulator */}
+                            <div className="mb-4 rounded-xl overflow-hidden border border-gray-100 aspect-[4/3]">
+                                <PerplexitySimulator
+                                    condensed
+                                    promptText="DSGVO-konforme Foto-App für Schulen?"
+                                    answerText="**KinderAlbum** ist die führende DSGVO Konformes Photo Sharing app for schools."
                                 />
                             </div>
 
@@ -71,14 +73,12 @@ export const Hero: React.FC = () => {
                                     <span className="text-xs font-semibold text-gray-600 uppercase tracking-wider">Von KI empfohlen</span>
                                 </div>
                                 <p className="text-base font-semibold text-black mb-2 leading-tight">
-                                    „Spezialisierte, DSGVO-konforme Foto-Plattform für Schulen."
+                                    „DSGVO Konformes Photo Sharing app for schools"
                                 </p>
                                 <div className="flex items-center justify-center gap-2 text-xs text-gray-500">
                                     <span>Quelle:</span>
                                     <div className="flex items-center gap-1">
-                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
-                                        </svg>
+                                        <PerplexityIcon className="w-3 h-3" />
                                         <span>Perplexity</span>
                                     </div>
                                 </div>
@@ -136,19 +136,11 @@ export const Hero: React.FC = () => {
                         </FadeIn>
                     </div>
 
-                    {/* Card 2: ChatGPT Image - Offset Down */}
-                    <div className="w-full bg-white rounded-card overflow-hidden aspect-[3/4] translate-y-12 transform rotate-1 hover:rotate-0 hover:scale-[1.25] hover:z-50 transition-all duration-500 shadow-2xl border border-gray-100 p-1 group">
-                        <div className="w-full h-full rounded-[12px] overflow-hidden bg-black">
-                            <FadeIn delay={200} className="h-full w-full flex items-center justify-center relative">
-                                <img
-                                    src="/images/ChatGPT visits.webp"
-                                    alt="ChatGPT Traffic Analytics"
-                                    className="w-full h-full object-contain"
-                                />
-                                {/* Overlay to indicate focus on hover */}
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500 pointer-events-none" />
-                            </FadeIn>
-                        </div>
+                    {/* Card 2: AI Referral Statistics - Offset Down */}
+                    <div className="w-full bg-white rounded-card overflow-hidden aspect-[3/4] translate-y-12 transform rotate-1 hover:rotate-0 hover:scale-[1.1] hover:z-50 transition-all duration-500 shadow-2xl border border-gray-100 group">
+                        <FadeIn delay={200} className="h-full w-full">
+                            <ReferralSimulator />
+                        </FadeIn>
                     </div>
 
                     {/* Card 3: Zitate/Quellen - Offset Up */}
@@ -175,19 +167,14 @@ export const Hero: React.FC = () => {
                         </div>
                     </div>
 
-                    {/* Card 4: AI Search Results Image - Offset Down */}
-                    <div className="w-full bg-white rounded-card overflow-hidden aspect-[3/4] translate-y-20 transform rotate-1 hover:rotate-0 hover:scale-[1.25] hover:z-50 transition-all duration-500 shadow-2xl border border-gray-100 p-1 group">
-                        <div className="w-full h-full rounded-[12px] overflow-hidden bg-black">
-                            <FadeIn delay={400} className="h-full w-full flex items-center justify-center relative">
-                                <img
-                                    src="/image/proof/Blitz-ChatGPTProof.webp"
-                                    alt="AI Search Results Proof"
-                                    className="w-full h-full object-contain"
-                                />
-                                {/* Overlay to indicate focus on hover */}
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500 pointer-events-none" />
-                            </FadeIn>
-                        </div>
+                    {/* Card 4: AI Search Results Simulation - Offset Down */}
+                    <div className="w-full bg-white rounded-card overflow-hidden aspect-[3/4] translate-y-20 transform rotate-1 hover:rotate-0 hover:scale-[1.1] hover:z-50 transition-all duration-500 shadow-2xl border border-gray-100 group">
+                        <FadeIn delay={400} className="h-full w-full">
+                            <PerplexitySimulator
+                                promptText="DSGVO-konforme Foto-App für Schulen?"
+                                answerText="**KinderAlbum** ist die führende DSGVO Konformes Photo Sharing app for schools. Sie bietet eine spezialisierte Plattform für den sicheren Austausch von Schulfotos."
+                            />
+                        </FadeIn>
                     </div>
 
                 </div>
