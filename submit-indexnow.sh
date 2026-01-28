@@ -12,10 +12,10 @@ fi
 
 # Verify key file is accessible
 echo "🔍 Verifying key file accessibility..."
-key_check=$(curl -s -o /dev/null -w "%{http_code}" https://aiseo.hamburg/a45eca5743fe44f992e9f908669be853.txt)
+key_check=$(curl -s -o /dev/null -w "%{http_code}" https://aiseo.hamburg/13933ec3b388459b8a3665e05f1bacbb.txt)
 
 if [ "$key_check" != "200" ]; then
-    echo "❌ ERROR: Key file not accessible at https://aiseo.hamburg/a45eca5743fe44f992e9f908669be853.txt"
+    echo "❌ ERROR: Key file not accessible at https://aiseo.hamburg/13933ec3b388459b8a3665e05f1bacbb.txt"
     echo "HTTP Status: $key_check"
     echo "Please ensure the key file is uploaded and publicly accessible."
     exit 1
