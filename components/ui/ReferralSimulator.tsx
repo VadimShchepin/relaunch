@@ -61,12 +61,12 @@ export const ReferralSimulator: React.FC = () => {
             {/* Header */}
             <div className="flex justify-between items-center mb-6">
                 <div className="flex flex-col">
-                    <span className="text-[10px] uppercase font-bold text-gray-400 tracking-wider">Referrers</span>
-                    <h3 className="text-sm font-semibold text-gray-900">Traffic Sources</h3>
+                    <span className="text-[10px] uppercase font-bold text-gray-500 tracking-wider">Referrers</span>
+                    <p className="text-sm font-semibold text-gray-900">Traffic Sources</p>
                 </div>
                 <div className="flex flex-col items-end">
-                    <span className="text-[10px] uppercase font-bold text-gray-400 tracking-wider">Visitors</span>
-                    <h3 className="text-sm font-semibold text-gray-900">Total: 340</h3>
+                    <span className="text-[10px] uppercase font-bold text-gray-500 tracking-wider">Visitors</span>
+                    <p className="text-sm font-semibold text-gray-900">Total: 340</p>
                 </div>
             </div>
 
@@ -90,7 +90,7 @@ export const ReferralSimulator: React.FC = () => {
                             </div>
                             <div className="flex items-center gap-3">
                                 <span className="text-xs font-bold text-gray-900">{ref.vistors}</span>
-                                <span className="text-[10px] font-medium text-gray-400 w-8 text-right">{ref.percentage}%</span>
+                                <span className="text-[10px] font-medium text-gray-500 w-8 text-right">{ref.percentage}%</span>
                             </div>
                         </div>
 

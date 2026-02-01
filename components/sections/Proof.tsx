@@ -170,7 +170,7 @@ export const Proof: React.FC = () => {
         <section ref={container} className="relative w-full h-screen bg-brand-olive overflow-hidden">
             {/* Section Label */}
             <div className="absolute top-24 md:top-28 left-1/2 transform -translate-x-1/2 z-30 px-4">
-                <span className="text-xs md:text-sm font-semibold uppercase tracking-[0.15em] md:tracking-[0.2em] text-white/70 bg-black/20 px-3 md:px-4 py-2 rounded-full backdrop-blur-sm whitespace-nowrap">
+                <span className="text-xs md:text-sm font-semibold uppercase tracking-[0.15em] md:tracking-[0.2em] text-white bg-black/40 px-3 md:px-4 py-2 rounded-full backdrop-blur-sm whitespace-nowrap">
                     Echte KI-Anfragen & Antworten
                 </span>
             </div>
@@ -231,10 +231,10 @@ export const Proof: React.FC = () => {
 
                             {/* Relevance Section */}
                             <div>
-                                <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-gray-400 mb-1 block">
+                                <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-1 block">
                                     {card.relevanceLabel}
                                 </span>
-                                <p className="text-sm text-gray-500 font-medium leading-relaxed">
+                                <p className="text-sm text-gray-600 font-medium leading-relaxed">
                                     {card.relevanceText}
                                 </p>
                             </div>
@@ -244,10 +244,10 @@ export const Proof: React.FC = () => {
                                 <>
                                     <div className="w-8 h-0.5 bg-gray-100 my-5" />
                                     <div>
-                                        <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-gray-400 mb-1 block">
+                                        <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-1 block">
                                             {card.triggerLabel}
                                         </span>
-                                        <p className="text-sm text-gray-500 font-medium leading-relaxed">
+                                        <p className="text-sm text-gray-600 font-medium leading-relaxed">
                                             {card.triggerText}
                                         </p>
                                     </div>
@@ -270,7 +270,7 @@ export const Proof: React.FC = () => {
             </div>
 
             {/* Scroll Indicator */}
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-30 opacity-60 mix-blend-overlay text-white pointer-events-none">
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-30 text-white pointer-events-none">
                 <span className="text-[9px] uppercase tracking-[0.2em] font-bold">Scroll</span>
                 <div className="w-px h-8 bg-gradient-to-b from-white to-transparent" />
             </div>

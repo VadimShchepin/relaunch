@@ -72,9 +72,9 @@ export const PerplexitySimulator: React.FC<PerplexitySimulatorProps> = ({
     return (
         <div className={`w-full h-full bg-[#191A1A] text-white flex flex-col font-sans select-none overflow-hidden text-left ${condensed ? 'p-3' : 'p-4 lg:p-6'}`}>
             {/* Header */}
-            <div className={`flex items-center gap-2 opacity-60 ${condensed ? 'mb-3' : 'mb-6'}`}>
-                <PerplexityIcon className={`${condensed ? 'w-3 h-3' : 'w-4 h-4'} text-white`} />
-                <span className={`${condensed ? 'text-[10px]' : 'text-xs'} font-medium tracking-tight whitespace-nowrap`}>Perplexity Simulation</span>
+            <div className={`flex items-center gap-2 ${condensed ? 'mb-3' : 'mb-6'}`}>
+                <PerplexityIcon className={`${condensed ? 'w-3 h-3' : 'w-4 h-4'} text-white/70`} />
+                <span className={`${condensed ? 'text-[10px]' : 'text-xs'} font-medium tracking-tight whitespace-nowrap text-white/70`}>Perplexity Simulation</span>
             </div>
 
             {/* Prompt View */}
@@ -91,7 +91,7 @@ export const PerplexitySimulator: React.FC<PerplexitySimulatorProps> = ({
                 {/* Sources */}
                 {showSources && (
                     <div className={condensed ? 'space-y-1.5' : 'space-y-3'}>
-                        <div className="flex items-center gap-2 opacity-60">
+                        <div className="flex items-center gap-2 text-white/70">
                             <svg className={condensed ? 'w-3 h-3' : 'w-3.5 h-3.5'} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                 <path d="M4 6h16M4 12h16M4 18h7" />
                             </svg>
@@ -110,7 +110,7 @@ export const PerplexitySimulator: React.FC<PerplexitySimulatorProps> = ({
 
                 {/* Answer */}
                 <div className={condensed ? 'space-y-2' : 'space-y-3'}>
-                    <div className="flex items-center gap-2 opacity-60">
+                    <div className="flex items-center gap-2 text-white/70">
                         <svg className={condensed ? 'w-3 h-3' : 'w-3.5 h-3.5'} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                             <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
                         </svg>
