@@ -65,6 +65,7 @@ export default function RootLayout({
     return (
         <html lang="de">
             <head>
+                <link rel="preconnect" href="https://cdn.fontshare.com" crossOrigin="anonymous" />
                 <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet" />
                 <link rel="manifest" href="/manifest.json" />
                 <meta name="theme-color" content="#4FAF8C" />
@@ -119,7 +120,9 @@ export default function RootLayout({
                 />
             </head>
             <body className="antialiased">
-                {children}
+                <main id="main-content">
+                    {children}
+                </main>
                 <Analytics />
             </body>
         </html>

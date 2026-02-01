@@ -31,7 +31,7 @@ export default function Page() {
                 <section className="py-20 md:py-24 lg:py-32 px-6 md:px-12 lg:px-20 max-w-[800px] mx-auto bg-white">
                     <div className="text-center">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-black mb-12 md:mb-16 tracking-[-0.04em]">
-                            Häufige <span className="text-gray-300">Fragen.</span>
+                            Häufige <span className="text-gray-500">Fragen.</span>
                         </h2>
 
                         <div className="space-y-6 text-left">

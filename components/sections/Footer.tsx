@@ -19,7 +19,7 @@ export const Footer: React.FC = () => (
                 <div className="grid grid-cols-3 gap-x-12 gap-y-8 text-sm">
 
                     <div className="flex flex-col gap-3">
-                        <h4 className="font-bold uppercase tracking-widest text-xs mb-1 opacity-70">Navigation</h4>
+                        <p className="font-bold uppercase tracking-widest text-xs mb-1 text-white/80">Navigation</p>
                         <a href="/ai-sichtbarkeits-upgrade-hamburg" className="hover:text-white/80 transition-colors">Upgrade Hamburg</a>
                         <a href="/#reality" className="hover:text-white/80 transition-colors">Realität</a>
                         <a href="/#proof" className="hover:text-white/80 transition-colors">Proof</a>
@@ -29,14 +29,14 @@ export const Footer: React.FC = () => (
                     </div>
 
                     <div className="flex flex-col gap-3">
-                        <h4 className="font-bold uppercase tracking-widest text-xs mb-1 opacity-70">Rechtliches</h4>
+                        <p className="font-bold uppercase tracking-widest text-xs mb-1 text-white/80">Rechtliches</p>
                         <a href="/impressum" className="hover:text-white/80 transition-colors">Impressum</a>
                         <a href="/datenschutz" className="hover:text-white/80 transition-colors">Datenschutz</a>
                         <a href="/agb" className="hover:text-white/80 transition-colors">AGB</a>
                     </div>
 
                     <div className="flex flex-col gap-3">
-                        <h4 className="font-bold uppercase tracking-widest text-xs mb-1 opacity-70">Presse</h4>
+                        <p className="font-bold uppercase tracking-widest text-xs mb-1 text-white/80">Presse</p>
                         <a href="/pressekit" className="hover:text-white/80 transition-colors">Pressekit</a>
                     </div>
 

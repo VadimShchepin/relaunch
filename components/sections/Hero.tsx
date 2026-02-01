@@ -96,24 +96,24 @@ export const Hero: React.FC = () => {
                             {/* Top: Main Stat */}
                             <div>
                                 <span className="text-[2rem] lg:text-[2.5rem] font-semibold tracking-tighter leading-none block">$750 Mrd.</span>
-                                <p className="text-xs lg:text-sm font-medium mt-1 tracking-tight leading-snug opacity-90">
+                                <p className="text-xs lg:text-sm font-medium mt-1 tracking-tight leading-snug text-white">
                                     Umsatz fließt bis 2028 über KI-Suche.
                                 </p>
                             </div>
 
                             {/* Middle: Additional Stats */}
                             <div className="space-y-2 lg:space-y-3 py-3 lg:py-4">
-                                <div className="bg-white/10 rounded-lg p-2 lg:p-3">
-                                    <p className="text-[10px] lg:text-xs font-medium leading-snug">
-                                        <span className="text-white font-bold">Höhere Abschlussquote</span> durch KI-Empfehlungen
+                                <div className="bg-white/15 rounded-lg p-2 lg:p-3">
+                                    <p className="text-[10px] lg:text-xs font-medium leading-snug text-white">
+                                        <span className="font-bold">Höhere Abschlussquote</span> durch KI-Empfehlungen
                                     </p>
-                                    <a href="https://www.amsive.com/insights/seo/does-llm-traffic-convert-better-than-organic-a-new-data-backed-study/" target="_blank" rel="noopener noreferrer" className="text-[8px] lg:text-[9px] opacity-60 hover:opacity-100 underline">Amsive 2025</a>
+                                    <a href="https://www.amsive.com/insights/seo/does-llm-traffic-convert-better-than-organic-a-new-data-backed-study/" target="_blank" rel="noopener noreferrer" className="text-[8px] lg:text-[9px] text-white/80 hover:text-white underline">Amsive 2025</a>
                                 </div>
-                                <div className="bg-white/10 rounded-lg p-2 lg:p-3">
-                                    <p className="text-[10px] lg:text-xs font-medium leading-snug">
-                                        <span className="text-white font-bold">20-50%</span> weniger Traffic ohne GEO-Optimierung
+                                <div className="bg-white/15 rounded-lg p-2 lg:p-3">
+                                    <p className="text-[10px] lg:text-xs font-medium leading-snug text-white">
+                                        <span className="font-bold">20-50%</span> weniger Traffic ohne GEO-Optimierung
                                     </p>
-                                    <a href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/new-front-door-to-the-internet-winning-in-the-age-of-ai-search" target="_blank" rel="noopener noreferrer" className="text-[8px] lg:text-[9px] opacity-60 hover:opacity-100 underline">McKinsey 2025</a>
+                                    <a href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/new-front-door-to-the-internet-winning-in-the-age-of-ai-search" target="_blank" rel="noopener noreferrer" className="text-[8px] lg:text-[9px] text-white/80 hover:text-white underline">McKinsey 2025</a>
                                 </div>
                             </div>
 
@@ -128,7 +128,7 @@ export const Hero: React.FC = () => {
                                     href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/new-front-door-to-the-internet-winning-in-the-age-of-ai-search"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-[8px] lg:text-[9px] font-medium opacity-60 hover:opacity-100 transition-opacity underline"
+                                    className="text-[8px] lg:text-[9px] font-medium text-white/80 hover:text-white transition-colors underline"
                                 >
                                     Hauptquelle: McKinsey & Company
                                 </a>
@@ -150,7 +150,7 @@ export const Hero: React.FC = () => {
                             <p className="text-base lg:text-lg xl:text-xl font-semibold mt-3 lg:mt-4 mb-2 tracking-tight leading-snug">
                                 KI nennt keine Websites – sie nennt Quellen.
                             </p>
-                            <p className="text-xs lg:text-sm text-brand-dark/70 font-medium leading-tight">
+                            <p className="text-xs lg:text-sm text-brand-dark font-medium leading-tight">
                                 Wir sorgen dafür, dass dein Unternehmen diese Quelle ist.
                             </p>
                         </div>
