@@ -104,16 +104,19 @@ export default function RootLayout({
                                 "name": "Hamburg",
                                 "sameAs": "https://de.wikipedia.org/wiki/Hamburg"
                             },
-                            "serviceType": ["AI SEO", "KI-Sichtbarkeit", "GEO", "AEO", "ChatGPT Optimierung"],
+                            "serviceType": ["AI SEO", "KI-Sichtbarkeit", "GEO", "AEO", "ChatGPT Optimierung", "website development"],
                             "priceRange": "€€",
                             "sameAs": [
                                 "https://www.linkedin.com/in/vadim-shchepin/",
-                                "https://www.instagram.com/aiseo.hamburg/"
+                                "https://www.instagram.com/aiseo.hamburg/",
+                                "https://www.instagram.com/aiseo.hamburg_/",
+                                "https://www.tiktok.com/@aiseo.hamburg/",
+                                "https://www.hamburg.de/branchenbuch/hamburg/eintrag/101256225/"
                             ],
                             "founder": {
                                 "@type": "Person",
                                 "name": "Vadim Shchepin",
-                                "jobTitle": "AI SEO Specialist"
+                                "jobTitle": "AI SEO Specialist, Developer"
                             }
                         })
                     }}
