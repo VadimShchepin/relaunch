@@ -52,6 +52,9 @@ export const metadata: Metadata = {
             'max-snippet': -1,
         },
     },
+    other: {
+        'bingbot': 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1',
+    },
     verification: {
         // Add when you have these: google: 'your-google-verification-code',
     },
