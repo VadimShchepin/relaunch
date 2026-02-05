@@ -6,63 +6,74 @@ import { Footer } from '@/components/sections/Footer';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 import { CheckIcon, ArrowRightIcon, LoadingIcon } from '@/components/ui/Icons';
+import { PlatformIconLoop } from '@/components/ui/PlatformIconLoop';
+import { AntigravityBackground } from '@/components/ui/AntigravityBackground';
 
 // Hero Section
 const HeroSection: React.FC = () => (
-    <section className="relative pt-32 pb-20 md:pt-52 lg:pt-44 md:pb-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
-        <FadeIn>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-[-0.04em] text-black mb-6 leading-[1.05]">
-                Wirst du genannt,<br />wenn KI gefragt wird?
-            </h1>
-            <p className="text-lg md:text-xl text-gray-700 max-w-2xl mb-8 leading-relaxed">
-                Ich helfe Hamburger Unternehmen dabei, in ChatGPT, Perplexity und Google AI empfohlen zu werden – und messe, ob daraus echte Anfragen entstehen.
-            </p>
-
-            {/* Micro-proof strip */}
-            <div className="bg-white border-2 border-brand-accent rounded-xl p-6 mb-10 max-w-2xl shadow-sm">
-                <p className="text-sm font-bold text-brand-accent mb-3">Praxis statt Theorie:</p>
-                <div className="space-y-2 text-sm text-gray-800">
-                    <div className="font-medium">• KinderAlbum: 300+ Nutzer, Anfragen über ChatGPT</div>
-                    <div className="font-medium">• Blitz: bessere Conversion durch klare Zielgruppe</div>
-                    <div className="font-medium">• Eigene Projekte & Tests</div>
-                </div>
-            </div>
-
-            {/* Software background credibility */}
-            <div className="bg-white border border-gray-200 rounded-xl p-4 mb-10 max-w-2xl">
-                <p className="text-sm text-gray-600">
-                    <span className="font-semibold text-black">Ich komme aus Software-Architektur, nicht aus Marketing.</span><br />
-                    Weniger "Marketing-Magie", mehr nachvollziehbare Signale.
+    <section className="relative pt-32 pb-20 md:pt-52 lg:pt-44 md:pb-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto overflow-hidden">
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-accent/5 rounded-full blur-3xl z-0"></div>
+        <AntigravityBackground />
+        <div className="relative z-10">
+            <FadeIn>
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-[-0.04em] text-black mb-6 leading-[1.05]">
+                    Wirst du genannt,<br />wenn KI gefragt wird?
+                </h1>
+                <p className="text-lg md:text-xl text-gray-700 max-w-2xl mb-8 leading-relaxed">
+                    Ich helfe Hamburger Unternehmen dabei, in ChatGPT, Perplexity und Google AI empfohlen zu werden – und messe, ob daraus echte Anfragen entstehen.
                 </p>
-            </div>
 
-            {/* Trust Bullets */}
-            <div className="space-y-3 mb-10">
-                <div className="flex items-start gap-3 text-sm md:text-base text-gray-600">
-                    <CheckIcon className="w-5 h-5 text-brand-accent flex-shrink-0 mt-0.5" />
-                    <span><strong className="text-black">#1 bei Google</strong> für "AISEO Hamburg"</span>
+                {/* Micro-proof strip */}
+                <div className="bg-white border-2 border-brand-accent rounded-xl p-6 mb-10 max-w-2xl shadow-sm">
+                    <p className="text-sm font-bold text-brand-accent mb-3">Praxis statt Theorie:</p>
+                    <div className="space-y-2 text-sm text-gray-800">
+                        <div className="font-medium">• KinderAlbum: 300+ Nutzer, Anfragen über ChatGPT</div>
+                        <div className="font-medium">• Blitz: bessere Conversion durch klare Zielgruppe</div>
+                        <div className="font-medium">• Eigene Projekte & Tests</div>
+                    </div>
                 </div>
-                <div className="flex items-start gap-3 text-sm md:text-base text-gray-600">
-                    <CheckIcon className="w-5 h-5 text-brand-accent flex-shrink-0 mt-0.5" />
-                    <span><strong className="text-black">Praxis-Cases:</strong> lokale Unternehmen + eigene Projekte (u.a. DSGVO-Schulfotos/KinderAlbum)</span>
-                </div>
-                <div className="flex items-start gap-3 text-sm md:text-base text-gray-600">
-                    <CheckIcon className="w-5 h-5 text-brand-accent flex-shrink-0 mt-0.5" />
-                    <span><strong className="text-black">Technik + Content:</strong> nicht nur Texte – auch Struktur, Schema, Tracking, Performance</span>
-                </div>
-            </div>
 
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4">
-                <Button href="#kontakt" primary text="Kostenlose Kurzanalyse anfragen" className="!py-4 !px-8" />
-                <Button href="#cases" text="Beispiele ansehen" className="!py-4 !px-8" />
-            </div>
+                {/* Software background credibility */}
+                <div className="bg-white border border-gray-200 rounded-xl p-4 mb-10 max-w-2xl">
+                    <p className="text-sm text-gray-600">
+                        <span className="font-semibold text-black">Ich komme aus Software-Architektur, nicht aus Marketing.</span><br />
+                        Weniger "Marketing-Magie", mehr nachvollziehbare Signale.
+                    </p>
+                </div>
 
-            {/* Disclaimer */}
-            <p className="mt-6 text-sm text-gray-500 max-w-lg">
-                Keine Sales-Show. 15 Minuten, klare Einschätzung, ob das Thema bei euch überhaupt Sinn macht.
-            </p>
-        </FadeIn>
+                {/* Trust Bullets */}
+                <div className="space-y-3 mb-10">
+                    <div className="flex items-start gap-3 text-sm md:text-base text-gray-600">
+                        <CheckIcon className="w-5 h-5 text-brand-accent flex-shrink-0 mt-0.5" />
+                        <span><strong className="text-black">#1 bei Google</strong> für "AISEO Hamburg"</span>
+                    </div>
+                    <div className="flex items-start gap-3 text-sm md:text-base text-gray-600">
+                        <CheckIcon className="w-5 h-5 text-brand-accent flex-shrink-0 mt-0.5" />
+                        <span><strong className="text-black">Praxis-Cases:</strong> lokale Unternehmen + eigene Projekte (u.a. DSGVO-Schulfotos/KinderAlbum)</span>
+                    </div>
+                    <div className="flex items-start gap-3 text-sm md:text-base text-gray-600">
+                        <CheckIcon className="w-5 h-5 text-brand-accent flex-shrink-0 mt-0.5" />
+                        <span><strong className="text-black">Technik + Content:</strong> nicht nur Texte – auch Struktur, Schema, Tracking, Performance</span>
+                    </div>
+                </div>
+
+                {/* CTAs */}
+                <div className="flex flex-col sm:flex-row gap-4">
+                    <Button href="#kontakt" primary className="!py-4 !px-6 !pl-8 group">
+                        <span className="relative z-10 flex items-center gap-3">
+                            Kostenlose Kurzanalyse anfragen
+                            <PlatformIconLoop className="!p-0" iconClassName="!w-5 !h-5" />
+                        </span>
+                    </Button>
+                    <Button href="#cases" text="Beispiele ansehen" className="!py-4 !px-8" />
+                </div>
+
+                {/* Disclaimer */}
+                <p className="mt-6 text-sm text-gray-500 max-w-lg">
+                    Keine Sales-Show. 15 Minuten, klare Einschätzung, ob das Thema bei euch überhaupt Sinn macht.
+                </p>
+            </FadeIn>
+        </div>
     </section>
 );
 
