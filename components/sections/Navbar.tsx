@@ -39,7 +39,7 @@ export const Navbar: React.FC = () => {
 
                 {/* Center Pill Nav - Visible on Desktop */}
                 <div className="hidden lg:flex pointer-events-auto bg-white/90 backdrop-blur-md px-1 py-1 rounded-full shadow-[0_4px_30px_rgba(0,0,0,0.06)] border border-gray-100 gap-1">
-                    <a href="/ai-sichtbarkeit" className="px-3 lg:px-5 py-2 rounded-full bg-[#2d8a65] text-white hover:bg-[#267555] transition-colors text-xs font-bold">KI-Sichtbarkeit</a>
+                    <a href="/ai-sichtbarkeit-now" className="px-3 lg:px-5 py-2 rounded-full bg-[#2d8a65] text-white hover:bg-[#267555] transition-colors text-xs font-bold">KI-Sichtbarkeit</a>
                     <a href="/ai-sichtbarkeits-upgrade-hamburg" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Upgrade Hamburg</a>
                     <a href="/#reality" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Realität</a>
                     <a href="/#proof" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Proof</a>
@@ -49,7 +49,7 @@ export const Navbar: React.FC = () => {
 
                 <div className="hidden lg:block pointer-events-auto">
                     <Button
-                        href="/ai-sichtbarkeit"
+                        href="/ai-sichtbarkeit-now"
                         primary
                         text="KI-Sichtbarkeit prüfen"
                         className="!py-2 !px-2 !pl-4 lg:!pl-6 !text-[9px] lg:!text-[10px] uppercase tracking-wider font-bold shadow-lg shadow-black/5"
@@ -81,7 +81,7 @@ export const Navbar: React.FC = () => {
                     <div className="fixed top-20 right-6 bg-white/95 backdrop-blur-md border border-gray-100 shadow-2xl rounded-2xl p-6 min-w-[200px]" onClick={(e) => e.stopPropagation()}>
                         <div className="flex flex-col space-y-4">
                             <a
-                                href="/ai-sichtbarkeit"
+                                href="/ai-sichtbarkeit-now"
                                 className="text-sm font-bold text-white bg-[#2d8a65] hover:bg-[#267555] transition-colors py-3 px-4 rounded-lg text-center"
                                 onClick={closeMobileMenu}
                             >
@@ -126,7 +126,7 @@ export const Navbar: React.FC = () => {
                             </div>
                             <div className="pt-4 border-t border-gray-200">
                                 <Button
-                                    href="/ai-sichtbarkeit"
+                                    href="/ai-sichtbarkeit-now"
                                     primary
                                     text="KI-Sichtbarkeit prüfen"
                                     className="w-full justify-center !text-xs !py-3"

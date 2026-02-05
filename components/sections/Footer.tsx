@@ -20,11 +20,11 @@ export const Footer: React.FC = () => (
 
                     <div className="flex flex-col gap-3">
                         <p className="font-bold uppercase tracking-widest text-xs mb-1 text-white/80">Navigation</p>
+                        <a href="/ai-sichtbarkeit-now" className="hover:text-white/80 transition-colors font-semibold">KI-Sichtbarkeit</a>
                         <a href="/ai-sichtbarkeits-upgrade-hamburg" className="hover:text-white/80 transition-colors">Upgrade Hamburg</a>
-                        <a href="/#reality" className="hover:text-white/80 transition-colors">Realität</a>
+                        <a href="/ai-sichtbarkeit" className="hover:text-white/80 transition-colors">Was ist AI SEO?</a>
                         <a href="/#proof" className="hover:text-white/80 transition-colors">Proof</a>
-                        <a href="/#faq" className="hover:text-white/80 transition-colors">FAQ</a>
-                        <a href="/faq" className="hover:text-white/80 transition-colors">Alle Fragen</a>
+                        <a href="/faq" className="hover:text-white/80 transition-colors">FAQ</a>
                         <a href="/contact" className="hover:text-white/80 transition-colors">Kontakt</a>
                     </div>
 
@@ -61,7 +61,7 @@ export const Footer: React.FC = () => (
                     <p className="text-lg md:text-xl font-light max-w-lg text-white/80">
                         Lassen Sie uns gemeinsam wachsen. Starten Sie jetzt Ihre Optimierung.
                     </p>
-                    <Button href="/contact" text="KI-Sichtbarkeit prüfen" className="!bg-white !text-black hover:!bg-gray-100 !py-3 !px-8 !text-base !rounded-lg" />
+                    <Button href="/ai-sichtbarkeit-now" text="KI-Sichtbarkeit prüfen" className="!bg-white !text-black hover:!bg-gray-100 !py-3 !px-8 !text-base !rounded-lg" />
                 </div>
             </div>
 
