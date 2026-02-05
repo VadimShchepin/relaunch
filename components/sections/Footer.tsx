@@ -21,6 +21,7 @@ export const Footer: React.FC = () => (
                     <div className="flex flex-col gap-3">
                         <p className="font-bold uppercase tracking-widest text-xs mb-1 text-white/80">Navigation</p>
                         <a href="/ai-sichtbarkeit-now" className="hover:text-white/80 transition-colors font-semibold">KI-Sichtbarkeit</a>
+                        <a href="/leistungen" className="hover:text-white/80 transition-colors">Leistungen</a>
                         <a href="/ai-sichtbarkeits-upgrade-hamburg" className="hover:text-white/80 transition-colors">Upgrade Hamburg</a>
                         <a href="/ai-sichtbarkeit" className="hover:text-white/80 transition-colors">Was ist AI SEO?</a>
                         <a href="/#proof" className="hover:text-white/80 transition-colors">Proof</a>

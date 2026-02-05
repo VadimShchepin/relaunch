@@ -40,8 +40,8 @@ export const Navbar: React.FC = () => {
                 {/* Center Pill Nav - Visible on Desktop */}
                 <div className="hidden lg:flex pointer-events-auto bg-white/90 backdrop-blur-md px-1 py-1 rounded-full shadow-[0_4px_30px_rgba(0,0,0,0.06)] border border-gray-100 gap-1">
                     <a href="/ai-sichtbarkeit-now" className="px-3 lg:px-5 py-2 rounded-full bg-[#2d8a65] text-white hover:bg-[#267555] transition-colors text-xs font-bold">KI-Sichtbarkeit</a>
+                    <a href="/leistungen" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Leistungen</a>
                     <a href="/ai-sichtbarkeits-upgrade-hamburg" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Upgrade Hamburg</a>
-                    <a href="/#reality" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Realität</a>
                     <a href="/#proof" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Proof</a>
                     <a href="/faq" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">FAQ</a>
                     <a href="/contact" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Kontakt</a>
@@ -96,11 +96,11 @@ export const Navbar: React.FC = () => {
                             </a>
                             <div className="border-t border-gray-200 pt-4">
                                 <a
-                                    href="/#reality"
+                                    href="/leistungen"
                                     className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2 block"
                                     onClick={closeMobileMenu}
                                 >
-                                    Realität
+                                    Leistungen
                                 </a>
                                 <a
                                     href="/#proof"

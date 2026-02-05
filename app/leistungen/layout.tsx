@@ -1,0 +1,59 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Leistungen | AI SEO, AEO, Beratung & mehr — aiseo.hamburg',
+  description: 'Alle Leistungen von aiseo.hamburg: Beratung, AEO, AI SEO, Website-Erstellung, klassisches SEO, Backlink-Aufbau und Pressemitteilungen. Spezialisiert auf KI-Sichtbarkeit für Hamburger Unternehmen.',
+  keywords: [
+    'AI SEO Leistungen Hamburg',
+    'AEO Answer Engine Optimization',
+    'KI-Sichtbarkeit Beratung',
+    'Website-Erstellung AI-optimiert',
+    'SEO Hamburg',
+    'Backlink-Aufbau',
+    'Pressemitteilungen Hamburg',
+    'AI SEO Agentur Hamburg',
+  ],
+  openGraph: {
+    type: 'website',
+    locale: 'de_DE',
+    url: 'https://aiseo.hamburg/leistungen',
+    title: 'Leistungen | AI SEO, AEO, Beratung & mehr — aiseo.hamburg',
+    description: 'Alle Leistungen: Beratung, AEO, AI SEO, Website-Erstellung, klassisches SEO, Backlink-Aufbau und Pressemitteilungen.',
+    siteName: 'aiseo.hamburg',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Leistungen | AI SEO, AEO, Beratung & mehr — aiseo.hamburg',
+    description: 'Alle Leistungen: Beratung, AEO, AI SEO, Website-Erstellung, klassisches SEO, Backlink-Aufbau und Pressemitteilungen.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  alternates: {
+    canonical: 'https://aiseo.hamburg/leistungen',
+    languages: {
+      'de': '/leistungen',
+      'x-default': '/leistungen',
+    },
+  },
+  other: {
+    'geo.region': 'DE-HH',
+    'geo.placename': 'Hamburg',
+  },
+};
+
+export default function LeistungenLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return <>{children}</>;
+}
