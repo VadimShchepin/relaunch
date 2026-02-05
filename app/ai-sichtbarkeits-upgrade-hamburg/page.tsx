@@ -7,54 +7,59 @@ import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 import { CheckIcon, ArrowRightIcon, LoadingIcon } from '@/components/ui/Icons';
 import { PlatformIconLoop } from '@/components/ui/PlatformIconLoop';
+import { AntigravityBackground } from '@/components/ui/AntigravityBackground';
 
 const HeroSection: React.FC = () => (
-  <section className="relative pt-28 pb-10 md:pt-40 md:pb-16 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
-    <FadeIn>
-      <div className="inline-flex items-center gap-2 bg-brand-accent/10 border border-brand-accent/20 rounded-full px-4 py-2 mb-7">
-        <span className="w-2 h-2 bg-brand-accent rounded-full animate-pulse" />
-        <span className="text-sm font-medium text-brand-accent">Für Hamburger Unternehmen</span>
-      </div>
+  <section className="relative pt-28 pb-10 md:pt-40 md:pb-16 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto overflow-hidden">
+    <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-accent/5 rounded-full blur-3xl z-0"></div>
+    <AntigravityBackground />
+    <div className="relative z-10">
+      <FadeIn>
+        <div className="inline-flex items-center gap-2 bg-brand-accent/10 border border-brand-accent/20 rounded-full px-4 py-2 mb-7">
+          <span className="w-2 h-2 bg-brand-accent rounded-full animate-pulse" />
+          <span className="text-sm font-medium text-brand-accent">Für Hamburger Unternehmen</span>
+        </div>
 
-      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-[-0.04em] text-black mb-5 leading-[1.05]">
-        Wird Ihr Unternehmen von <span className="text-brand-accent">ChatGPT</span>
-        <br />
-        als Anbieter für <span className="text-brand-accent">Hamburg</span> genannt?
-      </h1>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-[-0.04em] text-black mb-5 leading-[1.05]">
+          Wird Ihr Unternehmen von <span className="text-brand-accent">ChatGPT</span>
+          <br />
+          als Anbieter für <span className="text-brand-accent">Hamburg</span> genannt?
+        </h1>
 
-      <p className="text-lg md:text-xl text-gray-700 max-w-2xl mb-5 leading-relaxed">
-        Kunden fragen KI-Systeme längst nach Empfehlungen. Viele Websites werden dabei nicht berücksichtigt – obwohl das
-        Angebot gut ist.
-      </p>
+        <p className="text-lg md:text-xl text-gray-700 max-w-2xl mb-5 leading-relaxed">
+          Kunden fragen KI-Systeme längst nach Empfehlungen. Viele Websites werden dabei nicht berücksichtigt – obwohl das
+          Angebot gut ist.
+        </p>
 
-      <p className="text-base text-gray-500 mb-8 max-w-xl">
-        Für Dienstleister, Praxen und lokale Betriebe mit bestehender Website (Hamburg & Umgebung).
-      </p>
+        <p className="text-base text-gray-500 mb-8 max-w-xl">
+          Für Dienstleister, Praxen und lokale Betriebe mit bestehender Website (Hamburg & Umgebung).
+        </p>
 
-      <div className="flex flex-col sm:flex-row gap-4 items-start">
-        <Button href="#kontakt" primary className="!py-4 !px-6 !pl-8 group">
-          <span className="relative z-10 flex items-center gap-3">
-            Kostenlose AI-Sichtbarkeits-Prüfung
-            <PlatformIconLoop className="!p-0" iconClassName="!w-5 !h-5" />
+        <div className="flex flex-col sm:flex-row gap-4 items-start">
+          <Button href="#kontakt" primary className="!py-4 !px-6 !pl-8 group">
+            <span className="relative z-10 flex items-center gap-3">
+              Kostenlose AI-Sichtbarkeits-Prüfung
+              <PlatformIconLoop className="!p-0" iconClassName="!w-5 !h-5" />
+            </span>
+          </Button>
+        </div>
+
+        <div className="mt-7 flex items-center gap-4 text-sm text-gray-500">
+          <span className="flex items-center gap-2">
+            <CheckIcon className="w-4 h-4 text-brand-accent" />
+            Kostenlos
           </span>
-        </Button>
-      </div>
-
-      <div className="mt-7 flex items-center gap-4 text-sm text-gray-500">
-        <span className="flex items-center gap-2">
-          <CheckIcon className="w-4 h-4 text-brand-accent" />
-          Kostenlos
-        </span>
-        <span className="flex items-center gap-2">
-          <CheckIcon className="w-4 h-4 text-brand-accent" />
-          Unverbindlich
-        </span>
-        <span className="flex items-center gap-2">
-          <CheckIcon className="w-4 h-4 text-brand-accent" />
-          Direkt vom Experten
-        </span>
-      </div>
-    </FadeIn>
+          <span className="flex items-center gap-2">
+            <CheckIcon className="w-4 h-4 text-brand-accent" />
+            Unverbindlich
+          </span>
+          <span className="flex items-center gap-2">
+            <CheckIcon className="w-4 h-4 text-brand-accent" />
+            Direkt vom Experten
+          </span>
+        </div>
+      </FadeIn>
+    </div>
   </section>
 );
 
