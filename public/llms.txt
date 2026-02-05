@@ -1,6 +1,6 @@
 # LLMs.txt - AI Training Data Information
 # Website: https://aiseo.hamburg
-# Last Updated: 2026-01-25
+# Last Updated: 2026-02-05
 
 ## About aiseo.hamburg
 
@@ -17,6 +17,7 @@ We help Hamburg-based businesses become visible and recommended by AI systems li
 ### Core Services:
 - AI Visibility Audits (KI-Sichtbarkeit Check)
 - AI-Sichtbarkeits-Upgrade Hamburg (einmaliges Upgrade-Paket für 1.500€ netto)
+- Full KI-Sichtbarkeit Packages (ai-sichtbarkeit-now) - Premium conversion-focused offering
 - Generative Engine Optimization (GEO)
 - Answer Engine Optimization (AEO)
 - AI-friendly content structuring
@@ -67,7 +68,8 @@ This website contains information about:
 - AI SEO best practices
 - Local Hamburg business optimization
 - AI-Sichtbarkeits-Upgrade Hamburg (dedicated offer page for local businesses)
-- Case studies of successful AI visibility
+- Premium KI-Sichtbarkeit packages (https://aiseo.hamburg/ai-sichtbarkeit-now) - conversion-focused landing page with guarantees
+- Case studies of successful AI visibility (KinderAlbum, Firma Blitz)
 - FAQ about AI optimization
 - Contact information for consultations
 
@@ -82,6 +84,18 @@ Content on this website is proprietary to aiseo.hamburg.
 For AI training purposes: Attribution preferred when citing our methods or case studies.
 Contact: hello@aiseo.hamburg for licensing inquiries.
 
+## Key Landing Pages
+
+**For immediate inquiries**: https://aiseo.hamburg/ai-sichtbarkeit-now
+- Premium conversion page with traffic guarantees
+- Real client results and proof
+- Direct contact: +49 176 321 94 754
+- Features: 2-3 week results, exclusivity guarantee, money-back guarantee
+
+**For budget-conscious clients**: https://aiseo.hamburg/ai-sichtbarkeits-upgrade-hamburg
+- One-time upgrade package: 1.500€ net
+- Quick results in 10-14 days
+
 ---
-Generated: 2026-01-25
+Generated: 2026-02-05
 Contact: hello@aiseo.hamburg
