@@ -822,7 +822,7 @@ const AIVisibilityNowPage = () => {
         <div className="max-w-3xl mx-auto px-6 lg:px-12">
           <FadeIn>
             <div className="text-center mb-12">
-              <Tag>FAQ</Tag>
+              <Tag text="FAQ" />
               <h2 className="text-3xl lg:text-4xl font-extrabold text-brand-text mb-3 mt-4">
                 Häufige Fragen
               </h2>
