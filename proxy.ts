@@ -4,7 +4,7 @@ import { NextResponse } from "next/server"
 const APEX_DOMAIN = "aiseo.hamburg"
 const PROD_HOSTS = new Set([APEX_DOMAIN, `www.${APEX_DOMAIN}`])
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
     const host = request.headers.get("host") ?? request.nextUrl.host
 
     if (!host || !PROD_HOSTS.has(host)) {
