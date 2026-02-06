@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { GoogleTag } from "@/components/GoogleTag";
+import { CookieConsent } from "@/components/ui/CookieConsent";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -75,6 +77,7 @@ export default function RootLayout({
                 <meta name="geo.region" content="DE-HH" />
                 <meta name="geo.placename" content="Hamburg" />
                 <script defer src="https://umami.dsgvoschulfotos.de/script.js" data-website-id="994bf95f-79f8-4fcd-b77f-48abe6baee1d"></script>
+                <GoogleTag />
                 {/* LocalBusiness Schema for AI SEO Hamburg */}
                 <script
                     type="application/ld+json"
@@ -130,6 +133,7 @@ export default function RootLayout({
                     {children}
                 </main>
                 <Analytics />
+                <CookieConsent />
             </body>
         </html>
     );

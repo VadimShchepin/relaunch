@@ -146,18 +146,55 @@ export default function DatenschutzPage() {
               <h2 className="text-xl font-semibold text-black mb-3">8. Cookies</h2>
               <div className="text-gray-700 space-y-3 text-sm">
                 <p>
-                  Diese Website verwendet nur technisch notwendige Cookies, die für den Betrieb der Website erforderlich sind.
-                  Es werden keine tracking- oder marketing-Cookies verwendet.
+                  Diese Website verwendet technisch notwendige Cookies sowie Marketing-Cookies für Google Ads Conversion-Tracking.
+                  Marketing-Cookies werden erst nach Ihrer ausdrücklichen Einwilligung über unseren Cookie-Banner gesetzt.
                 </p>
                 <p>
-                  Sollten in Zukunft weitere Cookies eingesetzt werden, werden wir Sie entsprechend informieren
-                  und um Ihre Einwilligung bitten, sofern dies rechtlich erforderlich ist.
+                  Ohne Ihre Zustimmung werden keine personenbezogenen Daten über Cookies erhoben.
+                  Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie den lokalen Speicher Ihres Browsers löschen
+                  — beim nächsten Besuch wird der Cookie-Banner erneut angezeigt.
                 </p>
               </div>
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-black mb-3">9. Ihre Rechte</h2>
+              <h2 className="text-xl font-semibold text-black mb-3">9. Google Ads und Conversion-Tracking</h2>
+              <div className="text-gray-700 space-y-3 text-sm">
+                <p>
+                  Wir nutzen Google Ads Conversion-Tracking, um die Wirksamkeit unserer Werbeanzeigen zu messen.
+                  Dabei wird erfasst, ob Sie nach dem Klick auf eine Google-Anzeige eine bestimmte Aktion auf unserer Website
+                  durchgeführt haben (z.&nbsp;B. Kontaktanfrage).
+                </p>
+                <p>
+                  <strong>Zweck:</strong> Messung von Conversions aus Google Ads Kampagnen.
+                </p>
+                <p>
+                  <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Die Datenverarbeitung
+                  erfolgt erst nach Ihrer ausdrücklichen Zustimmung über den Cookie-Banner.
+                </p>
+                <p>
+                  <strong>Datenverarbeiter:</strong> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.
+                </p>
+                <p>
+                  <strong>Widerruf:</strong> Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie den lokalen Speicher
+                  Ihres Browsers löschen. Der Cookie-Banner wird dann beim nächsten Besuch erneut angezeigt.
+                </p>
+                <p>
+                  Weitere Informationen zum Datenschutz bei Google finden Sie unter:{' '}
+                  <a
+                    href="https://policies.google.com/privacy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-black"
+                  >
+                    https://policies.google.com/privacy
+                  </a>
+                </p>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-black mb-3">10. Ihre Rechte</h2>
               <div className="text-gray-700 space-y-3 text-sm">
                 <p>Sie haben folgende Rechte:</p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
@@ -187,7 +224,7 @@ export default function DatenschutzPage() {
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-black mb-3">10. Widerruf Ihrer Einwilligung</h2>
+              <h2 className="text-xl font-semibold text-black mb-3">11. Widerruf Ihrer Einwilligung</h2>
               <div className="text-gray-700 space-y-3 text-sm">
                 <p>
                   Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich.
@@ -198,7 +235,7 @@ export default function DatenschutzPage() {
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-black mb-3">11. SSL- bzw. TLS-Verschlüsselung</h2>
+              <h2 className="text-xl font-semibold text-black mb-3">12. SSL- bzw. TLS-Verschlüsselung</h2>
               <div className="text-gray-700 space-y-3 text-sm">
                 <p>
                   Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte,
@@ -210,7 +247,7 @@ export default function DatenschutzPage() {
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-black mb-3">12. Kontakt in Datenschutzfragen</h2>
+              <h2 className="text-xl font-semibold text-black mb-3">13. Kontakt in Datenschutzfragen</h2>
               <div className="text-gray-700 space-y-1 text-sm">
                 <p>Bei Fragen zum Datenschutz wenden Sie sich bitte an:</p>
                 <p>Vadim Shchepin</p>
@@ -221,7 +258,7 @@ export default function DatenschutzPage() {
 
             <section className="pt-6 border-t border-black/10">
               <p className="text-sm text-gray-600">
-                Stand dieser Datenschutzerklärung: 18. Januar 2026
+                Stand dieser Datenschutzerklärung: 6. Februar 2026
               </p>
             </section>
           </div>
