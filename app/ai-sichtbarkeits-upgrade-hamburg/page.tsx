@@ -257,7 +257,6 @@ const ContactFormSection: React.FC = () => {
     nachricht: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -278,7 +277,7 @@ const ContactFormSection: React.FC = () => {
       });
 
       const data = await response.json();
-      if (data.ok) setSubmitted(true);
+      if (data.ok) window.location.href = '/contact/danke';
       else setError('Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.');
     } catch {
       setError('Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.');
@@ -296,16 +295,7 @@ const ContactFormSection: React.FC = () => {
         </h2>
         <p className="text-gray-600 mb-8">Kurz & unverbindlich. Ich antworte in 24–48h.</p>
 
-        {submitted ? (
-          <div className="bg-green-50 border border-green-200 rounded-2xl p-8 text-center">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <CheckIcon className="w-8 h-8 text-green-600" />
-            </div>
-            <h3 className="text-xl font-semibold text-black mb-2">Danke!</h3>
-            <p className="text-gray-600">Ich melde mich innerhalb von 24–48h bei Ihnen.</p>
-          </div>
-        ) : (
-          <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid sm:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -414,7 +404,6 @@ const ContactFormSection: React.FC = () => {
               einverstanden.
             </p>
           </form>
-        )}
       </FadeIn>
     </section>
   );
