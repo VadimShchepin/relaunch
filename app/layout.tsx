@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
-import { GoogleTag } from "@/components/GoogleTag";
+import { GoogleTag, GoogleTagNoScript } from "@/components/GoogleTag";
 import { CookieConsent } from "@/components/ui/CookieConsent";
 import "./globals.css";
 
@@ -129,6 +129,7 @@ export default function RootLayout({
                 />
             </head>
             <body className="antialiased">
+                <GoogleTagNoScript />
                 <main id="main-content">
                     {children}
                 </main>

@@ -4,25 +4,17 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const STORAGE_KEY = 'cookie-consent';
-const GA_ID = 'AW-17934090542';
 
-function loadGtag() {
-  // Avoid loading twice
-  if (document.querySelector(`script[src*="googletagmanager.com/gtag/js"]`)) return;
-
-  const script = document.createElement('script');
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-  script.async = true;
-  document.head.appendChild(script);
-
-  window.gtag('consent', 'default', {
-    ad_storage: 'granted',
-    ad_user_data: 'granted',
-    ad_personalization: 'granted',
-    analytics_storage: 'granted',
-  });
-  window.gtag('js', new Date());
-  window.gtag('config', GA_ID);
+function updateGTMConsent(granted: boolean) {
+  // Update GTM consent mode
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('consent', 'update', {
+      ad_storage: granted ? 'granted' : 'denied',
+      ad_user_data: granted ? 'granted' : 'denied',
+      ad_personalization: granted ? 'granted' : 'denied',
+      analytics_storage: granted ? 'granted' : 'denied',
+    });
+  }
 }
 
 export function CookieConsent() {
@@ -31,20 +23,23 @@ export function CookieConsent() {
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored === 'granted') {
-      loadGtag();
-    } else if (stored !== 'denied') {
+      updateGTMConsent(true);
+    } else if (stored === 'denied') {
+      updateGTMConsent(false);
+    } else {
       setVisible(true);
     }
   }, []);
 
   function accept() {
     localStorage.setItem(STORAGE_KEY, 'granted');
-    loadGtag();
+    updateGTMConsent(true);
     setVisible(false);
   }
 
   function reject() {
     localStorage.setItem(STORAGE_KEY, 'denied');
+    updateGTMConsent(false);
     setVisible(false);
   }
 
