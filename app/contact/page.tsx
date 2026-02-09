@@ -14,7 +14,6 @@ export default function ContactPage() {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -34,8 +33,7 @@ export default function ContactPage() {
       const data = await response.json();
 
       if (data.ok) {
-        setSubmitted(true);
-        setFormData({ name: "", email: "", company: "", message: "" });
+        window.location.href = '/contact/danke';
       } else {
         setError(getErrorMessage(data.error));
       }
@@ -160,20 +158,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <FadeIn delay={200}>
               <div className="bg-white rounded-card border border-gray-100 p-8 md:p-10">
-                {submitted ? (
-                  <div className="text-center py-12">
-                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                      <CheckIcon className="w-8 h-8 text-green-600" />
-                    </div>
-                    <h3 className="text-2xl font-semibold text-black mb-2">
-                      Vielen Dank!
-                    </h3>
-                    <p className="text-gray-600">
-                      Deine Nachricht ist bei uns angekommen. Wir melden uns schnellstmöglich bei dir.
-                    </p>
-                  </div>
-                ) : (
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                         Name *
@@ -265,11 +250,10 @@ export default function ContactPage() {
                       einverstanden.
                     </p>
                   </form>
-                )}
-              </div>
-            </FadeIn>
-          </div>
-        </section>
+                </div>
+              </FadeIn>
+            </div>
+          </section>
 
         {/* Quick FAQ CTA */}
         <section className="px-6 md:px-12 lg:px-20 py-16 border-t border-black/10">
