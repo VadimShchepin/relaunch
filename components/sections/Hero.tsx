@@ -34,7 +34,7 @@ export const Hero: React.FC = () => {
                             </div>
                         </div>
                         <p className="text-lg sm:text-xl md:text-xl lg:text-2xl font-medium text-gray-800/80 leading-relaxed max-w-2xl mt-8 lg:mt-12">
-                            Ich helfe Hamburger Unternehmen, von KI empfohlen zu werden – nicht nur gefunden.
+                            Ich helfe Unternehmen, von KI empfohlen zu werden – nicht nur gefunden. Ich baue die Webseiten in einen Richtigen Weg!
                         </p>
                         <div className="xl:hidden mt-6 lg:mt-8">
                             <Button

@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'KI-Sichtbarkeit Hamburg | Top-Empfehlung in ChatGPT & Perplexity werden',
+  title: 'KI-Sichtbarkeit Hamburg | Top-Empfehlung in ChatGPT und Perplexity',
   description: 'Professionelle KI-Sichtbarkeit für Unternehmen in Hamburg. Erste Ergebnisse in 2-3 Wochen. Traffic-Garantie. Werden Sie zur #1-Empfehlung in ChatGPT, Perplexity & Co. Jetzt kostenlose Beratung.',
   keywords: [
     'KI-Sichtbarkeit Hamburg',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/ai-sichtbarkeit-now',
-    title: 'KI-Sichtbarkeit Hamburg | Top-Empfehlung in ChatGPT & Perplexity werden',
+    title: 'KI-Sichtbarkeit Hamburg | Top-Empfehlung in ChatGPT und Perplexity',
     description: 'Professionelle KI-Sichtbarkeit für Unternehmen in Hamburg. Erste Ergebnisse in 2-3 Wochen. Traffic-Garantie. Werden Sie zur #1-Empfehlung in ChatGPT, Perplexity & Co.',
     siteName: 'KI-Sichtbarkeit Hamburg',
     images: [
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@aiseo_hamburg',
     creator: '@aiseo_hamburg',
-    title: 'KI-Sichtbarkeit Hamburg | Top-Empfehlung in ChatGPT werden',
+    title: 'KI-Sichtbarkeit Hamburg | Top-Empfehlung in ChatGPT',
     description: 'Erste Ergebnisse in 2-3 Wochen. Traffic-Garantie. Jetzt kostenlose Beratung.',
     images: ['/image/proof/KinderAlbum-chatgpt-full.webp']
   },
