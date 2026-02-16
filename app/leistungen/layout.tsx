@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Leistungen | AI SEO, AEO, Beratung & mehr — aiseo.hamburg',
-  description: 'Alle Leistungen von aiseo.hamburg: Beratung, AEO, AI SEO, Website-Erstellung, klassisches SEO, Backlink-Aufbau und Pressemitteilungen. Spezialisiert auf KI-Sichtbarkeit für Hamburger Unternehmen.',
+  description: 'Leistungen von aiseo.hamburg: Beratung, AEO, AI SEO, Website-Erstellung, klassisches SEO, Backlink-Aufbau und Pressemitteilungen. Spezialisiert auf KMUs.',
   keywords: [
     'AI SEO Leistungen Hamburg',
     'AEO Answer Engine Optimization',
