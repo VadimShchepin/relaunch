@@ -381,29 +381,6 @@ app/
 8. ⚪ **Cases page** (detailed case studies)
 9. ⚪ **Implement proper newsletter with double opt-in** (v1.1)
 
-## Testing Checklist
-
-### Pre-Launch Testing:
-- [ ] **Build production version** (`npm run build && npm start`) - NOT `npm run dev`
-- [ ] **Hard check: No "Compiling..." badge anywhere in production**
-- [ ] Test all navigation links go to correct destinations (`/contact` vs anchors)
-- [ ] Verify all CTA buttons lead to same contact path
-- [ ] Check legal pages are accessible and complete
-- [ ] Test contact form submission
-- [ ] Verify newsletter is disabled or properly implemented with DOI
-- [ ] Test responsive design on mobile/tablet
-- [ ] Check page load speeds
-- [ ] Validate HTML and accessibility
-- [ ] Test in multiple browsers
-
-### SEO Testing:
-- [ ] Verify robots.txt is accessible (`/robots.txt`)
-- [ ] Check sitemap.xml loads correctly (`/sitemap.xml`)
-- [ ] Test structured data with Google's Rich Results Test
-- [ ] Verify meta descriptions and titles on all pages
-- [ ] Check Open Graph tags
-- [ ] **Note**: If using App Router files (`app/robots.ts`), verify they generate correctly
-
 ## Current File Structure
 
 ```
