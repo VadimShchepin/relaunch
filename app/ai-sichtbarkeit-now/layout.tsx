@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'KI-Sichtbarkeit Hamburg | Top-Empfehlung in ChatGPT und Perplexity',
-  description: 'Professionelle KI-Sichtbarkeit für Unternehmen in Hamburg. Erste Ergebnisse in 2-3 Wochen. Traffic-Garantie. Werden Sie zur #1-Empfehlung in ChatGPT, Perplexity & Co. Jetzt kostenlose Beratung.',
+  description: 'Erste Ergebnisse in 2-3 Wochen. Traffic-Garantie. Werden Sie zur #1-Empfehlung in ChatGPT, Perplexity & Co. Jetzt kostenlose Beratung.',
   keywords: [
     'KI-Sichtbarkeit Hamburg',
     'ChatGPT Optimierung',

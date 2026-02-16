@@ -1,7 +1,7 @@
 {
     "name": "aiseo.hamburg - KI-Sichtbarkeit für Hamburger Unternehmen",
     "short_name": "aiseo.hamburg",
-    "description": "Professionelle KI-Optimierung (AI SEO/GEO/AEO) für bessere Sichtbarkeit in ChatGPT, Perplexity & Co.",
+    "description": "Professionelle KI-Optimierung (AI SEO/GEO/AEO) für bessere Sichtbarkeit in ChatGPT, Perplexity und Co.",
     "start_url": "/",
     "scope": "/",
     "display": "standalone",
