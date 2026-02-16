@@ -4,16 +4,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-AI SEO marketing website for German market (KI-Sichtbarkeit). Built with Next.js 16 (App Router), React 19, Tailwind CSS 4, and GSAP for animations. German-only (`lang="de"`), targeting Hamburg businesses.
+AI SEO marketing website for German market (KI-Sichtbarkeit). Built with Next.js 16 (App Router), React 19, Tailwind CSS 4, and GSAP for animations. German-only (`lang="de"`), targeting Hamburg businesses. Deployed on Vercel.
 
 ## Commands
 
 ```bash
 npm run dev          # Local dev server (localhost:3000)
 npm run build        # Production build
-npm run lint         # ESLint check
+npm run lint         # ESLint check (uses next lint)
 npm run test         # Run Vitest once
 npm run test:watch   # Vitest in watch mode
+npx vitest run path/to/file.test.tsx  # Run a single test file
 ```
 
 Note: Dev/build scripts use `NODE_OPTIONS='--max-old-space-size=8192'` for GSAP animations.
@@ -26,21 +27,23 @@ Note: Dev/build scripts use `NODE_OPTIONS='--max-old-space-size=8192'` for GSAP 
 - `app/api/newsletter/` - Brevo double opt-in newsletter subscription
 - `components/sections/` - Major page sections (Hero, Navbar, FAQ, etc.)
 - `components/ui/` - Reusable primitives (Button, FadeIn, Icons, Tag)
-- `lib/` - Shared constants and helpers
+- `lib/` - Shared constants (image asset paths) and helpers
 - `public/` - Static assets, sitemap.xml, robots.txt, llms.txt, ai.txt
-- `middleware.ts` - Domain redirects (www → apex, http → https)
 
 **Key Patterns:**
 - Server Components by default; add `'use client'` only when hooks/browser APIs needed
 - Homepage sections are client components due to GSAP animations
 - `FadeIn` wrapper for scroll-triggered entrance animations
 - Path alias: `@/*` maps to project root (e.g., `@/components/ui/Button`)
+- Domain redirects (www → apex, http → https) handled at Vercel dashboard level, not in middleware
 
 **Design System (tailwind.config.ts):**
 - `brand-bg`: #FBF9F7 (warm off-white)
 - `brand-text`: #111111 (near black)
 - `brand-accent`: #4FAF8C (green, used for glow effects)
-- Font: General Sans
+- `brand-dark`: #1C1917, `brand-olive`: #9CA38A, `brand-slate`: #7D8C9E, `brand-orange`: #FF5E3A, `brand-pink`: #E6A5A5
+- Font: General Sans (loaded from Fontshare CDN)
+- Custom border-radius tokens: `section` (1.5rem), `card` (1rem)
 
 ## SEO Structure
 
@@ -49,6 +52,7 @@ Note: Dev/build scripts use `NODE_OPTIONS='--max-old-space-size=8192'` for GSAP 
 - Page-specific metadata in `app/[page]/layout.tsx` files
 - All content is German (`lang="de"`, `locale: "de_DE"`)
 - Hreflang configured as `de` with `x-default`
+- Metadata base URL: `https://aiseo.hamburg`
 
 **Structured Data (JSON-LD):**
 - ProfessionalService schema on all pages (root layout)
@@ -80,9 +84,12 @@ Tests use Vitest + Testing Library with jsdom. Test files use `*.test.tsx` suffi
 ## Environment Variables
 
 Required in `.env.local` (see `.env.example`):
-- `BREVO_API_KEY`, `BREVO_SMTP_*` - Email provider
-- `CONTACT_RECIPIENT_EMAIL`, `CONTACT_SENDER_EMAIL`
-- `BREVO_NEWSLETTER_LIST_ID`
+- `BREVO_API_KEY` - Brevo API key
+- `BREVO_DOI_TEMPLATE_ID` - Double opt-in email template ID
+- `BREVO_NEWSLETTER_LIST_ID` - Target list after DOI confirmation
+- `BREVO_DOI_REDIRECT_URL` - Post-confirmation redirect URL
+- `BREVO_SMTP_SERVER`, `BREVO_SMTP_PORT`, `BREVO_ANMELDUNG`, `BREVO_SMTP_KEY` - SMTP relay config
+- `CONTACT_RECIPIENT_EMAIL`, `CONTACT_SENDER_EMAIL` - Contact form addresses
 
 ## Commits
 
