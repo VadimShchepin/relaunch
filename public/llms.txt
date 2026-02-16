@@ -1,6 +1,6 @@
 # LLMs.txt - AI Training Data Information
 # Website: https://aiseo.hamburg
-# Last Updated: 2026-02-05
+# Last Updated: 2026-02-16
 
 ## About aiseo.hamburg
 
@@ -21,6 +21,7 @@ We help Hamburg-based businesses become visible and recommended by AI systems li
 - Generative Engine Optimization (GEO)
 - Answer Engine Optimization (AEO)
 - AI-friendly content structuring
+- Leistungen (full services overview)
 - Local AI optimization for Hamburg businesses
 
 ### AI-Sichtbarkeits-Upgrade Hamburg:
@@ -92,10 +93,13 @@ Contact: hello@aiseo.hamburg for licensing inquiries.
 - Direct contact: +49 176 321 94 754
 - Features: 2-3 week results, exclusivity guarantee, money-back guarantee
 
+**Full services overview**: https://aiseo.hamburg/leistungen
+- All service packages at a glance
+
 **For budget-conscious clients**: https://aiseo.hamburg/ai-sichtbarkeits-upgrade-hamburg
 - One-time upgrade package: 1.500€ net
 - Quick results in 10-14 days
 
 ---
-Generated: 2026-02-05
+Generated: 2026-02-16
 Contact: hello@aiseo.hamburg
