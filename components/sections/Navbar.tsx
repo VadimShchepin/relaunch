@@ -43,6 +43,8 @@ export const Navbar: React.FC = () => {
                     <a href="/leistungen" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Leistungen</a>
                     <a href="/ai-sichtbarkeits-upgrade-hamburg" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Upgrade Hamburg</a>
                     <a href="/#proof" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Proof</a>
+                    <a href="/wissen" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Wissen</a>
+                    <a href="/ueber-mich" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Über mich</a>
                     <a href="/faq" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">FAQ</a>
                     <a href="/contact" className="px-3 lg:px-5 py-2 rounded-full hover:bg-gray-100/80 transition-colors text-xs font-bold text-gray-900">Kontakt</a>
                 </div>
@@ -108,6 +110,20 @@ export const Navbar: React.FC = () => {
                                     onClick={closeMobileMenu}
                                 >
                                     Proof
+                                </a>
+                                <a
+                                    href="/wissen"
+                                    className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2 block"
+                                    onClick={closeMobileMenu}
+                                >
+                                    Wissen
+                                </a>
+                                <a
+                                    href="/ueber-mich"
+                                    className="text-sm font-semibold text-gray-900 hover:text-brand-accent transition-colors py-2 block"
+                                    onClick={closeMobileMenu}
+                                >
+                                    Über mich
                                 </a>
                                 <a
                                     href="/faq"
