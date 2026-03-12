@@ -5,7 +5,7 @@ import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
-import { LinkedInIcon, InstagramIcon, TwitterIcon, TikTokIcon, GoogleIcon } from '@/components/ui/Icons';
+import { LinkedInIcon, InstagramIcon, TikTokIcon, GoogleIcon } from '@/components/ui/Icons';
 
 const SOCIAL_LINKS = [
   {
@@ -25,12 +25,6 @@ const SOCIAL_LINKS = [
     href: 'https://www.tiktok.com/@aiseo.hamburg/',
     icon: TikTokIcon,
     label: 'Kurze Videos zu KI-Sichtbarkeit',
-  },
-  {
-    name: 'X (Twitter)',
-    href: 'https://x.com/aiseo.hamburg',
-    icon: TwitterIcon,
-    label: 'News und Diskussionen',
   },
   {
     name: 'Google Business',
@@ -78,7 +72,6 @@ export default function UeberMichPage() {
       'https://www.linkedin.com/in/vadim-shchepin/',
       'https://www.instagram.com/aiseo.hamburg/',
       'https://www.tiktok.com/@aiseo.hamburg/',
-      'https://x.com/aiseo.hamburg',
     ],
     worksFor: {
       '@type': 'Organization',
