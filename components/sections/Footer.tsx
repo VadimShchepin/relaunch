@@ -26,6 +26,7 @@ export const Footer: React.FC = () => (
                         <a href="/ai-sichtbarkeit" className="hover:text-white/80 transition-colors">Was ist AI SEO?</a>
                         <a href="/#proof" className="hover:text-white/80 transition-colors">Proof</a>
                         <a href="/faq" className="hover:text-white/80 transition-colors">FAQ</a>
+                        <a href="/ueber-mich" className="hover:text-white/80 transition-colors">Über mich</a>
                         <a href="/contact" className="hover:text-white/80 transition-colors">Kontakt</a>
                     </div>
 
@@ -37,8 +38,12 @@ export const Footer: React.FC = () => (
                     </div>
 
                     <div className="flex flex-col gap-3">
-                        <p className="font-bold uppercase tracking-widest text-xs mb-1 text-white/80">Presse</p>
-                        <a href="/pressekit" className="hover:text-white/80 transition-colors">Pressekit</a>
+                        <p className="font-bold uppercase tracking-widest text-xs mb-1 text-white/80">Wissen</p>
+                        <a href="/wissen" className="hover:text-white/80 transition-colors">Alle Guides</a>
+                        <a href="/wissen/ki-sichtbarkeit" className="hover:text-white/80 transition-colors">KI-Sichtbarkeit</a>
+                        <a href="/wissen/sichtbarkeit-in-chatgpt" className="hover:text-white/80 transition-colors">ChatGPT</a>
+                        <a href="/wissen/sichtbarkeit-in-perplexity" className="hover:text-white/80 transition-colors">Perplexity</a>
+                        <a href="/pressekit" className="hover:text-white/80 transition-colors mt-4">Pressekit</a>
                     </div>
 
                 </div>
