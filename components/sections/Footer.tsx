@@ -73,7 +73,7 @@ export const Footer: React.FC = () => (
 
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40 mt-12 pt-8 border-t border-white/10">
                 <p>© 2026 aiseo.hamburg. Alle Rechte vorbehalten.</p>
-                <p>Made in Hamburg.</p>
+                <p>Made in Hamburg. Auch unter <a href="https://webseite.hamburg/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white/80 transition-colors">webseite.hamburg</a></p>
 
                 {/* Social Media Links */}
                 <div className="flex items-center gap-4">

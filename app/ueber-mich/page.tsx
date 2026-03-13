@@ -209,6 +209,46 @@ export default function UeberMichPage() {
           </div>
         </section>
 
+        {/* Sister brand */}
+        <section className="px-6 md:px-12 lg:px-20 py-16 md:py-20 bg-white">
+          <div className="max-w-[800px] mx-auto">
+            <FadeIn>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-black mb-8">
+                Mehr als KI-Sichtbarkeit
+              </h2>
+            </FadeIn>
+
+            <FadeIn delay={100}>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                KI-Sichtbarkeit ist mein Fokus &ndash; aber nicht alles, was ich mache. Unter <a href="https://webseite.hamburg/" target="_blank" rel="noopener noreferrer" className="text-brand-accent font-semibold underline underline-offset-2 hover:text-black transition-colors">webseite.hamburg</a> biete ich klassische digitale Dienstleistungen an: Webseiten-Erstellung, Google Ads, SEO und Online-Promotion.
+              </p>
+            </FadeIn>
+
+            <FadeIn delay={200}>
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                Viele meiner Kunden starten dort mit einer neuen Website oder Ads-Kampagne und kommen dann hierher, wenn sie den nächsten Schritt machen wollen: sichtbar werden in ChatGPT, Perplexity und Co. Beide Seiten ergänzen sich &ndash; je nachdem, wo du gerade stehst.
+              </p>
+            </FadeIn>
+
+            <FadeIn delay={300}>
+              <a
+                href="https://webseite.hamburg/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-4 bg-[#F7F5F2] hover:bg-gray-100 rounded-xl p-5 pr-8 transition-all hover:shadow-md group"
+              >
+                <span className="w-12 h-12 rounded-full bg-black/5 group-hover:bg-brand-accent/10 flex items-center justify-center transition-colors text-lg font-bold text-gray-700 group-hover:text-brand-accent">
+                  W
+                </span>
+                <div>
+                  <p className="font-bold text-black text-sm">webseite.hamburg</p>
+                  <p className="text-gray-500 text-xs">Webseiten, Google Ads, SEO &amp; Promotion</p>
+                </div>
+              </a>
+            </FadeIn>
+          </div>
+        </section>
+
         {/* Social Links */}
         <section className="px-6 md:px-12 lg:px-20 py-16 md:py-20 bg-white">
           <div className="max-w-[1000px] mx-auto">
