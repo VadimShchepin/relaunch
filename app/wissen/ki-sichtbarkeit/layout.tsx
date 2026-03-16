@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'KI-Sichtbarkeit: Der komplette Guide fur Unternehmen 2026',
+  title: 'KI-Sichtbarkeit | Der komplette Guide für Unternehmen 2026',
   description:
     'Was ist KI-Sichtbarkeit, warum ist sie entscheidend und wie erreichst du sie? Der umfassende Guide mit Strategie, Tools und 10 konkreten Schritten.',
   keywords: [
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/wissen/ki-sichtbarkeit',
-    title: 'KI-Sichtbarkeit: Der komplette Guide fur Unternehmen 2026',
+    title: 'KI-Sichtbarkeit | Der komplette Guide für Unternehmen 2026',
     description:
       'Was ist KI-Sichtbarkeit, warum ist sie entscheidend und wie erreichst du sie? Der umfassende Guide mit Strategie, Tools und 10 konkreten Schritten.',
     siteName: 'aiseo.hamburg',
   },
   twitter: {
     card: 'summary',
-    title: 'KI-Sichtbarkeit: Der komplette Guide fur Unternehmen 2026',
+    title: 'KI-Sichtbarkeit | Der komplette Guide für Unternehmen 2026',
     description:
       'Was ist KI-Sichtbarkeit, warum ist sie entscheidend und wie erreichst du sie? Der umfassende Guide mit Strategie, Tools und 10 konkreten Schritten.',
   },

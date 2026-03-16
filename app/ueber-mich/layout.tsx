@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     type: 'profile',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/ueber-mich',
-    title: 'Vadim Shchepin - KI-Sichtbarkeit & AI SEO aus Hamburg',
+    title: 'Vadim Shchepin | KI-Sichtbarkeit & AI SEO Hamburg',
     description:
       'Senior Engineer aus Hamburg. Datengetrieben, ergebnisorientiert, persönlich.',
     siteName: 'aiseo.hamburg',
   },
   twitter: {
     card: 'summary',
-    title: 'Vadim Shchepin - KI-Sichtbarkeit & AI SEO aus Hamburg',
+    title: 'Vadim Shchepin | KI-Sichtbarkeit & AI SEO Hamburg',
     description:
       'Senior Engineer aus Hamburg. Datengetrieben, ergebnisorientiert, persönlich.',
   },

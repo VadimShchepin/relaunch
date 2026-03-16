@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         'AI SEO ChatGPT',
     ],
     openGraph: {
-        title: 'Sichtbarkeit in ChatGPT: So werden Unternehmen empfohlen',
+        title: 'Sichtbarkeit in ChatGPT | So werden Unternehmen empfohlen',
         description: 'Wie werden Unternehmen in ChatGPT sichtbar? Die wichtigsten Faktoren und Strategien.',
         url: 'https://aiseo.hamburg/wissen/sichtbarkeit-in-chatgpt',
         siteName: 'aiseo.hamburg',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Sichtbarkeit in ChatGPT: So werden Unternehmen empfohlen',
+        title: 'Sichtbarkeit in ChatGPT | So werden Unternehmen empfohlen',
         description: 'Wie werden Unternehmen in ChatGPT sichtbar? Die wichtigsten Faktoren und Strategien.',
     },
     alternates: {
