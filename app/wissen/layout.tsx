@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Wissen: KI-Sichtbarkeit, AI SEO & Automatisierung | aiseo.hamburg',
+    title: 'KI-Sichtbarkeit Wissen | Guides zu AI SEO & Automatisierung',
     description: 'Praxis-Guides zu KI-Sichtbarkeit, AI SEO, ChatGPT- und Perplexity-Optimierung und Website-Automatisierung. Fundiertes Wissen für Hamburger Unternehmen.',
     keywords: [
         'KI-Sichtbarkeit Wissen',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
         'KI Optimierung lernen',
     ],
     openGraph: {
-        title: 'Wissen: KI-Sichtbarkeit, AI SEO & Automatisierung',
+        title: 'KI-Sichtbarkeit Wissen | Guides zu AI SEO & Automatisierung',
         description: 'Praxis-Guides zu KI-Sichtbarkeit, AI SEO und Website-Automatisierung.',
         url: 'https://aiseo.hamburg/wissen',
         siteName: 'aiseo.hamburg',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Wissen: KI-Sichtbarkeit, AI SEO & Automatisierung',
+        title: 'KI-Sichtbarkeit Wissen | Guides zu AI SEO & Automatisierung',
         description: 'Praxis-Guides zu KI-Sichtbarkeit, AI SEO und Website-Automatisierung.',
     },
     alternates: {

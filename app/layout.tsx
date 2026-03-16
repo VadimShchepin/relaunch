@@ -5,7 +5,7 @@ import { CookieConsent } from "@/components/ui/CookieConsent";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "aiseo.hamburg — KI-Sichtbarkeit für Hamburger Unternehmen",
+    title: "KI-Sichtbarkeit Hamburg | Sichtbar in ChatGPT & Perplexity",
     description: "Professionelle KI-Optimierung (AI SEO/GEO/AEO) für bessere Sichtbarkeit in ChatGPT, Perplexity & Co. Spezialist für Hamburg.",
     keywords: "AI SEO, KI Sichtbarkeit, GEO, AEO, Hamburg, ChatGPT Optimierung, Perplexity, Google AI",
     metadataBase: new URL('https://aiseo.hamburg'),
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         ]
     },
     openGraph: {
-        title: "aiseo.hamburg — KI-Sichtbarkeit für Hamburger Unternehmen",
+        title: "KI-Sichtbarkeit Hamburg | Sichtbar in ChatGPT & Perplexity",
         description: "Professionelle KI-Optimierung für bessere Sichtbarkeit in ChatGPT, Perplexity & Co.",
         url: "https://aiseo.hamburg/",
         siteName: "aiseo.hamburg",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "aiseo.hamburg — KI-Sichtbarkeit für Hamburger Unternehmen",
+        title: "KI-Sichtbarkeit Hamburg | Sichtbar in ChatGPT & Perplexity",
         description: "Professionelle KI-Optimierung für bessere Sichtbarkeit in ChatGPT, Perplexity & Co.",
     },
     robots: {

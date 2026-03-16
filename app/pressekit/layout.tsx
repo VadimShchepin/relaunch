@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Pressekit | aiseo.hamburg - KI-Sichtbarkeit Hamburg',
+    title: 'Pressekit | KI-Sichtbarkeit Hamburg',
     description: 'Pressekit und Medienressourcen von aiseo.hamburg. Logos, Informationen und Kontaktdaten für Presse und Medien.',
     openGraph: {
-        title: 'Pressekit | aiseo.hamburg',
+        title: 'Pressekit | KI-Sichtbarkeit Hamburg',
         description: 'Pressekit und Medienressourcen von aiseo.hamburg.',
         url: 'https://aiseo.hamburg/pressekit',
         siteName: 'aiseo.hamburg',

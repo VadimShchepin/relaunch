@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Leistungen | AI SEO, AEO, Beratung & mehr — aiseo.hamburg',
+  title: 'AI SEO Leistungen Hamburg | Beratung, AEO & Website-Erstellung',
   description: 'Leistungen von aiseo.hamburg: Beratung, AEO, AI SEO, Website-Erstellung, klassisches SEO, Backlink-Aufbau und Pressemitteilungen. Spezialisiert auf KMUs.',
   keywords: [
     'AI SEO Leistungen Hamburg',
@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/leistungen',
-    title: 'Leistungen | AI SEO, AEO, Beratung & mehr — aiseo.hamburg',
+    title: 'AI SEO Leistungen Hamburg | Beratung, AEO & Website-Erstellung',
     description: 'Alle Leistungen: Beratung, AEO, AI SEO, Website-Erstellung, klassisches SEO, Backlink-Aufbau und Pressemitteilungen.',
     siteName: 'aiseo.hamburg',
   },
   twitter: {
     card: 'summary',
-    title: 'Leistungen | AI SEO, AEO, Beratung & mehr — aiseo.hamburg',
+    title: 'AI SEO Leistungen Hamburg | Beratung, AEO & Website-Erstellung',
     description: 'Alle Leistungen: Beratung, AEO, AI SEO, Website-Erstellung, klassisches SEO, Backlink-Aufbau und Pressemitteilungen.',
   },
   robots: {
