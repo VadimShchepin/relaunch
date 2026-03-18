@@ -15,6 +15,27 @@ const ARTICLES = [
         readTime: '12 Min.',
     },
     {
+        title: 'GEO Agentur Hamburg: Was gute Generative Engine Optimization wirklich leistet',
+        description: 'Woran du echte GEO-Expertise erkennst, für welche Hamburger Unternehmen sie sich lohnt und wie lokale KI-Sichtbarkeit aufgebaut wird.',
+        href: '/wissen/geo-agentur-hamburg',
+        tag: 'Hamburg',
+        readTime: '8 Min.',
+    },
+    {
+        title: 'ChatGPT SEO: So optimierst du Inhalte für Empfehlungen statt Rankings',
+        description: 'Was ChatGPT SEO wirklich bedeutet, welche Hebel Empfehlungen beeinflussen und warum Klarheit wichtiger ist als Keyword-Gymnastik.',
+        href: '/wissen/chatgpt-seo',
+        tag: 'ChatGPT',
+        readTime: '9 Min.',
+    },
+    {
+        title: 'SEO vs AI SEO: Was du 2026 wirklich brauchst',
+        description: 'Die Entscheidungshilfe für Unternehmen, die wissen wollen, wann klassisches SEO reicht und wann AI SEO zusätzlich nötig wird.',
+        href: '/wissen/seo-vs-ai-seo',
+        tag: 'Vergleich',
+        readTime: '8 Min.',
+    },
+    {
         title: 'Sichtbarkeit in ChatGPT: So wird dein Unternehmen empfohlen',
         description: 'Die wichtigsten Faktoren, die bestimmen, ob ChatGPT dein Unternehmen nennt. Mit konkreten Strategien und Praxis-Tipps.',
         href: '/wissen/sichtbarkeit-in-chatgpt',
@@ -34,6 +55,20 @@ const ARTICLES = [
         href: '/wissen/ai-seo-agentur',
         tag: 'Beratung',
         readTime: '9 Min.',
+    },
+    {
+        title: 'Case Study KinderAlbum: Von Nischenprodukt zu KI-Empfehlung',
+        description: 'Wie eine DSGVO-konforme Foto-Plattform für Schulen in ChatGPT und Perplexity sichtbar wurde – mit echten Learnings statt Märchenkurve.',
+        href: '/wissen/case-study-kinderalbum',
+        tag: 'Case Study',
+        readTime: '7 Min.',
+    },
+    {
+        title: 'Case Study Blitz Hamburg: Wie klare Positionierung zu ChatGPT-Empfehlungen führte',
+        description: 'Ein lokaler Dienstleister, ein austauschbarer Markt und der Hebel, der aus Sichtbarkeit echte Empfehlbarkeit macht.',
+        href: '/wissen/case-study-blitz-hamburg',
+        tag: 'Case Study',
+        readTime: '7 Min.',
     },
     {
         title: 'Website-Automatisierung: Tools und Strategien für 2026',
