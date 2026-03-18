@@ -100,10 +100,9 @@ export default function Page() {
                     </div>
                 </section>
             </div>
-            <FinalCTA />
+            <div id="contact"><FinalCTA /></div>
             <div id="newsletter"><Newsletter /></div>
             <Footer />
         </div>
     );
 }
-

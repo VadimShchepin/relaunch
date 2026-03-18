@@ -31,7 +31,7 @@ describe('Newsletter Component', () => {
         expect(emailInputs[0]).toHaveAttribute('type', 'email')
 
         // Check for submit button by role
-        const submitButtons = screen.getAllByRole('button', { name: /updates erhalten/i })
+        const submitButtons = screen.getAllByRole('button', { name: /anmelden/i })
         expect(submitButtons[0]).toBeInTheDocument()
         expect(submitButtons[0].tagName).toBe('BUTTON')
     })
@@ -39,7 +39,7 @@ describe('Newsletter Component', () => {
     it('displays trust line', () => {
         render(<Newsletter />)
 
-        const trustLines = screen.getAllByText('Kein Spam. Keine Funnels. Abmeldung jederzeit.')
+        const trustLines = screen.getAllByText('Kostenlos. Jederzeit abmeldbar. Kein Spam.')
         expect(trustLines[0]).toBeInTheDocument()
     })
 
@@ -52,7 +52,7 @@ describe('Newsletter Component', () => {
         } as Response)
 
         // Test the API endpoint directly
-        const response = await fetch('/api/subscribe', {
+        const response = await fetch('/api/newsletter/subscribe', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: 'test@example.com' })
@@ -60,7 +60,7 @@ describe('Newsletter Component', () => {
 
         const data = await response.json()
         expect(data).toEqual({ ok: true })
-        expect(mockFetch).toHaveBeenCalledWith('/api/subscribe', {
+        expect(mockFetch).toHaveBeenCalledWith('/api/newsletter/subscribe', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: 'test@example.com' })
