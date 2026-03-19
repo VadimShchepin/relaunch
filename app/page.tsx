@@ -38,7 +38,7 @@ export default function Page() {
                                     Was ist KI-Sichtbarkeit?
                                 </h3>
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    KI-Sichtbarkeit bedeutet, dass dein Unternehmen von KI-Systemen wie ChatGPT, Perplexity oder Google AI aktiv genannt und empfohlen wird – nicht nur gefunden, sondern ausgewählt.
+                                    KI-Sichtbarkeit bedeutet, dass dein Unternehmen von KI-Systemen wie ChatGPT, Perplexity oder Google AI aktiv genannt und empfohlen wird – nicht nur in Suchergebnissen gefunden, sondern als vertrauenswürdige Quelle ausgewählt. Während klassische Suchmaschinen zehn blaue Links anzeigen, wählt KI nur zwei bis sieben Quellen pro Antwort. Wer dort nicht erscheint, wird von einer wachsenden Zielgruppe nicht wahrgenommen.
                                 </p>
                             </div>
 
@@ -47,7 +47,7 @@ export default function Page() {
                                     Warum reicht klassische SEO nicht mehr aus?
                                 </h3>
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    KI zeigt keine Suchlisten. Sie wählt wenige Quellen aus und fasst sie zu einer Empfehlung zusammen. Wer dort nicht erscheint, wird nicht verglichen – sondern ignoriert.
+                                    KI zeigt keine Suchlisten. Sie wählt wenige Quellen aus und fasst sie zu einer einzigen Empfehlung zusammen. Wer dort nicht erscheint, wird nicht verglichen – sondern komplett ignoriert. Laut Gartner verlieren Marken bis 2028 über 50 % ihres organischen Traffics an KI-gestützte Suche. SEO bleibt wichtig als Fundament, aber ohne gezielte KI-Optimierung verpasst du den Kanal, über den immer mehr Kaufentscheidungen getroffen werden.
                                 </p>
                             </div>
 
@@ -56,7 +56,7 @@ export default function Page() {
                                     Wie entscheidet KI, welche Unternehmen sie nennt?
                                 </h3>
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    KI bewertet Klarheit, Relevanz, Autorität und Konsistenz. In der Regel werden nur 5–10 präzise Quellen berücksichtigt – alle anderen spielen keine Rolle in der Entscheidung.
+                                    KI-Systeme bewerten vier zentrale Faktoren: Klarheit, Relevanz, Autorität und Konsistenz. Klarheit heißt, deine Website kommuniziert eindeutig, was du anbietest. Autorität entsteht durch Markennennungen auf vertrauenswürdigen Plattformen und konsistente Unternehmensdaten. In der Regel berücksichtigt KI nur fünf bis zehn Quellen pro Antwort – alle anderen spielen keine Rolle.
                                 </p>
                             </div>
 
@@ -65,7 +65,7 @@ export default function Page() {
                                     Was macht AISEO konkret für mein Unternehmen?
                                 </h3>
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    Ich entwickle und setze eine klare Struktur für Website, Inhalte und Autorität um, sodass KI dein Angebot eindeutig versteht, korrekt einordnet und aktiv nennt.
+                                    Ich analysiere, wie KI dein Unternehmen aktuell beschreibt, und entwickle eine Strategie in drei Bereichen: technische Website-Struktur (Schema.org, Architektur, KI-Bot-Zugang), Content-Optimierung (klare, zitierbare Antworten auf echte Kundenfragen) und Autoritätsaufbau (Markennennungen, PR, konsistente Unternehmensdaten). Die Umsetzung erfolgt schrittweise und messbar.
                                 </p>
                             </div>
 
@@ -74,7 +74,7 @@ export default function Page() {
                                     Ist KI-Sichtbarkeit für jedes Unternehmen sinnvoll?
                                 </h3>
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    Nein. Sie ist nur sinnvoll für Unternehmen, die Kontrolle über ihre Positionierung übernehmen wollen – nicht für diejenigen, die auf Rankings, Zufall oder Hoffnung setzen.
+                                    Nein. Sie ist besonders sinnvoll für Unternehmen mit klarem Angebot und definierter Zielgruppe: Dienstleister, Berater, Agenturen, SaaS-Anbieter und spezialisierte lokale Unternehmen. Am meisten profitieren Unternehmen, die Kontrolle über ihre Positionierung übernehmen wollen – nicht diejenigen, die auf Rankings, Zufall oder Hoffnung setzen.
                                 </p>
                             </div>
 
@@ -83,7 +83,7 @@ export default function Page() {
                                     Wie arbeitest du konkret?
                                 </h3>
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    Ich arbeite nicht mit Tricks oder Prompt-Optimierung. Ich analysiere, wie KI dein Unternehmen aktuell einordnet, und baue die Website so um, dass KI dein Angebot klar versteht, einordnet und als Quelle nennt.
+                                    Ich arbeite nicht mit Tricks oder Prompt-Optimierung. Zuerst prüfe ich, wie KI dein Unternehmen aktuell beschreibt – in ChatGPT, Perplexity und Google AI. Dann identifiziere ich Lücken und setze konkrete Änderungen um: Schema.org Markup, Content-Überarbeitung, Seitenarchitektur und externe Signale. Fortschritte werden kontinuierlich gemessen.
                                 </p>
                             </div>
                         </div>

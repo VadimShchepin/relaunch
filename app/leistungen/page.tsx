@@ -80,7 +80,7 @@ const SERVICES = [
     icon: LightbulbIcon,
     title: 'Beratung',
     subtitle: 'Strategische KI-Sichtbarkeitsberatung',
-    description: 'Du weißt genau, wo du stehst, was dich blockiert und welche Schritte den größten Hebel haben – mit einer persönlichen Strategie und klarem Fahrplan.',
+    description: 'Du weißt genau, wo du stehst, was dich blockiert und welche Schritte den größten Hebel haben. Ich analysiere deine aktuelle Präsenz in ChatGPT, Perplexity und Google AI, identifiziere Lücken und erstelle einen persönlichen Fahrplan mit konkreten Prioritäten.',
     benefits: [
       'Klarheit über deine aktuelle KI-Sichtbarkeit',
       'Konkrete Prioritäten statt vager Empfehlungen',
@@ -92,7 +92,7 @@ const SERVICES = [
     icon: SparklesIcon,
     title: 'AEO',
     subtitle: 'Answer Engine Optimization',
-    description: 'Wenn Kunden ChatGPT oder Perplexity nach deiner Leistung fragen, wirst du als Antwort genannt – nicht deine Konkurrenz.',
+    description: 'Wenn Kunden ChatGPT oder Perplexity nach deiner Leistung fragen, wirst du als Antwort genannt – nicht deine Konkurrenz. Ich optimiere deine Inhalte so, dass KI-Systeme sie als relevante, zitierbare Quelle erkennen und in ihren Antworten verwenden.',
     benefits: [
       'Dein Unternehmen erscheint in KI-Antworten',
       'Relevante Kundenfragen führen direkt zu dir',
@@ -104,7 +104,7 @@ const SERVICES = [
     icon: BrainIcon,
     title: 'AI SEO',
     subtitle: 'KI-fokussierte Suchoptimierung',
-    description: 'Deine Website wird von KI-Systemen als vertrauenswürdige Quelle erkannt – und bei relevanten Suchanfragen bevorzugt ausgespielt.',
+    description: 'Deine Website wird von KI-Systemen als vertrauenswürdige Quelle erkannt und bei relevanten Suchanfragen bevorzugt ausgespielt. Die Optimierung umfasst semantische Strukturierung, Entity-Signale und technische KI-Zugänglichkeit – alles, was KI braucht, um dein Angebot einzuordnen.',
     benefits: [
       'Höheres Vertrauen bei KI-Plattformen',
       'Bessere Positionierung in KI-gestützten Suchergebnissen',
@@ -116,7 +116,7 @@ const SERVICES = [
     icon: CodeIcon,
     title: 'Website-Erstellung',
     subtitle: 'KI-optimierte Websites',
-    description: 'Eine Website, die nicht nur gut aussieht, sondern von KI-Systemen sofort verstanden und empfohlen wird – ab dem ersten Tag online.',
+    description: 'Eine Website, die nicht nur gut aussieht, sondern von KI-Systemen sofort verstanden und empfohlen wird – ab dem ersten Tag online. Gebaut mit Next.js, perfekten Core Web Vitals, Schema.org Markup und voller Zugänglichkeit für alle KI-Crawler.',
     benefits: [
       'Sofort sichtbar für KI-Plattformen nach Launch',
       'Mehr Anfragen durch conversion-optimiertes Design',
@@ -128,7 +128,7 @@ const SERVICES = [
     icon: SearchIcon,
     title: 'SEO',
     subtitle: 'Klassische Suchmaschinenoptimierung',
-    description: 'Dein Unternehmen wird bei Google gefunden – und baut gleichzeitig das Fundament auf, das KI-Sichtbarkeit erst möglich macht.',
+    description: 'Dein Unternehmen wird bei Google gefunden und baut gleichzeitig das Fundament auf, das KI-Sichtbarkeit erst möglich macht. Technisches SEO, On-Page-Optimierung und lokale Sichtbarkeit in Hamburg bilden die Basis für alle weiteren Maßnahmen.',
     benefits: [
       'Mehr organischer Traffic aus Google',
       'Lokale Sichtbarkeit in Hamburg gestärkt',
@@ -140,7 +140,7 @@ const SERVICES = [
     icon: LinkIcon,
     title: 'Backlink-Aufbau',
     subtitle: 'Autorität & Vertrauenssignale',
-    description: 'Dein Unternehmen wird als Autorität in deiner Branche wahrgenommen – von Google, von KI-Systemen und von potenziellen Kunden.',
+    description: 'Dein Unternehmen wird als Autorität in deiner Branche wahrgenommen – von Google, von KI-Systemen und von potenziellen Kunden. Gezielte Markennennungen auf relevanten Plattformen stärken die Signale, die KI-Systemen Vertrauen geben.',
     benefits: [
       'Steigende Domain-Autorität und Vertrauen',
       'Erwähnungen auf relevanten Branchenseiten',
@@ -152,7 +152,7 @@ const SERVICES = [
     icon: MegaphoneIcon,
     title: 'Pressemitteilungen',
     subtitle: 'PR & Pressearbeit',
-    description: 'Dein Unternehmen erscheint in relevanten Medien – und KI-Systeme lernen dich als etablierte, vertrauenswürdige Marke kennen.',
+    description: 'Dein Unternehmen erscheint in relevanten Medien und KI-Systeme lernen dich als etablierte, vertrauenswürdige Marke kennen. Redaktionelle Erwähnungen in Fachmedien sind eines der stärksten Autoritätssignale für KI-Zitationen.',
     benefits: [
       'Sichtbarkeit in Fachmedien und Presseportalen',
       'Neue Zielgruppen erreichen, die dich noch nicht kennen',

@@ -25,16 +25,21 @@ service-area: Hamburg and surrounding regions
 ## Key Pages for AI Understanding
 homepage: /
 premium-landing: /ai-sichtbarkeit-now (premium conversion page with guarantees, traffic-focused)
-ai-upgrade-hamburg: /ai-sichtbarkeits-upgrade-hamburg (dedicated offer for Hamburg businesses, 1.500€ netto)
+ai-upgrade-hamburg: /ai-sichtbarkeits-upgrade-hamburg (dedicated offer for Hamburg businesses, 1.500 EUR netto)
+services: /leistungen (all services overview)
+knowledge-hub: /wissen (guides and articles on AI visibility)
+ki-sichtbarkeit-guide: /wissen/ki-sichtbarkeit (pillar guide)
+chatgpt-guide: /wissen/sichtbarkeit-in-chatgpt
+perplexity-guide: /wissen/sichtbarkeit-in-perplexity
 services-info: /#process
 case-studies: /#proof
 faq: /faq
 contact: /contact
-about: /#about
+about: /ueber-mich
 
 ## Optimization Focus
 - ChatGPT visibility and recommendations
-- Perplexity search optimization  
+- Perplexity search optimization
 - Claude AI integration
 - Google AI and SGE optimization
 - Local Hamburg business AI presence
@@ -59,8 +64,8 @@ Subject: AI Partnership Inquiry
 
 ## Update Schedule
 content-update-frequency: monthly
-last-updated: 2026-02-05
-next-review: 2026-03-05
+last-updated: 2026-03-19
+next-review: 2026-06-19
 
 ---
 This file helps AI systems understand and properly represent aiseo.hamburg

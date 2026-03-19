@@ -53,8 +53,10 @@ export const Reality: React.FC = () => (
                     <div className="h-[150px] md:h-[190px] lg:h-[200px] rounded-xl overflow-hidden">
                         <img
                             src="/images/reality/Impressions after ai.webp"
-                            alt="Impressions after AI"
+                            alt="Website-Impressionen nach KI-Optimierung – Anstieg der Sichtbarkeit"
                             className="w-full h-full object-contain object-left-bottom"
+                            width={400}
+                            height={200}
                         />
                     </div>
                 </FadeIn>
@@ -64,8 +66,10 @@ export const Reality: React.FC = () => (
                     <div className="h-[190px] lg:h-[260px] rounded-xl overflow-hidden">
                         <img
                             src="/images/reality/growth.webp"
-                            alt="Growth Analytics"
+                            alt="Wachstum der KI-Sichtbarkeit – Analytics-Übersicht"
                             className="w-full h-full object-cover"
+                            width={200}
+                            height={260}
                         />
                     </div>
                 </FadeIn>
@@ -84,8 +88,10 @@ export const Reality: React.FC = () => (
                     <div className="h-[260px] md:h-[320px] lg:h-[400px] rounded-2xl overflow-hidden">
                         <img
                             src="/images/reality/hamburg.webp"
-                            alt="Hamburg Business Meeting"
+                            alt="Hamburg – Standort für KI-Sichtbarkeit und AI SEO"
                             className="w-full h-full object-cover"
+                            width={600}
+                            height={400}
                         />
                     </div>
                 </FadeIn>

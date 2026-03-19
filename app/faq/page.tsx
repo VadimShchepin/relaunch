@@ -69,120 +69,22 @@ export default function FAQPage() {
 
       <main className="min-h-screen bg-[#F7F5F2]">
         <section className="px-6 md:px-12 lg:px-20 py-16 md:py-24 max-w-[900px] mx-auto">
-          {/* Clean JSON-LD Schema */}
+          {/* FAQ JSON-LD Schema - generated from FAQS array */}
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
-              __html: `{
+              __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "FAQPage",
-                "mainEntity": [
-                  {
-                    "@type": "Question",
-                    "name": "Was ist KI-Sichtbarkeit?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "KI-Sichtbarkeit bedeutet, dass dein Unternehmen von KI-Systemen wie ChatGPT, Perplexity oder Google AI aktiv genannt und empfohlen wird – nicht nur gefunden, sondern ausgewählt."
-                    }
+                "mainEntity": FAQS.map((faq) => ({
+                  "@type": "Question",
+                  "name": faq.q,
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": faq.a,
                   },
-                  {
-                    "@type": "Question",
-                    "name": "Was ist AI SEO (GEO/AEO)?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "AI SEO (auch GEO/AEO) optimiert Websites so, dass KI-Systeme Inhalte verstehen, einordnen und als Quelle nennen – besonders bei Fragen, die nach Empfehlungen und Entscheidungshilfe suchen."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Warum reicht klassische SEO nicht mehr aus?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "KI zeigt keine Suchlisten. Sie wählt wenige Quellen aus und fasst sie zu einer Empfehlung zusammen. Wer dort nicht erscheint, wird nicht verglichen – sondern ignoriert."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Wie entscheidet KI, welche Unternehmen sie nennt?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "KI bewertet Klarheit, Relevanz, Autorität und Konsistenz. In der Regel werden nur wenige präzise Quellen berücksichtigt – alle anderen spielen in der Entscheidung keine Rolle."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Nennt KI Websites oder Unternehmen?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "KI nennt meist Anbieter, Marken oder Experten – nicht nur URLs. Die Website ist das Signal, die Empfehlung gilt dem Unternehmen und seiner Einordnung."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Geht es dabei um Prompt-Optimierung?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Nein. Prompts beeinflussen die Frage, aber nicht die Quelle. Entscheidend ist, ob dein Angebot als Quelle klar, vertrauenswürdig und zitierbar ist."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Was machst du konkret für mein Unternehmen?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Ich strukturiere und optimiere Website, Inhalte und Autoritäts-Signale so, dass KI dein Angebot eindeutig versteht, korrekt einordnet und dich bei passenden Fragen nennt."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Erstellst du neue Websites oder optimierst du bestehende?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Beides. Je nach Ausgangslage überarbeite ich bestehende Seiten oder erstelle gezielt neue Seiten, die die entscheidenden Fragen abdecken und KI klare Signale geben."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Wie arbeitest du konkret?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Ich arbeite nicht mit Tricks. Ich analysiere, wie KI dein Unternehmen aktuell beschreibt, und setze dann Website-Änderungen um (Struktur, Inhalte, Klarheit, Autorität), bis KI dich bei relevanten Fragen sauber einordnet und nennt."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Wie kann man KI-Sichtbarkeit messen?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Ich prüfe, ob und bei welchen Fragen du genannt wirst, wie du beschrieben wirst und ob daraus reale Anfragen entstehen. Messung ist Teil des Prozesses, nicht ein Extra."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Wie lange dauert es, bis Ergebnisse sichtbar sind?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Das hängt von Branche, Wettbewerb und Ausgangslage ab. Erste Veränderungen sind oft innerhalb weniger Wochen sichtbar; stabile Relevanz entsteht durch saubere Umsetzung und Konsistenz."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Ist KI-Sichtbarkeit für jedes Unternehmen sinnvoll?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Nein. Sie ist besonders sinnvoll für Unternehmen mit klarem Angebot, Spezialisierung und Anspruch auf Qualität – und für alle, die Kontrolle über ihre Positionierung übernehmen wollen."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Arbeitest du nur in Hamburg?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Der Fokus liegt auf Hamburger Unternehmen und lokalen Märkten. Projekte außerhalb Hamburgs sind möglich, wenn das Angebot klar und die Zusammenarbeit passt."
-                    }
-                  }
-                ]
-              }`
+                })),
+              })
             }}
           />
 

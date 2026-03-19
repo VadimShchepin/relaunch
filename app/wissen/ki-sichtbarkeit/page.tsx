@@ -60,18 +60,18 @@ const articleJsonLd = {
   headline: 'KI-Sichtbarkeit: Was es bedeutet und warum es 2026 entscheidend ist',
   description:
     'Der Pillar-Guide zu KI-Sichtbarkeit: Definition, Framework mit drei Säulen, GEO vs. SEO und 5 strategische Schritte.',
+  image: 'https://aiseo.hamburg/images/wissen/ki-sichtbarkeit.jpg',
   author: {
-    '@type': 'Organization',
-    name: 'aiseo.hamburg',
-    url: 'https://aiseo.hamburg',
+    '@type': 'Person',
+    name: 'Vadim Shchepin',
+    url: 'https://aiseo.hamburg/ueber-mich',
+    jobTitle: 'AI SEO Specialist',
   },
   publisher: {
-    '@type': 'Organization',
-    name: 'aiseo.hamburg',
-    url: 'https://aiseo.hamburg',
+    '@id': 'https://aiseo.hamburg/#organization',
   },
   datePublished: '2026-03-12',
-  dateModified: '2026-03-12',
+  dateModified: '2026-03-19',
   mainEntityOfPage: 'https://aiseo.hamburg/wissen/ki-sichtbarkeit',
   inLanguage: 'de',
 };
@@ -103,6 +103,19 @@ export default function KISichtbarkeitPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          'itemListElement': [
+            { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://aiseo.hamburg' },
+            { '@type': 'ListItem', position: 2, name: 'Wissen', item: 'https://aiseo.hamburg/wissen' },
+            { '@type': 'ListItem', position: 3, name: 'KI-Sichtbarkeit' },
+          ],
+        }) }}
       />
 
       {/* ============================================================ */}

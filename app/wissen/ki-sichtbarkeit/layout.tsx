@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     description:
       'Was ist KI-Sichtbarkeit, warum ist sie entscheidend und wie erreichst du sie? Der umfassende Guide mit Strategie, Tools und 10 konkreten Schritten.',
     siteName: 'aiseo.hamburg',
+    images: [{ url: '/images/wissen/ki-sichtbarkeit.jpg', width: 1200, height: 630, alt: 'KI-Sichtbarkeit Guide 2026' }],
   },
   twitter: {
     card: 'summary',
