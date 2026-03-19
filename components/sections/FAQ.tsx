@@ -10,27 +10,27 @@ interface FAQItem {
 const HOMEPAGE_FAQS: FAQItem[] = [
     {
         q: "Was ist KI-Sichtbarkeit?",
-        a: "KI-Sichtbarkeit bedeutet, dass dein Unternehmen von KI-Systemen wie ChatGPT, Perplexity oder Google AI aktiv genannt und empfohlen wird – nicht nur gefunden, sondern ausgewählt."
+        a: "KI-Sichtbarkeit bedeutet, dass dein Unternehmen von KI-Systemen wie ChatGPT, Perplexity oder Google AI aktiv genannt und empfohlen wird – nicht nur in Suchergebnissen gefunden, sondern als vertrauenswürdige Quelle ausgewählt und zitiert. Während klassische Suchmaschinen zehn blaue Links anzeigen, wählt KI nur zwei bis sieben Quellen pro Antwort aus und fasst deren Informationen zu einer einzigen Empfehlung zusammen. Wer dort nicht erscheint, wird von einer wachsenden Zielgruppe schlicht nicht wahrgenommen. KI-Sichtbarkeit basiert auf drei Säulen: technische Struktur (Schema.org, KI-Bot-Zugang), hochwertiger Content (klare, zitierbare Antworten) und externe Autorität (Markennennungen, konsistente Unternehmensdaten)."
     },
     {
         q: "Warum reicht klassische SEO nicht mehr aus?",
-        a: "KI zeigt keine Suchlisten. Sie wählt wenige Quellen aus und fasst sie zu einer Empfehlung zusammen. Wer dort nicht erscheint, wird nicht verglichen – sondern ignoriert."
+        a: "Klassische SEO optimiert für Suchergebnislisten mit zehn blauen Links – ein Format, das über 20 Jahre Standard war. KI-Systeme wie ChatGPT oder Perplexity funktionieren grundlegend anders: Sie durchsuchen das Web, wählen wenige Quellen aus und fassen sie zu einer einzigen Empfehlung zusammen. Wer in dieser Empfehlung nicht erscheint, wird nicht verglichen und nicht in Betracht gezogen. Laut Gartner verlieren Marken bis 2028 über 50 Prozent ihres organischen Traffics an KI-gestützte Suche. SEO bleibt wichtig als technisches Fundament, aber ohne gezielte KI-Optimierung verpasst du den Kanal, über den immer mehr Kaufentscheidungen stattfinden."
     },
     {
         q: "Wie entscheidet KI, welche Unternehmen sie nennt?",
-        a: "KI bewertet Klarheit, Relevanz, Autorität und Konsistenz. In der Regel werden nur 5–10 präzise Quellen berücksichtigt – alle anderen spielen keine Rolle in der Entscheidung."
+        a: "KI-Systeme bewerten vier zentrale Faktoren: Klarheit (eindeutige Kommunikation deines Angebots), Relevanz (präzise Antworten auf konkrete Nutzerfragen), Autorität (Markennennungen auf vertrauenswürdigen Plattformen, PR-Erwähnungen, konsistente NAP-Daten) und Konsistenz (alle Signale von Website bis Google Business zeichnen dasselbe Bild). In der Regel berücksichtigt KI nur fünf bis zehn Quellen pro Antwort – alle anderen Unternehmen spielen in der Entscheidung schlicht keine Rolle. Deshalb ist es entscheidend, alle vier Faktoren systematisch aufzubauen."
     },
     {
         q: "Was macht AISEO konkret für mein Unternehmen?",
-        a: "Ich entwickle und setze eine klare Struktur für Website, Inhalte und Autorität um, sodass KI dein Angebot eindeutig versteht, korrekt einordnet und aktiv nennt."
+        a: "Ich analysiere zunächst, wie KI-Systeme dein Unternehmen aktuell beschreiben – bei welchen Fragen du genannt wirst und bei welchen nicht. Darauf aufbauend optimiere ich drei Bereiche: die technische Struktur deiner Website (Schema.org Markup, Seitenarchitektur, KI-Crawler-Zugang), die Inhalte (klare, strukturierte Antworten auf echte Kundenfragen, die KI als Quelle verwenden kann) und externe Autoritätssignale (Markennennungen auf relevanten Plattformen, Branchenverzeichnisse, konsistente Unternehmensdaten). Die Umsetzung erfolgt priorisiert nach Wirkung und wird durch kontinuierliches Monitoring messbar gemacht."
     },
     {
         q: "Ist KI-Sichtbarkeit für jedes Unternehmen sinnvoll?",
-        a: "Nein. Sie ist nur sinnvoll für Unternehmen, die Kontrolle über ihre Positionierung übernehmen wollen – nicht für diejenigen, die auf Rankings, Zufall oder Hoffnung setzen."
+        a: "Nein – und ich bin ehrlich darüber. Besonders sinnvoll ist KI-Sichtbarkeit für Unternehmen mit einem klaren, differenzierten Angebot: Dienstleister, Berater, Agenturen, SaaS-Anbieter und spezialisierte lokale Betriebe, deren Kunden bereits KI-Tools für Recherche und Kaufentscheidungen nutzen. Weniger sinnvoll ist sie für reine Commodity-Anbieter ohne Differenzierungsmerkmal oder Branchen, in denen die Zielgruppe noch keine KI-gestützten Suchtools verwendet. Am meisten profitieren Unternehmen, die bereit sind, aktiv in Klarheit, technische Struktur und externe Autorität zu investieren."
     },
     {
         q: "Wie arbeitest du konkret?",
-        a: "Ich arbeite nicht mit Tricks oder Prompt-Optimierung. Ich analysiere, wie KI dein Unternehmen aktuell einordnet, und baue die Website so um, dass KI dein Angebot klar versteht, einordnet und als Quelle nennt."
+        a: "Mein Ansatz basiert auf systematischer Analyse und datengetriebener Umsetzung. Im ersten Schritt prüfe ich, wie KI-Systeme dein Unternehmen aktuell beschreiben – in ChatGPT, Perplexity, Google AI Overviews und Copilot. Ich stelle die Fragen, die deine potenziellen Kunden stellen, und dokumentiere, ob und wie du genannt wirst. Dann identifiziere ich die konkreten Lücken und setze priorisierte Maßnahmen um: Schema.org Markup, Content-Überarbeitung für maximale Zitierbarkeit, Seitenarchitektur-Optimierung und systematischen Aufbau externer Autoritätssignale. Fortschritte messe ich kontinuierlich und passe die Strategie an."
     }
 ];
 
