@@ -18,6 +18,7 @@ export const metadata: Metadata = {
         siteName: 'aiseo.hamburg',
         locale: 'de_DE',
         type: 'website',
+        images: [{ url: '/android-chrome-512x512.png', width: 512, height: 512, alt: 'aiseo.hamburg – FAQ' }],
     },
     twitter: {
         card: 'summary_large_image',

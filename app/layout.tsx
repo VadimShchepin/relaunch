@@ -37,11 +37,20 @@ export const metadata: Metadata = {
         siteName: "aiseo.hamburg",
         locale: "de_DE",
         type: "website",
+        images: [
+            {
+                url: "/android-chrome-512x512.png",
+                width: 512,
+                height: 512,
+                alt: "aiseo.hamburg – KI-Sichtbarkeit Hamburg",
+            },
+        ],
     },
     twitter: {
         card: "summary_large_image",
         title: "KI-Sichtbarkeit Hamburg | Sichtbar in ChatGPT & Perplexity",
         description: "Professionelle KI-Optimierung für bessere Sichtbarkeit in ChatGPT, Perplexity & Co.",
+        images: ["/android-chrome-512x512.png"],
     },
     robots: {
         index: true,
@@ -70,6 +79,7 @@ export default function RootLayout({
     return (
         <html lang="de">
             <head>
+                <link rel="preconnect" href="https://api.fontshare.com" crossOrigin="anonymous" />
                 <link rel="preconnect" href="https://cdn.fontshare.com" crossOrigin="anonymous" />
                 <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet" />
                 <link rel="manifest" href="/manifest.json" />
@@ -78,7 +88,23 @@ export default function RootLayout({
                 <meta name="geo.placename" content="Hamburg" />
                 <script defer src="https://umami.dsgvoschulfotos.de/script.js" data-website-id="994bf95f-79f8-4fcd-b77f-48abe6baee1d"></script>
                 <GoogleTag />
-                {/* LocalBusiness Schema for AI SEO Hamburg */}
+                {/* WebSite Schema */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "WebSite",
+                            "@id": "https://aiseo.hamburg/#website",
+                            "name": "aiseo.hamburg",
+                            "url": "https://aiseo.hamburg",
+                            "description": "KI-Sichtbarkeit und AI SEO Optimierung für Hamburger Unternehmen.",
+                            "publisher": { "@id": "https://aiseo.hamburg/#organization" },
+                            "inLanguage": "de"
+                        })
+                    }}
+                />
+                {/* ProfessionalService Schema for AI SEO Hamburg */}
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
@@ -112,17 +138,23 @@ export default function RootLayout({
                             },
                             "serviceType": ["AI SEO", "KI-Sichtbarkeit", "GEO", "AEO", "ChatGPT Optimierung", "website development"],
                             "priceRange": "€€",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://aiseo.hamburg/android-chrome-512x512.png",
+                                "width": 512,
+                                "height": 512
+                            },
                             "sameAs": [
                                 "https://www.linkedin.com/in/vadim-shchepin/",
                                 "https://www.instagram.com/aiseo.hamburg/",
-                                "https://www.instagram.com/aiseo.hamburg_/",
                                 "https://www.tiktok.com/@aiseo.hamburg/",
                                 "https://www.hamburg.de/branchenbuch/hamburg/eintrag/101256225/"
                             ],
                             "founder": {
                                 "@type": "Person",
                                 "name": "Vadim Shchepin",
-                                "jobTitle": "AI SEO Specialist, Developer"
+                                "jobTitle": "AI SEO Specialist, Developer",
+                                "url": "https://aiseo.hamburg/ueber-mich"
                             }
                         })
                     }}

@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     description:
       'Senior Engineer aus Hamburg. Datengetrieben, ergebnisorientiert, persönlich.',
     siteName: 'aiseo.hamburg',
+    images: [{ url: '/vadim_shchepin.webp', width: 512, height: 512, alt: 'Vadim Shchepin – AI SEO Spezialist Hamburg' }],
   },
   twitter: {
     card: 'summary',

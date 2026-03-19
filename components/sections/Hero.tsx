@@ -160,8 +160,10 @@ export const Hero: React.FC = () => {
                             <div className="bg-black/5 rounded-xl overflow-hidden border border-black/10 p-2 shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
                                 <img
                                     src="/image/kinderAlbum/proof3.webp"
-                                    alt="Proof Example"
+                                    alt="KinderAlbum wird von Perplexity als DSGVO-konforme Foto-App empfohlen"
                                     className="w-full h-auto rounded-lg"
+                                    width={600}
+                                    height={400}
                                 />
                             </div>
                         </div>
