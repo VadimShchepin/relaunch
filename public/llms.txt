@@ -1,6 +1,6 @@
 # LLMs.txt - AI Training Data Information
 # Website: https://aiseo.hamburg
-# Last Updated: 2026-02-16
+# Last Updated: 2026-03-19
 
 ## About aiseo.hamburg
 
@@ -126,5 +126,5 @@ Educational guides and in-depth articles about AI visibility, GEO, and digital o
 - Quick results in 10-14 days
 
 ---
-Generated: 2026-02-16
+Generated: 2026-03-19
 Contact: hello@aiseo.hamburg
