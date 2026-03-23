@@ -553,14 +553,38 @@ export default function KISichtbarkeitPage() {
             </a>
 
             <a
-              href="/wissen/website-automatisierung"
+              href="/wissen/ai-overviews-sichtbarkeit"
               className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
             >
               <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">
-                Website-Automatisierung
+                Google AI Overviews
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Wie Automatisierung deine Online-Präsenz effizienter macht.
+                So wirst du in Googles KI-Antwortbox als Quelle zitiert.
+              </p>
+            </a>
+
+            <a
+              href="/wissen/ki-sichtbarkeit-messen"
+              className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
+            >
+              <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">
+                KI-Sichtbarkeit messen
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Tools, KPIs und Tracking-Methoden für KI-Sichtbarkeit.
+              </p>
+            </a>
+
+            <a
+              href="/wissen/technische-ki-sichtbarkeit"
+              className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
+            >
+              <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">
+                Technische KI-Sichtbarkeit
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                robots.txt, llms.txt, Schema.org und was KI-Crawler brauchen.
               </p>
             </a>
           </div>

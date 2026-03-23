@@ -15,6 +15,27 @@ const ARTICLES = [
         readTime: '12 Min.',
     },
     {
+        title: 'Sichtbarkeit in Google AI Overviews: So wirst du in der KI-Box zitiert',
+        description: 'Google zeigt KI-Antworten direkt über den Suchergebnissen. Wie du in AI Overviews als Quelle erscheinst und Zero-Click-Traffic gewinnst.',
+        href: '/wissen/ai-overviews-sichtbarkeit',
+        tag: 'AI Overviews',
+        readTime: '11 Min.',
+    },
+    {
+        title: 'KI-Sichtbarkeit messen: Tools, KPIs und Tracking-Methoden',
+        description: 'Wie misst du, ob ChatGPT dich empfiehlt? Die wichtigsten Tools, Metriken und ein konkretes Dashboard für KI-Sichtbarkeits-Tracking.',
+        href: '/wissen/ki-sichtbarkeit-messen',
+        tag: 'Analytics',
+        readTime: '10 Min.',
+    },
+    {
+        title: 'Technische KI-Sichtbarkeit: Warum KI-Crawler deine Website nicht verstehen',
+        description: 'robots.txt, llms.txt, Schema.org und semantisches HTML: Die technischen Grundlagen, damit KI-Systeme deine Inhalte crawlen und zitieren.',
+        href: '/wissen/technische-ki-sichtbarkeit',
+        tag: 'Technik',
+        readTime: '12 Min.',
+    },
+    {
         title: 'GEO Agentur Hamburg: Was gute Generative Engine Optimization wirklich leistet',
         description: 'Woran du echte GEO-Expertise erkennst, für welche Hamburger Unternehmen sie sich lohnt und wie lokale KI-Sichtbarkeit aufgebaut wird.',
         href: '/wissen/geo-agentur-hamburg',
