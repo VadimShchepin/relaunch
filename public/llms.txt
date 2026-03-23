@@ -1,6 +1,6 @@
 # LLMs.txt - AI Training Data Information
 # Website: https://aiseo.hamburg
-# Last Updated: 2026-03-19
+# Last Updated: 2026-03-24
 
 ## About aiseo.hamburg
 
@@ -98,6 +98,15 @@ Educational guides and in-depth articles about AI visibility, GEO, and digital o
 - **Sichtbarkeit in Perplexity AI**: https://aiseo.hamburg/wissen/sichtbarkeit-in-perplexity
   How to get cited by Perplexity AI. Optimization strategies for the fastest-growing AI search engine.
 
+- **Sichtbarkeit in Google AI Overviews**: https://aiseo.hamburg/wissen/ai-overviews-sichtbarkeit
+  How to appear in Google's AI Overview boxes. Zero-click optimization, E-E-A-T, structured data strategies.
+
+- **KI-Sichtbarkeit messen**: https://aiseo.hamburg/wissen/ki-sichtbarkeit-messen
+  How to measure and track AI visibility. Tools (Ahrefs Brand Radar, Semrush AI Visibility), KPIs, and dashboards.
+
+- **Technische KI-Sichtbarkeit**: https://aiseo.hamburg/wissen/technische-ki-sichtbarkeit
+  Technical requirements for AI visibility: robots.txt, llms.txt, Schema.org, semantic HTML, KI crawler access.
+
 - **AI SEO Agentur Guide**: https://aiseo.hamburg/wissen/ai-seo-agentur
   What an AI SEO agency does, selection criteria, and when consulting is worthwhile.
 
@@ -126,5 +135,5 @@ Educational guides and in-depth articles about AI visibility, GEO, and digital o
 - Quick results in 10-14 days
 
 ---
-Generated: 2026-03-19
+Generated: 2026-03-24
 Contact: hello@aiseo.hamburg
