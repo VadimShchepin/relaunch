@@ -27,6 +27,8 @@ Note: Dev/build scripts use `NODE_OPTIONS='--max-old-space-size=8192'` for GSAP 
 - `app/api/newsletter/` - Brevo double opt-in newsletter subscription
 - `components/sections/` - Major page sections (Hero, Navbar, FAQ, etc.)
 - `components/ui/` - Reusable primitives (Button, FadeIn, Icons, Tag)
+- `components/GoogleTag.tsx` - Google Analytics (gtag.js) with cookie consent gate
+- `components/ui/CookieConsent.tsx` - Cookie banner component
 - `lib/` - Shared constants (image asset paths) and helpers
 - `public/` - Static assets, sitemap.xml, robots.txt, llms.txt, ai.txt
 
@@ -35,7 +37,15 @@ Note: Dev/build scripts use `NODE_OPTIONS='--max-old-space-size=8192'` for GSAP 
 - Homepage sections are client components due to GSAP animations
 - `FadeIn` wrapper for scroll-triggered entrance animations
 - Path alias: `@/*` maps to project root (e.g., `@/components/ui/Button`)
-- Domain redirects (www → apex, http → https) handled at Vercel dashboard level, not in middleware
+- No middleware — domain redirects (www → apex, http → https) handled at Vercel dashboard level
+- Images are unoptimized (`images.unoptimized: true` in next.config.ts) — use pre-optimized assets in `public/`
+
+**Content Clusters:**
+- `app/wissen/` - Knowledge hub (pillar pages, case studies, topic articles). Each article has its own `layout.tsx` for metadata and `page.tsx` for content
+- `app/hamburg/` - Local SEO cluster (city-specific service pages like `ai-seo-agentur`, `chatgpt-optimierung`, `perplexity-optimierung`). Sub-pages exist without individual `layout.tsx` files — they inherit from `app/hamburg/layout.tsx`
+
+**Security Headers (next.config.ts):**
+- X-Content-Type-Options, X-Frame-Options (DENY), Referrer-Policy, Permissions-Policy applied to all routes
 
 **Design System (tailwind.config.ts):**
 - `brand-bg`: #FBF9F7 (warm off-white)
