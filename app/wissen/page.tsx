@@ -98,6 +98,34 @@ const ARTICLES = [
         tag: 'Automatisierung',
         readTime: '10 Min.',
     },
+    {
+        title: 'Warum bannt ChatGPT deine Website? Die größten AIO-Fails 2026',
+        description: 'Keyword-Stuffing, Cloaking, Spam-Content: Warum billige Tricks bei ChatGPT und Perplexity zum permanenten Bann führen — und was stattdessen funktioniert.',
+        href: '/wissen/aio-fails-chatgpt-bann',
+        tag: 'AIO Fails',
+        readTime: '11 Min.',
+    },
+    {
+        title: 'Was ist GEO? Generative Engine Optimization endlich verständlich erklärt',
+        description: 'GEO ist nicht einfach „SEO für KI". Was Generative Engine Optimization wirklich bedeutet, wie es sich von SEO und AEO unterscheidet und warum es 2026 unverzichtbar ist.',
+        href: '/wissen/was-ist-geo',
+        tag: 'GEO',
+        readTime: '10 Min.',
+    },
+    {
+        title: 'llms.txt erstellen: So machst du deine Website KI-lesbar',
+        description: 'Was llms.txt ist, warum robots.txt nicht reicht und wie du Schritt für Schritt eine llms.txt-Datei erstellst, die KI-Systeme tatsächlich lesen.',
+        href: '/wissen/llms-txt-anleitung',
+        tag: 'Technik',
+        readTime: '12 Min.',
+    },
+    {
+        title: 'E-E-A-T und KI: Warum Expertise für ChatGPT wichtiger ist als für Google',
+        description: 'E-E-A-T ist nicht nur für Google relevant. Wie KI-Systeme Expertise bewerten und warum eine Autoren-Bio allein nichts bringt.',
+        href: '/wissen/eeat-ki-sichtbarkeit',
+        tag: 'E-E-A-T',
+        readTime: '10 Min.',
+    },
 ];
 
 const collectionSchema = {

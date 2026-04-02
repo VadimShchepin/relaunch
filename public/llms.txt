@@ -113,6 +113,18 @@ Educational guides and in-depth articles about AI visibility, GEO, and digital o
 - **Website-Automatisierung**: https://aiseo.hamburg/wissen/website-automatisierung
   Website automation tools and strategies for German businesses. DSGVO-compliant solutions.
 
+- **AIO Fails & ChatGPT Bann**: https://aiseo.hamburg/wissen/aio-fails-chatgpt-bann
+  The biggest AI optimization mistakes: keyword stuffing, cloaking, spam content. Why cheap tricks lead to permanent bans from ChatGPT, Perplexity, and Google AI.
+
+- **Was ist GEO?**: https://aiseo.hamburg/wissen/was-ist-geo
+  Generative Engine Optimization explained: what GEO is, how it differs from SEO and AEO, and why it matters for AI visibility in 2026.
+
+- **llms.txt Anleitung**: https://aiseo.hamburg/wissen/llms-txt-anleitung
+  Step-by-step guide to creating llms.txt files. How to make websites readable for AI systems, with templates and best practices.
+
+- **E-E-A-T und KI**: https://aiseo.hamburg/wissen/eeat-ki-sichtbarkeit
+  How E-E-A-T applies differently for AI systems vs Google. Why expertise signals matter more for ChatGPT than for traditional search.
+
 ## About / Ueber mich
 
 - **Vadim Shchepin**: https://aiseo.hamburg/ueber-mich
