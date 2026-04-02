@@ -1,9 +1,6 @@
-'use client';
-
 import React from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
-import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 
 const FAQ_ITEMS = [
@@ -172,8 +169,7 @@ export default function KiSichtbarkeitKostenPage() {
 
         {/* Hero */}
         <section className="relative pt-32 pb-12 md:pt-52 md:pb-16 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
-          <FadeIn>
-            <nav className="text-sm text-gray-400 mb-8">
+                      <nav className="text-sm text-gray-400 mb-8">
               <a href="/" className="hover:text-gray-600 transition-colors">Startseite</a>
               <span className="mx-2">/</span>
               <span>Wissen</span>
@@ -186,13 +182,11 @@ export default function KiSichtbarkeitKostenPage() {
             <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
               Du gibst 3.000&nbsp;&euro;/Monat f&uuml;r Google Ads aus, aber KI-Empfehlungen bringen qualifiziertere Leads &ndash; kostenlos. Hier ist die ehrliche Aufschl&uuml;sselung, was KI-Sichtbarkeit 2026 kostet und wann sich die Investition rechnet.
             </p>
-          </FadeIn>
         </section>
 
         {/* TL;DR Preise */}
         <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-16">
-          <FadeIn>
-            <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
+                      <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
               <p className="text-sm font-bold text-brand-accent mb-4">TL;DR &ndash; Preise auf einen Blick</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                 <div className="bg-gray-50 rounded-lg p-4">
@@ -216,13 +210,11 @@ export default function KiSichtbarkeitKostenPage() {
                 Zum Vergleich: Google Ads CPC steigt j&auml;hrlich um 10-15%. Klassische SEO-Agenturen kosten 2.000&ndash;10.000&nbsp;&euro;/Monat. KI-Sichtbarkeit liefert nachhaltigere Ergebnisse bei oft geringeren Kosten.
               </p>
             </div>
-          </FadeIn>
         </section>
 
         {/* Die ehrliche Antwort */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Die ehrliche Antwort: Was KI-Sichtbarkeit 2026 kostet
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
@@ -264,13 +256,11 @@ export default function KiSichtbarkeitKostenPage() {
                 </p>
               </div>
             </div>
-          </FadeIn>
         </section>
 
         {/* Warum die falsche Frage */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Warum die Frage nach Kosten die falsche Frage ist
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
@@ -317,13 +307,11 @@ export default function KiSichtbarkeitKostenPage() {
                 Selbst wenn nur die H&auml;lfte realistisch ist: 36.000&nbsp;&euro; entgangener Umsatz pro Jahr &ndash; verglichen mit einer Investition von 1.500&nbsp;&euro; f&uuml;r ein einmaliges Upgrade.
               </p>
             </div>
-          </FadeIn>
         </section>
 
         {/* Kostenvergleich */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Kostenvergleich: KI-Sichtbarkeit vs. andere Marketing-Kan&auml;le
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -377,13 +365,11 @@ export default function KiSichtbarkeitKostenPage() {
             <p className="text-base text-gray-500 mt-6">
               Der entscheidende Unterschied: KI-Sichtbarkeit baut auf und verst&auml;rkt sich &uuml;ber Zeit. Google Ads kosten bei jedem Klick. Und KI-Leads sind qualifizierter, weil der Nutzer bereits eine konkrete Frage gestellt hat.
             </p>
-          </FadeIn>
         </section>
 
         {/* Was beeinflusst die Kosten? */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Was beeinflusst die Kosten?
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -402,13 +388,11 @@ export default function KiSichtbarkeitKostenPage() {
                 </div>
               ))}
             </div>
-          </FadeIn>
         </section>
 
         {/* Die 3 Preismodelle bei aiseo.hamburg */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Die 3 Preismodelle bei aiseo.hamburg
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -529,13 +513,11 @@ export default function KiSichtbarkeitKostenPage() {
                 </div>
               </div>
             </div>
-          </FadeIn>
         </section>
 
         {/* ROI-Rechner */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               ROI-Rechner: Lohnt sich KI-Sichtbarkeit f&uuml;r dich?
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -587,13 +569,11 @@ export default function KiSichtbarkeitKostenPage() {
                 Selbst bei konservativen Annahmen: Eine Investition von 1.500&nbsp;&euro; mit einem einzelnen zus&auml;tzlichen Auftrag pro Monat rechnet sich innerhalb weniger Wochen.
               </p>
             </div>
-          </FadeIn>
         </section>
 
         {/* Typische Kostenfallen */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Typische Kostenfallen bei AI SEO
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -610,13 +590,11 @@ export default function KiSichtbarkeitKostenPage() {
                 </div>
               ))}
             </div>
-          </FadeIn>
         </section>
 
         {/* Wann sich die Investition rechnet - Timeline */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Wann sich die Investition rechnet
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -672,13 +650,11 @@ export default function KiSichtbarkeitKostenPage() {
                 <span className="font-semibold text-black">Break-even typisch nach 3&ndash;6 Monaten.</span> Bei einem einmaligen Upgrade oft noch schneller, weil die Investition gering ist und schon ein einziger zus&auml;tzlicher Auftrag die Kosten deckt.
               </p>
             </div>
-          </FadeIn>
         </section>
 
         {/* FAQ */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-10">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-10">
               H&auml;ufig gestellte Fragen zu KI-Sichtbarkeit Kosten
             </h2>
             <div className="space-y-6">
@@ -689,13 +665,11 @@ export default function KiSichtbarkeitKostenPage() {
                 </div>
               ))}
             </div>
-          </FadeIn>
         </section>
 
         {/* Quellen */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Quellen und weiterf&uuml;hrende Informationen
             </h2>
             <ul className="space-y-3 text-base text-gray-600 leading-relaxed">
@@ -716,13 +690,11 @@ export default function KiSichtbarkeitKostenPage() {
                 Daten zu Customer Acquisition Costs (CAC) &uuml;ber verschiedene Kan&auml;le im DACH-Raum.
               </li>
             </ul>
-          </FadeIn>
         </section>
 
         {/* Verwandte Guides */}
         <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-8">
-          <FadeIn>
-            <div className="border-t border-gray-100 pt-12">
+                      <div className="border-t border-gray-100 pt-12">
               <h2 className="text-xl font-semibold text-black mb-5">Verwandte Guides:</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <a
@@ -741,13 +713,11 @@ export default function KiSichtbarkeitKostenPage() {
                 </a>
               </div>
             </div>
-          </FadeIn>
         </section>
 
         {/* Dark CTA */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
-          <FadeIn>
-            <div className="bg-[#121212] rounded-3xl p-8 md:p-12 text-center">
+                      <div className="bg-[#121212] rounded-3xl p-8 md:p-12 text-center">
               <h2 className="text-2xl md:text-3xl font-semibold tracking-[-0.03em] text-white mb-4">
                 Was kostet KI-Sichtbarkeit f&uuml;r DEIN Unternehmen?
               </h2>
@@ -764,7 +734,6 @@ export default function KiSichtbarkeitKostenPage() {
                 </a>
               </div>
             </div>
-          </FadeIn>
         </section>
       </main>
 

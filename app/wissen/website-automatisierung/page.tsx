@@ -1,9 +1,6 @@
-'use client';
-
 import React from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
-import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 
 const FAQ_ITEMS = [
@@ -86,8 +83,7 @@ export default function WebsiteAutomatisierungPage() {
       <main className="min-h-screen bg-[#F7F5F2]">
         {/* Hero */}
         <section className="relative pt-32 pb-20 md:pt-52 md:pb-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
-          <FadeIn>
-            <nav className="text-sm text-gray-400 mb-8">
+                      <nav className="text-sm text-gray-400 mb-8">
               <a href="/" className="hover:text-gray-600 transition-colors">Startseite</a>
               <span className="mx-2">/</span>
               <span>Wissen</span>
@@ -100,26 +96,22 @@ export default function WebsiteAutomatisierungPage() {
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-[720px]">
               79 % nutzen KI-Tools. Nur 23 % haben eine Strategie. Hier steht, welche Tools sich lohnen und worauf du in Deutschland achten musst.
             </p>
-          </FadeIn>
         </section>
 
         {/* Image */}
         <div className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-8">
-          <FadeIn>
-            <img
+                      <img
               src="/images/wissen/automatisierung.jpg"
               alt="Website-Automatisierung: Code und moderne Entwicklung"
               className="w-full rounded-2xl shadow-lg"
               loading="eager"
             />
             <p className="text-xs text-gray-400 mt-2">Foto: Unsplash</p>
-          </FadeIn>
         </div>
 
         {/* TLDR */}
         <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-16">
-          <FadeIn>
-            <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
+                      <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
               <h2 className="text-lg font-semibold text-black mb-4">TL;DR -- Das Wichtigste in 30 Sekunden</h2>
               <ul className="space-y-3 text-base text-gray-600 leading-relaxed">
                 <li className="flex gap-3"><span className="text-brand-accent font-bold mt-0.5">&#10003;</span><span><strong>Beste Tools:</strong> Make.com (EU-gehostet, ideal für KMU), n8n (Open-Source, Self-Hosting), Zapier (mächtig, aber US-Server)</span></li>
@@ -128,13 +120,11 @@ export default function WebsiteAutomatisierungPage() {
                 <li className="flex gap-3"><span className="text-brand-accent font-bold mt-0.5">&#10003;</span><span><strong>Förderung:</strong> BAFA deckt bis zu 80 % der Beratungskosten</span></li>
               </ul>
             </div>
-          </FadeIn>
         </section>
 
         {/* Warum Website-Automatisierung jetzt wichtig ist */}
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Warum Website-Automatisierung jetzt wichtig ist
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
@@ -148,32 +138,26 @@ export default function WebsiteAutomatisierungPage() {
                 Die gute Nachricht: Automatisierung ist nicht nur für Konzerne. KMU setzen die richtigen Tools oft schneller um -- weniger Bürokratie, kürzere Entscheidungswege.
               </p>
             </div>
-          </FadeIn>
 
-          <FadeIn delay={100}>
-            <div className="bg-white border-2 border-brand-accent rounded-xl p-6 shadow-sm my-8">
+                      <div className="bg-white border-2 border-brand-accent rounded-xl p-6 shadow-sm my-8">
               <p className="text-2xl md:text-3xl font-semibold text-black text-center">
                 79 % der Unternehmen nutzen KI-Tools, aber nur 23 % haben eine Strategie
               </p>
               <p className="text-sm text-gray-400 text-center mt-2">Quelle: Deloitte AI Institute</p>
             </div>
-          </FadeIn>
         </section>
 
         {/* Tool-Vergleich */}
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Die besten Automatisierungs-Tools im Vergleich
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-10">
               Drei Tools dominieren den Markt. Jedes hat klare Stärken und Schwächen:
             </p>
-          </FadeIn>
 
           <div className="grid gap-6 md:grid-cols-3">
-            <FadeIn>
-              <div className="bg-white border border-gray-100 rounded-2xl p-6">
+                          <div className="bg-white border border-gray-100 rounded-2xl p-6">
                 <h3 className="text-xl font-semibold text-black mb-3">Make.com</h3>
                 <span className="inline-block text-xs font-medium bg-green-50 text-green-700 px-2 py-1 rounded-full mb-4">Empfehlung für KMU</span>
                 <ul className="text-sm text-gray-600 space-y-2">
@@ -183,9 +167,7 @@ export default function WebsiteAutomatisierungPage() {
                   <li><strong>DSGVO:</strong> EU-Server, AVV verfügbar</li>
                 </ul>
               </div>
-            </FadeIn>
-            <FadeIn delay={100}>
-              <div className="bg-white border border-gray-100 rounded-2xl p-6">
+                          <div className="bg-white border border-gray-100 rounded-2xl p-6">
                 <h3 className="text-xl font-semibold text-black mb-3">n8n</h3>
                 <span className="inline-block text-xs font-medium bg-blue-50 text-blue-700 px-2 py-1 rounded-full mb-4">Open Source</span>
                 <ul className="text-sm text-gray-600 space-y-2">
@@ -195,9 +177,7 @@ export default function WebsiteAutomatisierungPage() {
                   <li><strong>DSGVO:</strong> Volle Kontrolle bei Self-Hosting</li>
                 </ul>
               </div>
-            </FadeIn>
-            <FadeIn delay={200}>
-              <div className="bg-white border border-gray-100 rounded-2xl p-6">
+                          <div className="bg-white border border-gray-100 rounded-2xl p-6">
                 <h3 className="text-xl font-semibold text-black mb-3">Zapier</h3>
                 <span className="inline-block text-xs font-medium bg-yellow-50 text-yellow-700 px-2 py-1 rounded-full mb-4">US-gehostet</span>
                 <ul className="text-sm text-gray-600 space-y-2">
@@ -207,20 +187,16 @@ export default function WebsiteAutomatisierungPage() {
                   <li><strong>DSGVO:</strong> US-Server, DPA verfügbar, Restrisiko bleibt</li>
                 </ul>
               </div>
-            </FadeIn>
           </div>
 
-          <FadeIn delay={300}>
-            <p className="text-base text-gray-500 leading-relaxed mt-8">
+                      <p className="text-base text-gray-500 leading-relaxed mt-8">
               Für Enterprise: SAP Build Process Automation, Microsoft Power Automate oder UiPath. Mächtig, aber deutlich komplexer und teurer.
             </p>
-          </FadeIn>
         </section>
 
         {/* DSGVO */}
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               DSGVO und Automatisierung: Was du beachten musst
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
@@ -236,19 +212,16 @@ export default function WebsiteAutomatisierungPage() {
                 Seit 2025 bringt der EU AI Act zusätzliche Anforderungen: Transparenzpflichten, Risikoklassifizierung, Dokumentation. Von Anfang an mitdenken.
               </p>
             </div>
-          </FadeIn>
         </section>
 
         {/* 10 Automatisierungen */}
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               10 Automatisierungen, die jedes Unternehmen sofort umsetzen kann
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-10">
               Starte mit den Aufgaben, die dich am meisten Zeit kosten:
             </p>
-          </FadeIn>
 
           <div className="grid gap-4 md:grid-cols-2">
             {[
@@ -263,30 +236,25 @@ export default function WebsiteAutomatisierungPage() {
               { nr: '09', title: 'Lead-Scoring & CRM', desc: 'Neue Kontakte automatisch bewerten, priorisieren und im CRM anlegen.' },
               { nr: '10', title: 'Website-Monitoring', desc: 'Automatische Benachrichtigung bei Ausfällen, langsamen Ladezeiten oder SEO-Problemen.' },
             ].map((item) => (
-              <FadeIn key={item.nr}>
-                <div className="bg-white border border-gray-100 rounded-2xl p-6">
+                              <div className="bg-white border border-gray-100 rounded-2xl p-6">
                   <span className="text-sm font-mono text-brand-accent font-bold">{item.nr}</span>
                   <h3 className="text-lg font-semibold text-black mt-1 mb-2">{item.title}</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
                 </div>
-              </FadeIn>
             ))}
           </div>
 
-          <FadeIn delay={100}>
-            <div className="bg-white border-2 border-brand-accent rounded-xl p-6 shadow-sm my-8">
+                      <div className="bg-white border-2 border-brand-accent rounded-xl p-6 shadow-sm my-8">
               <p className="text-2xl md:text-3xl font-semibold text-black text-center">
                 KI-Einsatz kann die Arbeitsproduktivität in Deutschland um bis zu 25 % steigern
               </p>
               <p className="text-sm text-gray-400 text-center mt-2">Quelle: Institut der deutschen Wirtschaft</p>
             </div>
-          </FadeIn>
         </section>
 
         {/* Hamburger Unternehmen */}
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Website-Automatisierung für Hamburger Unternehmen
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
@@ -297,13 +265,11 @@ export default function WebsiteAutomatisierungPage() {
                 Für KMU heißt das: Lokale Expertise, Förderprogramme und ein starkes Netzwerk sind da. Die Hamburger Wirtschaftsbehörde fördert digitale Transformation aktiv -- in Kombination mit BAFA-Förderung sind Automatisierungsprojekte mit minimalem Eigenanteil möglich.
               </p>
             </div>
-          </FadeIn>
         </section>
 
         {/* KI-Sichtbarkeit Verweis */}
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Automatisierung und KI-Sichtbarkeit
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
@@ -311,13 +277,11 @@ export default function WebsiteAutomatisierungPage() {
                 Automatisierung hilft nicht nur bei internen Prozessen -- sie ist auch ein Hebel für deine Sichtbarkeit in KI-Systemen wie ChatGPT oder Perplexity. Content-Freshness, strukturierte Daten und KI-Monitoring lassen sich automatisieren. Mehr dazu in unserem <a href="/wissen/ki-sichtbarkeit" className="text-brand-accent underline underline-offset-2 hover:text-black transition-colors">Guide zu KI-Sichtbarkeit</a>.
               </p>
             </div>
-          </FadeIn>
         </section>
 
         {/* Webentwicklung-Tools */}
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Webentwicklung-Tools: Moderne Entwicklung automatisieren
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
@@ -334,46 +298,38 @@ export default function WebsiteAutomatisierungPage() {
                 Gerade für kleine Teams ist die Kombination aus automatisierten Workflows und KI-gestützter Entwicklung ein enormer Hebel.
               </p>
             </div>
-          </FadeIn>
         </section>
 
         {/* BAFA Stat Box */}
         <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-16">
-          <FadeIn>
-            <div className="bg-white border-2 border-brand-accent rounded-xl p-6 shadow-sm my-8">
+                      <div className="bg-white border-2 border-brand-accent rounded-xl p-6 shadow-sm my-8">
               <p className="text-2xl md:text-3xl font-semibold text-black text-center">
                 BAFA-Förderung: bis zu 80 % der Beratungskosten
               </p>
               <p className="text-sm text-gray-400 text-center mt-2">Quelle: Bundesamt für Wirtschaft und Ausfuhrkontrolle (BAFA)</p>
             </div>
-          </FadeIn>
         </section>
 
         {/* FAQ */}
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Häufige Fragen zur Website-Automatisierung
             </h2>
-          </FadeIn>
           <div className="space-y-8">
             {FAQ_ITEMS.map((item, idx) => (
-              <FadeIn key={idx}>
-                <article className="border-b border-black/10 pb-8 last:border-b-0 last:pb-0">
+                              <article className="border-b border-black/10 pb-8 last:border-b-0 last:pb-0">
                   <h3 className="text-lg md:text-xl font-semibold text-black tracking-tight">
                     {item.q}
                   </h3>
                   <p className="mt-3 text-gray-600 text-base leading-relaxed">{item.a}</p>
                 </article>
-              </FadeIn>
             ))}
           </div>
         </section>
 
         {/* Sources */}
         <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-16">
-          <FadeIn>
-            <div className="bg-gray-50 rounded-xl p-6">
+                      <div className="bg-gray-50 rounded-xl p-6">
               <h3 className="text-sm font-semibold text-black mb-3 uppercase tracking-wide">Quellen</h3>
               <ul className="text-sm text-gray-500 space-y-2">
                 <li>Deloitte AI Institute -- &quot;State of AI in the Enterprise&quot; (Studie zur KI-Tool-Nutzung in Unternehmen)</li>
@@ -382,13 +338,11 @@ export default function WebsiteAutomatisierungPage() {
                 <li>hamburg-business.com -- Hamburger Unternehmen und KI-Transformation</li>
               </ul>
             </div>
-          </FadeIn>
         </section>
 
         {/* Verwandte Guides */}
         <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-16">
-          <FadeIn>
-            <div className="bg-white border border-gray-100 rounded-xl p-6">
+                      <div className="bg-white border border-gray-100 rounded-xl p-6">
               <h3 className="text-sm font-semibold text-black mb-3 uppercase tracking-wide">Verwandte Guides</h3>
               <ul className="text-base text-gray-600 space-y-2">
                 <li>
@@ -398,13 +352,11 @@ export default function WebsiteAutomatisierungPage() {
                 </li>
               </ul>
             </div>
-          </FadeIn>
         </section>
 
         {/* CTA */}
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 border-t border-gray-100">
-          <FadeIn>
-            <div className="max-w-[700px] mx-auto text-center">
+                      <div className="max-w-[700px] mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-6">
                 Du willst deine Website und Prozesse automatisieren?
               </h2>
@@ -413,7 +365,6 @@ export default function WebsiteAutomatisierungPage() {
               </p>
               <Button href="/contact" text="Kostenlos beraten lassen" primary />
             </div>
-          </FadeIn>
         </section>
       </main>
 

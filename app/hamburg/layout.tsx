@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'AI SEO Hamburg: Lokale Service-Seiten fuer ChatGPT, Perplexity und KI-Sichtbarkeit',
+  title: 'AI SEO Hamburg: Lokale Service-Seiten für ChatGPT, Perplexity und KI-Sichtbarkeit',
   description:
-    'Kommerzielle Hamburg-Seiten zu AI SEO, AEO, ChatGPT-Optimierung, Perplexity-Optimierung und KI-Sichtbarkeit fuer lokale Unternehmen.',
+    'Kommerzielle Hamburg-Seiten zu AI SEO, AEO, ChatGPT-Optimierung, Perplexity-Optimierung und KI-Sichtbarkeit für lokale Unternehmen.',
   keywords: [
     'AI SEO Hamburg',
     'KI Sichtbarkeit Hamburg',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/hamburg',
-    title: 'AI SEO Hamburg: Lokale Service-Seiten fuer ChatGPT, Perplexity und KI-Sichtbarkeit',
+    title: 'AI SEO Hamburg: Lokale Service-Seiten für ChatGPT, Perplexity und KI-Sichtbarkeit',
     description:
       'Kommerzielle Hamburg-Seiten zu AI SEO, AEO, ChatGPT-Optimierung, Perplexity-Optimierung und KI-Sichtbarkeit.',
     siteName: 'aiseo.hamburg',

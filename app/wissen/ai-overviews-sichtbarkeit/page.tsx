@@ -1,9 +1,6 @@
-'use client';
-
 import React from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
-import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 
 /* ------------------------------------------------------------------ */
@@ -122,8 +119,7 @@ export default function AIOverviewsSichtbarkeitPage() {
       {/*  Hero                                                        */}
       {/* ============================================================ */}
       <section className="relative pt-32 pb-20 md:pt-52 md:pb-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
-        <FadeIn>
-          {/* Breadcrumb */}
+                  {/* Breadcrumb */}
           <nav aria-label="Breadcrumb" className="mb-8 text-sm text-gray-500">
             <ol className="flex items-center gap-1.5 flex-wrap">
               <li><a href="/" className="hover:text-brand-accent transition-colors">Startseite</a></li>
@@ -140,15 +136,13 @@ export default function AIOverviewsSichtbarkeitPage() {
           <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
             Google zeigt die Antwort direkt an - und du verlierst den Besucher. Bis zu 40% weniger Klicks bei informationalen Suchanfragen. Hier erfährst du, wie du als Quelle in AI Overviews erscheinst, statt unsichtbar zu bleiben.
           </p>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  TLDR                                                        */}
       {/* ============================================================ */}
       <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-12">
-        <FadeIn>
-          <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
+                  <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
             <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR</h2>
             <ul className="space-y-3 text-gray-700 leading-relaxed">
               <li className="flex items-start gap-2">
@@ -169,15 +163,13 @@ export default function AIOverviewsSichtbarkeitPage() {
               </li>
             </ul>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Was sind Google AI Overviews?                                */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Was sind Google AI Overviews?
           </h2>
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
@@ -191,15 +183,13 @@ export default function AIOverviewsSichtbarkeitPage() {
               In Deutschland hat Google AI Overviews 2025 schrittweise ausgerollt. Sie erscheinen bei informationalen Suchanfragen auf Deutsch und expandieren kontinuierlich in weitere Suchanfrage-Typen. Für den DACH-Markt ist die Optimierung jetzt der entscheidende Zeitpunkt.
             </p>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Das Problem: Zero-Click-Suche                               */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Das Problem: Zero-Click-Suche frisst deinen Traffic
           </h2>
 
@@ -246,15 +236,13 @@ export default function AIOverviewsSichtbarkeitPage() {
               </li>
             </ul>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Wie Google AI Overviews Quellen auswählen                   */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Wie Google AI Overviews Quellen auswählen
           </h2>
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
@@ -306,15 +294,13 @@ export default function AIOverviewsSichtbarkeitPage() {
               <strong className="text-black">Entscheidend:</strong> 81% der in AI Overviews zitierten Quellen stammen aus den Top-10 der organischen Suchergebnisse (Authoritas, 2025). Aber nicht jede Top-10-Seite wird zitiert. Der Unterschied liegt in der Extrahierbarkeit der Information - wie leicht kann Google deine Antwort identifizieren und in die Zusammenfassung einbauen?
             </p>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  7 Strategien für AI Overview Sichtbarkeit                   */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
             7 Strategien für AI Overview Sichtbarkeit
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -414,15 +400,13 @@ export default function AIOverviewsSichtbarkeitPage() {
               </div>
             </li>
           </ol>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  AI Overviews vs. klassische Suche                           */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             AI Overviews vs. klassische Suche
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-8">
@@ -481,15 +465,13 @@ export default function AIOverviewsSichtbarkeitPage() {
           <p className="text-lg text-gray-600 leading-relaxed mt-8">
             <strong className="text-black">Der größte Denkfehler:</strong> "Ich ranke auf Platz 1, also bin ich auch in der AI Overview." Stimmt nicht. Google wählt für AI Overviews nach anderen Kriterien aus als für organische Rankings. Eine Seite auf Position 3 mit perfektem Schema Markup und Answer-First Struktur kann die Position-1-Seite ohne Markup als AI Overview Quelle verdrängen.
           </p>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Typische Fehler                                             */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Typische Fehler bei der AI Overview Optimierung
           </h2>
 
@@ -536,15 +518,13 @@ export default function AIOverviewsSichtbarkeitPage() {
               </p>
             </div>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  FAQ                                                         */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-10">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-10">
             Häufig gestellte Fragen
           </h2>
           <div className="space-y-6">
@@ -555,15 +535,13 @@ export default function AIOverviewsSichtbarkeitPage() {
               </div>
             ))}
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Quellen                                                     */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Quellen
           </h2>
           <div className="bg-gray-50 rounded-xl p-6">
@@ -588,15 +566,13 @@ export default function AIOverviewsSichtbarkeitPage() {
               </li>
             </ul>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Weiterführende Guides                                       */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Weiterführende Guides
           </h2>
           <div className="grid sm:grid-cols-3 gap-6">
@@ -636,15 +612,13 @@ export default function AIOverviewsSichtbarkeitPage() {
               </p>
             </a>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  CTA                                                         */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <div className="bg-[#121212] text-white rounded-3xl p-8 md:p-12 lg:p-16 text-center">
+                  <div className="bg-[#121212] text-white rounded-3xl p-8 md:p-12 lg:p-16 text-center">
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] mb-4">
               Erscheinst du in Google AI Overviews?
             </h2>
@@ -653,7 +627,6 @@ export default function AIOverviewsSichtbarkeitPage() {
             </p>
             <Button href="/ai-sichtbarkeit-now" primary text="Kostenlose Kurzanalyse anfragen" />
           </div>
-        </FadeIn>
       </section>
 
       <Footer />

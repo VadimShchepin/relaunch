@@ -1,9 +1,6 @@
-'use client';
-
 import React from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
-import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 
 const PAGES = [
@@ -68,8 +65,7 @@ export default function HamburgHubPage() {
 
       <main>
         <section className="relative pt-32 pb-20 md:pt-52 md:pb-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
-          <FadeIn>
-            <nav className="text-sm text-gray-500 mb-6">
+                      <nav className="text-sm text-gray-500 mb-6">
               <a href="/" className="hover:text-brand-accent transition-colors">Startseite</a>
               <span className="mx-2">/</span>
               <span className="text-gray-900">Hamburg</span>
@@ -83,14 +79,12 @@ export default function HamburgHubPage() {
             <p className="text-lg md:text-xl text-gray-700 max-w-3xl leading-relaxed">
               Diese Sektion ist bewusst nah am Kaufmoment gebaut: fuer Menschen, die nicht mehr nur verstehen wollen, was AI SEO ist, sondern einen passenden Partner in Hamburg suchen.
             </p>
-          </FadeIn>
         </section>
 
         <section className="py-10 md:py-16 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
           <div className="space-y-6">
             {PAGES.map((page, index) => (
-              <FadeIn key={page.href} delay={index * 70}>
-                <a
+                              <a
                   href={page.href}
                   className="block bg-white border border-gray-100 rounded-2xl p-6 md:p-8 hover:border-brand-accent hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group"
                 >
@@ -111,14 +105,12 @@ export default function HamburgHubPage() {
                     </div>
                   </div>
                 </a>
-              </FadeIn>
             ))}
           </div>
         </section>
 
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <div className="bg-[#121212] text-white rounded-3xl p-8 md:p-12 lg:p-16 relative overflow-hidden">
+                      <div className="bg-[#121212] text-white rounded-3xl p-8 md:p-12 lg:p-16 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-accent/10 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2" />
               <div className="relative z-10">
                 <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] mb-6 leading-tight">
@@ -130,7 +122,6 @@ export default function HamburgHubPage() {
                 <Button href="/contact" primary text="Lokale KI-Sichtbarkeit anfragen" className="!py-4 !px-8" />
               </div>
             </div>
-          </FadeIn>
         </section>
       </main>
 

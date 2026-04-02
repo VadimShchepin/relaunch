@@ -1,9 +1,6 @@
-'use client';
-
 import React from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
-import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 
 /* ------------------------------------------------------------------ */
@@ -122,8 +119,7 @@ export default function KISichtbarkeitPage() {
       {/*  Hero                                                        */}
       {/* ============================================================ */}
       <section className="relative pt-32 pb-20 md:pt-52 md:pb-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
-        <FadeIn>
-          {/* Breadcrumb */}
+                  {/* Breadcrumb */}
           <nav aria-label="Breadcrumb" className="mb-8 text-sm text-gray-500">
             <ol className="flex items-center gap-1.5 flex-wrap">
               <li><a href="/" className="hover:text-brand-accent transition-colors">Startseite</a></li>
@@ -140,30 +136,26 @@ export default function KISichtbarkeitPage() {
           <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
             Deine Kunden fragen ChatGPT, Perplexity und Google AI um Rat. Wer dort nicht empfohlen wird, existiert für eine wachsende Zielgruppe nicht. Hier ist das Framework, um das zu ändern.
           </p>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Image                                                       */}
       {/* ============================================================ */}
       <div className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-8">
-        <FadeIn>
-          <img
+                  <img
             src="/images/wissen/ki-sichtbarkeit.jpg"
             alt="KI-Sichtbarkeit: Wie Unternehmen in ChatGPT und Perplexity sichtbar werden"
             className="w-full rounded-2xl shadow-lg"
             loading="eager"
           />
           <p className="text-xs text-gray-400 mt-2">Foto: Unsplash</p>
-        </FadeIn>
       </div>
 
       {/* ============================================================ */}
       {/*  TLDR                                                        */}
       {/* ============================================================ */}
       <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-12">
-        <FadeIn>
-          <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
+                  <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
             <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR</h2>
             <ul className="space-y-3 text-gray-700 leading-relaxed">
               <li className="flex items-start gap-2">
@@ -184,15 +176,13 @@ export default function KISichtbarkeitPage() {
               </li>
             </ul>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Was ist KI-Sichtbarkeit?                                    */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Was ist KI-Sichtbarkeit?
           </h2>
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
@@ -206,15 +196,13 @@ export default function KISichtbarkeitPage() {
               Bei Google optimierst du für ein Ranking. Bei KI-Sichtbarkeit optimierst du dafür, <strong className="text-black">als Quelle zitiert</strong> zu werden. Andere Signale, andere Strukturen, andere Denkweise.
             </p>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Warum jetzt?                                                */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Warum jetzt?
           </h2>
 
@@ -244,15 +232,13 @@ export default function KISichtbarkeitPage() {
               Das Zeitfenster für einen Vorsprung schließt sich. In 12-18 Monaten ist KI-Sichtbarkeit keine Option mehr, sondern Grundvoraussetzung.
             </p>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Die drei Säulen der KI-Sichtbarkeit                        */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
             Die drei Säulen der KI-Sichtbarkeit
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -303,15 +289,13 @@ export default function KISichtbarkeitPage() {
           <p className="text-lg text-gray-600 leading-relaxed mt-8">
             Beste Technik ohne Content? Nutzlos. Bester Content ohne Autorität? Wird nicht zitiert. Autorität ohne Technik? Bleibt für KI unsichtbar.
           </p>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  GEO vs. klassisches SEO                                    */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             GEO vs. klassisches SEO
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-8">
@@ -365,15 +349,13 @@ export default function KISichtbarkeitPage() {
           <p className="text-lg text-gray-600 leading-relaxed mt-8">
             Größter Denkfehler: "Ich bin bei Google auf Platz 1, also bin ich auch in KI sichtbar." Stimmt nicht. Eine Seite kann hervorragend ranken und von ChatGPT komplett ignoriert werden - weil die Inhalte nicht strukturiert, die Marke nicht positioniert oder die Autoritätssignale nicht vorhanden sind.
           </p>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  5 strategische Schritte                                     */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
             5 strategische Schritte zur KI-Sichtbarkeit
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -430,15 +412,13 @@ export default function KISichtbarkeitPage() {
               </p>
             </li>
           </ol>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Wie lange dauert es?                                        */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Wie lange dauert es?
           </h2>
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
@@ -452,15 +432,13 @@ export default function KISichtbarkeitPage() {
               <strong className="text-black">Der Compound-Effekt:</strong> Wer früh optimiert, wird als Quelle etabliert. Spätere Trainingszyklen bestätigen dieses Signal. Je länger du sichtbar bist, desto stabiler die Position - ähnlich wie Domain-Autorität, nur schwerer einzuholen.
             </p>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  FAQ                                                         */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-10">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-10">
             Häufig gestellte Fragen
           </h2>
           <div className="space-y-6">
@@ -471,15 +449,13 @@ export default function KISichtbarkeitPage() {
               </div>
             ))}
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Quellen                                                     */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Quellen
           </h2>
           <div className="bg-gray-50 rounded-xl p-6">
@@ -504,15 +480,13 @@ export default function KISichtbarkeitPage() {
               </li>
             </ul>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Weiterführende Guides                                       */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Weiterführende Guides
           </h2>
           <div className="grid sm:grid-cols-2 gap-6">
@@ -588,22 +562,19 @@ export default function KISichtbarkeitPage() {
               </p>
             </a>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  CTA                                                         */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100 text-center">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
             Bereit für KI-Sichtbarkeit?
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-xl mx-auto">
             Finde heraus, wie KI dein Unternehmen aktuell beschreibt - und was du tun kannst, um empfohlen zu werden.
           </p>
           <Button href="/ai-sichtbarkeit-now" primary text="Kostenlose Kurzanalyse anfragen" />
-        </FadeIn>
       </section>
 
       <Footer />

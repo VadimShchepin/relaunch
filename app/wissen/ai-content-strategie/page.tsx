@@ -1,9 +1,6 @@
-'use client';
-
 import React from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
-import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 
 /* ------------------------------------------------------------------ */
@@ -134,8 +131,7 @@ export default function AIContentStrategiePage() {
       {/*  Hero                                                        */}
       {/* ============================================================ */}
       <section className="relative pt-32 pb-20 md:pt-52 md:pb-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
-        <FadeIn>
-          {/* Breadcrumb */}
+                  {/* Breadcrumb */}
           <nav aria-label="Breadcrumb" className="mb-8 text-sm text-gray-500">
             <ol className="flex items-center gap-1.5 flex-wrap">
               <li><a href="/" className="hover:text-brand-accent transition-colors">Startseite</a></li>
@@ -152,15 +148,13 @@ export default function AIContentStrategiePage() {
           <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
             Du produzierst Content wie 2020 - aber KI liest anders als Google. Dein Blog hat 100 Artikel, aber kein einziger wird von ChatGPT zitiert. Hier erfaehrst du, wie du Inhalte erstellst, die KI-Systeme als Quelle nutzen.
           </p>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  TL;DR                                                       */}
       {/* ============================================================ */}
       <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-12">
-        <FadeIn>
-          <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
+                  <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
             <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR</h2>
             <ul className="space-y-3 text-gray-700 leading-relaxed">
               <li className="flex items-start gap-2">
@@ -185,15 +179,13 @@ export default function AIContentStrategiePage() {
               </li>
             </ul>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Warum deine Content-Strategie nicht funktioniert            */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Warum deine Content-Strategie fuer KI-Systeme nicht funktioniert
           </h2>
 
@@ -216,15 +208,13 @@ export default function AIContentStrategiePage() {
               <strong className="text-black">Content ohne Struktur ist fuer KI unsichtbar.</strong> Lange Fliesstexte ohne klare Hierarchie, ohne Fakten, ohne Quellen - das ist fuer einen LLM nicht verwertbar. KI braucht extrahierbare, verifizierbare Informationsbausteine.
             </p>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Was KI-Systeme von Content erwarten                         */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
             Was KI-Systeme von Content erwarten
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -267,15 +257,13 @@ export default function AIContentStrategiePage() {
               </p>
             </div>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Die 3 Content-Typen die KI liebt                           */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
             Die 3 Content-Typen, die KI liebt
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -337,15 +325,13 @@ export default function AIContentStrategiePage() {
               </div>
             </li>
           </ol>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Content-Audit: Ist dein Content KI-ready?                   */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
             Content-Audit: Ist dein Content KI-ready?
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-8">
@@ -376,15 +362,13 @@ export default function AIContentStrategiePage() {
               </p>
             </div>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  7 Strategien fuer KI-optimierten Content                    */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
             7 Strategien fuer KI-optimierten Content
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -476,15 +460,13 @@ export default function AIContentStrategiePage() {
               </p>
             </li>
           </ol>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Content-Formate im KI-Vergleich                             */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Content-Formate im KI-Vergleich
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-8">
@@ -539,15 +521,13 @@ export default function AIContentStrategiePage() {
               </tbody>
             </table>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  AI Content Workflow                                         */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
             AI Content Workflow: Von der Idee zum zitierbaren Inhalt
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -610,15 +590,13 @@ export default function AIContentStrategiePage() {
               </div>
             </li>
           </ol>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Typische Content-Fehler fuer KI                             */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Typische Content-Fehler fuer KI
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-8">
@@ -668,15 +646,13 @@ export default function AIContentStrategiePage() {
               </p>
             </div>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  FAQ                                                         */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-10">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-10">
             Haeufig gestellte Fragen
           </h2>
           <div className="space-y-6">
@@ -687,15 +663,13 @@ export default function AIContentStrategiePage() {
               </div>
             ))}
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Quellen                                                     */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Quellen
           </h2>
           <div className="bg-gray-50 rounded-xl p-6">
@@ -717,15 +691,13 @@ export default function AIContentStrategiePage() {
               </li>
             </ul>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Weiterfuehrende Guides                                      */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Weiterfuehrende Guides
           </h2>
           <div className="grid sm:grid-cols-2 gap-6">
@@ -777,15 +749,13 @@ export default function AIContentStrategiePage() {
               </p>
             </a>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  CTA                                                         */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <div className="bg-[#121212] rounded-3xl p-8 md:p-12 text-center">
+                  <div className="bg-[#121212] rounded-3xl p-8 md:p-12 text-center">
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-white mb-4">
               Wird dein Content von KI zitiert?
             </h2>
@@ -794,7 +764,6 @@ export default function AIContentStrategiePage() {
             </p>
             <Button href="/ai-sichtbarkeit-now" primary text="Kostenlose Content-Analyse anfragen" />
           </div>
-        </FadeIn>
       </section>
 
       <Footer />

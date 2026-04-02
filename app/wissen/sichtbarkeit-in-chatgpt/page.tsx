@@ -1,9 +1,6 @@
-'use client';
-
 import React from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
-import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 
 const articleSchema = {
@@ -88,8 +85,7 @@ const faqSchema = {
 // Hero Section
 const HeroSection: React.FC = () => (
     <section className="relative pt-32 pb-20 md:pt-52 md:pb-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
-        <FadeIn>
-            {/* Breadcrumb */}
+                    {/* Breadcrumb */}
             <nav className="mb-8 text-sm text-gray-400">
                 <a href="/" className="hover:text-brand-accent transition-colors">Startseite</a>
                 <span className="mx-2">/</span>
@@ -107,30 +103,26 @@ const HeroSection: React.FC = () => (
                 fragen, empfiehlt ChatGPT ein bis drei Unternehmen. Dieser Guide zeigt dir, wie das
                 Empfehlungssystem funktioniert und wie du reinkommst.
             </p>
-        </FadeIn>
     </section>
 );
 
 // Image Section
 const ImageSection: React.FC = () => (
     <div className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-8">
-        <FadeIn>
-            <img
+                    <img
                 src="/images/wissen/chatgpt.jpg"
                 alt="Sichtbarkeit in ChatGPT für Unternehmen optimieren"
                 className="w-full rounded-2xl shadow-lg"
                 loading="eager"
             />
             <p className="text-xs text-gray-400 mt-2">Foto: Unsplash</p>
-        </FadeIn>
     </div>
 );
 
 // TLDR Section
 const TLDRSection: React.FC = () => (
     <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-12">
-        <FadeIn>
-            <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
+                    <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
                 <p className="text-sm font-bold text-brand-accent mb-3 uppercase tracking-wider">Zusammenfassung</p>
                 <ul className="space-y-2 text-gray-800">
                     <li className="flex items-start gap-2">
@@ -151,15 +143,13 @@ const TLDRSection: React.FC = () => (
                     </li>
                 </ul>
             </div>
-        </FadeIn>
     </section>
 );
 
 // Dual System Section
 const DualSystemSection: React.FC = () => (
     <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
                 Wie ChatGPT Empfehlungen generiert
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
@@ -208,15 +198,13 @@ const DualSystemSection: React.FC = () => (
                     Bing-SEO und deine Bing Webmaster Tools.
                 </p>
             </div>
-        </FadeIn>
     </section>
 );
 
 // Factors Section
 const FactorsSection: React.FC = () => (
     <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
                 Was ChatGPT-Sichtbarkeit beeinflusst
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
@@ -268,23 +256,19 @@ const FactorsSection: React.FC = () => (
                         desc: 'Eine einzelne Pressemeldung von 2023 reicht nicht. ChatGPT bewertet, ob eine Marke über Zeit konsistent erwähnt wird. Regelmäßige redaktionelle Erwähnungen über Monate und Jahre bauen ein stabiles Vertrauensprofil auf.',
                     },
                 ].map((factor, i) => (
-                    <FadeIn key={i} delay={i * 50}>
-                        <div className="bg-white border border-gray-100 rounded-2xl p-6">
+                                            <div className="bg-white border border-gray-100 rounded-2xl p-6">
                             <h3 className="font-semibold text-black text-lg mb-2">{factor.title}</h3>
                             <p className="text-gray-600 leading-relaxed">{factor.desc}</p>
                         </div>
-                    </FadeIn>
                 ))}
             </div>
-        </FadeIn>
     </section>
 );
 
 // Strategies Section
 const StrategiesSection: React.FC = () => (
     <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
                 5 Strategien speziell für ChatGPT
             </h2>
             <div className="space-y-8">
@@ -315,26 +299,22 @@ const StrategiesSection: React.FC = () => (
                         text: 'OpenAI nutzt zwei Crawler: GPTBot (User-Agent: GPTBot) für Trainingsdaten und OAI-SearchBot für die Live-Websuche. Prüfe deine robots.txt - viele CMS-Plugins und Security-Tools blockieren diese Bots pauschal. Stelle sicher, dass auch der Bing-Bot (bingbot) erlaubt ist, da er die Live-Suche speist. Drei Zeilen in der robots.txt entscheiden darüber, ob ChatGPT dich überhaupt finden kann.',
                     },
                 ].map((strategy, i) => (
-                    <FadeIn key={i} delay={i * 50}>
-                        <div className="flex gap-5">
+                                            <div className="flex gap-5">
                             <div className="text-brand-accent font-bold text-sm mt-1 flex-shrink-0 w-6">{strategy.num}</div>
                             <div>
                                 <h3 className="font-semibold text-black text-lg mb-2">{strategy.title}</h3>
                                 <p className="text-gray-600 leading-relaxed">{strategy.text}</p>
                             </div>
                         </div>
-                    </FadeIn>
                 ))}
             </div>
-        </FadeIn>
     </section>
 );
 
 // Measuring Section
 const MeasuringSection: React.FC = () => (
     <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
                 So misst du deine ChatGPT-Sichtbarkeit
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
@@ -412,15 +392,13 @@ const MeasuringSection: React.FC = () => (
                     </p>
                 </div>
             </div>
-        </FadeIn>
     </section>
 );
 
 // Common Mistakes Section
 const MistakesSection: React.FC = () => (
     <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
                 Typische Fehler
             </h2>
 
@@ -443,8 +421,7 @@ const MistakesSection: React.FC = () => (
                         explanation: 'Drei verschiedene Telefonnummern auf drei Plattformen = ChatGPT empfiehlt jemand anderen. Konsistenz prüfen, einmal richtig machen, quartalsweise kontrollieren.',
                     },
                 ].map((item, i) => (
-                    <FadeIn key={i} delay={i * 50}>
-                        <div className="bg-white border border-gray-100 rounded-2xl p-6">
+                                            <div className="bg-white border border-gray-100 rounded-2xl p-6">
                             <div className="flex items-start gap-3">
                                 <span className="text-red-400 font-bold text-xl leading-none mt-0.5 flex-shrink-0">&#10007;</span>
                                 <div>
@@ -453,10 +430,8 @@ const MistakesSection: React.FC = () => (
                                 </div>
                             </div>
                         </div>
-                    </FadeIn>
                 ))}
             </div>
-        </FadeIn>
     </section>
 );
 
@@ -491,8 +466,7 @@ const FAQSection: React.FC = () => {
 
     return (
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-            <FadeIn>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-12">
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-12">
                     Häufig gestellte Fragen
                 </h2>
 
@@ -504,7 +478,6 @@ const FAQSection: React.FC = () => {
                         </div>
                     ))}
                 </div>
-            </FadeIn>
         </section>
     );
 };
@@ -512,8 +485,7 @@ const FAQSection: React.FC = () => {
 // Sources Section
 const SourcesSection: React.FC = () => (
     <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-            <div className="bg-gray-50 rounded-xl p-6">
+                    <div className="bg-gray-50 rounded-xl p-6">
                 <h3 className="font-semibold text-black mb-4">Quellen</h3>
                 <ul className="space-y-2 text-sm text-gray-600">
                     <li>
@@ -558,15 +530,13 @@ const SourcesSection: React.FC = () => (
                     </li>
                 </ul>
             </div>
-        </FadeIn>
     </section>
 );
 
 // Related Guides Section
 const RelatedGuidesSection: React.FC = () => (
     <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-12">
-        <FadeIn>
-            <h3 className="font-semibold text-black text-lg mb-4">Verwandte Guides:</h3>
+                    <h3 className="font-semibold text-black text-lg mb-4">Verwandte Guides:</h3>
             <div className="grid sm:grid-cols-2 gap-4">
                 <a
                     href="/wissen/ki-sichtbarkeit"
@@ -591,15 +561,13 @@ const RelatedGuidesSection: React.FC = () => (
                     </p>
                 </a>
             </div>
-        </FadeIn>
     </section>
 );
 
 // CTA Section
 const CTASection: React.FC = () => (
     <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-            <div className="bg-[#121212] text-white rounded-3xl p-8 md:p-12 lg:p-16 relative overflow-hidden">
+                    <div className="bg-[#121212] text-white rounded-3xl p-8 md:p-12 lg:p-16 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-accent/10 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
                 <div className="relative z-10">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] mb-6 leading-tight">
@@ -612,7 +580,6 @@ const CTASection: React.FC = () => (
                     <Button href="/ai-sichtbarkeit-now" primary text="Kostenlose Kurzanalyse anfragen" className="!py-4 !px-8" />
                 </div>
             </div>
-        </FadeIn>
     </section>
 );
 

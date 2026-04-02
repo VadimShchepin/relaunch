@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { LocalIntentTemplate } from '@/components/hamburg/LocalIntentTemplate';
 
 export const metadata: Metadata = {
-  title: 'ChatGPT Optimierung Hamburg | In ChatGPT empfohlen werden statt uebersehen',
+  title: 'ChatGPT Optimierung Hamburg | In ChatGPT empfohlen werden statt übersehen',
   description:
-    'ChatGPT Optimierung fuer Hamburger Unternehmen: bessere Empfehlungen, klarere Entitaetssignale, Bing-nahe Sichtbarkeit und Inhalte fuer kaufnahe Prompt-Fragen.',
+    'ChatGPT Optimierung für Hamburger Unternehmen: bessere Empfehlungen, klarere Entitätssignale, Bing-nahe Sichtbarkeit und Inhalte für kaufnahe Prompt-Fragen.',
   keywords: [
     'ChatGPT Optimierung Hamburg',
     'ChatGPT SEO Hamburg',
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/hamburg/chatgpt-optimierung',
-    title: 'ChatGPT Optimierung Hamburg | In ChatGPT empfohlen werden statt uebersehen',
+    title: 'ChatGPT Optimierung Hamburg | In ChatGPT empfohlen werden statt übersehen',
     description:
-      'Platform-spezifische Local-Intent-Seite fuer ChatGPT-Empfehlungen und Content, der in Antworten wiederverwendet werden kann.',
+      'Platform-spezifische Local-Intent-Seite für ChatGPT-Empfehlungen und Content, der in Antworten wiederverwendet werden kann.',
     siteName: 'aiseo.hamburg',
     images: [{ url: '/images/wissen/chatgpt.jpg', width: 1200, height: 630, alt: 'ChatGPT Optimierung Hamburg' }],
   },

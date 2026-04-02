@@ -15,6 +15,9 @@ export const metadata: Metadata = {
         index: true,
         follow: true,
     },
+    alternates: {
+        canonical: 'https://aiseo.hamburg/pressekit',
+    },
 };
 
 export default function PressekitLayout({

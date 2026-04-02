@@ -1,9 +1,6 @@
-'use client';
-
 import React from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
-import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 
 const FAQ_ITEMS = [
@@ -110,8 +107,7 @@ export default function AiSeoAgenturPage() {
 
         {/* Hero */}
         <section className="relative pt-32 pb-12 md:pt-52 md:pb-16 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
-          <FadeIn>
-            <nav className="text-sm text-gray-400 mb-8">
+                      <nav className="text-sm text-gray-400 mb-8">
               <a href="/" className="hover:text-gray-600 transition-colors">Startseite</a>
               <span className="mx-2">/</span>
               <span>Wissen</span>
@@ -124,26 +120,22 @@ export default function AiSeoAgenturPage() {
             <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
               Die meisten &quot;AI SEO Agenturen&quot; kleben ein neues Label auf alte Leistungen. Hier ist, woran du echte Expertise erkennst, was eine gute Agentur konkret tut und was sie kosten sollte.
             </p>
-          </FadeIn>
         </section>
 
         {/* Image */}
         <div className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-8">
-          <FadeIn>
-            <img
+                      <img
               src="/images/wissen/ai-seo-agentur.jpg"
               alt="AI SEO Agentur: Team bei der Strategieentwicklung"
               className="w-full rounded-2xl shadow-lg"
               loading="eager"
             />
             <p className="text-xs text-gray-400 mt-2">Foto: Unsplash</p>
-          </FadeIn>
         </div>
 
         {/* TLDR */}
         <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-16">
-          <FadeIn>
-            <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
+                      <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
               <p className="text-sm font-bold text-brand-accent mb-4">Zusammenfassung</p>
               <ul className="space-y-3 text-gray-700 text-base leading-relaxed">
                 <li className="flex gap-3">
@@ -164,13 +156,11 @@ export default function AiSeoAgenturPage() {
                 </li>
               </ul>
             </div>
-          </FadeIn>
         </section>
 
         {/* Was unterscheidet eine AI SEO Agentur? */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Was unterscheidet eine AI SEO Agentur von klassischem SEO?
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
@@ -187,13 +177,11 @@ export default function AiSeoAgenturPage() {
                 Wichtig: AI SEO ersetzt klassisches SEO nicht. Es baut darauf auf. Ohne saubere technische Basis hat auch die beste KI-Optimierung wenig Wirkung.
               </p>
             </div>
-          </FadeIn>
         </section>
 
         {/* Was macht eine gute AI SEO Agentur? */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Was macht eine gute AI SEO Agentur?
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -207,13 +195,11 @@ export default function AiSeoAgenturPage() {
                 </div>
               ))}
             </div>
-          </FadeIn>
         </section>
 
         {/* Worauf bei Auswahl achten */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Worauf solltest du bei der Auswahl achten?
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -271,13 +257,11 @@ export default function AiSeoAgenturPage() {
                 </ul>
               </div>
             </div>
-          </FadeIn>
         </section>
 
         {/* Agentur vs Freelancer vs Inhouse */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               AI SEO Agentur vs. Freelancer vs. Inhouse
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -317,13 +301,11 @@ export default function AiSeoAgenturPage() {
             <p className="text-lg text-gray-600 leading-relaxed mt-8">
               Spezialisierte Freelancer haben sich früh mit GEO beschäftigt. Größere Agenturen kleben häufig ein neues Label auf bestehende Leistungen. Das ändert sich, aber aktuell zählt Spezialisierung mehr als Teamgröße.
             </p>
-          </FadeIn>
         </section>
 
         {/* Was kostet AI SEO Beratung? */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Was kostet AI SEO Beratung?
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
@@ -349,13 +331,11 @@ export default function AiSeoAgenturPage() {
             <p className="text-lg text-gray-600 leading-relaxed mt-8">
               Vorsicht bei sehr günstigen Pauschalen. AI SEO erfordert manuelle Analyse und individuelle Strategie. Massenabfertigung funktioniert nicht.
             </p>
-          </FadeIn>
         </section>
 
         {/* Quick Checklist */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Quick Checklist: Brauchst du AI SEO?
             </h2>
             <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
@@ -381,13 +361,11 @@ export default function AiSeoAgenturPage() {
                 Zwei oder mehr Ja? Dann lohnt sich mindestens ein Audit.
               </p>
             </div>
-          </FadeIn>
         </section>
 
         {/* AI SEO für Hamburger Unternehmen */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               AI SEO für Hamburger Unternehmen
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
@@ -398,13 +376,11 @@ export default function AiSeoAgenturPage() {
                 Die meisten Hamburger Wettbewerber konzentrieren sich weiterhin ausschließlich auf klassisches SEO. Wer jetzt mit AI SEO anfängt, hat in vielen Branchen noch wenig direkte Konkurrenz.
               </p>
             </div>
-          </FadeIn>
         </section>
 
         {/* FAQ */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-10">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-10">
               Häufig gestellte Fragen
             </h2>
             <div className="space-y-6">
@@ -415,13 +391,11 @@ export default function AiSeoAgenturPage() {
                 </div>
               ))}
             </div>
-          </FadeIn>
         </section>
 
         {/* Quellen */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               Quellen und weiterführende Informationen
             </h2>
             <ul className="space-y-3 text-base text-gray-600 leading-relaxed">
@@ -438,13 +412,11 @@ export default function AiSeoAgenturPage() {
                 Laufende Berichterstattung über die Entwicklung von AI Overviews und deren Einfluss auf SEO.
               </li>
             </ul>
-          </FadeIn>
         </section>
 
         {/* Verwandte Guides */}
         <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-8">
-          <FadeIn>
-            <div className="border-t border-gray-100 pt-12">
+                      <div className="border-t border-gray-100 pt-12">
               <h2 className="text-xl font-semibold text-black mb-5">Verwandte Guides:</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <a
@@ -463,13 +435,11 @@ export default function AiSeoAgenturPage() {
                 </a>
               </div>
             </div>
-          </FadeIn>
         </section>
 
         {/* CTA */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
-          <FadeIn>
-            <div className="bg-white border border-gray-100 rounded-2xl p-8 md:p-12 text-center">
+                      <div className="bg-white border border-gray-100 rounded-2xl p-8 md:p-12 text-center">
               <h2 className="text-2xl md:text-3xl font-semibold tracking-[-0.03em] text-black mb-4">
                 Du suchst AI SEO Beratung?
               </h2>
@@ -478,7 +448,6 @@ export default function AiSeoAgenturPage() {
               </p>
               <Button href="/ai-sichtbarkeit-now" text="Mehr erfahren" primary />
             </div>
-          </FadeIn>
         </section>
       </main>
 

@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import { ArticleTemplate } from '@/components/wissen/ArticleTemplate';
 
 export const metadata: Metadata = {
-  title: 'ChatGPT SEO: So optimierst du Inhalte fuer Empfehlungen statt Rankings',
+  title: 'ChatGPT SEO: So optimierst du Inhalte für Empfehlungen statt Rankings',
   description:
-    'Was ChatGPT SEO wirklich bedeutet, welche Faktoren Empfehlungen beeinflussen und wie Unternehmen Inhalte fuer ChatGPT, Bing und KI-Zitate vorbereiten.',
+    'Was ChatGPT SEO wirklich bedeutet, welche Faktoren Empfehlungen beeinflussen und wie Unternehmen Inhalte für ChatGPT, Bing und KI-Zitate vorbereiten.',
   keywords: [
     'ChatGPT SEO',
-    'SEO fuer ChatGPT',
+    'SEO für ChatGPT',
     'in ChatGPT sichtbar werden',
     'ChatGPT Optimierung',
     'AI SEO ChatGPT',
@@ -18,17 +18,17 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/wissen/chatgpt-seo',
-    title: 'ChatGPT SEO: So optimierst du Inhalte fuer Empfehlungen statt Rankings',
+    title: 'ChatGPT SEO: So optimierst du Inhalte für Empfehlungen statt Rankings',
     description:
-      'Was ChatGPT SEO wirklich bedeutet, welche Faktoren Empfehlungen beeinflussen und wie Unternehmen Inhalte fuer ChatGPT vorbereiten.',
+      'Was ChatGPT SEO wirklich bedeutet, welche Faktoren Empfehlungen beeinflussen und wie Unternehmen Inhalte für ChatGPT vorbereiten.',
     siteName: 'aiseo.hamburg',
     images: [{ url: '/images/wissen/chatgpt.jpg', width: 1200, height: 630, alt: 'ChatGPT SEO Guide' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ChatGPT SEO: So optimierst du Inhalte fuer Empfehlungen statt Rankings',
+    title: 'ChatGPT SEO: So optimierst du Inhalte für Empfehlungen statt Rankings',
     description:
-      'Was ChatGPT SEO wirklich bedeutet, welche Faktoren Empfehlungen beeinflussen und wie Unternehmen Inhalte fuer ChatGPT vorbereiten.',
+      'Was ChatGPT SEO wirklich bedeutet, welche Faktoren Empfehlungen beeinflussen und wie Unternehmen Inhalte für ChatGPT vorbereiten.',
   },
   alternates: {
     canonical: 'https://aiseo.hamburg/wissen/chatgpt-seo',

@@ -7,6 +7,9 @@ export const metadata: Metadata = {
         index: true,
         follow: true,
     },
+    alternates: {
+        canonical: 'https://aiseo.hamburg/datenschutz',
+    },
 };
 
 export default function DatenschutzLayout({

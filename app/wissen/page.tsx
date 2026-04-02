@@ -1,9 +1,6 @@
-'use client';
-
 import React from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
-import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 
 const ARTICLES = [
@@ -212,7 +209,6 @@ export default function WissenPage() {
             <main>
                 {/* Hero */}
                 <section className="relative pt-32 pb-20 md:pt-52 md:pb-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
-                    <FadeIn>
                         <nav className="text-sm text-gray-500 mb-6">
                             <a href="/" className="hover:text-brand-accent transition-colors">Startseite</a>
                             <span className="mx-2">/</span>
@@ -225,14 +221,12 @@ export default function WissenPage() {
                         <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
                             Fundierte Praxis-Guides zu KI-Sichtbarkeit, AI SEO und Website-Automatisierung. Kein Marketing-Blabla, sondern echtes Wissen mit Quellen und konkreten Handlungsempfehlungen.
                         </p>
-                    </FadeIn>
                 </section>
 
                 {/* Articles Grid */}
                 <section className="py-10 md:py-16 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
                     <div className="space-y-6">
                         {ARTICLES.map((article, i) => (
-                            <FadeIn key={i} delay={i * 75}>
                                 <a
                                     href={article.href}
                                     className="block bg-white border border-gray-100 rounded-2xl p-6 md:p-8 hover:border-brand-accent hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group"
@@ -258,14 +252,12 @@ export default function WissenPage() {
                                         </div>
                                     </div>
                                 </a>
-                            </FadeIn>
                         ))}
                     </div>
                 </section>
 
                 {/* CTA */}
                 <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-                    <FadeIn>
                         <div className="bg-[#121212] text-white rounded-3xl p-8 md:p-12 lg:p-16 relative overflow-hidden">
                             <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-accent/10 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
@@ -279,7 +271,6 @@ export default function WissenPage() {
                                 <Button href="/ai-sichtbarkeit-now" primary text="KI-Sichtbarkeit prüfen" className="!py-4 !px-8" />
                             </div>
                         </div>
-                    </FadeIn>
                 </section>
             </main>
 

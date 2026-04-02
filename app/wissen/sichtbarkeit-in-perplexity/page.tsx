@@ -1,9 +1,6 @@
-'use client';
-
 import React from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
-import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 
 const articleSchema = {
@@ -94,8 +91,7 @@ export default function SichtbarkeitInPerplexityPage() {
       <main>
         {/* Hero */}
         <section className="pt-32 pb-12 md:pt-52 md:pb-16 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
-          <FadeIn>
-            <nav className="text-sm text-gray-400 mb-8">
+                      <nav className="text-sm text-gray-400 mb-8">
               <a href="/" className="hover:text-brand-accent transition-colors">Startseite</a>
               <span className="mx-2">/</span>
               <a href="/wissen" className="hover:text-brand-accent transition-colors">Wissen</a>
@@ -111,26 +107,22 @@ export default function SichtbarkeitInPerplexityPage() {
               Nicht aus Trainingsdaten, sondern live aus dem Bing-Index. Jeden Tag neu.
               Wirst du zitiert?
             </p>
-          </FadeIn>
         </section>
 
         {/* Image */}
         <div className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-8">
-          <FadeIn>
-            <img
+                      <img
               src="/images/wissen/perplexity.jpg"
               alt="Perplexity AI Sichtbarkeit: Datenanalyse und KI-Suche"
               className="w-full rounded-2xl shadow-lg"
               loading="eager"
             />
             <p className="text-xs text-gray-400 mt-2">Foto: Unsplash</p>
-          </FadeIn>
         </div>
 
         {/* TLDR */}
         <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-12">
-          <FadeIn>
-            <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
+                      <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
               <p className="text-sm font-bold text-brand-accent mb-3 uppercase tracking-wider">Auf den Punkt</p>
               <ul className="space-y-2 text-gray-800">
                 <li className="flex items-start gap-2">
@@ -155,13 +147,11 @@ export default function SichtbarkeitInPerplexityPage() {
                 </li>
               </ul>
             </div>
-          </FadeIn>
         </section>
 
         {/* Stats Grid */}
         <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-16">
-          <FadeIn>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
                 { number: '45 Mio.', label: 'Aktive Nutzer' },
                 { number: '370 %', label: 'Wachstum YoY' },
@@ -174,13 +164,11 @@ export default function SichtbarkeitInPerplexityPage() {
                 </div>
               ))}
             </div>
-          </FadeIn>
         </section>
 
         {/* Was Perplexity anders macht */}
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
               Was Perplexity anders macht
             </h2>
             <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
@@ -224,13 +212,11 @@ export default function SichtbarkeitInPerplexityPage() {
                 </div>
               </div>
             </div>
-          </FadeIn>
         </section>
 
         {/* Wie Perplexity Quellen auswählt */}
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
               Wie Perplexity Quellen auswählt
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
@@ -263,21 +249,17 @@ export default function SichtbarkeitInPerplexityPage() {
                   desc: 'Thematisch fokussierte Websites gewinnen gegen Generalisten. Perplexity bevorzugt die Quelle, die sich tief mit einem Thema befasst, nicht die, die alles oberflächlich abdeckt.',
                 },
               ].map((item) => (
-                <FadeIn key={item.title}>
-                  <div className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent/50 transition-all">
+                                  <div className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent/50 transition-all">
                     <h3 className="font-semibold text-black mb-2">{item.title}</h3>
                     <p className="text-gray-600 text-base">{item.desc}</p>
                   </div>
-                </FadeIn>
               ))}
             </div>
-          </FadeIn>
         </section>
 
         {/* 6 Perplexity-spezifische Strategien */}
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
               6 Perplexity-spezifische Strategien
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
@@ -317,24 +299,20 @@ export default function SichtbarkeitInPerplexityPage() {
                   text: 'Perplexity bevorzugt Seiten, die technisch schnell ausgeliefert werden. Unter 2 Sekunden Ladezeit auf Mobile. Kein Render-Blocking JavaScript. Sauberer HTML-Output. Der PerplexityBot ist ungeduldig.',
                 },
               ].map((strategy, i) => (
-                <FadeIn key={i} delay={i * 50}>
-                  <div className="flex gap-5">
+                                  <div className="flex gap-5">
                     <div className="text-brand-accent font-bold text-sm mt-1 flex-shrink-0 w-6">{strategy.num}</div>
                     <div>
                       <h3 className="font-semibold text-black text-lg mb-2">{strategy.title}</h3>
                       <p className="text-gray-600 leading-relaxed">{strategy.text}</p>
                     </div>
                   </div>
-                </FadeIn>
               ))}
             </div>
-          </FadeIn>
         </section>
 
         {/* Perplexity vs. ChatGPT */}
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
               Perplexity vs. ChatGPT: Komplett andere Regeln
             </h2>
             <div className="text-lg text-gray-600 leading-relaxed mb-8">
@@ -405,13 +383,11 @@ export default function SichtbarkeitInPerplexityPage() {
                 Das macht Perplexity zum Equalizer für kleinere Unternehmen und Nischenanbieter.
               </p>
             </div>
-          </FadeIn>
         </section>
 
         {/* Warum Perplexity für B2B entscheidend ist */}
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
               Warum Perplexity für B2B entscheidend ist
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
@@ -453,13 +429,11 @@ export default function SichtbarkeitInPerplexityPage() {
                 Für B2B-Nischenanbieter ist das ein massiver Hebel.
               </p>
             </div>
-          </FadeIn>
         </section>
 
         {/* Perplexity-Sichtbarkeit messen */}
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
+                      <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
               Perplexity-Sichtbarkeit messen
             </h2>
             <div className="text-lg text-gray-600 leading-relaxed mb-8">
@@ -495,13 +469,11 @@ export default function SichtbarkeitInPerplexityPage() {
                 </p>
               </div>
             </div>
-          </FadeIn>
         </section>
 
         {/* FAQ */}
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-12">
+                      <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-12">
               Häufig gestellte Fragen
             </h2>
 
@@ -539,13 +511,11 @@ export default function SichtbarkeitInPerplexityPage() {
                 </details>
               ))}
             </div>
-          </FadeIn>
         </section>
 
         {/* Sources */}
         <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-16">
-          <FadeIn>
-            <div className="bg-gray-50 rounded-xl p-6">
+                      <div className="bg-gray-50 rounded-xl p-6">
               <h3 className="font-semibold text-black mb-4">Quellen</h3>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>
@@ -570,13 +540,11 @@ export default function SichtbarkeitInPerplexityPage() {
                 </li>
               </ul>
             </div>
-          </FadeIn>
         </section>
 
         {/* Verwandte Guides */}
         <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-16">
-          <FadeIn>
-            <div className="border border-gray-100 rounded-2xl p-6">
+                      <div className="border border-gray-100 rounded-2xl p-6">
               <h3 className="font-semibold text-black mb-4">Verwandte Guides</h3>
               <ul className="space-y-2 text-base text-gray-600">
                 <li>
@@ -593,13 +561,11 @@ export default function SichtbarkeitInPerplexityPage() {
                 </li>
               </ul>
             </div>
-          </FadeIn>
         </section>
 
         {/* CTA */}
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-          <FadeIn>
-            <div className="bg-[#121212] text-white rounded-3xl p-8 md:p-12 lg:p-16 relative overflow-hidden">
+                      <div className="bg-[#121212] text-white rounded-3xl p-8 md:p-12 lg:p-16 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-accent/10 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
               <div className="relative z-10">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] mb-6 leading-tight">
@@ -615,7 +581,6 @@ export default function SichtbarkeitInPerplexityPage() {
                 </div>
               </div>
             </div>
-          </FadeIn>
         </section>
       </main>
 

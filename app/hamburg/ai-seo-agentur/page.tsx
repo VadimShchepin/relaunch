@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { LocalIntentTemplate } from '@/components/hamburg/LocalIntentTemplate';
 
 export const metadata: Metadata = {
-  title: 'AI SEO Agentur Hamburg | AI SEO fuer lokale Unternehmen mit klarer Positionierung',
+  title: 'AI SEO Agentur Hamburg | AI SEO für lokale Unternehmen mit klarer Positionierung',
   description:
-    'AI SEO Agentur in Hamburg fuer Unternehmen, die in ChatGPT, Perplexity und Google AI empfohlen werden wollen. Strategie, Struktur, EEAT und Content mit kaufnaher Ausrichtung.',
+    'AI SEO Agentur in Hamburg für Unternehmen, die in ChatGPT, Perplexity und Google AI empfohlen werden wollen. Strategie, Struktur, EEAT und Content mit kaufnaher Ausrichtung.',
   keywords: [
     'AI SEO Agentur Hamburg',
     'AI SEO Hamburg',
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/hamburg/ai-seo-agentur',
-    title: 'AI SEO Agentur Hamburg | AI SEO fuer lokale Unternehmen mit klarer Positionierung',
+    title: 'AI SEO Agentur Hamburg | AI SEO für lokale Unternehmen mit klarer Positionierung',
     description:
-      'Kommerzielle AI-SEO-Seite fuer Hamburg mit Fokus auf EEAT, lokale Suchintention und conversion-nahe Struktur.',
+      'Kommerzielle AI-SEO-Seite für Hamburg mit Fokus auf EEAT, lokale Suchintention und conversion-nahe Struktur.',
     siteName: 'aiseo.hamburg',
     images: [{ url: '/images/wissen/ai-seo-agentur.jpg', width: 1200, height: 630, alt: 'AI SEO Agentur Hamburg' }],
   },

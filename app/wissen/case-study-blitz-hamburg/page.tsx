@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { ArticleTemplate } from '@/components/wissen/ArticleTemplate';
 
 export const metadata: Metadata = {
-  title: 'Case Study Blitz Hamburg: Wie klare Positionierung zu ChatGPT-Empfehlungen fuehrte',
+  title: 'Case Study Blitz Hamburg: Wie klare Positionierung zu ChatGPT-Empfehlungen führte',
   description:
     'Wie Blitz Hamburg als lokaler Dienstleister durch klare Kategorien, Standortsignale und bessere Seitenstruktur in ChatGPT-Empfehlungen sichtbar wurde.',
   keywords: [
@@ -10,14 +10,14 @@ export const metadata: Metadata = {
     'Blitz Hamburg Case Study',
     'ChatGPT Hamburg Empfehlung',
     'AI SEO lokale Dienstleister',
-    'Entruempelung Hamburg ChatGPT',
+    'Entrümpelung Hamburg ChatGPT',
     'GEO Hamburg Fallstudie',
   ],
   openGraph: {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/wissen/case-study-blitz-hamburg',
-    title: 'Case Study Blitz Hamburg: Wie klare Positionierung zu ChatGPT-Empfehlungen fuehrte',
+    title: 'Case Study Blitz Hamburg: Wie klare Positionierung zu ChatGPT-Empfehlungen führte',
     description:
       'Wie Blitz Hamburg durch klarere Angebots- und Standortsignale in ChatGPT-Empfehlungen sichtbar wurde.',
     siteName: 'aiseo.hamburg',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Case Study Blitz Hamburg: Wie klare Positionierung zu ChatGPT-Empfehlungen fuehrte',
+    title: 'Case Study Blitz Hamburg: Wie klare Positionierung zu ChatGPT-Empfehlungen führte',
     description:
       'Wie Blitz Hamburg durch klarere Angebots- und Standortsignale in ChatGPT-Empfehlungen sichtbar wurde.',
   },
@@ -46,7 +46,7 @@ export default function CaseStudyBlitzHamburgPage() {
   return (
     <ArticleTemplate
       canonicalPath="/wissen/case-study-blitz-hamburg"
-      title="Case Study Blitz Hamburg: Wie klare Positionierung zu ChatGPT-Empfehlungen fuehrte"
+      title="Case Study Blitz Hamburg: Wie klare Positionierung zu ChatGPT-Empfehlungen führte"
       description="Lokale Dienstleistungen wirken online oft austauschbar. Genau deshalb ist Blitz Hamburg ein spannender Case. Der Markt ist laut, viele Seiten sehen gleich aus und fast jeder verspricht schnell, guenstig und professionell zugleich. Fuer KI-Systeme ist das selten hilfreich. Sichtbar wird meist der Anbieter, der am klarsten eingeordnet werden kann."
       publishedAt="2026-03-19"
       modifiedAt="2026-03-19"

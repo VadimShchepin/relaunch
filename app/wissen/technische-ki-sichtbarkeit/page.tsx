@@ -1,9 +1,6 @@
-'use client';
-
 import React from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
-import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 
 /* ------------------------------------------------------------------ */
@@ -180,8 +177,7 @@ export default function TechnischeKISichtbarkeitPage() {
       {/*  Hero                                                        */}
       {/* ============================================================ */}
       <section className="relative pt-32 pb-20 md:pt-52 md:pb-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
-        <FadeIn>
-          <nav aria-label="Breadcrumb" className="mb-8 text-sm text-gray-500">
+                  <nav aria-label="Breadcrumb" className="mb-8 text-sm text-gray-500">
             <ol className="flex items-center gap-1.5 flex-wrap">
               <li><a href="/" className="hover:text-brand-accent transition-colors">Startseite</a></li>
               <li>/</li>
@@ -197,15 +193,13 @@ export default function TechnischeKISichtbarkeitPage() {
           <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
             Deine IT hat GPTBot blockiert und du wunderst dich, warum ChatGPT dich nicht kennt. Hier sind die technischen Grundlagen, die darüber entscheiden, ob KI deine Website lesen, verstehen und zitieren kann.
           </p>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  TL;DR                                                       */}
       {/* ============================================================ */}
       <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-12">
-        <FadeIn>
-          <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
+                  <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
             <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR</h2>
             <ul className="space-y-3 text-gray-700 leading-relaxed">
               <li className="flex items-start gap-2">
@@ -226,15 +220,13 @@ export default function TechnischeKISichtbarkeitPage() {
               </li>
             </ul>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Das Problem                                                 */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Das Problem: Deine Website spricht kein KI
           </h2>
 
@@ -279,15 +271,13 @@ export default function TechnischeKISichtbarkeitPage() {
               </li>
             </ol>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  KI-Crawler: Wer ist wer?                                    */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
             KI-Crawler: Wer ist wer?
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -311,15 +301,13 @@ export default function TechnischeKISichtbarkeitPage() {
           </div>
 
           <StatBox text="Bingbot ist der stille Multiplikator: Er speist sowohl ChatGPT als auch Perplexity mit Daten. Blockierst du Bingbot, verlierst du gleich zwei Plattformen." />
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  robots.txt für KI-Sichtbarkeit                              */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             robots.txt für KI-Sichtbarkeit
           </h2>
 
@@ -395,15 +383,13 @@ Sitemap: https://example.com/sitemap.xml`}
               </li>
             </ul>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  llms.txt                                                    */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             llms.txt: Der neue Standard für LLM-Sichtbarkeit
           </h2>
 
@@ -464,15 +450,13 @@ Wir bieten [Kernleistungen].
               </li>
             </ol>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Schema.org Markup für LLMs                                  */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
             Schema.org Markup für LLMs
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -555,15 +539,13 @@ Wir bieten [Kernleistungen].
           </div>
 
           <StatBox text="Schema.org liefert KI den Kontext. Ohne Kontext bist du ein anonymer Textblock unter Millionen." />
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Semantisches HTML                                           */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Semantisches HTML: Warum Struktur alles ist
           </h2>
 
@@ -613,15 +595,13 @@ Wir bieten [Kernleistungen].
   </ul>
 </article>`}
           </CodeBlock>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Core Web Vitals                                             */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Core Web Vitals &amp; Page Speed für KI
           </h2>
 
@@ -668,15 +648,13 @@ Wir bieten [Kernleistungen].
           <p className="text-lg text-gray-600 leading-relaxed">
             TTFB ist die kritischste Metrik für KI-Crawler. Wenn dein Server länger als 800ms braucht, um zu antworten, wird der Crawl-Versuch möglicherweise abgebrochen. CDNs, Edge-Caching und Server-Side Rendering sind deine Werkzeuge.
           </p>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  JavaScript Rendering                                        */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             JavaScript Rendering: Das unsichtbare Problem
           </h2>
 
@@ -733,15 +711,13 @@ Wir bieten [Kernleistungen].
               <li><strong className="text-black">WordPress</strong> - nativ serverseitig gerendert (aber Achtung bei Headless-Setups)</li>
             </ul>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Technische Checkliste                                       */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Technische Checkliste: Ist deine Website KI-ready?
           </h2>
 
@@ -771,15 +747,13 @@ Wir bieten [Kernleistungen].
               ))}
             </div>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  FAQ                                                         */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-10">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-10">
             Häufig gestellte Fragen
           </h2>
           <div className="space-y-6">
@@ -790,15 +764,13 @@ Wir bieten [Kernleistungen].
               </div>
             ))}
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Quellen                                                     */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Quellen
           </h2>
           <div className="bg-gray-50 rounded-xl p-6">
@@ -823,15 +795,13 @@ Wir bieten [Kernleistungen].
               </li>
             </ul>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  Weiterführende Guides                                       */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
             Weiterführende Guides
           </h2>
           <div className="grid sm:grid-cols-2 gap-6">
@@ -883,15 +853,13 @@ Wir bieten [Kernleistungen].
               </p>
             </a>
           </div>
-        </FadeIn>
       </section>
 
       {/* ============================================================ */}
       {/*  CTA                                                         */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
-        <FadeIn>
-          <div className="bg-[#121212] text-white rounded-3xl p-8 md:p-12 lg:p-16 text-center">
+                  <div className="bg-[#121212] text-white rounded-3xl p-8 md:p-12 lg:p-16 text-center">
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] mb-4">
               Ist deine Website KI-ready?
             </h2>
@@ -900,7 +868,6 @@ Wir bieten [Kernleistungen].
             </p>
             <Button href="/ai-sichtbarkeit-now" primary text="Kostenlose KI-Analyse anfragen" />
           </div>
-        </FadeIn>
       </section>
 
       <Footer />
