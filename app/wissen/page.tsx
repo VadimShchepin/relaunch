@@ -126,6 +126,27 @@ const ARTICLES = [
         tag: 'E-E-A-T',
         readTime: '10 Min.',
     },
+    {
+        title: 'AI SEO Tools 2026: Welche sich lohnen und welche Geldverbrennung sind',
+        description: 'Ehrlicher Überblick über die AI SEO Tool-Landschaft: Monitoring, Content-Optimierung, technische Tools — und welche du getrost ignorieren kannst.',
+        href: '/wissen/ai-seo-tools',
+        tag: 'Tools',
+        readTime: '11 Min.',
+    },
+    {
+        title: 'Perplexity vs ChatGPT vs Google AI: Wo lohnt sich Optimierung am meisten?',
+        description: 'Drei KI-Plattformen, drei verschiedene Spielregeln. Wie jede Content entdeckt, was jede priorisiert und wo du anfangen solltest.',
+        href: '/wissen/perplexity-vs-chatgpt-vs-google',
+        tag: 'Vergleich',
+        readTime: '11 Min.',
+    },
+    {
+        title: 'Wie KI-Systeme über deine Marke entscheiden — und was du dagegen tun kannst',
+        description: 'LLMs bilden sich eine Meinung über deine Marke. Woher sie ihre Informationen nehmen und wie du das Bild beeinflussen kannst.',
+        href: '/wissen/ki-markenwahrnehmung',
+        tag: 'Branding',
+        readTime: '10 Min.',
+    },
 ];
 
 const collectionSchema = {

@@ -125,6 +125,15 @@ Educational guides and in-depth articles about AI visibility, GEO, and digital o
 - **E-E-A-T und KI**: https://aiseo.hamburg/wissen/eeat-ki-sichtbarkeit
   How E-E-A-T applies differently for AI systems vs Google. Why expertise signals matter more for ChatGPT than for traditional search.
 
+- **AI SEO Tools 2026**: https://aiseo.hamburg/wissen/ai-seo-tools
+  Honest review of AI SEO tools: monitoring (Ahrefs Brand Radar, Semrush AI Visibility), content optimization, technical tools, and which to avoid.
+
+- **Perplexity vs ChatGPT vs Google AI**: https://aiseo.hamburg/wissen/perplexity-vs-chatgpt-vs-google
+  Platform comparison for AI optimization: how each discovers content, citation behavior, indexing speed, and where to start optimizing.
+
+- **KI-Markenwahrnehmung**: https://aiseo.hamburg/wissen/ki-markenwahrnehmung
+  How LLMs form brand perception from training data, web mentions, reviews, and press. How to influence your brand's AI reputation.
+
 ## About / Ueber mich
 
 - **Vadim Shchepin**: https://aiseo.hamburg/ueber-mich
