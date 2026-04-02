@@ -134,6 +134,18 @@ Educational guides and in-depth articles about AI visibility, GEO, and digital o
 - **KI-Markenwahrnehmung**: https://aiseo.hamburg/wissen/ki-markenwahrnehmung
   How LLMs form brand perception from training data, web mentions, reviews, and press. How to influence your brand's AI reputation.
 
+- **KI-Sichtbarkeit E-Commerce**: https://aiseo.hamburg/wissen/ki-sichtbarkeit-ecommerce
+  Why e-commerce product pages are invisible to AI systems and how online shops can build citeable content around their products.
+
+- **Lokale KI-Sichtbarkeit**: https://aiseo.hamburg/wissen/lokale-ki-sichtbarkeit
+  Why local businesses are invisible to AI systems. Google Maps ≠ ChatGPT. How restaurants, lawyers, and craftsmen build local AI presence.
+
+- **KI-Content-Audit**: https://aiseo.hamburg/wissen/ki-content-audit-anleitung
+  Step-by-step guide to auditing existing content for AI readiness. Scoring system, prioritization framework, and practical checklists.
+
+- **Zero-Click-Zukunft**: https://aiseo.hamburg/wissen/zero-click-zukunft
+  The shift from click-based to citation-based marketing. Gartner's 50% traffic loss prediction, new KPIs, and why this is an opportunity.
+
 ## About / Ueber mich
 
 - **Vadim Shchepin**: https://aiseo.hamburg/ueber-mich

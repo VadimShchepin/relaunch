@@ -147,6 +147,34 @@ const ARTICLES = [
         tag: 'Branding',
         readTime: '10 Min.',
     },
+    {
+        title: 'KI-Sichtbarkeit für Online-Shops: Warum ChatGPT deine Produkte nicht empfiehlt',
+        description: 'Produktseiten sind für LLMs unsichtbar. Wie E-Commerce-Unternehmen zitierbaren Content rund um ihre Produkte aufbauen.',
+        href: '/wissen/ki-sichtbarkeit-ecommerce',
+        tag: 'E-Commerce',
+        readTime: '11 Min.',
+    },
+    {
+        title: 'Lokale KI-Sichtbarkeit: Warum dein Restaurant in ChatGPT unsichtbar ist',
+        description: 'Google Maps ≠ ChatGPT-Wissen. Warum lokale Unternehmen in KI-Systemen fast unsichtbar sind und was dagegen hilft.',
+        href: '/wissen/lokale-ki-sichtbarkeit',
+        tag: 'Lokal',
+        readTime: '11 Min.',
+    },
+    {
+        title: 'Der große KI-Content-Audit: So prüfst du, ob dein Content 2027 überlebt',
+        description: 'Schritt-für-Schritt-Anleitung zum Audit deines bestehenden Contents auf KI-Tauglichkeit. Mit Scoring-System und Checkliste.',
+        href: '/wissen/ki-content-audit-anleitung',
+        tag: 'Content Audit',
+        readTime: '12 Min.',
+    },
+    {
+        title: 'Zero-Click-Zukunft: Warum deine Website bald keinen Traffic mehr braucht',
+        description: 'Gartner sagt 50% Traffic-Verlust bis 2028 voraus. Warum das eine Chance ist und welche neuen KPIs zählen.',
+        href: '/wissen/zero-click-zukunft',
+        tag: 'Zukunft',
+        readTime: '9 Min.',
+    },
 ];
 
 const collectionSchema = {
