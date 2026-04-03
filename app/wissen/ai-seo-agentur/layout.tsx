@@ -1,12 +1,28 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'AI SEO Agentur | Was sie leistet und worauf es ankommt',
-    description: 'Was macht eine AI SEO Agentur? Erfahre, welche Leistungen wichtig sind, worauf du bei der Auswahl achten solltest und wann sich AI SEO Beratung lohnt.',
-    keywords: ['AI SEO Agentur', 'AI SEO Beratung', 'AI SEO Agency', 'AI SEO Consulting', 'AI SEO Agentur Hamburg', 'KI SEO Agentur', 'GEO Agentur', 'AI SEO Dienstleister'],
+    title: 'AI SEO Agentur Hamburg | KI-Sichtbarkeit vom Software-Architekten',
+    description: 'AI SEO Agentur in Hamburg: Vadim Shchepin verbindet 10+ Jahre Software-Erfahrung mit KI-Sichtbarkeit. Keine Backlink-Pakete, sondern datengetriebene AI SEO Beratung. Kostenlose Kurzanalyse.',
+    keywords: [
+        'agentur ki sichtbarkeit',
+        'ai seo agentur',
+        'ki seo agentur',
+        'ki sichtbarkeit agentur hamburg',
+        'ai seo beratung hamburg',
+        'ai seo agencies near me',
+        'seo altona',
+        'ai seo beratung',
+        'ki seo agentur hamburg',
+        'AI SEO Agentur Hamburg',
+        'KI-Sichtbarkeit Agentur',
+        'AI SEO Beratung',
+        'GEO Agentur Hamburg',
+        'AI SEO Dienstleister Hamburg',
+        'KI SEO Optimierung Hamburg',
+    ],
     openGraph: {
-        title: 'AI SEO Agentur | Was sie leistet und worauf es ankommt',
-        description: 'Was macht eine AI SEO Agentur? Leistungen, Auswahlkriterien und wann sich AI SEO Beratung lohnt.',
+        title: 'AI SEO Agentur Hamburg | KI-Sichtbarkeit vom Software-Architekten',
+        description: 'Keine Backlink-Pakete, keine Templates. AI SEO Beratung von einem Software-Architekten mit 10+ Jahren Erfahrung. Kostenlose Kurzanalyse fur Hamburger Unternehmen.',
         url: 'https://aiseo.hamburg/wissen/ai-seo-agentur',
         siteName: 'aiseo.hamburg',
         locale: 'de_DE',
@@ -14,8 +30,8 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'AI SEO Agentur | Was sie leistet und worauf es ankommt',
-        description: 'Was macht eine AI SEO Agentur? Leistungen, Auswahlkriterien und wann sich Beratung lohnt.',
+        title: 'AI SEO Agentur Hamburg | KI-Sichtbarkeit vom Software-Architekten',
+        description: 'AI SEO Beratung von einem Software-Architekten. Keine Pakete, keine Templates. Persoenliche Analyse.',
     },
     alternates: {
         canonical: 'https://aiseo.hamburg/wissen/ai-seo-agentur',
