@@ -47,7 +47,7 @@ export default function CaseStudyBlitzHamburgPage() {
     <ArticleTemplate
       canonicalPath="/wissen/case-study-blitz-hamburg"
       title="Case Study Blitz Hamburg: Wie klare Positionierung zu ChatGPT-Empfehlungen führte"
-      description="Lokale Dienstleistungen wirken online oft austauschbar. Genau deshalb ist Blitz Hamburg ein spannender Case. Der Markt ist laut, viele Seiten sehen gleich aus und fast jeder verspricht schnell, guenstig und professionell zugleich. Fuer KI-Systeme ist das selten hilfreich. Sichtbar wird meist der Anbieter, der am klarsten eingeordnet werden kann."
+      description="Lokale Dienstleistungen wirken online oft austauschbar. Genau deshalb ist Blitz Hamburg ein spannender Case. Der Markt ist laut, viele Seiten sehen gleich aus und fast jeder verspricht schnell, günstig und professionell zugleich. Für KI-Systeme ist das selten hilfreich. Sichtbar wird meist der Anbieter, der am klarsten eingeordnet werden kann."
       publishedAt="2026-03-19"
       modifiedAt="2026-03-19"
       breadcrumbLabel="Case Study Blitz Hamburg"
@@ -55,80 +55,80 @@ export default function CaseStudyBlitzHamburgPage() {
       image={{
         src: '/image/proof/Blitz-ChatGPTProof.webp',
         alt: 'Blitz Hamburg in einer ChatGPT-Empfehlung',
-        caption: 'Dokumentierte KI-Sichtbarkeit fuer einen lokalen Dienstleister aus Hamburg.',
+        caption: 'Dokumentierte KI-Sichtbarkeit für einen lokalen Dienstleister aus Hamburg.',
       }}
       summaryItems={[
-        'Blitz Hamburg zeigt, wie stark klare lokale Positionierung fuer ChatGPT-Empfehlungen wirken kann.',
+        'Blitz Hamburg zeigt, wie stark klare lokale Positionierung für ChatGPT-Empfehlungen wirken kann.',
         'Die zentralen Hebel waren kein Content-Volumen, sondern saubere Kategorisierung, Standortbezug und Angebotsklarheit.',
-        'Im vorhandenen Projektmaterial ist eine dokumentierte ChatGPT-Empfehlung fuer das Thema Haushaltsaufloesung in Hamburg sichtbar.',
-        'Der Case ist besonders relevant fuer lokale Dienstleister, die in austauschbaren Maerkten trotzdem empfehlbar werden wollen.',
+        'Im vorhandenen Projektmaterial ist eine dokumentierte ChatGPT-Empfehlung für das Thema Haushaltsauflösung in Hamburg sichtbar.',
+        'Der Case ist besonders relevant für lokale Dienstleister, die in austauschbaren Märkten trotzdem empfehlbar werden wollen.',
       ]}
       sections={[
         {
           id: 'ausgangslage',
           heading: 'Die Ausgangslage: lokaler Markt, hohe Austauschbarkeit',
           paragraphs: [
-            'Lokale Dienstleister konkurrieren oft nicht an fehlender Nachfrage, sondern an fehlender Differenzierung. Viele Websites aehneln sich im Aufbau, in der Wortwahl und sogar in den Leistungsversprechen. Fuer Nutzer ist das schon anstrengend. Fuer KI-Systeme ist es noch schlechter.',
-            'Wenn zehn Anbieter in Hamburg im Prinzip das Gleiche sagen, wird nicht der lauteste empfohlen, sondern meist der klarste. Das betrifft Kategorien, Stadtbezug, Leistungsumfang und die Frage, ob die Website fuer eine konkrete Suchintention gebaut ist.',
+            'Lokale Dienstleister konkurrieren oft nicht an fehlender Nachfrage, sondern an fehlender Differenzierung. Viele Websites ähneln sich im Aufbau, in der Wortwahl und sogar in den Leistungsversprechen. Für Nutzer ist das schon anstrengend. Für KI-Systeme ist es noch schlechter.',
+            'Wenn zehn Anbieter in Hamburg im Prinzip das Gleiche sagen, wird nicht der lauteste empfohlen, sondern meist der klarste. Das betrifft Kategorien, Stadtbezug, Leistungsumfang und die Frage, ob die Website für eine konkrete Suchintention gebaut ist.',
             'Bei Blitz Hamburg lag der Hebel deshalb weniger in mehr Reichweite und mehr in besserer Einordnung. Erst wenn das Angebot semantisch sitzt, kann eine KI es in Antworten verlässlich aufgreifen.',
           ],
         },
         {
           id: 'veraenderungen',
-          heading: 'Was an der Positionierung schaerfer wurde',
+          heading: 'Was an der Positionierung schärfer wurde',
           cards: [
             {
               title: 'Lokale Kategorie statt Bauchladen',
-              text: 'Das Angebot musste als klarer lokaler Service lesbar werden. Nicht allgemein, sondern fuer konkrete Hamburger Suchsituationen.',
+              text: 'Das Angebot musste als klarer lokaler Service lesbar werden. Nicht allgemein, sondern für konkrete Hamburger Suchsituationen.',
             },
             {
               title: 'Leistung und Kontext sauber benennen',
-              text: 'KI braucht keine poetischen Claims. Sie braucht Eindeutigkeit: Welche Leistung, fuer wen, in welcher Stadt, mit welchem Nutzen.',
+              text: 'KI braucht keine poetischen Claims. Sie braucht Eindeutigkeit: Welche Leistung, für wen, in welcher Stadt, mit welchem Nutzen.',
             },
             {
-              title: 'Seitenstruktur fuer reale Fragen',
-              text: 'Prompts wie Haushaltsaufloesung in Hamburg oder Entruempelung Anbieter funktionieren besser, wenn die Website diese Nachfrage sauber spiegelt.',
+              title: 'Seitenstruktur für reale Fragen',
+              text: 'Prompts wie Haushaltsauflösung in Hamburg oder Entrümpelung Anbieter funktionieren besser, wenn die Website diese Nachfrage sauber spiegelt.',
             },
             {
               title: 'Weniger Wischiwaschi, mehr Entscheidbarkeit',
-              text: 'Je klarer Preise, Ablauf, Einsatzgebiet und Spezialisierung erscheinen, desto leichter wird eine Empfehlung. KI ist in solchen Maerkten erstaunlich allergisch gegen weichgespuelte Allerweltsprache.',
+              text: 'Je klarer Preise, Ablauf, Einsatzgebiet und Spezialisierung erscheinen, desto leichter wird eine Empfehlung. KI ist in solchen Märkten erstaunlich allergisch gegen weichgespülte Allerweltsprache.',
             },
           ],
         },
         {
           id: 'sichtbare-ergebnisse',
           heading: 'Was sichtbar wurde',
-          stat: 'Im vorhandenen Projektmaterial ist eine dokumentierte ChatGPT-Empfehlung fuer Blitz Hamburg innerhalb kurzer Zeit sichtbar.',
+          stat: 'Im vorhandenen Projektmaterial ist eine dokumentierte ChatGPT-Empfehlung für Blitz Hamburg innerhalb kurzer Zeit sichtbar.',
           paragraphs: [
-            'Die vorhandenen Screenshots zeigen Blitz Hamburg als empfohlenen Anbieter im relevanten lokalen Kontext. Das ist fuer diese Art Dienstleistung besonders wertvoll, weil Nutzer in KI-Systemen oft keine langen Vergleichslisten wollen, sondern eine plausible Vorauswahl.',
-            'Entscheidend ist hier nicht die Fantasie von Marktbeherrschung, sondern die Qualitaet der Einordnung. Wenn ein lokaler Dienstleister sauber in die richtige Kategorie rutscht, entstehen Anfragen oft mit deutlich mehr Kontext und weniger Streuverlust.',
+            'Die vorhandenen Screenshots zeigen Blitz Hamburg als empfohlenen Anbieter im relevanten lokalen Kontext. Das ist für diese Art Dienstleistung besonders wertvoll, weil Nutzer in KI-Systemen oft keine langen Vergleichslisten wollen, sondern eine plausible Vorauswahl.',
+            'Entscheidend ist hier nicht die Fantasie von Marktbeherrschung, sondern die Qualität der Einordnung. Wenn ein lokaler Dienstleister sauber in die richtige Kategorie rutscht, entstehen Anfragen oft mit deutlich mehr Kontext und weniger Streuverlust.',
             'Anders gesagt: Nicht jede Sichtbarkeit muss nach Hochglanz-SEO aussehen. Manchmal reicht es, endlich so klar zu sein, dass eine Maschine den Mut hat, dich zu nennen.',
           ],
-          note: 'Ich formuliere hier bewusst keine unbelegten Lead- oder Umsatzwerte. Die Staerke dieses Cases liegt in der dokumentierten lokalen KI-Empfehlung und in den nachvollziehbaren Hebeln dahinter.',
+          note: 'Ich formuliere hier bewusst keine unbelegten Lead- oder Umsatzwerte. Die Stärke dieses Cases liegt in der dokumentierten lokalen KI-Empfehlung und in den nachvollziehbaren Hebeln dahinter.',
         },
         {
           id: 'warum-funktioniert',
-          heading: 'Warum dieser Case fuer lokale Unternehmen so relevant ist',
+          heading: 'Warum dieser Case für lokale Unternehmen so relevant ist',
           bullets: [
-            'Lokale KI-Sichtbarkeit haengt oft staerker an Klarheit als an Markenbekanntheit.',
-            'ChatGPT und aehnliche Systeme brauchen konkrete Stadt- und Leistungssignale, um lokale Anbieter zu empfehlen.',
-            'Austauschbare Formulierungen fuehren zu austauschbaren Ergebnissen. Spezifizitaet fuehrt zu Empfehlungspotenzial.',
-            'Lokale Dienstleister koennen mit guter Struktur gegen groessere Wettbewerber bestehen, wenn ihr Angebot semantisch sauber gebaut ist.',
+            'Lokale KI-Sichtbarkeit hängt oft stärker an Klarheit als an Markenbekanntheit.',
+            'ChatGPT und ähnliche Systeme brauchen konkrete Stadt- und Leistungssignale, um lokale Anbieter zu empfehlen.',
+            'Austauschbare Formulierungen führen zu austauschbaren Ergebnissen. Spezifizität führt zu Empfehlungspotenzial.',
+            'Lokale Dienstleister können mit guter Struktur gegen größere Wettbewerber bestehen, wenn ihr Angebot semantisch sauber gebaut ist.',
           ],
         },
         {
           id: 'lessons',
           heading: 'Was andere Dienstleister daraus lernen sollten',
           paragraphs: [
-            'Wenn deine Startseite fuer drei Staedte, acht Leistungen und fuenf Zielgruppen gleichzeitig sprechen will, ist sie fuer KI oft zu unscharf. Lokale Sichtbarkeit braucht Fokus.',
+            'Wenn deine Startseite für drei Städte, acht Leistungen und fünf Zielgruppen gleichzeitig sprechen will, ist sie für KI oft zu unscharf. Lokale Sichtbarkeit braucht Fokus.',
             'Dienstleistungsseiten sollten nicht nur nett aussehen, sondern echte Auswahlhilfe liefern: Leistungen, Einsatzgebiet, Vertrauenssignale, Prozess und klare Sprache.',
-            'Gerade in Hamburg kann ein sauberer lokaler Zuschnitt ein staerkerer Hebel sein als die naechste grosse Content-Offensive. Das ist weniger glamourös, aber sehr viel nuetzlicher.',
+            'Gerade in Hamburg kann ein sauberer lokaler Zuschnitt ein stärkerer Hebel sein als die nächste große Content-Offensive. Das ist weniger glamourös, aber sehr viel nützlicher.',
           ],
-          quote: 'Lokale KI-Sichtbarkeit gewinnt selten der schoenste Text. Sie gewinnt meist der Anbieter, den man am eindeutigsten einordnen kann.',
+          quote: 'Lokale KI-Sichtbarkeit gewinnt selten der schönste Text. Sie gewinnt meist der Anbieter, den man am eindeutigsten einordnen kann.',
         },
       ]}
       galleryTitle="Dokumentierte Belege aus dem Blitz-Kontext"
-      galleryIntro="Diese Screenshots liegen im Projektmaterial vor und stützen die lokale Case-Study-Erzaehlung."
+      galleryIntro="Diese Screenshots liegen im Projektmaterial vor und stützen die lokale Case-Study-Erzählung."
       gallery={[
         {
           src: '/image/proof/Blitz-ChatGPTProof.webp',
@@ -138,30 +138,30 @@ export default function CaseStudyBlitzHamburgPage() {
         {
           src: '/image/kinderAlbum/proof5-blitz-short.webp',
           alt: 'Kurzer Blitz Hamburg Screenshot',
-          caption: 'Kurze Screenshot-Variante fuer dokumentierte Sichtbarkeit.',
+          caption: 'Kurze Screenshot-Variante für dokumentierte Sichtbarkeit.',
         },
         {
           src: '/image/kinderAlbum/proof6-blitz-long.webp',
           alt: 'Langer Blitz Hamburg Screenshot',
-          caption: 'Laengere Screenshot-Ansicht mit mehr Kontext zur Antwort.',
+          caption: 'Längere Screenshot-Ansicht mit mehr Kontext zur Antwort.',
         },
       ]}
       faqs={[
         {
           q: 'Warum ist Blitz Hamburg ein guter lokaler AI-SEO-Case?',
-          a: 'Weil lokale Dienstleistungen oft schwer zu differenzieren sind. Genau deshalb zeigt der Case gut, wie wichtig Kategorie, Stadtbezug und Angebotsklarheit fuer KI-Empfehlungen sind.',
+          a: 'Weil lokale Dienstleistungen oft schwer zu differenzieren sind. Genau deshalb zeigt der Case gut, wie wichtig Kategorie, Stadtbezug und Angebotsklarheit für KI-Empfehlungen sind.',
         },
         {
-          q: 'Heisst eine ChatGPT-Empfehlung automatisch mehr Umsatz?',
-          a: 'Nicht automatisch. Aber sie verbessert die Qualitaet der Vorauswahl stark. Nutzer kommen haeufig mit mehr Kontext und hoeherem Vertrauen in die Anfrage.',
+          q: 'Heißt eine ChatGPT-Empfehlung automatisch mehr Umsatz?',
+          a: 'Nicht automatisch. Aber sie verbessert die Qualität der Vorauswahl stark. Nutzer kommen häufig mit mehr Kontext und höherem Vertrauen in die Anfrage.',
         },
         {
-          q: 'Ist das nur fuer Entruempelung relevant?',
-          a: 'Nein. Das Prinzip laesst sich auf viele lokale Services uebertragen, etwa Handwerk, Beauty, Beratung, Umzug oder andere stadtbezogene Dienstleistungen.',
+          q: 'Ist das nur für Entrümpelung relevant?',
+          a: 'Nein. Das Prinzip lässt sich auf viele lokale Services übertragen, etwa Handwerk, Beauty, Beratung, Umzug oder andere stadtbezogene Dienstleistungen.',
         },
         {
           q: 'Was war der wichtigste Hebel in diesem Fall?',
-          a: 'Die klarere lokale Einordnung des Angebots. Ohne die versteht eine KI zwar einzelne Begriffe, aber nicht zwingend, wann und wofuer sie den Anbieter nennen soll.',
+          a: 'Die klarere lokale Einordnung des Angebots. Ohne die versteht eine KI zwar einzelne Begriffe, aber nicht zwingend, wann und wofür sie den Anbieter nennen soll.',
         },
       ]}
       relatedArticles={[
@@ -173,7 +173,7 @@ export default function CaseStudyBlitzHamburgPage() {
         },
         {
           title: 'GEO Agentur Hamburg: Was gute Expertise wirklich leistet',
-          description: 'Die direkte Anschlussseite fuer Hamburger Unternehmen mit aehnlichem Ziel.',
+          description: 'Die direkte Anschlussseite für Hamburger Unternehmen mit ähnlichem Ziel.',
           href: '/wissen/geo-agentur-hamburg',
           tag: 'Hamburg',
         },
@@ -185,9 +185,9 @@ export default function CaseStudyBlitzHamburgPage() {
         },
       ]}
       ctaTitle="Wenn du lokal empfohlen werden willst, muss deine Website lokal denkbar sein."
-      ctaText="Ich schaue mir an, ob dein Angebot fuer Hamburg, fuer deine Leistung und fuer relevante KI-Prompts heute schon klar genug aufgebaut ist."
+      ctaText="Ich schaue mir an, ob dein Angebot für Hamburg, für deine Leistung und für relevante KI-Prompts heute schon klar genug aufgebaut ist."
       ctaHref="/contact"
-      ctaLabel="Lokale KI-Sichtbarkeit pruefen"
+      ctaLabel="Lokale KI-Sichtbarkeit prüfen"
     />
   );
 }

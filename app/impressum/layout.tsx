@@ -3,6 +3,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'Impressum | aiseo.hamburg',
     description: 'Impressum und rechtliche Informationen zu aiseo.hamburg - KI-Sichtbarkeit für Hamburger Unternehmen.',
+    openGraph: {
+        description: 'Impressum und rechtliche Informationen zu aiseo.hamburg - KI-Sichtbarkeit für Hamburger Unternehmen.',
+    },
     robots: {
         index: true,
         follow: true,

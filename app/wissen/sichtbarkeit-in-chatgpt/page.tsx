@@ -10,7 +10,7 @@ const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: 'Sichtbarkeit in ChatGPT: So wird dein Unternehmen empfohlen',
-    description: 'ChatGPT empfiehlt 2-3 Unternehmen pro Anfrage. Erfahre, wie das Dual-System aus Trainingsdaten und Bing-Suche funktioniert, warum KI-Halluzinationen dein Geschaeft gefaehrden und wie du deine ChatGPT-Sichtbarkeit gezielt verbesserst.',
+    description: 'ChatGPT empfiehlt 2-3 Unternehmen pro Anfrage. Erfahre, wie das Dual-System aus Trainingsdaten und Bing-Suche funktioniert, warum KI-Halluzinationen dein Geschäft gefährden und wie du deine ChatGPT-Sichtbarkeit gezielt verbesserst.',
     author: {
         '@type': 'Person',
         name: 'Vadim Shchepin',
@@ -39,15 +39,15 @@ const faqSchema = {
             name: 'Wie werde ich mit meinem Unternehmen bei ChatGPT gefunden?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Dein Unternehmen muss auf Seiten erwaehnt werden, die ChatGPT vertraut: Wikipedia, grosse Nachrichtenportale, Branchenverzeichnisse und Bewertungsplattformen. Zusaetzlich muss deine Website fuer Bing optimiert sein, da ChatGPT Bing fuer Live-Suchen nutzt. Konsistente NAP-Daten ueber alle Verzeichnisse sind Pflicht, da ChatGPT widerspruechliche Informationen als Vertrauensverlust wertet.',
+                text: 'Dein Unternehmen muss auf Seiten erwähnt werden, die ChatGPT vertraut: Wikipedia, große Nachrichtenportale, Branchenverzeichnisse und Bewertungsplattformen. Zusätzlich muss deine Website für Bing optimiert sein, da ChatGPT Bing für Live-Suchen nutzt. Konsistente NAP-Daten über alle Verzeichnisse sind Pflicht, da ChatGPT widersprüchliche Informationen als Vertrauensverlust wertet.',
             },
         },
         {
             '@type': 'Question',
-            name: 'Kann ich beeinflussen, was ChatGPT ueber mein Unternehmen sagt?',
+            name: 'Kann ich beeinflussen, was ChatGPT über mein Unternehmen sagt?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Ja, indirekt. Du steuerst die Quellen, die ChatGPT auswertet: deine Website, Branchenverzeichnisse, Presseartikel und Bewertungen. Je konsistenter und vertrauenswuerdiger diese Quellen sind, desto besser die Darstellung. Ohne aktive Steuerung riskierst du KI-Halluzinationen - ChatGPT erfindet dann Preise, Oeffnungszeiten oder Dienstleistungen.',
+                text: 'Ja, indirekt. Du steuerst die Quellen, die ChatGPT auswertet: deine Website, Branchenverzeichnisse, Presseartikel und Bewertungen. Je konsistenter und vertrauenswürdiger diese Quellen sind, desto besser die Darstellung. Ohne aktive Steuerung riskierst du KI-Halluzinationen - ChatGPT erfindet dann Preise, Öffnungszeiten oder Dienstleistungen.',
             },
         },
         {
@@ -55,15 +55,15 @@ const faqSchema = {
             name: 'Wie lange dauert es, bis mein Unternehmen in ChatGPT erscheint?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Bei der Live-Websuche ueber Bing koennen Aenderungen innerhalb von Tagen wirken. Bei den Trainingsdaten dauert es bis zum naechsten Modell-Update - das koennen Wochen bis Monate sein. Eine kombinierte Strategie fuer beide Kanaele ist daher entscheidend.',
+                text: 'Bei der Live-Websuche über Bing können Änderungen innerhalb von Tagen wirken. Bei den Trainingsdaten dauert es bis zum nächsten Modell-Update - das können Wochen bis Monate sein. Eine kombinierte Strategie für beide Kanäle ist daher entscheidend.',
             },
         },
         {
             '@type': 'Question',
-            name: 'Nutzt ChatGPT Google oder Bing fuer die Websuche?',
+            name: 'Nutzt ChatGPT Google oder Bing für die Websuche?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'ChatGPT nutzt ausschliesslich Bing fuer seine Live-Websuche. Das bedeutet: Bing-SEO ist fuer ChatGPT-Sichtbarkeit relevanter als Google-SEO. Bing gewichtet Social Signals und exakte Keyword-Matches staerker als Google. Wer nur fuer Google optimiert, ist fuer ChatGPT unsichtbar.',
+                text: 'ChatGPT nutzt ausschließlich Bing für seine Live-Websuche. Das bedeutet: Bing-SEO ist für ChatGPT-Sichtbarkeit relevanter als Google-SEO. Bing gewichtet Social Signals und exakte Keyword-Matches stärker als Google. Wer nur für Google optimiert, ist für ChatGPT unsichtbar.',
             },
         },
         {
@@ -71,7 +71,7 @@ const faqSchema = {
             name: 'Wie messe ich meine Sichtbarkeit in ChatGPT?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Es gibt keine ChatGPT Search Console. Pruefe Referral-Traffic von chat.openai.com und chatgpt.com in deiner Analytics. Analysiere Server-Logs auf GPTBot- und OAI-SearchBot-Zugriffe. Teste regelmaessig branchenspezifische Prompts und dokumentiere die Antworten. Mehr dazu in unserem Guide zur KI-Sichtbarkeit messen.',
+                text: 'Es gibt keine ChatGPT Search Console. Prüfe Referral-Traffic von chat.openai.com und chatgpt.com in deiner Analytics. Analysiere Server-Logs auf GPTBot- und OAI-SearchBot-Zugriffe. Teste regelmäßig branchenspezifische Prompts und dokumentiere die Antworten. Mehr dazu in unserem Guide zur KI-Sichtbarkeit messen.',
             },
         },
         {
@@ -79,23 +79,23 @@ const faqSchema = {
             name: 'Was ist der Unterschied zwischen GPTBot und OAI-SearchBot?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'GPTBot crawlt Seiten fuer zukuenftige Trainingsdaten. OAI-SearchBot crawlt fuer die Live-Websuche in Echtzeit. Beide sollten in der robots.txt erlaubt sein. Wer einen blockiert, verliert einen der zwei Sichtbarkeitskanaele in ChatGPT.',
+                text: 'GPTBot crawlt Seiten für zukünftige Trainingsdaten. OAI-SearchBot crawlt für die Live-Websuche in Echtzeit. Beide sollten in der robots.txt erlaubt sein. Wer einen blockiert, verliert einen der zwei Sichtbarkeitskanäle in ChatGPT.',
             },
         },
         {
             '@type': 'Question',
-            name: 'Was kostet ChatGPT-Optimierung fuer Unternehmen?',
+            name: 'Was kostet ChatGPT-Optimierung für Unternehmen?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'ChatGPT-Optimierung ist kein einmaliges Projekt, sondern ein fortlaufender Prozess. Die Kosten haengen von der Branche, dem Wettbewerb und dem aktuellen Stand deiner digitalen Praesenz ab. Viele Massnahmen wie NAP-Konsistenz und robots.txt-Optimierung sind kostenlos umsetzbar. Fuer eine professionelle Strategie mit Pressearbeit, Brand Mentions und Bing-Optimierung solltest du mit einem monatlichen Budget rechnen.',
+                text: 'ChatGPT-Optimierung ist kein einmaliges Projekt, sondern ein fortlaufender Prozess. Die Kosten hängen von der Branche, dem Wettbewerb und dem aktuellen Stand deiner digitalen Präsenz ab. Viele Maßnahmen wie NAP-Konsistenz und robots.txt-Optimierung sind kostenlos umsetzbar. Für eine professionelle Strategie mit Pressearbeit, Brand Mentions und Bing-Optimierung solltest du mit einem monatlichen Budget rechnen.',
             },
         },
         {
             '@type': 'Question',
-            name: 'Erfindet ChatGPT Informationen ueber mein Unternehmen?',
+            name: 'Erfindet ChatGPT Informationen über mein Unternehmen?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Ja, das passiert regelmaessig. ChatGPT halluziniert falsche Preise, Oeffnungszeiten, Dienstleistungen und sogar Mitarbeiternamen, wenn die Datenlage duenn oder widersprueechlich ist. Je weniger konsistente Quellen ChatGPT ueber dich findet, desto hoeher das Risiko fuer erfundene Informationen. Aktive ChatGPT-Optimierung ist auch Schadensverhuetung.',
+                text: 'Ja, das passiert regelmäßig. ChatGPT halluziniert falsche Preise, Öffnungszeiten, Dienstleistungen und sogar Mitarbeiternamen, wenn die Datenlage dünn oder widersprüchlich ist. Je weniger konsistente Quellen ChatGPT über dich findet, desto höher das Risiko für erfundene Informationen. Aktive ChatGPT-Optimierung ist auch Schadensverhütung.',
             },
         },
     ],
@@ -121,12 +121,12 @@ const HeroSection: React.FC = () => (
             </h1>
             <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed mb-4">
                 400 bis 800 Millionen Menschen fragen ChatGPT jede Woche. Wenn jemand tippt
-                &ldquo;Empfiehl mir einen guten Dienstleister in Hamburg&rdquo;, nennt ChatGPT
-                zwei bis drei Unternehmen. Nicht zehn. Nicht f&uuml;nf. Zwei bis drei.
+                „Empfiehl mir einen guten Dienstleister in Hamburg", nennt ChatGPT
+                zwei bis drei Unternehmen. Nicht zehn. Nicht fünf. Zwei bis drei.
             </p>
             <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
-                Wenn du nicht dabei bist, existierst du f&uuml;r diese Nutzer nicht. Und du
-                erf&auml;hrst es nicht einmal &ndash; denn es gibt keine ChatGPT Search Console.
+                Wenn du nicht dabei bist, existierst du für diese Nutzer nicht. Und du
+                erfährst es nicht einmal – denn es gibt keine ChatGPT Search Console.
                 Du fliegst blind.
             </p>
         </FadeIn>
@@ -157,19 +157,19 @@ const TLDRSection: React.FC = () => (
                 <ul className="space-y-2 text-gray-800">
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">1.</span>
-                        <span>ChatGPT empfiehlt 2&ndash;3 Unternehmen pro Anfrage. Wer nicht dabei ist, existiert nicht.</span>
+                        <span>ChatGPT empfiehlt 2–3 Unternehmen pro Anfrage. Wer nicht dabei ist, existiert nicht.</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">2.</span>
-                        <span>Zwei Systeme: Trainingsdaten + Live-Websuche &uuml;ber Bing. Du brauchst Sichtbarkeit in beiden.</span>
+                        <span>Zwei Systeme: Trainingsdaten + Live-Websuche über Bing. Du brauchst Sichtbarkeit in beiden.</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">3.</span>
-                        <span>Brand Mentions korrelieren mit r=0,664 mit KI-Sichtbarkeit &ndash; st&auml;rker als Backlinks (Ahrefs-Studie).</span>
+                        <span>Brand Mentions korrelieren mit r=0,664 mit KI-Sichtbarkeit – stärker als Backlinks (Ahrefs-Studie).</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">4.</span>
-                        <span>Ohne aktive Steuerung erfindet ChatGPT Fakten &uuml;ber dein Unternehmen: falsche Preise, falsche Leistungen.</span>
+                        <span>Ohne aktive Steuerung erfindet ChatGPT Fakten über dein Unternehmen: falsche Preise, falsche Leistungen.</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">5.</span>
@@ -186,17 +186,17 @@ const ProblemSection: React.FC = () => (
     <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <FadeIn>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
-                Das ChatGPT-Problem: Nur 2&ndash;3 Unternehmen werden empfohlen
+                Das ChatGPT-Problem: Nur 2–3 Unternehmen werden empfohlen
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
                 <p>
                     Google zeigt zehn Ergebnisse pro Seite. ChatGPT empfiehlt zwei bis drei. Manchmal nur eins.
-                    Das ver&auml;ndert alles.
+                    Das verändert alles.
                 </p>
                 <p>
                     Bei Google kannst du auf Platz 7 stehen und trotzdem Klicks bekommen. Bei ChatGPT gibt es kein
-                    &ldquo;Platz 7&rdquo;. Du bist entweder in der Empfehlung &ndash; oder du existierst nicht.
-                    Es gibt keine zweite Seite, kein Scrollen, kein &ldquo;Weitere Ergebnisse laden&rdquo;.
+                    „Platz 7". Du bist entweder in der Empfehlung – oder du existierst nicht.
+                    Es gibt keine zweite Seite, kein Scrollen, kein „Weitere Ergebnisse laden".
                 </p>
             </div>
 
@@ -205,18 +205,18 @@ const ProblemSection: React.FC = () => (
                 <div className="bg-white border border-gray-100 rounded-2xl p-6">
                     <h3 className="font-semibold text-black text-lg mb-2">ChatGPT-Nutzer vertrauen Empfehlungen mehr als Google-Ergebnissen</h3>
                     <p className="text-gray-600 leading-relaxed">
-                        Ein Google-Ergebnis ist ein Link. Eine ChatGPT-Empfehlung ist eine pers&ouml;nliche Antwort.
-                        Nutzer behandeln ChatGPT wie einen vertrauensw&uuml;rdigen Berater, nicht wie eine Suchmaschine.
-                        Wenn ChatGPT sagt &ldquo;Ich empfehle Firma X f&uuml;r dein Problem&rdquo;, hat das mehr
+                        Ein Google-Ergebnis ist ein Link. Eine ChatGPT-Empfehlung ist eine persönliche Antwort.
+                        Nutzer behandeln ChatGPT wie einen vertrauenswürdigen Berater, nicht wie eine Suchmaschine.
+                        Wenn ChatGPT sagt „Ich empfehle Firma X für dein Problem", hat das mehr
                         Gewicht als ein Platz-1-Ranking bei Google.
                     </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-2xl p-6">
-                    <h3 className="font-semibold text-black text-lg mb-2">Die Conversion Rate von ChatGPT-Traffic ist signifikant h&ouml;her</h3>
+                    <h3 className="font-semibold text-black text-lg mb-2">Die Conversion Rate von ChatGPT-Traffic ist signifikant höher</h3>
                     <p className="text-gray-600 leading-relaxed">
-                        Wer &uuml;ber ChatGPT auf deine Website kommt, hat eine klare Kaufabsicht. Diese Nutzer haben
-                        nicht &ldquo;gegoogelt&rdquo; &ndash; sie haben um eine konkrete Empfehlung gebeten. Das sind
-                        keine Browser. Das sind K&auml;ufer. Erste Daten zeigen: ChatGPT-Referral-Traffic konvertiert
+                        Wer über ChatGPT auf deine Website kommt, hat eine klare Kaufabsicht. Diese Nutzer haben
+                        nicht „gegoogelt" – sie haben um eine konkrete Empfehlung gebeten. Das sind
+                        keine Browser. Das sind Käufer. Erste Daten zeigen: ChatGPT-Referral-Traffic konvertiert
                         deutlich besser als organischer Google-Traffic.
                     </p>
                 </div>
@@ -224,69 +224,69 @@ const ProblemSection: React.FC = () => (
 
             {/* Prompt Test Callout */}
             <div className="bg-[#121212] text-white rounded-xl p-6 md:p-8">
-                <p className="text-sm font-bold text-brand-accent mb-3 uppercase tracking-wider">Mach den Test &ndash; jetzt</p>
+                <p className="text-sm font-bold text-brand-accent mb-3 uppercase tracking-wider">Mach den Test – jetzt</p>
                 <p className="text-lg leading-relaxed mb-4">
-                    &Ouml;ffne ChatGPT und frag: &ldquo;Empfiehl mir einen guten <em>[deine Branche]</em> in Hamburg.&rdquo;
+                    Öffne ChatGPT und frag: „Empfiehl mir einen guten <em>[deine Branche]</em> in Hamburg."
                 </p>
                 <p className="text-gray-300 leading-relaxed">
-                    Wirst du genannt? Wenn nicht: Dein Wettbewerber wird gerade empfohlen. Du erf&auml;hrst es
+                    Wirst du genannt? Wenn nicht: Dein Wettbewerber wird gerade empfohlen. Du erfährst es
                     nicht einmal. Es gibt keine Benachrichtigung, kein Dashboard, keine Search Console.
-                    ChatGPT empfiehlt deinen Wettbewerber &ndash; und du fliegst blind.
+                    ChatGPT empfiehlt deinen Wettbewerber – und du fliegst blind.
                 </p>
             </div>
         </FadeIn>
     </section>
 );
 
-// Was ChatGPT ueber dein Unternehmen weiss Section
+// Was ChatGPT über dein Unternehmen weiß Section
 const HallucinationSection: React.FC = () => (
     <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <FadeIn>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
-                Was ChatGPT WIRKLICH &uuml;ber dein Unternehmen wei&szlig;
+                Was ChatGPT WIRKLICH über dein Unternehmen weiß
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
                 <p>
-                    Die meisten Unternehmer haben nie gepr&uuml;ft, was ChatGPT &uuml;ber sie sagt. Das
-                    ist gef&auml;hrlich. Denn ChatGPT sagt trotzdem etwas &ndash; und oft ist es falsch.
+                    Die meisten Unternehmer haben nie geprüft, was ChatGPT über sie sagt. Das
+                    ist gefährlich. Denn ChatGPT sagt trotzdem etwas – und oft ist es falsch.
                 </p>
             </div>
 
             <div className="space-y-6 mb-8">
                 <div className="bg-white border-2 border-red-200 rounded-xl p-6">
-                    <h3 className="font-semibold text-black text-lg mb-2">KI-Halluzinationen: ChatGPT erfindet Fakten &uuml;ber dein Unternehmen</h3>
+                    <h3 className="font-semibold text-black text-lg mb-2">KI-Halluzinationen: ChatGPT erfindet Fakten über dein Unternehmen</h3>
                     <p className="text-gray-600 leading-relaxed">
-                        Falsche Preise. Falsche &Ouml;ffnungszeiten. Dienstleistungen, die du gar nicht anbietest.
-                        Mitarbeiternamen, die nicht existieren. ChatGPT halluziniert &ndash; und pr&auml;sentiert
+                        Falsche Preise. Falsche Öffnungszeiten. Dienstleistungen, die du gar nicht anbietest.
+                        Mitarbeiternamen, die nicht existieren. ChatGPT halluziniert – und präsentiert
                         diese Halluzinationen mit der gleichen Selbstsicherheit wie korrekte Informationen.
-                        Deine potenziellen Kunden k&ouml;nnen den Unterschied nicht erkennen.
+                        Deine potenziellen Kunden können den Unterschied nicht erkennen.
                     </p>
                 </div>
                 <div className="bg-white border-2 border-red-200 rounded-xl p-6">
-                    <h3 className="font-semibold text-black text-lg mb-2">Widersprüchliche Daten = ChatGPT r&auml;t von dir ab</h3>
+                    <h3 className="font-semibold text-black text-lg mb-2">Widersprüchliche Daten = ChatGPT rät von dir ab</h3>
                     <p className="text-gray-600 leading-relaxed">
-                        Wenn dein digitales Profil widerspr&uuml;chlich ist &ndash; verschiedene Adressen auf verschiedenen
-                        Plattformen, unterschiedliche Leistungsbeschreibungen, veraltete Telefonnummern &ndash; wird ChatGPT
+                        Wenn dein digitales Profil widersprüchlich ist – verschiedene Adressen auf verschiedenen
+                        Plattformen, unterschiedliche Leistungsbeschreibungen, veraltete Telefonnummern – wird ChatGPT
                         unsicher. Und unsichere KI empfiehlt lieber den Wettbewerber, bei dem alle Quellen
-                        &uuml;bereinstimmen. Konsistenz ist kein Nice-to-have. Sie entscheidet, ob du empfohlen wirst.
+                        übereinstimmen. Konsistenz ist kein Nice-to-have. Sie entscheidet, ob du empfohlen wirst.
                     </p>
                 </div>
                 <div className="bg-white border-2 border-red-200 rounded-xl p-6">
-                    <h3 className="font-semibold text-black text-lg mb-2">D&uuml;nne Datenlage = maximales Halluzinationsrisiko</h3>
+                    <h3 className="font-semibold text-black text-lg mb-2">Dünne Datenlage = maximales Halluzinationsrisiko</h3>
                     <p className="text-gray-600 leading-relaxed">
-                        Je weniger verl&auml;ssliche Quellen ChatGPT &uuml;ber dein Unternehmen findet, desto mehr
-                        f&uuml;llt es die L&uuml;cken selbst. Mit erfundenen Informationen. Ein Unternehmen mit
-                        20 konsistenten Erw&auml;hnungen auf vertrauensw&uuml;rdigen Seiten wird korrekt dargestellt.
-                        Ein Unternehmen mit zwei Erw&auml;hnungen bekommt eine Fantasie-Beschreibung.
+                        Je weniger verlässliche Quellen ChatGPT über dein Unternehmen findet, desto mehr
+                        füllt es die Lücken selbst. Mit erfundenen Informationen. Ein Unternehmen mit
+                        20 konsistenten Erwähnungen auf vertrauenswürdigen Seiten wird korrekt dargestellt.
+                        Ein Unternehmen mit zwei Erwähnungen bekommt eine Fantasie-Beschreibung.
                     </p>
                 </div>
             </div>
 
             <div className="bg-brand-accent/10 border border-brand-accent/20 rounded-xl p-6">
                 <p className="text-gray-800 leading-relaxed">
-                    <strong>ChatGPT-Optimierung ist nicht nur Marketing &ndash; es ist Schadensverh&uuml;tung.</strong>{' '}
+                    <strong>ChatGPT-Optimierung ist nicht nur Marketing – es ist Schadensverhütung.</strong>{' '}
                     Wer seine <a href="/wissen/ki-sichtbarkeit" className="text-brand-accent underline hover:no-underline">KI-Sichtbarkeit</a> nicht
-                    aktiv steuert, &uuml;berl&auml;sst einer halluzinierenden KI die Darstellung seines Unternehmens.
+                    aktiv steuert, überlässt einer halluzinierenden KI die Darstellung seines Unternehmens.
                 </p>
             </div>
         </FadeIn>
@@ -313,49 +313,49 @@ const DualSystemSection: React.FC = () => (
                 <div className="bg-white border border-gray-100 rounded-2xl p-6">
                     <h3 className="font-semibold text-black text-lg mb-3">System 1: Trainingsdaten</h3>
                     <p className="text-gray-600 text-base mb-3">
-                        OpenAI trainiert GPT-Modelle mit Milliarden von Webseiten, B&uuml;chern und Artikeln.
+                        OpenAI trainiert GPT-Modelle mit Milliarden von Webseiten, Büchern und Artikeln.
                         Dieses Wissen ist im Modell eingefroren. Es aktualisiert sich nur bei Modell-Updates.
                     </p>
                     <p className="text-gray-600 text-base mb-3">
-                        Wenn ein Nutzer fragt &ldquo;Welche SEO-Agentur in Hamburg ist gut?&rdquo; und ChatGPT
-                        keine Websuche ausl&ouml;st, antwortet es aus diesem eingefrorenen Wissen.
+                        Wenn ein Nutzer fragt „Welche SEO-Agentur in Hamburg ist gut?" und ChatGPT
+                        keine Websuche auslöst, antwortet es aus diesem eingefrorenen Wissen.
                     </p>
                     <p className="text-gray-600 text-base">
                         <strong>Beispiel Hamburg:</strong> Eine Hamburger Werbeagentur, die seit Jahren auf Spiegel.de,
-                        im Hamburger Abendblatt und auf W&amp;V erw&auml;hnt wird, ist in den Trainingsdaten verankert.
+                        im Hamburger Abendblatt und auf W&amp;V erwähnt wird, ist in den Trainingsdaten verankert.
                         Ein Wettbewerber, der nur eine eigene Website hat, nicht.
                     </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-2xl p-6">
                     <h3 className="font-semibold text-black text-lg mb-3">System 2: Bing-Websuche</h3>
                     <p className="text-gray-600 text-base mb-3">
-                        Bei aktuellen Fragen oder wenn ChatGPT unsicher ist, durchsucht es das Web &ndash; &uuml;ber Bing.
+                        Bei aktuellen Fragen oder wenn ChatGPT unsicher ist, durchsucht es das Web – über Bing.
                         Nicht Google. Das ist ein entscheidender Unterschied.
                     </p>
                     <p className="text-gray-600 text-base mb-3">
-                        Bing gewichtet andere Signale als Google: Social Signals z&auml;hlen mehr, exakte
-                        Keyword-Matches haben h&ouml;heres Gewicht, und Bing Webmaster Tools sind dein
+                        Bing gewichtet andere Signale als Google: Social Signals zählen mehr, exakte
+                        Keyword-Matches haben höheres Gewicht, und Bing Webmaster Tools sind dein
                         Steuerungsinstrument.
                     </p>
                     <p className="text-gray-600 text-base">
                         <strong>Beispiel Hamburg:</strong> Ein Hamburger Steuerberater, der bei Bing auf Platz 2 steht,
                         wird bei ChatGPT-Live-Suchen empfohlen. Sein Wettbewerber auf Google Platz 1, aber Bing Platz 15?
-                        Unsichtbar f&uuml;r ChatGPT.
+                        Unsichtbar für ChatGPT.
                     </p>
                 </div>
             </div>
 
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                 <p>
-                    Wann welches System greift, entscheidet ChatGPT selbst. Bei &ldquo;Wer baut
-                    gute Websites in Hamburg?&rdquo; kann es Trainingsdaten nutzen. Bei &ldquo;Wer baut gute
-                    Websites in Hamburg 2026?&rdquo; wird es Bing befragen. Die Jahresangabe triggert die Live-Suche.
+                    Wann welches System greift, entscheidet ChatGPT selbst. Bei „Wer baut
+                    gute Websites in Hamburg?" kann es Trainingsdaten nutzen. Bei „Wer baut gute
+                    Websites in Hamburg 2026?" wird es Bing befragen. Die Jahresangabe triggert die Live-Suche.
                 </p>
                 <p>
-                    <strong>Du brauchst Sichtbarkeit in beiden Systemen.</strong> Trainingsdaten steuerst du &uuml;ber
-                    Brand Mentions und Quellenqualit&auml;t. Die Bing-Suche steuerst du &uuml;ber klassische
+                    <strong>Du brauchst Sichtbarkeit in beiden Systemen.</strong> Trainingsdaten steuerst du über
+                    Brand Mentions und Quellenqualität. Die Bing-Suche steuerst du über klassische
                     Bing-SEO und <a href="/wissen/technische-ki-sichtbarkeit" className="text-brand-accent underline hover:no-underline">technische
-                    KI-Sichtbarkeit</a>. Wer nur einen Kanal bespielt, verliert die H&auml;lfte der ChatGPT-Anfragen.
+                    KI-Sichtbarkeit</a>. Wer nur einen Kanal bespielt, verliert die Hälfte der ChatGPT-Anfragen.
                 </p>
             </div>
         </FadeIn>
@@ -372,7 +372,7 @@ const FactorsSection: React.FC = () => (
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
                 <p>
                     Ahrefs hat 2025 untersucht, welche Signale mit KI-Sichtbarkeit korrelieren.
-                    Das Ergebnis widerspricht allem, was du &uuml;ber klassisches SEO wei&szlig;t:
+                    Das Ergebnis widerspricht allem, was du über klassisches SEO weißt:
                     Brand Mentions schlagen Backlinks. Deutlich.
                 </p>
             </div>
@@ -385,20 +385,20 @@ const FactorsSection: React.FC = () => (
                 </p>
                 <p className="text-gray-600">
                     Korrelation zwischen Brand Mentions und KI-Sichtbarkeit. Zum Vergleich: Backlinks korrelierten schwächer.
-                    F&uuml;r die ChatGPT-Optimierung deines Unternehmens bedeutet das: Es ist wichtiger, <em>wie oft</em> du auf
-                    vertrauensw&uuml;rdigen Seiten erw&auml;hnt wirst, als wie viele Links du hast.
+                    Für die ChatGPT-Optimierung deines Unternehmens bedeutet das: Es ist wichtiger, <em>wie oft</em> du auf
+                    vertrauenswürdigen Seiten erwähnt wirst, als wie viele Links du hast.
                 </p>
             </div>
 
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
                 <p>
-                    Die Princeton-Studie zu Earned Media best&auml;tigt das. Redaktionelle Erw&auml;hnungen &ndash; also
-                    Presseartikel, Fachbeitr&auml;ge, unabh&auml;ngige Reviews &ndash; beeinflussen ChatGPTs Quellenwahl
-                    am st&auml;rksten. Bezahlte Mentions und Werbung haben kaum Effekt. ChatGPT erkennt den Unterschied.
+                    Die Princeton-Studie zu Earned Media bestätigt das. Redaktionelle Erwähnungen – also
+                    Presseartikel, Fachbeiträge, unabhängige Reviews – beeinflussen ChatGPTs Quellenwahl
+                    am stärksten. Bezahlte Mentions und Werbung haben kaum Effekt. ChatGPT erkennt den Unterschied.
                 </p>
             </div>
 
-            <h3 className="font-semibold text-black text-xl mb-6">Die f&uuml;nf ChatGPT-spezifischen Ranking-Faktoren</h3>
+            <h3 className="font-semibold text-black text-xl mb-6">Die fünf ChatGPT-spezifischen Ranking-Faktoren</h3>
 
             <div className="space-y-6">
                 {[
@@ -443,8 +443,8 @@ const StrategiesSection: React.FC = () => (
                 7 Strategien: So wirst du bei ChatGPT gefunden
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                ChatGPT-Optimierung f&uuml;r Unternehmen ist kein Hexenwerk &ndash; aber es erfordert andere
-                Ma&szlig;nahmen als klassisches Google-SEO. Hier sind die sieben wirksamsten Strategien.
+                ChatGPT-Optimierung für Unternehmen ist kein Hexenwerk – aber es erfordert andere
+                Maßnahmen als klassisches Google-SEO. Hier sind die sieben wirksamsten Strategien.
             </p>
             <div className="space-y-8">
                 {[
@@ -504,24 +504,24 @@ const HamburgSection: React.FC = () => (
     <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <FadeIn>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
-                ChatGPT-Sichtbarkeit f&uuml;r Hamburger Unternehmen
+                ChatGPT-Sichtbarkeit für Hamburger Unternehmen
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
                 <p>
-                    Hamburg ist Deutschlands zweitgr&ouml;&szlig;te Stadt, Medienstandort Nummer eins und
-                    Heimat tausender Dienstleister, die um die gleichen Kunden k&auml;mpfen. Wenn jemand
-                    ChatGPT fragt &ldquo;Empfiehl mir einen guten Rechtsanwalt in Hamburg&rdquo;, entscheiden
+                    Hamburg ist Deutschlands zweitgrößte Stadt, Medienstandort Nummer eins und
+                    Heimat tausender Dienstleister, die um die gleichen Kunden kämpfen. Wenn jemand
+                    ChatGPT fragt „Empfiehl mir einen guten Rechtsanwalt in Hamburg", entscheiden
                     wenige Signale, wer genannt wird.
                 </p>
                 <p>
                     Die gute Nachricht: <strong>Die meisten Hamburger Wettbewerber ignorieren ChatGPT-Optimierung
-                    noch komplett.</strong> Sie optimieren f&uuml;r Google, investieren in Google Ads und
-                    &uuml;bersehen, dass ein wachsender Anteil ihrer Zielgruppe l&auml;ngst ChatGPT fragt.
+                    noch komplett.</strong> Sie optimieren für Google, investieren in Google Ads und
+                    übersehen, dass ein wachsender Anteil ihrer Zielgruppe längst ChatGPT fragt.
                     Wer jetzt handelt, hat einen First-Mover-Vorteil.
                 </p>
             </div>
 
-            <h3 className="font-semibold text-black text-xl mb-4">Lokale Signale, die ChatGPT f&uuml;r Hamburg auswertet</h3>
+            <h3 className="font-semibold text-black text-xl mb-4">Lokale Signale, die ChatGPT für Hamburg auswertet</h3>
             <div className="space-y-4 mb-8">
                 {[
                     {
@@ -553,9 +553,9 @@ const HamburgSection: React.FC = () => (
             <div className="bg-brand-accent/10 border border-brand-accent/20 rounded-xl p-6">
                 <p className="text-gray-800 leading-relaxed">
                     <strong>Hamburg-Vorteil nutzen:</strong> Als Technologie- und Medienstandort generiert Hamburg
-                    &uuml;berdurchschnittlich viel digitale Presse und Online-Pr&auml;senz. Hamburger Unternehmen
-                    haben damit bessere Voraussetzungen f&uuml;r ChatGPT-Sichtbarkeit als Unternehmen in kleineren
-                    St&auml;dten &ndash; wenn sie diese Voraussetzungen auch nutzen.
+                    überdurchschnittlich viel digitale Presse und Online-Präsenz. Hamburger Unternehmen
+                    haben damit bessere Voraussetzungen für ChatGPT-Sichtbarkeit als Unternehmen in kleineren
+                    Städten – wenn sie diese Voraussetzungen auch nutzen.
                 </p>
             </div>
         </FadeIn>
@@ -567,13 +567,13 @@ const MeasuringSection: React.FC = () => (
     <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <FadeIn>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
-                Wie werde ich bei ChatGPT gefunden &ndash; und wie messe ich es?
+                Wie werde ich bei ChatGPT gefunden – und wie messe ich es?
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
                 <p>
                     Du hast keine ChatGPT Search Console. Du fliegst blind. Deine Agentur zeigt dir
                     Google-Rankings. ChatGPT-Empfehlungen? Fehlanzeige. Trotzdem gibt es drei Datenquellen,
-                    die dir ein Bild geben. Mehr dazu in unserem ausf&uuml;hrlichen Guide
+                    die dir ein Bild geben. Mehr dazu in unserem ausführlichen Guide
                     zur <a href="/wissen/ki-sichtbarkeit-messen" className="text-brand-accent underline hover:no-underline">KI-Sichtbarkeit messen</a>.
                 </p>
             </div>
@@ -600,7 +600,7 @@ const MeasuringSection: React.FC = () => (
                 <div className="bg-white border border-gray-100 rounded-2xl p-6">
                     <h3 className="font-semibold text-black text-lg mb-2">2. GPTBot und OAI-SearchBot in Server-Logs</h3>
                     <p className="text-gray-600 leading-relaxed mb-3">
-                        Pr&uuml;fe deine Access-Logs auf diese User-Agents:
+                        Prüfe deine Access-Logs auf diese User-Agents:
                     </p>
                     <div className="flex flex-wrap gap-2 mb-3">
                         <code className="bg-gray-100 px-3 py-1 rounded text-sm">GPTBot/1.0</code>
@@ -608,31 +608,31 @@ const MeasuringSection: React.FC = () => (
                     </div>
                     <p className="text-gray-600 leading-relaxed">
                         Wenn keiner der beiden in deinen Logs auftaucht, blockiert wahrscheinlich deine robots.txt
-                        oder dein CDN die Bots. Sofort pr&uuml;fen.
+                        oder dein CDN die Bots. Sofort prüfen.
                     </p>
                 </div>
 
                 <div className="bg-white border border-gray-100 rounded-2xl p-6">
                     <h3 className="font-semibold text-black text-lg mb-2">3. Systematische Prompt-Tests</h3>
                     <p className="text-gray-600 leading-relaxed mb-3">
-                        Teste monatlich 10&ndash;15 branchenspezifische Prompts. Nutze einen neuen Chat ohne Verlauf.
+                        Teste monatlich 10–15 branchenspezifische Prompts. Nutze einen neuen Chat ohne Verlauf.
                     </p>
                     <ul className="space-y-1.5 text-gray-600 text-base mb-3">
                         <li className="flex items-start gap-2">
                             <span className="text-brand-accent flex-shrink-0">&bull;</span>
-                            <span>&ldquo;Empfiehl mir einen [deine Branche] in Hamburg&rdquo;</span>
+                            <span>„Empfiehl mir einen [deine Branche] in Hamburg"</span>
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="text-brand-accent flex-shrink-0">&bull;</span>
-                            <span>&ldquo;Welcher [deine Branche] in Hamburg hat die besten Bewertungen?&rdquo;</span>
+                            <span>„Welcher [deine Branche] in Hamburg hat die besten Bewertungen?"</span>
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="text-brand-accent flex-shrink-0">&bull;</span>
-                            <span>&ldquo;Vergleiche [dein Unternehmen] mit [Wettbewerber]&rdquo;</span>
+                            <span>„Vergleiche [dein Unternehmen] mit [Wettbewerber]"</span>
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="text-brand-accent flex-shrink-0">&bull;</span>
-                            <span>&ldquo;Was kostet [deine Dienstleistung] in Hamburg?&rdquo;</span>
+                            <span>„Was kostet [deine Dienstleistung] in Hamburg?"</span>
                         </li>
                     </ul>
                     <p className="text-gray-600 leading-relaxed">
@@ -734,7 +734,7 @@ const FAQSection: React.FC = () => {
         <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
             <FadeIn>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-12">
-                    H&auml;ufig gestellte Fragen zur ChatGPT-Sichtbarkeit
+                    Häufig gestellte Fragen zur ChatGPT-Sichtbarkeit
                 </h2>
 
                 <div className="space-y-6">
@@ -764,7 +764,7 @@ const SourcesSection: React.FC = () => (
                             rel="noopener noreferrer"
                             className="underline hover:text-brand-accent transition-colors"
                         >
-                            Ahrefs (2025): LLM SEO &ndash; Brand Mentions Correlation Study (r=0,664)
+                            Ahrefs (2025): LLM SEO – Brand Mentions Correlation Study (r=0,664)
                         </a>
                     </li>
                     <li>
@@ -817,7 +817,7 @@ const RelatedGuidesSection: React.FC = () => (
                         KI-Sichtbarkeit: Der komplette Guide
                     </p>
                     <p className="text-sm text-gray-500">
-                        Grundlagen, Strategie und Frameworks f&uuml;r Sichtbarkeit in allen KI-Systemen.
+                        Grundlagen, Strategie und Frameworks für Sichtbarkeit in allen KI-Systemen.
                     </p>
                 </a>
                 <a
@@ -861,7 +861,7 @@ const RelatedGuidesSection: React.FC = () => (
                         Technische KI-Sichtbarkeit
                     </p>
                     <p className="text-sm text-gray-500">
-                        robots.txt, Schema.org, Crawler-Steuerung &ndash; die technischen Grundlagen.
+                        robots.txt, Schema.org, Crawler-Steuerung – die technischen Grundlagen.
                     </p>
                 </a>
             </div>
@@ -878,11 +878,11 @@ const CTASection: React.FC = () => (
                 <div className="relative z-10">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] mb-6 leading-tight">
                         ChatGPT empfiehlt deinen Wettbewerber.{' '}
-                        <span className="text-gray-400">Du erf&auml;hrst es nicht einmal.</span>
+                        <span className="text-gray-400">Du erfährst es nicht einmal.</span>
                     </h2>
                     <p className="text-lg text-gray-300 mb-4 max-w-2xl leading-relaxed">
-                        Ich pr&uuml;fe, ob und wie ChatGPT dein Unternehmen aktuell darstellt &ndash; Trainingsdaten
-                        und Live-Suche. Inklusive Halluzinations-Check: Erfindet ChatGPT falsche Fakten &uuml;ber dich?
+                        Ich prüfe, ob und wie ChatGPT dein Unternehmen aktuell darstellt – Trainingsdaten
+                        und Live-Suche. Inklusive Halluzinations-Check: Erfindet ChatGPT falsche Fakten über dich?
                     </p>
                     <p className="text-lg text-gray-300 mb-8 max-w-2xl leading-relaxed">
                         Kostenlos. In 48 Stunden. Ohne Verpflichtung.

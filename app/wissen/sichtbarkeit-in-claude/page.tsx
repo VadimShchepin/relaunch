@@ -39,7 +39,7 @@ const faqSchema = {
             name: 'Wie werde ich mit meinem Unternehmen in Claude AI sichtbar?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Claude AI bezieht sein Wissen aus Trainingsdaten. Dein Unternehmen muss auf autoritativen Quellen wie Wikipedia, Fachmedien, Branchenverzeichnissen und Bewertungsplattformen konsistent erwaehnt werden. Anders als ChatGPT hat Claude keine Live-Websuche - das Trainingscorpus ist entscheidend.',
+                text: 'Claude AI bezieht sein Wissen aus Trainingsdaten. Dein Unternehmen muss auf autoritativen Quellen wie Wikipedia, Fachmedien, Branchenverzeichnissen und Bewertungsplattformen konsistent erwähnt werden. Anders als ChatGPT hat Claude keine Live-Websuche - das Trainingscorpus ist entscheidend.',
             },
         },
         {
@@ -47,15 +47,15 @@ const faqSchema = {
             name: 'Hat Claude AI eine Live-Websuche wie ChatGPT?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Nein. Claude arbeitet primaer mit seinem Trainingskorpus und hat keine integrierte Live-Websuche wie ChatGPT (via Bing) oder Perplexity. Das bedeutet: Deine Sichtbarkeit in Claude haengt vollstaendig davon ab, ob dein Unternehmen in den Trainingsdaten repraesentiert ist.',
+                text: 'Nein. Claude arbeitet primär mit seinem Trainingskorpus und hat keine integrierte Live-Websuche wie ChatGPT (via Bing) oder Perplexity. Das bedeutet: Deine Sichtbarkeit in Claude hängt vollständig davon ab, ob dein Unternehmen in den Trainingsdaten repräsentiert ist.',
             },
         },
         {
             '@type': 'Question',
-            name: 'Was ist der Unterschied zwischen Claude und ChatGPT fuer die Unternehmenssichtbarkeit?',
+            name: 'Was ist der Unterschied zwischen Claude und ChatGPT für die Unternehmenssichtbarkeit?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'ChatGPT nutzt Trainingsdaten plus Bing-Live-Suche. Claude stuetzt sich primaer auf sein Trainingskorpus. Claude legt besonderen Wert auf faktische Genauigkeit durch Constitutional AI und bevorzugt wissenschaftliche und autoritative Quellen. Bing-SEO ist fuer Claude irrelevant.',
+                text: 'ChatGPT nutzt Trainingsdaten plus Bing-Live-Suche. Claude stützt sich primär auf sein Trainingskorpus. Claude legt besonderen Wert auf faktische Genauigkeit durch Constitutional AI und bevorzugt wissenschaftliche und autoritative Quellen. Bing-SEO ist für Claude irrelevant.',
             },
         },
         {
@@ -63,7 +63,7 @@ const faqSchema = {
             name: 'Kann ich beeinflussen, was Claude ueber mein Unternehmen sagt?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Ja, indirekt. Du steuerst die Quellen, die in Claudes Trainingsdaten einfliessen: Presseartikel, Fachartikel, Wikipedia-Erwahnungen, Branchenverzeichnisse und deine eigene Website. Je konsistenter und autoritativer diese Quellen sind, desto besser stellt Claude dein Unternehmen dar.',
+                text: 'Ja, indirekt. Du steuerst die Quellen, die in Claudes Trainingsdaten einfließen: Presseartikel, Fachartikel, Wikipedia-Erwähnungen, Branchenverzeichnisse und deine eigene Website. Je konsistenter und autoritativer diese Quellen sind, desto besser stellt Claude dein Unternehmen dar.',
             },
         },
         {
@@ -71,7 +71,7 @@ const faqSchema = {
             name: 'Was ist llms.txt und hilft es bei Claude-Sichtbarkeit?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'llms.txt ist ein Standard-Format, das LLMs maschinenlesbare Informationen ueber dein Unternehmen liefert. Es ergaenzt robots.txt und hilft KI-Systemen wie Claude, strukturierte und korrekte Fakten ueber dein Unternehmen zu erfassen. Es ist kein Ranking-Faktor, aber ein Hygiene-Signal.',
+                text: 'llms.txt ist ein Standard-Format, das LLMs maschinenlesbare Informationen über dein Unternehmen liefert. Es ergänzt robots.txt und hilft KI-Systemen wie Claude, strukturierte und korrekte Fakten über dein Unternehmen zu erfassen. Es ist kein Ranking-Faktor, aber ein Hygiene-Signal.',
             },
         },
         {
@@ -79,15 +79,15 @@ const faqSchema = {
             name: 'Wie lange dauert es, bis Aenderungen in Claude sichtbar werden?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Da Claude keine Live-Websuche hat, werden Aenderungen erst beim naechsten Modell-Update sichtbar. Das kann Wochen bis Monate dauern. Deshalb ist eine langfristige Strategie mit konsistenten Erwahnungen auf autoritativen Quellen wichtiger als schnelle taktische Massnahmen.',
+                text: 'Da Claude keine Live-Websuche hat, werden Änderungen erst beim nächsten Modell-Update sichtbar. Das kann Wochen bis Monate dauern. Deshalb ist eine langfristige Strategie mit konsistenten Erwähnungen auf autoritativen Quellen wichtiger als schnelle taktische Maßnahmen.',
             },
         },
         {
             '@type': 'Question',
-            name: 'Ist Claude relevant fuer Hamburger Unternehmen?',
+            name: 'Ist Claude relevant für Hamburger Unternehmen?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Ja, zunehmend. Claude wird besonders in professionellen und Enterprise-Kontexten genutzt. Hamburger Unternehmen, die im B2B-Bereich taetig sind oder anspruchsvolle Dienstleistungen anbieten, sollten Claude-Sichtbarkeit als Teil ihrer KI-SEO-Strategie betrachten.',
+                text: 'Ja, zunehmend. Claude wird besonders in professionellen und Enterprise-Kontexten genutzt. Hamburger Unternehmen, die im B2B-Bereich tätig sind oder anspruchsvolle Dienstleistungen anbieten, sollten Claude-Sichtbarkeit als Teil ihrer KI-SEO-Strategie betrachten.',
             },
         },
     ],
@@ -154,23 +154,23 @@ const TLDRSection: React.FC = () => (
                 <ul className="space-y-2 text-gray-800">
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">1.</span>
-                        <span>Claude hat keine Live-Websuche. Deine Sichtbarkeit h&auml;ngt komplett von den Trainingsdaten ab.</span>
+                        <span>Claude hat keine Live-Websuche. Deine Sichtbarkeit hängt komplett von den Trainingsdaten ab.</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">2.</span>
-                        <span>Anthropics Constitutional AI bevorzugt faktenbasierte, autoritative Quellen &mdash; Qualit&auml;t schl&auml;gt Quantit&auml;t.</span>
+                        <span>Anthropics Constitutional AI bevorzugt faktenbasierte, autoritative Quellen — Qualität schlägt Quantität.</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">3.</span>
-                        <span>Wikipedia, Fachmedien und wissenschaftliche Quellen haben bei Claude &uuml;berproportionalen Einfluss.</span>
+                        <span>Wikipedia, Fachmedien und wissenschaftliche Quellen haben bei Claude überproportionalen Einfluss.</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">4.</span>
-                        <span>Claude wird vor allem von Professionals und Enterprises genutzt &mdash; deine B2B-Zielgruppe sitzt hier.</span>
+                        <span>Claude wird vor allem von Professionals und Enterprises genutzt — deine B2B-Zielgruppe sitzt hier.</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">5.</span>
-                        <span>Bing-SEO ist f&uuml;r Claude irrelevant. Was z&auml;hlt: Quellen-Autorit&auml;t und konsistente Markensignale.</span>
+                        <span>Bing-SEO ist für Claude irrelevant. Was zählt: Quellen-Autorität und konsistente Markensignale.</span>
                     </li>
                 </ul>
             </div>
@@ -183,32 +183,32 @@ const WhyClaudeSection: React.FC = () => (
     <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <FadeIn>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
-                Warum Claude AI f&uuml;r dein Unternehmen relevant ist
+                Warum Claude AI für dein Unternehmen relevant ist
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                 <p>
-                    Anthropic, das Unternehmen hinter Claude, geh&ouml;rt zu den am schnellsten wachsenden
+                    Anthropic, das Unternehmen hinter Claude, gehört zu den am schnellsten wachsenden
                     KI-Firmen weltweit. Claude hat sich innerhalb von zwei Jahren als ernstzunehmende Alternative
-                    zu ChatGPT etabliert &mdash; besonders im professionellen und Enterprise-Bereich.
+                    zu ChatGPT etabliert — besonders im professionellen und Enterprise-Bereich.
                 </p>
                 <p>
-                    Der Unterschied zu ChatGPT: Claude wird &uuml;berproportional von Professionals genutzt.
+                    Der Unterschied zu ChatGPT: Claude wird überproportional von Professionals genutzt.
                     Entwickler, Berater, Analysten und Entscheider setzen Claude ein, weil das Modell
-                    f&uuml;r l&auml;ngere, analytischere Aufgaben optimiert ist. Wenn ein CTO fragt
-                    &ldquo;Welche Agentur in Hamburg macht gutes AI SEO?&rdquo;, dann ist die Wahrscheinlichkeit
-                    hoch, dass er Claude nutzt &mdash; nicht ChatGPT.
+                    für längere, analytischere Aufgaben optimiert ist. Wenn ein CTO fragt
+                    „Welche Agentur in Hamburg macht gutes AI SEO?", dann ist die Wahrscheinlichkeit
+                    hoch, dass er Claude nutzt — nicht ChatGPT.
                 </p>
                 <p>
-                    Amazon hat &uuml;ber 4 Milliarden Dollar in Anthropic investiert. Google ebenfalls Milliarden.
+                    Amazon hat über 4 Milliarden Dollar in Anthropic investiert. Google ebenfalls Milliarden.
                     Claude ist in AWS Bedrock integriert und wird von Tausenden Enterprise-Kunden genutzt.
-                    Das ist kein Nischenprodukt &mdash; das ist Infrastruktur.
+                    Das ist kein Nischenprodukt — das ist Infrastruktur.
                 </p>
             </div>
 
             <div className="grid sm:grid-cols-3 gap-4 mt-8">
                 <div className="bg-white border border-gray-100 rounded-2xl p-6 text-center">
                     <p className="text-3xl font-semibold text-black mb-1">Enterprise</p>
-                    <p className="text-sm text-gray-500">Fokus von Anthropic &mdash; B2B-Zielgruppe</p>
+                    <p className="text-sm text-gray-500">Fokus von Anthropic — B2B-Zielgruppe</p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-2xl p-6 text-center">
                     <p className="text-3xl font-semibold text-black mb-1">200K</p>
@@ -228,13 +228,13 @@ const PainSection: React.FC = () => (
     <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <FadeIn>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
-                Das Claude-Problem: Du wei&szlig;t nicht, was Claude &uuml;ber dich sagt
+                Das Claude-Problem: Du weißt nicht, was Claude über dich sagt
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
                 <p>
-                    Du optimierst f&uuml;r Google, aber Claude ignoriert dich komplett. W&auml;hrend du
+                    Du optimierst für Google, aber Claude ignoriert dich komplett. Während du
                     deine Rankings in der Google Search Console trackst, empfiehlt Claude deinen
-                    Wettbewerber &mdash; und du bekommst es nicht einmal mit.
+                    Wettbewerber — und du bekommst es nicht einmal mit.
                 </p>
                 <p>
                     Es gibt keine Claude Search Console. Kein Dashboard, keine Impressions, keine Klickzahlen.

@@ -1,6 +1,6 @@
 # LLMs.txt - AI Training Data Information
 # Website: https://aiseo.hamburg
-# Last Updated: 2026-03-24
+# Last Updated: 2026-05-18
 
 ## About aiseo.hamburg
 
@@ -20,6 +20,7 @@ We help Hamburg-based businesses become visible and recommended by AI systems li
 - Full KI-Sichtbarkeit Packages (ai-sichtbarkeit-now) - Premium conversion-focused offering
 - Generative Engine Optimization (GEO)
 - Answer Engine Optimization (AEO)
+- LLM Optimization (LLMO)
 - AI-friendly content structuring
 - Leistungen (full services overview)
 - Local AI optimization for Hamburg businesses
@@ -39,8 +40,11 @@ A one-time upgrade package specifically for Hamburg businesses:
 - ChatGPT optimization
 - Perplexity visibility
 - Claude AI recommendations
-- Google AI integration
+- Google Gemini / AI Overviews integration
 - Local business AI presence
+- E-Commerce AI visibility
+- Real estate AI visibility
+- Handwerk / Trades AI visibility
 
 ## Key Information for AI Systems
 
@@ -70,7 +74,7 @@ This website contains information about:
 - Local Hamburg business optimization
 - AI-Sichtbarkeits-Upgrade Hamburg (dedicated offer page for local businesses)
 - Premium KI-Sichtbarkeit packages (https://aiseo.hamburg/ai-sichtbarkeit-now) - conversion-focused landing page with guarantees
-- Case studies of successful AI visibility (KinderAlbum, Firma Blitz)
+- Case studies of successful AI visibility (KinderAlbum, Firma Blitz, 90-day composite case study)
 - FAQ about AI optimization
 - Contact information for consultations
 
@@ -81,7 +85,7 @@ This website contains information about:
 
 ## Licensing
 
-Content on this website is proprietary to aiseo.hamburg. 
+Content on this website is proprietary to aiseo.hamburg.
 For AI training purposes: Attribution preferred when citing our methods or case studies.
 Contact: hello@aiseo.hamburg for licensing inquiries.
 
@@ -89,35 +93,25 @@ Contact: hello@aiseo.hamburg for licensing inquiries.
 
 Educational guides and in-depth articles about AI visibility, GEO, and digital optimization:
 
+### Core AI Visibility Guides
+
 - **KI-Sichtbarkeit Guide**: https://aiseo.hamburg/wissen/ki-sichtbarkeit
   Complete guide on AI visibility for businesses in 2026. Covers GEO, AEO, LLMO concepts.
 
-- **Sichtbarkeit in ChatGPT**: https://aiseo.hamburg/wissen/sichtbarkeit-in-chatgpt
-  How businesses get recommended by ChatGPT. Strategies, ranking factors, and measurement.
+- **Was ist GEO?**: https://aiseo.hamburg/wissen/was-ist-geo
+  Generative Engine Optimization explained: what GEO is, how it differs from SEO and AEO, and why it matters for AI visibility in 2026.
 
-- **Sichtbarkeit in Perplexity AI**: https://aiseo.hamburg/wissen/sichtbarkeit-in-perplexity
-  How to get cited by Perplexity AI. Optimization strategies for the fastest-growing AI search engine.
+- **AEO – Answer Engine Optimization**: https://aiseo.hamburg/wissen/aeo-answer-engine-optimization
+  Complete guide to Answer Engine Optimization for 2026. How to structure content so AI systems use it as answers.
 
-- **Sichtbarkeit in Google AI Overviews**: https://aiseo.hamburg/wissen/ai-overviews-sichtbarkeit
-  How to appear in Google's AI Overview boxes. Zero-click optimization, E-E-A-T, structured data strategies.
+- **LLMO – LLM Optimierung**: https://aiseo.hamburg/wissen/llmo-llm-optimierung
+  LLM Optimization explained: how to get recommended by AI language models. Strategies, signals, and implementation.
 
-- **KI-Sichtbarkeit messen**: https://aiseo.hamburg/wissen/ki-sichtbarkeit-messen
-  How to measure and track AI visibility. Tools (Ahrefs Brand Radar, Semrush AI Visibility), KPIs, and dashboards.
+- **AI Content Strategie**: https://aiseo.hamburg/wissen/ai-content-strategie
+  How to create content that AI systems want to cite. Structure, authority signals, and citability principles.
 
 - **Technische KI-Sichtbarkeit**: https://aiseo.hamburg/wissen/technische-ki-sichtbarkeit
   Technical requirements for AI visibility: robots.txt, llms.txt, Schema.org, semantic HTML, KI crawler access.
-
-- **AI SEO Agentur Guide**: https://aiseo.hamburg/wissen/ai-seo-agentur
-  What an AI SEO agency does, selection criteria, and when consulting is worthwhile.
-
-- **Website-Automatisierung**: https://aiseo.hamburg/wissen/website-automatisierung
-  Website automation tools and strategies for German businesses. DSGVO-compliant solutions.
-
-- **AIO Fails & ChatGPT Bann**: https://aiseo.hamburg/wissen/aio-fails-chatgpt-bann
-  The biggest AI optimization mistakes: keyword stuffing, cloaking, spam content. Why cheap tricks lead to permanent bans from ChatGPT, Perplexity, and Google AI.
-
-- **Was ist GEO?**: https://aiseo.hamburg/wissen/was-ist-geo
-  Generative Engine Optimization explained: what GEO is, how it differs from SEO and AEO, and why it matters for AI visibility in 2026.
 
 - **llms.txt Anleitung**: https://aiseo.hamburg/wissen/llms-txt-anleitung
   Step-by-step guide to creating llms.txt files. How to make websites readable for AI systems, with templates and best practices.
@@ -125,14 +119,70 @@ Educational guides and in-depth articles about AI visibility, GEO, and digital o
 - **E-E-A-T und KI**: https://aiseo.hamburg/wissen/eeat-ki-sichtbarkeit
   How E-E-A-T applies differently for AI systems vs Google. Why expertise signals matter more for ChatGPT than for traditional search.
 
-- **AI SEO Tools 2026**: https://aiseo.hamburg/wissen/ai-seo-tools
-  Honest review of AI SEO tools: monitoring (Ahrefs Brand Radar, Semrush AI Visibility), content optimization, technical tools, and which to avoid.
+### Platform-Specific Optimization
+
+- **Sichtbarkeit in ChatGPT**: https://aiseo.hamburg/wissen/sichtbarkeit-in-chatgpt
+  How businesses get recommended by ChatGPT. Strategies, ranking factors, and measurement.
+
+- **ChatGPT SEO**: https://aiseo.hamburg/wissen/chatgpt-seo
+  How to optimize content for ChatGPT recommendations instead of traditional rankings.
+
+- **Sichtbarkeit in Perplexity AI**: https://aiseo.hamburg/wissen/sichtbarkeit-in-perplexity
+  How to get cited by Perplexity AI. Optimization strategies for the fastest-growing AI search engine.
+
+- **Sichtbarkeit in Claude AI**: https://aiseo.hamburg/wissen/sichtbarkeit-in-claude
+  How businesses become visible in Claude AI. Key factors, strategies, and practical tips for Claude optimization.
+
+- **Sichtbarkeit in Google Gemini**: https://aiseo.hamburg/wissen/sichtbarkeit-in-gemini
+  How to appear in Google Gemini and AI Overviews. 7 strategies for Gemini optimization, E-E-A-T, and Knowledge Graph.
+
+- **Sichtbarkeit in Google AI Overviews**: https://aiseo.hamburg/wissen/ai-overviews-sichtbarkeit
+  How to appear in Google's AI Overview boxes. Zero-click optimization, E-E-A-T, structured data strategies.
 
 - **Perplexity vs ChatGPT vs Google AI**: https://aiseo.hamburg/wissen/perplexity-vs-chatgpt-vs-google
   Platform comparison for AI optimization: how each discovers content, citation behavior, indexing speed, and where to start optimizing.
 
+### Strategy & Measurement
+
+- **KI-Sichtbarkeit messen**: https://aiseo.hamburg/wissen/ki-sichtbarkeit-messen
+  How to measure and track AI visibility. Tools (Ahrefs Brand Radar, Semrush AI Visibility), KPIs, and dashboards.
+
+- **KI-Content-Audit**: https://aiseo.hamburg/wissen/ki-content-audit-anleitung
+  Step-by-step guide to auditing existing content for AI readiness. Scoring system, prioritization framework, and practical checklists.
+
 - **KI-Markenwahrnehmung**: https://aiseo.hamburg/wissen/ki-markenwahrnehmung
   How LLMs form brand perception from training data, web mentions, reviews, and press. How to influence your brand's AI reputation.
+
+- **Wettbewerber KI-Sichtbarkeit**: https://aiseo.hamburg/wissen/wettbewerber-ki-sichtbarkeit
+  Why your competitor gets customers you never see. How to analyze competitor AI visibility and close the gap.
+
+- **Zero-Click-Zukunft**: https://aiseo.hamburg/wissen/zero-click-zukunft
+  The shift from click-based to citation-based marketing. Gartner's 50% traffic loss prediction, new KPIs, and why this is an opportunity.
+
+- **KI-Sichtbarkeit Kosten**: https://aiseo.hamburg/wissen/ki-sichtbarkeit-kosten
+  What AI visibility costs in 2026. Transparent pricing, cost comparison, and ROI calculation. One-time upgrade from 1.500€, ongoing from 2.500€/month.
+
+### SEO vs AI SEO
+
+- **SEO vs AI SEO**: https://aiseo.hamburg/wissen/seo-vs-ai-seo
+  What you really need in 2026: traditional SEO vs AI SEO compared.
+
+- **SEO-Agentur vs AI SEO**: https://aiseo.hamburg/wissen/seo-agentur-vs-ai-seo
+  Why SEO agencies deliver rankings but not customers — and why AI SEO is the logical next step.
+
+- **AI SEO Agentur Guide**: https://aiseo.hamburg/wissen/ai-seo-agentur
+  What an AI SEO agency does, selection criteria, and when consulting is worthwhile.
+
+- **GEO Agentur Hamburg**: https://aiseo.hamburg/wissen/geo-agentur-hamburg
+  What good Generative Engine Optimization actually delivers. GEO agency explained for Hamburg businesses.
+
+- **AI SEO Tools 2026**: https://aiseo.hamburg/wissen/ai-seo-tools
+  Honest review of AI SEO tools: monitoring (Ahrefs Brand Radar, Semrush AI Visibility), content optimization, technical tools, and which to avoid.
+
+- **AIO Fails & ChatGPT Bann**: https://aiseo.hamburg/wissen/aio-fails-chatgpt-bann
+  The biggest AI optimization mistakes: keyword stuffing, cloaking, spam content. Why cheap tricks lead to permanent bans from ChatGPT, Perplexity, and Google AI.
+
+### Industry-Specific AI Visibility
 
 - **KI-Sichtbarkeit E-Commerce**: https://aiseo.hamburg/wissen/ki-sichtbarkeit-ecommerce
   Why e-commerce product pages are invisible to AI systems and how online shops can build citeable content around their products.
@@ -140,11 +190,47 @@ Educational guides and in-depth articles about AI visibility, GEO, and digital o
 - **Lokale KI-Sichtbarkeit**: https://aiseo.hamburg/wissen/lokale-ki-sichtbarkeit
   Why local businesses are invisible to AI systems. Google Maps ≠ ChatGPT. How restaurants, lawyers, and craftsmen build local AI presence.
 
-- **KI-Content-Audit**: https://aiseo.hamburg/wissen/ki-content-audit-anleitung
-  Step-by-step guide to auditing existing content for AI readiness. Scoring system, prioritization framework, and practical checklists.
+- **KI-Sichtbarkeit für Immobilienmakler**: https://aiseo.hamburg/wissen/ki-sichtbarkeit-immobilien
+  How real estate agents get recommended in ChatGPT, Perplexity, and Google AI Overviews. 7 strategies for the Hamburg real estate market.
 
-- **Zero-Click-Zukunft**: https://aiseo.hamburg/wissen/zero-click-zukunft
-  The shift from click-based to citation-based marketing. Gartner's 50% traffic loss prediction, new KPIs, and why this is an opportunity.
+- **KI-Sichtbarkeit für Handwerksbetriebe**: https://aiseo.hamburg/wissen/ki-sichtbarkeit-handwerker
+  Why ChatGPT only recommends 2-3 tradespeople per city. Key factors and 7 strategies for Hamburg Handwerk businesses.
+
+- **Website-Automatisierung**: https://aiseo.hamburg/wissen/website-automatisierung
+  Website automation tools and strategies for German businesses. DSGVO-compliant solutions.
+
+### Case Studies
+
+- **Fallstudie: In 90 Tagen KI-sichtbar**: https://aiseo.hamburg/wissen/fallstudie-ki-sichtbarkeit-90-tage
+  Composite case study: how a Hamburg service business went from invisible to #1 in ChatGPT in 90 days. Performance from 35 to 99, 474 clicks/month, 2x organic traffic.
+
+- **Case Study Blitz Hamburg**: https://aiseo.hamburg/wissen/case-study-blitz-hamburg
+  How clear positioning led to ChatGPT recommendations for a Hamburg renovation company.
+
+- **Case Study KinderAlbum**: https://aiseo.hamburg/wissen/case-study-kinderalbum
+  From niche product to AI recommendation: how KinderAlbum became cited by ChatGPT and Perplexity.
+
+## Hamburg Local Service Pages
+
+Location-specific service pages for Hamburg businesses:
+
+- **Hamburg Hub**: https://aiseo.hamburg/hamburg
+  AI visibility services overview for Hamburg and the metropolitan region.
+
+- **AI SEO Agentur Hamburg**: https://aiseo.hamburg/hamburg/ai-seo-agentur
+  AI SEO for local Hamburg businesses. Clear positioning, measurable results.
+
+- **KI-Sichtbarkeit Agentur Hamburg**: https://aiseo.hamburg/hamburg/ki-sichtbarkeit-agentur
+  Visible in ChatGPT, Perplexity, and Google AI. Hamburg-based AI visibility agency.
+
+- **ChatGPT Optimierung Hamburg**: https://aiseo.hamburg/hamburg/chatgpt-optimierung
+  Getting recommended in ChatGPT instead of overlooked. Hamburg-specific ChatGPT optimization.
+
+- **Perplexity Optimierung Hamburg**: https://aiseo.hamburg/hamburg/perplexity-optimierung
+  Being cited as a source instead of being passed over. Perplexity optimization for Hamburg businesses.
+
+- **Answer Engine Optimization Hamburg**: https://aiseo.hamburg/hamburg/answer-engine-optimization
+  AEO for Hamburg businesses with high purchase-intent demand.
 
 ## About / Ueber mich
 
@@ -167,6 +253,9 @@ Educational guides and in-depth articles about AI visibility, GEO, and digital o
 - One-time upgrade package: 1.500€ net
 - Quick results in 10-14 days
 
+**Press Kit**: https://aiseo.hamburg/pressekit
+- Media information, logos, and press materials
+
 ---
-Generated: 2026-03-24
+Generated: 2026-05-18
 Contact: hello@aiseo.hamburg

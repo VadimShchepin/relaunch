@@ -9,69 +9,69 @@ import { Button } from '@/components/ui/Button';
 const FAQ_ITEMS = [
   {
     q: 'Was kostet eine AI SEO Agentur?',
-    a: 'Ein einmaliges KI-Sichtbarkeits-Audit liegt zwischen 500 und 2.000 Euro. Laufende Optimierung kostet zwischen 1.000 und 5.000 Euro pro Monat. Entscheidend ist nicht der Preis, sondern ob die Agentur echte KI-Zitierungen messen kann. Viele Anbieter verkaufen klassisches SEO unter neuem Label. Bei aiseo.hamburg gibt es eine kostenlose Kurzanalyse, damit du vorher weisst, wo du stehst.',
+    a: 'Ein einmaliges KI-Sichtbarkeits-Audit liegt zwischen 500 und 2.000 Euro. Laufende Optimierung kostet zwischen 1.000 und 5.000 Euro pro Monat. Entscheidend ist nicht der Preis, sondern ob die Agentur echte KI-Zitierungen messen kann. Viele Anbieter verkaufen klassisches SEO unter neuem Label. Bei aiseo.hamburg gibt es eine kostenlose Kurzanalyse, damit du vorher weißt, wo du stehst.',
   },
   {
     q: 'Wie schnell sehe ich Ergebnisse bei AI SEO?',
-    a: 'Erste Veraenderungen in KI-Antworten sind oft innerhalb von 4 bis 8 Wochen sichtbar. Stabile, zuverlaessige Sichtbarkeit entsteht ueber Monate durch konsistente Arbeit an Inhalten, Struktur und Autoritaet. Der Vorteil: Wer jetzt startet, hat in den meisten Branchen noch wenig Konkurrenz.',
+    a: 'Erste Veränderungen in KI-Antworten sind oft innerhalb von 4 bis 8 Wochen sichtbar. Stabile, zuverlässige Sichtbarkeit entsteht über Monate durch konsistente Arbeit an Inhalten, Struktur und Autorität. Der Vorteil: Wer jetzt startet, hat in den meisten Branchen noch wenig Konkurrenz.',
   },
   {
     q: 'Brauche ich eine AI SEO Agentur oder reicht klassisches SEO?',
-    a: 'Klassisches SEO bleibt wichtig, ist aber nicht ausreichend. KI-Systeme bewerten Quellen anders als Google. Wenn deine Zielgruppe ChatGPT, Perplexity oder Google AI nutzt, brauchst du gezielte AI SEO Optimierung. Eine spezialisierte Agentur fuer KI-Sichtbarkeit sorgt dafuer, dass du nicht nur bei Google, sondern auch in KI-Antworten zitiert wirst.',
+    a: 'Klassisches SEO bleibt wichtig, ist aber nicht ausreichend. KI-Systeme bewerten Quellen anders als Google. Wenn deine Zielgruppe ChatGPT, Perplexity oder Google AI nutzt, brauchst du gezielte AI SEO Optimierung. Eine spezialisierte Agentur für KI-Sichtbarkeit sorgt dafür, dass du nicht nur bei Google, sondern auch in KI-Antworten zitiert wirst.',
   },
   {
     q: 'Was unterscheidet aiseo.hamburg von anderen AI SEO Agenturen?',
-    a: 'Hinter aiseo.hamburg steht ein Software-Architekt mit ueber 10 Jahren Erfahrung, kein Marketing-Generalist. Das bedeutet: datengetriebene Analyse statt Bauchgefuehl, individuelle Betreuung statt Massenabfertigung, und echte Messung von KI-Zitierungen statt Vanity-Metriken. Kein Agentur-Overhead, keine Praktikanten an deinem Projekt.',
+    a: 'Hinter aiseo.hamburg steht ein Software-Architekt mit über 10 Jahren Erfahrung, kein Marketing-Generalist. Das bedeutet: datengetriebene Analyse statt Bauchgefühl, individuelle Betreuung statt Massenabfertigung, und echte Messung von KI-Zitierungen statt Vanity-Metriken. Kein Agentur-Overhead, keine Praktikanten an deinem Projekt.',
   },
   {
     q: 'Gibt es AI SEO Agenturen in Hamburg?',
-    a: 'Hamburg hat als Technologie- und Medienstandort einige Anbieter im Bereich AI SEO. Wichtig ist, auf tatsaechliche Erfahrung mit KI-Sichtbarkeit zu achten. aiseo.hamburg ist in Hamburg-Altona ansaessig und auf KI-Sichtbarkeit spezialisiert. Frage bei jeder Agentur konkret: Wie messt ihr KI-Zitierungen?',
+    a: 'Hamburg hat als Technologie- und Medienstandort einige Anbieter im Bereich AI SEO. Wichtig ist, auf tatsächliche Erfahrung mit KI-Sichtbarkeit zu achten. aiseo.hamburg ist in Hamburg-Altona ansässig und auf KI-Sichtbarkeit spezialisiert. Frage bei jeder Agentur konkret: Wie messt ihr KI-Zitierungen?',
   },
   {
     q: 'Was ist der Unterschied zwischen AI SEO und GEO?',
-    a: 'GEO (Generative Engine Optimization) ist der akademische Begriff fuer AI SEO. Beide meinen dasselbe: Optimierung fuer KI-gesteuerte Suchsysteme, damit dein Unternehmen in KI-generierten Antworten zitiert wird. aiseo.hamburg nutzt beide Begriffe synonym.',
+    a: 'GEO (Generative Engine Optimization) ist der akademische Begriff für AI SEO. Beide meinen dasselbe: Optimierung für KI-gesteuerte Suchsysteme, damit dein Unternehmen in KI-generierten Antworten zitiert wird. aiseo.hamburg nutzt beide Begriffe synonym.',
   },
   {
     q: 'Kann ich AI SEO auch selbst machen?',
-    a: 'Grundsaetzlich ja, aber es erfordert technisches Verstaendnis von Schema-Markup, strukturierten Daten, LLM-Crawlern und Content-Architektur. Die meisten Unternehmen profitieren von einer initialen Analyse und Strategie durch einen Spezialisten und koennen dann Teile der Umsetzung selbst uebernehmen.',
+    a: 'Grundsätzlich ja, aber es erfordert technisches Verständnis von Schema-Markup, strukturierten Daten, LLM-Crawlern und Content-Architektur. Die meisten Unternehmen profitieren von einer initialen Analyse und Strategie durch einen Spezialisten und können dann Teile der Umsetzung selbst übernehmen.',
   },
   {
-    q: 'Welche KI-Systeme sind relevant fuer mein Unternehmen?',
-    a: 'Die wichtigsten sind aktuell ChatGPT (OpenAI), Google AI Overviews, Perplexity, Claude (Anthropic) und Microsoft Copilot. Welche fuer dein Unternehmen relevant sind, haengt von deiner Zielgruppe ab. Im B2B-Bereich sind ChatGPT und Perplexity besonders stark, bei Konsumenten dominiert Google AI.',
+    q: 'Welche KI-Systeme sind relevant für mein Unternehmen?',
+    a: 'Die wichtigsten sind aktuell ChatGPT (OpenAI), Google AI Overviews, Perplexity, Claude (Anthropic) und Microsoft Copilot. Welche für dein Unternehmen relevant sind, hängt von deiner Zielgruppe ab. Im B2B-Bereich sind ChatGPT und Perplexity besonders stark, bei Konsumenten dominiert Google AI.',
   },
 ];
 
 const SERVICES = [
   {
     title: 'KI-Sichtbarkeits-Audit',
-    desc: 'Vollstaendige Bestandsaufnahme: Wie wirst du in ChatGPT, Perplexity, Google AI, Claude und Copilot dargestellt? Wo wirst du zitiert, wo nicht, und warum? Konkrete Handlungsempfehlungen mit Prioritaeten.',
+    desc: 'Vollständige Bestandsaufnahme: Wie wirst du in ChatGPT, Perplexity, Google AI, Claude und Copilot dargestellt? Wo wirst du zitiert, wo nicht, und warum? Konkrete Handlungsempfehlungen mit Prioritäten.',
   },
   {
     title: 'Technische Optimierung',
-    desc: 'Schema.org Markup, JSON-LD, robots.txt, llms.txt, ai.txt und semantische Seitenstruktur. Alles, damit KI-Crawler dein Angebot eindeutig verstehen und korrekt einordnen koennen.',
+    desc: 'Schema.org Markup, JSON-LD, robots.txt, llms.txt, ai.txt und semantische Seitenstruktur. Alles, damit KI-Crawler dein Angebot eindeutig verstehen und korrekt einordnen können.',
   },
   {
-    title: 'Content-Strategie fuer KI-Zitierbarkeit',
-    desc: 'Inhalte so strukturieren, dass KI sie als ziterfaehige Quelle erkennt. Klare Aussagen, praezise Definitionen, logischer Aufbau. Kein Content-Spam, sondern zitierfaehige Substanz.',
+    title: 'Content-Strategie für KI-Zitierbarkeit',
+    desc: 'Inhalte so strukturieren, dass KI sie als zitierfähige Quelle erkennt. Klare Aussagen, präzise Definitionen, logischer Aufbau. Kein Content-Spam, sondern zitierfähige Substanz.',
   },
   {
-    title: 'Autoritaets-Aufbau',
-    desc: 'Erwahnungen in Verzeichnissen, Fachpublikationen und PR-Massnahmen. KI bewertet Konsistenz und Verbreitung deiner Marke ueber verschiedene Quellen. Systematischer Aufbau deiner digitalen Reputation.',
+    title: 'Autoritäts-Aufbau',
+    desc: 'Erwähnungen in Verzeichnissen, Fachpublikationen und PR-Maßnahmen. KI bewertet Konsistenz und Verbreitung deiner Marke über verschiedene Quellen. Systematischer Aufbau deiner digitalen Reputation.',
   },
   {
     title: 'Monatliches KI-Sichtbarkeits-Reporting',
-    desc: 'Regelmaessige Pruefung, ob und wie du in KI-Antworten zitiert wirst. Tracking ueber Zeit, Vergleich mit Wettbewerbern und Ableitung konkreter naechster Schritte. Keine Vanity-Metriken.',
+    desc: 'Regelmäßige Prüfung, ob und wie du in KI-Antworten zitiert wirst. Tracking über Zeit, Vergleich mit Wettbewerbern und Ableitung konkreter nächster Schritte. Keine Vanity-Metriken.',
   },
 ];
 
 const TARGET_AUDIENCE = [
   {
     title: 'Hamburger Dienstleister',
-    desc: 'Du gewinnst Kunden ueber Empfehlungen und Reputation. Wenn jemand ChatGPT fragt "Empfiehl mir einen Steuerberater in Hamburg", willst du genannt werden.',
+    desc: 'Du gewinnst Kunden über Empfehlungen und Reputation. Wenn jemand ChatGPT fragt "Empfiehl mir einen Steuerberater in Hamburg", willst du genannt werden.',
   },
   {
     title: 'B2B-Unternehmen',
-    desc: 'Entscheider recherchieren zunehmend ueber KI. Wer bei der Anbietersuche via Perplexity oder ChatGPT nicht auftaucht, existiert fuer diese Zielgruppe nicht.',
+    desc: 'Entscheider recherchieren zunehmend über KI. Wer bei der Anbietersuche via Perplexity oder ChatGPT nicht auftaucht, existiert für diese Zielgruppe nicht.',
   },
   {
     title: 'Lokale Unternehmen',
@@ -79,7 +79,7 @@ const TARGET_AUDIENCE = [
   },
   {
     title: 'Agentur-Wechsler',
-    desc: 'Du bist von deiner aktuellen Agentur enttaeuscht. Die zeigen dir monatlich Google-Rankings, aber niemand trackt, ob KI dich empfiehlt. Du willst jemanden, der das Feld wirklich versteht.',
+    desc: 'Du bist von deiner aktuellen Agentur enttäuscht. Die zeigen dir monatlich Google-Rankings, aber niemand trackt, ob KI dich empfiehlt. Du willst jemanden, der das Feld wirklich versteht.',
   },
 ];
 
@@ -182,10 +182,10 @@ export default function AiSeoAgenturPage() {
               AI SEO Agentur Hamburg: KI-Sichtbarkeit vom Software-Architekten
             </h1>
             <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed mb-4">
-              Die meisten &quot;AI SEO Agenturen&quot; kleben ein neues Label auf alte Leistungen. Hier arbeitet ein Software-Architekt mit ueber 10 Jahren Erfahrung an deiner KI-Sichtbarkeit.
+              Die meisten &quot;AI SEO Agenturen&quot; kleben ein neues Label auf alte Leistungen. Hier arbeitet ein Software-Architekt mit über 10 Jahren Erfahrung an deiner KI-Sichtbarkeit.
             </p>
             <p className="text-base text-gray-500 leading-relaxed max-w-2xl">
-              Keine Backlink-Pakete. Keine Massenbetreuung. Datengetriebene AI SEO Beratung fuer Hamburger Unternehmen, die in ChatGPT, Perplexity und Google AI zitiert werden wollen.
+              Keine Backlink-Pakete. Keine Massenbetreuung. Datengetriebene AI SEO Beratung für Hamburger Unternehmen, die in ChatGPT, Perplexity und Google AI zitiert werden wollen.
             </p>
           </FadeIn>
         </section>
@@ -231,7 +231,7 @@ export default function AiSeoAgenturPage() {
                 <ul className="space-y-4 text-lg text-gray-600 leading-relaxed">
                   <li className="flex gap-3">
                     <span className="text-red-400 shrink-0 mt-1 font-bold">1.</span>
-                    <span><strong className="text-black">Alte Leistungen, neues Label.</strong> 70% der Hamburger Agenturen verkaufen Backlink-Pakete und Content-Produktion als &quot;AI SEO&quot;. An der Methodik hat sich nichts geaendert.</span>
+                    <span><strong className="text-black">Alte Leistungen, neues Label.</strong> 70% der Hamburger Agenturen verkaufen Backlink-Pakete und Content-Produktion als &quot;AI SEO&quot;. An der Methodik hat sich nichts geändert.</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-red-400 shrink-0 mt-1 font-bold">2.</span>
@@ -254,7 +254,7 @@ export default function AiSeoAgenturPage() {
 
               <div className="bg-gray-900 text-white rounded-2xl p-6 md:p-8">
                 <p className="text-lg leading-relaxed">
-                  <strong>Die unbequeme Wahrheit:</strong> Du zahlst fuer Rankings in einem System, das seine Marktmacht verliert. Google beantwortet immer mehr Anfragen direkt. ChatGPT, Perplexity und Copilot uebernehmen die Recherche deiner Zielgruppe. Wer nur Google-Rankings optimiert, optimiert fuer gestern.
+                  <strong>Die unbequeme Wahrheit:</strong> Du zahlst für Rankings in einem System, das seine Marktmacht verliert. Google beantwortet immer mehr Anfragen direkt. ChatGPT, Perplexity und Copilot übernehmen die Recherche deiner Zielgruppe. Wer nur Google-Rankings optimiert, optimiert für gestern.
                 </p>
               </div>
             </div>
@@ -277,7 +277,7 @@ export default function AiSeoAgenturPage() {
                   <span className="text-brand-accent font-bold text-lg">1</span>
                 </div>
                 <h3 className="text-lg font-semibold text-black mb-2">Software-Architekt, kein Marketing-Generalist</h3>
-                <p className="text-base text-gray-600 leading-relaxed">Ueber 10 Jahre Erfahrung in Software-Entwicklung und Web-Architektur. KI-Sichtbarkeit ist ein technisches Problem. Es braucht jemanden, der versteht, wie LLMs Quellen bewerten, nicht jemanden, der Keyword-Listen erstellt.</p>
+                <p className="text-base text-gray-600 leading-relaxed">Über 10 Jahre Erfahrung in Software-Entwicklung und Web-Architektur. KI-Sichtbarkeit ist ein technisches Problem. Es braucht jemanden, der versteht, wie LLMs Quellen bewerten, nicht jemanden, der Keyword-Listen erstellt.</p>
               </div>
               <div className="bg-white border border-brand-accent/20 rounded-2xl p-6">
                 <div className="w-10 h-10 rounded-full bg-brand-accent/10 flex items-center justify-center mb-4">
@@ -290,15 +290,15 @@ export default function AiSeoAgenturPage() {
                 <div className="w-10 h-10 rounded-full bg-brand-accent/10 flex items-center justify-center mb-4">
                   <span className="text-brand-accent font-bold text-lg">3</span>
                 </div>
-                <h3 className="text-lg font-semibold text-black mb-2">Datengetrieben statt Bauchgefuehl</h3>
-                <p className="text-base text-gray-600 leading-relaxed">Messung von echten KI-Zitierungen ueber alle relevanten Plattformen. Kein Reporting mit Vanity-Metriken, sondern nachvollziehbare Daten: Wer zitiert dich? Wo? Wie oft? Und wie veraendert sich das ueber Zeit?</p>
+                <h3 className="text-lg font-semibold text-black mb-2">Datengetrieben statt Bauchgefühl</h3>
+                <p className="text-base text-gray-600 leading-relaxed">Messung von echten KI-Zitierungen über alle relevanten Plattformen. Kein Reporting mit Vanity-Metriken, sondern nachvollziehbare Daten: Wer zitiert dich? Wo? Wie oft? Und wie verändert sich das über Zeit?</p>
               </div>
               <div className="bg-white border border-brand-accent/20 rounded-2xl p-6">
                 <div className="w-10 h-10 rounded-full bg-brand-accent/10 flex items-center justify-center mb-4">
                   <span className="text-brand-accent font-bold text-lg">4</span>
                 </div>
                 <h3 className="text-lg font-semibold text-black mb-2">Keine leeren Garantien</h3>
-                <p className="text-base text-gray-600 leading-relaxed">Niemand kann garantieren, dass ChatGPT dich morgen empfiehlt. Was wir garantieren: nachweisbare Struktur-Arbeit, die deine Chancen auf KI-Zitierungen systematisch erhoeht. Ehrliche Einschaetzung statt Verkaufsdruck.</p>
+                <p className="text-base text-gray-600 leading-relaxed">Niemand kann garantieren, dass ChatGPT dich morgen empfiehlt. Was wir garantieren: nachweisbare Struktur-Arbeit, die deine Chancen auf KI-Zitierungen systematisch erhöht. Ehrliche Einschätzung statt Verkaufsdruck.</p>
               </div>
             </div>
           </FadeIn>
@@ -308,24 +308,24 @@ export default function AiSeoAgenturPage() {
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
           <FadeIn>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-              Ueber Vadim Shchepin
+              Über Vadim Shchepin
             </h2>
             <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
               <div className="flex flex-col md:flex-row gap-6 md:gap-10">
                 <div className="flex-1 space-y-4 text-lg text-gray-600 leading-relaxed">
                   <p>
-                    <strong className="text-black">Senior Software Engineer mit Fokus auf AI SEO.</strong> Ueber 10 Jahre Erfahrung in Software-Entwicklung, Web-Architektur und datengetriebenen Systemen. Entwickler eigener Software-Plattformen mit echten Nutzern.
+                    <strong className="text-black">Senior Software Engineer mit Fokus auf AI SEO.</strong> Über 10 Jahre Erfahrung in Software-Entwicklung, Web-Architektur und datengetriebenen Systemen. Entwickler eigener Software-Plattformen mit echten Nutzern.
                   </p>
                   <p>
-                    Standort: <strong className="text-black">Hamburg-Altona/Ottensen.</strong> Keine verteilte Agentur mit anonymen Mitarbeitern, sondern ein Ansprechpartner, der dein Projekt persoenlich betreut.
+                    Standort: <strong className="text-black">Hamburg-Altona/Ottensen.</strong> Keine verteilte Agentur mit anonymen Mitarbeitern, sondern ein Ansprechpartner, der dein Projekt persönlich betreut.
                   </p>
                   <p>
-                    Der Hintergrund als Software-Architekt ist der entscheidende Unterschied: KI-Sichtbarkeit erfordert tiefes technisches Verstaendnis von LLM-Architektur, Crawling-Mechanismen und strukturierten Daten. Marketing-Wissen allein reicht nicht.
+                    Der Hintergrund als Software-Architekt ist der entscheidende Unterschied: KI-Sichtbarkeit erfordert tiefes technisches Verständnis von LLM-Architektur, Crawling-Mechanismen und strukturierten Daten. Marketing-Wissen allein reicht nicht.
                   </p>
                   <ul className="space-y-2 text-base">
                     <li className="flex gap-3">
                       <span className="text-brand-accent shrink-0 mt-0.5">&#10003;</span>
-                      <span>Ueber 10 Jahre Software- und Web-Development-Erfahrung</span>
+                      <span>Über 10 Jahre Software- und Web-Development-Erfahrung</span>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-brand-accent shrink-0 mt-0.5">&#10003;</span>
@@ -333,11 +333,11 @@ export default function AiSeoAgenturPage() {
                     </li>
                     <li className="flex gap-3">
                       <span className="text-brand-accent shrink-0 mt-0.5">&#10003;</span>
-                      <span>Persoenliche Betreuung, kein Agentur-Overhead</span>
+                      <span>Persönliche Betreuung, kein Agentur-Overhead</span>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-brand-accent shrink-0 mt-0.5">&#10003;</span>
-                      <span>Ansaessig in Hamburg-Altona</span>
+                      <span>Ansässig in Hamburg-Altona</span>
                     </li>
                   </ul>
                   <div className="pt-2">
@@ -345,7 +345,7 @@ export default function AiSeoAgenturPage() {
                       href="/ueber-mich"
                       className="text-brand-accent font-medium hover:underline transition-colors"
                     >
-                      Mehr ueber Vadim erfahren &rarr;
+                      Mehr über Vadim erfahren &rarr;
                     </a>
                   </div>
                 </div>
@@ -361,7 +361,7 @@ export default function AiSeoAgenturPage() {
               Was du bekommst
             </h2>
             <p className="text-lg text-gray-500 mb-10">
-              Fuenf Bausteine fuer messbare KI-Sichtbarkeit. Kein Baustein ist optional.
+              Fünf Bausteine für messbare KI-Sichtbarkeit. Kein Baustein ist optional.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {SERVICES.map((service, i) => (
@@ -378,10 +378,10 @@ export default function AiSeoAgenturPage() {
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
           <FadeIn>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
-              Fuer wen ist das?
+              Für wen ist das?
             </h2>
             <p className="text-lg text-gray-500 mb-10">
-              AI SEO Beratung ist nicht fuer jeden. Hier ist, fuer wen es sich lohnt.
+              AI SEO Beratung ist nicht für jeden. Hier ist, für wen es sich lohnt.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {TARGET_AUDIENCE.map((item) => (
@@ -424,11 +424,11 @@ export default function AiSeoAgenturPage() {
                 <ul className="space-y-3 text-base text-gray-600 leading-relaxed">
                   <li className="flex gap-3">
                     <span className="text-red-400 shrink-0 mt-1">&#10005;</span>
-                    <span>&quot;Garantierte KI-Rankings&quot;. Niemand kann das garantieren, weil KI-Antworten kontextabhaengig sind.</span>
+                    <span>&quot;Garantierte KI-Rankings&quot;. Niemand kann das garantieren, weil KI-Antworten kontextabhängig sind.</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-red-400 shrink-0 mt-1">&#10005;</span>
-                    <span>Fokus auf Vanity-Metriken wie Wortanzahl oder Keyword-Dichte statt auf tatsaechliche KI-Zitierungen.</span>
+                    <span>Fokus auf Vanity-Metriken wie Wortanzahl oder Keyword-Dichte statt auf tatsächliche KI-Zitierungen.</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-red-400 shrink-0 mt-1">&#10005;</span>
@@ -436,11 +436,11 @@ export default function AiSeoAgenturPage() {
                   </li>
                   <li className="flex gap-3">
                     <span className="text-red-400 shrink-0 mt-1">&#10005;</span>
-                    <span>Standardisierte &quot;AI SEO Pakete&quot;. Das Feld ist zu jung und zu individuell fuer Paketloesungen.</span>
+                    <span>Standardisierte &quot;AI SEO Pakete&quot;. Das Feld ist zu jung und zu individuell für Paketlösungen.</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-red-400 shrink-0 mt-1">&#10005;</span>
-                    <span>Kein technisches Team. AI SEO ohne Software-Verstaendnis ist wie Autotuning ohne Werkstatt.</span>
+                    <span>Kein technisches Team. AI SEO ohne Software-Verständnis ist wie Autotuning ohne Werkstatt.</span>
                   </li>
                 </ul>
               </div>
@@ -451,23 +451,23 @@ export default function AiSeoAgenturPage() {
                 <ul className="space-y-3 text-base text-gray-600 leading-relaxed">
                   <li className="flex gap-3">
                     <span className="text-brand-accent shrink-0 mt-1">&#10003;</span>
-                    <span>Transparente Methodik: klar erklaert, was sie tun und warum.</span>
+                    <span>Transparente Methodik: klar erklärt, was sie tun und warum.</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-brand-accent shrink-0 mt-1">&#10003;</span>
-                    <span>Misst tatsaechliche KI-Zitierungen, nicht nur Google-Rankings.</span>
+                    <span>Misst tatsächliche KI-Zitierungen, nicht nur Google-Rankings.</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-brand-accent shrink-0 mt-1">&#10003;</span>
-                    <span>Verbindet technisches SEO mit Content-Strategie und Autoritaets-Aufbau.</span>
+                    <span>Verbindet technisches SEO mit Content-Strategie und Autoritäts-Aufbau.</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-brand-accent shrink-0 mt-1">&#10003;</span>
-                    <span>Versteht E-E-A-T im KI-Kontext und kann erklaeren, warum das relevant ist.</span>
+                    <span>Versteht E-E-A-T im KI-Kontext und kann erklären, warum das relevant ist.</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-brand-accent shrink-0 mt-1">&#10003;</span>
-                    <span>Ehrliche Einschaetzung statt Verkaufsdruck. Sagt auch, wenn AI SEO fuer dich noch keinen Sinn macht.</span>
+                    <span>Ehrliche Einschätzung statt Verkaufsdruck. Sagt auch, wenn AI SEO für dich noch keinen Sinn macht.</span>
                   </li>
                 </ul>
               </div>
@@ -479,7 +479,7 @@ export default function AiSeoAgenturPage() {
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
           <FadeIn>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
-              So laeuft die Zusammenarbeit ab
+              So läuft die Zusammenarbeit ab
             </h2>
             <p className="text-lg text-gray-500 mb-10">
               Kein Agentur-Prozess mit Kickoff-Workshops und Quartals-Reviews. Stattdessen: schneller Start, klare Schritte, messbare Ergebnisse.
@@ -493,7 +493,7 @@ export default function AiSeoAgenturPage() {
                 </div>
                 <div className="pb-8">
                   <h3 className="text-lg font-semibold text-black mb-1">Kostenlose Kurzanalyse</h3>
-                  <p className="text-base text-gray-600 leading-relaxed">Du erhaeltst innerhalb von 48 Stunden eine erste Einschaetzung: Wie sichtbar ist dein Unternehmen aktuell in ChatGPT, Perplexity und Google AI? Wo liegen die groessten Chancen? Keine Verpflichtung.</p>
+                  <p className="text-base text-gray-600 leading-relaxed">Du erhältst innerhalb von 48 Stunden eine erste Einschätzung: Wie sichtbar ist dein Unternehmen aktuell in ChatGPT, Perplexity und Google AI? Wo liegen die größten Chancen? Keine Verpflichtung.</p>
                 </div>
               </div>
               <div className="flex gap-5">
@@ -503,7 +503,7 @@ export default function AiSeoAgenturPage() {
                 </div>
                 <div className="pb-8">
                   <h3 className="text-lg font-semibold text-black mb-1">Tiefenanalyse & Strategie</h3>
-                  <p className="text-base text-gray-600 leading-relaxed">Vollstaendiges KI-Sichtbarkeits-Audit ueber alle relevanten Plattformen. Wettbewerbsanalyse. Individuelle Strategie mit priorisierten Massnahmen. Du weisst genau, was zu tun ist und warum.</p>
+                  <p className="text-base text-gray-600 leading-relaxed">Vollständiges KI-Sichtbarkeits-Audit über alle relevanten Plattformen. Wettbewerbsanalyse. Individuelle Strategie mit priorisierten Maßnahmen. Du weißt genau, was zu tun ist und warum.</p>
                 </div>
               </div>
               <div className="flex gap-5">
@@ -513,7 +513,7 @@ export default function AiSeoAgenturPage() {
                 </div>
                 <div className="pb-8">
                   <h3 className="text-lg font-semibold text-black mb-1">Umsetzung</h3>
-                  <p className="text-base text-gray-600 leading-relaxed">Technische Optimierung, Content-Anpassung, Schema-Markup, llms.txt und Autoritaets-Aufbau. Jeder Schritt ist nachvollziehbar dokumentiert. Keine Black Box.</p>
+                  <p className="text-base text-gray-600 leading-relaxed">Technische Optimierung, Content-Anpassung, Schema-Markup, llms.txt und Autoritäts-Aufbau. Jeder Schritt ist nachvollziehbar dokumentiert. Keine Black Box.</p>
                 </div>
               </div>
               <div className="flex gap-5">
@@ -533,7 +533,7 @@ export default function AiSeoAgenturPage() {
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
           <FadeIn>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
-              Kostenuebersicht: Was AI SEO Beratung kostet
+              Kostenübersicht: Was AI SEO Beratung kostet
             </h2>
             <p className="text-lg text-gray-500 mb-8">
               Ehrliche Orientierung. Kein Versteckspiel bei Preisen.
@@ -542,18 +542,18 @@ export default function AiSeoAgenturPage() {
               <div className="bg-white border border-gray-100 rounded-2xl p-6">
                 <h3 className="text-lg font-semibold text-black mb-2">Einmaliges Audit</h3>
                 <p className="text-2xl font-semibold text-brand-accent mb-2">500 - 2.000 &euro;</p>
-                <p className="text-base text-gray-600 leading-relaxed">Vollstaendige Bestandsaufnahme deiner KI-Sichtbarkeit ueber alle relevanten Plattformen. Inkl. Handlungsempfehlungen.</p>
+                <p className="text-base text-gray-600 leading-relaxed">Vollständige Bestandsaufnahme deiner KI-Sichtbarkeit über alle relevanten Plattformen. Inkl. Handlungsempfehlungen.</p>
               </div>
               <div className="bg-white border border-brand-accent/30 rounded-2xl p-6 relative">
                 <span className="absolute -top-3 left-6 bg-brand-accent text-white text-xs font-bold px-3 py-1 rounded-full">Am beliebtesten</span>
                 <h3 className="text-lg font-semibold text-black mb-2">Laufende Optimierung</h3>
                 <p className="text-2xl font-semibold text-brand-accent mb-2">1.000 - 5.000 &euro;/Monat</p>
-                <p className="text-base text-gray-600 leading-relaxed">Kontinuierliche Optimierung, Content-Anpassung, Monitoring und Autoritaets-Aufbau. Monatliches KI-Sichtbarkeits-Reporting.</p>
+                <p className="text-base text-gray-600 leading-relaxed">Kontinuierliche Optimierung, Content-Anpassung, Monitoring und Autoritäts-Aufbau. Monatliches KI-Sichtbarkeits-Reporting.</p>
               </div>
               <div className="bg-white border border-gray-100 rounded-2xl p-6">
                 <h3 className="text-lg font-semibold text-black mb-2">Projektbasiert</h3>
                 <p className="text-2xl font-semibold text-brand-accent mb-2">Individuell</p>
-                <p className="text-base text-gray-600 leading-relaxed">Einmalige Projekte wie Schema-Optimierung, llms.txt-Setup oder Content-Ueberarbeitung. Umfang bestimmt den Preis.</p>
+                <p className="text-base text-gray-600 leading-relaxed">Einmalige Projekte wie Schema-Optimierung, llms.txt-Setup oder Content-Überarbeitung. Umfang bestimmt den Preis.</p>
               </div>
             </div>
             <div className="bg-brand-accent/10 border border-brand-accent/20 rounded-xl p-5 mt-6">
@@ -572,19 +572,19 @@ export default function AiSeoAgenturPage() {
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
               <p>
-                Hamburg ist Deutschlands zweitgroesster Tech-Hub und einer der staerksten Medienstandorte Europas. Die Stadt vereint Technologie, Medien, spezialisierte Dienstleistungen und eine starke Gruenderszene. Genau diese Branchen profitieren am meisten von KI-Sichtbarkeit, weil ihre Zielgruppen KI-Tools frueher adaptiert haben als der Durchschnitt.
+                Hamburg ist Deutschlands zweitgrößter Tech-Hub und einer der stärksten Medienstandorte Europas. Die Stadt vereint Technologie, Medien, spezialisierte Dienstleistungen und eine starke Gründerszene. Genau diese Branchen profitieren am meisten von KI-Sichtbarkeit, weil ihre Zielgruppen KI-Tools früher adaptiert haben als der Durchschnitt.
               </p>
               <p>
-                <strong className="text-black">Der lokale Vorteil:</strong> Wenn ChatGPT oder Perplexity nach einem Anbieter in Hamburg gefragt wird, zieht die KI lokale Signale heran: Google Business Profile, regionale Erwahnungen, Branchenverzeichnisse. Unternehmen in Altona, Ottensen, der HafenCity oder Eimsbuettel, die diese Signale gezielt staerken, erhoehen ihre Chancen auf KI-Empfehlungen erheblich.
+                <strong className="text-black">Der lokale Vorteil:</strong> Wenn ChatGPT oder Perplexity nach einem Anbieter in Hamburg gefragt wird, zieht die KI lokale Signale heran: Google Business Profile, regionale Erwähnungen, Branchenverzeichnisse. Unternehmen in Altona, Ottensen, der HafenCity oder Eimsbüttel, die diese Signale gezielt stärken, erhöhen ihre Chancen auf KI-Empfehlungen erheblich.
               </p>
               <p>
-                <strong className="text-black">Das Zeitfenster:</strong> Die meisten Hamburger Wettbewerber konzentrieren sich weiterhin ausschliesslich auf klassisches SEO. Wer jetzt mit AI SEO anfaengt, hat in vielen Branchen noch wenig direkte Konkurrenz. Dieses Fenster schliesst sich, wenn die grossen Agenturen das Thema in ihre Standard-Pakete aufnehmen.
+                <strong className="text-black">Das Zeitfenster:</strong> Die meisten Hamburger Wettbewerber konzentrieren sich weiterhin ausschließlich auf klassisches SEO. Wer jetzt mit AI SEO anfängt, hat in vielen Branchen noch wenig direkte Konkurrenz. Dieses Fenster schließt sich, wenn die großen Agenturen das Thema in ihre Standard-Pakete aufnehmen.
               </p>
               <p>
-                <strong className="text-black">Branchen mit dem groessten Hebel in Hamburg:</strong> Rechtsanwaelte, Steuerberater, Aerzte und Therapeuten, Architekten, IT-Dienstleister, Unternehmensberater, Immobilienmakler und spezialisierte Handwerksbetriebe. Ueberall dort, wo Vertrauen und Empfehlungen den Unterschied machen, wird KI-Sichtbarkeit zum entscheidenden Wettbewerbsvorteil.
+                <strong className="text-black">Branchen mit dem größten Hebel in Hamburg:</strong> Rechtsanwälte, Steuerberater, Ärzte und Therapeuten, Architekten, IT-Dienstleister, Unternehmensberater, Immobilienmakler und spezialisierte Handwerksbetriebe. Überall dort, wo Vertrauen und Empfehlungen den Unterschied machen, wird KI-Sichtbarkeit zum entscheidenden Wettbewerbsvorteil.
               </p>
               <p>
-                <strong className="text-black">SEO in Altona und Ottensen:</strong> Als ansaessiger Spezialist in Hamburg-Altona kennt Vadim Shchepin die lokale Unternehmenslandschaft. Kurze Wege, persoenliche Treffen und ein echtes Verstaendnis fuer den Hamburger Markt - das ist der Vorteil gegenueber Remote-Agenturen ohne lokalen Bezug.
+                <strong className="text-black">SEO in Altona und Ottensen:</strong> Als ansässiger Spezialist in Hamburg-Altona kennt Vadim Shchepin die lokale Unternehmenslandschaft. Kurze Wege, persönliche Treffen und ein echtes Verständnis für den Hamburger Markt - das ist der Vorteil gegenüber Remote-Agenturen ohne lokalen Bezug.
               </p>
             </div>
           </FadeIn>
@@ -594,7 +594,7 @@ export default function AiSeoAgenturPage() {
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
           <FadeIn>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-10">
-              Haeufig gestellte Fragen zur AI SEO Agentur
+              Häufig gestellte Fragen zur AI SEO Agentur
             </h2>
             <div className="space-y-6">
               {FAQ_ITEMS.map((item) => (
@@ -611,24 +611,24 @@ export default function AiSeoAgenturPage() {
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
           <FadeIn>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-              Quellen und weiterfuehrende Informationen
+              Quellen und weiterführende Informationen
             </h2>
             <ul className="space-y-3 text-base text-gray-600 leading-relaxed">
               <li>
                 <span className="font-medium text-black">Aggarwal et al. (2023):</span>{' '}
-                &quot;GEO: Generative Engine Optimization&quot; - die erste akademische Studie zu Generative Engine Optimization und wie Inhalte fuer KI-Zitierbarkeit optimiert werden koennen.
+                &quot;GEO: Generative Engine Optimization&quot; - die erste akademische Studie zu Generative Engine Optimization und wie Inhalte für KI-Zitierbarkeit optimiert werden können.
               </li>
               <li>
                 <span className="font-medium text-black">Google Search Central:</span>{' '}
-                Dokumentation zu strukturierten Daten und Schema.org Markup. Grundlage fuer die technische KI-Sichtbarkeits-Optimierung.
+                Dokumentation zu strukturierten Daten und Schema.org Markup. Grundlage für die technische KI-Sichtbarkeits-Optimierung.
               </li>
               <li>
                 <span className="font-medium text-black">Search Engine Journal:</span>{' '}
-                Laufende Berichterstattung ueber die Entwicklung von AI Overviews und deren Einfluss auf SEO-Strategien.
+                Laufende Berichterstattung über die Entwicklung von AI Overviews und deren Einfluss auf SEO-Strategien.
               </li>
               <li>
                 <span className="font-medium text-black">Gartner (2025):</span>{' '}
-                Prognose: Bis 2026 werden 25% aller Suchanfragen ueber KI-gesteuerte Interfaces beantwortet. Das unterstreicht die Dringlichkeit von AI SEO.
+                Prognose: Bis 2026 werden 25% aller Suchanfragen über KI-gesteuerte Interfaces beantwortet. Das unterstreicht die Dringlichkeit von AI SEO.
               </li>
             </ul>
           </FadeIn>
@@ -652,7 +652,7 @@ export default function AiSeoAgenturPage() {
                   className="bg-white border border-gray-100 rounded-2xl p-5 hover:border-brand-accent transition-colors group"
                 >
                   <p className="text-base font-semibold text-black group-hover:text-brand-accent transition-colors">Sichtbarkeit in ChatGPT</p>
-                  <p className="text-sm text-gray-500 mt-1">Konkrete Strategien fuer ChatGPT-Zitierungen.</p>
+                  <p className="text-sm text-gray-500 mt-1">Konkrete Strategien für ChatGPT-Zitierungen.</p>
                 </a>
               </div>
             </div>
@@ -667,13 +667,13 @@ export default function AiSeoAgenturPage() {
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
               <p>
-                KI-gesteuerte Suche waechst exponentiell. Google integriert AI Overviews in immer mehr Suchanfragen. ChatGPT hat ueber 200 Millionen woechentliche Nutzer. Perplexity waechst zweistellig pro Monat. Die Frage ist nicht ob, sondern wann deine Zielgruppe ueber KI nach Anbietern sucht.
+                KI-gesteuerte Suche wächst exponentiell. Google integriert AI Overviews in immer mehr Suchanfragen. ChatGPT hat über 200 Millionen wöchentliche Nutzer. Perplexity wächst zweistellig pro Monat. Die Frage ist nicht ob, sondern wann deine Zielgruppe über KI nach Anbietern sucht.
               </p>
               <p>
-                <strong className="text-black">Der First-Mover-Vorteil ist real:</strong> KI-Systeme bevorzugen etablierte, konsistente Quellen. Wer jetzt die Grundlagen legt - strukturierte Daten, zitierfaehige Inhalte, konsistente Praesenz - baut einen Vorsprung auf, den Nachzuegler nur schwer aufholen koennen.
+                <strong className="text-black">Der First-Mover-Vorteil ist real:</strong> KI-Systeme bevorzugen etablierte, konsistente Quellen. Wer jetzt die Grundlagen legt - strukturierte Daten, zitierfähige Inhalte, konsistente Präsenz - baut einen Vorsprung auf, den Nachzügler nur schwer aufholen können.
               </p>
               <p>
-                <strong className="text-black">Die Kosten des Wartens:</strong> Jeder Monat ohne KI-Sichtbarkeit bedeutet verpasste Anfragen von potenziellen Kunden, die ueber ChatGPT, Perplexity oder Google AI nach genau deiner Leistung suchen. Diese Anfragen gehen an deine Wettbewerber - oder an niemanden, weil die KI dich nicht kennt.
+                <strong className="text-black">Die Kosten des Wartens:</strong> Jeder Monat ohne KI-Sichtbarkeit bedeutet verpasste Anfragen von potenziellen Kunden, die über ChatGPT, Perplexity oder Google AI nach genau deiner Leistung suchen. Diese Anfragen gehen an deine Wettbewerber - oder an niemanden, weil die KI dich nicht kennt.
               </p>
             </div>
           </FadeIn>
@@ -684,10 +684,10 @@ export default function AiSeoAgenturPage() {
           <FadeIn>
             <div className="bg-gray-900 text-white rounded-2xl p-8 md:p-12 text-center">
               <h2 className="text-2xl md:text-3xl font-semibold tracking-[-0.03em] mb-4">
-                Bereit fuer echte KI-Sichtbarkeit?
+                Bereit für echte KI-Sichtbarkeit?
               </h2>
               <p className="text-lg text-gray-300 leading-relaxed max-w-xl mx-auto mb-4">
-                Keine Pakete. Keine Templates. Persoenliche Analyse und ehrliche Einschaetzung von einem Software-Architekten mit ueber 10 Jahren Erfahrung.
+                Keine Pakete. Keine Templates. Persönliche Analyse und ehrliche Einschätzung von einem Software-Architekten mit über 10 Jahren Erfahrung.
               </p>
               <p className="text-base text-gray-400 leading-relaxed max-w-xl mx-auto mb-8">
                 Kostenlose Kurzanalyse: Finde in 48 Stunden heraus, ob und wie KI-Systeme dein Unternehmen aktuell empfehlen. Kein Verkaufsdruck, keine Verpflichtung.
