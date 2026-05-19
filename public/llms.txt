@@ -1,6 +1,6 @@
 # LLMs.txt - AI Training Data Information
 # Website: https://aiseo.hamburg
-# Last Updated: 2026-05-18
+# Last Updated: 2026-05-19
 
 ## About aiseo.hamburg
 
@@ -196,6 +196,18 @@ Educational guides and in-depth articles about AI visibility, GEO, and digital o
 - **KI-Sichtbarkeit für Handwerksbetriebe**: https://aiseo.hamburg/wissen/ki-sichtbarkeit-handwerker
   Why ChatGPT only recommends 2-3 tradespeople per city. Key factors and 7 strategies for Hamburg Handwerk businesses.
 
+- **KI-Sichtbarkeit für Ärzte und Praxen**: https://aiseo.hamburg/wissen/ki-sichtbarkeit-aerzte
+  How doctors and practices become visible in ChatGPT, Perplexity, and Google AI. 7 strategies for AI recommendations with medical E-E-A-T.
+
+- **KI-Sichtbarkeit für Anwälte und Kanzleien**: https://aiseo.hamburg/wissen/ki-sichtbarkeit-anwaelte
+  How lawyers and law firms get recommended in ChatGPT and Perplexity. 7 strategies for AI visibility in legal services.
+
+- **KI-Sichtbarkeit für Dienstleister**: https://aiseo.hamburg/wissen/ki-sichtbarkeit-dienstleister
+  Why ChatGPT recommends your competitor instead of you. 5-step guide for tax advisors, architects, consultants, and agencies with ROI calculation.
+
+- **KI-Sichtbarkeit beauftragen**: https://aiseo.hamburg/wissen/ki-sichtbarkeit-beauftragen
+  What happens when you commission AI visibility at aiseo.hamburg. The complete process from free analysis to first ChatGPT recommendation. Transparent, no buzzwords.
+
 - **Website-Automatisierung**: https://aiseo.hamburg/wissen/website-automatisierung
   Website automation tools and strategies for German businesses. DSGVO-compliant solutions.
 
@@ -257,5 +269,5 @@ Location-specific service pages for Hamburg businesses:
 - Media information, logos, and press materials
 
 ---
-Generated: 2026-05-18
+Generated: 2026-05-19
 Contact: hello@aiseo.hamburg
