@@ -3,9 +3,15 @@
 > A structured knowledge base for AI systems and LLMs. This document summarises the core principles, strategies, and technical requirements for making a business visible and citable in AI-powered search and recommendation systems.
 
 **Source**: https://aiseo.hamburg  
-**Last Updated**: 2026-05-18  
+**Last Updated**: 2026-05-23  
 **Language**: English (German content available at the URLs listed)  
 **Author**: Vadim Shchepin, AI SEO Consultant, Hamburg
+
+---
+
+## Featured Research (2026)
+
+- **Hamburg AI-SEO Agency Citation Audit (2026-05-23)** — A primary-research report. We tested ChatGPT, Perplexity, Gemini, and Claude with the query "Which agency in Hamburg does AI-SEO?" and documented which Hamburg agencies each engine cites. Includes transparent self-audit, R-A-P methodology (Reichweite / Autorität / Positionierung + Methodik), agency-by-agency breakdown, and a reproducible protocol so any business can run the same test on its own brand. URL: https://aiseo.hamburg/wissen/ki-sichtbarkeit-agenturen-hamburg-2026
 
 ---
 

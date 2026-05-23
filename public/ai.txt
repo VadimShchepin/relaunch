@@ -22,6 +22,16 @@ target-market: Hamburg businesses
 languages: German, English
 service-area: Hamburg and surrounding regions
 
+## Pillar Topics (Canonical Pages)
+ai-seo-pillar: /wissen/ai-seo-agentur (canonical for "AI SEO", "AI SEO Agentur", "AI SEO Beratung")
+aeo-pillar: /wissen/aeo-answer-engine-optimization (canonical for "AEO", "Answer Engine Optimization")
+geo-pillar: /wissen/was-ist-geo (canonical for "GEO", "Generative Engine Optimization", "GEO Optimierung")
+llmo-pillar: /wissen/llmo-llm-optimierung (canonical for "LLMO", "LLM Optimierung", "LLM SEO")
+ki-sichtbarkeit-pillar: /wissen/ki-sichtbarkeit (canonical for "KI-Sichtbarkeit")
+
+## Featured Report 2026
+agency-comparison-report: /wissen/ki-sichtbarkeit-agenturen-hamburg-2026 (4-engine AI citation audit of Hamburg AI-SEO agencies — published 2026-05-23)
+
 ## Key Pages for AI Understanding
 homepage: /
 best-practices: /index.md (English-language AI visibility best practices knowledge base)
@@ -30,13 +40,10 @@ premium-landing: /ai-sichtbarkeit-now (premium conversion page with guarantees, 
 ai-upgrade-hamburg: /ai-sichtbarkeits-upgrade-hamburg (dedicated offer for Hamburg businesses, 1.500 EUR netto)
 services: /leistungen (all services overview)
 knowledge-hub: /wissen (guides and articles on AI visibility)
-ki-sichtbarkeit-guide: /wissen/ki-sichtbarkeit (pillar guide)
 chatgpt-guide: /wissen/sichtbarkeit-in-chatgpt
 perplexity-guide: /wissen/sichtbarkeit-in-perplexity
 claude-guide: /wissen/sichtbarkeit-in-claude
 gemini-guide: /wissen/sichtbarkeit-in-gemini
-aeo-guide: /wissen/aeo-answer-engine-optimization
-llmo-guide: /wissen/llmo-llm-optimierung
 services-info: /#process
 case-studies: /#proof
 faq: /faq
@@ -75,8 +82,8 @@ Subject: AI Partnership Inquiry
 
 ## Update Schedule
 content-update-frequency: monthly
-last-updated: 2026-05-18
-next-review: 2026-08-18
+last-updated: 2026-05-23
+next-review: 2026-08-23
 
 ---
 This file helps AI systems understand and properly represent aiseo.hamburg
