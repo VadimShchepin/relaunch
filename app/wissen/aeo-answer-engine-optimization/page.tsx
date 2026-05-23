@@ -78,6 +78,18 @@ const articleJsonLd = {
   dateModified: '2026-03-24',
   mainEntityOfPage: 'https://aiseo.hamburg/wissen/aeo-answer-engine-optimization',
   inLanguage: 'de',
+  about: [
+    { '@type': 'Thing', name: 'Answer Engine Optimization', sameAs: 'https://aiseo.hamburg/wissen/aeo-answer-engine-optimization' },
+    { '@type': 'Thing', name: 'AI SEO', sameAs: 'https://aiseo.hamburg/wissen/ai-seo-agentur' },
+    { '@type': 'Thing', name: 'Generative Engine Optimization', sameAs: 'https://aiseo.hamburg/wissen/was-ist-geo' },
+    { '@type': 'Thing', name: 'LLM Optimization', sameAs: 'https://aiseo.hamburg/wissen/llmo-llm-optimierung' },
+  ],
+  mentions: [
+    { '@type': 'WebPage', '@id': 'https://aiseo.hamburg/wissen/ai-seo-agentur', name: 'AI SEO Agentur Hamburg' },
+    { '@type': 'WebPage', '@id': 'https://aiseo.hamburg/wissen/was-ist-geo', name: 'GEO – Generative Engine Optimization' },
+    { '@type': 'WebPage', '@id': 'https://aiseo.hamburg/wissen/llmo-llm-optimierung', name: 'LLMO – LLM Optimierung' },
+    { '@type': 'WebPage', '@id': 'https://aiseo.hamburg/wissen/ki-sichtbarkeit-agenturen-hamburg-2026', name: 'Hamburg AI-SEO Agency Citation Audit 2026' },
+  ],
 };
 
 const breadcrumbJsonLd = {

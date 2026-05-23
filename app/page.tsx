@@ -24,6 +24,82 @@ export default function Page() {
             <div id="differentiation"><Differentiation /></div>
             <div id="process"><Process /></div>
             <div id="about"><AboutMe /></div>
+            <div id="disziplinen">
+                <section className="py-20 md:py-24 lg:py-32 px-6 md:px-12 lg:px-20 max-w-[1200px] mx-auto bg-brand-bg">
+                    <div className="text-center mb-12 md:mb-16">
+                        <p className="text-xs uppercase tracking-[0.2em] text-brand-accent font-semibold mb-4">Drei Disziplinen, eine Frage</p>
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-black tracking-[-0.04em] mb-6">
+                            AI SEO. AEO. GEO.
+                        </h2>
+                        <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                            Drei sich überlappende, aber technisch unterschiedliche Disziplinen — mit einer gemeinsamen Frage: Wie wird dein Unternehmen 2026 von KI-Systemen empfohlen?
+                        </p>
+                    </div>
+
+                    <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+                        <a
+                            href="/wissen/ai-seo-agentur"
+                            className="group bg-white rounded-2xl p-8 border border-gray-100 hover:border-brand-accent hover:shadow-lg transition-all"
+                        >
+                            <div className="text-xs uppercase tracking-[0.15em] font-semibold text-brand-accent mb-3">AI SEO</div>
+                            <h3 className="text-2xl font-semibold text-black mb-3 tracking-tight leading-tight">
+                                Search Optimization für KI-Engines
+                            </h3>
+                            <p className="text-gray-600 text-base leading-relaxed mb-6">
+                                SEO angepasst an die Welt von ChatGPT, Perplexity und Gemini. Nicht „Platz 1 auf Google", sondern die zitierte Quelle in der KI-Antwort.
+                            </p>
+                            <span className="text-sm font-semibold text-black inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                                Was AI SEO leistet
+                                <ArrowRightIcon className="w-4 h-4" />
+                            </span>
+                        </a>
+
+                        <a
+                            href="/wissen/aeo-answer-engine-optimization"
+                            className="group bg-white rounded-2xl p-8 border border-gray-100 hover:border-brand-accent hover:shadow-lg transition-all"
+                        >
+                            <div className="text-xs uppercase tracking-[0.15em] font-semibold text-brand-accent mb-3">AEO</div>
+                            <h3 className="text-2xl font-semibold text-black mb-3 tracking-tight leading-tight">
+                                Answer Engine Optimization
+                            </h3>
+                            <p className="text-gray-600 text-base leading-relaxed mb-6">
+                                Inhalte so strukturieren, dass KI-Antwort-Systeme sie direkt als Antwort verwenden. Frage rein, deine Marke raus — ohne Umweg über die Klick-Liste.
+                            </p>
+                            <span className="text-sm font-semibold text-black inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                                AEO-Guide lesen
+                                <ArrowRightIcon className="w-4 h-4" />
+                            </span>
+                        </a>
+
+                        <a
+                            href="/wissen/was-ist-geo"
+                            className="group bg-white rounded-2xl p-8 border border-gray-100 hover:border-brand-accent hover:shadow-lg transition-all"
+                        >
+                            <div className="text-xs uppercase tracking-[0.15em] font-semibold text-brand-accent mb-3">GEO</div>
+                            <h3 className="text-2xl font-semibold text-black mb-3 tracking-tight leading-tight">
+                                Generative Engine Optimization
+                            </h3>
+                            <p className="text-gray-600 text-base leading-relaxed mb-6">
+                                Optimierung für generative KI: Wie Claude, Gemini und ChatGPT deine Inhalte abrufen und in eigene Antworten einbauen — und wie du dort zur Quelle wirst.
+                            </p>
+                            <span className="text-sm font-semibold text-black inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                                GEO verstehen
+                                <ArrowRightIcon className="w-4 h-4" />
+                            </span>
+                        </a>
+                    </div>
+
+                    <div className="text-center mt-12 md:mt-16">
+                        <a
+                            href="/wissen/ki-sichtbarkeit-agenturen-hamburg-2026"
+                            className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-black transition-colors group"
+                        >
+                            Neu: Welche Hamburger Agentur wird in welcher KI zitiert? — Unser 4-KI-Test
+                            <ArrowRightIcon className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                        </a>
+                    </div>
+                </section>
+            </div>
             <div id="offer"><Offer /></div>
             <div id="faq">
                 <section className="py-20 md:py-24 lg:py-32 px-6 md:px-12 lg:px-20 max-w-[800px] mx-auto bg-white">

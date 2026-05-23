@@ -138,6 +138,13 @@ export default function RootLayout({
                             },
                             "serviceType": ["AI SEO", "KI-Sichtbarkeit", "GEO", "AEO", "ChatGPT Optimierung", "website development"],
                             "priceRange": "€€",
+                            "aggregateRating": {
+                                "@type": "AggregateRating",
+                                "ratingValue": "5.0",
+                                "reviewCount": "5",
+                                "bestRating": "5",
+                                "worstRating": "1"
+                            },
                             "logo": {
                                 "@type": "ImageObject",
                                 "url": "https://aiseo.hamburg/android-chrome-512x512.png",
