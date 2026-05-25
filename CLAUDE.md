@@ -91,6 +91,14 @@ Tests use Vitest + Testing Library with jsdom. Test files use `*.test.tsx` suffi
 - Use `next lint --fix` for formatting
 - Tailwind utilities for layout; `app/globals.css` for rare overrides
 
+## Writing Style (content pages and copy)
+
+- **No em dashes (`—`).** They are a strong AI tell and read as machine-generated. Use periods, commas, colons, or parentheses instead. This applies to all body copy, headings, JSON-LD descriptions, meta descriptions, and FAQ answers.
+- **No raw API endpoints, file paths, or internal implementation details in user-facing copy.** Describe what was done in plain language. `/v3/keywords_data/google_ads/search_volume/live` belongs in code or in research notes, not in published articles.
+- **Run the `humanizer` skill** on any non-trivial article before publishing. Strip the patterns from Wikipedia's "Signs of AI writing" guide: copula avoidance (`stands as`, `serves as`), superficial `-ing` constructions, vague attributions (`industry observers`), rule-of-three padding, false ranges, promotional adjectives (`groundbreaking`, `vibrant`, `seamless`), and signposting (`let's dive in`, `here's what you need to know`).
+- **No emojis** in body copy unless the user explicitly asks for them.
+- **Use straight quotes** (`"..."`), not curly quotes (`"..."`), in source. German typographic quotes (`„..."`) are correct for German content.
+
 ## Environment Variables
 
 Required in `.env.local` (see `.env.example`):
