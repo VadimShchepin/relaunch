@@ -6,31 +6,31 @@ import { Button } from '@/components/ui/Button';
 const PAGES = [
   {
     title: 'KI-Sichtbarkeit Agentur Hamburg',
-    description: 'Die umbrechende Service-Seite fuer Unternehmen, die in KI-Systemen konkret genannt werden wollen.',
+    description: 'Die umbrechende Service-Seite für Unternehmen, die in KI-Systemen konkret genannt werden wollen.',
     href: '/hamburg/ki-sichtbarkeit-agentur',
     tag: 'Kernleistung',
   },
   {
     title: 'AI SEO Agentur Hamburg',
-    description: 'Kommerzielle Local-Intent-Seite fuer Unternehmen, die bereits aktiv nach AI SEO suchen.',
+    description: 'Kommerzielle Local-Intent-Seite für Unternehmen, die bereits aktiv nach AI SEO suchen.',
     href: '/hamburg/ai-seo-agentur',
     tag: 'AI SEO',
   },
   {
     title: 'ChatGPT Optimierung Hamburg',
-    description: 'Wie Unternehmen in Hamburg fuer ChatGPT-Empfehlungen und GPT-Sichtbarkeit aufgebaut werden.',
+    description: 'Wie Unternehmen in Hamburg für ChatGPT-Empfehlungen und GPT-Sichtbarkeit aufgebaut werden.',
     href: '/hamburg/chatgpt-optimierung',
     tag: 'ChatGPT',
   },
   {
     title: 'Perplexity Optimierung Hamburg',
-    description: 'Fokussiert auf Zitationen, Quellenpraesenz und kaufnahe Sichtbarkeit in Perplexity.',
+    description: 'Fokussiert auf Zitationen, Quellenpräsenz und kaufnahe Sichtbarkeit in Perplexity.',
     href: '/hamburg/perplexity-optimierung',
     tag: 'Perplexity',
   },
   {
     title: 'Answer Engine Optimization Hamburg',
-    description: 'AEO fuer lokale Unternehmen, die nicht nur ranken, sondern in Antworten landen wollen.',
+    description: 'AEO für lokale Unternehmen, die nicht nur ranken, sondern in Antworten landen wollen.',
     href: '/hamburg/answer-engine-optimization',
     tag: 'AEO',
   },
@@ -40,7 +40,7 @@ const collectionSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'AI SEO Hamburg Service-Cluster',
-  description: 'Lokale Buying-Intent-Seiten zu AI SEO, AEO, ChatGPT und Perplexity fuer Hamburg.',
+  description: 'Lokale Buying-Intent-Seiten zu AI SEO, AEO, ChatGPT und Perplexity für Hamburg.',
   url: 'https://aiseo.hamburg/hamburg',
   mainEntity: {
     '@type': 'ItemList',
@@ -74,10 +74,10 @@ export default function HamburgHubPage() {
               Hamburg Cluster
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-[-0.04em] text-black mb-6 leading-[1.05]">
-              Lokale Buying-Intent-Seiten fuer AI SEO in Hamburg
+              Lokale Buying-Intent-Seiten für AI SEO in Hamburg
             </h1>
             <p className="text-lg md:text-xl text-gray-700 max-w-3xl leading-relaxed">
-              Diese Sektion ist bewusst nah am Kaufmoment gebaut: fuer Menschen, die nicht mehr nur verstehen wollen, was AI SEO ist, sondern einen passenden Partner in Hamburg suchen.
+              Diese Sektion ist bewusst nah am Kaufmoment gebaut: für Menschen, die nicht mehr nur verstehen wollen, was AI SEO ist, sondern einen passenden Partner in Hamburg suchen.
             </p>
         </section>
 
@@ -117,7 +117,7 @@ export default function HamburgHubPage() {
                   Wer lokal empfohlen werden will, braucht lokal gedachte Seiten.
                 </h2>
                 <p className="text-gray-300 mb-8 max-w-2xl">
-                  Ich schaue mir an, welche dieser Seiten fuer dein Angebot wirklich Sinn ergeben und welche nur Luft produzieren wuerden. Davon gibt es online schon genug.
+                  Ich schaue mir an, welche dieser Seiten für dein Angebot wirklich Sinn ergeben und welche nur Luft produzieren würden. Davon gibt es online schon genug.
                 </p>
                 <Button href="/contact" primary text="Lokale KI-Sichtbarkeit anfragen" className="!py-4 !px-8" />
               </div>

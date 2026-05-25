@@ -32,20 +32,20 @@ export default function AnswerEngineOptimizationHamburgPage() {
     <LocalIntentTemplate
       canonicalPath="/hamburg/answer-engine-optimization"
       title="Answer Engine Optimization Hamburg: Damit dein Unternehmen in Antworten landet statt in irgendeinem verwaisten Rankingbericht"
-      description="AEO ist der praktische Teil der Entwicklung, die viele Unternehmen erst merken, wenn ihre alten SEO-Reports ploetzlich weniger Trost spenden. Nutzer wollen Antworten, nicht nur Ergebnislisten. Wer in Hamburg Dienstleistungen, Beratung oder erklaerungsbeduerftige Angebote verkauft, sollte deshalb nicht nur ueber Rankings sprechen, sondern ueber Antwortfaehigkeit."
+      description="AEO ist der praktische Teil der Entwicklung, die viele Unternehmen erst merken, wenn ihre alten SEO-Reports plötzlich weniger Trost spenden. Nutzer wollen Antworten, nicht nur Ergebnislisten. Wer in Hamburg Dienstleistungen, Beratung oder erklärungsbedürftige Angebote verkauft, sollte deshalb nicht nur über Rankings sprechen, sondern über Antwortfähigkeit."
       eyebrow="Answer Engine Optimization Hamburg"
       imageSrc="/images/wissen/ki-sichtbarkeit.jpg"
-      imageAlt="AEO fuer Hamburg"
-      imageCaption="AEO ist kein neues Etikett fuer dieselbe Arbeit. Es ist die bewusste Optimierung fuer Antwortmaschinen und Auswahlmomente."
+      imageAlt="AEO für Hamburg"
+      imageCaption="AEO ist kein neues Etikett für dieselbe Arbeit. Es ist die bewusste Optimierung für Antwortmaschinen und Auswahlmomente."
       summaryItems={[
-        'Die Seite bedient den Begriff AEO direkt und verankert ihn lokal fuer Hamburg.',
+        'Die Seite bedient den Begriff AEO direkt und verankert ihn lokal für Hamburg.',
         'Sie verbindet SEO, GEO und AISEO mit einem klaren kommerziellen Service-Fokus.',
-        'EEAT wird ueber strukturierte Methodik, bestehende Guides, Cases und klare Autorenschaft transportiert.',
-        'Die Inhalte sind abschnittsweise so gebaut, dass sie fuer klassische Suche und AI-Zusammenfassungen gleichermassen nuetzlich bleiben.',
+        'EEAT wird über strukturierte Methodik, bestehende Guides, Cases und klare Autorenschaft transportiert.',
+        'Die Inhalte sind abschnittsweise so gebaut, dass sie für klassische Suche und AI-Zusammenfassungen gleichermaßen nützlich bleiben.',
       ]}
       painPoints={[
         'Viele Websites beantworten nichts konkret genug und wundern sich dann, warum Antwortmaschinen lieber andere Quellen nutzen.',
-        'Es gibt Rankings, aber zu wenig Nachfragequalitaet, weil wichtige Vergleichs- und Empfehlungsfragen nicht abgedeckt werden.',
+        'Es gibt Rankings, aber zu wenig Nachfragequalität, weil wichtige Vergleichs- und Empfehlungsfragen nicht abgedeckt werden.',
         'Unternehmen bauen Content auf Themenebene, aber nicht auf Entscheidungsebene. Genau dort arbeitet AEO.',
       ]}
       serviceCards={[
@@ -55,7 +55,7 @@ export default function AnswerEngineOptimizationHamburgPage() {
         },
         {
           title: 'AEO-freundliche Content-Struktur',
-          text: 'Kernaussagen, FAQs, Definitionen, Leistungsabschnitte und Proof werden so geordnet, dass Antwortmaschinen eine starke Zusammenfassung bilden koennen.',
+          text: 'Kernaussagen, FAQs, Definitionen, Leistungsabschnitte und Proof werden so geordnet, dass Antwortmaschinen eine starke Zusammenfassung bilden können.',
         },
         {
           title: 'Verzahnung mit SEO und GEO',
@@ -63,40 +63,40 @@ export default function AnswerEngineOptimizationHamburgPage() {
         },
         {
           title: 'Lokaler Conversion-Fokus',
-          text: 'Hamburger Nachfrage, lokale Leistungsanfaelle und regionale Vertrauenssignale werden bewusst eingearbeitet statt generisch ueber Deutschland gestreut.',
+          text: 'Hamburger Nachfrage, lokale Leistungsanfälle und regionale Vertrauenssignale werden bewusst eingearbeitet statt generisch über Deutschland gestreut.',
         },
       ]}
       eeatCards={[
         {
           title: 'Eigene publizierte Guides',
-          text: 'Die Website enthaelt bereits umfangreiche Inhalte zu KI-Sichtbarkeit, ChatGPT, Perplexity und AI SEO. Das schafft thematische Tiefe statt isolierter Landingpages.',
+          text: 'Die Website enthält bereits umfangreiche Inhalte zu KI-Sichtbarkeit, ChatGPT, Perplexity und AI SEO. Das schafft thematische Tiefe statt isolierter Landingpages.',
         },
         {
           title: 'Praxisbezug durch dokumentierte Resultate',
-          text: 'Vorhandene Case-Materialien und Proof-Screenshots machen Aussagen zur AEO-Arbeit glaubwuerdiger als blosse Branchenwiederholung.',
+          text: 'Vorhandene Case-Materialien und Proof-Screenshots machen Aussagen zur AEO-Arbeit glaubwürdiger als bloße Branchenwiederholung.',
         },
         {
           title: 'Lokale Positionierung',
-          text: 'Die Seite verankert AEO nicht abstrakt, sondern im Hamburger Markt mit klaren Einsatzfaellen fuer lokale und B2B-nahe Leistungen.',
+          text: 'Die Seite verankert AEO nicht abstrakt, sondern im Hamburger Markt mit klaren Einsatzfällen für lokale und B2B-nahe Leistungen.',
         },
         {
-          title: 'Verstaendliche Sprache',
-          text: 'Gute AEO-Seiten muessen zugleich praezise und lesbar sein. Wenn nur Fachbegriffe uebrig bleiben, verlieren Menschen und Modelle gleichermassen das Interesse.',
+          title: 'Verständliche Sprache',
+          text: 'Gute AEO-Seiten müssen zugleich präzise und lesbar sein. Wenn nur Fachbegriffe übrig bleiben, verlieren Menschen und Modelle gleichermaßen das Interesse.',
         },
       ]}
       fitBullets={[
-        'Unternehmen, deren Leistungen erklaert, eingeordnet und vertrauensvoll vermittelt werden muessen.',
-        'Anbieter in Hamburg, die ueber generische Rankings hinaus auch in AI-Antworten und Zusammenfassungen auftauchen wollen.',
+        'Unternehmen, deren Leistungen erklärt, eingeordnet und vertrauensvoll vermittelt werden müssen.',
+        'Anbieter in Hamburg, die über generische Rankings hinaus auch in AI-Antworten und Zusammenfassungen auftauchen wollen.',
         'Teams, die SEO, GEO und AEO nicht mehr als getrennte Silos behandeln wollen.',
       ]}
       processCards={[
         {
           title: 'Fragen priorisieren',
-          text: 'Wir definieren, welche Antwortsituationen fuer dein Geschaeft wirklich relevant sind. Nicht jede FAQ verdient ihre eigene Religion.',
+          text: 'Wir definieren, welche Antwortsituationen für dein Geschäft wirklich relevant sind. Nicht jede FAQ verdient ihre eigene Religion.',
         },
         {
           title: 'Antworten bauen',
-          text: 'Ich entwickle oder ueberarbeite die Seiten so, dass Aussagen, Proof und Navigation auf echte Auswahlmomente einzahlen.',
+          text: 'Ich entwickle oder überarbeite die Seiten so, dass Aussagen, Proof und Navigation auf echte Auswahlmomente einzahlen.',
         },
         {
           title: 'Signale verdichten',
@@ -106,41 +106,41 @@ export default function AnswerEngineOptimizationHamburgPage() {
       faqItems={[
         {
           q: 'Ist AEO dasselbe wie GEO oder AI SEO?',
-          a: 'Die Begriffe ueberschneiden sich stark. AEO betont die Optimierung fuer Antworten, GEO den generativen Suchkontext und AI SEO die praktische Anwendung. In der Umsetzung greifen sie oft ineinander.',
+          a: 'Die Begriffe überschneiden sich stark. AEO betont die Optimierung für Antworten, GEO den generativen Suchkontext und AI SEO die praktische Anwendung. In der Umsetzung greifen sie oft ineinander.',
         },
         {
           q: 'Warum lohnt AEO in Hamburg?',
-          a: 'Weil viele lokale und B2B-nahe Leistungen erklaerungsbeduerftig sind. Genau dort helfen Antwortmaschinen bei der Vorauswahl, und genau dort willst du auftauchen.',
+          a: 'Weil viele lokale und B2B-nahe Leistungen erklärungsbedürftig sind. Genau dort helfen Antwortmaschinen bei der Vorauswahl, und genau dort willst du auftauchen.',
         },
         {
-          q: 'Brauche ich dafuer neue Seiten?',
+          q: 'Brauche ich dafür neue Seiten?',
           a: 'Haefig ja, aber gezielt. Gute AEO-Arbeit bedeutet nicht 30 neue Artikel, sondern die richtigen Money-Pages mit echter Antwortlogik.',
         },
       ]}
       relatedLinks={[
         {
           title: 'AI SEO Agentur Hamburg',
-          description: 'Die Seite fuer den breiteren kommerziellen Suchbegriff AI SEO.',
+          description: 'Die Seite für den breiteren kommerziellen Suchbegriff AI SEO.',
           href: '/hamburg/ai-seo-agentur',
           tag: 'AI SEO',
         },
         {
           title: 'KI-Sichtbarkeit Agentur Hamburg',
-          description: 'Die lokale Klammer fuer Empfehlungen, Sichtbarkeit und EEAT.',
+          description: 'Die lokale Klammer für Empfehlungen, Sichtbarkeit und EEAT.',
           href: '/hamburg/ki-sichtbarkeit-agentur',
           tag: 'Kernleistung',
         },
         {
           title: 'Perplexity Optimierung Hamburg',
-          description: 'Wenn Zitationen, Quellenfaehigkeit und Research-Use-Cases im Fokus stehen.',
+          description: 'Wenn Zitationen, Quellenfähigkeit und Research-Use-Cases im Fokus stehen.',
           href: '/hamburg/perplexity-optimierung',
           tag: 'Perplexity',
         },
       ]}
       ctaTitle="Wenn Nutzer Antworten wollen, solltest du nicht nur Links liefern."
-      ctaText="Ich zeige dir, welche Antwortsituationen in deinem Markt Umsatzrelevanz haben und wie man dafuer belastbare lokale Seiten baut."
+      ctaText="Ich zeige dir, welche Antwortsituationen in deinem Markt Umsatzrelevanz haben und wie man dafür belastbare lokale Seiten baut."
       ctaHref="/ai-sichtbarkeit-now"
-      ctaLabel="AEO fuer Hamburg anfragen"
+      ctaLabel="AEO für Hamburg anfragen"
     />
   );
 }

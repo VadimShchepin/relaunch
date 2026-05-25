@@ -32,34 +32,34 @@ export default function ChatGPTOptimierungHamburgPage() {
     <LocalIntentTemplate
       canonicalPath="/hamburg/chatgpt-optimierung"
       title="ChatGPT Optimierung Hamburg: Damit dein Unternehmen bei Empfehlungen nicht auf der stillen Reservebank sitzt"
-      description="ChatGPT entscheidet bei vielen Fragen schon vor dem Klick, welche Anbieter ueberhaupt genannt werden. Fuer Hamburger Unternehmen ist das besonders relevant bei Dienstleistungen, Beratung und lokalem Vertrauensgeschaeft. ChatGPT Optimierung bedeutet deshalb nicht, einen Bot zu ueberlisten, sondern eine Website so klar und belastbar aufzubauen, dass sie als Quelle taugt."
+      description="ChatGPT entscheidet bei vielen Fragen schon vor dem Klick, welche Anbieter überhaupt genannt werden. Für Hamburger Unternehmen ist das besonders relevant bei Dienstleistungen, Beratung und lokalem Vertrauensgeschäft. ChatGPT Optimierung bedeutet deshalb nicht, einen Bot zu überlisten, sondern eine Website so klar und belastbar aufzubauen, dass sie als Quelle taugt."
       eyebrow="ChatGPT Optimierung Hamburg"
       imageSrc="/images/wissen/chatgpt.jpg"
-      imageAlt="ChatGPT Optimierung fuer Hamburg"
-      imageCaption="ChatGPT braucht keine Textlawine. ChatGPT braucht klare, glaubwuerdige und wiederverwendbare Aussagen."
+      imageAlt="ChatGPT Optimierung für Hamburg"
+      imageCaption="ChatGPT braucht keine Textlawine. ChatGPT braucht klare, glaubwürdige und wiederverwendbare Aussagen."
       summaryItems={[
         'Die Seite zielt direkt auf Unternehmen, die ChatGPT als neuen Akquisekanal ernst nehmen.',
         'Der Content verbindet Bing-nahe Sichtbarkeit, Markensignale und serviceorientierte Seitenstruktur.',
-        'EEAT wird ueber Person, Cases, technische Kompetenz und lokale Spezialisierung transportiert.',
+        'EEAT wird über Person, Cases, technische Kompetenz und lokale Spezialisierung transportiert.',
         'Die CTA ist nah am Audit, weil ChatGPT-Optimierung ohne Statusanalyse fast immer in Aktionismus endet.',
       ]}
       painPoints={[
-        'Deine Website beantwortet Fragen aus menschlicher Sicht halbwegs, aber nicht so klar, dass ChatGPT sie als zitierfaehige Quelle nutzen moechte.',
-        'Es gibt keine klare Person, keine echte Service-Priorisierung und zu wenig semantische Sicherheit darueber, wofuer du in Hamburg empfohlen werden willst.',
-        'ChatGPT-Sichtbarkeit wird mit Prompt-Tricks verwechselt, waehrend die eigentliche Arbeit auf Website, Quellenprofil und Bing-Signalen liegen sollte.',
+        'Deine Website beantwortet Fragen aus menschlicher Sicht halbwegs, aber nicht so klar, dass ChatGPT sie als zitierfähige Quelle nutzen möchte.',
+        'Es gibt keine klare Person, keine echte Service-Priorisierung und zu wenig semantische Sicherheit darüber, wofür du in Hamburg empfohlen werden willst.',
+        'ChatGPT-Sichtbarkeit wird mit Prompt-Tricks verwechselt, während die eigentliche Arbeit auf Website, Quellenprofil und Bing-Signalen liegen sollte.',
       ]}
       serviceCards={[
         {
           title: 'Prompt-nahe Seitenarchitektur',
-          text: 'Ich entwickle oder schaerfe Seiten, die sich an realen Frageformen orientieren: Wer hilft, fuer wen, in welcher Stadt, bei welchem Problem.',
+          text: 'Ich entwickle oder schärfe Seiten, die sich an realen Frageformen orientieren: Wer hilft, für wen, in welcher Stadt, bei welchem Problem.',
         },
         {
           title: 'Bing- und Quellenfokus',
-          text: 'Weil ChatGPT fuer die Live-Suche Bing nutzt, wird Bing nicht ignoriert. Dazu kommen Marken-, Profil- und Quellenkonsistenz.',
+          text: 'Weil ChatGPT für die Live-Suche Bing nutzt, wird Bing nicht ignoriert. Dazu kommen Marken-, Profil- und Quellenkonsistenz.',
         },
         {
           title: 'FAQ und Extrahierbarkeit',
-          text: 'Aussagen werden so strukturiert, dass sie nicht nur gelesen, sondern in Antworten sauber zusammengefasst werden koennen.',
+          text: 'Aussagen werden so strukturiert, dass sie nicht nur gelesen, sondern in Antworten sauber zusammengefasst werden können.',
         },
         {
           title: 'Lokale Empfehlungslogik',
@@ -73,21 +73,21 @@ export default function ChatGPTOptimierungHamburgPage() {
         },
         {
           title: 'Fachliche Schwerpunkte',
-          text: 'Ich konzentriere mich nicht auf jede Branche gleichzeitig, sondern auf klare Leistungen, verstaendliche Positionierung und lokale Nachfragekontexte.',
+          text: 'Ich konzentriere mich nicht auf jede Branche gleichzeitig, sondern auf klare Leistungen, verständliche Positionierung und lokale Nachfragekontexte.',
         },
         {
           title: 'Technischer Unterbau',
           text: 'Markups, Seitenstruktur, Crawlbarkeit und semantische Ordnung sind keine Nebensache. ChatGPT-Optimierung ohne diese Ebene bleibt Fassade.',
         },
         {
-          title: 'Serioese Kommunikation',
-          text: 'Ich verspreche keine magischen Dauerpositionen in ChatGPT. Ich baue Seiten und Signale, die die Wahrscheinlichkeit sinnvoll erhoehen, genannt zu werden.',
+          title: 'Seriöse Kommunikation',
+          text: 'Ich verspreche keine magischen Dauerpositionen in ChatGPT. Ich baue Seiten und Signale, die die Wahrscheinlichkeit sinnvoll erhöhen, genannt zu werden.',
         },
       ]}
       fitBullets={[
-        'Berater, Dienstleister, Agenturen und lokale Anbieter in Hamburg mit erklaerungsbeduerftigen Leistungen.',
-        'Unternehmen, deren Zielgruppe aktiv ChatGPT fuer Vorauswahl und Orientierung nutzt.',
-        'Teams, die lieber eine saubere Prompt- und Quellenstrategie wollen als eine weitere Runde Content-Fuellmaterial.',
+        'Berater, Dienstleister, Agenturen und lokale Anbieter in Hamburg mit erklärungsbedürftigen Leistungen.',
+        'Unternehmen, deren Zielgruppe aktiv ChatGPT für Vorauswahl und Orientierung nutzt.',
+        'Teams, die lieber eine saubere Prompt- und Quellenstrategie wollen als eine weitere Runde Content-Füllmaterial.',
       ]}
       processCards={[
         {
@@ -95,12 +95,12 @@ export default function ChatGPTOptimierungHamburgPage() {
           text: 'Wir identifizieren die Fragen, bei denen ChatGPT in deinem Markt als Vorauswahlmaschine wirkt.',
         },
         {
-          title: 'Seiten-Schaerfung',
-          text: 'Ich ueberarbeite Aussagen, FAQs, Service-Navigation und lokale Signale so, dass die Quelle belastbarer wird.',
+          title: 'Seiten-Schärfung',
+          text: 'Ich überarbeite Aussagen, FAQs, Service-Navigation und lokale Signale so, dass die Quelle belastbarer wird.',
         },
         {
           title: 'Kontrolle',
-          text: 'Antworten, Erwähnungen und Referral-Signale werden beobachtet. Dann wird nachgeschaerft, nicht nur gefeiert.',
+          text: 'Antworten, Erwähnungen und Referral-Signale werden beobachtet. Dann wird nachgeschärft, nicht nur gefeiert.',
         },
       ]}
       faqItems={[
@@ -109,36 +109,36 @@ export default function ChatGPTOptimierungHamburgPage() {
           a: 'Ja. Klassisches SEO hilft beim Ranking. ChatGPT Optimierung fokussiert darauf, in Empfehlungen und Antworten als relevante Quelle oder Anbieter aufzutauchen.',
         },
         {
-          q: 'Brauche ich dafuer Bing?',
-          a: 'Ja, fuer die Live-Suche ist Bing relevant. Wer ChatGPT ernst meint, sollte Bing nicht wie eine laestige Randnotiz behandeln.',
+          q: 'Brauche ich dafür Bing?',
+          a: 'Ja, für die Live-Suche ist Bing relevant. Wer ChatGPT ernst meint, sollte Bing nicht wie eine lästige Randnotiz behandeln.',
         },
         {
           q: 'Wie messe ich Erfolg bei ChatGPT Optimierung?',
-          a: 'Ueber wiederholbare Prompts, Bot-Signale, Referral-Muster, sichtbare Quellenpraesenz und die Qualitaet daraus entstehender Kontakte.',
+          a: 'Über wiederholbare Prompts, Bot-Signale, Referral-Muster, sichtbare Quellenpräsenz und die Qualität daraus entstehender Kontakte.',
         },
       ]}
       relatedLinks={[
         {
           title: 'AI SEO Agentur Hamburg',
-          description: 'Die uebergeordnete Angebotsseite fuer AI SEO und Kaufintention.',
+          description: 'Die übergeordnete Angebotsseite für AI SEO und Kaufintention.',
           href: '/hamburg/ai-seo-agentur',
           tag: 'AI SEO',
         },
         {
           title: 'Perplexity Optimierung Hamburg',
-          description: 'Wenn Zitationen und Quellenlinks in Perplexity der naechste Hebel sind.',
+          description: 'Wenn Zitationen und Quellenlinks in Perplexity der nächste Hebel sind.',
           href: '/hamburg/perplexity-optimierung',
           tag: 'Perplexity',
         },
         {
           title: 'Answer Engine Optimization Hamburg',
-          description: 'Die breitere Perspektive auf AEO ueber mehrere Antwortsysteme hinweg.',
+          description: 'Die breitere Perspektive auf AEO über mehrere Antwortsysteme hinweg.',
           href: '/hamburg/answer-engine-optimization',
           tag: 'AEO',
         },
       ]}
-      ctaTitle="Wenn ChatGPT schon vorsortiert, sollte deine Website nicht wie ein Missverstaendnis wirken."
-      ctaText="Ich pruefe, welche Prompt-Situationen fuer dein Angebot in Hamburg relevant sind und wie man daraus echte ChatGPT-taugliche Seiten baut."
+      ctaTitle="Wenn ChatGPT schon vorsortiert, sollte deine Website nicht wie ein Missverständnis wirken."
+      ctaText="Ich prüfe, welche Prompt-Situationen für dein Angebot in Hamburg relevant sind und wie man daraus echte ChatGPT-taugliche Seiten baut."
       ctaHref="/contact"
       ctaLabel="ChatGPT Optimierung anfragen"
     />
