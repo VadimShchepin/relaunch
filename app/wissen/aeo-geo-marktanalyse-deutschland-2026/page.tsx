@@ -368,7 +368,7 @@ export default function AEOGEOMarktanalyseDeutschland2026Page() {
             Die drei Honigfallen der AEO/GEO-Suche in Deutschland
           </h1>
           <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed mb-10">
-            Wir haben 297 Keywords über DataForSEO geprüft. Drei kosten deutsche SEO-Agenturen Geld. Sechs wachsen mit +200 bis +1.300% pro Jahr. Und „ChatGPT SEO" ist als Suchbegriff um 63% gefallen. Die Rohdaten, die unsere Targeting-Entscheidungen für aiseo.hamburg geprägt haben. Mit CSV-Download.
+            Ich habe 297 Keywords über DataForSEO geprüft. Drei Begriffe kosten Unternehmen und Agenturen Geld. Sechs wachsen mit +200 bis +1.300% pro Jahr. Und „ChatGPT SEO" ist als Suchbegriff um 63% gefallen. Die Rohdaten, die meine Targeting-Entscheidungen für aiseo.hamburg geprägt haben. Mit CSV-Download.
           </p>
 
           <figure className="rounded-2xl overflow-hidden shadow-sm border border-stone-200">
@@ -482,7 +482,7 @@ export default function AEOGEOMarktanalyseDeutschland2026Page() {
               <strong className="text-black">„geo hamburg" (260 SV/Monat, −7%):</strong> Reines Geoportal-Hamburg-Territorium. Selbst Begriffe wie „aeo hamburg" (10 SV) führen zu 100% AWO-Hamburg-Ergebnissen, dem Arbeiterwohlfahrt-Landesverband.
             </p>
             <p>
-              <strong className="text-black">Praktische Konsequenz:</strong> Jede AEO/GEO/LLMO-Landingpage sollte den Begriff im Title und in der H1 disambiguieren. „Answer Engine Optimization (AEO)" statt „AEO". „Generative Engine Optimization (GEO)" statt „GEO". Die langen Formen sind klarer für Menschen und klarer für Google.
+              <strong className="text-black">Praktische Konsequenz:</strong> Jede AEO/GEO/<a href="/wissen/llmo-llm-optimierung" className="underline decoration-brand-accent decoration-2 underline-offset-2 hover:text-brand-accent">LLMO</a>-Landingpage sollte den Begriff im Title und in der H1 disambiguieren. „<a href="/wissen/aeo-answer-engine-optimization" className="underline decoration-brand-accent decoration-2 underline-offset-2 hover:text-brand-accent">Answer Engine Optimization (AEO)</a>" statt „AEO". „<a href="/wissen/was-ist-geo" className="underline decoration-brand-accent decoration-2 underline-offset-2 hover:text-brand-accent">Generative Engine Optimization (GEO)</a>" statt „GEO". Die langen Formen sind klarer für Menschen und klarer für Google.
             </p>
           </div>
         </FadeIn>
@@ -734,10 +734,10 @@ export default function AEOGEOMarktanalyseDeutschland2026Page() {
       <section className="py-16 md:py-24 px-6 md:px-12 lg:px-20 max-w-[960px] mx-auto border-t border-gray-100">
         <FadeIn>
           <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-6">
-            Was deutsche Agenturen Q3 2026 targeten sollten
+            Welche Begriffe Unternehmen und Agenturen Q3 2026 beobachten sollten
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-8">
-            Die folgenden zehn Begriffe priorisieren wir auf aiseo.hamburg. Auswahlkriterien: saubere Intent (kein Honigfallen-Charakter), Suchvolumen ≥ 150/Monat oder Wachstum &gt; 100%, klar kommerzielle oder Bildungs-Funktion im Funnel.
+            Die folgenden zehn Begriffe priorisiere ich auf aiseo.hamburg. Auswahlkriterien: saubere Intent (kein Honigfallen-Charakter), Suchvolumen ≥ 150/Monat oder Wachstum &gt; 100%, klar kommerzielle oder Bildungs-Funktion im Funnel. Für Unternehmen sind die Bildungs- und Vergleichs-Begriffe die ersten Anlaufstellen, für Agenturen die kommerziellen Money-Terms mit hoher CPC.
           </p>
 
           <div className="overflow-x-auto -mx-2">
@@ -910,6 +910,37 @@ export default function AEOGEOMarktanalyseDeutschland2026Page() {
         </FadeIn>
       </section>
 
+      {/* ============ Was das für Unternehmen bedeutet ============ */}
+      <section className="py-16 md:py-24 px-6 md:px-12 lg:px-20 max-w-[960px] mx-auto border-t border-gray-100">
+        <FadeIn>
+          <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-6">
+            Was das für Unternehmen bedeutet
+          </h2>
+          <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
+            <p>
+              Wenn Ihre Firma heute nicht klar als vertrauenswürdige Quelle im Web erkennbar ist, wird sie in KI-Antworten schwerer empfohlen. Die <a href="/wissen/ki-sichtbarkeit" className="underline decoration-brand-accent decoration-2 underline-offset-2 hover:text-brand-accent">KI-Sichtbarkeit</a> Ihrer Marke entscheidet sich an einer Handvoll konkreter Stellen.
+            </p>
+            <p>
+              Für Unternehmen heißt das nicht: klassische SEO ersetzen. Es heißt:
+            </p>
+            <ul className="space-y-2 pl-6 list-disc text-gray-700">
+              <li>klare Leistungsseiten mit Preisen, Prozessen und Zielgruppen</li>
+              <li>konsistente Marken- und Firmendaten (Name, Adresse, Telefonnummer, Geschäftszweck) über Website, Google Business, LinkedIn, Branchenverzeichnisse</li>
+              <li>echte Bewertungen von echten Kunden, idealerweise mit Namen und Kontext</li>
+              <li>Erwähnungen auf vertrauenswürdigen externen Quellen (Fachpublikationen, Branchenpresse, Partner-Seiten)</li>
+              <li>strukturierte Inhalte zu konkreten Kaufentscheidungen, nicht generische „Was ist X"-Texte</li>
+              <li>Monitoring in Google, ChatGPT, Perplexity und Gemini, um Bewegungen früh zu sehen</li>
+            </ul>
+            <p>
+              Die frühe Phase ist ein Vorteil. Viele Wettbewerber haben noch keine klare <a href="/wissen/llmo-llm-optimierung" className="underline decoration-brand-accent decoration-2 underline-offset-2 hover:text-brand-accent">AI-Visibility-Strategie</a>. Wer jetzt sauber positioniert, sammelt Zitationen, bevor das Suchvolumen aufholt. Das gilt für Anwaltskanzleien und Praxen genauso wie für Handwerksbetriebe, E-Commerce-Shops und B2B-Dienstleister.
+            </p>
+            <p>
+              Konkret bedeutet das für die meisten Mittelständler: drei bis fünf gut gepflegte Seiten zu Ihren Kernleistungen, eine saubere About- und Trust-Seite, und ein <a href="/ai-sichtbarkeit-now" className="underline decoration-brand-accent decoration-2 underline-offset-2 hover:text-brand-accent">kostenfreies AEO-Audit</a>, um den Ausgangspunkt zu kennen.
+            </p>
+          </div>
+        </FadeIn>
+      </section>
+
       {/* ============ Soft CTA ============ */}
       <section className="py-16 md:py-24 px-6 md:px-12 lg:px-20 max-w-[960px] mx-auto border-t border-gray-100">
         <FadeIn>
@@ -918,7 +949,7 @@ export default function AEOGEOMarktanalyseDeutschland2026Page() {
               Wo steht Ihre Domain in diesem Datensatz?
             </h2>
             <p className="text-lg text-white/80 leading-relaxed mb-8 max-w-2xl">
-              Wir prüfen kostenfrei, für welche der 297 Keywords aus dieser Studie Ihre Seite aktuell rankt oder zitiert wird. In Google, ChatGPT, Perplexity, Gemini und Claude. Sie erhalten einen kurzen Report mit den drei wichtigsten Hebeln für Q3 2026.
+              Ich prüfe kostenfrei, für welche der 297 Keywords aus dieser Studie Ihre Seite aktuell rankt oder zitiert wird. In Google, ChatGPT, Perplexity, Gemini und Claude. Sie erhalten einen kurzen Report mit den drei wichtigsten Hebeln für Q3 2026.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button href="/ai-sichtbarkeit-now" primary text="Kostenloses AEO-Audit anfordern" />
