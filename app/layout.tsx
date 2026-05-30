@@ -118,6 +118,8 @@ export default function RootLayout({
                             "url": "https://aiseo.hamburg",
                             "telephone": "+49 176 321 94 754",
                             "email": "hello@aiseo.hamburg",
+                            "vatID": "DE360369743",
+                            "taxID": "41/229/05131",
                             "address": {
                                 "@type": "PostalAddress",
                                 "streetAddress": "Flottbeker Drift 1",

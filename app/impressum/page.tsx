@@ -93,6 +93,10 @@ export default function ImpressumPage() {
             <section>
               <h2 className="text-xl font-semibold text-black mb-4">Umsatzsteuer-ID</h2>
               <div className="text-gray-700 space-y-1">
+                <p>
+                  Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect; 27 a
+                  Umsatzsteuergesetz: DE360369743
+                </p>
                 <p>Steuernummer: 41/229/05131</p>
                 <p>Finanzamt Hamburg-Nord</p>
               </div>
