@@ -1,10 +1,13 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'AI SEO Leistungen Hamburg | Beratung, AEO & Website-Erstellung',
-  description: 'Leistungen von aiseo.hamburg: Beratung, AEO, AI SEO, Website-Erstellung, klassisches SEO, Backlink-Aufbau und Pressemitteilungen. Spezialisiert auf KMUs.',
+  title: 'AI SEO Leistungen Hamburg | GEO, AEO & AI SEO',
+  description: 'Leistungen von aiseo.hamburg: Generative Engine Optimization (GEO), AEO, AI SEO, Beratung, Website-Erstellung, klassisches SEO, Backlink-Aufbau und Pressemitteilungen. Spezialisiert auf KMUs.',
   keywords: [
     'AI SEO Leistungen Hamburg',
+    'GEO Generative Engine Optimization',
+    'GEO Optimierung Hamburg',
+    'GEO Agentur Hamburg',
     'AEO Answer Engine Optimization',
     'KI-Sichtbarkeit Beratung',
     'Website-Erstellung AI-optimiert',
@@ -17,15 +20,15 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/leistungen',
-    title: 'AI SEO Leistungen Hamburg | Beratung, AEO & Website-Erstellung',
-    description: 'Alle Leistungen: Beratung, AEO, AI SEO, Website-Erstellung, klassisches SEO, Backlink-Aufbau und Pressemitteilungen.',
+    title: 'AI SEO Leistungen Hamburg | GEO, AEO & AI SEO',
+    description: 'Alle Leistungen: Generative Engine Optimization (GEO), AEO, AI SEO, Beratung, Website-Erstellung, klassisches SEO, Backlink-Aufbau und Pressemitteilungen.',
     siteName: 'aiseo.hamburg',
     images: [{ url: '/android-chrome-512x512.png', width: 512, height: 512, alt: 'aiseo.hamburg – Leistungen' }],
   },
   twitter: {
     card: 'summary',
-    title: 'AI SEO Leistungen Hamburg | Beratung, AEO & Website-Erstellung',
-    description: 'Alle Leistungen: Beratung, AEO, AI SEO, Website-Erstellung, klassisches SEO, Backlink-Aufbau und Pressemitteilungen.',
+    title: 'AI SEO Leistungen Hamburg | GEO, AEO & AI SEO',
+    description: 'Alle Leistungen: Generative Engine Optimization (GEO), AEO, AI SEO, Beratung, Website-Erstellung, klassisches SEO, Backlink-Aufbau und Pressemitteilungen.',
   },
   robots: {
     index: true,

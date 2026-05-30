@@ -73,6 +73,12 @@ const TargetIcon = ({ className = 'w-7 h-7' }) => (
   </svg>
 );
 
+const GlobeIcon = ({ className = 'w-7 h-7' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 21a9 9 0 100-18 9 9 0 000 18zm0 0c2.5 0 4.5-4.03 4.5-9S14.5 3 12 3 7.5 7.03 7.5 12s2 9 4.5 9zM3.6 9h16.8M3.6 15h16.8" />
+  </svg>
+);
+
 const ChevronDownIcon = ({ className = 'w-5 h-5' }) => (
   <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -150,6 +156,31 @@ const SERVICES: ServiceType[] = [
     relatedArticles: [
       { title: 'ChatGPT SEO – so wirst du gefunden', href: '/wissen/chatgpt-seo' },
       { title: 'Perplexity vs. ChatGPT vs. Google', href: '/wissen/perplexity-vs-chatgpt-vs-google' },
+    ],
+  },
+  {
+    icon: GlobeIcon,
+    title: 'GEO',
+    subtitle: 'Generative Engine Optimization',
+    description: 'GEO ist die Disziplin dahinter: deine Inhalte so aufbereiten, dass generative KI-Systeme wie ChatGPT, Perplexity und Google AI dich als Quelle auswählen, wenn sie ihre Antworten zusammensetzen. AEO ist ein Teil davon. GEO denkt die gesamte Sichtbarkeit über alle generativen Engines hinweg und macht sie strategisch steuerbar.',
+    benefits: [
+      'Sichtbar in den Antworten aller generativen KI-Systeme',
+      'Eine Strategie statt isolierter Einzelmaßnahmen',
+      'Zukunftssicher, während sich die Suche zu KI verschiebt',
+      'Weniger Abhängigkeit von klassischen Google-Rankings',
+    ],
+    deliverables: [
+      'GEO-Audit: Wo wirst du zitiert, wo nicht?',
+      'Zitierbare, antwortorientierte Inhaltsstruktur',
+      'Entity- und Autoritätssignale für generative Modelle',
+      'Plattformübergreifendes Zitations-Monitoring',
+    ],
+    idealFor: 'Unternehmen, die KI-Sichtbarkeit als Ganzes denken wollen, nicht nur eine einzelne Plattform.',
+    timeline: 'Erste Zitationen nach 3–6 Wochen, je nach Ausgangslage',
+    primaryArticle: { title: 'Was ist GEO? Generative Engine Optimization erklärt', href: '/wissen/was-ist-geo' },
+    relatedArticles: [
+      { title: 'GEO-Agentur Hamburg', href: '/wissen/geo-agentur-hamburg' },
+      { title: 'AEO/GEO Marktanalyse Deutschland 2026', href: '/wissen/aeo-geo-marktanalyse-deutschland-2026' },
     ],
   },
   {
@@ -423,7 +454,7 @@ export default function LeistungenPage() {
           'name': 'Leistungen von aiseo.hamburg',
           'description': 'Alle Dienstleistungen für KI-Sichtbarkeit in Hamburg',
           'url': 'https://aiseo.hamburg/leistungen',
-          'numberOfItems': 7,
+          'numberOfItems': 8,
           'itemListElement': [
             {
               '@type': 'ListItem',
@@ -452,6 +483,17 @@ export default function LeistungenPage() {
               'position': 3,
               'item': {
                 '@type': 'Service',
+                'name': 'Generative Engine Optimization (GEO)',
+                'description': 'Plattformübergreifende Optimierung, damit generative KI-Systeme wie ChatGPT, Perplexity und Google AI dein Unternehmen als Quelle zitieren.',
+                'provider': { '@id': 'https://aiseo.hamburg/#organization' },
+                'areaServed': { '@type': 'City', 'name': 'Hamburg' },
+              },
+            },
+            {
+              '@type': 'ListItem',
+              'position': 4,
+              'item': {
+                '@type': 'Service',
                 'name': 'AI SEO',
                 'description': 'KI-fokussierte Suchmaschinenoptimierung für die Suche der Zukunft.',
                 'provider': { '@id': 'https://aiseo.hamburg/#organization' },
@@ -460,7 +502,7 @@ export default function LeistungenPage() {
             },
             {
               '@type': 'ListItem',
-              'position': 4,
+              'position': 5,
               'item': {
                 '@type': 'Service',
                 'name': 'Website-Erstellung',
@@ -471,7 +513,7 @@ export default function LeistungenPage() {
             },
             {
               '@type': 'ListItem',
-              'position': 5,
+              'position': 6,
               'item': {
                 '@type': 'Service',
                 'name': 'Suchmaschinenoptimierung (SEO)',
@@ -482,7 +524,7 @@ export default function LeistungenPage() {
             },
             {
               '@type': 'ListItem',
-              'position': 6,
+              'position': 7,
               'item': {
                 '@type': 'Service',
                 'name': 'Backlink-Aufbau',
@@ -493,7 +535,7 @@ export default function LeistungenPage() {
             },
             {
               '@type': 'ListItem',
-              'position': 7,
+              'position': 8,
               'item': {
                 '@type': 'Service',
                 'name': 'Pressemitteilungen',
@@ -528,7 +570,7 @@ export default function LeistungenPage() {
 
               <FadeIn delay={0.2}>
                 <p className="text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
-                  Von der Strategie bis zur Umsetzung. Beratung, Optimierung, Technik und Autorität – alles aus einer Hand, spezialisiert auf Hamburg.
+                  Generative Engine Optimization (GEO), AEO und klassisches SEO. Von der Strategie bis zur Umsetzung: Beratung, Optimierung, Technik und Autorität, alles aus einer Hand und spezialisiert auf Hamburg.
                 </p>
               </FadeIn>
 
@@ -555,10 +597,10 @@ export default function LeistungenPage() {
             <FadeIn>
               <div className="text-center mb-16">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-4">
-                  7 Leistungen. <span className="text-gray-400">Ein Ziel.</span>
+                  8 Leistungen. <span className="text-gray-400">Ein Ziel.</span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                  Jede Leistung stärkt deine KI-Sichtbarkeit – zusammen bilden sie ein System, das KI-Plattformen nicht ignorieren können. Klicke auf &quot;Details&quot; für konkrete Liefergegenstände und weiterführende Artikel.
+                  Von Generative Engine Optimization (GEO) und AEO bis zu Technik und Autorität: Jede Leistung stärkt deine KI-Sichtbarkeit, zusammen bilden sie ein System, das KI-Plattformen nicht ignorieren können. Klicke auf &quot;Details&quot; für konkrete Liefergegenstände und weiterführende Artikel.
                 </p>
               </div>
             </FadeIn>

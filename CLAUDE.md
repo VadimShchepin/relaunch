@@ -41,7 +41,7 @@ Note: Dev/build scripts use `NODE_OPTIONS='--max-old-space-size=8192'` for GSAP 
 - Images are unoptimized (`images.unoptimized: true` in next.config.ts) — use pre-optimized assets in `public/`
 
 **Content Clusters:**
-- `app/wissen/` - Knowledge hub (pillar pages, case studies, topic articles). Each article has its own `layout.tsx` for metadata and `page.tsx` for content
+- `app/wissen/` - Knowledge hub (pillar pages, case studies, topic articles). Each article has its own `layout.tsx` for metadata and `page.tsx` for content. The `/wissen` index is driven by a single registry, `app/wissen/articles.ts` (title, description, tag, `topic`, `date`, optional `featured`). The index sorts automatically (featured first, then newest by `date` descending) and renders a topic filter via `WissenList.tsx`. `articles.guard.test.ts` fails the build if any article folder is missing from the registry, so the listing can never silently drift.
 - `app/hamburg/` - Local SEO cluster (city-specific service pages like `ai-seo-agentur`, `chatgpt-optimierung`, `perplexity-optimierung`). Sub-pages exist without individual `layout.tsx` files — they inherit from `app/hamburg/layout.tsx`
 
 **Security Headers (next.config.ts):**
@@ -72,12 +72,17 @@ Note: Dev/build scripts use `NODE_OPTIONS='--max-old-space-size=8192'` for GSAP 
 - `public/robots.txt` - Allows all AI bots (GPTBot, PerplexityBot, ClaudeBot, etc.)
 - `public/llms.txt` - LLM training data information
 - `public/ai.txt` - AI crawler instructions
-- `public/sitemap.xml` - Static sitemap
+- `app/sitemap.ts` - Sitemap auto-generated at build time by scanning `app/` for `page.tsx` files. New routes appear automatically; no manual sitemap edit needed.
 
 **When adding new pages:**
 1. Create `layout.tsx` with page-specific metadata (title, description, canonical)
-2. Add to `public/sitemap.xml`
+2. The sitemap picks up the route automatically (`app/sitemap.ts`)
 3. Update `public/llms.txt` if it's a key service page
+
+**When adding a `/wissen` article specifically:**
+1. Create `app/wissen/<slug>/layout.tsx` (metadata) and `page.tsx` (content)
+2. Add a matching entry to `app/wissen/articles.ts` (title, description, href, tag, `topic`, `readTime`, `date`). Sorting and the topic filter are handled automatically.
+3. `npm run test` runs `articles.guard.test.ts`, which fails if a folder has no registry entry (or vice versa). Run it before committing.
 
 ## Testing
 
