@@ -666,6 +666,20 @@ export default function AiSeoAgenturPage() {
                   <p className="text-base font-semibold text-black group-hover:text-brand-accent transition-colors">Sichtbarkeit in ChatGPT</p>
                   <p className="text-sm text-gray-500 mt-1">Konkrete Strategien für ChatGPT-Zitierungen.</p>
                 </a>
+                <a
+                  href="/wissen/fallstudie-ki-sichtbarkeit-90-tage"
+                  className="bg-white border border-gray-100 rounded-2xl p-5 hover:border-brand-accent transition-colors group"
+                >
+                  <p className="text-base font-semibold text-black group-hover:text-brand-accent transition-colors">Fallstudie: 90 Tage KI-sichtbar</p>
+                  <p className="text-sm text-gray-500 mt-1">Echte Zahlen aus einem Hamburger Projekt.</p>
+                </a>
+                <a
+                  href="/wissen/case-study-blitz-hamburg"
+                  className="bg-white border border-gray-100 rounded-2xl p-5 hover:border-brand-accent transition-colors group"
+                >
+                  <p className="text-base font-semibold text-black group-hover:text-brand-accent transition-colors">Case Study: Blitz Hamburg</p>
+                  <p className="text-sm text-gray-500 mt-1">Vom austauschbaren Anbieter zur KI-Empfehlung.</p>
+                </a>
               </div>
             </div>
           </FadeIn>

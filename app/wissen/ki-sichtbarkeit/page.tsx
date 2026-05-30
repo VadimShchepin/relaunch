@@ -826,6 +826,30 @@ export default function KISichtbarkeitPage() {
                 Worauf du bei der Wahl einer AI SEO Agentur achten solltest und welche Fragen du stellen musst.
               </p>
             </a>
+
+            <a
+              href="/wissen/fallstudie-ki-sichtbarkeit-90-tage"
+              className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
+            >
+              <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">
+                Fallstudie: 90 Tage KI-sichtbar
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Echte Zahlen eines Hamburger Unternehmens: Performance von 35 auf 99, 2x Traffic, Platz 1 in ChatGPT.
+              </p>
+            </a>
+
+            <a
+              href="/wissen/case-study-blitz-hamburg"
+              className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
+            >
+              <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">
+                Case Study: Blitz Hamburg
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Wie ein lokaler Dienstleister in einem austauschbaren Markt zur ChatGPT-Empfehlung wurde.
+              </p>
+            </a>
           </div>
         </FadeIn>
       </section>

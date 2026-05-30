@@ -180,6 +180,12 @@ export default function SeoVsAiSeoPage() {
           href: '/wissen/ai-seo-agentur',
           tag: 'Auswahl',
         },
+        {
+          title: 'SEO-Agentur liefert Rankings, aber keine Kunden',
+          description: 'Warum klassische SEO-Agenturen an Wirkung verlieren und wann sich der Wechsel zu AI SEO lohnt.',
+          href: '/wissen/seo-agentur-vs-ai-seo',
+          tag: 'Vergleich',
+        },
       ]}
       ctaTitle="Die Frage ist nicht mehr, ob du SEO oder AI SEO willst."
       ctaText="Die Frage ist, welche Lücken in deiner Sichtbarkeit heute Geld kosten. Ich schaue mir an, was bei dir zuerst den größten Hebel hat."
