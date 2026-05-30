@@ -40,6 +40,16 @@ export const TOPICS: Topic[] = [
 
 export const ARTICLES: Article[] = [
   {
+    title: 'Bing & Copilot KI-Sichtbarkeit: Was 415 Citations über Microsofts KI verraten',
+    description: 'Auswertung eines echten Bing-Webmaster-Tools-Exports: Wie Microsoft Copilot Quellen über Grounding Queries auswählt, warum eine Seite fast 60% aller Zitate gewann und das reproduzierbare Rezept dahinter.',
+    href: '/wissen/bing-copilot-ki-sichtbarkeit',
+    tag: 'Bing & Copilot',
+    topic: 'Plattformen',
+    readTime: '10 Min.',
+    date: '2026-05-30',
+    featured: true,
+  },
+  {
     title: 'KI-Sichtbarkeit: Der komplette Guide für Unternehmen 2026',
     description: 'Was KI-Sichtbarkeit bedeutet, warum sie 2026 entscheidend ist und wie du in ChatGPT, Perplexity und Google AI empfohlen wirst.',
     href: '/wissen/ki-sichtbarkeit',
