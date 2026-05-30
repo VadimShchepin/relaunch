@@ -32,6 +32,10 @@ const FAQS = [
     a: 'Nein. SEO bleibt relevant — es verändert sich nur. Google liefert nach wie vor den größten Teil des Web-Traffics. Aber du solltest SEO nicht mehr als einzigen Kanal betrachten. Die Kombination aus klassischem SEO und KI-Sichtbarkeit ist die Strategie der Zukunft. Wer nur in SEO investiert, verliert langfristig Traffic. Wer nur in KI investiert, lässt kurzfristig Geld liegen. Die Mischung macht es.',
   },
   {
+    q: 'Betrifft Zero-Click auch Google Maps?',
+    a: 'Ja, und zwar seit 2026 spürbar. Google hat „Ask Maps" gestartet, eine Gemini-Funktion in Google Maps, die Ortsfragen in normaler Sprache direkt beantwortet, statt nur eine Liste von Treffern zu zeigen. Maps greift dabei auf über 300 Millionen Orte und die Beiträge von mehr als 500 Millionen Nutzern zu. Damit wird auch die lokale Suche zur Zero-Click-Antwort: Wer in der KI-Empfehlung nicht auftaucht, wird vom Nutzer nicht mehr verglichen. Aktuell läuft die Funktion in den USA und Indien, ein Start in Deutschland ist absehbar. Für lokale Anbieter ist jetzt der Zeitpunkt, lokale KI-Sichtbarkeit aufzubauen.',
+  },
+  {
     q: 'Wie profitieren kleine Unternehmen von der Zero-Click-Zukunft?',
     a: 'Kleine Unternehmen haben einen entscheidenden Vorteil: Authentizität. KI-Systeme bevorzugen einzigartige Perspektiven und echte Erfahrungsberichte gegenüber generischem Content von Großkonzernen. Ein Handwerksbetrieb mit ehrlichen Case Studies und echter Expertise kann in KI-Antworten neben Branchenriesen erscheinen — weil KI Qualität über Quantität stellt. Die Eintrittsbarriere ist niedriger als bei klassischem SEO, wo große Budgets oft den Ausschlag geben.',
   },
@@ -71,7 +75,7 @@ const articleJsonLd = {
     '@id': 'https://aiseo.hamburg/#organization',
   },
   datePublished: '2026-04-02',
-  dateModified: '2026-04-02',
+  dateModified: '2026-05-30',
   mainEntityOfPage: 'https://aiseo.hamburg/wissen/zero-click-zukunft',
   inLanguage: 'de',
 };
@@ -185,6 +189,33 @@ export default function ZeroClickZukunftPage() {
         <div className="bg-white border-2 border-brand-accent rounded-xl p-6 shadow-sm my-8">
           <p className="text-lg md:text-xl font-semibold text-black leading-snug">
             SparkToro / Datos (2025): 60 %+ der Google-Suchen enden Zero-Click. Gartner (2024): Bis 2028 verlieren Marken über 50 % ihres organischen Traffics. Das ist keine Prophezeiung — das ist Mathematik.
+          </p>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/*  Update Mai 2026: Maps AI                                    */}
+      {/* ============================================================ */}
+      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
+        <span className="inline-block text-xs font-bold uppercase tracking-wider text-brand-accent bg-brand-accent/10 px-3 py-1 rounded-full mb-5">
+          Update Mai 2026
+        </span>
+        <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+          Zero-Click erreicht jetzt Google Maps
+        </h2>
+
+        <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
+          <p>
+            Wer dachte, Zero-Click sei ein Problem der Websuche, bekommt gerade eine zweite Front. Google rollt <strong className="text-black">„Ask Maps"</strong> aus: eine Gemini-Funktion direkt in Google Maps, die komplexe Ortsfragen in normaler Sprache beantwortet. „Wo kann ich mein Handy laden, ohne anzustehen?" oder „Welcher Laden hat gute vegetarische Vorspeisen und zeigt das Spiel?" Maps zieht die Antwort aus über 300 Millionen Orten und den Beiträgen von mehr als 500 Millionen Nutzern. Reservieren, speichern, Route starten passiert direkt in der Antwort.
+          </p>
+          <p>
+            Dazu kommt die größte Navigations-Überarbeitung seit über zehn Jahren, mit 3D-Ansicht und spurgenauer Führung. Für lokale Unternehmen ist die Konsequenz unbequem: Die Maps-Suche, bisher eine relativ verlässliche Quelle für Anrufe und Wegbeschreibungen, wird selbst zur Antwortmaschine. Wer in der KI-Antwort nicht vorkommt, existiert für diesen Nutzer nicht. Kein Listenplatz, keine zehn blauen Pins zum Vergleichen, nur eine Empfehlung.
+          </p>
+          <p>
+            Noch läuft „Ask Maps" nur in den USA und Indien (Android und iOS, Desktop folgt). Aber das Muster kennst du: Google startet in den USA, dann kommt der Rest. In den USA stecken KI-Antworten längst in der normalen Suche und jetzt auch in Maps. Für den deutschen Markt ist das die Vorwarnung, nicht die Entwarnung. Das Zeitfenster, in dem du deine <a href="/wissen/lokale-ki-sichtbarkeit" className="text-brand-accent font-medium hover:underline">lokale KI-Sichtbarkeit</a> aufbaust, ist genau jetzt, solange die Konkurrenz vor Ort noch wartet.
+          </p>
+          <p className="text-sm text-gray-500">
+            Quellen: Google, <a href="https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/" target="_blank" rel="noopener noreferrer" className="text-brand-accent hover:underline">„Ask Maps and immersive navigation"</a> und <a href="https://blog.google/intl/en-in/products/explore-communicate/ask-anything-about-any-place-on-maps-with-gemini/" target="_blank" rel="noopener noreferrer" className="text-brand-accent hover:underline">„Ask anything about any place on Maps with Gemini"</a> (März 2026).
           </p>
         </div>
       </section>
