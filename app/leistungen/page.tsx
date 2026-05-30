@@ -125,9 +125,9 @@ const SERVICES: ServiceType[] = [
       'Priorisierter Maßnahmenplan mit Quick Wins',
       'Persönliches Strategie-Gespräch (60 Min.)',
     ],
-    idealFor: 'Unternehmen, die erstmal verstehen wollen, wo sie stehen – bevor sie investieren.',
+    idealFor: 'Unternehmen, die erstmal verstehen wollen, wo sie stehen, bevor sie investieren.',
     timeline: 'Ergebnisse in 5–7 Werktagen',
-    primaryArticle: { title: 'KI-Sichtbarkeit beauftragen – so geht\'s', href: '/wissen/ki-sichtbarkeit-beauftragen' },
+    primaryArticle: { title: 'KI-Sichtbarkeit beauftragen: so geht\'s', href: '/wissen/ki-sichtbarkeit-beauftragen' },
     relatedArticles: [
       { title: 'Was kostet KI-Sichtbarkeit?', href: '/wissen/ki-sichtbarkeit-kosten' },
       { title: 'KI-Sichtbarkeit messen', href: '/wissen/ki-sichtbarkeit-messen' },
@@ -137,7 +137,7 @@ const SERVICES: ServiceType[] = [
     icon: SparklesIcon,
     title: 'AEO',
     subtitle: 'Answer Engine Optimization',
-    description: 'Wenn Kunden ChatGPT oder Perplexity nach deiner Leistung fragen, wirst du als Antwort genannt – nicht deine Konkurrenz. Ich optimiere deine Inhalte so, dass KI-Systeme sie als relevante, zitierbare Quelle erkennen und in ihren Antworten verwenden.',
+    description: 'Wenn Kunden ChatGPT oder Perplexity nach deiner Leistung fragen, wirst du als Antwort genannt, nicht deine Konkurrenz. Ich optimiere deine Inhalte so, dass KI-Systeme sie als relevante, zitierbare Quelle erkennen und in ihren Antworten verwenden.',
     benefits: [
       'Dein Unternehmen erscheint in KI-Antworten',
       'Relevante Kundenfragen führen direkt zu dir',
@@ -154,7 +154,7 @@ const SERVICES: ServiceType[] = [
     timeline: 'Erste Ergebnisse bei Perplexity nach 2–4 Wochen',
     primaryArticle: { title: 'AEO: Der komplette Leitfaden', href: '/wissen/aeo-answer-engine-optimization' },
     relatedArticles: [
-      { title: 'ChatGPT SEO – so wirst du gefunden', href: '/wissen/chatgpt-seo' },
+      { title: 'ChatGPT SEO: so wirst du gefunden', href: '/wissen/chatgpt-seo' },
       { title: 'Perplexity vs. ChatGPT vs. Google', href: '/wissen/perplexity-vs-chatgpt-vs-google' },
     ],
   },
@@ -162,7 +162,7 @@ const SERVICES: ServiceType[] = [
     icon: GlobeIcon,
     title: 'GEO',
     subtitle: 'Generative Engine Optimization',
-    description: 'GEO ist die Disziplin dahinter: deine Inhalte so aufbereiten, dass generative KI-Systeme wie ChatGPT, Perplexity und Google AI dich als Quelle auswählen, wenn sie ihre Antworten zusammensetzen. AEO ist ein Teil davon. GEO denkt die gesamte Sichtbarkeit über alle generativen Engines hinweg und macht sie strategisch steuerbar.',
+    description: 'GEO ist die Disziplin dahinter: deine Inhalte so aufbereiten, dass generative KI-Systeme wie ChatGPT, Perplexity und Google AI dich als Quelle auswählen, wenn sie ihre Antworten zusammensetzen. AEO ist ein Teil davon. GEO denkt deine Sichtbarkeit über alle generativen Engines zusammen, statt jede Plattform einzeln zu behandeln.',
     benefits: [
       'Sichtbar in den Antworten aller generativen KI-Systeme',
       'Eine Strategie statt isolierter Einzelmaßnahmen',
@@ -187,7 +187,7 @@ const SERVICES: ServiceType[] = [
     icon: BrainIcon,
     title: 'AI SEO',
     subtitle: 'KI-fokussierte Suchoptimierung',
-    description: 'Deine Website wird von KI-Systemen als vertrauenswürdige Quelle erkannt und bei relevanten Suchanfragen bevorzugt ausgespielt. Die Optimierung umfasst semantische Strukturierung, Entity-Signale und technische KI-Zugänglichkeit – alles, was KI braucht, um dein Angebot einzuordnen.',
+    description: 'Deine Website wird von KI-Systemen als vertrauenswürdige Quelle erkannt und bei relevanten Suchanfragen bevorzugt ausgespielt. Die Optimierung umfasst semantische Strukturierung, Entity-Signale und technische KI-Zugänglichkeit. Also alles, was KI braucht, um dein Angebot einzuordnen.',
     benefits: [
       'Höheres Vertrauen bei KI-Plattformen',
       'Bessere Positionierung in KI-gestützten Suchergebnissen',
@@ -202,9 +202,9 @@ const SERVICES: ServiceType[] = [
     ],
     idealFor: 'Unternehmen, die in Google AI Overviews und KI-Antworten gleichzeitig sichtbar sein wollen.',
     timeline: '4–8 Wochen bis zu messbaren Veränderungen',
-    primaryArticle: { title: 'AI SEO Agentur – was du wissen musst', href: '/wissen/ai-seo-agentur' },
+    primaryArticle: { title: 'AI SEO Agentur: was du wissen musst', href: '/wissen/ai-seo-agentur' },
     relatedArticles: [
-      { title: 'SEO vs. AI SEO – die Unterschiede', href: '/wissen/seo-vs-ai-seo' },
+      { title: 'SEO vs. AI SEO: die Unterschiede', href: '/wissen/seo-vs-ai-seo' },
       { title: 'AI SEO Tools im Vergleich', href: '/wissen/ai-seo-tools' },
     ],
   },
@@ -212,7 +212,7 @@ const SERVICES: ServiceType[] = [
     icon: CodeIcon,
     title: 'Website-Erstellung',
     subtitle: 'KI-optimierte Websites',
-    description: 'Eine Website, die nicht nur gut aussieht, sondern von KI-Systemen sofort verstanden und empfohlen wird – ab dem ersten Tag online. Gebaut mit Next.js, perfekten Core Web Vitals, Schema.org Markup und voller Zugänglichkeit für alle KI-Crawler.',
+    description: 'Eine Website, die nicht nur gut aussieht, sondern von KI-Systemen ab dem ersten Tag online verstanden und empfohlen wird. Gebaut mit Next.js, perfekten Core Web Vitals, Schema.org Markup und voller Zugänglichkeit für alle KI-Crawler.',
     benefits: [
       'Sofort sichtbar für KI-Plattformen nach Launch',
       'Mehr Anfragen durch conversion-optimiertes Design',
@@ -250,7 +250,7 @@ const SERVICES: ServiceType[] = [
       'Lokales SEO: Google Business, NAP-Konsistenz',
       'Keyword-Strategie und Content-Empfehlungen',
     ],
-    idealFor: 'Unternehmen, die noch keine stabile Google-Basis haben – die Grundlage für alles.',
+    idealFor: 'Unternehmen, die noch keine stabile Google-Basis haben. Die Grundlage für alles.',
     timeline: '3–6 Monate für nachhaltige Rankings',
     primaryArticle: { title: 'Lokale KI-Sichtbarkeit', href: '/wissen/lokale-ki-sichtbarkeit' },
     relatedArticles: [
@@ -262,7 +262,7 @@ const SERVICES: ServiceType[] = [
     icon: LinkIcon,
     title: 'Backlink-Aufbau',
     subtitle: 'Autorität & Vertrauenssignale',
-    description: 'Dein Unternehmen wird als Autorität in deiner Branche wahrgenommen – von Google, von KI-Systemen und von potenziellen Kunden. Gezielte Markennennungen auf relevanten Plattformen stärken die Signale, die KI-Systemen Vertrauen geben.',
+    description: 'Dein Unternehmen wird als Autorität in deiner Branche wahrgenommen: von Google, von KI-Systemen und von potenziellen Kunden. Gezielte Markennennungen auf relevanten Plattformen stärken die Signale, die KI-Systemen Vertrauen geben.',
     benefits: [
       'Steigende Domain-Autorität und Vertrauen',
       'Erwähnungen auf relevanten Branchenseiten',
@@ -319,12 +319,12 @@ const DIFFERENTIATORS = [
   {
     icon: ZapIcon,
     title: 'Technik',
-    description: 'Saubere Struktur, Schema, Performance – damit KI dein Angebot wirklich versteht.',
+    description: 'Saubere Struktur, Schema, Performance. Damit KI dein Angebot wirklich versteht.',
   },
   {
     icon: ShieldIcon,
     title: 'Autorität',
-    description: 'Backlinks, Erwähnungen, Pressearbeit – die Signale, die KI-Systemen Vertrauen geben.',
+    description: 'Backlinks, Erwähnungen, Pressearbeit. Die Signale, die KI-Systemen Vertrauen geben.',
   },
 ];
 
@@ -334,12 +334,12 @@ const VERTICALS = [
   { title: 'Ärzte & Praxen', href: '/wissen/ki-sichtbarkeit-aerzte', description: 'Patienten finden dich über KI-Assistenten.' },
   { title: 'Anwälte & Kanzleien', href: '/wissen/ki-sichtbarkeit-anwaelte', description: 'Mandanten gewinnen über ChatGPT & Co.' },
   { title: 'E-Commerce', href: '/wissen/ki-sichtbarkeit-ecommerce', description: 'Produkte, die KI aktiv empfiehlt.' },
-  { title: 'Dienstleister', href: '/wissen/ki-sichtbarkeit-dienstleister', description: 'Agenturen, Berater, Freelancer – sichtbar in KI.' },
+  { title: 'Dienstleister', href: '/wissen/ki-sichtbarkeit-dienstleister', description: 'Agenturen, Berater und Freelancer, sichtbar in KI.' },
 ];
 
 const PLATFORMS = [
   { name: 'ChatGPT', href: '/wissen/sichtbarkeit-in-chatgpt', description: 'So wirst du in ChatGPT-Antworten genannt.' },
-  { name: 'Perplexity', href: '/wissen/sichtbarkeit-in-perplexity', description: 'Schnellste Ergebnisse – Live-Web-Suche.' },
+  { name: 'Perplexity', href: '/wissen/sichtbarkeit-in-perplexity', description: 'Schnellste Ergebnisse durch Live-Web-Suche.' },
   { name: 'Claude', href: '/wissen/sichtbarkeit-in-claude', description: 'Anthropics KI mit wachsender Nutzerbasis.' },
   { name: 'Gemini', href: '/wissen/sichtbarkeit-in-gemini', description: 'Google AI und die Zukunft der Suche.' },
 ];
@@ -462,7 +462,7 @@ export default function LeistungenPage() {
               'item': {
                 '@type': 'Service',
                 'name': 'KI-Sichtbarkeitsberatung',
-                'description': 'Strategische Beratung für AI Visibility – Analyse, Strategie und Handlungsempfehlungen.',
+                'description': 'Strategische Beratung für AI Visibility: Analyse, Strategie und Handlungsempfehlungen.',
                 'provider': { '@id': 'https://aiseo.hamburg/#organization' },
                 'areaServed': { '@type': 'City', 'name': 'Hamburg' },
               },
@@ -625,7 +625,7 @@ export default function LeistungenPage() {
                     Nicht sicher, wo du anfangen sollst?
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
-                    In 15 Minuten zeige ich dir, wie KI dein Unternehmen heute beschreibt – und was sich ändern muss, damit du empfohlen wirst. Kostenlos, ehrlich, ohne Verkaufsdruck.
+                    In 15 Minuten zeige ich dir, wie KI dein Unternehmen heute beschreibt und was sich ändern muss, damit du empfohlen wirst. Kostenlos, ehrlich, ohne Verkaufsdruck.
                   </p>
                 </div>
                 <div className="flex flex-col gap-3 flex-shrink-0">
