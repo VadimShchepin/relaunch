@@ -313,12 +313,12 @@ export const ARTICLES: Article[] = [
   },
   {
     title: 'KI-Sichtbarkeit für Ärzte & Praxen: Wenn Patienten die KI fragen',
-    description: 'Wie Ärzte und Praxen in ChatGPT, Perplexity und Google AI sichtbar werden. 7 Strategien, medizinisches E-E-A-T und lokale Sichtbarkeit in Hamburg.',
+    description: 'Wie Arztpraxen in ChatGPT, Perplexity und Google AI empfohlen werden, ohne gegen das HWG zu verstoßen. Mit HWG-Formulierungstabelle, KI-Vertrauensleiter und MedicalClinic-Schema.',
     href: '/wissen/ki-sichtbarkeit-aerzte',
     tag: 'Ärzte',
     topic: 'Branchen',
-    readTime: '11 Min.',
-    date: '2026-03-24',
+    readTime: '14 Min.',
+    date: '2026-06-01',
   },
   {
     title: 'KI-Sichtbarkeit für Anwälte & Kanzleien: Mandanten fragen die KI',

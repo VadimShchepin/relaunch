@@ -1,30 +1,32 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'KI-Sichtbarkeit für Ärzte & Praxen: Wenn Patienten die KI fragen | aiseo.hamburg',
-    description: 'Wie Ärzte und Praxen in ChatGPT, Perplexity und Google AI sichtbar werden. 7 Strategien für KI-Empfehlungen, medizinisches E-E-A-T und lokale Sichtbarkeit in Hamburg.',
+    title: 'KI-Sichtbarkeit für Ärzte & Praxen: HWG-konform in ChatGPT & Co. | aiseo.hamburg',
+    description: 'Wie Arztpraxen in ChatGPT, Perplexity und Google AI empfohlen werden, ohne gegen das Heilmittelwerbegesetz zu verstoßen. Mit HWG-Formulierungstabelle, KI-Vertrauensleiter und MedicalClinic-Schema.',
     keywords: [
         'ki sichtbarkeit ärzte',
         'ai seo praxis',
         'chatgpt arzt empfehlung',
         'arztpraxis ki sichtbarkeit',
-        'arzt bei chatgpt gefunden werden',
-        'ki sichtbarkeit arztpraxis',
+        'hwg konforme werbung praxis',
+        'jameda doctolib ki',
+        'medicalclinic schema arzt',
         'chatgpt arzt hamburg',
-        'arzt ki empfehlung',
     ],
     openGraph: {
-        title: 'KI-Sichtbarkeit für Ärzte & Praxen | Wenn Patienten die KI fragen',
-        description: 'Wie Ärzte und Praxen in ChatGPT, Perplexity und Google AI sichtbar werden. 7 Strategien für mehr KI-Empfehlungen.',
+        title: 'KI-Sichtbarkeit für Ärzte & Praxen | HWG-konform in ChatGPT & Co.',
+        description: 'Wie Arztpraxen in ChatGPT, Perplexity und Google AI empfohlen werden, ohne gegen das HWG zu verstoßen. Mit Formulierungstabelle, KI-Vertrauensleiter und MedicalClinic-Schema.',
         url: 'https://aiseo.hamburg/wissen/ki-sichtbarkeit-aerzte',
         siteName: 'aiseo.hamburg',
         locale: 'de_DE',
         type: 'article',
+        images: ['https://aiseo.hamburg/photo/wissen_assets/medical-authority-ladder.webp'],
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'KI-Sichtbarkeit für Ärzte & Praxen | Wenn Patienten die KI fragen',
-        description: 'Wie Ärzte und Praxen in ChatGPT, Perplexity und Google AI sichtbar werden. 7 Strategien für mehr KI-Empfehlungen.',
+        title: 'KI-Sichtbarkeit für Ärzte & Praxen | HWG-konform in ChatGPT & Co.',
+        description: 'Wie Arztpraxen in ChatGPT, Perplexity und Google AI empfohlen werden, ohne gegen das HWG zu verstoßen.',
+        images: ['https://aiseo.hamburg/photo/wissen_assets/medical-authority-ladder.webp'],
     },
     alternates: {
         canonical: 'https://aiseo.hamburg/wissen/ki-sichtbarkeit-aerzte',

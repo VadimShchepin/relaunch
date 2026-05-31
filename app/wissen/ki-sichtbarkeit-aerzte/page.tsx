@@ -10,11 +10,16 @@ const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: 'KI-Sichtbarkeit für Ärzte & Praxen: Wenn Patienten die KI fragen',
-    description: 'Wie Ärzte und Praxen in ChatGPT, Perplexity und Google AI sichtbar werden. 7 Strategien für KI-Empfehlungen, medizinisches E-E-A-T und lokale Sichtbarkeit.',
+    description: 'Wie Arztpraxen in ChatGPT, Perplexity und Google AI empfohlen werden, ohne gegen das Heilmittelwerbegesetz zu verstoßen. Mit HWG-konformer Formulierungstabelle, KI-Vertrauensleiter und MedicalClinic-Schema.',
+    image: [
+        'https://aiseo.hamburg/photo/wissen_assets/chiropraktiker-gemini.webp',
+        'https://aiseo.hamburg/photo/wissen_assets/medical-authority-ladder.webp',
+        'https://aiseo.hamburg/photo/wissen_assets/medicalclinic-physician-schema.webp',
+    ],
     author: {
         '@type': 'Person',
         name: 'Vadim Shchepin',
-        url: 'https://aiseo.hamburg',
+        url: 'https://aiseo.hamburg/ueber-mich',
     },
     publisher: {
         '@type': 'Organization',
@@ -22,7 +27,7 @@ const articleSchema = {
         url: 'https://aiseo.hamburg',
     },
     datePublished: '2026-03-24',
-    dateModified: '2026-03-24',
+    dateModified: '2026-06-01',
     mainEntityOfPage: {
         '@type': 'WebPage',
         '@id': 'https://aiseo.hamburg/wissen/ki-sichtbarkeit-aerzte',
@@ -36,58 +41,58 @@ const faqSchema = {
     mainEntity: [
         {
             '@type': 'Question',
-            name: 'Wie werde ich als Arzt in ChatGPT sichtbar?',
+            name: 'Nutzen Patienten wirklich KI für die Arztsuche?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Deine Praxis muss auf Plattformen präsent sein, die KI-Systeme als vertrauenswürdig einstufen: Google Business, Jameda, Doctolib, Ärztekammer-Verzeichnisse und medizinische Fachportale. Konsistente NAP-Daten, positive Bewertungen und strukturierte Leistungsseiten auf deiner Praxis-Website sind die Basis.',
+                text: 'Laut Bitkom Digital Health 2025 (20.11.2025, n=1.145) recherchieren 73 Prozent der Menschen in Deutschland Gesundheitsfragen online, und 45 Prozent haben dafür bereits einen KI-Chatbot wie ChatGPT, Gemini oder Copilot genutzt. Eine saubere deutsche Statistik speziell zu "unter 35 wählt den Arzt per ChatGPT" gibt es noch nicht. Das Verhalten ist aber bereits angrenzend da: Von den KI-Nutzern sagen 50 Prozent, dass sie Symptome mit einem KI-Chatbot besser verstehen als mit klassischer Suche.',
             },
         },
         {
             '@type': 'Question',
-            name: 'Warum ist KI-Sichtbarkeit für Ärzte besonders wichtig?',
+            name: 'Bewegen Jameda- und Doctolib-Bewertungen wirklich KI-Empfehlungen?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Über 40% der unter 35-Jährigen nutzen bereits KI-Assistenten für Gesundheitsfragen und Arztempfehlungen. KI-Systeme empfehlen typischerweise nur 2-3 Praxen pro Anfrage. Wer nicht empfohlen wird, verliert eine wachsende Patientengruppe an die Konkurrenz.',
+                text: 'In meiner Arbeit mit Hamburger Praxen ist das zentrale Spiel das Bewertungsmanagement. Wichtig ist, auf allen relevanten Plattformen präsent zu sein (Google, Jameda, Doctolib) und die Bewertungen konsistent und frisch zu halten. Entscheidend ist nicht die reine Masse, sondern Qualität und Aktualität: etwa eine neue Bewertung pro Woche signalisiert Google und KI-Systemen, dass die Praxis aktiv ist und neue Patienten aufnimmt.',
             },
         },
         {
             '@type': 'Question',
-            name: 'Welche Rolle spielen Jameda-Bewertungen für KI-Sichtbarkeit?',
+            name: 'Wie viele Bewertungen braucht eine Praxis, um in der KI sichtbar zu sein?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Jameda-Bewertungen sind ein wichtiges Signal, reichen aber allein nicht aus. KI-Systeme gleichen Bewertungen über mehrere Plattformen ab - Google, Jameda, Doctolib, Sanego. Praxen mit konsistent guten Bewertungen auf mehreren Plattformen werden bevorzugt empfohlen.',
+                text: 'Es gibt keine offizielle Jameda-Schwelle. Aus den sichtbaren Hamburger Kategorieseiten lässt sich ein praktischer Richtwert ableiten: ab etwa 30 Bewertungen wirkt ein Profil glaubwürdig, ab 75 stark, ab 150 ist es ein echter Wettbewerbsvorteil in umkämpften Fachrichtungen. Das ist ein beobachteter Richtwert, keine offizielle Ranking-Regel.',
             },
         },
         {
             '@type': 'Question',
-            name: 'Was ist medizinisches E-E-A-T und warum ist es für KI relevant?',
+            name: 'Was darf eine Praxis laut HWG online über sich schreiben?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'E-E-A-T steht für Experience, Expertise, Authoritativeness und Trustworthiness. Bei medizinischen Inhalten (YMYL - Your Money or Your Life) prüfen Google und KI-Systeme besonders streng, ob der Autor tatsächlich medizinische Expertise hat. Facharzttitel, Publikationen, Klinikzugehörigkeiten und Mitgliedschaften in Fachgesellschaften sind starke Signale.',
+                text: 'Das Heilmittelwerbegesetz (§ 3 HWG) verbietet irreführende Werbung, also vor allem Heilversprechen und den falschen Eindruck garantierter Erfolge. In der Praxis ist das weniger einschränkend, als viele denken: Eine Praxis darf sachlich, indikationsbezogen und prozessorientiert beschreiben, welche Schwerpunkte sie hat, wie eine Behandlung abläuft und wie gut sie auf neue Patienten vorbereitet ist. Vermeiden sollte man Garantien, Erfolgsversprechen und unbelegte Überlegenheitsbehauptungen.',
             },
         },
         {
             '@type': 'Question',
-            name: 'Hilft Schema.org-Markup meiner Praxis bei KI-Sichtbarkeit?',
+            name: 'Wie oft sollte eine Praxis neue Bewertungen sammeln?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Ja. Schema.org-Markup wie MedicalBusiness, Physician und MedicalSpecialty hilft KI-Systemen, deine Praxis korrekt einzuordnen. Es signalisiert Fachrichtung, Leistungsspektrum, Öffnungszeiten und Standort in maschinenlesbarer Form. Das reduziert Interpretationsfehler und erhöht die Chance auf korrekte Empfehlungen.',
+                text: 'Aus der Praxis: Eine neue Bewertung pro Woche reicht, um das Profil "lebendig" zu halten. Viele Praxen haben viele alte Bewertungen, aber nichts Frisches. Stagnierende Profile wirken auf Google und KI-Systeme so, als nehme die Praxis keine neuen Patienten mehr auf, und werden seltener in den ersten Empfehlungen genannt.',
             },
         },
         {
             '@type': 'Question',
-            name: 'Wie schnell wirkt KI-Optimierung für Arztpraxen?',
+            name: 'Welche Fachrichtung wird in KI am häufigsten gefragt?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Änderungen an Google Business und Bewertungsplattformen können innerhalb von Tagen bis Wochen in KI-Live-Suchen wirken. Für die Trainingsdaten der KI-Modelle dauert es bis zum nächsten Update - das können Wochen bis Monate sein. Ein systematischer Ansatz zeigt typischerweise nach 2-3 Monaten erste messbare Ergebnisse.',
+                text: 'Es gibt keinen klaren Spitzenreiter. Gefragt wird, was Patienten gerade brauchen, und das verteilt sich über alle Fachrichtungen. Jede Indikation kann zur KI-Anfrage werden. Statt auf eine vermeintliche "Top-Fachrichtung" zu setzen, lohnt es sich, die eigenen Behandlungsschwerpunkte konkret und auffindbar zu machen.',
             },
         },
         {
             '@type': 'Question',
-            name: 'Lohnt sich KI-Sichtbarkeit auch für kleine Einzelpraxen?',
+            name: 'Hilft Schema.org MedicalClinic-Markup meiner Praxis bei KI-Sichtbarkeit?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Gerade für Einzelpraxen ist KI-Sichtbarkeit eine Chance. KI-Systeme bewerten nicht nach Praxisgröße, sondern nach Vertrauenssignalen: Bewertungen, fachliche Autorität, konsistente Online-Präsenz. Eine gut optimierte Einzelpraxis kann in KI-Empfehlungen vor großen MVZ-Ketten erscheinen.',
+                text: 'Ja. Mit MedicalClinic für die Praxis und Physician für die Ärztin oder den Arzt werden Fachgebiet, Adresse, Öffnungszeiten und verknüpfte Profile (Google, Jameda, Doctolib, Ärztekammer) maschinenlesbar. Das Markup bildet eine saubere Kette von Praxis über Arztprofil bis zu den einzelnen Behandlungsseiten und reduziert Interpretationsfehler in KI-Empfehlungen.',
             },
         },
     ],
@@ -120,7 +125,7 @@ const breadcrumbSchema = {
 
 // Hero Section
 const HeroSection: React.FC = () => (
-    <section className="relative pt-32 pb-20 md:pt-52 md:pb-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
+    <section className="relative pt-32 pb-12 md:pt-52 md:pb-16 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
         <FadeIn>
             {/* Breadcrumb */}
             <nav className="mb-8 text-sm text-gray-400">
@@ -136,10 +141,17 @@ const HeroSection: React.FC = () => (
                 Wenn Patienten die KI fragen
             </h1>
             <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
-                &ldquo;Welcher Orthopäde in Hamburg ist gut?&rdquo; - Diese Frage wird heute nicht mehr
-                nur bei Google gestellt. 40% der unter 35-Jährigen fragen ChatGPT nach Arztempfehlungen.
-                Dieser Guide zeigt dir, wie deine Praxis in KI-Empfehlungen auftaucht.
+                &bdquo;Welcher Chiropraktiker in Hamburg ist gut?&ldquo; Solche Fragen landen heute in
+                ChatGPT, Gemini und Perplexity. Die KI nennt zwei bis drei Praxen. Im Medizinbereich
+                gelten dabei die strengsten Vertrauensregeln im Netz, plus das Heilmittelwerbegesetz.
+                Dieser Guide zeigt, was eine Praxis schreiben darf und was die KI trotzdem verstehen muss.
             </p>
+
+            <div className="mt-6 text-sm text-gray-500">
+                Von <a href="/ueber-mich" className="text-brand-accent hover:underline font-medium">Vadim Shchepin</a>
+                <span className="mx-2">·</span>
+                Aktualisiert am 1. Juni 2026
+            </div>
         </FadeIn>
     </section>
 );
@@ -153,25 +165,71 @@ const TLDRSection: React.FC = () => (
                 <ul className="space-y-2 text-gray-800">
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">1.</span>
-                        <span>40% der jungen Erwachsenen fragen KI nach Arztempfehlungen. Tendenz: stark steigend.</span>
+                        <span>45 % der Menschen in Deutschland haben laut Bitkom (Digital Health 2025) schon einen KI-Chatbot für Gesundheitsfragen genutzt. Eine saubere Zahl speziell zur Arztwahl gibt es noch nicht, das Verhalten ist aber angrenzend da.</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">2.</span>
-                        <span>Medizinische Inhalte unterliegen YMYL-Kriterien - KI-Systeme prüfen ärztliche Expertise besonders streng.</span>
+                        <span>Das eigentliche Spiel bei Praxen sind die Bewertungen. Nicht die Masse zählt, sondern Qualität und Frische: rund eine neue Bewertung pro Woche hält das Profil &bdquo;lebendig&ldquo;.</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">3.</span>
-                        <span>Bewertungsprofile auf Google, Jameda und Doctolib sind die stärksten KI-Signale für Arztpraxen.</span>
+                        <span>Das Heilmittelwerbegesetz (§ 3 HWG) begrenzt, was eine Praxis behaupten darf. Sachlich, indikationsbezogen und prozessorientiert formuliert bleibt erstaunlich viel erlaubt (siehe Formulierungstabelle).</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">4.</span>
-                        <span>Schema.org MedicalBusiness-Markup hilft KI-Systemen, deine Praxis korrekt einzuordnen.</span>
+                        <span>Beiträge in Magazinen und Fachjournalen über die Praxis sind der stärkste E-E-A-T-Hebel. Das macht fast keine Praxis, also ist hier am meisten zu holen.</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">5.</span>
-                        <span>Lokale Signale (NAP-Konsistenz, Google Business) entscheiden, ob du bei &ldquo;Arzt in Hamburg&rdquo; empfohlen wirst.</span>
+                        <span>Bewertungen sind das schwächste medizinische Signal. Stärker wirken Fachgesellschaft/Leitlinie, Studienlage und der offizielle Ärztekammer-Eintrag (KI-Vertrauensleiter).</span>
                     </li>
                 </ul>
+            </div>
+        </FadeIn>
+    </section>
+);
+
+// Proof Section (real AI answer)
+const ProofSection: React.FC = () => (
+    <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
+        <FadeIn>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-6">
+                So sieht eine KI-Arztempfehlung aus
+            </h2>
+            <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-10">
+                <p>
+                    Fragt man Gemini &bdquo;Welcher Chiropraktiker in Hamburg ist gut?&ldquo;, kommt keine
+                    Linkliste, sondern eine kurze Empfehlung mit konkreten Namen und Stadtteilen. Genau
+                    diese zwei bis drei Plätze entscheiden, wen der Patient kontaktiert. Wer nicht
+                    genannt wird, existiert für diese Anfrage nicht.
+                </p>
+            </div>
+
+            <figure className="mb-10">
+                <img
+                    src="/photo/wissen_assets/chiropraktiker-gemini.webp"
+                    alt="Gemini beantwortet die Frage nach einem guten Chiropraktiker in Hamburg mit konkreten Praxen samt Stadtteil, darunter Felix Chiropraxis in Rahlstedt und Chiro Chris in Rotherbaum"
+                    className="w-full rounded-2xl shadow-lg border border-gray-100"
+                    loading="eager"
+                    width={880}
+                    height={976}
+                />
+                <figcaption className="text-sm text-gray-500 mt-3">
+                    Gemini auf &bdquo;Welcher Chiropraktiker in Hamburg ist gut?&ldquo;: Die KI nennt
+                    konkrete Praxen mit Stadtteil (Rahlstedt, Innenstadt, Rotherbaum, Wandsbek) und
+                    begründet jede Empfehlung. Sichtbar werden die Praxen mit gepflegten, gut bewerteten
+                    Profilen, nicht die mit der schönsten Website.
+                </figcaption>
+            </figure>
+
+            <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
+                <p className="text-sm font-bold text-brand-accent mb-3 uppercase tracking-wider">Ehrlich eingeordnet</p>
+                <p className="text-lg text-gray-800 leading-relaxed">
+                    Das ist eine allgemeine KI-Antwort, kein Mandanten-Screenshot. Für den Medizinbereich
+                    veröffentliche ich keine Patienten- oder Praxisdaten. Aber genau dieses Muster, zwei
+                    bis drei namentlich genannte Praxen, ist der Grund, warum sich KI-Sichtbarkeit für
+                    Praxen lohnt: Es geht um einen der wenigen verbliebenen Empfehlungsplätze.
+                </p>
             </div>
         </FadeIn>
     </section>
@@ -182,107 +240,448 @@ const ProblemSection: React.FC = () => (
     <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <FadeIn>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
-                Das Problem: Patienten fragen ChatGPT statt Google
+                Das Problem: Patienten fragen die KI, bevor sie googeln
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                 <p>
-                    Die Patientenreise hat sich verändert. Früher: Google-Suche, Jameda-Bewertungen lesen,
-                    Praxis anrufen. Heute tippen immer mehr Patienten ihre Fragen direkt in ChatGPT,
-                    Perplexity oder Google AI Overview.
-                </p>
-                <p>
-                    &ldquo;Welcher Orthopäde in Hamburg-Eppendorf ist gut?&rdquo;, &ldquo;Empfiehl mir
-                    einen Zahnarzt in der Nähe vom Jungfernstieg&rdquo;, &ldquo;Welcher Hautarzt in
-                    Hamburg hat kurze Wartezeiten?&rdquo; - diese Prompts werden täglich tausendfach gestellt.
+                    Die Patientenreise hat sich verschoben. Früher: Google-Suche, Jameda lesen, anrufen.
+                    Heute tippen viele ihre Frage direkt in ChatGPT, Gemini oder Perplexity, und nehmen
+                    die Antwort als neutrale Empfehlung.
                 </p>
             </div>
 
             <div className="bg-white border-2 border-brand-accent rounded-xl p-6 my-8 shadow-sm">
-                <p className="text-sm font-bold text-brand-accent mb-3 uppercase tracking-wider">Die neue Realität</p>
+                <p className="text-sm font-bold text-brand-accent mb-3 uppercase tracking-wider">Die Datenlage (Bitkom Digital Health 2025)</p>
                 <p className="text-2xl md:text-3xl font-semibold text-black mb-2">
-                    40% der unter 35-Jährigen
+                    45 % haben KI für Gesundheitsfragen genutzt
                 </p>
                 <p className="text-gray-600">
-                    fragen bereits KI-Assistenten nach Arztempfehlungen. Und KI-Systeme empfehlen
-                    typischerweise nur 2-3 Praxen pro Anfrage. Wer nicht dabei ist, existiert für
-                    diese Patientengruppe nicht.
+                    73 % der Menschen in Deutschland recherchieren Symptome oder Gesundheitsthemen online,
+                    45 % haben dafür schon einen KI-Chatbot wie ChatGPT, Gemini oder Copilot eingesetzt
+                    (Bitkom, 20.11.2025, n=1.145). Von diesen KI-Nutzern sagen 50 %, sie verstünden
+                    Symptome damit besser als mit klassischer Internetsuche, und 55 % vertrauen den
+                    Chatbot-Antworten grundsätzlich.
                 </p>
             </div>
 
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                 <p>
-                    <strong className="text-black">Deine Praxis ist exzellent - aber die KI weiss das nicht.</strong> Du
-                    hast zufriedene Patienten, gute Jameda-Bewertungen, vielleicht sogar einen Lehrauftrag
-                    am UKE. Aber wenn ChatGPT nach einem Spezialisten in deinem Fachgebiet gefragt wird,
-                    empfiehlt es die Konkurrenz-Praxis drei Straßen weiter.
+                    <strong className="text-black">Ehrliche Einordnung zur Zahl, die überall kursiert.</strong> Eine
+                    belastbare deutsche Statistik mit der Aussage &bdquo;X % der unter 35-Jährigen wählen
+                    ihren Arzt über ChatGPT&ldquo; existiert bislang nicht. Solche Zahlen werden oft frei
+                    behauptet. Belegbar ist die angrenzende Verhaltensänderung: Recherche zu Symptomen und
+                    Gesundheitsthemen wandert in die KI, und von dort ist es ein kurzer Schritt zur Frage
+                    &bdquo;Welche Praxis in meiner Nähe?&ldquo;.
                 </p>
                 <p>
-                    Jameda-Bewertungen allein reichen nicht mehr. KI-Systeme ziehen Informationen aus
-                    dutzenden Quellen - und wenn deine Praxis dort nicht konsistent, vollständig und
-                    überzeugend präsent ist, fällst du durch das Raster.
-                </p>
-                <p>
-                    <strong className="text-black">Patienten vertrauen KI-Empfehlungen mehr als Jameda.</strong> Wenn
-                    ChatGPT sagt &ldquo;Dr. Müller in Hamburg-Winterhude ist besonders empfehlenswert
-                    für Knieprobleme&rdquo;, hat das für viele Patienten mehr Gewicht als ein anonymes
-                    Bewertungsportal. Die KI wirkt neutral und allwissend - auch wenn sie es nicht ist.
+                    <strong className="text-black">Deine Praxis ist exzellent, aber die KI weiß das nicht.</strong> Zufriedene
+                    Patienten, ein voller Wartebereich und ein guter Ruf im Stadtteil sind für ein
+                    Sprachmodell unsichtbar, solange sie sich nicht in maschinenlesbaren, konsistenten und
+                    frischen Signalen niederschlagen. Genau diese Signale baut dieser Guide auf, ohne das
+                    Heilmittelwerbegesetz zu verletzen.
                 </p>
             </div>
         </FadeIn>
     </section>
 );
 
-// Why Different Section
-const WhyDifferentSection: React.FC = () => (
+// Expert Section (first-hand experience)
+const ExpertSection: React.FC = () => (
     <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <FadeIn>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
-                Warum KI-Sichtbarkeit für Praxen anders funktioniert
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-6">
+                Was bei Hamburger Praxen wirklich zieht
             </h2>
-            <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
+            <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-10">
                 <p>
-                    Medizinische Inhalte sind YMYL-Inhalte: Your Money or Your Life. Google und
-                    KI-Systeme wissen, dass falsche Gesundheitsinformationen Menschen schaden können.
-                    Deshalb gelten für Ärzte und Praxen strengere Maßstäbe als für andere Branchen.
+                    Ich habe mit mehreren Praxen in Hamburg gearbeitet, und Medizin ist ein anderes Spiel
+                    als jede andere Branche. Vertrauen bedeutet hier deutlich mehr. Vier Dinge entscheiden
+                    aus meiner Erfahrung am stärksten, und keines davon ist eine schöne Startseite.
                 </p>
             </div>
 
             <div className="space-y-6">
                 <div className="bg-white border border-gray-100 rounded-2xl p-6">
-                    <h3 className="font-semibold text-black text-lg mb-3">Medizinisches E-E-A-T wird strenger geprüft</h3>
-                    <p className="text-gray-600 text-base">
-                        Experience, Expertise, Authoritativeness, Trustworthiness - bei medizinischen
-                        Inhalten dreht die KI diese Regler auf Maximum. Ein Facharzt mit nachweisbarer
-                        Spezialisierung, Publikationen und Klinikzugehörigkeit wird bevorzugt empfohlen.
-                        Ein generischer Praxis-Eintrag ohne erkennbare Expertise fällt durch. Die KI
-                        prüft: Steht ein Facharzttitel auf der Website? Gibt es Publikationen? Wird
-                        die Person in Fachkreisen erwähnt?
+                    <h3 className="font-semibold text-black text-lg mb-3">1. Bewertungen sind das Spiel, und Frische schlägt Masse</h3>
+                    <p className="text-gray-600 leading-relaxed">
+                        Der wichtigste Hebel ist das Bewertungsmanagement: neue Bewertungen sammeln und sie
+                        hoch halten. Dabei zählt nicht in erster Linie die Anzahl, sondern die Qualität und
+                        vor allem die Aktualität. Eine neue Bewertung pro Woche reicht, damit Google die
+                        Praxis als lebendig einstuft, als einen Ort, an dem aktuell Menschen behandelt werden
+                        und an dem eine Empfehlung gebraucht wird. Das funktioniert genauso für KI-Systeme.
                     </p>
                 </div>
 
                 <div className="bg-white border border-gray-100 rounded-2xl p-6">
-                    <h3 className="font-semibold text-black text-lg mb-3">YMYL bedeutet höhere Hürden</h3>
-                    <p className="text-gray-600 text-base">
-                        Bei einer Restaurantempfehlung kann die KI entspannter sein. Bei einer
-                        Arztempfehlung riskiert sie, dass jemand gesundheitlichen Schaden nimmt.
-                        Deshalb empfiehlt sie nur Praxen, bei denen die Vertrauenssignale eindeutig
-                        sind. Widersprüchliche Informationen, fehlende Qualifikationsnachweise oder
-                        dünne Online-Präsenzen werden im medizinischen Kontext härter bestraft als
-                        in anderen Branchen.
+                    <h3 className="font-semibold text-black text-lg mb-3">2. Stagnierende Profile fallen zu Recht heraus</h3>
+                    <p className="text-gray-600 leading-relaxed">
+                        Es gibt viele Praxen mit vielen alten Bewertungen, die keine neuen Patienten mehr
+                        aufnehmen, weil sie voll sind. Solche Profile gehören eigentlich nicht in die erste
+                        Empfehlung, und Google wie KI behandeln sie auch so. Wer dagegen kontinuierlich
+                        frische Signale liefert, rückt nach vorne, weil er der KI zeigt: hier werden neue
+                        Patienten angenommen.
                     </p>
                 </div>
 
                 <div className="bg-white border border-gray-100 rounded-2xl p-6">
-                    <h3 className="font-semibold text-black text-lg mb-3">Bewertungsprofile als Vertrauenssignal</h3>
-                    <p className="text-gray-600 text-base">
-                        KI-Systeme gleichen Bewertungen plattformübergreifend ab. Eine Praxis mit
-                        4,8 Sternen auf Google, 1,2 auf Jameda und keinem Profil auf Doctolib sendet
-                        widersprüchliche Signale. Praxen mit konsistent positiven Bewertungen über
-                        drei oder mehr Plattformen werden deutlich häufiger empfohlen. Die Anzahl
-                        der Bewertungen zählt dabei fast so stark wie die Durchschnittsnote.
+                    <h3 className="font-semibold text-black text-lg mb-3">3. Magazine und Journale sind der E-E-A-T-Turbo</h3>
+                    <p className="text-gray-600 leading-relaxed">
+                        Was am stärksten auf das E-E-A-T-Profil einzahlt, sind Magazine und Fachjournale, die
+                        über die Praxis schreiben. Eine unabhängige Quelle, die die Praxis erwähnt, wiegt
+                        weit mehr als jeder Selbsttext auf der eigenen Website. Und kaum eine Praxis
+                        optimiert überhaupt für KI, schon gar nicht über Medienarbeit. Genau das ist die
+                        Lücke, die sich gerade nutzen lässt.
+                    </p>
+                </div>
+
+                <div className="bg-white border border-gray-100 rounded-2xl p-6">
+                    <h3 className="font-semibold text-black text-lg mb-3">4. HWG ist weniger einschränkend, als alle denken</h3>
+                    <p className="text-gray-600 leading-relaxed">
+                        In der Praxis verbietet das Heilmittelwerbegesetz nicht viel von dem, was eine Praxis
+                        sagen will. Sie muss nicht tief in Patientendetails gehen. Es reicht zu zeigen, wie
+                        gut die Praxis auf neue Patienten vorbereitet ist, was im Alltag passiert und welche
+                        Schwerpunkte sie hat. Da gibt es enorm viel Spielraum, ganz ohne Rechtsverstoß. Die
+                        konkrete Grenze steht im nächsten Abschnitt.
                     </p>
                 </div>
             </div>
+        </FadeIn>
+    </section>
+);
+
+// HWG Phrasing Table Section (unique asset)
+const HWGSection: React.FC = () => (
+    <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
+        <FadeIn>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-6">
+                HWG-konforme KI-Sichtbarkeit: was du schreiben darfst
+            </h2>
+            <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
+                <p>
+                    Das <strong className="text-black">Heilmittelwerbegesetz (HWG)</strong> ist der Grund,
+                    warum medizinische KI-Sichtbarkeit anders funktioniert als für jede andere Branche.
+                    Drei Paragraphen sind für Praxis-Websites und KI-Inhalte relevant:
+                </p>
+            </div>
+
+            <div className="grid sm:grid-cols-3 gap-4 mb-10">
+                <div className="bg-white border border-gray-100 rounded-2xl p-5">
+                    <p className="font-semibold text-black mb-1">§ 3 HWG</p>
+                    <p className="text-sm text-gray-600">Verbot irreführender Werbung. Keine Heilversprechen, kein Eindruck eines sicher zu erwartenden Erfolgs.</p>
+                </div>
+                <div className="bg-white border border-gray-100 rounded-2xl p-5">
+                    <p className="font-semibold text-black mb-1">§ 11 HWG</p>
+                    <p className="text-sm text-gray-600">Grenzen der Publikumswerbung. Unter anderem keine Vorher-Nachher-Bilder bei Schönheitsoperationen ohne medizinische Notwendigkeit.</p>
+                </div>
+                <div className="bg-white border border-gray-100 rounded-2xl p-5">
+                    <p className="font-semibold text-black mb-1">§ 9 HWG</p>
+                    <p className="text-sm text-gray-600">Werbung für Fernbehandlung nur, wenn kein persönlicher Arztkontakt erforderlich ist und fachliche Standards eingehalten werden.</p>
+                </div>
+            </div>
+
+            <h3 className="font-semibold text-black text-xl mb-4">Formulierungstabelle: riskant vs. HWG-bewusst</h3>
+            <p className="text-gray-600 mb-6">
+                Die meisten Wettbewerber reden über &bdquo;Sichtbarkeit&ldquo;. Kaum jemand übersetzt das
+                Medizinwerberecht in nutzbare Textregeln. Diese Tabelle macht genau das.
+            </p>
+
+            <div className="overflow-x-auto -mx-2 px-2">
+                <table className="w-full text-left border-collapse text-sm md:text-base">
+                    <thead>
+                        <tr className="border-b-2 border-gray-200">
+                            <th className="py-3 pr-4 font-semibold text-brand-orange align-top w-1/2">Riskant / problematisch</th>
+                            <th className="py-3 pl-4 font-semibold text-brand-accent align-top w-1/2">HWG-bewusst formuliert</th>
+                        </tr>
+                    </thead>
+                    <tbody className="text-gray-600 align-top">
+                        <tr className="border-b border-gray-100">
+                            <td className="py-3 pr-4">&bdquo;Wir heilen Ihre Rückenschmerzen dauerhaft.&ldquo;</td>
+                            <td className="py-3 pl-4">&bdquo;Wir untersuchen die Ursache Ihrer Rückenschmerzen und besprechen geeignete Behandlungsmöglichkeiten.&ldquo;</td>
+                        </tr>
+                        <tr className="border-b border-gray-100">
+                            <td className="py-3 pr-4">&bdquo;Garantiert schmerzfrei.&ldquo;</td>
+                            <td className="py-3 pl-4">&bdquo;Wir arbeiten mit schonenden Verfahren und besprechen Möglichkeiten zur Schmerzlinderung individuell.&ldquo;</td>
+                        </tr>
+                        <tr className="border-b border-gray-100">
+                            <td className="py-3 pr-4">&bdquo;Die beste Hautarztpraxis in Hamburg.&ldquo;</td>
+                            <td className="py-3 pl-4">&bdquo;Dermatologische Praxis in Hamburg mit Schwerpunkt Hautkrebsvorsorge, Akne, Rosazea und ästhetischer Dermatologie.&ldquo;</td>
+                        </tr>
+                        <tr className="border-b border-gray-100">
+                            <td className="py-3 pr-4">&bdquo;Unsere Behandlung wirkt bei jedem Patienten.&ldquo;</td>
+                            <td className="py-3 pl-4">&bdquo;Ob eine Behandlung geeignet ist, hängt von Diagnose, Befund und individuellen Faktoren ab.&ldquo;</td>
+                        </tr>
+                        <tr className="border-b border-gray-100">
+                            <td className="py-3 pr-4">&bdquo;Keine Risiken, keine Nebenwirkungen.&ldquo;</td>
+                            <td className="py-3 pl-4">&bdquo;Mögliche Risiken und Nebenwirkungen werden vor der Behandlung ärztlich besprochen.&ldquo;</td>
+                        </tr>
+                        <tr className="border-b border-gray-100">
+                            <td className="py-3 pr-4">&bdquo;Vorher-nachher: perfektes Ergebnis nach Filler.&ldquo;</td>
+                            <td className="py-3 pl-4">&bdquo;Bei ästhetischen Behandlungen beraten wir individuell zu Möglichkeiten, Grenzen und Risiken.&ldquo;</td>
+                        </tr>
+                        <tr className="border-b border-gray-100">
+                            <td className="py-3 pr-4">&bdquo;Nie wieder Angst vorm Zahnarzt.&ldquo;</td>
+                            <td className="py-3 pl-4">&bdquo;Wir nehmen uns Zeit für Angstpatient:innen und erklären jeden Behandlungsschritt transparent.&ldquo;</td>
+                        </tr>
+                        <tr>
+                            <td className="py-3 pr-4">&bdquo;ChatGPT empfiehlt uns als beste Praxis.&ldquo;</td>
+                            <td className="py-3 pl-4">&bdquo;Wir stellen strukturierte, sachliche Informationen bereit, damit Patient:innen und digitale Suchsysteme unsere Leistungen, Schwerpunkte und Erreichbarkeit besser einordnen können.&ldquo;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p className="text-gray-500 mt-4 text-sm">
+                Die linke Spalte enthält typische Heilversprechen und Überlegenheitsbehauptungen, die nach
+                § 3 HWG problematisch sind. Die rechte Spalte sagt inhaltlich dasselbe, bleibt aber
+                sachlich, indikationsbezogen und diagnoseabhängig. Keine Rechtsberatung, im Zweifel die
+                Formulierung anwaltlich prüfen lassen.
+            </p>
+        </FadeIn>
+    </section>
+);
+
+// Authority Ladder Section
+const AuthorityLadderSection: React.FC = () => (
+    <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
+        <FadeIn>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-6">
+                Die KI-Vertrauensleiter für Arztpraxen
+            </h2>
+            <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-10">
+                <p>
+                    Für medizinische KI-Sichtbarkeit reicht es nicht, viele Bewertungen zu haben.
+                    KI-Systeme gewichten medizinische Autoritätssignale unterschiedlich stark. Von oben
+                    nach unten nimmt das medizinische Gewicht ab, der Bewertungs-Charakter zu.
+                </p>
+            </div>
+
+            <figure className="mb-10">
+                <img
+                    src="/photo/wissen_assets/medical-authority-ladder.webp"
+                    alt="KI-Vertrauensleiter: Fachgesellschaft und Leitlinie oben, darunter PubMed und Studienlage, dann Ärztekammer-Eintrag, unten Jameda- und Google-Bewertungen"
+                    className="w-full rounded-2xl shadow-lg border border-gray-100"
+                    loading="lazy"
+                    width={1200}
+                    height={1500}
+                />
+                <figcaption className="text-sm text-gray-500 mt-3">
+                    Was KI als medizinische Autorität wertet, von oben (stärkstes Signal) nach unten
+                    (Reputationssignal). Bewertungen helfen, sind aber kein medizinischer Beleg.
+                </figcaption>
+            </figure>
+
+            <div className="space-y-4">
+                <div className="bg-white border border-gray-100 rounded-2xl p-6">
+                    <p className="text-xs font-bold text-brand-accent uppercase tracking-wider mb-1">Stufe 1, stärkstes Signal</p>
+                    <h3 className="font-semibold text-black text-lg mb-2">Fachgesellschaft / Leitlinie</h3>
+                    <p className="text-gray-600 text-base">
+                        Leitlinien-Konsens auf höchster Ebene. Die AWMF beschreibt offizielle Leitlinien als
+                        Entscheidungshilfen für Ärztinnen, Ärzte, Gesundheitspersonal und Patienten. Wer
+                        Inhalte an anerkannte Leitlinien anlehnt, baut das belastbarste Vertrauenssignal auf.
+                    </p>
+                </div>
+                <div className="bg-white border border-gray-100 rounded-2xl p-6">
+                    <p className="text-xs font-bold text-brand-accent uppercase tracking-wider mb-1">Stufe 2</p>
+                    <h3 className="font-semibold text-black text-lg mb-2">PubMed / Studienlage</h3>
+                    <p className="text-gray-600 text-base">
+                        Peer-reviewte medizinische Literatur. PubMed umfasst über 40 Millionen Nachweise.
+                        Eine Verknüpfung der eigenen Schwerpunkte mit wissenschaftlichen Quellen ist ein
+                        starkes Evidenzsignal, das im richtigen Kontext stehen muss.
+                    </p>
+                </div>
+                <div className="bg-white border border-gray-100 rounded-2xl p-6">
+                    <p className="text-xs font-bold text-brand-accent uppercase tracking-wider mb-1">Stufe 3</p>
+                    <h3 className="font-semibold text-black text-lg mb-2">Ärztekammer / offizieller Eintrag</h3>
+                    <p className="text-gray-600 text-base">
+                        Identitäts- und Legitimitätssignal: Kammereintrag, Facharzttitel, Approbation. Es
+                        bestätigt, dass die Ärztin oder der Arzt fachlich und offiziell zuordenbar ist.
+                    </p>
+                </div>
+                <div className="bg-white border border-gray-100 rounded-2xl p-6">
+                    <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Stufe 4, Reputationssignal</p>
+                    <h3 className="font-semibold text-black text-lg mb-2">Jameda / Google / Patientenbewertungen</h3>
+                    <p className="text-gray-600 text-base">
+                        Nützlich und wichtig für die lokale Sichtbarkeit, medizinisch aber schwächer. Hier
+                        wirken Frische und Konsistenz am stärksten (siehe Bewertungs-Richtwerte unten).
+                    </p>
+                </div>
+            </div>
+
+            <div className="bg-[#121212] text-white rounded-2xl p-6 md:p-8 mt-8">
+                <p className="text-lg leading-relaxed">
+                    KI-Sichtbarkeit für Arztpraxen entsteht nicht durch mehr Keywords, sondern durch eine
+                    saubere Autoritätskette: Leitlinie, Studienlage, offizielles Arztprofil, konsistente
+                    Patientenbewertungen, strukturierte Praxisdaten.
+                </p>
+            </div>
+        </FadeIn>
+    </section>
+);
+
+// Review Benchmark Section (Jameda / Doctolib)
+const ReviewBenchmarkSection: React.FC = () => (
+    <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
+        <FadeIn>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-6">
+                Jameda, Doctolib und wie viele Bewertungen wirklich zählen
+            </h2>
+            <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
+                <p>
+                    Für KI-Empfehlungen zählen beide großen Plattformen, weil KI-Systeme sie als
+                    strukturierte Vertrauens- und Reputationssignale lesen. Die Rollen sind unterschiedlich:
+                </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 gap-6 mb-10">
+                <div className="bg-white border border-gray-100 rounded-2xl p-6">
+                    <h3 className="font-semibold text-black text-lg mb-3">Doctolib = Termin-Infrastruktur</h3>
+                    <p className="text-gray-600 text-base">
+                        Der dominante Akteur bei Terminbuchung und Praxis-Workflow. Laut Doctolib Digital
+                        Health Report 2026 (1.000 Patienten, über 400 Ärzte und MFA) finden nur 35 % der
+                        Patienten die Terminsuche einfach, 64 % haben schon eine Behandlung verschoben, weil
+                        Praxis- oder Terminsuche zu mühsam war. 72 % würden einen KI-Terminassistenten nutzen,
+                        die höchste Zustimmung aller getesteten KI-Anwendungen.
+                    </p>
+                </div>
+                <div className="bg-white border border-gray-100 rounded-2xl p-6">
+                    <h3 className="font-semibold text-black text-lg mb-3">Jameda = Reputation &amp; Verzeichnis</h3>
+                    <p className="text-gray-600 text-base">
+                        Die große Bewertungs- und Arztsuche-Plattform. Nach eigenen Angaben mehr als 411.000
+                        Ärzte und Gesundheitsfachpersonen, über 1 Million buchbare Termine und über 2 Millionen
+                        verifizierte Patientenfeedbacks. Die vzbv hat 2025 beide Portale untersucht und als
+                        kommerzielle Terminplattformen mit Transparenzproblemen eingeordnet.
+                    </p>
+                </div>
+            </div>
+
+            <h3 className="font-semibold text-black text-xl mb-4">Bewertungs-Richtwert (beobachtet, keine offizielle Regel)</h3>
+            <p className="text-gray-600 mb-6">
+                Es gibt keine offizielle Schwelle &bdquo;sichtbar ab X Bewertungen&ldquo;. Aus den
+                sichtbaren Hamburger Jameda-Kategorieseiten (Hautärzte, Zahnärzte) lässt sich aber ein
+                praktischer Korridor ableiten.
+            </p>
+
+            <div className="overflow-x-auto -mx-2 px-2">
+                <table className="w-full text-left border-collapse text-sm md:text-base">
+                    <thead>
+                        <tr className="border-b-2 border-gray-200">
+                            <th className="py-3 pr-4 font-semibold text-black">Bewertungsanzahl</th>
+                            <th className="py-3 pl-4 font-semibold text-black">Einordnung</th>
+                        </tr>
+                    </thead>
+                    <tbody className="text-gray-600">
+                        <tr className="border-b border-gray-100">
+                            <td className="py-3 pr-4 font-medium text-gray-800">0&ndash;5</td>
+                            <td className="py-3 pl-4">Schwaches Vertrauenssignal, wirkt dünn (außer in Nischen mit wenig Konkurrenz)</td>
+                        </tr>
+                        <tr className="border-b border-gray-100">
+                            <td className="py-3 pr-4 font-medium text-gray-800">10&ndash;25</td>
+                            <td className="py-3 pl-4">Grundglaubwürdigkeit, das Profil wirkt nicht mehr leer</td>
+                        </tr>
+                        <tr className="border-b border-gray-100">
+                            <td className="py-3 pr-4 font-medium text-gray-800">30&ndash;60</td>
+                            <td className="py-3 pl-4">Lokal glaubwürdig, in den meisten Fachrichtungen wettbewerbsfähig</td>
+                        </tr>
+                        <tr className="border-b border-gray-100">
+                            <td className="py-3 pr-4 font-medium text-gray-800">75&ndash;120</td>
+                            <td className="py-3 pl-4">Starkes Vertrauenssignal, typisch für etablierte Praxen</td>
+                        </tr>
+                        <tr className="border-b border-gray-100">
+                            <td className="py-3 pr-4 font-medium text-gray-800">150+</td>
+                            <td className="py-3 pl-4">Kategorieführer-Signal in umkämpften Fachrichtungen</td>
+                        </tr>
+                        <tr>
+                            <td className="py-3 pr-4 font-medium text-gray-800">250&ndash;400+</td>
+                            <td className="py-3 pl-4">Dominanter Reputations-Ausreißer</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p className="text-gray-500 mt-4 text-sm">
+                Faustregel: 30+ als Minimum für sichtbare Glaubwürdigkeit, 75+ als stark, 150+ als echten
+                Wettbewerbsvorteil. Wichtiger als der Endstand ist die Frische: rund eine neue Bewertung
+                pro Woche hält das Profil aktiv.
+            </p>
+        </FadeIn>
+    </section>
+);
+
+// Schema Section (MedicalClinic / Physician)
+const SchemaSection: React.FC = () => (
+    <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
+        <FadeIn>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-6">
+                MedicalClinic- und Physician-Schema: die Praxis maschinenlesbar machen
+            </h2>
+            <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-10">
+                <p>
+                    Schema.org hat eigene Typen für <strong className="text-black">MedicalClinic</strong> (die
+                    Praxis) und <strong className="text-black">Physician</strong> (die Ärztin oder den Arzt).
+                    Damit verknüpfst du Praxis, Arztprofil und Behandlungsseiten zu einer Kette, die
+                    KI-Systeme ohne Interpretation lesen können: Fachgebiet, Adresse, Öffnungszeiten und die
+                    verknüpften Profile (Google, Jameda, Doctolib, Ärztekammer) über das Feld
+                    <code className="text-sm bg-gray-100 px-1.5 py-0.5 rounded mx-1">sameAs</code>.
+                </p>
+            </div>
+
+            <figure className="mb-10">
+                <img
+                    src="/photo/wissen_assets/medicalclinic-physician-schema.webp"
+                    alt="Schema-Diagramm: MedicalClinic verweist über employee auf Physician, dieser über knowsAbout auf Behandlungs- und Themenseiten, alle mit sameAs zu Google, Jameda, Doctolib und Ärztekammer"
+                    className="w-full rounded-2xl shadow-lg border border-gray-100"
+                    loading="lazy"
+                    width={1200}
+                    height={900}
+                />
+                <figcaption className="text-sm text-gray-500 mt-3">
+                    Die Kette: MedicalClinic verweist per
+                    <code className="text-xs bg-gray-100 px-1 py-0.5 rounded mx-1">employee</code> auf den
+                    Physician, dieser per
+                    <code className="text-xs bg-gray-100 px-1 py-0.5 rounded mx-1">knowsAbout</code> auf die
+                    Behandlungsseiten. Jede Ebene trägt
+                    <code className="text-xs bg-gray-100 px-1 py-0.5 rounded mx-1">sameAs</code>-Verweise auf
+                    die externen Profile.
+                </figcaption>
+            </figure>
+
+            <h3 className="font-semibold text-black text-xl mb-4">JSON-LD-Beispiel für eine Praxisseite</h3>
+            <div className="overflow-x-auto rounded-2xl bg-[#121212] p-5 md:p-6 text-sm leading-relaxed">
+                <pre className="text-gray-200 whitespace-pre"><code>{`{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "@id": "https://www.beispiel-praxis.de/#clinic",
+  "name": "Praxis Dr. Beispiel",
+  "url": "https://www.beispiel-praxis.de/",
+  "telephone": "+49-40-123456",
+  "medicalSpecialty": "Dermatologic",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Musterstraße 12",
+    "postalCode": "20095",
+    "addressLocality": "Hamburg",
+    "addressCountry": "DE"
+  },
+  "sameAs": [
+    "https://www.jameda.de/...",
+    "https://www.doctolib.de/...",
+    "https://www.google.com/maps?cid=..."
+  ],
+  "employee": {
+    "@type": "Physician",
+    "name": "Dr. med. Max Beispiel",
+    "medicalSpecialty": "Dermatology",
+    "sameAs": [
+      "https://www.aerztekammer-hamburg.org/...",
+      "https://www.jameda.de/..."
+    ]
+  }
+}`}</code></pre>
+            </div>
+            <p className="text-gray-500 mt-4 text-sm">
+                Hinweis zur Google/Bing-Doppelnatur: Google sagt offiziell, spezielles Schema sei für seine
+                KI-Funktionen nicht nötig. Für Bing und damit ChatGPT-Websuche sind klar definierte,
+                verknüpfte Entitäten dagegen ein messbarer Vorteil. Das Markup schadet Google nie und hilft
+                der anderen Hälfte der KI-Landschaft.
+            </p>
         </FadeIn>
     </section>
 );
@@ -296,32 +695,32 @@ const FactorsSection: React.FC = () => (
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
                 <p>
-                    Nicht alle Signale sind gleich stark. Diese fünf Faktoren entscheiden, ob
-                    deine Praxis von ChatGPT, Perplexity und Google AI empfohlen wird.
+                    Nicht alle Signale sind gleich stark. Diese fünf entscheiden, ob deine Praxis von
+                    ChatGPT, Perplexity und Google AI genannt wird.
                 </p>
             </div>
 
             <div className="space-y-6">
                 {[
                     {
-                        title: 'Bewertungsprofil (Google, Jameda, Doctolib)',
-                        desc: 'Das stärkste Signal für Arztpraxen. KI-Systeme aggregieren Bewertungen über alle relevanten Plattformen. Entscheidend sind: Gesamtbewertung (ab 4,5 Sterne wird es relevant), Anzahl der Bewertungen (Masse signalisiert Vertrauen), Aktualität (aktuelle Bewertungen wiegen schwerer), und Antwortverhalten (reagierst du auf Bewertungen?). Eine Praxis mit 200 Google-Bewertungen bei 4,7 Sternen hat einen massiven Vorteil gegenüber einer mit 12 Bewertungen bei 5,0.',
+                        title: 'Bewertungsprofil mit Frische (Google, Jameda, Doctolib)',
+                        desc: 'Das stärkste lokale Signal. Entscheidend sind Gesamtnote (ab 4,5 wird es relevant), Anzahl (Richtwert: 30+ glaubwürdig, 75+ stark) und vor allem Aktualität: rund eine neue Bewertung pro Woche hält das Profil lebendig. Eine Praxis mit 200 Google-Bewertungen bei 4,7 und wöchentlichem Zulauf schlägt eine mit 12 alten Bewertungen bei 5,0.',
                     },
                     {
-                        title: 'Fachliche Autorität (Publikationen, Vorträge)',
-                        desc: 'KI-Systeme durchsuchen PubMed, Google Scholar, Konferenzprogramme und Fachzeitschriften. Wenn dein Name in Publikationen, Kongressbeiträgen oder als Experte in Fachartikeln auftaucht, steigt dein E-E-A-T-Score massiv. Ein Facharzt mit drei PubMed-Einträgen wird anders bewertet als einer ohne jegliche Fachpublikation. Auch Interviews in lokalen Medien oder Gastbeiträge in Gesundheitsportalen zählen.',
+                        title: 'Externe Erwähnungen (Magazine, Fachjournale, Presse)',
+                        desc: 'Der unterschätzte E-E-A-T-Hebel. Wird die Praxis in einem Magazin, Fachjournal oder lokalen Medium erwähnt, zählt das weit mehr als jeder Selbsttext. KI-Systeme cross-referenzieren: Taucht die Praxis nur auf der eigenen Seite auf, oder auch in unabhängigen Quellen? Kaum eine Praxis arbeitet hier, also ist der Vorsprung groß.',
                     },
                     {
-                        title: 'Praxis-Website Qualität (strukturierte Leistungsseiten)',
-                        desc: 'Eine einzelne Seite mit "Unsere Leistungen" reicht nicht. KI-Systeme brauchen strukturierte, detaillierte Einzelseiten pro Leistung. Statt einer Aufzählung: eine eigene Seite für "Kniespiegelung in Hamburg", eine für "Sportmedizinische Untersuchung", eine für "Arthrose-Behandlung". Jede Seite beantwortet die häufigsten Patientenfragen direkt. Das gibt der KI konkreten Content, den sie zitieren und empfehlen kann.',
+                        title: 'Strukturierte Behandlungsseiten mit FAQ',
+                        desc: 'Eine Seite "Unsere Leistungen" reicht nicht. KI-Systeme brauchen eigene, detaillierte Seiten pro Behandlung, jede mit den häufigsten Patientenfragen als FAQ. Diese Blöcke werden direkt als Antwortquelle zitiert, müssen aber HWG-konform bleiben: keine Garantien, keine Heilversprechen.',
                     },
                     {
-                        title: 'Lokale Signale (NAP, Google Business)',
-                        desc: 'Name, Adresse, Praxis-Telefonnummer - auf jeder Plattform identisch. Dein Google Business Profil ist der wichtigste Einzelfaktor für lokale KI-Empfehlungen. Kategorien korrekt wählen (nicht nur "Arzt", sondern "Orthopäde", "Sportmediziner"), Öffnungszeiten aktuell halten, Fotos der Praxis hochladen, und regelmäßig Google-Posts veröffentlichen. KI-Systeme nutzen Google Business als primäre lokale Datenquelle.',
+                        title: 'Lokale Signale (NAP, Google Business Profil)',
+                        desc: 'Name, Adresse, Telefonnummer auf jeder Plattform identisch. Die spezifische Kategorie wählen (nicht nur "Arzt", sondern die Fachrichtung), Öffnungszeiten aktuell halten, Praxisfotos hochladen. KI-Systeme nutzen das Google Business Profil als primäre lokale Datenquelle.',
                     },
                     {
-                        title: 'Patientenkommunikation (FAQ, Ratgeber-Content)',
-                        desc: 'Praxen, die Patientenfragen proaktiv beantworten, haben einen doppelten Vorteil: Die FAQ-Inhalte werden von KI-Systemen als direkte Antwortquellen genutzt, und sie signalisieren Patientenorientierung. "Wie lange dauert die Heilung nach einer Knie-OP?", "Was zahlt die Kasse bei einer Zahnreinigung?" - diese Fragen stellen Patienten auch der KI. Wenn deine Praxis-Website die Antwort liefert, wirst du zur Quelle der KI-Empfehlung.',
+                        title: 'Offizielle Einträge und Verknüpfung (Ärztekammer, Schema)',
+                        desc: 'Kammereintrag, Facharzttitel und konsistente sameAs-Verknüpfung zwischen Website, Google, Jameda, Doctolib und Kammerprofil bilden die Autoritätskette aus der KI-Vertrauensleiter ab. Das ist das, was Bewertungen allein nicht liefern können.',
                     },
                 ].map((factor, i) => (
                     <FadeIn key={i} delay={i * 50}>
@@ -347,38 +746,38 @@ const StrategiesSection: React.FC = () => (
                 {[
                     {
                         num: '01',
-                        title: 'Google Business mit medizinischen Kategorien optimieren',
-                        text: 'Dein Google Business Profil ist der Dreh- und Angelpunkt. Wähle die spezifischste Kategorie: nicht "Arzt", sondern "Orthopäde" oder "Facharzt für Innere Medizin". Ergänze alle relevanten Unterkategorien. Fülle jedes Feld aus: Leistungen, Versicherungen, Barrierefreiheit, Sprachen. Veröffentliche wöchentlich einen Google-Post zu Gesundheitsthemen oder Praxis-News. Lade professionelle Fotos der Praxisräume hoch. KI-Systeme nutzen Google Business als erste Anlaufstelle für lokale Arztempfehlungen.',
+                        title: 'Bewertungen wöchentlich und plattformübergreifend sammeln',
+                        text: 'Richte einen festen Prozess ein: nach dem Behandlungsabschluss eine freundliche Erinnerung per QR-Code in der Praxis oder per Mail. Ziel ist nicht ein Massen-Push, sondern ein steter Fluss von etwa einer neuen Bewertung pro Woche, parallel auf Google, Jameda und Doctolib. Reagiere auf jede Bewertung innerhalb von 48 Stunden, sachlich und ohne Patientendaten. Genau diese Frische ist das, was Stillstand-Profile von empfohlenen Praxen unterscheidet.',
                     },
                     {
                         num: '02',
-                        title: 'Leistungsseiten mit FAQ erstellen',
-                        text: 'Erstelle für jede Kernleistung eine eigene Unterseite. Struktur: Was ist die Behandlung, für wen ist sie geeignet, wie läuft sie ab, was kostet sie (Kassenleistung vs. IGeL), und wie lange dauert die Heilung. Ergänze jede Seite mit einem FAQ-Block, der die 5 häufigsten Patientenfragen beantwortet. Diese Seiten werden von KI-Systemen als direkte Antwortquellen genutzt. Beispiel: "/leistungen/kniespiegelung" statt einer Zeile in einer Übersichtsliste.',
+                        title: 'Medienarbeit für E-E-A-T aufbauen',
+                        text: 'Der stärkste Hebel und der am wenigsten genutzte. Biete dich als Experte für saisonale Gesundheitsthemen an (Hamburger Abendblatt, NDR, MOPO, Gesundheitsmagazine), schreibe Gastbeiträge, lass über Praxis-Schwerpunkte berichten. Jede unabhängige Erwähnung ist ein Vertrauenssignal, das KI-Systeme höher gewichten als jeden Eigentext.',
                     },
                     {
                         num: '03',
-                        title: 'Bewertungsmanagement systematisieren',
-                        text: 'Richte einen Prozess ein: Nach jedem erfolgreichen Behandlungsabschluss eine freundliche Erinnerung per Mail oder QR-Code in der Praxis. Ziel: monatlich 5-10 neue Google-Bewertungen. Reagiere auf jede Bewertung innerhalb von 48 Stunden - positiv wie negativ. Bei negativen Bewertungen: sachlich, lösungsorientiert, ohne Patientendaten. KI-Systeme bewerten dein Antwortverhalten als Qualitätssignal. Pflege parallel Jameda und Doctolib.',
+                        title: 'Behandlungsseiten HWG-konform strukturieren',
+                        text: 'Pro Kernleistung eine eigene Unterseite: Was ist die Behandlung, für wen ist sie geeignet, wie läuft sie ab, Kasse oder IGeL, mit FAQ-Block. Formuliere durchgehend sachlich und diagnoseabhängig (siehe Formulierungstabelle). Beispiel: /leistungen/kniespiegelung statt einer Zeile in einer Übersicht.',
                     },
                     {
                         num: '04',
-                        title: 'Fachliche Autorität aufbauen',
-                        text: 'Veröffentliche Fachartikel in medizinischen Portalen, gib Interviews für lokale Medien (Hamburger Abendblatt, NDR Visite), schreibe Gastbeiträge für Gesundheitsblogs. Halte Vorträge bei Patienten-Informationsabenden oder medizinischen Kongressen und sorge dafür, dass diese online dokumentiert sind. Jede dieser Erwähnungen stärkt dein E-E-A-T-Profil. KI-Systeme cross-referenzieren: Wird Dr. Müller nur auf der eigenen Website erwähnt, oder auch auf unabhängigen Quellen?',
+                        title: 'Google Business Profil mit Fachkategorie pflegen',
+                        text: 'Wähle die spezifischste Kategorie (nicht "Arzt", sondern die Fachrichtung), fülle Leistungen, Versicherungen, Barrierefreiheit und Sprachen aus, lade echte Praxisfotos hoch und veröffentliche regelmäßig Posts. Das Profil ist die erste Anlaufstelle für lokale KI-Empfehlungen.',
                     },
                     {
                         num: '05',
-                        title: 'Schema.org MedicalBusiness und Physician Markup',
-                        text: 'Implementiere strukturierte Daten auf deiner Praxis-Website. Verwende Schema.org/MedicalBusiness für die Praxis und Schema.org/Physician für jeden Arzt. Ergänze MedicalSpecialty für deine Fachrichtung, MedicalCondition für behandelte Krankheitsbilder, und MedicalProcedure für angebotene Behandlungen. Dieses Markup hilft KI-Systemen, deine Praxis korrekt einzuordnen, ohne interpretieren zu müssen. Das reduziert Fehler in Empfehlungen und erhöht die Relevanz.',
+                        title: 'Autoritätskette über Schema.org abbilden',
+                        text: 'MedicalClinic für die Praxis, Physician für jeden Arzt, verknüpft per employee und knowsAbout, mit sameAs auf Google, Jameda, Doctolib und Ärztekammer. So liest die KI Fachgebiet, Standort und Legitimität ohne Interpretation. Das deckt die oberen Stufen der KI-Vertrauensleiter ab.',
                     },
                     {
                         num: '06',
-                        title: 'Doctolib- und Jameda-Profile pflegen',
-                        text: 'Behandle Doctolib und Jameda nicht als notwendiges Übel, sondern als KI-Datenquellen. Vollständiges Profil mit Foto, Lebenslauf, Qualifikationen, Leistungsspektrum und Sprechzeiten. Auf Jameda: Premium-Profil nutzen, um eigene Inhalte und Bilder zu hinterlegen. Auf Doctolib: Online-Terminbuchung aktivieren - das ist ein starkes Nutzersignal. KI-Systeme werten die Profiltiefe als Qualitätsmerkmal. Ein ausgefülltes Profil schlägt ein leeres, unabhängig von der Bewertungsnote.',
+                        title: 'Doctolib- und Jameda-Profile als KI-Datenquelle behandeln',
+                        text: 'Vollständiges Profil mit Foto, Qualifikationen, Leistungsspektrum und Sprechzeiten. Auf Doctolib die Online-Terminbuchung aktivieren, das ist ein starkes Nutzersignal. Ein ausgefülltes Profil schlägt ein leeres, unabhängig von der Note. KI-Systeme werten die Profiltiefe als Qualitätsmerkmal.',
                     },
                     {
                         num: '07',
-                        title: 'Patientenratgeber als Trust-Content',
-                        text: 'Erstelle einen Ratgeber-Bereich auf deiner Praxis-Website. Beantworte typische Patientenfragen: "Wann sollte ich zum Orthopäden?", "Wie bereite ich mich auf eine Magenspiegelung vor?", "Was hilft bei chronischen Rückenschmerzen?". Schreibe in verständlicher Sprache, aber mit fachlicher Tiefe. Kennzeichne jeden Artikel mit Autorenbox (Name, Facharzttitel, Foto). Dieser Content wird von KI-Systemen als Vertrauensbeweis für Patientenorientierung und fachliche Kompetenz gewertet.',
+                        title: 'Patientenratgeber mit sichtbarer Autorenschaft',
+                        text: 'Beantworte typische Patientenfragen verständlich, aber fachlich fundiert, und kennzeichne jeden Artikel mit Autorenbox (Name, Facharzttitel, Foto, Verlinkung zum Kammerprofil). Das ist Googles "Wer hat das erstellt?" in Reinform und zugleich direkter Antwort-Content für die KI.',
                     },
                 ].map((strategy, i) => (
                     <FadeIn key={i} delay={i * 50}>
@@ -405,8 +804,9 @@ const PracticeTypesSection: React.FC = () => (
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
                 <p>
-                    Nicht jede Praxis hat dieselben Hebel. Die optimale KI-Strategie hängt von
-                    deinem Fachgebiet und deiner Praxisstruktur ab.
+                    Eine Vorbemerkung: Es gibt keine &bdquo;Top-Fachrichtung&ldquo; in der KI. Gefragt
+                    wird, was Patienten gerade brauchen, und das verteilt sich über alle Fachgebiete.
+                    Die Hebel unterscheiden sich aber je nach Praxisstruktur.
                 </p>
             </div>
 
@@ -414,19 +814,19 @@ const PracticeTypesSection: React.FC = () => (
                 {[
                     {
                         type: 'Hausarztpraxis',
-                        tips: 'Stärkstes Signal: Lokale Nähe und Verfügbarkeit. Optimiere für Stadtteil-spezifische Anfragen ("Hausarzt Hamburg-Eimsbüttel"). Betone kurze Wartezeiten, Online-Terminvergabe und breites Leistungsspektrum. KI-Systeme empfehlen Hausärzte primär nach Standort und Erreichbarkeit. Check-up- und Vorsorge-Seiten sind idealer FAQ-Content.',
+                        tips: 'Stärkstes Signal: lokale Nähe und Verfügbarkeit. Optimiere für stadtteilspezifische Anfragen ("Hausarzt Hamburg-Eimsbüttel"). Betone Aufnahme neuer Patienten, kurze Wartezeiten und Online-Terminvergabe. Check-up- und Vorsorgeseiten sind idealer FAQ-Content.',
                     },
                     {
                         type: 'Zahnarztpraxis',
-                        tips: 'Höchstes Suchvolumen aller Fachrichtungen in KI-Systemen. Erstelle separate Seiten für Implantologie, Prophylaxe, Ästhetische Zahnmedizin. Preistransparenz bei IGeL-Leistungen ist ein starkes Differenzierungsmerkmal. Vorher-Nachher-Bilder (mit Patienteneinwilligung) stärken das Vertrauen. Google-Bewertungen mit konkreten Behandlungsberichten sind Gold wert.',
+                        tips: 'Eigene Seiten für Implantologie, Prophylaxe und ästhetische Zahnmedizin. Preistransparenz bei IGeL ist ein starkes Differenzierungsmerkmal. Vorher-Nachher-Bilder nur mit Einwilligung und im HWG-Rahmen. Bewertungen mit konkreten Behandlungsberichten wirken besonders.',
                     },
                     {
                         type: 'Facharztpraxis',
-                        tips: 'Hier zählt Spezialisierung. KI-Systeme empfehlen Fachärzte nach Behandlungsschwerpunkten, nicht nach generischem Fachgebiet. "Kniechirurg Hamburg" schlägt "Orthopäde Hamburg". Publikationen und Kongressbeiträge haben das höchste Gewicht. Baue Autorität in deiner Subspecialität auf, nicht in der gesamten Fachrichtung.',
+                        tips: 'Hier zählt der Behandlungsschwerpunkt, nicht das generische Fachgebiet. "Kniechirurg Hamburg" schlägt "Orthopäde Hamburg". Publikationen, Kongressbeiträge und externe Erwähnungen haben das höchste Gewicht. Autorität in der Subspezialität aufbauen.',
                     },
                     {
                         type: 'MVZ / Gemeinschaftspraxis',
-                        tips: 'Nutze den Größenvorteil: Mehr Ärzte = mehr Expertise-Signale, breiteres Leistungsspektrum, mehr Bewertungen. Erstelle individuelle Arzt-Profile mit Schema.org/Physician-Markup neben dem Gesamtprofil. KI-Systeme können dann sowohl die Praxis als Ganzes als auch einzelne Ärzte empfehlen. Cross-Linking zwischen Arzt-Profilen und Leistungsseiten stärkt die interne Struktur.',
+                        tips: 'Größenvorteil nutzen: mehr Ärzte bedeuten mehr Expertise-Signale und mehr Bewertungen. Individuelle Physician-Profile per Schema neben dem Gesamtprofil anlegen, untereinander und mit den Leistungsseiten verlinken. So kann die KI Praxis und einzelne Ärzte empfehlen.',
                     },
                 ].map((item, i) => (
                     <FadeIn key={i} delay={i * 50}>
@@ -450,19 +850,15 @@ const HamburgSection: React.FC = () => (
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                 <p>
-                    Hamburg hat über 12.000 niedergelassene Ärzte. Der Wettbewerb um Patienten
-                    ist in Stadtteilen wie Eppendorf, Winterhude und der HafenCity besonders
-                    intensiv. Genau hier entscheidet KI-Sichtbarkeit über neue Patienten.
+                    Hamburg hat über 12.000 niedergelassene Ärzte. In Stadtteilen wie Eppendorf,
+                    Winterhude und der HafenCity ist der Wettbewerb um Patienten besonders intensiv. Genau
+                    dort entscheidet KI-Sichtbarkeit über neue Patienten.
                 </p>
                 <p>
                     Die Ärztekammer Hamburg, das UKE als universitäre Referenz und die dichte
-                    Facharzt-Landschaft schaffen ein Umfeld, in dem medizinisches E-E-A-T
-                    besonders gut aufgebaut werden kann. Nutze lokale Autoritäten: Eine Erwähnung
-                    im Hamburger Ärzteblatt oder eine Kooperation mit dem UKE sind starke
-                    Vertrauenssignale für KI-Systeme.
-                </p>
-                <p>
-                    <strong className="text-black">Hamburger Besonderheiten für die KI-Optimierung:</strong>
+                    Facharzt-Landschaft schaffen ein Umfeld, in dem sich medizinisches E-E-A-T gut aufbauen
+                    lässt. Eine Erwähnung im Hamburger Ärzteblatt oder eine Kooperation mit dem UKE ist ein
+                    starkes lokales Vertrauenssignal.
                 </p>
             </div>
 
@@ -470,29 +866,28 @@ const HamburgSection: React.FC = () => (
                 <div className="bg-white border border-gray-100 rounded-2xl p-6">
                     <h3 className="font-semibold text-black text-lg mb-2">Stadtteil-Optimierung</h3>
                     <p className="text-gray-600 leading-relaxed">
-                        Hamburg-Patienten suchen stadtteilspezifisch. Optimiere für &ldquo;Zahnarzt
-                        Hamburg-Eppendorf&rdquo;, nicht nur für &ldquo;Zahnarzt Hamburg&rdquo;. KI-Systeme
-                        verstehen Hamburger Stadtteile und gewichten lokale Nähe stark. Erwähne deinen
-                        Stadtteil auf der Website, in Google Business und in Bewertungsantworten.
+                        Hamburg-Patienten suchen stadtteilspezifisch. Optimiere für &bdquo;Zahnarzt
+                        Hamburg-Eppendorf&ldquo;, nicht nur für &bdquo;Zahnarzt Hamburg&ldquo;. KI-Systeme
+                        verstehen Hamburger Stadtteile und gewichten lokale Nähe stark. Nenne deinen
+                        Stadtteil auf der Website, im Google Business Profil und in Bewertungsantworten.
                     </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-2xl p-6">
                     <h3 className="font-semibold text-black text-lg mb-2">Hamburger Medienlandschaft nutzen</h3>
                     <p className="text-gray-600 leading-relaxed">
-                        Das Hamburger Abendblatt, MOPO, NDR Hamburg Journal und Hamburg1 suchen
-                        regelmäßig medizinische Experten für Gesundheitsthemen. Ein Interview oder
-                        Gastbeitrag in diesen Medien wird von KI-Systemen als starkes lokales
-                        Autoritätssignal gewertet. Biete dich als Experte für saisonale
-                        Gesundheitsthemen an.
+                        Hamburger Abendblatt, MOPO, NDR Hamburg Journal und Hamburg1 suchen regelmäßig
+                        medizinische Experten. Ein Interview oder Gastbeitrag wird von KI-Systemen als
+                        starkes lokales Autoritätssignal gewertet. Das ist die praktische Umsetzung des
+                        Magazin- und Journal-Hebels.
                     </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-2xl p-6">
                     <h3 className="font-semibold text-black text-lg mb-2">Ärztekammer und Fachgesellschaften</h3>
                     <p className="text-gray-600 leading-relaxed">
-                        Die Mitgliedschaft in der Ärztekammer Hamburg, Auflistung im Arztregister
-                        der KV Hamburg, und Mitgliedschaften in Fachgesellschaften sind
-                        Vertrauenssignale, die KI-Systeme erkennen und positiv bewerten. Stelle
-                        sicher, dass dein Profil in diesen Verzeichnissen vollständig und aktuell ist.
+                        Mitgliedschaft in der Ärztekammer Hamburg, Auflistung im Arztregister der KV Hamburg
+                        und Mitgliedschaften in Fachgesellschaften sind Signale, die KI-Systeme erkennen.
+                        Stelle sicher, dass dein Eintrag in diesen Verzeichnissen vollständig und aktuell ist
+                        und per sameAs mit deiner Website verknüpft wird.
                     </p>
                 </div>
             </div>
@@ -504,32 +899,32 @@ const HamburgSection: React.FC = () => (
 const FAQSection: React.FC = () => {
     const faqItems = [
         {
-            q: 'Wie werde ich als Arzt in ChatGPT sichtbar?',
-            a: 'Deine Praxis muss auf Plattformen präsent sein, die KI-Systeme als vertrauenswürdig einstufen: Google Business, Jameda, Doctolib, Ärztekammer-Verzeichnisse und medizinische Fachportale. Konsistente NAP-Daten, positive Bewertungen und strukturierte Leistungsseiten auf deiner Praxis-Website sind die Basis.',
+            q: 'Nutzen Patienten wirklich KI für die Arztsuche?',
+            a: 'Laut Bitkom Digital Health 2025 (20.11.2025, n=1.145) recherchieren 73 % der Menschen in Deutschland Gesundheitsfragen online, 45 % haben dafür schon einen KI-Chatbot wie ChatGPT, Gemini oder Copilot genutzt. Eine saubere Zahl speziell zur Arztwahl gibt es noch nicht. Belegbar ist die angrenzende Verhaltensänderung: 50 % der KI-Nutzer verstehen Symptome damit besser als mit klassischer Suche.',
         },
         {
-            q: 'Warum ist KI-Sichtbarkeit für Ärzte besonders wichtig?',
-            a: 'Über 40% der unter 35-Jährigen nutzen bereits KI-Assistenten für Gesundheitsfragen und Arztempfehlungen. KI-Systeme empfehlen typischerweise nur 2-3 Praxen pro Anfrage. Wer nicht empfohlen wird, verliert eine wachsende Patientengruppe an die Konkurrenz.',
+            q: 'Bewegen Jameda- und Doctolib-Bewertungen wirklich KI-Empfehlungen?',
+            a: 'In meiner Arbeit mit Hamburger Praxen ist das Bewertungsmanagement das zentrale Spiel. Wichtig ist, auf allen relevanten Plattformen präsent zu sein und die Bewertungen konsistent und frisch zu halten. Entscheidend ist nicht die reine Masse, sondern Qualität und Aktualität: etwa eine neue Bewertung pro Woche signalisiert Google und KI-Systemen, dass die Praxis aktiv ist.',
         },
         {
-            q: 'Welche Rolle spielen Jameda-Bewertungen für KI-Sichtbarkeit?',
-            a: 'Jameda ist ein wichtiges Signal, reicht aber allein nicht aus. KI-Systeme gleichen Bewertungen über Google, Jameda, Doctolib und Sanego ab. Praxen mit konsistent guten Bewertungen auf mehreren Plattformen werden bevorzugt empfohlen.',
+            q: 'Wie viele Bewertungen braucht eine Praxis, um in der KI sichtbar zu sein?',
+            a: 'Es gibt keine offizielle Schwelle. Aus den sichtbaren Hamburger Jameda-Kategorieseiten lässt sich ein Richtwert ableiten: ab etwa 30 Bewertungen wirkt ein Profil glaubwürdig, ab 75 stark, ab 150 ist es in umkämpften Fachrichtungen ein echter Wettbewerbsvorteil. Beobachteter Richtwert, keine offizielle Ranking-Regel.',
         },
         {
-            q: 'Was ist medizinisches E-E-A-T und warum ist es für KI relevant?',
-            a: 'E-E-A-T steht für Experience, Expertise, Authoritativeness und Trustworthiness. Bei medizinischen Inhalten prüfen KI-Systeme besonders streng, ob der Autor tatsächlich medizinische Expertise hat. Facharzttitel, Publikationen und Mitgliedschaften in Fachgesellschaften sind entscheidende Signale.',
+            q: 'Was darf eine Praxis laut HWG online über sich schreiben?',
+            a: 'Das Heilmittelwerbegesetz (§ 3 HWG) verbietet irreführende Werbung, vor allem Heilversprechen und garantierte Erfolge. In der Praxis bleibt aber viel erlaubt: Eine Praxis darf sachlich, indikationsbezogen und prozessorientiert beschreiben, welche Schwerpunkte sie hat, wie eine Behandlung abläuft und wie gut sie auf neue Patienten vorbereitet ist. Vermeiden sollte man Garantien und unbelegte Überlegenheitsbehauptungen.',
         },
         {
-            q: 'Hilft Schema.org-Markup meiner Praxis bei KI-Sichtbarkeit?',
-            a: 'Ja. MedicalBusiness-, Physician- und MedicalSpecialty-Markup hilft KI-Systemen, deine Praxis korrekt einzuordnen. Es signalisiert Fachrichtung, Leistungsspektrum und Standort in maschinenlesbarer Form.',
+            q: 'Wie oft sollte eine Praxis neue Bewertungen sammeln?',
+            a: 'Eine neue Bewertung pro Woche reicht, um das Profil lebendig zu halten. Viele Praxen haben viele alte Bewertungen, aber nichts Frisches. Stagnierende Profile wirken auf Google und KI-Systeme so, als nehme die Praxis keine neuen Patienten mehr auf, und werden seltener in den ersten Empfehlungen genannt.',
         },
         {
-            q: 'Wie schnell wirkt KI-Optimierung für Arztpraxen?',
-            a: 'Änderungen an Google Business und Bewertungsplattformen können innerhalb von Tagen bis Wochen in KI-Live-Suchen wirken. Für die Trainingsdaten der KI-Modelle dauert es Wochen bis Monate. Ein systematischer Ansatz zeigt typischerweise nach 2-3 Monaten erste messbare Ergebnisse.',
+            q: 'Welche Fachrichtung wird in KI am häufigsten gefragt?',
+            a: 'Es gibt keinen klaren Spitzenreiter. Gefragt wird, was Patienten gerade brauchen, und das verteilt sich über alle Fachrichtungen. Statt auf eine vermeintliche Top-Fachrichtung zu setzen, lohnt es sich, die eigenen Behandlungsschwerpunkte konkret und auffindbar zu machen.',
         },
         {
-            q: 'Lohnt sich KI-Sichtbarkeit auch für kleine Einzelpraxen?',
-            a: 'Gerade für Einzelpraxen ist KI-Sichtbarkeit eine Chance. KI-Systeme bewerten nicht nach Praxisgröße, sondern nach Vertrauenssignalen. Eine gut optimierte Einzelpraxis kann in KI-Empfehlungen vor großen MVZ-Ketten erscheinen.',
+            q: 'Hilft Schema.org MedicalClinic-Markup meiner Praxis?',
+            a: 'Ja. Mit MedicalClinic für die Praxis und Physician für die Ärztin oder den Arzt werden Fachgebiet, Adresse, Öffnungszeiten und verknüpfte Profile maschinenlesbar. Das Markup bildet eine saubere Kette von Praxis über Arztprofil bis zu den Behandlungsseiten und reduziert Interpretationsfehler in KI-Empfehlungen.',
         },
     ];
 
@@ -562,32 +957,62 @@ const SourcesSection: React.FC = () => (
                 <ul className="space-y-2 text-sm text-gray-600">
                     <li>
                         <a
-                            href="https://ahrefs.com/blog/llm-seo/"
+                            href="https://www.bitkom.org/Presse/Presseinformation/Digital-Health"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="underline hover:text-brand-accent transition-colors"
                         >
-                            Ahrefs (2025): LLM SEO - Brand Mentions Correlation Study
+                            Bitkom (20.11.2025): Digital Health 2025, 45 % nutzen KI-Chatbots für Gesundheitsfragen (n=1.145)
                         </a>
                     </li>
                     <li>
                         <a
-                            href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+                            href="https://www.gesetze-im-internet.de/heilmwerbg/__3.html"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="underline hover:text-brand-accent transition-colors"
                         >
-                            Google: E-E-A-T und YMYL-Richtlinien für medizinische Inhalte
+                            § 3 HWG: Verbot irreführender Heilmittelwerbung (Gesetze im Internet)
                         </a>
                     </li>
                     <li>
                         <a
-                            href="https://schema.org/MedicalBusiness"
+                            href="https://www.gesetze-im-internet.de/heilmwerbg/__11.html"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="underline hover:text-brand-accent transition-colors"
                         >
-                            Schema.org: MedicalBusiness und Physician Markup-Dokumentation
+                            § 11 HWG: Grenzen der Publikumswerbung, u. a. Vorher-Nachher-Bilder (Gesetze im Internet)
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.awmf.org/leitlinien"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline hover:text-brand-accent transition-colors"
+                        >
+                            AWMF: Leitlinien für Ärztinnen, Ärzte und Gesundheitspersonal
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.jameda.de/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline hover:text-brand-accent transition-colors"
+                        >
+                            Jameda: über 411.000 Ärzte, über 2 Mio. verifizierte Patientenfeedbacks (eigene Angabe)
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://schema.org/MedicalClinic"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline hover:text-brand-accent transition-colors"
+                        >
+                            Schema.org: MedicalClinic und Physician Markup-Dokumentation
                         </a>
                     </li>
                     <li>
@@ -624,6 +1049,17 @@ const RelatedGuidesSection: React.FC = () => (
                     </p>
                 </a>
                 <a
+                    href="/wissen/eeat-ki-sichtbarkeit"
+                    className="bg-white border border-gray-100 rounded-2xl p-5 hover:border-brand-accent transition-colors group"
+                >
+                    <p className="font-semibold text-black group-hover:text-brand-accent transition-colors mb-1">
+                        E-E-A-T für KI-Sichtbarkeit
+                    </p>
+                    <p className="text-sm text-gray-500">
+                        Wie Experience, Expertise, Authoritativeness und Trust für die KI nachweisbar werden.
+                    </p>
+                </a>
+                <a
                     href="/wissen/sichtbarkeit-in-chatgpt"
                     className="bg-white border border-gray-100 rounded-2xl p-5 hover:border-brand-accent transition-colors group"
                 >
@@ -632,17 +1068,6 @@ const RelatedGuidesSection: React.FC = () => (
                     </p>
                     <p className="text-sm text-gray-500">
                         Wie ChatGPTs Empfehlungssystem funktioniert und wie du dort sichtbar wirst.
-                    </p>
-                </a>
-                <a
-                    href="/wissen/technische-ki-sichtbarkeit"
-                    className="bg-white border border-gray-100 rounded-2xl p-5 hover:border-brand-accent transition-colors group"
-                >
-                    <p className="font-semibold text-black group-hover:text-brand-accent transition-colors mb-1">
-                        Technische KI-Sichtbarkeit
-                    </p>
-                    <p className="text-sm text-gray-500">
-                        robots.txt, Schema.org, llms.txt und technische Grundlagen für KI-Crawler.
                     </p>
                 </a>
                 <a
@@ -672,9 +1097,8 @@ const CTASection: React.FC = () => (
                         Werden Ihre Patienten von der KI zu Ihnen geschickt?
                     </h2>
                     <p className="text-lg text-gray-300 mb-8 max-w-2xl leading-relaxed">
-                        Ich prüfe, wie ChatGPT, Perplexity und Google AI deine Praxis aktuell
-                        darstellen - und was du tun kannst, damit die KI dich empfiehlt.
-                        Kostenlos, in 48 Stunden.
+                        Ich prüfe, wie ChatGPT, Perplexity und Google AI deine Praxis aktuell darstellen,
+                        und was du HWG-konform tun kannst, damit die KI dich empfiehlt. Kostenlos, in 48 Stunden.
                     </p>
                     <Button href="/ai-sichtbarkeit-now" primary text="Kostenlose Praxis-Analyse anfragen" className="!py-4 !px-8" />
                 </div>
@@ -709,8 +1133,13 @@ export default function KiSichtbarkeitAerztePage() {
             <main>
                 <HeroSection />
                 <TLDRSection />
+                <ProofSection />
                 <ProblemSection />
-                <WhyDifferentSection />
+                <ExpertSection />
+                <HWGSection />
+                <AuthorityLadderSection />
+                <ReviewBenchmarkSection />
+                <SchemaSection />
                 <FactorsSection />
                 <StrategiesSection />
                 <PracticeTypesSection />
