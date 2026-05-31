@@ -87,7 +87,7 @@ export const ARTICLES: Article[] = [
     date: '2026-05-23',
   },
   {
-    title: 'Fallstudie: In 90 Tagen KI-sichtbar — echte Zahlen eines Hamburger Unternehmens',
+    title: 'Fallstudie: In 90 Tagen KI-sichtbar, echte Zahlen eines Hamburger Unternehmens',
     description: 'Composite Case Study mit echten Zahlen: Performance von 35 auf 99, 474 Klicks/Monat, 2x organischer Traffic, #1 in ChatGPT. Der komplette 90-Tage-Plan.',
     href: '/wissen/fallstudie-ki-sichtbarkeit-90-tage',
     tag: 'Case Study',
@@ -114,7 +114,7 @@ export const ARTICLES: Article[] = [
     date: '2026-04-04',
   },
   {
-    title: 'SEO-Agentur liefert Rankings, aber keine Kunden — warum AI SEO der nächste Schritt ist',
+    title: 'SEO-Agentur liefert Rankings, aber keine Kunden: warum AI SEO der nächste Schritt ist',
     description: 'Warum klassische SEO-Agenturen 2026 an Wirkung verlieren, wann sich AI-SEO wirklich lohnt und wie du den Wechsel sauber begründest.',
     href: '/wissen/seo-agentur-vs-ai-seo',
     tag: 'Vergleich',
@@ -186,7 +186,7 @@ export const ARTICLES: Article[] = [
     date: '2026-04-02',
   },
   {
-    title: 'Wie KI-Systeme über deine Marke entscheiden — und was du dagegen tun kannst',
+    title: 'Wie KI-Systeme über deine Marke entscheiden, und was du dagegen tun kannst',
     description: 'LLMs bilden sich eine Meinung über deine Marke. Woher sie ihre Informationen nehmen und wie du das Bild beeinflussen kannst.',
     href: '/wissen/ki-markenwahrnehmung',
     tag: 'Branding',
@@ -258,7 +258,7 @@ export const ARTICLES: Article[] = [
     date: '2026-03-24',
   },
   {
-    title: 'AEO — Answer Engine Optimization: Der Guide für 2026',
+    title: 'AEO (Answer Engine Optimization): Der Guide für 2026',
     description: 'Was Answer Engine Optimization wirklich ist, wie sie sich von SEO und GEO unterscheidet und welche konkreten Hebel deine Inhalte zur direkten KI-Antwort machen.',
     href: '/wissen/aeo-answer-engine-optimization',
     tag: 'AEO',
@@ -267,7 +267,7 @@ export const ARTICLES: Article[] = [
     date: '2026-03-24',
   },
   {
-    title: 'LLMO — LLM Optimierung: So wirst du von KI-Systemen empfohlen',
+    title: 'LLMO (LLM Optimierung): So wirst du von KI-Systemen empfohlen',
     description: 'Large Language Model Optimization erklärt: Welche Signale LLMs nutzen, wie du deine Marke in Trainings- und Retrieval-Daten platzierst und welche Tools wirklich helfen.',
     href: '/wissen/llmo-llm-optimierung',
     tag: 'LLMO',
@@ -330,12 +330,12 @@ export const ARTICLES: Article[] = [
     date: '2026-03-24',
   },
   {
-    title: 'KI-Sichtbarkeit für Handwerker: Wenn Kunden die KI nach dem besten Betrieb fragen',
-    description: 'Warum ChatGPT nur 2–3 Handwerksbetriebe empfiehlt, welche Faktoren entscheiden und 7 Strategien für Hamburger Handwerker.',
+    title: 'KI-Sichtbarkeit für Handwerker: Echtes Beispiel aus Hamburg mit Zahlen',
+    description: 'Wie ein Hamburger Betrieb (5,0 Sterne, 35 Bewertungen) von ChatGPT empfohlen wird: echte Zahlen, die MyHammer-Lead-Falle und 7 Strategien für Handwerker.',
     href: '/wissen/ki-sichtbarkeit-handwerker',
     tag: 'Handwerk',
     topic: 'Branchen',
-    readTime: '11 Min.',
+    readTime: '13 Min.',
     date: '2026-03-24',
   },
   {
