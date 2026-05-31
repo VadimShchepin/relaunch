@@ -9,23 +9,23 @@ import { Button } from '@/components/ui/Button';
 const FAQS = [
   {
     q: 'Ist E-E-A-T ein Ranking-Faktor bei Google?',
-    a: 'Nein, nicht direkt. E-E-A-T ist kein algorithmischer Ranking-Faktor wie PageSpeed oder Backlinks. Es ist ein Konzept aus den Google Quality Rater Guidelines, das beschreibt, wonach menschliche Qualitätsprüfer suchen. Google nutzt diese Bewertungen, um seine Algorithmen zu trainieren. Für KI-Systeme ist E-E-A-T noch weniger ein „Faktor" — es ist eher eine emergente Eigenschaft. Wenn deine Expertise konsistent über viele Quellen bestätigt wird, zitiert dich die KI häufiger. Kein Schalter, den du umlegst. Eher ein Ruf, den du aufbaust.',
+    a: 'Nein, nicht direkt. E-E-A-T ist kein algorithmischer Ranking-Faktor wie PageSpeed oder Backlinks. Es ist ein Konzept aus den Google Quality Rater Guidelines, das beschreibt, wonach menschliche Qualitätsprüfer suchen. Google nutzt diese Bewertungen, um seine Algorithmen zu trainieren. Für KI-Systeme ist E-E-A-T noch weniger ein „Faktor", es ist eher eine emergente Eigenschaft. Wenn deine Expertise konsistent über viele Quellen bestätigt wird, zitiert dich die KI häufiger. Kein Schalter, den du umlegst. Eher ein Ruf, den du aufbaust.',
   },
   {
     q: 'Reicht eine Autoren-Bio für E-E-A-T bei KI-Systemen?',
-    a: 'Absolut nicht. Eine Autoren-Bio ist für Google nützlich, weil der Crawler sie lesen und mit anderen Signalen abgleichen kann. Für KI-Systeme wie ChatGPT ist eine Bio auf deiner eigenen Website ungefähr so überzeugend wie ein Lebenslauf, den du dir selbst geschrieben hast. KI prüft, ob dein Name in externen Quellen mit dem Thema verknüpft ist — Fachpublikationen, Interviews, Konferenzvorträge, Erwähnungen auf anderen Websites. Die Bio ist das Sahnehäubchen, nicht das Fundament.',
+    a: 'Absolut nicht. Eine Autoren-Bio ist für Google nützlich, weil der Crawler sie lesen und mit anderen Signalen abgleichen kann. Für KI-Systeme wie ChatGPT ist eine Bio auf deiner eigenen Website ungefähr so überzeugend wie ein Lebenslauf, den du dir selbst geschrieben hast. KI prüft, ob dein Name in externen Quellen mit dem Thema verknüpft ist: Fachpublikationen, Interviews, Konferenzvorträge, Erwähnungen auf anderen Websites. Die Bio ist das Sahnehäubchen, nicht das Fundament.',
   },
   {
     q: 'Wie kann ich meine E-E-A-T-Signale für ChatGPT verbessern?',
-    a: 'Drei Hebel: Erstens, konsistente Expertise über verschiedene Quellen hinweg aufbauen — Gastbeiträge, Podcasts, Fachpublikationen, LinkedIn-Artikel. Zweitens, auf deiner Website Inhalte mit echten Daten, Erfahrungsberichten und verifizierbaren Fakten erstellen. Drittens, deine Person oder Marke mit Schema.org-Markup (Person, Organization) maschinenlesbar machen. Der wichtigste Punkt: Es geht nicht um einen einzigen Trick, sondern um konsistente Präsenz über Monate und Jahre.',
+    a: 'Drei Hebel: Erstens, konsistente Expertise über verschiedene Quellen hinweg aufbauen: Gastbeiträge, Podcasts, Fachpublikationen, LinkedIn-Artikel. Zweitens, auf deiner Website Inhalte mit echten Daten, Erfahrungsberichten und verifizierbaren Fakten erstellen. Drittens, deine Person oder Marke mit Schema.org-Markup (Person, Organization) maschinenlesbar machen. Der wichtigste Punkt: Es geht nicht um einen einzigen Trick, sondern um konsistente Präsenz über Monate und Jahre.',
   },
   {
     q: 'Was bedeutet das erste E in E-E-A-T für KI?',
-    a: 'Das erste E steht für Experience — Erfahrung. Für Google bedeutet das: Hat der Autor das Thema selbst erlebt? Für KI-Systeme ist Experience noch schwerer zu fälschen, weil LLMs Muster erkennen. Ein Artikel über Backpacking in Vietnam, der nur Wikipedia-Fakten zusammenfasst, klingt anders als einer von jemandem, der tatsächlich dort war. KI erkennt diese Nuancen überraschend gut. Eigene Erfahrungen, spezifische Details und persönliche Einschätzungen sind die stärksten Experience-Signale.',
+    a: 'Das erste E steht für Experience, Erfahrung. Für Google bedeutet das: Hat der Autor das Thema selbst erlebt? Für KI-Systeme ist Experience noch schwerer zu fälschen, weil LLMs Muster erkennen. Ein Artikel über Backpacking in Vietnam, der nur Wikipedia-Fakten zusammenfasst, klingt anders als einer von jemandem, der tatsächlich dort war. KI erkennt diese Nuancen überraschend gut. Eigene Erfahrungen, spezifische Details und persönliche Einschätzungen sind die stärksten Experience-Signale.',
   },
   {
     q: 'Können Backlinks meine KI-Sichtbarkeit verbessern?',
-    a: 'Indirekt ja, direkt nein. ChatGPT und Claude können keine Backlink-Profile analysieren — sie sehen den Link-Graph nicht. Aber: Websites mit vielen hochwertigen Backlinks werden häufiger in Trainingsdaten aufgenommen und häufiger von Perplexity gecrawlt. Backlinks sind also kein direktes KI-Signal, aber sie erhöhen die Wahrscheinlichkeit, dass dein Content in den Trainingsdaten und im Live-Web-Index der KI-Systeme landet.',
+    a: 'Indirekt ja, direkt nein. ChatGPT und Claude können keine Backlink-Profile analysieren, sie sehen den Link-Graph nicht. Aber: Websites mit vielen hochwertigen Backlinks werden häufiger in Trainingsdaten aufgenommen und häufiger von Perplexity gecrawlt. Backlinks sind also kein direktes KI-Signal, aber sie erhöhen die Wahrscheinlichkeit, dass dein Content in den Trainingsdaten und im Live-Web-Index der KI-Systeme landet.',
   },
   {
     q: 'Wie unterscheidet sich Trustworthiness bei Google vs. KI?',
@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: 'Muss jede Seite E-E-A-T-Signale haben?',
-    a: 'Nicht jede Seite braucht den gleichen E-E-A-T-Aufwand. Für YMYL-Themen (Your Money, Your Life) — also Gesundheit, Finanzen, Recht — sind starke E-E-A-T-Signale absolut kritisch, sowohl für Google als auch für KI. Für weniger sensible Themen reicht eine solide Grundlage: erkennbarer Autor, aktuelle Inhalte, verifizierbare Fakten. Der Fehler ist, E-E-A-T komplett zu ignorieren oder es als reine Checkbox-Übung zu behandeln.',
+    a: 'Nicht jede Seite braucht den gleichen E-E-A-T-Aufwand. Für YMYL-Themen (Your Money, Your Life), also Gesundheit, Finanzen, Recht, sind starke E-E-A-T-Signale absolut kritisch, sowohl für Google als auch für KI. Für weniger sensible Themen reicht eine solide Grundlage: erkennbarer Autor, aktuelle Inhalte, verifizierbare Fakten. Der Fehler ist, E-E-A-T komplett zu ignorieren oder es als reine Checkbox-Übung zu behandeln.',
   },
 ];
 
@@ -59,7 +59,7 @@ const articleJsonLd = {
   '@type': 'Article',
   headline: 'E-E-A-T und KI: Warum Expertise für ChatGPT wichtiger ist als für Google',
   description:
-    'Wie E-E-A-T bei KI-Systemen anders funktioniert als bei Google. Warum Konsistenz über Quellen hinweg wichtiger ist als Backlinks — und warum eine Autoren-Bio allein nichts bringt.',
+    'Wie E-E-A-T bei KI-Systemen anders funktioniert als bei Google. Warum Konsistenz über Quellen hinweg wichtiger ist als Backlinks, und warum eine Autoren-Bio allein nichts bringt.',
   image: 'https://aiseo.hamburg/images/wissen/eeat-ki-sichtbarkeit.jpg',
   author: {
     '@type': 'Person',
@@ -128,7 +128,7 @@ export default function EEATKISichtbarkeitPage() {
           E-E-A-T und KI: Warum Expertise für ChatGPT wichtiger ist als für Google
         </h1>
         <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
-          Du hast eine Autoren-Bio auf deine Seite geknallt und denkst, E-E-A-T ist erledigt? Herzlichen Glückwunsch — du hast gerade das digitale Äquivalent eines Namensschilds an eine leere Wand geklebt. KI-Systeme lesen keine Bios. Sie lesen alles andere.
+          Du hast eine Autoren-Bio auf deine Seite geknallt und denkst, E-E-A-T ist erledigt? Herzlichen Glückwunsch, du hast gerade das digitale Äquivalent eines Namensschilds an eine leere Wand geklebt. KI-Systeme lesen keine Bios. Sie lesen alles andere.
         </p>
       </section>
 
@@ -153,11 +153,11 @@ export default function EEATKISichtbarkeitPage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">4.</span>
-              <span><strong className="text-black">Experience ist der neue Differentiator.</strong> KI erkennt, ob du über etwas schreibst, das du erlebt hast — oder ob du Wikipedia umformulierst.</span>
+              <span><strong className="text-black">Experience ist der neue Differentiator.</strong> KI erkennt, ob du über etwas schreibst, das du erlebt hast, oder ob du Wikipedia umformulierst.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">5.</span>
-              <span><strong className="text-black">E-E-A-T für KI ist kein Projekt, sondern ein Zustand.</strong> Du baust es nicht einmal auf. Du lebst es — oder du tust so, und KI merkt den Unterschied.</span>
+              <span><strong className="text-black">E-E-A-T für KI ist kein Projekt, sondern ein Zustand.</strong> Du baust es nicht einmal auf. Du lebst es, oder du tust so, und KI merkt den Unterschied.</span>
             </li>
           </ul>
         </div>
@@ -179,7 +179,7 @@ export default function EEATKISichtbarkeitPage() {
             Das ist ungefähr so, als würdest du dir einen weißen Kittel anziehen und erwarten, dass Patienten dich für einen Arzt halten. <strong className="text-black">Das Kostüm ist nicht die Qualifikation.</strong>
           </p>
           <p>
-            E-E-A-T steht für Experience, Expertise, Authoritativeness und Trustworthiness. Vier Dimensionen, die beschreiben, ob eine Quelle vertrauenswürdig ist. Google hat das Konzept für seine Quality Rater eingeführt — echte Menschen, die Suchergebnisse bewerten. Und jetzt, wo KI-Systeme wie ChatGPT, Perplexity und Claude die Informationslandschaft umkrempeln, wird E-E-A-T plötzlich noch wichtiger. Aber auch komplett anders.
+            E-E-A-T steht für Experience, Expertise, Authoritativeness und Trustworthiness. Vier Dimensionen, die beschreiben, ob eine Quelle vertrauenswürdig ist. Google hat das Konzept für seine Quality Rater eingeführt, echte Menschen, die Suchergebnisse bewerten. Und jetzt, wo KI-Systeme wie ChatGPT, Perplexity und Claude die Informationslandschaft umkrempeln, wird E-E-A-T plötzlich noch wichtiger. Aber auch komplett anders.
           </p>
         </div>
 
@@ -191,7 +191,7 @@ export default function EEATKISichtbarkeitPage() {
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
           <p>
-            Wenn du verstehst, warum dieser Unterschied alles verändert, hast du einen Vorsprung vor 90 % der SEO-Branche. Wenn nicht — nun, es gibt noch genug Platz für Autoren-Bios auf leeren Websites.
+            Wenn du verstehst, warum dieser Unterschied alles verändert, hast du einen Vorsprung vor 90 % der SEO-Branche. Wenn nicht, nun, es gibt noch genug Platz für Autoren-Bios auf leeren Websites.
           </p>
         </div>
       </section>
@@ -205,7 +205,7 @@ export default function EEATKISichtbarkeitPage() {
         </h2>
 
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
-          Gleiche Buchstaben, komplett andere Mechanismen. Hier ist der Vergleich, der dir die Augen öffnen wird — oder zumindest das eine Auge, das noch nicht von SEO-Buzzwords zugeschwollen ist.
+          Gleiche Buchstaben, komplett andere Mechanismen. Hier ist der Vergleich, der dir die Augen öffnen wird, oder zumindest das eine Auge, das noch nicht von SEO-Buzzwords zugeschwollen ist.
         </p>
 
         <div className="overflow-x-auto mb-10">
@@ -257,7 +257,7 @@ export default function EEATKISichtbarkeitPage() {
             Siehst du das Muster? Google bewertet, <strong className="text-black">wer auf dich zeigt</strong>. KI bewertet, <strong className="text-black">was du sagst und ob es stimmt</strong>. Das ist ein fundamentaler Unterschied, den die meisten SEOs noch nicht verstanden haben.
           </p>
           <p>
-            Bei Google kannst du mit einem starken Backlink-Profil und einer autoritativen Domain auch mittelmäßigen Content auf Seite 1 bringen. Bei KI funktioniert das nicht. Ein LLM fragt sich nicht „Hat diese Domain 10.000 Backlinks?" — es fragt sich „Ist diese Aussage korrekt und konsistent mit dem, was ich aus anderen Quellen weiß?"
+            Bei Google kannst du mit einem starken Backlink-Profil und einer autoritativen Domain auch mittelmäßigen Content auf Seite 1 bringen. Bei KI funktioniert das nicht. Ein LLM fragt sich nicht „Hat diese Domain 10.000 Backlinks?", es fragt sich „Ist diese Aussage korrekt und konsistent mit dem, was ich aus anderen Quellen weiß?"
           </p>
         </div>
       </section>
@@ -267,7 +267,7 @@ export default function EEATKISichtbarkeitPage() {
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-          Die echten Expertise-Signale für KI — und warum deine Bio nicht dazugehört
+          Die echten Expertise-Signale für KI, und warum deine Bio nicht dazugehört
         </h2>
 
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -278,10 +278,10 @@ export default function EEATKISichtbarkeitPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">1. Cross-Source-Konsistenz</h3>
             <p className="text-gray-600 leading-relaxed mb-3">
-              Das stärkste Signal. Wenn dein Name, deine Marke oder deine Website in den Trainingsdaten konsistent mit einem Fachthema verknüpft ist — über verschiedene Quellen hinweg — stuft die KI dich als Experten ein. Nicht weil du es behauptest, sondern weil es aus den Daten hervorgeht.
+              Das stärkste Signal. Wenn dein Name, deine Marke oder deine Website in den Trainingsdaten konsistent mit einem Fachthema verknüpft ist, über verschiedene Quellen hinweg, stuft die KI dich als Experten ein. Nicht weil du es behauptest, sondern weil es aus den Daten hervorgeht.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              <strong className="text-black">Praktisch bedeutet das:</strong> Gastbeiträge in Fachmedien, Podcast-Auftritte, Konferenzvorträge, LinkedIn-Artikel, Erwähnungen in Branchenberichten. Alles, was deinen Namen mit deinem Thema verknüpft — außerhalb deiner eigenen Website.
+              <strong className="text-black">Praktisch bedeutet das:</strong> Gastbeiträge in Fachmedien, Podcast-Auftritte, Konferenzvorträge, LinkedIn-Artikel, Erwähnungen in Branchenberichten. Alles, was deinen Namen mit deinem Thema verknüpft, außerhalb deiner eigenen Website.
             </p>
           </div>
 
@@ -308,14 +308,14 @@ export default function EEATKISichtbarkeitPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">4. Widerspruchsfreiheit</h3>
             <p className="text-gray-600 leading-relaxed">
-              Wenn du auf einer Seite schreibst „AI SEO kostet ab 2.000 Euro monatlich" und auf einer anderen „Schon ab 500 Euro monatlich möglich", hast du ein Trust-Problem. Nicht bei Google — der Crawler vergleicht deine Seiten nicht inhaltlich. Aber ein LLM, das beide Seiten in seinen Trainingsdaten hat, registriert den Widerspruch. Und widersprüchliche Quellen sind weniger vertrauenswürdig. So einfach ist das.
+              Wenn du auf einer Seite schreibst „AI SEO kostet ab 2.000 Euro monatlich" und auf einer anderen „Schon ab 500 Euro monatlich möglich", hast du ein Trust-Problem. Nicht bei Google, der Crawler vergleicht deine Seiten nicht inhaltlich. Aber ein LLM, das beide Seiten in seinen Trainingsdaten hat, registriert den Widerspruch. Und widersprüchliche Quellen sind weniger vertrauenswürdig. So einfach ist das.
             </p>
           </div>
 
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">5. Schema.org als Maschinenlesbarer Beweis</h3>
             <p className="text-gray-600 leading-relaxed">
-              Strukturierte Daten sind für KI-Systeme das, was ein Notarstempel für ein Dokument ist. Person-Schema mit sameAs-Links zu LinkedIn, Organisation-Schema mit nachweisbaren Adressen, Article-Schema mit Autor-Verknüpfung. <strong className="text-black">Das ersetzt keine Expertise — aber es macht vorhandene Expertise maschinenlesbar.</strong> Und für ein System, das Milliarden von Seiten verarbeitet, ist Maschinenlesbarkeit kein Nice-to-Have.
+              Strukturierte Daten sind für KI-Systeme das, was ein Notarstempel für ein Dokument ist. Person-Schema mit sameAs-Links zu LinkedIn, Organisation-Schema mit nachweisbaren Adressen, Article-Schema mit Autor-Verknüpfung. <strong className="text-black">Das ersetzt keine Expertise, aber es macht vorhandene Expertise maschinenlesbar.</strong> Und für ein System, das Milliarden von Seiten verarbeitet, ist Maschinenlesbarkeit kein Nice-to-Have.
             </p>
           </div>
         </div>
@@ -334,7 +334,7 @@ export default function EEATKISichtbarkeitPage() {
             Lass uns das mal durchspielen. Du schreibst auf deine Website: „Max Mustermann ist ein führender Experte für digitales Marketing mit über 15 Jahren Erfahrung." Beeindruckend. Google liest das und denkt: „Ok, da steht was über den Autor." ChatGPT liest das und denkt: „Interessant, sagt er über sich selbst."
           </p>
           <p>
-            Merkst du das Problem? <strong className="text-black">Selbstdeklarierte Expertise ist für KI wertlos.</strong> Es ist, als würdest du beim Bewerbungsgespräch sagen: „Ich bin der Beste" — ohne Referenzen, ohne Portfolio, ohne nachweisbare Ergebnisse. Der Personaler lächelt höflich und legt deinen Lebenslauf auf den „Nein"-Stapel.
+            Merkst du das Problem? <strong className="text-black">Selbstdeklarierte Expertise ist für KI wertlos.</strong> Es ist, als würdest du beim Bewerbungsgespräch sagen: „Ich bin der Beste", ohne Referenzen, ohne Portfolio, ohne nachweisbare Ergebnisse. Der Personaler lächelt höflich und legt deinen Lebenslauf auf den „Nein"-Stapel.
           </p>
           <p>
             Die Autoren-Bio ist nicht nutzlos. Für Google ist sie ein nützliches Signal im Gesamtkontext. Aber wenn sie dein einziges E-E-A-T-Signal ist, hast du kein E-E-A-T. Du hast eine Visitenkarte.
@@ -383,7 +383,7 @@ export default function EEATKISichtbarkeitPage() {
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-          Experience — der geheime Vorteil, den KI besser erkennt als Google
+          Experience: der geheime Vorteil, den KI besser erkennt als Google
         </h2>
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
@@ -391,7 +391,7 @@ export default function EEATKISichtbarkeitPage() {
             Das erste E wurde 2022 hinzugefügt. Google wollte damit Content von Leuten belohnen, die tatsächlich Erfahrung mit dem Thema haben. Ein Restaurantkritiker, der das Restaurant besucht hat. Ein Reiseblogger, der tatsächlich dort war. Ein Handwerker, der das Werkzeug selbst benutzt.
           </p>
           <p>
-            Für Google ist Experience schwer zu verifizieren. Woher soll der Algorithmus wissen, ob du wirklich in Vietnam warst? Er kann nur auf Proxies schauen — Fotos, spezifische Details, nutzergenerierte Reviews.
+            Für Google ist Experience schwer zu verifizieren. Woher soll der Algorithmus wissen, ob du wirklich in Vietnam warst? Er kann nur auf Proxies schauen: Fotos, spezifische Details, nutzergenerierte Reviews.
           </p>
           <p>
             <strong className="text-black">Für KI ist Experience paradoxerweise einfacher zu erkennen.</strong> Warum? Weil LLMs auf Milliarden von Texten trainiert wurden und statistische Muster gelernt haben. Ein Text von jemandem, der etwas erlebt hat, klingt anders als ein Text von jemandem, der darüber gelesen hat. Spezifischere Details, unerwartete Beobachtungen, persönliche Bewertungen, die von der Mainstream-Meinung abweichen.
@@ -432,7 +432,7 @@ export default function EEATKISichtbarkeitPage() {
         </h2>
 
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
-          Genug Theorie. Hier ist der Plan, der funktioniert — vorausgesetzt, du hast tatsächlich Expertise. Falls nicht, ist Schritt 0: Expertise aufbauen. Das dauert Jahre. Sorry, keine Abkürzung.
+          Genug Theorie. Hier ist der Plan, der funktioniert, vorausgesetzt, du hast tatsächlich Expertise. Falls nicht, ist Schritt 0: Expertise aufbauen. Das dauert Jahre. Sorry, keine Abkürzung.
         </p>
 
         <ol className="space-y-8">
@@ -493,7 +493,7 @@ export default function EEATKISichtbarkeitPage() {
                 Schritt 4: Technische E-E-A-T-Signale implementieren
               </h3>
               <p className="text-gray-600 leading-relaxed mb-3">
-                Jetzt — und erst jetzt — kommen die technischen Maßnahmen. Sie verstärken vorhandene Expertise, aber sie ersetzen sie nicht.
+                Jetzt, und erst jetzt, kommen die technischen Maßnahmen. Sie verstärken vorhandene Expertise, aber sie ersetzen sie nicht.
               </p>
               <ul className="space-y-2 text-gray-600 text-sm">
                 <li className="flex items-start gap-2"><span className="text-brand-accent font-bold mt-0.5">&#8226;</span><span>Article-Schema mit Autor-Verknüpfung auf jeder Seite</span></li>
@@ -518,7 +518,7 @@ export default function EEATKISichtbarkeitPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">1. „Wir sind Experten, weil wir es auf unsere Website schreiben"</h3>
             <p className="text-gray-600 leading-relaxed">
-              Wenn selbstdeklarierte Expertise ausreichen würde, wäre jeder LinkedIn-Nutzer ein „Thought Leader". KI-Systeme sind trainiert auf Milliarden von Texten — sie kennen den Unterschied zwischen jemandem, der über ein Thema schreibt, und jemandem, der ein Thema beherrscht. Dein „Über uns"-Text überzeugt niemanden, der nicht bereits überzeugt ist.
+              Wenn selbstdeklarierte Expertise ausreichen würde, wäre jeder LinkedIn-Nutzer ein „Thought Leader". KI-Systeme sind trainiert auf Milliarden von Texten, sie kennen den Unterschied zwischen jemandem, der über ein Thema schreibt, und jemandem, der ein Thema beherrscht. Dein „Über uns"-Text überzeugt niemanden, der nicht bereits überzeugt ist.
             </p>
           </div>
 
@@ -532,7 +532,7 @@ export default function EEATKISichtbarkeitPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">3. E-E-A-T als einmalige Checkbox-Übung</h3>
             <p className="text-gray-600 leading-relaxed">
-              Autoren-Bio hinzugefügt. Schema implementiert. Fertig, E-E-A-T ist erledigt! Nein. E-E-A-T für KI ist kein Projekt mit Deadline. Es ist ein fortlaufender Prozess. Jeder neue Artikel, jeder Gastbeitrag, jede Erwähnung baut dein E-E-A-T auf — oder erodiert es, wenn du Unsinn publizierst. Es ist wie Fitness: Einmal ins Fitnessstudio gehen macht dich nicht fit.
+              Autoren-Bio hinzugefügt. Schema implementiert. Fertig, E-E-A-T ist erledigt! Nein. E-E-A-T für KI ist kein Projekt mit Deadline. Es ist ein fortlaufender Prozess. Jeder neue Artikel, jeder Gastbeitrag, jede Erwähnung baut dein E-E-A-T auf, oder erodiert es, wenn du Unsinn publizierst. Es ist wie Fitness: Einmal ins Fitnessstudio gehen macht dich nicht fit.
             </p>
           </div>
 
@@ -609,7 +609,7 @@ export default function EEATKISichtbarkeitPage() {
               Was ist GEO?
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Generative Engine Optimization erklärt — von der Theorie zur Praxis.
+              Generative Engine Optimization erklärt, von der Theorie zur Praxis.
             </p>
           </a>
 
@@ -636,7 +636,7 @@ export default function EEATKISichtbarkeitPage() {
             Wie steht es um dein E-E-A-T für KI?
           </h2>
           <p className="text-lg text-gray-400 leading-relaxed mb-8 max-w-xl mx-auto">
-            Finde heraus, ob KI-Systeme dich als Experten einstufen — oder ob du nur eine Autoren-Bio hast. Kostenlose Analyse deiner KI-Sichtbarkeit und E-E-A-T-Signale.
+            Finde heraus, ob KI-Systeme dich als Experten einstufen, oder ob du nur eine Autoren-Bio hast. Kostenlose Analyse deiner KI-Sichtbarkeit und E-E-A-T-Signale.
           </p>
           <Button href="/ai-sichtbarkeit-now" primary text="Kostenlose E-E-A-T-Analyse anfragen" />
         </div>

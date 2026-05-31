@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Perplexity vs ChatGPT vs Google AI: Wo lohnt sich Optimierung am meisten? | aiseo.hamburg',
   description:
-    'Perplexity, ChatGPT oder Google AI Overviews — welche KI-Suchmaschine bringt am meisten? Detaillierter Vergleich: Indexierung, Zitierverhalten, Optimierungspotenzial. Mit Vergleichstabelle.',
+    'Perplexity, ChatGPT oder Google AI Overviews: welche KI-Suchmaschine bringt am meisten? Detaillierter Vergleich: Indexierung, Zitierverhalten, Optimierungspotenzial. Mit Vergleichstabelle.',
   keywords: [
     'perplexity vs chatgpt',
     'google ai vs chatgpt',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: 'https://aiseo.hamburg/wissen/perplexity-vs-chatgpt-vs-google',
     title: 'Perplexity vs ChatGPT vs Google AI: Wo lohnt sich Optimierung am meisten? | aiseo.hamburg',
     description:
-      'Perplexity, ChatGPT oder Google AI Overviews — welche KI-Suchmaschine bringt am meisten? Detaillierter Vergleich mit Vergleichstabelle.',
+      'Perplexity, ChatGPT oder Google AI Overviews: welche KI-Suchmaschine bringt am meisten? Detaillierter Vergleich mit Vergleichstabelle.',
     siteName: 'aiseo.hamburg',
     images: [{ url: '/images/wissen/perplexity-vs-chatgpt-vs-google.jpg', width: 1200, height: 630, alt: 'Perplexity vs ChatGPT vs Google AI: Plattform-Vergleich' }],
   },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary',
     title: 'Perplexity vs ChatGPT vs Google AI: Wo lohnt sich Optimierung am meisten? | aiseo.hamburg',
     description:
-      'Perplexity, ChatGPT oder Google AI Overviews — welche KI-Suchmaschine bringt am meisten? Detaillierter Vergleich mit Vergleichstabelle.',
+      'Perplexity, ChatGPT oder Google AI Overviews: welche KI-Suchmaschine bringt am meisten? Detaillierter Vergleich mit Vergleichstabelle.',
   },
   robots: {
     index: true,

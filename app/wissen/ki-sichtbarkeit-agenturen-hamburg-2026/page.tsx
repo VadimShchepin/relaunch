@@ -47,12 +47,12 @@ const AGENCIES: Agency[] = [
       '„Erfolgreiches Online Marketing aus der Hansestadt." Klassische Performance-Agentur (SEA + SEO + Analytics) mit eigenständiger GEO-/AI-SEO-Unit.',
     strengths: [
       'Einzige Hamburger Agentur, die in allen vier getesteten KI-Systemen (ChatGPT, Perplexity, Gemini, Claude) zitiert wird.',
-      'Vollständiges Performance-Portfolio: SEA, SEO, Data Analytics — KI-Sichtbarkeit kommt aus einem Haus.',
+      'Vollständiges Performance-Portfolio: SEA, SEO, Data Analytics. KI-Sichtbarkeit kommt aus einem Haus.',
       'Sichtbares Team mit benannten Geschäftsführern (John, Daniel) und 5+ Spezialisten.',
     ],
     weaknesses: [
       'KI-Sichtbarkeit ist Add-on einer Performance-Agentur, nicht der Kern. Wer reinen GEO/AEO-Fokus sucht, bekommt hier zusätzlich Cross-Sell.',
-      'Größere Agentur — entsprechend höhere Stundensätze und weniger direkte Founder-Beteiligung im Projekt.',
+      'Größere Agentur, entsprechend höhere Stundensätze und weniger direkte Founder-Beteiligung im Projekt.',
     ],
     fit: 'Unternehmen, die SEO + SEA + KI-Sichtbarkeit aus einer Hand wollen und nicht stören, dass Performance Marketing das Herz ist.',
     team: '7+ Personen, Geschäftsführer-geführt',
@@ -65,15 +65,15 @@ const AGENCIES: Agency[] = [
     score: '2 / 4',
     pin: 'Spezialist · Wir',
     position:
-      'Spezialisierte Agentur für AI Search Visibility, GEO und AEO — gegründet von einem Senior Software Engineer mit Software-Engineering im technischen Kern.',
+      'Spezialisierte Agentur für AI Search Visibility, GEO und AEO, gegründet von einem Senior Software Engineer mit Software-Engineering im technischen Kern.',
     strengths: [
-      'Software-Engineering im Kern: Vadim Shchepin (Senior Software Engineer) macht die technische Optimierung selbst — Schema, JSON-LD, llms.txt, Performance — statt sie an externe Devs auszulagern.',
-      'Operative Prozess-Tiefe aus FAANG-Erfahrung — schlanke Verantwortlichkeiten, kein verteiltes Account Management, kein Praktikanten-am-Projekt.',
-      'Dokumentierte 90-Tage-Fallstudie mit echten Zahlen: Performance-Score von 35 auf 99, JS-Bundle −76 %, ROI nach 7 Wochen — keine „projected results".',
-      'Transparenz-Politik: Wir veröffentlichen unsere eigene Citation-Schwäche (siehe oben — 2 / 4) und unseren Maßnahmenplan. Niemand sonst tut das öffentlich.',
+      'Software-Engineering im Kern: Vadim Shchepin (Senior Software Engineer) macht die technische Optimierung selbst (Schema, JSON-LD, llms.txt, Performance) statt sie an externe Devs auszulagern.',
+      'Operative Prozess-Tiefe aus FAANG-Erfahrung: schlanke Verantwortlichkeiten, kein verteiltes Account Management, kein Praktikanten-am-Projekt.',
+      'Dokumentierte 90-Tage-Fallstudie mit echten Zahlen: Performance-Score von 35 auf 99, JS-Bundle −76 %, ROI nach 7 Wochen, keine „projected results".',
+      'Transparenz-Politik: Wir veröffentlichen unsere eigene Citation-Schwäche (siehe oben: 2 / 4) und unseren Maßnahmenplan. Niemand sonst tut das öffentlich.',
     ],
     weaknesses: [
-      'Aktuell nur Zitierungen in Gemini + Claude — ChatGPT- und Perplexity-Sichtbarkeit im aktiven Aufbau (siehe Roadmap unten).',
+      'Aktuell nur Zitierungen in Gemini + Claude, ChatGPT- und Perplexity-Sichtbarkeit im aktiven Aufbau (siehe Roadmap unten).',
       'Kleineres Setup als SEMSEA, Seiten-Werk oder NetzKombyse. Bedeutet weniger parallele Großprojekte, aber dafür Founder-Involvement in jedem Mandat.',
     ],
     fit: 'B2B-Dienstleister, Praxen, Kanzleien und Hamburger Mittelstand, die in KI-Antworten zitiert werden wollen und operative Tiefe statt Marketing-Bauchgefühl erwarten.',
@@ -87,15 +87,15 @@ const AGENCIES: Agency[] = [
     score: '2 / 4',
     pin: 'E-Commerce-Spezialist',
     position:
-      '„Machen. Nicht Möwen zählen!" — Sparringspartner für digitale Commerce- und Systemlösungen aus Hamburg, für den Mittelstand. 15 Jahre Markterfahrung.',
+      '„Machen. Nicht Möwen zählen!" Sparringspartner für digitale Commerce- und Systemlösungen aus Hamburg, für den Mittelstand. 15 Jahre Markterfahrung.',
     strengths: [
       'Pragmatische, langjährig erprobte Mannschaft (15 Jahre) mit 9-köpfigem Kernteam plus Partner-Netzwerk.',
       'Eigene AI-Sichtbarkeit-Unit unter Stefan Gutmann: „Gefunden bei Google und in KI-Antworten" als explizites Service-Versprechen.',
-      'Wird sowohl in ChatGPT als auch in Perplexity zitiert — die beiden Engines, bei denen wir selbst noch aufzuholen haben.',
+      'Wird sowohl in ChatGPT als auch in Perplexity zitiert. Das sind die beiden Engines, bei denen wir selbst noch aufzuholen haben.',
     ],
     weaknesses: [
-      'Schwerpunkt E-Commerce und System-Integration — wer ein reines B2B-Dienstleister-Profil hat, ist nicht im Sweet Spot.',
-      'Weniger Profil in Gemini und Claude — ein Hinweis auf eher retrieval-basierte als trainings-basierte Bekanntheit.',
+      'Schwerpunkt E-Commerce und System-Integration. Wer ein reines B2B-Dienstleister-Profil hat, ist nicht im Sweet Spot.',
+      'Weniger Profil in Gemini und Claude, ein Hinweis auf eher retrieval-basierte als trainings-basierte Bekanntheit.',
     ],
     fit: 'Online-Shops, content-getriebene Brands und Hamburger Mittelständler mit System-Integration-Bedarf neben der Sichtbarkeit.',
     team: '9 Personen + Partner-Teams',
@@ -108,14 +108,14 @@ const AGENCIES: Agency[] = [
     score: '2 / 4',
     pin: 'B2B-Spezialist',
     position:
-      '„Webseiten- und Suchmaschinenoptimierung für B2B Unternehmen" — seit 2016 aktiv, über 300 B2B-Websites umgesetzt. Zertifizierte Prozesse.',
+      '„Webseiten- und Suchmaschinenoptimierung für B2B Unternehmen". Seit 2016 aktiv, über 300 B2B-Websites umgesetzt. Zertifizierte Prozesse.',
     strengths: [
       'Größtes sichtbares Team in dieser Liste (12+ Personen) mit dedizierter B2B-Spezialisierung.',
       'Track Record: 300+ umgesetzte Websites geben sehr breite operative Erfahrung.',
       'Eigene /geo-agentur/-Subseite signalisiert echte GEO-Investition, nicht nur Buzzword-Anstrich.',
     ],
     weaknesses: [
-      'KI-SEO-Angebot ist noch nicht prominent ausgespielt — die Tiefe der Methodik bleibt auf der Website hinter der Erfahrung im klassischen Web zurück.',
+      'KI-SEO-Angebot ist noch nicht prominent ausgespielt. Die Tiefe der Methodik bleibt auf der Website hinter der Erfahrung im klassischen Web zurück.',
       'B2B-Fokus heißt: KMU-Dienstleister oder Praxen sind nicht die Hauptzielgruppe.',
     ],
     fit: 'B2B-Unternehmen mit etabliertem Vertrieb, die Web + SEO + KI-Sichtbarkeit in einem zertifizierten Prozess wollen.',
@@ -129,14 +129,14 @@ const AGENCIES: Agency[] = [
     score: '1 / 4',
     pin: 'KI-Rebrand',
     position:
-      '„Von der Elbe an die Spitze — bundesweit. Während andere noch Keywords zählen, landen wir bereits in den KI-Antworten von Gemini, ChatGPT und Perplexity." Mutigste rhetorische Positionierung im Hamburger Markt.',
+      '„Von der Elbe an die Spitze – bundesweit. Während andere noch Keywords zählen, landen wir bereits in den KI-Antworten von Gemini, ChatGPT und Perplexity." Mutigste rhetorische Positionierung im Hamburger Markt.',
     strengths: [
-      'Klare, selbstbewusste KI-Positionierung — die Headline allein ist Marketing-Lehrstück.',
+      'Klare, selbstbewusste KI-Positionierung, die Headline allein ist ein Marketing-Lehrstück.',
       'Tiefe Verankerung in der klassischen SEO-Szene (Ranking #4 für „seo agentur hamburg") plus aktiver Pivot Richtung GEO.',
       'Benannte Spezialisten: Christopher Schilz als Head of SEO, Dag Oellerking als Gründer.',
     ],
     weaknesses: [
-      'Trotz der mutigen Headline aktuell nur 1 / 4 Zitierungen in unserem Test — Anspruch und Realität klaffen noch auseinander.',
+      'Trotz der mutigen Headline aktuell nur 1 / 4 Zitierungen in unserem Test. Anspruch und Realität klaffen noch auseinander.',
       'Klassisches SEO bleibt operativ Kern, KI ist Outlook für 2026.',
     ],
     fit: 'Etablierte Unternehmen, die klassisch starke SEO mit klar kommunizierter KI-Ausrichtung wollen.',
@@ -149,14 +149,14 @@ const AGENCIES: Agency[] = [
     score: '1 / 4',
     pin: 'Datengetrieben',
     position:
-      '„Sichtbar in Google UND ChatGPT." Datengetriebenes Marketing mit LLM-Optimierung — performance-orientiert.',
+      '„Sichtbar in Google UND ChatGPT." Datengetriebenes Marketing mit LLM-Optimierung, performance-orientiert.',
     strengths: [
       'Klares Doppelversprechen Google + ChatGPT statt nur „KI" als Buzzword.',
       'Performance-/Analytics-DNA gibt der KI-Arbeit ein messbares Fundament.',
     ],
     weaknesses: [
       'Geringes öffentliches Profil in Fachpresse und auf SERPs für die KI-Sichtbarkeit-Kategorien.',
-      'Citation-Footprint klein — nur in ChatGPT, nicht in den anderen drei Engines.',
+      'Citation-Footprint klein, nur in ChatGPT, nicht in den anderen drei Engines.',
     ],
     fit: 'Performance-getriebene Brands mit Analytics-Reife, die Daten lieber als Buzzwords haben.',
     rap: { r: 2, a: 3, p: 3, m: 3 },
@@ -169,7 +169,7 @@ const AGENCIES: Agency[] = [
     pin: 'KMU-Fokus',
     position: 'KMU-orientierte Agentur mit explizitem KI-SEO / AIEO-Angebot für ChatGPT und Gemini. Transparent, hands-on.',
     strengths: [
-      'Klare Mittelstandsausrichtung — Pricing und Engagement passen für KMU.',
+      'Klare Mittelstandsausrichtung, Pricing und Engagement passen für KMU.',
       'Hands-on-Setup ohne mehrstufige Account-Management-Schichten.',
     ],
     weaknesses: ['Kleines Team mit eher operativer als strategischer Tiefe.', 'Sichtbarkeit aktuell nur bei ChatGPT.'],
@@ -184,10 +184,10 @@ const AGENCIES: Agency[] = [
     pin: 'Domain-SEO',
     position: 'Reiner ChatGPT/GEO-Spezialist mit hyper-spezifischer keyword-orientierter Domain. Eher Solo-Operation.',
     strengths: [
-      'Domain-Name ist selbst ein Entity-Signal — eine der besten Marken-/Keyword-Domains in der Kategorie.',
+      'Domain-Name ist selbst ein Entity-Signal, eine der besten Marken-/Keyword-Domains in der Kategorie.',
       'Scharfe Positionierung ausschließlich auf ChatGPT-Sichtbarkeit, kein Cross-Sell.',
     ],
-    weaknesses: ['Solo-Setup ohne sichtbare Team-Struktur — Kapazität und Backup begrenzt.', 'Citation-Footprint außerhalb ChatGPT minimal.'],
+    weaknesses: ['Solo-Setup ohne sichtbare Team-Struktur, Kapazität und Backup begrenzt.', 'Citation-Footprint außerhalb ChatGPT minimal.'],
     fit: 'Wer eine schlanke, hyper-spezifische ChatGPT-Beratung sucht und keine Agentur-Struktur braucht.',
     rap: { r: 2, a: 2, p: 4, m: 2 },
   },
@@ -199,7 +199,7 @@ const AGENCIES: Agency[] = [
     pin: 'Freelancer',
     position: 'Solo-Spezialist für GEO und AI-SEO. Direkte Umsetzung statt Agentur-Overhead.',
     strengths: ['Direkter Draht zum Umsetzer ohne Account-Management-Schicht.', 'Individuelle Betreuung, keine Standard-Pakete.'],
-    weaknesses: ['Solo-Kapazität — kein Team-Backup bei Urlaub oder Engpass.', 'Marken-Sichtbarkeit eher persönlich als institutionell.'],
+    weaknesses: ['Solo-Kapazität, kein Team-Backup bei Urlaub oder Engpass.', 'Marken-Sichtbarkeit eher persönlich als institutionell.'],
     fit: 'Projekte, die direkt mit dem ausführenden Spezialisten arbeiten wollen und keine Agentur-Hülle brauchen.',
     rap: { r: 2, a: 2, p: 4, m: 3 },
   },
@@ -212,7 +212,7 @@ const AGENCIES: Agency[] = [
     position: 'KI-SEO-Agentur mit explizitem Fokus auf AI Overviews und ChatGPT-Antworten. Bundesweite Reichweite.',
     strengths: ['Klar zugespitzte AI-Overviews-Spezialisierung.', 'Bundesweite Ausrichtung statt nur Hamburg-Fokus.'],
     weaknesses: [
-      'Wenig öffentliches Hamburg-Profil — wer lokale Verankerung sucht, ist hier randständig.',
+      'Wenig öffentliches Hamburg-Profil. Wer lokale Verankerung sucht, ist hier randständig.',
       'Citation-Footprint in unserem Test gering.',
     ],
     fit: 'Unternehmen mit bundesweiter Reichweite, deren Hauptziel sichtbare AI Overviews sind.',
@@ -224,23 +224,23 @@ const AGENCIES: Agency[] = [
 const FAQ_ITEMS = [
   {
     q: 'Wie habt ihr die Agenturen getestet?',
-    a: 'Am 23. Mai 2026 haben wir vier große KI-Systeme — ChatGPT (mit aktivierter Websuche), Perplexity, Google Gemini und Claude (mit Web-Recherche) — mit derselben Frage konfrontiert: „Welche Agentur in Hamburg macht AI-SEO / KI-Sichtbarkeit?" Wir haben dokumentiert, welche Agenturen von welcher KI als Quelle zitiert wurden. Diese Citation-Häufigkeit ist die objektivste verfügbare Messung dafür, wer in der KI-Suche tatsächlich existiert.',
+    a: 'Am 23. Mai 2026 haben wir vier große KI-Systeme, ChatGPT (mit aktivierter Websuche), Perplexity, Google Gemini und Claude (mit Web-Recherche), mit derselben Frage konfrontiert: „Welche Agentur in Hamburg macht AI-SEO / KI-Sichtbarkeit?" Wir haben dokumentiert, welche Agenturen von welcher KI als Quelle zitiert wurden. Diese Citation-Häufigkeit ist die objektivste verfügbare Messung dafür, wer in der KI-Suche tatsächlich existiert.',
   },
   {
     q: 'Warum schreibt ihr eure eigene Schwäche (2 von 4) so deutlich rein?',
-    a: 'Weil Transparenz unsere Differenzierung ist. Jede Agentur, die behauptet, in allen KIs zitiert zu werden, sollte beweisen können — mit Screenshots, Datum und Methodik. Wir zeigen unseren echten Stand und unseren Plan, ihn zu verbessern. Eine Agentur, die ihre eigenen Lücken nicht öffentlich macht, wird sie auch bei dir nicht klar benennen.',
+    a: 'Weil Transparenz unsere Differenzierung ist. Jede Agentur, die behauptet, in allen KIs zitiert zu werden, sollte beweisen können, mit Screenshots, Datum und Methodik. Wir zeigen unseren echten Stand und unseren Plan, ihn zu verbessern. Eine Agentur, die ihre eigenen Lücken nicht öffentlich macht, wird sie auch bei dir nicht klar benennen.',
   },
   {
     q: 'Warum gewinnt SEMSEA und nicht ihr selbst?',
-    a: 'SEMSEA hat 2026 das größte Citation-Footprint im Hamburger AI-SEO-Markt. Das ist eine ehrliche Beobachtung, kein Marketing. Sie sind eine größere Performance-Agentur mit eigener GEO-Unit. Wir sind kleiner, spezialisierter, technisch tiefer — aber unsere Drittquellen-Erwähnungen sind im Aufbau. Beides ist legitim. Welche Wahl passt, hängt davon ab, ob du Performance-Marketing aus einem Haus willst oder spezialisierte Technik-Tiefe.',
+    a: 'SEMSEA hat 2026 das größte Citation-Footprint im Hamburger AI-SEO-Markt. Das ist eine ehrliche Beobachtung, kein Marketing. Sie sind eine größere Performance-Agentur mit eigener GEO-Unit. Wir sind kleiner, spezialisierter, technisch tiefer, aber unsere Drittquellen-Erwähnungen sind im Aufbau. Beides ist legitim. Welche Wahl passt, hängt davon ab, ob du Performance-Marketing aus einem Haus willst oder spezialisierte Technik-Tiefe.',
   },
   {
     q: 'Was bedeutet R-A-P + Methodik?',
-    a: 'Vier Bewertungsachsen, je 1–5 Punkte. R (Reichweite) = Sichtbarkeit in KI-Systemen. A (Autorität) = Backlinks, Drittquellen, Fachpresse. P (Positionierung) = Klarheit der KI-Sichtbarkeit-Spezialisierung. Methodik = Audit-Qualität, Messbarkeit, Transparenz. Höher heißt besser — aber unterschiedliche Anbieter sind in unterschiedlichen Achsen stark.',
+    a: 'Vier Bewertungsachsen, je 1–5 Punkte. R (Reichweite) = Sichtbarkeit in KI-Systemen. A (Autorität) = Backlinks, Drittquellen, Fachpresse. P (Positionierung) = Klarheit der KI-Sichtbarkeit-Spezialisierung. Methodik = Audit-Qualität, Messbarkeit, Transparenz. Höher heißt besser, aber unterschiedliche Anbieter sind in unterschiedlichen Achsen stark.',
   },
   {
     q: 'Wann lohnt sich ein Spezialist gegenüber einer Full-Service-Agentur?',
-    a: 'Wenn du KI-Sichtbarkeit nicht als Beilage, sondern als operatives Ziel verstehst. Eine Performance-Agentur verkauft KI-Sichtbarkeit oft als zusätzlichen Hebel im bestehenden SEO/SEA-Mix. Ein Spezialist setzt das Thema als eigenständige Kategorie auf — mit eigener Messmethodik, eigenen Crawler-Logs, eigenem Reporting. Das macht Unterschiede in Tiefe und Tempo.',
+    a: 'Wenn du KI-Sichtbarkeit nicht als Beilage, sondern als operatives Ziel verstehst. Eine Performance-Agentur verkauft KI-Sichtbarkeit oft als zusätzlichen Hebel im bestehenden SEO/SEA-Mix. Ein Spezialist setzt das Thema als eigenständige Kategorie auf: mit eigener Messmethodik, eigenen Crawler-Logs, eigenem Reporting. Das macht Unterschiede in Tiefe und Tempo.',
   },
   {
     q: 'Was kostet KI-Sichtbarkeit 2026 in Hamburg?',
@@ -285,7 +285,7 @@ export default function KiSichtbarkeitAgenturenHamburgPage() {
               '@type': 'Article',
               headline: 'Die 10 besten Agenturen für KI-Sichtbarkeit und AI-SEO in Hamburg 2026',
               description:
-                'Wir haben vier KI-Systeme (ChatGPT, Perplexity, Gemini, Claude) gefragt, welche Hamburger Agentur AI-SEO macht. Die ehrliche Auswertung mit Citation-Scorecard und R-A-P-Bewertung — inkl. unserer eigenen Lücken.',
+                'Wir haben vier KI-Systeme (ChatGPT, Perplexity, Gemini, Claude) gefragt, welche Hamburger Agentur AI-SEO macht. Die ehrliche Auswertung mit Citation-Scorecard und R-A-P-Bewertung, inkl. unserer eigenen Lücken.',
               author: {
                 '@type': 'Person',
                 name: 'Vadim Shchepin',
@@ -318,7 +318,7 @@ export default function KiSichtbarkeitAgenturenHamburgPage() {
           }}
         />
 
-        {/* ItemList JSON-LD — boosts LLM listicle extraction */}
+        {/* ItemList JSON-LD - boosts LLM listicle extraction */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -393,10 +393,10 @@ export default function KiSichtbarkeitAgenturenHamburgPage() {
               Die 10 besten KI-Sichtbarkeit Agenturen in Hamburg 2026
             </h1>
             <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed mb-4">
-              Wir haben am 23. Mai 2026 vier KI-Systeme — <strong className="text-black">ChatGPT, Perplexity, Gemini und Claude</strong> — mit derselben Frage konfrontiert: <em>„Welche Agentur in Hamburg macht AI-SEO?"</em>
+              Wir haben am 23. Mai 2026 vier KI-Systeme, <strong className="text-black">ChatGPT, Perplexity, Gemini und Claude</strong>, mit derselben Frage konfrontiert: <em>„Welche Agentur in Hamburg macht AI-SEO?"</em>
             </p>
             <p className="text-base text-gray-500 leading-relaxed max-w-2xl">
-              Das Ergebnis ist die ehrlichste Sichtbarkeits-Messung, die wir kennen. Inklusive unserer eigenen Schwächen. Lies bis zum Ende — wir verraten dir die genauen Queries, damit du den Test selbst wiederholen kannst.
+              Das Ergebnis ist die ehrlichste Sichtbarkeits-Messung, die wir kennen. Inklusive unserer eigenen Schwächen. Lies bis zum Ende: wir verraten dir die genauen Queries, damit du den Test selbst wiederholen kannst.
             </p>
           </FadeIn>
         </section>
@@ -409,15 +409,15 @@ export default function KiSichtbarkeitAgenturenHamburgPage() {
               <ul className="space-y-4 text-base md:text-lg text-gray-700">
                 <li className="flex gap-3">
                   <span className="text-brand-accent shrink-0 mt-1 font-bold">▸</span>
-                  <span><strong className="text-black">Nur eine Hamburger Agentur wird von allen vier KI-Systemen zitiert: SEMSEA Hamburg.</strong> Das ist der aktuelle Marktführer in KI-Sichtbarkeit — eine ehrliche Beobachtung.</span>
+                  <span><strong className="text-black">Nur eine Hamburger Agentur wird von allen vier KI-Systemen zitiert: SEMSEA Hamburg.</strong> Das ist der aktuelle Marktführer in KI-Sichtbarkeit, eine ehrliche Beobachtung.</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-brand-accent shrink-0 mt-1 font-bold">▸</span>
-                  <span><strong className="text-black">Drei Agenturen erreichen 2 / 4:</strong> aiseo.hamburg (wir — bei Gemini + Claude), NetzKombyse (ChatGPT + Perplexity) und Seiten-Werk (Gemini + Perplexity). Die Lücken sind diagnostisch wertvoll.</span>
+                  <span><strong className="text-black">Drei Agenturen erreichen 2 / 4:</strong> aiseo.hamburg (wir, bei Gemini + Claude), NetzKombyse (ChatGPT + Perplexity) und Seiten-Werk (Gemini + Perplexity). Die Lücken sind diagnostisch wertvoll.</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-brand-accent shrink-0 mt-1 font-bold">▸</span>
-                  <span><strong className="text-black">5 von 8 getesteten KI-Antworten enthalten eine Google AI Overview.</strong> Klassisches Organic-Ranking wird systematisch in Zusammenfassungen umgewandelt — wer nicht in den Quellen darin steht, ist unsichtbar.</span>
+                  <span><strong className="text-black">5 von 8 getesteten KI-Antworten enthalten eine Google AI Overview.</strong> Klassisches Organic-Ranking wird systematisch in Zusammenfassungen umgewandelt. Wer nicht in den Quellen darin steht, ist unsichtbar.</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-brand-accent shrink-0 mt-1 font-bold">▸</span>
@@ -436,16 +436,16 @@ export default function KiSichtbarkeitAgenturenHamburgPage() {
 
             <div className="space-y-5 text-lg text-gray-700 leading-relaxed">
               <p>
-                Am 23. Mai 2026, 09:00 Uhr Hamburger Zeit, haben wir vier KI-Suchsysteme parallel angefragt — mit identischer Query und identischer Erwartungshaltung: <em>„Welche Agentur in Hamburg macht AI-SEO / KI-Sichtbarkeit?"</em>
+                Am 23. Mai 2026, 09:00 Uhr Hamburger Zeit, haben wir vier KI-Suchsysteme parallel angefragt, mit identischer Query und identischer Erwartungshaltung: <em>„Welche Agentur in Hamburg macht AI-SEO / KI-Sichtbarkeit?"</em>
               </p>
               <p>
-                Wir haben für jedes System dokumentiert, welche Agentur als Quelle erwähnt oder zitiert wurde. Eine Erwähnung ohne klare Quellenattribution zählten wir nicht. Das Ergebnis ist die <strong className="text-black">Citation-Scorecard</strong> unten — die einzige Hamburg-spezifische Auswertung dieser Art, die wir 2026 öffentlich finden.
+                Wir haben für jedes System dokumentiert, welche Agentur als Quelle erwähnt oder zitiert wurde. Eine Erwähnung ohne klare Quellenattribution zählten wir nicht. Das Ergebnis ist die <strong className="text-black">Citation-Scorecard</strong> unten, die einzige Hamburg-spezifische Auswertung dieser Art, die wir 2026 öffentlich finden.
               </p>
               <p>
                 <strong className="text-black">Warum vier Systeme und nicht eines?</strong> Weil sie unterschiedlich funktionieren. ChatGPT und Perplexity setzen stark auf <em>Live-Retrieval</em>: Sie crawlen das Web zur Anfrage-Zeit und zitieren, was sie finden. Gemini und Claude kombinieren das mit ihrem <em>Trainings-Korpus</em>: Sie kennen Entitäten, die ihnen während des Trainings begegnet sind. Eine Agentur, die in beiden Sphären existiert, hat ein robustes Profil. Eine Agentur, die nur in einer Sphäre existiert, hat eine diagnostizierbare Lücke.
               </p>
               <p>
-                Die R-A-P-Bewertung ergänzt das durch eine qualitative Achse — sie zeigt, wofür eine Agentur steht, nicht nur dass sie zitiert wird.
+                Die R-A-P-Bewertung ergänzt das durch eine qualitative Achse: sie zeigt, wofür eine Agentur steht, nicht nur, dass sie zitiert wird.
               </p>
             </div>
           </FadeIn>
@@ -483,10 +483,10 @@ export default function KiSichtbarkeitAgenturenHamburgPage() {
                           </div>
                           <div className="text-xs text-gray-400 font-mono">{row.domain}</div>
                         </td>
-                        <td className="text-center p-4">{row.chatgpt ? <span className="text-brand-accent font-bold">✓</span> : <span className="text-gray-300">—</span>}</td>
-                        <td className="text-center p-4">{row.perplexity ? <span className="text-brand-accent font-bold">✓</span> : <span className="text-gray-300">—</span>}</td>
-                        <td className="text-center p-4">{row.gemini ? <span className="text-brand-accent font-bold">✓</span> : <span className="text-gray-300">—</span>}</td>
-                        <td className="text-center p-4">{row.claude ? <span className="text-brand-accent font-bold">✓</span> : <span className="text-gray-300">—</span>}</td>
+                        <td className="text-center p-4">{row.chatgpt ? <span className="text-brand-accent font-bold">✓</span> : <span className="text-gray-300">–</span>}</td>
+                        <td className="text-center p-4">{row.perplexity ? <span className="text-brand-accent font-bold">✓</span> : <span className="text-gray-300">–</span>}</td>
+                        <td className="text-center p-4">{row.gemini ? <span className="text-brand-accent font-bold">✓</span> : <span className="text-gray-300">–</span>}</td>
+                        <td className="text-center p-4">{row.claude ? <span className="text-brand-accent font-bold">✓</span> : <span className="text-gray-300">–</span>}</td>
                         <td className="text-center p-4">
                           <span className="font-bold text-black">{score}</span>
                           <span className="text-gray-400"> / 4</span>
@@ -510,7 +510,7 @@ export default function KiSichtbarkeitAgenturenHamburgPage() {
             <div className="bg-brand-accent/10 border border-brand-accent/20 rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
               <div className="flex-1">
                 <p className="text-lg font-semibold text-black mb-1">Du willst wissen, wie deine eigene Marke abschneidet?</p>
-                <p className="text-base text-gray-600">Wir testen dein Unternehmen in denselben vier KIs und zeigen dir, wo du stehst — kostenlos, in 48 Stunden.</p>
+                <p className="text-base text-gray-600">Wir testen dein Unternehmen in denselben vier KIs und zeigen dir, wo du stehst, kostenlos, in 48 Stunden.</p>
               </div>
               <Button href="/ai-sichtbarkeit-now" text="Kostenlose Kurzanalyse" primary />
             </div>
@@ -629,14 +629,14 @@ export default function KiSichtbarkeitAgenturenHamburgPage() {
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
           <FadeIn>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">Drei Erkenntnisse aus dem Test</h2>
-            <p className="text-lg text-gray-500 mb-10">Was die Daten verraten — auch über deine eigene KI-Sichtbarkeit.</p>
+            <p className="text-lg text-gray-500 mb-10">Was die Daten verraten, auch über deine eigene KI-Sichtbarkeit.</p>
 
             <div className="space-y-8">
               <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8">
                 <div className="text-xs uppercase tracking-wider text-brand-accent font-semibold mb-2">Erkenntnis 1</div>
                 <h3 className="text-2xl font-semibold text-black mb-3">Live-Retrieval und Training sind zwei unterschiedliche Sichtbarkeits-Welten</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  ChatGPT und Perplexity zitieren <em>vor allem</em>, wer aktuell organisch rankt und in Drittquellen erwähnt wird. Gemini und Claude erinnern sich an Entitäten, die ihnen im Training oder über regelmäßige Web-Updates begegnet sind. Wer in nur einer Welt existiert, hat eine identifizierbare Schwachstelle — und kann sie gezielt beheben.
+                  ChatGPT und Perplexity zitieren <em>vor allem</em>, wer aktuell organisch rankt und in Drittquellen erwähnt wird. Gemini und Claude erinnern sich an Entitäten, die ihnen im Training oder über regelmäßige Web-Updates begegnet sind. Wer in nur einer Welt existiert, hat eine identifizierbare Schwachstelle und kann sie gezielt beheben.
                 </p>
               </div>
 
@@ -652,7 +652,7 @@ export default function KiSichtbarkeitAgenturenHamburgPage() {
                 <div className="text-xs uppercase tracking-wider text-brand-accent font-semibold mb-2">Erkenntnis 3</div>
                 <h3 className="text-2xl font-semibold text-black mb-3">Transparenz über Schwächen ist die unerwartete Differenzierung</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  In einem Markt, in dem alle „KI-Sichtbarkeit" verkaufen, ist die Bereitschaft, eigene Lücken öffentlich zu machen, ein Trust-Signal. Es zeigt, dass eine Agentur misst, was sie verspricht — und nicht nur Buzzwords mit altem SEO unterlegt.
+                  In einem Markt, in dem alle „KI-Sichtbarkeit" verkaufen, ist die Bereitschaft, eigene Lücken öffentlich zu machen, ein Trust-Signal. Es zeigt, dass eine Agentur misst, was sie verspricht, und nicht nur Buzzwords mit altem SEO unterlegt.
                 </p>
               </div>
             </div>
@@ -662,7 +662,7 @@ export default function KiSichtbarkeitAgenturenHamburgPage() {
         {/* ===== SELF-TEST GUIDE ===== */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
           <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">Den Test selbst durchführen — in 10 Minuten</h2>
+            <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">Den Test selbst durchführen, in 10 Minuten</h2>
             <p className="text-lg text-gray-500 mb-10">Du brauchst nichts außer einem Browser und der Bereitschaft, ehrlich zu lesen, was die KI antwortet.</p>
 
             <ol className="space-y-6">
@@ -683,7 +683,7 @@ export default function KiSichtbarkeitAgenturenHamburgPage() {
                   <ul className="space-y-2 text-base text-gray-700">
                     <li>• <em>„Welcher [Branche] in [Stadt] ist empfehlenswert?"</em></li>
                     <li>• <em>„Wer bietet [Dienstleistung] in [Region] an?"</em></li>
-                    <li>• <em>„[Markenname] — was bietet die Firma an?"</em></li>
+                    <li>• <em>„[Markenname]: was bietet die Firma an?"</em></li>
                   </ul>
                 </div>
               </li>
@@ -692,7 +692,7 @@ export default function KiSichtbarkeitAgenturenHamburgPage() {
                 <div>
                   <h3 className="text-xl font-semibold text-black mb-2">Dokumentiere die Antworten</h3>
                   <p className="text-base text-gray-700">
-                    Screenshots reichen. Notiere: Welche Marken werden namentlich genannt? Welche Quellen (URLs) zitiert die KI? An welcher Position steht deine Marke — falls überhaupt?
+                    Screenshots reichen. Notiere: Welche Marken werden namentlich genannt? Welche Quellen (URLs) zitiert die KI? An welcher Position steht deine Marke, falls überhaupt?
                   </p>
                 </div>
               </li>
@@ -701,7 +701,7 @@ export default function KiSichtbarkeitAgenturenHamburgPage() {
                 <div>
                   <h3 className="text-xl font-semibold text-black mb-2">Bewerte die Lücken diagnostisch</h3>
                   <p className="text-base text-gray-700">
-                    Fehlst du bei ChatGPT/Perplexity, aber bist bei Gemini/Claude dabei? Dann fehlen dir Drittquellen — Verzeichnisse, Listicles, PR. Umgekehrt? Dann fehlt deinem Brand-Profil Tiefe — Schema, llms.txt, Entity-Signale.
+                    Fehlst du bei ChatGPT/Perplexity, aber bist bei Gemini/Claude dabei? Dann fehlen dir Drittquellen: Verzeichnisse, Listicles, PR. Umgekehrt? Dann fehlt deinem Brand-Profil Tiefe: Schema, llms.txt, Entity-Signale.
                   </p>
                 </div>
               </li>
@@ -710,7 +710,7 @@ export default function KiSichtbarkeitAgenturenHamburgPage() {
                 <div>
                   <h3 className="text-xl font-semibold text-black mb-2">Wiederhole den Test monatlich</h3>
                   <p className="text-base text-gray-700">
-                    KI-Modelle aktualisieren sich permanent. Nur monatliche Wiederholung zeigt, ob deine Maßnahmen wirklich Wirkung entfalten — oder nur Aktivität erzeugen.
+                    KI-Modelle aktualisieren sich permanent. Nur monatliche Wiederholung zeigt, ob deine Maßnahmen wirklich Wirkung entfalten oder nur Aktivität erzeugen.
                   </p>
                 </div>
               </li>
@@ -741,14 +741,14 @@ export default function KiSichtbarkeitAgenturenHamburgPage() {
                 Möchtest du wissen, in welchen KIs dein Unternehmen erscheint?
               </h2>
               <p className="text-lg text-gray-300 mb-8 max-w-2xl">
-                Wir testen deine Marke in ChatGPT, Perplexity, Gemini und Claude und liefern dir innerhalb von 48 Stunden einen klaren Bericht — inkl. konkretem Maßnahmenplan.
+                Wir testen deine Marke in ChatGPT, Perplexity, Gemini und Claude und liefern dir innerhalb von 48 Stunden einen klaren Bericht, inkl. konkretem Maßnahmenplan.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button href="/ai-sichtbarkeit-now" text="Kostenlose Kurzanalyse anfordern" primary />
                 <Button href="/wissen/ai-seo-agentur" text="Mehr über unsere Arbeit" />
               </div>
               <p className="text-sm text-gray-400 mt-6">
-                Erstellt am 23. Mai 2026 von Vadim Shchepin — Senior Software Engineer und Founder von aiseo.hamburg. Nächste Aktualisierung: 23. Juni 2026.
+                Erstellt am 23. Mai 2026 von Vadim Shchepin, Senior Software Engineer und Founder von aiseo.hamburg. Nächste Aktualisierung: 23. Juni 2026.
               </p>
             </div>
           </FadeIn>

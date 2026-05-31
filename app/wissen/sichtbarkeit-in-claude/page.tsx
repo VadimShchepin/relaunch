@@ -158,7 +158,7 @@ const TLDRSection: React.FC = () => (
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">2.</span>
-                        <span>Anthropics Constitutional AI bevorzugt faktenbasierte, autoritative Quellen — Qualität schlägt Quantität.</span>
+                        <span>Anthropics Constitutional AI bevorzugt faktenbasierte, autoritative Quellen: Qualität schlägt Quantität.</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">3.</span>
@@ -166,7 +166,7 @@ const TLDRSection: React.FC = () => (
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">4.</span>
-                        <span>Claude wird vor allem von Professionals und Enterprises genutzt — deine B2B-Zielgruppe sitzt hier.</span>
+                        <span>Claude wird vor allem von Professionals und Enterprises genutzt. Deine B2B-Zielgruppe sitzt hier.</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">5.</span>
@@ -189,26 +189,26 @@ const WhyClaudeSection: React.FC = () => (
                 <p>
                     Anthropic, das Unternehmen hinter Claude, gehört zu den am schnellsten wachsenden
                     KI-Firmen weltweit. Claude hat sich innerhalb von zwei Jahren als ernstzunehmende Alternative
-                    zu ChatGPT etabliert — besonders im professionellen und Enterprise-Bereich.
+                    zu ChatGPT etabliert, besonders im professionellen und Enterprise-Bereich.
                 </p>
                 <p>
                     Der Unterschied zu ChatGPT: Claude wird überproportional von Professionals genutzt.
                     Entwickler, Berater, Analysten und Entscheider setzen Claude ein, weil das Modell
                     für längere, analytischere Aufgaben optimiert ist. Wenn ein CTO fragt
                     „Welche Agentur in Hamburg macht gutes AI SEO?", dann ist die Wahrscheinlichkeit
-                    hoch, dass er Claude nutzt — nicht ChatGPT.
+                    hoch, dass er Claude nutzt, nicht ChatGPT.
                 </p>
                 <p>
                     Amazon hat über 4 Milliarden Dollar in Anthropic investiert. Google ebenfalls Milliarden.
                     Claude ist in AWS Bedrock integriert und wird von Tausenden Enterprise-Kunden genutzt.
-                    Das ist kein Nischenprodukt — das ist Infrastruktur.
+                    Das ist kein Nischenprodukt. Das ist Infrastruktur.
                 </p>
             </div>
 
             <div className="grid sm:grid-cols-3 gap-4 mt-8">
                 <div className="bg-white border border-gray-100 rounded-2xl p-6 text-center">
                     <p className="text-3xl font-semibold text-black mb-1">Enterprise</p>
-                    <p className="text-sm text-gray-500">Fokus von Anthropic — B2B-Zielgruppe</p>
+                    <p className="text-sm text-gray-500">Fokus von Anthropic: B2B-Zielgruppe</p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-2xl p-6 text-center">
                     <p className="text-3xl font-semibold text-black mb-1">200K</p>
@@ -234,7 +234,7 @@ const PainSection: React.FC = () => (
                 <p>
                     Du optimierst für Google, aber Claude ignoriert dich komplett. Während du
                     deine Rankings in der Google Search Console trackst, empfiehlt Claude deinen
-                    Wettbewerber — und du bekommst es nicht einmal mit.
+                    Wettbewerber, und du bekommst es nicht einmal mit.
                 </p>
                 <p>
                     Es gibt keine Claude Search Console. Kein Dashboard, keine Impressions, keine Klickzahlen.

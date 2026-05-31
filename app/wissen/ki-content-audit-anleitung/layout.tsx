@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Der große KI-Content-Audit: So prüfst du, ob dein Content 2027 überlebt | aiseo.hamburg',
   description:
-    'Schritt-für-Schritt-Anleitung zum KI-Content-Audit: Scoring-System, Checkliste und Priorisierung. Welchen Content updaten, löschen oder zusammenführen — damit KI-Systeme dich zitieren.',
+    'Schritt-für-Schritt-Anleitung zum KI-Content-Audit: Scoring-System, Checkliste und Priorisierung. Welchen Content updaten, löschen oder zusammenführen, damit KI-Systeme dich zitieren.',
   keywords: [
     'ki content audit',
     'content audit ki sichtbarkeit',

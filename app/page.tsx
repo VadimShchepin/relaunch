@@ -32,7 +32,7 @@ export default function Page() {
                             AI SEO. AEO. GEO.
                         </h2>
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                            Drei sich überlappende, aber technisch unterschiedliche Disziplinen — mit einer gemeinsamen Frage: Wie wird dein Unternehmen 2026 von KI-Systemen empfohlen?
+                            Drei sich überlappende, aber technisch unterschiedliche Disziplinen, mit einer gemeinsamen Frage: Wie wird dein Unternehmen 2026 von KI-Systemen empfohlen?
                         </p>
                     </div>
 
@@ -63,7 +63,7 @@ export default function Page() {
                                 Answer Engine Optimization
                             </h3>
                             <p className="text-gray-600 text-base leading-relaxed mb-6">
-                                Inhalte so strukturieren, dass KI-Antwort-Systeme sie direkt als Antwort verwenden. Frage rein, deine Marke raus — ohne Umweg über die Klick-Liste.
+                                Inhalte so strukturieren, dass KI-Antwort-Systeme sie direkt als Antwort verwenden. Frage rein, deine Marke raus, ohne Umweg über die Klick-Liste.
                             </p>
                             <span className="text-sm font-semibold text-black inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                                 AEO-Guide lesen
@@ -80,7 +80,7 @@ export default function Page() {
                                 Generative Engine Optimization
                             </h3>
                             <p className="text-gray-600 text-base leading-relaxed mb-6">
-                                Optimierung für generative KI: Wie Claude, Gemini und ChatGPT deine Inhalte abrufen und in eigene Antworten einbauen — und wie du dort zur Quelle wirst.
+                                Optimierung für generative KI: Wie Claude, Gemini und ChatGPT deine Inhalte abrufen und in eigene Antworten einbauen, und wie du dort zur Quelle wirst.
                             </p>
                             <span className="text-sm font-semibold text-black inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                                 GEO verstehen
@@ -94,7 +94,7 @@ export default function Page() {
                             href="/wissen/ki-sichtbarkeit-agenturen-hamburg-2026"
                             className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-black transition-colors group"
                         >
-                            Neu: Welche Hamburger Agentur wird in welcher KI zitiert? — Unser 4-KI-Test
+                            Neu: Welche Hamburger Agentur wird in welcher KI zitiert? Unser 4-KI-Test
                             <ArrowRightIcon className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                         </a>
                     </div>

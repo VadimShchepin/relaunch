@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Fallstudie: In 90 Tagen KI-sichtbar — Echte Zahlen eines Hamburger Unternehmens | aiseo.hamburg',
+  title: 'Fallstudie: In 90 Tagen KI-sichtbar, echte Zahlen eines Hamburger Unternehmens | aiseo.hamburg',
   description: 'Composite Case Study: Wie ein Hamburger Dienstleistungsunternehmen in 90 Tagen von unsichtbar zu #1 in ChatGPT wurde. Performance von 35 auf 99, 474 Clicks/Monat, 2x organischer Traffic.',
   keywords: [
     'ki sichtbarkeit fallstudie',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     'ki sichtbarkeit vorher nachher',
   ],
   openGraph: {
-    title: 'Fallstudie: In 90 Tagen KI-sichtbar — Echte Zahlen eines Hamburger Unternehmens',
+    title: 'Fallstudie: In 90 Tagen KI-sichtbar, echte Zahlen eines Hamburger Unternehmens',
     description: 'Von Performance 35/100 auf 99/100. Von null KI-Sichtbarkeit zu #1 in ChatGPT. Echte Zahlen, echte Ergebnisse, kein Marketing-Blabla.',
     url: 'https://aiseo.hamburg/wissen/fallstudie-ki-sichtbarkeit-90-tage',
     siteName: 'aiseo.hamburg',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Fallstudie: In 90 Tagen KI-sichtbar — Echte Zahlen',
+    title: 'Fallstudie: In 90 Tagen KI-sichtbar, echte Zahlen',
     description: 'Von Performance 35/100 auf 99/100. Von null KI-Sichtbarkeit zu #1 in ChatGPT. Echte Zahlen, echte Ergebnisse.',
   },
   alternates: {

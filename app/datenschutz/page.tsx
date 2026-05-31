@@ -151,8 +151,8 @@ export default function DatenschutzPage() {
                 </p>
                 <p>
                   Ohne Ihre Zustimmung werden keine personenbezogenen Daten über Cookies erhoben.
-                  Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie den lokalen Speicher Ihres Browsers löschen
-                  — beim nächsten Besuch wird der Cookie-Banner erneut angezeigt.
+                  Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie den lokalen Speicher Ihres Browsers löschen.
+                  Beim nächsten Besuch wird der Cookie-Banner erneut angezeigt.
                 </p>
               </div>
             </section>

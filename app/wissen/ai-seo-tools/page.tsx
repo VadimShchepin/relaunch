@@ -9,15 +9,15 @@ import { Button } from '@/components/ui/Button';
 const FAQS = [
   {
     q: 'Gibt es ein Tool, das garantiert meine ChatGPT-Rankings verbessert?',
-    a: 'Nein. Jedes Tool, das „garantierte ChatGPT-Rankings" verspricht, lügt. ChatGPT hat keine Rankings im klassischen Sinne — es generiert Antworten basierend auf Trainingsdaten und (beim Browsing-Modus) Live-Web-Ergebnissen. Kein externes Tool kann beeinflussen, was in den Trainingsdaten steht. Tools können dir helfen, deinen Content zu verbessern und deine Sichtbarkeit zu monitoren — aber eine Garantie ist technisch unmöglich.',
+    a: 'Nein. Jedes Tool, das „garantierte ChatGPT-Rankings" verspricht, lügt. ChatGPT hat keine Rankings im klassischen Sinne, es generiert Antworten basierend auf Trainingsdaten und (beim Browsing-Modus) Live-Web-Ergebnissen. Kein externes Tool kann beeinflussen, was in den Trainingsdaten steht. Tools können dir helfen, deinen Content zu verbessern und deine Sichtbarkeit zu monitoren, aber eine Garantie ist technisch unmöglich.',
   },
   {
     q: 'Reichen kostenlose Tools für AI SEO aus?',
-    a: 'Für den Anfang ja. Manuelles Testen in ChatGPT, Perplexity und Google AI kostet nichts. Google Search Console zeigt dir AI Overview-Impressionen. Schema.org-Validierung ist kostenlos. Wer gerade erst anfängt, braucht keine 500-Euro-Subscription. Wenn du allerdings 50+ Seiten monitoren willst oder regelmäßige Reports brauchst, machen bezahlte Tools wie Ahrefs Brand Radar oder Semrush AI Visibility Sinn — sie sparen schlicht Zeit.',
+    a: 'Für den Anfang ja. Manuelles Testen in ChatGPT, Perplexity und Google AI kostet nichts. Google Search Console zeigt dir AI Overview-Impressionen. Schema.org-Validierung ist kostenlos. Wer gerade erst anfängt, braucht keine 500-Euro-Subscription. Wenn du allerdings 50+ Seiten monitoren willst oder regelmäßige Reports brauchst, machen bezahlte Tools wie Ahrefs Brand Radar oder Semrush AI Visibility Sinn, sie sparen schlicht Zeit.',
   },
   {
     q: 'Was ist der Unterschied zwischen Ahrefs Brand Radar und Semrush AI Visibility?',
-    a: 'Ahrefs Brand Radar trackt, wie oft deine Marke in KI-Antworten erwähnt wird — über ChatGPT, Perplexity, Claude und andere Systeme hinweg. Es fokussiert sich auf Brand Mentions und Sentiment. Semrush AI Visibility geht breiter: Es zeigt, für welche Keywords du in AI Overviews erscheinst, wie sich dein Share of Voice entwickelt, und wie du im Vergleich zu Wettbewerbern stehst. Kurzfassung: Ahrefs für Marken-Monitoring, Semrush für Keyword-basierte Analyse.',
+    a: 'Ahrefs Brand Radar trackt, wie oft deine Marke in KI-Antworten erwähnt wird, über ChatGPT, Perplexity, Claude und andere Systeme hinweg. Es fokussiert sich auf Brand Mentions und Sentiment. Semrush AI Visibility geht breiter: Es zeigt, für welche Keywords du in AI Overviews erscheinst, wie sich dein Share of Voice entwickelt, und wie du im Vergleich zu Wettbewerbern stehst. Kurzfassung: Ahrefs für Marken-Monitoring, Semrush für Keyword-basierte Analyse.',
   },
   {
     q: 'Kann ich mit Gemini CLI meine KI-Sichtbarkeit testen?',
@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: 'Brauche ich verschiedene Tools für verschiedene KI-Systeme?',
-    a: 'Idealerweise ja. Kein einzelnes Tool deckt alle KI-Systeme perfekt ab. Ahrefs und Semrush fokussieren sich auf die großen Plattformen (ChatGPT, Perplexity, Google AI). Für Claude-Sichtbarkeit gibt es noch wenig spezialisierte Tools — hier bleibt manuelles Testen der beste Ansatz. Die Realität für die meisten Unternehmen: Ein gutes Monitoring-Tool plus manuelles Testen in 2-3 KI-Systemen reicht aus.',
+    a: 'Idealerweise ja. Kein einzelnes Tool deckt alle KI-Systeme perfekt ab. Ahrefs und Semrush fokussieren sich auf die großen Plattformen (ChatGPT, Perplexity, Google AI). Für Claude-Sichtbarkeit gibt es noch wenig spezialisierte Tools, hier bleibt manuelles Testen der beste Ansatz. Die Realität für die meisten Unternehmen: Ein gutes Monitoring-Tool plus manuelles Testen in 2-3 KI-Systemen reicht aus.',
   },
 ];
 
@@ -128,7 +128,7 @@ export default function AISEOToolsPage() {
           AI SEO Tools 2026: Welche sich lohnen und welche Geldverbrennung sind
         </h1>
         <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
-          Der AI-SEO-Tool-Markt 2026 ist wie ein türkischer Basar — jeder schreit, alles blinkt, und die Hälfte der Ware fällt auseinander, sobald du sie anfasst. Hier erfährst du, welche Tools dein Geld wert sind und welche du genauso gut aus dem Fenster werfen kannst.
+          Der AI-SEO-Tool-Markt 2026 ist wie ein türkischer Basar: jeder schreit, alles blinkt, und die Hälfte der Ware fällt auseinander, sobald du sie anfasst. Hier erfährst du, welche Tools dein Geld wert sind und welche du genauso gut aus dem Fenster werfen kannst.
         </p>
       </section>
 
@@ -149,11 +149,11 @@ export default function AISEOToolsPage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">3.</span>
-              <span><strong className="text-black">80 % des AI-SEO-Toolings kannst du kostenlos machen</strong> — manuell testen, Google Search Console, Schema-Validatoren.</span>
+              <span><strong className="text-black">80 % des AI-SEO-Toolings kannst du kostenlos machen</strong>: manuell testen, Google Search Console, Schema-Validatoren.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">4.</span>
-              <span><strong className="text-black">Gemini CLI ist das unterschätzteste Tool</strong> im Stack — kostenlos, mächtig, aber nur für Leute, die ein Terminal nicht für einen Flughafenbereich halten.</span>
+              <span><strong className="text-black">Gemini CLI ist das unterschätzteste Tool</strong> im Stack, kostenlos, mächtig, aber nur für Leute, die ein Terminal nicht für einen Flughafenbereich halten.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">5.</span>
@@ -192,10 +192,10 @@ export default function AISEOToolsPage() {
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
-          Kategorie 1: Monitoring-Tools — Wo wirst du erwähnt?
+          Kategorie 1: Monitoring-Tools, wo wirst du erwähnt?
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
-          Die wichtigste Kategorie. Denn bevor du irgendetwas optimierst, musst du wissen, wo du stehst. Du kannst nicht verbessern, was du nicht misst — das gilt für SEO wie für dein Cholesterin.
+          Die wichtigste Kategorie. Denn bevor du irgendetwas optimierst, musst du wissen, wo du stehst. Du kannst nicht verbessern, was du nicht misst, das gilt für SEO wie für dein Cholesterin.
         </p>
 
         <div className="space-y-6">
@@ -205,7 +205,7 @@ export default function AISEOToolsPage() {
               <span className="shrink-0 text-sm font-semibold text-brand-accent bg-brand-accent/10 px-3 py-1 rounded-full">Empfehlung</span>
             </div>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Trackt Brand Mentions in KI-Antworten über ChatGPT, Perplexity, Claude und Google AI Overviews. Zeigt Sentiment, Kontext und zeitliche Entwicklung. Die beste Lösung, wenn du wissen willst: „Wird meine Marke erwähnt, und wenn ja — positiv oder negativ?"
+              Trackt Brand Mentions in KI-Antworten über ChatGPT, Perplexity, Claude und Google AI Overviews. Zeigt Sentiment, Kontext und zeitliche Entwicklung. Die beste Lösung, wenn du wissen willst: „Wird meine Marke erwähnt, und wenn ja, positiv oder negativ?"
             </p>
             <div className="grid sm:grid-cols-2 gap-4 text-sm">
               <div>
@@ -292,7 +292,7 @@ export default function AISEOToolsPage() {
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
-          Kategorie 2: Content-Optimierungs-Tools — Hilfe oder Halluzination?
+          Kategorie 2: Content-Optimierungs-Tools, Hilfe oder Halluzination?
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
           Hier wird es heikel. Jedes zweite Tool verspricht „KI-optimierten Content auf Knopfdruck". Die Realität: Kein Tool kann deinen Content automatisch zitierfähig machen. Aber manche helfen beim Schreiben. Andere machen es schlimmer.
@@ -305,7 +305,7 @@ export default function AISEOToolsPage() {
               Die „alten" Content-Optimierungs-Tools haben inzwischen AI-Features. Sie analysieren, welche Begriffe und Entitäten in Top-Ergebnissen vorkommen, und helfen dir, semantische Vollständigkeit zu erreichen. <strong className="text-black">Für klassisches SEO nach wie vor nützlich. Für AI SEO? Indirekt.</strong>
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Semantische Vollständigkeit ist auch für KI-Zitierbarkeit relevant — wenn dein Artikel über „KI-Sichtbarkeit" die Entitäten ChatGPT, Perplexity, Schema.org und E-E-A-T nicht erwähnt, ist er semantisch unvollständig. Diese Tools helfen dabei. Aber sie optimieren nicht spezifisch für KI-Zitierungen.
+              Semantische Vollständigkeit ist auch für KI-Zitierbarkeit relevant, wenn dein Artikel über „KI-Sichtbarkeit" die Entitäten ChatGPT, Perplexity, Schema.org und E-E-A-T nicht erwähnt, ist er semantisch unvollständig. Diese Tools helfen dabei. Aber sie optimieren nicht spezifisch für KI-Zitierungen.
             </p>
           </div>
 
@@ -322,7 +322,7 @@ export default function AISEOToolsPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">„AI Content Generators" (Jasper, Copy.ai und Co.)</h3>
             <p className="text-gray-600 leading-relaxed">
-              Lassen wir die Diplomatie beiseite: Wenn du Content mit einem AI-Content-Generator erstellst und diesen unbearbeitet veröffentlichst, produzierst du genau den Me-Too-Content, den KI-Systeme nicht zitieren werden. Warum? Weil der Output dieser Tools statistisch durchschnittlich ist — er sagt das, was alle anderen auch sagen. <strong className="text-black">KI zitiert nicht den Durchschnitt. KI zitiert die Ausnahme.</strong> Diese Tools sind okay für Entwürfe. Für fertige Inhalte? Dann kannst du auch direkt in ChatGPT tippen und die 50 Dollar Subscription sparen.
+              Lassen wir die Diplomatie beiseite: Wenn du Content mit einem AI-Content-Generator erstellst und diesen unbearbeitet veröffentlichst, produzierst du genau den Me-Too-Content, den KI-Systeme nicht zitieren werden. Warum? Weil der Output dieser Tools statistisch durchschnittlich ist, er sagt das, was alle anderen auch sagen. <strong className="text-black">KI zitiert nicht den Durchschnitt. KI zitiert die Ausnahme.</strong> Diese Tools sind okay für Entwürfe. Für fertige Inhalte? Dann kannst du auch direkt in ChatGPT tippen und die 50 Dollar Subscription sparen.
             </p>
           </div>
         </div>
@@ -333,10 +333,10 @@ export default function AISEOToolsPage() {
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
-          Kategorie 3: Technische Tools — Für Leute, die wissen, was ein Terminal ist
+          Kategorie 3: Technische Tools, für Leute, die wissen, was ein Terminal ist
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
-          Die unterschätzteste Kategorie. Technische Tools helfen dir, deine Website maschinenlesbar zu machen — und das ist für KI-Sichtbarkeit oft wichtiger als jedes Content-Optimierungs-Tool.
+          Die unterschätzteste Kategorie. Technische Tools helfen dir, deine Website maschinenlesbar zu machen, und das ist für KI-Sichtbarkeit oft wichtiger als jedes Content-Optimierungs-Tool.
         </p>
 
         <div className="space-y-6">
@@ -346,7 +346,7 @@ export default function AISEOToolsPage() {
               <span className="shrink-0 text-sm font-semibold text-green-700 bg-green-50 px-3 py-1 rounded-full">Kostenlos</span>
             </div>
             <p className="text-gray-600 leading-relaxed mb-3">
-              Das am meisten unterschätzte Tool in diesem ganzen Artikel. Gemini CLI ist Googles Command-Line-Interface für Gemini — du kannst damit direkt im Terminal Prompts testen, Antworten analysieren und sogar automatisierte Test-Skripte schreiben.
+              Das am meisten unterschätzte Tool in diesem ganzen Artikel. Gemini CLI ist Googles Command-Line-Interface für Gemini, du kannst damit direkt im Terminal Prompts testen, Antworten analysieren und sogar automatisierte Test-Skripte schreiben.
             </p>
             <p className="text-gray-600 leading-relaxed mb-3">
               <strong className="text-black">Warum ist das relevant für AI SEO?</strong> Weil du damit systematisch prüfen kannst, wie Gemini (und indirekt Google AI Overviews) auf Fragen zu deiner Marke, deinen Produkten und deinem Fachgebiet antwortet. Statt manuell im Browser zu tippen, schreibst du ein Skript, das 50 Prompts durchläuft und die Ergebnisse speichert.
@@ -362,7 +362,7 @@ export default function AISEOToolsPage() {
               <span className="shrink-0 text-sm font-semibold text-green-700 bg-green-50 px-3 py-1 rounded-full">Kostenlos</span>
             </div>
             <p className="text-gray-600 leading-relaxed">
-              Google Rich Results Test und Schema Markup Validator sind kostenlos und unverzichtbar. Dein strukturiertes Markup (Article, FAQ, Organization, Person) muss fehlerfrei sein. Ein kaputtes Schema ist wie ein Personalausweis mit Tippfehler — technisch vorhanden, praktisch nutzlos. <strong className="text-black">Prüfe jede Seite nach dem Deployment.</strong> Es dauert 30 Sekunden und erspart dir Wochen unsichtbarer Fehler.
+              Google Rich Results Test und Schema Markup Validator sind kostenlos und unverzichtbar. Dein strukturiertes Markup (Article, FAQ, Organization, Person) muss fehlerfrei sein. Ein kaputtes Schema ist wie ein Personalausweis mit Tippfehler, technisch vorhanden, praktisch nutzlos. <strong className="text-black">Prüfe jede Seite nach dem Deployment.</strong> Es dauert 30 Sekunden und erspart dir Wochen unsichtbarer Fehler.
             </p>
           </div>
 
@@ -383,7 +383,7 @@ export default function AISEOToolsPage() {
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-          Kategorie 4: Schlangenöl — Tools, die dein Geld nicht wert sind
+          Kategorie 4: Schlangenöl, Tools, die dein Geld nicht wert sind
         </h2>
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
@@ -396,7 +396,7 @@ export default function AISEOToolsPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">„Garantierte ChatGPT-Rankings"-Tools</h3>
             <p className="text-gray-600 leading-relaxed">
-              Es gibt eine wachsende Anzahl von Tools, die versprechen, dein „Ranking in ChatGPT" zu verbessern. Die unangenehme Wahrheit: <strong className="text-black">ChatGPT hat keine Rankings.</strong> Es hat Trainingsdaten und einen Algorithmus, der Antworten generiert. Kein externes Tool kann beeinflussen, was in OpenAIs Trainingsdaten steht. Kein Tool kann garantieren, dass ChatGPT dich erwähnt. Jeder, der das behauptet, versteht entweder nicht, wie LLMs funktionieren — oder hofft, dass du es nicht verstehst.
+              Es gibt eine wachsende Anzahl von Tools, die versprechen, dein „Ranking in ChatGPT" zu verbessern. Die unangenehme Wahrheit: <strong className="text-black">ChatGPT hat keine Rankings.</strong> Es hat Trainingsdaten und einen Algorithmus, der Antworten generiert. Kein externes Tool kann beeinflussen, was in OpenAIs Trainingsdaten steht. Kein Tool kann garantieren, dass ChatGPT dich erwähnt. Jeder, der das behauptet, versteht entweder nicht, wie LLMs funktionieren, oder hofft, dass du es nicht verstehst.
             </p>
           </div>
 
@@ -517,7 +517,7 @@ export default function AISEOToolsPage() {
               <li className="flex items-start gap-2"><span className="text-brand-accent font-bold mt-0.5">&#8226;</span><span><strong className="text-black">ChatGPT/Claude als Reviewer:</strong> Content-Qualität gegenchecken.</span></li>
             </ul>
             <div className="mt-6 p-4 bg-gray-50 rounded-xl">
-              <p className="text-sm text-gray-600"><strong className="text-black">Kosten:</strong> 0 € — <strong className="text-black">Aufwand:</strong> ~2-3 Stunden pro Woche</p>
+              <p className="text-sm text-gray-600"><strong className="text-black">Kosten:</strong> 0 €. <strong className="text-black">Aufwand:</strong> ~2-3 Stunden pro Woche</p>
             </div>
           </div>
 
@@ -531,7 +531,7 @@ export default function AISEOToolsPage() {
               <li className="flex items-start gap-2"><span className="text-brand-accent font-bold mt-0.5">&#8226;</span><span><strong className="text-black">+ Kostenloser Stack:</strong> Die kostenlosen Tools bleiben die Basis.</span></li>
             </ul>
             <div className="mt-6 p-4 bg-gray-50 rounded-xl">
-              <p className="text-sm text-gray-600"><strong className="text-black">Kosten:</strong> ~200-400 €/Monat — <strong className="text-black">Aufwand:</strong> ~1-2 Stunden pro Woche (Rest automatisiert)</p>
+              <p className="text-sm text-gray-600"><strong className="text-black">Kosten:</strong> ~200-400 €/Monat. <strong className="text-black">Aufwand:</strong> ~1-2 Stunden pro Woche (Rest automatisiert)</p>
             </div>
           </div>
         </div>
@@ -558,7 +558,7 @@ export default function AISEOToolsPage() {
                 Schritt 1: Baseline messen (Woche 1)
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Teste 20-30 relevante Prompts in ChatGPT, Perplexity und Google AI. Dokumentiere, wo du erwähnt wirst und wo nicht. Prüfe deine AI Overview-Daten in der Search Console. Das ist deine Baseline — ohne sie weißt du nicht, ob irgendetwas funktioniert.
+                Teste 20-30 relevante Prompts in ChatGPT, Perplexity und Google AI. Dokumentiere, wo du erwähnt wirst und wo nicht. Prüfe deine AI Overview-Daten in der Search Console. Das ist deine Baseline, ohne sie weißt du nicht, ob irgendetwas funktioniert.
               </p>
             </div>
           </li>
@@ -580,7 +580,7 @@ export default function AISEOToolsPage() {
                 Schritt 3: Content optimieren (Woche 3-4)
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Basierend auf Baseline und Audit: Die wichtigsten 10 Seiten überarbeiten. Answer-First-Strukturen, Quellenangaben, FAQ-Sektionen, Schema-Markup. Kein Tool nötig — nur Disziplin und eine Checkliste.
+                Basierend auf Baseline und Audit: Die wichtigsten 10 Seiten überarbeiten. Answer-First-Strukturen, Quellenangaben, FAQ-Sektionen, Schema-Markup. Kein Tool nötig, nur Disziplin und eine Checkliste.
               </p>
             </div>
           </li>
@@ -591,7 +591,7 @@ export default function AISEOToolsPage() {
                 Schritt 4: Monitoring aufsetzen (Woche 5)
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Jetzt — und erst jetzt — investiere in ein Monitoring-Tool, wenn der kostenlose Stack nicht mehr ausreicht. Ahrefs Brand Radar für Marken-Monitoring oder Semrush AI Visibility für Keyword-Tracking. Setze wöchentliche oder monatliche Checks auf.
+                Jetzt, und erst jetzt, investiere in ein Monitoring-Tool, wenn der kostenlose Stack nicht mehr ausreicht. Ahrefs Brand Radar für Marken-Monitoring oder Semrush AI Visibility für Keyword-Tracking. Setze wöchentliche oder monatliche Checks auf.
               </p>
             </div>
           </li>
@@ -602,7 +602,7 @@ export default function AISEOToolsPage() {
                 Schritt 5: Iterieren (fortlaufend)
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Vergleiche Ergebnisse mit der Baseline. Was hat sich verbessert? Wo tauchen neue Erwähnungen auf? Welche Seiten werden jetzt zitiert? Optimiere weiter, erstelle neuen Content, aktualisiere bestehenden. AI SEO ist kein Projekt — es ist ein Prozess.
+                Vergleiche Ergebnisse mit der Baseline. Was hat sich verbessert? Wo tauchen neue Erwähnungen auf? Welche Seiten werden jetzt zitiert? Optimiere weiter, erstelle neuen Content, aktualisiere bestehenden. AI SEO ist kein Projekt, es ist ein Prozess.
               </p>
             </div>
           </li>
@@ -666,7 +666,7 @@ export default function AISEOToolsPage() {
               Technische KI-Sichtbarkeit
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed">
-              robots.txt, llms.txt, Schema.org — die technische Seite der KI-Optimierung.
+              robots.txt, llms.txt, Schema.org, die technische Seite der KI-Optimierung.
             </p>
           </a>
 
@@ -693,7 +693,7 @@ export default function AISEOToolsPage() {
             Überfordert vom Tool-Dschungel?
           </h2>
           <p className="text-lg text-gray-400 leading-relaxed mb-8 max-w-xl mx-auto">
-            Ich zeige dir, welche Tools du wirklich brauchst — und spare dir die, die du nicht brauchst. Kostenlose Analyse deiner KI-Sichtbarkeit inklusive Tool-Empfehlung.
+            Ich zeige dir, welche Tools du wirklich brauchst, und spare dir die, die du nicht brauchst. Kostenlose Analyse deiner KI-Sichtbarkeit inklusive Tool-Empfehlung.
           </p>
           <Button href="/ai-sichtbarkeit-now" primary text="Kostenlose Tool-Beratung anfragen" />
         </div>

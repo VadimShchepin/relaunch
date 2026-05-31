@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/Button';
 const FAQS = [
   {
     q: 'Welche KI-Suchmaschine hat den größten Marktanteil in Deutschland?',
-    a: 'Google dominiert mit über 90 % des deutschen Suchmarktes, wobei AI Overviews zunehmend in die Ergebnisse integriert werden. ChatGPT hat laut Schätzungen über 180 Millionen aktive Nutzer weltweit, wächst aber in Deutschland vor allem im professionellen Umfeld. Perplexity ist kleiner, wächst aber am schnellsten unter informationssuchenden Nutzern. Die Kombination aller drei erreicht die breiteste Zielgruppe — wer nur eine Plattform optimiert, ignoriert die anderen 30–60 % seines potenziellen Traffics.',
+    a: 'Google dominiert mit über 90 % des deutschen Suchmarktes, wobei AI Overviews zunehmend in die Ergebnisse integriert werden. ChatGPT hat laut Schätzungen über 180 Millionen aktive Nutzer weltweit, wächst aber in Deutschland vor allem im professionellen Umfeld. Perplexity ist kleiner, wächst aber am schnellsten unter informationssuchenden Nutzern. Die Kombination aller drei erreicht die breiteste Zielgruppe. Wer nur eine Plattform optimiert, ignoriert die anderen 30–60 % seines potenziellen Traffics.',
   },
   {
     q: 'Kann ich mit einer einzigen Strategie alle drei Plattformen abdecken?',
@@ -17,11 +17,11 @@ const FAQS = [
   },
   {
     q: 'Wie schnell indexiert Perplexity neue Inhalte im Vergleich zu ChatGPT?',
-    a: 'Perplexity crawlt das Web in Echtzeit bei jeder Suchanfrage und kann neue Inhalte innerhalb von Minuten bis Stunden nach Veröffentlichung finden — vorausgesetzt, sie sind technisch zugänglich. ChatGPT verwendet ein hybrides Modell: Das Basiswissen stammt aus Trainingsdaten (Monate alt), das Browsing-Feature crawlt in Echtzeit, wird aber nicht bei jeder Anfrage aktiviert. Google AI Overviews nutzt den Google-Index, der neue Seiten je nach Domain-Autorität innerhalb von Stunden bis Wochen aufnimmt. Für zeitkritische Inhalte ist Perplexity also der schnellste Kanal.',
+    a: 'Perplexity crawlt das Web in Echtzeit bei jeder Suchanfrage und kann neue Inhalte innerhalb von Minuten bis Stunden nach Veröffentlichung finden, vorausgesetzt, sie sind technisch zugänglich. ChatGPT verwendet ein hybrides Modell: Das Basiswissen stammt aus Trainingsdaten (Monate alt), das Browsing-Feature crawlt in Echtzeit, wird aber nicht bei jeder Anfrage aktiviert. Google AI Overviews nutzt den Google-Index, der neue Seiten je nach Domain-Autorität innerhalb von Stunden bis Wochen aufnimmt. Für zeitkritische Inhalte ist Perplexity also der schnellste Kanal.',
   },
   {
     q: 'Welche Plattform zitiert am häufigsten mit Quellenlinks?',
-    a: 'Perplexity zitiert bei jeder Antwort mit nummerierten Quellenlinks — das ist sein Kernfeature. Google AI Overviews zeigt Links zu den Quellen, die die Antwort unterstützen, aber weniger prominent. ChatGPT verlinkt nur im Browsing-Modus und bei SearchGPT-Anfragen, nicht im Standard-Chat. Wenn dein Ziel direkter Referral-Traffic ist, liefert Perplexity das transparenteste Zitierverhalten.',
+    a: 'Perplexity zitiert bei jeder Antwort mit nummerierten Quellenlinks. Das ist sein Kernfeature. Google AI Overviews zeigt Links zu den Quellen, die die Antwort unterstützen, aber weniger prominent. ChatGPT verlinkt nur im Browsing-Modus und bei SearchGPT-Anfragen, nicht im Standard-Chat. Wenn dein Ziel direkter Referral-Traffic ist, liefert Perplexity das transparenteste Zitierverhalten.',
   },
   {
     q: 'Lohnt sich Optimierung für Google AI Overviews, wenn ich schon klassisches SEO mache?',
@@ -29,11 +29,11 @@ const FAQS = [
   },
   {
     q: 'Wie messe ich, ob meine Optimierung für KI-Suchmaschinen funktioniert?',
-    a: 'Für Perplexity: Suche regelmäßig nach deinen Kernthemen und prüfe, ob du als Quelle auftauchst. Es gibt auch spezialisierte Monitoring-Tools. Für ChatGPT: Frage das Modell direkt nach deiner Marke, deinen Produkten und deinem Fachgebiet — und dokumentiere die Antworten über Zeit. Für Google AI Overviews: Die Google Search Console zeigt zunehmend AIO-Impressions. Zusätzlich hilft ein manueller Check der SERPs für deine Ziel-Keywords. Wichtig: KI-Sichtbarkeit ist weniger stabil als klassische Rankings und kann sich von Anfrage zu Anfrage unterscheiden.',
+    a: 'Für Perplexity: Suche regelmäßig nach deinen Kernthemen und prüfe, ob du als Quelle auftauchst. Es gibt auch spezialisierte Monitoring-Tools. Für ChatGPT: Frage das Modell direkt nach deiner Marke, deinen Produkten und deinem Fachgebiet, und dokumentiere die Antworten über Zeit. Für Google AI Overviews: Die Google Search Console zeigt zunehmend AIO-Impressions. Zusätzlich hilft ein manueller Check der SERPs für deine Ziel-Keywords. Wichtig: KI-Sichtbarkeit ist weniger stabil als klassische Rankings und kann sich von Anfrage zu Anfrage unterscheiden.',
   },
   {
     q: 'Welche Plattform sollte ich zuerst optimieren, wenn ich nur ein begrenztes Budget habe?',
-    a: 'Google AI Overviews. Warum? Erstens erreichst du damit den größten Markt. Zweitens profitiert dein klassisches SEO gleichzeitig davon. Drittens sind die Signale, die Google AI Overviews wichtig findet, eine solide Basis für alle anderen Plattformen. Wenn du bereits gut bei Google rankst, ist der Aufwand minimal — du musst vor allem deine Content-Struktur optimieren. Von dort aus erweiterst du auf Perplexity (schnellster ROI bei informationalen Queries) und dann ChatGPT (langfristiger Brand-Effekt).',
+    a: 'Google AI Overviews. Warum? Erstens erreichst du damit den größten Markt. Zweitens profitiert dein klassisches SEO gleichzeitig davon. Drittens sind die Signale, die Google AI Overviews wichtig findet, eine solide Basis für alle anderen Plattformen. Wenn du bereits gut bei Google rankst, ist der Aufwand minimal. Du musst vor allem deine Content-Struktur optimieren. Von dort aus erweiterst du auf Perplexity (schnellster ROI bei informationalen Queries) und dann ChatGPT (langfristiger Brand-Effekt).',
   },
 ];
 
@@ -59,7 +59,7 @@ const articleJsonLd = {
   '@type': 'Article',
   headline: 'Perplexity vs ChatGPT vs Google AI: Wo lohnt sich Optimierung am meisten?',
   description:
-    'Perplexity, ChatGPT oder Google AI Overviews — welche KI-Suchmaschine bringt am meisten? Detaillierter Vergleich: Indexierung, Zitierverhalten, Optimierungspotenzial.',
+    'Perplexity, ChatGPT oder Google AI Overviews: welche KI-Suchmaschine bringt am meisten? Detaillierter Vergleich: Indexierung, Zitierverhalten, Optimierungspotenzial.',
   image: 'https://aiseo.hamburg/images/wissen/perplexity-vs-chatgpt-vs-google.jpg',
   author: {
     '@type': 'Person',
@@ -132,7 +132,7 @@ export default function PerplexityVsChatgptVsGooglePage() {
       {/* TL;DR */}
       <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-12">
         <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
-          <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR — Für die Ungeduldigen</h2>
+          <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR: Für die Ungeduldigen</h2>
           <ul className="space-y-3 text-gray-700 leading-relaxed">
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">1.</span>
@@ -168,7 +168,7 @@ export default function PerplexityVsChatgptVsGooglePage() {
             <strong className="text-black">Diese Welt ist tot. Sie wurde von drei KI-Systemen beerdigt, die sich nicht mal die Mühe machen, Blumen aufs Grab zu legen.</strong>
           </p>
           <p>
-            2026 suchen Menschen nicht mehr nur bei Google. Sie fragen ChatGPT. Sie recherchieren mit Perplexity. Und Google selbst hat aufgehört, zehn blaue Links zu zeigen — stattdessen gibt es AI Overviews, die die Antwort direkt liefern und deine wunderschön optimierte Seite oft gar nicht mehr brauchen.
+            2026 suchen Menschen nicht mehr nur bei Google. Sie fragen ChatGPT. Sie recherchieren mit Perplexity. Und Google selbst hat aufgehört, zehn blaue Links zu zeigen. Stattdessen gibt es AI Overviews, die die Antwort direkt liefern und deine wunderschön optimierte Seite oft gar nicht mehr brauchen.
           </p>
           <p>
             Das bedeutet: Wenn du nur eine Plattform optimierst, optimierst du für eine schrumpfende Scheibe eines wachsenden Kuchens. Das ist so, als würdest du dein gesamtes Vermögen in Faxgeräte investieren, weil „Kommunikation ja wichtig bleibt". Technisch korrekt. Strategisch eine Katastrophe.
@@ -182,7 +182,7 @@ export default function PerplexityVsChatgptVsGooglePage() {
           Wie jede Plattform deine Inhalte entdeckt (oder ignoriert)
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
-          Drei Plattformen, drei komplett verschiedene Entdeckungsmechanismen. Wer das nicht versteht, optimiert blind. Und blinde Optimierung ist wie Dartwerfen im Dunkeln — du triffst vielleicht irgendwas, aber wahrscheinlich nicht die Scheibe.
+          Drei Plattformen, drei komplett verschiedene Entdeckungsmechanismen. Wer das nicht versteht, optimiert blind. Und blinde Optimierung ist wie Dartwerfen im Dunkeln, du triffst vielleicht irgendwas, aber wahrscheinlich nicht die Scheibe.
         </p>
 
         <div className="space-y-6">
@@ -218,7 +218,7 @@ export default function PerplexityVsChatgptVsGooglePage() {
               ChatGPT: Der Langzeitgedächtnis-Koloss
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed mb-4">
-              ChatGPT arbeitet mit einem hybriden Modell. Das Basiswissen stammt aus Trainingsdaten — riesige Mengen an Texten, die Monate bis Jahre alt sein können. Darüber hinaus gibt es das Browsing-Feature und SearchGPT, die in Echtzeit crawlen. <strong className="text-black">Das Problem: Du weißt nie genau, wann und ob dein Content in die Trainingsdaten aufgenommen wird.</strong>
+              ChatGPT arbeitet mit einem hybriden Modell. Das Basiswissen stammt aus Trainingsdaten: riesige Mengen an Texten, die Monate bis Jahre alt sein können. Darüber hinaus gibt es das Browsing-Feature und SearchGPT, die in Echtzeit crawlen. <strong className="text-black">Das Problem: Du weißt nie genau, wann und ob dein Content in die Trainingsdaten aufgenommen wird.</strong>
             </p>
             <ul className="space-y-2 text-gray-600">
               <li className="flex items-start gap-3">
@@ -250,7 +250,7 @@ export default function PerplexityVsChatgptVsGooglePage() {
             <ul className="space-y-2 text-gray-600">
               <li className="flex items-start gap-3">
                 <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-                <span>Basiert auf dem Google-Index — klassische SEO-Signale zählen</span>
+                <span>Basiert auf dem Google-Index, klassische SEO-Signale zählen</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
@@ -275,7 +275,7 @@ export default function PerplexityVsChatgptVsGooglePage() {
           Der große Vergleich: Perplexity vs ChatGPT vs Google AI Overviews
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-8">
-          Hier ist die Tabelle, die du dir ausdrucken und an die Wand nageln solltest. Oder als Hintergrundbild. Oder tätowieren — ich urteile nicht.
+          Hier ist die Tabelle, die du dir ausdrucken und an die Wand nageln solltest. Oder als Hintergrundbild. Oder tätowieren. Ich urteile nicht.
         </p>
 
         <div className="overflow-x-auto">
@@ -382,7 +382,7 @@ export default function PerplexityVsChatgptVsGooglePage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">ChatGPT priorisiert: Autorität und Konsensbildung</h3>
             <p className="text-lg text-gray-600 leading-relaxed mb-4">
-              ChatGPT ist wie der Professor, der dich nur zitiert, wenn du genug andere Professoren beeindruckt hast. Es gewichtet stark, wie oft und wo deine Marke, dein Name oder deine Website erwähnt werden — in Fachartikeln, auf Wikipedia, in Foren, in Pressemeldungen. <strong className="text-black">Bei ChatGPT geht es weniger um eine einzelne Seite und mehr um dein gesamtes digitales Ökosystem.</strong>
+              ChatGPT ist wie der Professor, der dich nur zitiert, wenn du genug andere Professoren beeindruckt hast. Es gewichtet stark, wie oft und wo deine Marke, dein Name oder deine Website erwähnt werden: in Fachartikeln, auf Wikipedia, in Foren, in Pressemeldungen. <strong className="text-black">Bei ChatGPT geht es weniger um eine einzelne Seite und mehr um dein gesamtes digitales Ökosystem.</strong>
             </p>
             <ul className="space-y-2 text-gray-600">
               <li className="flex items-start gap-3">
@@ -426,7 +426,7 @@ export default function PerplexityVsChatgptVsGooglePage() {
       {/* Die Leute die nur für eine optimieren */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-          „Ich optimiere nur für ChatGPT, das reicht" — und andere Märchen
+          „Ich optimiere nur für ChatGPT, das reicht", und andere Märchen
         </h2>
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
@@ -531,7 +531,7 @@ export default function PerplexityVsChatgptVsGooglePage() {
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-10">
           <p>
-            Die gute Nachricht — und ja, es gibt auch gute Nachrichten, ich bin nicht nur hier, um dich zu demoralisieren: Etwa 70 % der Optimierungsarbeit ist plattformübergreifend. Wenn du diese Basis richtig machst, bist du auf allen drei Plattformen besser aufgestellt als 90 % deiner Konkurrenz.
+            Die gute Nachricht (und ja, es gibt auch gute Nachrichten, ich bin nicht nur hier, um dich zu demoralisieren): Etwa 70 % der Optimierungsarbeit ist plattformübergreifend. Wenn du diese Basis richtig machst, bist du auf allen drei Plattformen besser aufgestellt als 90 % deiner Konkurrenz.
           </p>
         </div>
 
@@ -548,11 +548,11 @@ export default function PerplexityVsChatgptVsGooglePage() {
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-              <span><strong className="text-black">Schema.org-Markup:</strong> Article, FAQ, BreadcrumbList — korrekt und zum Content passend.</span>
+              <span><strong className="text-black">Schema.org-Markup:</strong> Article, FAQ, BreadcrumbList: korrekt und zum Content passend.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-              <span><strong className="text-black">robots.txt öffnen:</strong> GPTBot, ClaudeBot, PerplexityBot, GoogleBot — alle erlauben.</span>
+              <span><strong className="text-black">robots.txt öffnen:</strong> GPTBot, ClaudeBot, PerplexityBot, GoogleBot: alle erlauben.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
@@ -560,7 +560,7 @@ export default function PerplexityVsChatgptVsGooglePage() {
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-              <span><strong className="text-black">Echte Autorenschaft:</strong> Name, Bio, Qualifikationen, externe Veröffentlichungen — nicht „Admin" als Autorenname.</span>
+              <span><strong className="text-black">Echte Autorenschaft:</strong> Name, Bio, Qualifikationen, externe Veröffentlichungen, nicht „Admin" als Autorenname.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
@@ -588,7 +588,7 @@ export default function PerplexityVsChatgptVsGooglePage() {
       {/* Fazit */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-          Fazit: Es ist kein Krieg — es ist ein Buffet
+          Fazit: Es ist kein Krieg, es ist ein Buffet
         </h2>
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
@@ -596,10 +596,10 @@ export default function PerplexityVsChatgptVsGooglePage() {
             Perplexity, ChatGPT und Google AI Overviews sind keine Gegner. Sie sind drei verschiedene Kanäle, über die Menschen Informationen suchen. Und jeder dieser Kanäle hat sein eigenes Publikum, sein eigenes Timing und seine eigene Art, Quellen zu bewerten.
           </p>
           <p>
-            <strong className="text-black">Wer alle drei versteht, optimiert nicht dreimal so viel — sondern einmal richtig.</strong>
+            <strong className="text-black">Wer alle drei versteht, optimiert nicht dreimal so viel, sondern einmal richtig.</strong>
           </p>
           <p>
-            Die Basis ist identisch: gut geschriebener, faktenbasierter Content mit klarer Struktur, sauberer Technik und echter Autorenschaft. Die plattformspezifischen Anpassungen sind das Sahnehäubchen — nicht der Kuchen.
+            Die Basis ist identisch: gut geschriebener, faktenbasierter Content mit klarer Struktur, sauberer Technik und echter Autorenschaft. Die plattformspezifischen Anpassungen sind das Sahnehäubchen, nicht der Kuchen.
           </p>
           <p>
             Also hör auf, dich zwischen den Plattformen entscheiden zu wollen. Bau die Basis. Dann erweitere. Und wenn jemand dir erzählt, du sollst nur für eine Plattform optimieren, dann frag ihn, ob er auch nur auf einem Bein steht. Kann man machen. Ist aber auf Dauer unbequem. Und sieht lächerlich aus.
@@ -676,7 +676,7 @@ export default function PerplexityVsChatgptVsGooglePage() {
             Auf welcher Plattform bist du unsichtbar?
           </h2>
           <p className="text-lg text-gray-400 leading-relaxed mb-8 max-w-xl mx-auto">
-            Finde heraus, wo deine KI-Sichtbarkeit Lücken hat — über alle drei Plattformen hinweg. Kostenlos und ehrlich.
+            Finde heraus, wo deine KI-Sichtbarkeit Lücken hat, über alle drei Plattformen hinweg. Kostenlos und ehrlich.
           </p>
           <Button href="/ai-sichtbarkeit-now" primary text="Kostenlose KI-Sichtbarkeits-Analyse" />
         </div>

@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Zero-Click-Zukunft: Warum deine Website bald keinen Traffic mehr braucht | aiseo.hamburg',
   description:
-    'Gartner prognostiziert 50 % Traffic-Verlust bis 2028. Warum das kein Weltuntergang ist, sondern eine Chance — und welche neuen KPIs jetzt zählen: Brand Mentions, Citation Rate, AI Referral Quality.',
+    'Gartner prognostiziert 50 % Traffic-Verlust bis 2028. Warum das kein Weltuntergang ist, sondern eine Chance, und welche neuen KPIs jetzt zählen: Brand Mentions, Citation Rate, AI Referral Quality.',
   keywords: [
     'zero click',
     'zero click seo',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: 'https://aiseo.hamburg/wissen/zero-click-zukunft',
     title: 'Zero-Click-Zukunft: Warum deine Website bald keinen Traffic mehr braucht | aiseo.hamburg',
     description:
-      'Gartner prognostiziert 50 % Traffic-Verlust bis 2028. Warum das kein Weltuntergang ist — und welche neuen KPIs jetzt zählen.',
+      'Gartner prognostiziert 50 % Traffic-Verlust bis 2028. Warum das kein Weltuntergang ist, und welche neuen KPIs jetzt zählen.',
     siteName: 'aiseo.hamburg',
     images: [{ url: '/images/wissen/zero-click-zukunft.jpg', width: 1200, height: 630, alt: 'Zero-Click-Zukunft: SEO nach dem Traffic' }],
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary',
     title: 'Zero-Click-Zukunft: Warum deine Website bald keinen Traffic mehr braucht | aiseo.hamburg',
     description:
-      'Gartner prognostiziert 50 % Traffic-Verlust bis 2028. Warum das kein Weltuntergang ist — und welche neuen KPIs jetzt zählen.',
+      'Gartner prognostiziert 50 % Traffic-Verlust bis 2028. Warum das kein Weltuntergang ist, und welche neuen KPIs jetzt zählen.',
   },
   robots: {
     index: true,

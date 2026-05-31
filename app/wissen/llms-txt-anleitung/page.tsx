@@ -9,11 +9,11 @@ import { Button } from '@/components/ui/Button';
 const FAQS = [
   {
     q: 'Was ist eine llms.txt-Datei?',
-    a: 'Eine llms.txt ist eine Textdatei im Root-Verzeichnis deiner Website (also unter domain.de/llms.txt), die KI-Systemen wie ChatGPT, Perplexity und Claude strukturierte Informationen über dein Unternehmen und deine Inhalte liefert. Sie ist das Äquivalent einer robots.txt für KI-Crawler — nur dass sie nicht regelt, was gecrawlt werden darf, sondern aktiv Kontext bereitstellt, der die KI-Sichtbarkeit verbessert.',
+    a: 'Eine llms.txt ist eine Textdatei im Root-Verzeichnis deiner Website (also unter domain.de/llms.txt), die KI-Systemen wie ChatGPT, Perplexity und Claude strukturierte Informationen über dein Unternehmen und deine Inhalte liefert. Sie ist das Äquivalent einer robots.txt für KI-Crawler, nur dass sie nicht regelt, was gecrawlt werden darf, sondern aktiv Kontext bereitstellt, der die KI-Sichtbarkeit verbessert.',
   },
   {
     q: 'Ist llms.txt ein offizieller Standard?',
-    a: 'Nein, llms.txt ist kein W3C-Standard oder offizielles Protokoll wie robots.txt. Es ist ein Community-getriebenes Format, das sich als Best Practice für KI-Sichtbarkeit etabliert hat. Die Idee stammt aus der LLM-Community und wird von immer mehr Tools und Crawlern unterstützt. Dass es kein offizieller Standard ist, macht es nicht weniger wirksam — es macht es nur einfacher zu implementieren, weil niemand ein Komitee fragen muss.',
+    a: 'Nein, llms.txt ist kein W3C-Standard oder offizielles Protokoll wie robots.txt. Es ist ein Community-getriebenes Format, das sich als Best Practice für KI-Sichtbarkeit etabliert hat. Die Idee stammt aus der LLM-Community und wird von immer mehr Tools und Crawlern unterstützt. Dass es kein offizieller Standard ist, macht es nicht weniger wirksam. Es macht es nur einfacher zu implementieren, weil niemand ein Komitee fragen muss.',
   },
   {
     q: 'Wo muss die llms.txt-Datei liegen?',
@@ -29,11 +29,11 @@ const FAQS = [
   },
   {
     q: 'Wie lang sollte eine llms.txt sein?',
-    a: 'Kompakt, aber vollständig. Die meisten effektiven llms.txt-Dateien haben zwischen 30 und 100 Zeilen. Wichtiger als die Länge ist die Struktur: Klare Überschriften, saubere Markdown-Formatierung, relevante URLs. Eine llms.txt mit 500 Zeilen Marketingtext ist schlechter als eine mit 40 Zeilen präziser Information. KI-Systeme sind nicht beeindruckt von Textmenge — sie brauchen Klarheit.',
+    a: 'Kompakt, aber vollständig. Die meisten effektiven llms.txt-Dateien haben zwischen 30 und 100 Zeilen. Wichtiger als die Länge ist die Struktur: Klare Überschriften, saubere Markdown-Formatierung, relevante URLs. Eine llms.txt mit 500 Zeilen Marketingtext ist schlechter als eine mit 40 Zeilen präziser Information. KI-Systeme sind nicht beeindruckt von Textmenge. Sie brauchen Klarheit.',
   },
   {
     q: 'Kann eine schlechte llms.txt meiner Website schaden?',
-    a: 'Eine schlecht geschriebene llms.txt schadet nicht direkt — sie verfehlt nur ihren Zweck. Was theoretisch schaden könnte: falsche oder irreführende Informationen in der Datei. Wenn du dort behauptest, du seist Marktführer in einem Bereich, in dem du es offensichtlich nicht bist, kann das die Glaubwürdigkeit deiner gesamten Domain bei KI-Systemen mindern. Bleib bei den Fakten.',
+    a: 'Eine schlecht geschriebene llms.txt schadet nicht direkt. Sie verfehlt nur ihren Zweck. Was theoretisch schaden könnte: falsche oder irreführende Informationen in der Datei. Wenn du dort behauptest, du seist Marktführer in einem Bereich, in dem du es offensichtlich nicht bist, kann das die Glaubwürdigkeit deiner gesamten Domain bei KI-Systemen mindern. Bleib bei den Fakten.',
   },
 ];
 
@@ -128,7 +128,7 @@ export default function LlmsTxtAnleitungPage() {
           llms.txt erstellen: So machst du deine Website KI-lesbar
         </h1>
         <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
-          Du hast eine robots.txt für Google und denkst, damit ist alles erledigt? Süß. Das ist wie einen Türsteher vor deinen Laden zu stellen und zu hoffen, dass Kunden dadurch telepathisch wissen, was du verkaufst. Hier erfährst du, warum du eine llms.txt brauchst — und wie du sie baust, ohne dich dabei zu blamieren.
+          Du hast eine robots.txt für Google und denkst, damit ist alles erledigt? Süß. Das ist wie einen Türsteher vor deinen Laden zu stellen und zu hoffen, dass Kunden dadurch telepathisch wissen, was du verkaufst. Hier erfährst du, warum du eine llms.txt brauchst und wie du sie baust, ohne dich dabei zu blamieren.
         </p>
       </section>
 
@@ -168,18 +168,18 @@ export default function LlmsTxtAnleitungPage() {
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-          Was ist llms.txt — und warum existiert es überhaupt?
+          Was ist llms.txt, und warum existiert es überhaupt?
         </h2>
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
           <p>
-            <strong className="text-black">Eine llms.txt ist eine Textdatei im Markdown-Format, die im Root-Verzeichnis deiner Website liegt und KI-Systemen strukturierte Informationen über dein Unternehmen, deine Angebote und deine wichtigsten Inhalte liefert.</strong> Sie ist erreichbar unter domain.de/llms.txt — genau wie robots.txt oder sitemap.xml.
+            <strong className="text-black">Eine llms.txt ist eine Textdatei im Markdown-Format, die im Root-Verzeichnis deiner Website liegt und KI-Systemen strukturierte Informationen über dein Unternehmen, deine Angebote und deine wichtigsten Inhalte liefert.</strong> Sie ist erreichbar unter domain.de/llms.txt, genau wie robots.txt oder sitemap.xml.
           </p>
           <p>
-            Die Idee ist simpel: Wenn ein KI-Crawler deine Website besucht, muss er sich durch hunderte Seiten arbeiten, um zu verstehen, wer du bist und was du machst. Das ist ineffizient. Eine llms.txt gibt der KI sofort den Kontext, den sie braucht — kompakt, strukturiert, maschinenlesbar.
+            Die Idee ist simpel: Wenn ein KI-Crawler deine Website besucht, muss er sich durch hunderte Seiten arbeiten, um zu verstehen, wer du bist und was du machst. Das ist ineffizient. Eine llms.txt gibt der KI sofort den Kontext, den sie braucht: kompakt, strukturiert, maschinenlesbar.
           </p>
           <p>
-            Stell dir vor, du gehst in ein Bürogebäude mit 50 Firmen, aber es gibt kein Verzeichnis im Foyer. Du müsstest in jedes Stockwerk, an jede Tür klopfen und fragen: „Was machen Sie hier?" Genau so fühlt sich eine KI, die deine Website ohne llms.txt besucht. Funktioniert irgendwie — aber es ist, gelinde gesagt, suboptimal.
+            Stell dir vor, du gehst in ein Bürogebäude mit 50 Firmen, aber es gibt kein Verzeichnis im Foyer. Du müsstest in jedes Stockwerk, an jede Tür klopfen und fragen: „Was machen Sie hier?" Genau so fühlt sich eine KI, die deine Website ohne llms.txt besucht. Funktioniert irgendwie. Aber es ist, gelinde gesagt, suboptimal.
           </p>
         </div>
 
@@ -201,7 +201,7 @@ export default function LlmsTxtAnleitungPage() {
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
-          llms.txt vs robots.txt vs ai.txt — wer macht was?
+          llms.txt vs robots.txt vs ai.txt: wer macht was?
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
           Drei Textdateien, drei verschiedene Aufgaben. Die Verwechslung dieser Dateien ist so verbreitet wie die Meinung, dass SEO aus Keywords besteht. Hier die Klarstellung.
@@ -261,7 +261,7 @@ export default function LlmsTxtAnleitungPage() {
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
-          llms.txt erstellen — Schritt für Schritt
+          llms.txt erstellen: Schritt für Schritt
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
           In 15 Minuten erledigt. Kein Coding nötig, kein Plugin, kein Agentur-Retainer. Nur ein Texteditor und ein bisschen Ehrlichkeit über dein Unternehmen.
@@ -274,7 +274,7 @@ export default function LlmsTxtAnleitungPage() {
                 Schritt 1: Textdatei anlegen
               </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Erstelle eine neue Textdatei mit dem Namen <code className="bg-gray-100 px-2 py-0.5 rounded text-sm font-mono">llms.txt</code>. Nicht <code className="bg-gray-100 px-2 py-0.5 rounded text-sm font-mono">LLMS.txt</code>, nicht <code className="bg-gray-100 px-2 py-0.5 rounded text-sm font-mono">llms.md</code>, nicht <code className="bg-gray-100 px-2 py-0.5 rounded text-sm font-mono">llms-info.txt</code>. Exakt <code className="bg-gray-100 px-2 py-0.5 rounded text-sm font-mono">llms.txt</code>. Kleinbuchstaben. Keine Kreativität beim Dateinamen — das ist keine Kunst, das ist Technik.
+                Erstelle eine neue Textdatei mit dem Namen <code className="bg-gray-100 px-2 py-0.5 rounded text-sm font-mono">llms.txt</code>. Nicht <code className="bg-gray-100 px-2 py-0.5 rounded text-sm font-mono">LLMS.txt</code>, nicht <code className="bg-gray-100 px-2 py-0.5 rounded text-sm font-mono">llms.md</code>, nicht <code className="bg-gray-100 px-2 py-0.5 rounded text-sm font-mono">llms-info.txt</code>. Exakt <code className="bg-gray-100 px-2 py-0.5 rounded text-sm font-mono">llms.txt</code>. Kleinbuchstaben. Keine Kreativität beim Dateinamen. Das ist keine Kunst, das ist Technik.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 Format: Markdown. UTF-8-Encoding. Wenn du nicht weißt, was UTF-8 ist: Öffne einfach einen normalen Texteditor (VS Code, Notepad++, sogar TextEdit im Nur-Text-Modus) und schreib los. Das Encoding stimmt dann meistens von allein.
@@ -296,7 +296,7 @@ export default function LlmsTxtAnleitungPage() {
                 <p className="text-gray-600 mt-2">&gt; Dein Unternehmen ist ein Anbieter von [Dienstleistung] in [Stadt]. Wir helfen [Zielgruppe] dabei, [Kernversprechen]. Gegründet [Jahr], Standort [Ort].</p>
               </div>
               <p className="text-gray-600 leading-relaxed mt-4">
-                Keine Marketing-Floskeln. Keine „marktführende, innovative, disruptive Lösungen". Fakten. KI-Systeme sind nicht beeindruckt von Adjektiven — sie brauchen Informationen.
+                Keine Marketing-Floskeln. Keine „marktführende, innovative, disruptive Lösungen". Fakten. KI-Systeme sind nicht beeindruckt von Adjektiven. Sie brauchen Informationen.
               </p>
             </div>
           </li>
@@ -307,7 +307,7 @@ export default function LlmsTxtAnleitungPage() {
                 Schritt 3: Kernseiten auflisten
               </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Liste deine wichtigsten Seiten mit Titel und URL auf. Nicht alle 500 Seiten — die 10–20 wichtigsten. Servicepages, Pillar-Guides, Über-uns-Seite. Die KI soll wissen, wo dein bester Content liegt.
+                Liste deine wichtigsten Seiten mit Titel und URL auf. Nicht alle 500 Seiten. Die 10–20 wichtigsten. Servicepages, Pillar-Guides, Über-uns-Seite. Die KI soll wissen, wo dein bester Content liegt.
               </p>
               <div className="bg-gray-50 rounded-xl p-5 font-mono text-sm leading-relaxed">
                 <p className="text-black">## Kernseiten</p>
@@ -446,7 +446,7 @@ export default function LlmsTxtAnleitungPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">3. Keyword-Stuffing</h3>
             <p className="text-gray-600 leading-relaxed">
-              „Wir sind die beste Steuerberatung Hamburg Steuerberater Hamburg Steuerkanzlei Hamburg..." Ernsthaft? Das ist nicht 2010. LLMs erkennen Keyword-Stuffing sofort und werten es als Spam-Signal. Natürliche Sprache, relevante Informationen — das ist alles. Der Versuch, ein LLM mit Keyword-Stuffing zu manipulieren, ist wie der Versuch, einen Bären mit einer nassen Nudel zu bekämpfen.
+              „Wir sind die beste Steuerberatung Hamburg Steuerberater Hamburg Steuerkanzlei Hamburg..." Ernsthaft? Das ist nicht 2010. LLMs erkennen Keyword-Stuffing sofort und werten es als Spam-Signal. Natürliche Sprache, relevante Informationen, das ist alles. Der Versuch, ein LLM mit Keyword-Stuffing zu manipulieren, ist wie der Versuch, einen Bären mit einer nassen Nudel zu bekämpfen.
             </p>
           </div>
 
@@ -460,14 +460,14 @@ export default function LlmsTxtAnleitungPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">5. Zu lang und unstrukturiert</h3>
             <p className="text-gray-600 leading-relaxed">
-              500 Zeilen Fließtext in einer llms.txt? Herzlichen Glückwunsch, du hast eine Kurzgeschichte geschrieben, die keine KI lesen wird. 30–100 Zeilen. Klare Markdown-Überschriften. Bullet Points. Kurze Beschreibungen. Wenn deine llms.txt länger ist als dieser Absatz — kürzen.
+              500 Zeilen Fließtext in einer llms.txt? Herzlichen Glückwunsch, du hast eine Kurzgeschichte geschrieben, die keine KI lesen wird. 30–100 Zeilen. Klare Markdown-Überschriften. Bullet Points. Kurze Beschreibungen. Wenn deine llms.txt länger ist als dieser Absatz: kürzen.
             </p>
           </div>
 
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">6. Falsche oder übertriebene Angaben</h3>
             <p className="text-gray-600 leading-relaxed">
-              Wenn du schreibst, du seist „Marktführer in Deutschland" und eine KI das mit anderen Quellen abgleicht, die das nicht bestätigen, leidet deine Glaubwürdigkeit. KI-Systeme cross-referenzieren Informationen. Lügen in der llms.txt sind wie gefälschte Bewertungen — kurzfristig nett, langfristig fatal.
+              Wenn du schreibst, du seist „Marktführer in Deutschland" und eine KI das mit anderen Quellen abgleicht, die das nicht bestätigen, leidet deine Glaubwürdigkeit. KI-Systeme cross-referenzieren Informationen. Lügen in der llms.txt sind wie gefälschte Bewertungen: kurzfristig nett, langfristig fatal.
             </p>
           </div>
 
@@ -527,7 +527,7 @@ export default function LlmsTxtAnleitungPage() {
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-          Was gehört in die llms.txt — und was auf keinen Fall?
+          Was gehört in die llms.txt, und was auf keinen Fall?
         </h2>
 
         <div className="grid sm:grid-cols-2 gap-6">
@@ -655,7 +655,7 @@ export default function LlmsTxtAnleitungPage() {
 
           <div className="mt-6 p-4 bg-gray-50 rounded-xl">
             <p className="text-sm text-gray-600">
-              <strong className="text-black">Pro-Tipp:</strong> Setze dir einen Kalender-Reminder für quartalsweise Updates. Eine llms.txt ist ein lebendiges Dokument — nicht ein „erstellen und vergessen"-Artefakt.
+              <strong className="text-black">Pro-Tipp:</strong> Setze dir einen Kalender-Reminder für quartalsweise Updates. Eine llms.txt ist ein lebendiges Dokument, nicht ein „erstellen und vergessen"-Artefakt.
             </p>
           </div>
         </div>
@@ -666,7 +666,7 @@ export default function LlmsTxtAnleitungPage() {
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-          „Aber ich habe doch robots.txt!" — warum das nicht reicht
+          „Aber ich habe doch robots.txt!": warum das nicht reicht
         </h2>
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
@@ -674,10 +674,10 @@ export default function LlmsTxtAnleitungPage() {
             Ja. Deine robots.txt sagt GPTBot: „Du darfst alles crawlen." Toll. Und jetzt? Der Bot crawlt deine 200 Seiten, versucht zu verstehen, was du machst, und gibt mittendrin auf, weil dein Blog aus 15 Kategorien besteht, von denen 12 leer sind und 3 den gleichen Inhalt haben.
           </p>
           <p>
-            <strong className="text-black">robots.txt ist eine Zugangsregel. llms.txt ist ein Briefing.</strong> Stell dir vor, du engagierst einen neuen Mitarbeiter. robots.txt gibt ihm den Schlüssel zum Büro. llms.txt gibt ihm das Onboarding-Dokument, das erklärt, wer die Firma ist, was sie macht und wo die wichtigen Ordner liegen. Ohne das Onboarding irrt er planlos durch die Flure — technisch hat er Zugang, aber er weiß nicht, was er damit soll.
+            <strong className="text-black">robots.txt ist eine Zugangsregel. llms.txt ist ein Briefing.</strong> Stell dir vor, du engagierst einen neuen Mitarbeiter. robots.txt gibt ihm den Schlüssel zum Büro. llms.txt gibt ihm das Onboarding-Dokument, das erklärt, wer die Firma ist, was sie macht und wo die wichtigen Ordner liegen. Ohne das Onboarding irrt er planlos durch die Flure. Technisch hat er Zugang, aber er weiß nicht, was er damit soll.
           </p>
           <p>
-            Die Kombination beider Dateien ist entscheidend. Und wenn du die volle technische KI-Sichtbarkeit willst, lies den Guide zur <a href="/wissen/technische-ki-sichtbarkeit" className="text-brand-accent underline hover:no-underline">technischen KI-Sichtbarkeit</a> — dort gehen wir auch auf Schema-Markup, HTTP-Header und Crawl-Budget ein.
+            Die Kombination beider Dateien ist entscheidend. Und wenn du die volle technische KI-Sichtbarkeit willst, lies den Guide zur <a href="/wissen/technische-ki-sichtbarkeit" className="text-brand-accent underline hover:no-underline">technischen KI-Sichtbarkeit</a>. Dort gehen wir auch auf Schema-Markup, HTTP-Header und Crawl-Budget ein.
           </p>
         </div>
       </section>
@@ -739,7 +739,7 @@ export default function LlmsTxtAnleitungPage() {
               Was ist GEO?
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Generative Engine Optimization verständlich erklärt — und warum es 2026 unverzichtbar ist.
+              Generative Engine Optimization verständlich erklärt, und warum es 2026 unverzichtbar ist.
             </p>
           </a>
 
@@ -751,7 +751,7 @@ export default function LlmsTxtAnleitungPage() {
               AI Content Strategie
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Inhalte erstellen, die KI-Systeme als Quelle zitieren wollen — Struktur, Formate und Workflow.
+              Inhalte erstellen, die KI-Systeme als Quelle zitieren wollen: Struktur, Formate und Workflow.
             </p>
           </a>
         </div>
@@ -766,7 +766,7 @@ export default function LlmsTxtAnleitungPage() {
             Ist deine Website KI-lesbar?
           </h2>
           <p className="text-lg text-gray-400 leading-relaxed mb-8 max-w-xl mx-auto">
-            llms.txt ist nur der Anfang. Finde heraus, wie KI-Systeme deine Website aktuell sehen — und was du ändern musst, um zitiert zu werden.
+            llms.txt ist nur der Anfang. Finde heraus, wie KI-Systeme deine Website aktuell sehen, und was du ändern musst, um zitiert zu werden.
           </p>
           <Button href="/ai-sichtbarkeit-now" primary text="Kostenlosen KI-Check anfragen" />
         </div>

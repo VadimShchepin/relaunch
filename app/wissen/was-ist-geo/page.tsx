@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/Button';
 const FAQS = [
   {
     q: 'Was ist der Unterschied zwischen GEO und SEO?',
-    a: 'SEO (Search Engine Optimization) optimiert deine Website für klassische Suchmaschinen-Rankings bei Google. GEO (Generative Engine Optimization) optimiert dafür, dass KI-Systeme wie ChatGPT, Perplexity und Google AI Overviews deinen Content als vertrauenswürdige Quelle zitieren. SEO bringt dich auf Seite 1, GEO bringt dich in die KI-Antwort selbst. Beides schließt sich nicht aus — die besten Strategien kombinieren beides.',
+    a: 'SEO (Search Engine Optimization) optimiert deine Website für klassische Suchmaschinen-Rankings bei Google. GEO (Generative Engine Optimization) optimiert dafür, dass KI-Systeme wie ChatGPT, Perplexity und Google AI Overviews deinen Content als vertrauenswürdige Quelle zitieren. SEO bringt dich auf Seite 1, GEO bringt dich in die KI-Antwort selbst. Beides schließt sich nicht aus, die besten Strategien kombinieren beides.',
   },
   {
     q: 'Ist GEO nur ein neuer Marketingbegriff für SEO?',
@@ -29,11 +29,11 @@ const FAQS = [
   },
   {
     q: 'Wie lange dauert es, bis GEO-Maßnahmen wirken?',
-    a: 'Bei Perplexity oft schon nach 2–4 Wochen, weil Perplexity das Live-Web durchsucht. Bei Google AI Overviews ähnlich schnell wie klassisches SEO — wenige Wochen nach Indexierung. Bei ChatGPT und Claude dauert es 3–6 Monate, da diese Modelle in Trainingszyklen aktualisiert werden. Der wichtigste Faktor ist nicht Geschwindigkeit, sondern Konsistenz.',
+    a: 'Bei Perplexity oft schon nach 2–4 Wochen, weil Perplexity das Live-Web durchsucht. Bei Google AI Overviews ähnlich schnell wie klassisches SEO, wenige Wochen nach Indexierung. Bei ChatGPT und Claude dauert es 3–6 Monate, da diese Modelle in Trainingszyklen aktualisiert werden. Der wichtigste Faktor ist nicht Geschwindigkeit, sondern Konsistenz.',
   },
   {
     q: 'Kann ich GEO selbst machen oder brauche ich eine Agentur?',
-    a: 'Grundlegende Maßnahmen wie Answer-First-Strukturen, FAQ-Sektionen und eine llms.txt kannst du selbst umsetzen. Für eine umfassende GEO-Strategie — Topic Clusters, semantische Analyse, technische Implementierung und kontinuierliches Monitoring — lohnt sich professionelle Unterstützung. Besonders wenn du in einem umkämpften Markt schnell Ergebnisse brauchst.',
+    a: 'Grundlegende Maßnahmen wie Answer-First-Strukturen, FAQ-Sektionen und eine llms.txt kannst du selbst umsetzen. Für eine umfassende GEO-Strategie (Topic Clusters, semantische Analyse, technische Implementierung und kontinuierliches Monitoring) lohnt sich professionelle Unterstützung. Besonders wenn du in einem umkämpften Markt schnell Ergebnisse brauchst.',
   },
 ];
 
@@ -140,7 +140,7 @@ export default function WasIstGeoPage() {
           Was ist GEO? Generative Engine Optimization endlich verständlich erklärt
         </h1>
         <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
-          Alle reden über GEO. Die meisten haben keine Ahnung, was es bedeutet. Manche verwechseln es mit SEO, andere halten es für eine Verschwörung der Marketing-Industrie. Hier bekommst du die Wahrheit — schonungslos, verständlich und ohne 47 Buzzwords pro Absatz.
+          Alle reden über GEO. Die meisten haben keine Ahnung, was es bedeutet. Manche verwechseln es mit SEO, andere halten es für eine Verschwörung der Marketing-Industrie. Hier bekommst du die Wahrheit, schonungslos, verständlich und ohne 47 Buzzwords pro Absatz.
         </p>
       </section>
 
@@ -153,7 +153,7 @@ export default function WasIstGeoPage() {
           <ul className="space-y-3 text-gray-700 leading-relaxed">
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">1.</span>
-              <span><strong className="text-black">GEO = Generative Engine Optimization.</strong> Es geht darum, von KI-Systemen (ChatGPT, Perplexity, Google AI) als Quelle zitiert zu werden — nicht nur bei Google auf Seite 1 zu stehen.</span>
+              <span><strong className="text-black">GEO = Generative Engine Optimization.</strong> Es geht darum, von KI-Systemen (ChatGPT, Perplexity, Google AI) als Quelle zitiert zu werden, nicht nur bei Google auf Seite 1 zu stehen.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">2.</span>
@@ -165,22 +165,22 @@ export default function WasIstGeoPage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">4.</span>
-              <span><strong className="text-black">Die Princeton-Studie beweist:</strong> Strukturierte, autoritative Inhalte erhalten 115 % mehr KI-Zitierungen. GEO funktioniert — wenn man es richtig macht.</span>
+              <span><strong className="text-black">Die Princeton-Studie beweist:</strong> Strukturierte, autoritative Inhalte erhalten 115 % mehr KI-Zitierungen. GEO funktioniert, wenn man es richtig macht.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">5.</span>
-              <span><strong className="text-black">GEO ist kein Hexenwerk.</strong> Answer-First schreiben, Quellen einbauen, llms.txt erstellen, Schema-Markup implementieren — du kannst heute anfangen.</span>
+              <span><strong className="text-black">GEO ist kein Hexenwerk.</strong> Answer-First schreiben, Quellen einbauen, llms.txt erstellen, Schema-Markup implementieren, du kannst heute anfangen.</span>
             </li>
           </ul>
         </div>
       </section>
 
       {/* ============================================================ */}
-      {/*  Was ist GEO — die Definition                                */}
+      {/*  Was ist GEO - die Definition                                */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-          GEO — was es wirklich bedeutet (und was nicht)
+          GEO: was es wirklich bedeutet (und was nicht)
         </h2>
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
@@ -191,19 +191,19 @@ export default function WasIstGeoPage() {
             Der Begriff stammt aus einer <strong className="text-black">Studie der Princeton University (2024)</strong>, die erstmals systematisch untersucht hat, wie Inhalte für generative Suchmaschinen optimiert werden können. Das Ergebnis: Strukturierte, faktenbasierte Inhalte mit Quellenverweisen erhalten bis zu 115 % mehr Sichtbarkeit in KI-generierten Antworten.
           </p>
           <p>
-            Klingt einfach? Ist es auch. Das Problem ist nur: Die meisten Leute hören „GEO" und denken „ach, das ist doch nur SEO mit einem neuen Namen". Das ist ungefähr so klug wie zu sagen, ein Elektroauto sei „im Grunde ein Pferd mit Batterie". Technisch gesehen hat beides Räder. Praktisch gesehen — völlig andere Welt.
+            Klingt einfach? Ist es auch. Das Problem ist nur: Die meisten Leute hören „GEO" und denken „ach, das ist doch nur SEO mit einem neuen Namen". Das ist ungefähr so klug wie zu sagen, ein Elektroauto sei „im Grunde ein Pferd mit Batterie". Technisch gesehen hat beides Räder. Praktisch gesehen, völlig andere Welt.
           </p>
         </div>
 
         <div className="bg-white border-2 border-brand-accent rounded-xl p-6 shadow-sm my-8">
           <p className="text-lg md:text-xl font-semibold text-black leading-snug">
-            Kernbegriff: GEO optimiert nicht für Rankings, sondern für Zitierungen. Dein Ziel ist nicht Platz 1 bei Google — dein Ziel ist, dass die KI dich als Quelle nennt.
+            Kernbegriff: GEO optimiert nicht für Rankings, sondern für Zitierungen. Dein Ziel ist nicht Platz 1 bei Google, dein Ziel ist, dass die KI dich als Quelle nennt.
           </p>
         </div>
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
           <p>
-            Warum der Unterschied so wichtig ist: Bei Google konkurrierst du mit 10 blauen Links. Bei KI-Antworten konkurrierst du mit <em>allen Inhalten im gesamten Internet</em>, und die KI wählt eine Handvoll Quellen aus. Entweder du bist dabei — oder du existierst nicht.
+            Warum der Unterschied so wichtig ist: Bei Google konkurrierst du mit 10 blauen Links. Bei KI-Antworten konkurrierst du mit <em>allen Inhalten im gesamten Internet</em>, und die KI wählt eine Handvoll Quellen aus. Entweder du bist dabei, oder du existierst nicht.
           </p>
           <p>
             Das ist keine Übertreibung. Wenn jemand ChatGPT fragt „Wer ist der beste Zahnarzt in Hamburg?" und dein Name nicht fällt, ist es egal, ob du bei Google auf Platz 1 stehst. Der Nutzer hat seine Antwort bekommen. Ohne dich.
@@ -221,10 +221,10 @@ export default function WasIstGeoPage() {
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
           <p>
-            <strong className="text-black">Gartner prognostiziert: Bis 2028 verlieren Marken über 50 % ihres organischen Search-Traffics</strong> an KI-gestützte Suche. Das ist keine vage Prophezeiung eines LinkedIn-Gurus — das ist eine der größten Research-Firmen der Welt, die sagt: Dein Google-Traffic wird halbiert.
+            <strong className="text-black">Gartner prognostiziert: Bis 2028 verlieren Marken über 50 % ihres organischen Search-Traffics</strong> an KI-gestützte Suche. Das ist keine vage Prophezeiung eines LinkedIn-Gurus, das ist eine der größten Research-Firmen der Welt, die sagt: Dein Google-Traffic wird halbiert.
           </p>
           <p>
-            Der Grund ist brutal einfach: Menschen sind faul. Warum 10 Suchergebnisse durchklicken, wenn ChatGPT dir die Antwort in 3 Sekunden liefert? Warum 5 Websites vergleichen, wenn Perplexity das für dich tut? Die Art, wie Menschen nach Informationen suchen, verändert sich fundamental — und wer seine Inhalte nicht für diese neue Realität optimiert, wird schleichend unsichtbar.
+            Der Grund ist brutal einfach: Menschen sind faul. Warum 10 Suchergebnisse durchklicken, wenn ChatGPT dir die Antwort in 3 Sekunden liefert? Warum 5 Websites vergleichen, wenn Perplexity das für dich tut? Die Art, wie Menschen nach Informationen suchen, verändert sich fundamental, und wer seine Inhalte nicht für diese neue Realität optimiert, wird schleichend unsichtbar.
           </p>
           <p>
             Das Problem: Die meisten „GEO-Experten", die du auf LinkedIn findest, haben den Princeton-Paper nicht gelesen. Sie recyceln SEO-Tipps, kleben „KI" drauf und nennen es Innovation. Das ist so, als würdest du einem Formel-1-Auto einen Aufkleber mit „Rakete" draufkleben und behaupten, es fliegt jetzt.
@@ -251,11 +251,11 @@ export default function WasIstGeoPage() {
       </section>
 
       {/* ============================================================ */}
-      {/*  GEO vs SEO vs AEO — der große Vergleich                    */}
+      {/*  GEO vs SEO vs AEO - der große Vergleich                    */}
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
-          GEO vs SEO vs AEO — der Vergleich, den du eigentlich brauchst
+          GEO vs SEO vs AEO: der Vergleich, den du eigentlich brauchst
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
           Die Begriffe fliegen dir um die Ohren wie Konfetti auf einer schlechten Marketing-Konferenz. Hier ist die Übersicht, die endlich Ordnung reinbringt.
@@ -320,10 +320,10 @@ export default function WasIstGeoPage() {
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed mt-10">
           <p>
-            <strong className="text-black">Das Wichtigste:</strong> GEO, SEO und AEO sind keine Konkurrenten. Sie sind Schichten. SEO ist die Basis. AEO erweitert sie um Antwortformate. GEO geht den letzten Schritt und optimiert für die KI-Antwort selbst. Wer nur SEO macht, ist wie jemand, der 2026 noch ein Faxgerät benutzt — es funktioniert irgendwie, aber die Welt hat sich weitergedreht.
+            <strong className="text-black">Das Wichtigste:</strong> GEO, SEO und AEO sind keine Konkurrenten. Sie sind Schichten. SEO ist die Basis. AEO erweitert sie um Antwortformate. GEO geht den letzten Schritt und optimiert für die KI-Antwort selbst. Wer nur SEO macht, ist wie jemand, der 2026 noch ein Faxgerät benutzt, es funktioniert irgendwie, aber die Welt hat sich weitergedreht.
           </p>
           <p>
-            Und nein, AEO ist kein Synonym für GEO. AEO fokussiert sich auf „Answer Engines" — also Systeme, die direkte Antworten liefern (Featured Snippets, Voice Search). GEO geht weiter: Es umfasst die gesamte Optimierung für generative KI-Systeme, die Antworten aus multiplen Quellen synthetisieren. AEO ist ein Teilaspekt von GEO.
+            Und nein, AEO ist kein Synonym für GEO. AEO fokussiert sich auf „Answer Engines", also Systeme, die direkte Antworten liefern (Featured Snippets, Voice Search). GEO geht weiter: Es umfasst die gesamte Optimierung für generative KI-Systeme, die Antworten aus multiplen Quellen synthetisieren. AEO ist ein Teilaspekt von GEO.
           </p>
         </div>
       </section>
@@ -333,7 +333,7 @@ export default function WasIstGeoPage() {
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
-          Wie GEO funktioniert — ohne Buzzword-Bingo
+          Wie GEO funktioniert, ohne Buzzword-Bingo
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
           GEO basiert auf einem simplen Prinzip: Mach deinen Content so, dass eine KI ihn sicher und gerne als Quelle verwendet. Das klingt banal, bis du verstehst, was „sicher" für eine KI bedeutet.
@@ -343,7 +343,7 @@ export default function WasIstGeoPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">1. Zitierfähigkeit schaffen</h3>
             <p className="text-gray-600 leading-relaxed">
-              KI-Systeme zitieren nicht alles. Sie zitieren Inhalte, bei denen sie sich sicher sind, dass die Information stimmt. Das heißt: klare Aussagen, belegbare Fakten, benannte Quellen. „Unserer Erfahrung nach" ist für eine KI wertlos. „Laut Princeton-Studie (2024) erhalten strukturierte Inhalte 115 % mehr Zitierungen" — das kann eine KI verwenden.
+              KI-Systeme zitieren nicht alles. Sie zitieren Inhalte, bei denen sie sich sicher sind, dass die Information stimmt. Das heißt: klare Aussagen, belegbare Fakten, benannte Quellen. „Unserer Erfahrung nach" ist für eine KI wertlos. „Laut Princeton-Studie (2024) erhalten strukturierte Inhalte 115 % mehr Zitierungen", das kann eine KI verwenden.
             </p>
           </div>
 
@@ -371,7 +371,7 @@ export default function WasIstGeoPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">5. Autorität aufbauen</h3>
             <p className="text-gray-600 leading-relaxed">
-              KI-Systeme bevorzugen Quellen, die als autoritativ gelten. Das ist kein Voodoo — es sind die gleichen Signale, die auch bei Google zählen: Backlinks, Brand-Erwähnungen, E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness). Ein unbekannter Blog wird seltener zitiert als eine anerkannte Fachpublikation. Autorität ist Grundvoraussetzung.
+              KI-Systeme bevorzugen Quellen, die als autoritativ gelten. Das ist kein Voodoo, es sind die gleichen Signale, die auch bei Google zählen: Backlinks, Brand-Erwähnungen, E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness). Ein unbekannter Blog wird seltener zitiert als eine anerkannte Fachpublikation. Autorität ist Grundvoraussetzung.
             </p>
           </div>
         </div>
@@ -389,35 +389,35 @@ export default function WasIstGeoPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">Irrtum 1: „GEO ist nur SEO mit neuem Namen"</h3>
             <p className="text-gray-600 leading-relaxed">
-              Nein. SEO optimiert für ein Ranking-System: 10 blaue Links, sortiert nach Relevanz. GEO optimiert für ein Generierungssystem: Eine KI synthetisiert eine Antwort aus hunderten möglichen Quellen. Das erfordert andere Inhalte, andere Strukturen und andere technische Signale. Wer GEO als „SEO 2.0" behandelt, optimiert am Ziel vorbei — wie jemand, der für den Marathon trainiert, indem er Gewichte hebt.
+              Nein. SEO optimiert für ein Ranking-System: 10 blaue Links, sortiert nach Relevanz. GEO optimiert für ein Generierungssystem: Eine KI synthetisiert eine Antwort aus hunderten möglichen Quellen. Das erfordert andere Inhalte, andere Strukturen und andere technische Signale. Wer GEO als „SEO 2.0" behandelt, optimiert am Ziel vorbei, wie jemand, der für den Marathon trainiert, indem er Gewichte hebt.
             </p>
           </div>
 
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">Irrtum 2: „Ich muss KI-Crawler blockieren, um mein geistiges Eigentum zu schützen"</h3>
             <p className="text-gray-600 leading-relaxed">
-              Kannst du machen. Dann wirst du halt von keiner KI zitiert. Herzlichen Glückwunsch, du hast dein geistiges Eigentum geschützt — und es gleichzeitig unsichtbar gemacht. Das ist wie ein Restaurant, das seine Tür abschließt, damit niemand das Essen klaut. Stimmt, klaut keiner. Kommt aber auch keiner essen.
+              Kannst du machen. Dann wirst du halt von keiner KI zitiert. Herzlichen Glückwunsch, du hast dein geistiges Eigentum geschützt, und es gleichzeitig unsichtbar gemacht. Das ist wie ein Restaurant, das seine Tür abschließt, damit niemand das Essen klaut. Stimmt, klaut keiner. Kommt aber auch keiner essen.
             </p>
           </div>
 
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">Irrtum 3: „Keywords sind für GEO irrelevant"</h3>
             <p className="text-gray-600 leading-relaxed">
-              Falsch. Keywords sind weniger wichtig als bei SEO, aber nicht irrelevant. KI-Systeme nutzen semantische Zusammenhänge, nicht exakte Keyword-Matches. Aber wenn du über „KI-Sichtbarkeit" schreibst und den Begriff kein einziges Mal verwendest, versteht auch keine KI, worum es geht. Natürliche Verwendung relevanter Begriffe bleibt wichtig — Keyword-Stuffing wird dich aber eher bannen als befördern.
+              Falsch. Keywords sind weniger wichtig als bei SEO, aber nicht irrelevant. KI-Systeme nutzen semantische Zusammenhänge, nicht exakte Keyword-Matches. Aber wenn du über „KI-Sichtbarkeit" schreibst und den Begriff kein einziges Mal verwendest, versteht auch keine KI, worum es geht. Natürliche Verwendung relevanter Begriffe bleibt wichtig, Keyword-Stuffing wird dich aber eher bannen als befördern.
             </p>
           </div>
 
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">Irrtum 4: „Mein Google-Traffic reicht, GEO brauche ich nicht"</h3>
             <p className="text-gray-600 leading-relaxed">
-              Stand 2024 hast du damit vielleicht recht. Stand 2026 — eher nicht. Wenn 30 % deiner potenziellen Kunden ihre Fragen in ChatGPT stellen statt in Google, und dein Unternehmen in keiner einzigen KI-Antwort auftaucht, hast du ein Drittel deines Marktes verloren, ohne es zu merken. Das ist kein „Nice to have". Das ist eine strategische Lücke.
+              Stand 2024 hast du damit vielleicht recht. Stand 2026, eher nicht. Wenn 30 % deiner potenziellen Kunden ihre Fragen in ChatGPT stellen statt in Google, und dein Unternehmen in keiner einzigen KI-Antwort auftaucht, hast du ein Drittel deines Marktes verloren, ohne es zu merken. Das ist kein „Nice to have". Das ist eine strategische Lücke.
             </p>
           </div>
 
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">Irrtum 5: „GEO-Optimierung = einfach eine llms.txt anlegen und fertig"</h3>
             <p className="text-gray-600 leading-relaxed">
-              Eine <a href="/wissen/llms-txt-anleitung" className="text-brand-accent underline hover:no-underline">llms.txt</a> ist ein guter erster Schritt. Aber GEO auf eine einzelne Datei zu reduzieren, ist wie zu sagen, SEO bestehe aus einer robots.txt. Technische Zugänglichkeit ist die Basis — darauf müssen Content-Qualität, semantische Vollständigkeit, Topic Clusters und Autorität aufbauen. Sonst hast du eine schöne Einladung geschrieben, aber das Restaurant ist leer.
+              Eine <a href="/wissen/llms-txt-anleitung" className="text-brand-accent underline hover:no-underline">llms.txt</a> ist ein guter erster Schritt. Aber GEO auf eine einzelne Datei zu reduzieren, ist wie zu sagen, SEO bestehe aus einer robots.txt. Technische Zugänglichkeit ist die Basis, darauf müssen Content-Qualität, semantische Vollständigkeit, Topic Clusters und Autorität aufbauen. Sonst hast du eine schöne Einladung geschrieben, aber das Restaurant ist leer.
             </p>
           </div>
         </div>
@@ -431,7 +431,7 @@ export default function WasIstGeoPage() {
           GEO in der Praxis: 7 Schritte, die du heute umsetzen kannst
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
-          Genug Theorie. Hier ist, was du konkret tun musst — sortiert von „dauert 10 Minuten" bis „dauert ein Quartal".
+          Genug Theorie. Hier ist, was du konkret tun musst, sortiert von „dauert 10 Minuten" bis „dauert ein Quartal".
         </p>
 
         <ol className="space-y-8">
@@ -463,7 +463,7 @@ export default function WasIstGeoPage() {
                 3. Content auf Answer-First umstellen
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Geh deine Top-10-Seiten durch. Beginnt jeder Abschnitt mit der Kernantwort? Oder mit „In der heutigen digitalen Welt..."? Wenn Letzteres — umschreiben. Die Antwort gehört in den ersten Satz. Immer. Ausnahmslos. Keine Ausreden. Mehr dazu im Guide zur <a href="/wissen/ai-content-strategie" className="text-brand-accent underline hover:no-underline">AI Content Strategie</a>.
+                Geh deine Top-10-Seiten durch. Beginnt jeder Abschnitt mit der Kernantwort? Oder mit „In der heutigen digitalen Welt..."? Wenn Letzteres, umschreiben. Die Antwort gehört in den ersten Satz. Immer. Ausnahmslos. Keine Ausreden. Mehr dazu im Guide zur <a href="/wissen/ai-content-strategie" className="text-brand-accent underline hover:no-underline">AI Content Strategie</a>.
               </p>
             </div>
           </li>
@@ -507,7 +507,7 @@ export default function WasIstGeoPage() {
                 7. KI-Sichtbarkeit messen und iterieren
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Frag ChatGPT und Perplexity regelmäßig nach deinem Fachthema. Wirst du genannt? Mit Quellenlink? Nutze Tools wie Ahrefs Brand Radar oder Semrush AI Visibility für systematisches Monitoring. GEO ist kein Einmalprojekt — es ist ein kontinuierlicher Prozess, genau wie SEO.
+                Frag ChatGPT und Perplexity regelmäßig nach deinem Fachthema. Wirst du genannt? Mit Quellenlink? Nutze Tools wie Ahrefs Brand Radar oder Semrush AI Visibility für systematisches Monitoring. GEO ist kein Einmalprojekt, es ist ein kontinuierlicher Prozess, genau wie SEO.
               </p>
             </div>
           </li>
@@ -519,7 +519,7 @@ export default function WasIstGeoPage() {
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-          Wer braucht GEO wirklich — und wer kann (noch) warten?
+          Wer braucht GEO wirklich, und wer kann (noch) warten?
         </h2>
 
         <div className="grid sm:grid-cols-2 gap-6">
@@ -549,15 +549,15 @@ export default function WasIstGeoPage() {
             <h3 className="text-xl font-semibold text-black mb-4">GEO kann warten für:</h3>
             <ul className="space-y-3 text-gray-600 leading-relaxed">
               <li className="flex items-start gap-3">
-                <span className="text-gray-400 font-bold mt-0.5 shrink-0">—</span>
+                <span className="text-gray-400 font-bold mt-0.5 shrink-0">–</span>
                 <span>Unternehmen, die ausschließlich über Paid Ads akquirieren</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-gray-400 font-bold mt-0.5 shrink-0">—</span>
+                <span className="text-gray-400 font-bold mt-0.5 shrink-0">–</span>
                 <span>Rein offline operierende Businesses ohne digitale Präsenz</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-gray-400 font-bold mt-0.5 shrink-0">—</span>
+                <span className="text-gray-400 font-bold mt-0.5 shrink-0">–</span>
                 <span>Sehr nischige B2B-Produkte mit wenigen direkten Suchanfragen</span>
               </li>
             </ul>
@@ -613,7 +613,7 @@ export default function WasIstGeoPage() {
               Technische KI-Sichtbarkeit
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed">
-              robots.txt, llms.txt, Schema.org — alles, was KI-Crawler technisch brauchen.
+              robots.txt, llms.txt, Schema.org, alles, was KI-Crawler technisch brauchen.
             </p>
           </a>
 
@@ -652,7 +652,7 @@ export default function WasIstGeoPage() {
             Wie sichtbar bist du für KI?
           </h2>
           <p className="text-lg text-gray-400 leading-relaxed mb-8 max-w-xl mx-auto">
-            Finde heraus, ob ChatGPT, Perplexity und Google AI dein Unternehmen kennen — und was du tun musst, damit sie dich zitieren.
+            Finde heraus, ob ChatGPT, Perplexity und Google AI dein Unternehmen kennen, und was du tun musst, damit sie dich zitieren.
           </p>
           <Button href="/ai-sichtbarkeit-now" primary text="Kostenlose GEO-Analyse anfragen" />
         </div>

@@ -842,7 +842,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/ai-sichtbarkeit-now" primary text="Kostenlose Analyse anfragen" className="!py-4 !px-8" />
-              <Button href="/kontakt" text="Erstgespr&auml;ch vereinbaren" className="!py-4 !px-8 !text-white !border-white/20 hover:!border-white/40" />
+              <Button href="/contact" text="Erstgespr&auml;ch vereinbaren" className="!py-4 !px-8 !text-white !border-white/20 hover:!border-white/40" />
             </div>
             <p className="text-xs text-gray-500 mt-4">
               Kein Spam. Kein Newsletter-Abo. Nur ein Report, der dir zeigt, wo du stehst.

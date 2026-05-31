@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     keywords: ['ki sichtbarkeit beauftragen', 'ai seo agentur ablauf', 'ki sichtbarkeit buchen', 'ai seo prozess', 'ki sichtbarkeit anfrage'],
     openGraph: {
         title: 'KI-Sichtbarkeit beauftragen: Der komplette Ablauf von Anfrage bis Ergebnis',
-        description: 'Was passiert, wenn du KI-Sichtbarkeit beauftragst? Der komplette Prozess — transparent, ehrlich, ohne Verkaufstricks.',
+        description: 'Was passiert, wenn du KI-Sichtbarkeit beauftragst? Der komplette Prozess: transparent, ehrlich, ohne Verkaufstricks.',
         url: 'https://aiseo.hamburg/wissen/ki-sichtbarkeit-beauftragen',
         siteName: 'aiseo.hamburg',
         locale: 'de_DE',

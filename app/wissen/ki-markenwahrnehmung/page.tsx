@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/Button';
 const FAQS = [
   {
     q: 'Kann ich beeinflussen, was ChatGPT über meine Marke sagt?',
-    a: 'Ja, aber nicht direkt und nicht über Nacht. ChatGPTs Wissen über deine Marke stammt aus Trainingsdaten — also dem gesamten Internet, das vor dem letzten Training-Cutoff existierte. Du beeinflusst es indirekt, indem du konsistente, positive und faktenbasierte Informationen über deine Marke verbreitest: auf deiner Website, in Fachartikeln, auf Wikipedia (wenn relevant), in Pressemeldungen und in Bewertungen. Je mehr hochwertige, konsistente Erwähnungen existieren, desto positiver wird das Bild, das ChatGPT von deiner Marke hat. Das ist kein Sprint, sondern ein Marathon — der aber massive langfristige Wirkung hat.',
+    a: 'Ja, aber nicht direkt und nicht über Nacht. ChatGPTs Wissen über deine Marke stammt aus Trainingsdaten, also dem gesamten Internet, das vor dem letzten Training-Cutoff existierte. Du beeinflusst es indirekt, indem du konsistente, positive und faktenbasierte Informationen über deine Marke verbreitest: auf deiner Website, in Fachartikeln, auf Wikipedia (wenn relevant), in Pressemeldungen und in Bewertungen. Je mehr hochwertige, konsistente Erwähnungen existieren, desto positiver wird das Bild, das ChatGPT von deiner Marke hat. Das ist kein Sprint, sondern ein Marathon, der aber massive langfristige Wirkung hat.',
   },
   {
     q: 'Wie finde ich heraus, was KI-Systeme aktuell über meine Marke denken?',
@@ -21,15 +21,15 @@ const FAQS = [
   },
   {
     q: 'Was ist der Unterschied zwischen Google-Reputation und KI-Reputation?',
-    a: 'Google-Reputation basiert auf Backlinks, Domain-Autorität und Ranking-Positionen — technische Signale, die du über SEO steuerst. KI-Reputation basiert auf dem semantischen Verständnis deiner Marke: Was wird über dich gesagt, wie oft, wo und in welchem Kontext? Du kannst bei Google auf Seite 1 ranken und trotzdem ein katastrophales KI-Markenbild haben — zum Beispiel, wenn Foren und Bewertungsportale voller Beschwerden sind, die in die Trainingsdaten einfließen. Umgekehrt kann eine kleine Marke mit exzellenten Drittquellen-Erwähnungen bei ChatGPT hervorragend dastehen, obwohl sie bei Google kaum sichtbar ist.',
+    a: 'Google-Reputation basiert auf Backlinks, Domain-Autorität und Ranking-Positionen, technische Signale, die du über SEO steuerst. KI-Reputation basiert auf dem semantischen Verständnis deiner Marke: Was wird über dich gesagt, wie oft, wo und in welchem Kontext? Du kannst bei Google auf Seite 1 ranken und trotzdem ein katastrophales KI-Markenbild haben, zum Beispiel, wenn Foren und Bewertungsportale voller Beschwerden sind, die in die Trainingsdaten einfließen. Umgekehrt kann eine kleine Marke mit exzellenten Drittquellen-Erwähnungen bei ChatGPT hervorragend dastehen, obwohl sie bei Google kaum sichtbar ist.',
   },
   {
     q: 'Wie wichtig sind Wikipedia-Einträge für die KI-Wahrnehmung?',
-    a: 'Extrem wichtig — wenn deine Marke relevant genug ist, einen zu haben. Wikipedia ist eine der meistgewichteten Quellen in den Trainingsdaten aller großen Sprachmodelle. Ein korrekter, gut gepflegter Wikipedia-Eintrag ist Gold wert. Aber: Wikipedia hat strenge Relevanzkriterien. Nicht jedes Unternehmen qualifiziert sich. Und einen Eintrag zu manipulieren oder zu kaufen führt dazu, dass er gelöscht wird — und das ist schlimmer als keinen zu haben, weil die Löschung selbst ein negatives Signal ist.',
+    a: 'Extrem wichtig, wenn deine Marke relevant genug ist, einen zu haben. Wikipedia ist eine der meistgewichteten Quellen in den Trainingsdaten aller großen Sprachmodelle. Ein korrekter, gut gepflegter Wikipedia-Eintrag ist Gold wert. Aber: Wikipedia hat strenge Relevanzkriterien. Nicht jedes Unternehmen qualifiziert sich. Und einen Eintrag zu manipulieren oder zu kaufen führt dazu, dass er gelöscht wird, und das ist schlimmer als keinen zu haben, weil die Löschung selbst ein negatives Signal ist.',
   },
   {
     q: 'Können negative Bewertungen mein KI-Markenbild dauerhaft beschädigen?',
-    a: 'Ja, wenn sie in die Trainingsdaten einfließen und nicht durch positive Signale ausgeglichen werden. ChatGPT unterscheidet nicht zwischen „alter Bewertung von einem frustrierten Kunden" und „aktueller Zustand des Unternehmens". Alles fließt in den Konsens ein. Die Lösung ist nicht, negative Bewertungen zu löschen (das funktioniert bei Trainingsdaten nicht), sondern sie durch überwiegend positive, authentische Signale zu überlagern. 50 echte 5-Sterne-Bewertungen neutralisieren 5 schlechte Bewertungen — sowohl bei Menschen als auch bei KI.',
+    a: 'Ja, wenn sie in die Trainingsdaten einfließen und nicht durch positive Signale ausgeglichen werden. ChatGPT unterscheidet nicht zwischen „alter Bewertung von einem frustrierten Kunden" und „aktueller Zustand des Unternehmens". Alles fließt in den Konsens ein. Die Lösung ist nicht, negative Bewertungen zu löschen (das funktioniert bei Trainingsdaten nicht), sondern sie durch überwiegend positive, authentische Signale zu überlagern. 50 echte 5-Sterne-Bewertungen neutralisieren 5 schlechte Bewertungen, sowohl bei Menschen als auch bei KI.',
   },
   {
     q: 'Wie lange dauert es, bis Änderungen an meiner Markenwahrnehmung in KI-Systemen sichtbar werden?',
@@ -57,9 +57,9 @@ const faqJsonLd = {
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Wie KI-Systeme über deine Marke entscheiden — und was du dagegen tun kannst',
+  headline: 'Wie KI-Systeme über deine Marke entscheiden, und was du dagegen tun kannst',
   description:
-    'ChatGPT, Perplexity und Google AI bilden sich eine Meinung über deine Marke — ob du willst oder nicht. Trainingsdaten, Reviews, Presse: Wie KI-Markenwahrnehmung entsteht und wie du sie beeinflusst.',
+    'ChatGPT, Perplexity und Google AI bilden sich eine Meinung über deine Marke, ob du willst oder nicht. Trainingsdaten, Reviews, Presse: Wie KI-Markenwahrnehmung entsteht und wie du sie beeinflusst.',
   image: 'https://aiseo.hamburg/images/wissen/ki-markenwahrnehmung.jpg',
   author: {
     '@type': 'Person',
@@ -122,7 +122,7 @@ export default function KIMarkenwahrnehmungPage() {
         </nav>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-[-0.04em] text-black mb-6 leading-[1.05]">
-          Wie KI-Systeme über deine Marke entscheiden — und was du dagegen tun kannst
+          Wie KI-Systeme über deine Marke entscheiden, und was du dagegen tun kannst
         </h1>
         <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
           ChatGPT hat eine Meinung über deine Marke. Perplexity auch. Google AI sowieso. Und diese Meinung basiert nicht auf deiner hübschen Imagebroschüre, sondern auf allem, was das Internet jemals über dich gesagt hat. Auch die Sachen, die du lieber vergessen würdest.
@@ -132,11 +132,11 @@ export default function KIMarkenwahrnehmungPage() {
       {/* TL;DR */}
       <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-12">
         <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
-          <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR — Für die Ungeduldigen</h2>
+          <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR: Für die Ungeduldigen</h2>
           <ul className="space-y-3 text-gray-700 leading-relaxed">
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">1.</span>
-              <span><strong className="text-black">KI-Systeme „denken" über deine Marke</strong> — basierend auf Trainingsdaten, Weberwähnungen, Bewertungen, Presseartikeln und Wikipedia. Du kontrollierst das nicht direkt, aber du kannst es beeinflussen.</span>
+              <span><strong className="text-black">KI-Systeme „denken" über deine Marke</strong>, basierend auf Trainingsdaten, Weberwähnungen, Bewertungen, Presseartikeln und Wikipedia. Du kontrollierst das nicht direkt, aber du kannst es beeinflussen.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">2.</span>
@@ -165,7 +165,7 @@ export default function KIMarkenwahrnehmungPage() {
             Ein Large Language Model hat keine Gefühle. Es hat keine Meinung. Es hat keine persönliche Erfahrung mit deinem Produkt. Was es hat, ist eine statistische Zusammenfassung von allem, was jemals über deine Marke geschrieben wurde. Und diese Zusammenfassung ist dein KI-Markenbild.
           </p>
           <p>
-            <strong className="text-black">Stell dir vor, ein sehr aufmerksamer, absolut humorloser Bibliothekar liest alles, was jemals über dich veröffentlicht wurde — und fasst es in einem Satz zusammen.</strong> Das ist im Grunde das, was ChatGPT macht. Nur dass der Bibliothekar 175 Milliarden Parameter hat und keinen Feierabend kennt.
+            <strong className="text-black">Stell dir vor, ein sehr aufmerksamer, absolut humorloser Bibliothekar liest alles, was jemals über dich veröffentlicht wurde, und fasst es in einem Satz zusammen.</strong> Das ist im Grunde das, was ChatGPT macht. Nur dass der Bibliothekar 175 Milliarden Parameter hat und keinen Feierabend kennt.
           </p>
           <p>
             Das Problem: Du hast keinen Einfluss darauf, was der Bibliothekar gelesen hat. Aber du hast Einfluss darauf, was er in Zukunft zu lesen bekommt. Und genau darum geht es bei KI-Markenwahrnehmung.
@@ -192,7 +192,7 @@ export default function KIMarkenwahrnehmungPage() {
                 Wikipedia ist die Mutter aller Trainingsdaten. Jedes große Sprachmodell wurde ausgiebig auf Wikipedia trainiert. Wenn deine Marke einen Wikipedia-Eintrag hat, ist das die primäre Informationsquelle für ChatGPT. <strong className="text-black">Ein korrekter, gut gepflegter Wikipedia-Eintrag ist mehr wert als 100 Blogartikel.</strong>
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Aber bevor du jetzt losrennst und einen Wikipedia-Eintrag schreibst: Wikipedia hat Relevanzkriterien. Nicht jedes Unternehmen qualifiziert sich. Und einen Eintrag zu kaufen oder zu manipulieren führt dazu, dass er gelöscht wird — was noch schlimmer ist als keinen zu haben. Das ist wie gefeuert zu werden — schlimmer als nie angestellt gewesen zu sein.
+                Aber bevor du jetzt losrennst und einen Wikipedia-Eintrag schreibst: Wikipedia hat Relevanzkriterien. Nicht jedes Unternehmen qualifiziert sich. Und einen Eintrag zu kaufen oder zu manipulieren führt dazu, dass er gelöscht wird, was noch schlimmer ist als keinen zu haben. Das ist wie gefeuert zu werden, schlimmer als nie angestellt gewesen zu sein.
               </p>
             </div>
           </li>
@@ -203,7 +203,7 @@ export default function KIMarkenwahrnehmungPage() {
                 2. Presse und Fachartikel
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-3">
-                Erwähnungen in seriösen Medien sind das zweitwichtigste Signal. Das Handelsblatt, t3n, Fachmagazine, branchenspezifische Portale — alles, was Google als „autoritativ" einstuft, fließt auch in KI-Trainingsdaten ein.
+                Erwähnungen in seriösen Medien sind das zweitwichtigste Signal. Das Handelsblatt, t3n, Fachmagazine, branchenspezifische Portale, alles, was Google als „autoritativ" einstuft, fließt auch in KI-Trainingsdaten ein.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
                 <strong className="text-black">Aber: Eine einzelne Pressemeldung auf einem Pay-to-Play-Portal ist so nützlich wie ein Regenschirm aus Pappe.</strong> KI-Systeme erkennen den Unterschied zwischen redaktionellem Content und bezahlten Platzierungen. Zumindest meistens. Und die Quote wird besser, nicht schlechter.
@@ -217,10 +217,10 @@ export default function KIMarkenwahrnehmungPage() {
                 3. Bewertungen und Reviews
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-3">
-                Google Reviews, Trustpilot, G2, Capterra, Kununu — all diese Plattformen fließen in die Trainingsdaten ein. Wenn 200 Leute auf Google schreiben, dass dein Service fantastisch ist, wird ChatGPT das widerspiegeln. Wenn 200 Leute schreiben, dass du eine Katastrophe bist… nun, dann wird ChatGPT auch das widerspiegeln.
+                Google Reviews, Trustpilot, G2, Capterra, Kununu, all diese Plattformen fließen in die Trainingsdaten ein. Wenn 200 Leute auf Google schreiben, dass dein Service fantastisch ist, wird ChatGPT das widerspiegeln. Wenn 200 Leute schreiben, dass du eine Katastrophe bist… nun, dann wird ChatGPT auch das widerspiegeln.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                <strong className="text-black">Das Schöne an Bewertungen ist: Du kannst sie aktiv beeinflussen — durch guten Service.</strong> Revolutionäres Konzept, ich weiß. Wer hätte gedacht, dass die beste Marketingstrategie darin besteht, nicht schlecht zu sein.
+                <strong className="text-black">Das Schöne an Bewertungen ist: Du kannst sie aktiv beeinflussen, durch guten Service.</strong> Revolutionäres Konzept, ich weiß. Wer hätte gedacht, dass die beste Marketingstrategie darin besteht, nicht schlecht zu sein.
               </p>
             </div>
           </li>
@@ -231,7 +231,7 @@ export default function KIMarkenwahrnehmungPage() {
                 4. Deine eigene Website
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-3">
-                Ja, deine eigene Website fließt in die Trainingsdaten ein — vorausgesetzt, du blockierst die KI-Crawler nicht. Aber hier kommt der Haken: <strong className="text-black">KI-Systeme gewichten Eigenaussagen weniger als Drittquellen.</strong> Wenn du auf deiner Website schreibst „Wir sind die besten", ist das für ChatGPT etwa so überzeugend wie ein Kandidat, der im Vorstellungsgespräch sagt „Ich bin perfekt".
+                Ja, deine eigene Website fließt in die Trainingsdaten ein, vorausgesetzt, du blockierst die KI-Crawler nicht. Aber hier kommt der Haken: <strong className="text-black">KI-Systeme gewichten Eigenaussagen weniger als Drittquellen.</strong> Wenn du auf deiner Website schreibst „Wir sind die besten", ist das für ChatGPT etwa so überzeugend wie ein Kandidat, der im Vorstellungsgespräch sagt „Ich bin perfekt".
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Was auf deiner Website hilft: konsistente Fakten, klare Positionierung, nachweisbare Expertise (Case Studies, Daten, Methoden) und strukturierte Informationen, die KI-Systeme leicht extrahieren können.
@@ -245,7 +245,7 @@ export default function KIMarkenwahrnehmungPage() {
                 5. Foren, Social Media und Community-Content
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-3">
-                Reddit, Quora, LinkedIn-Posts, Twitter-Threads, Branchenforen — alles wird von LLMs aufgesaugt wie ein Staubsauger, dem jemand den Turbo-Modus beigebracht hat. Und hier wird es gefährlich: <strong className="text-black">Ein viraler Reddit-Thread über deinen schlechten Kundenservice kann mehr Gewicht haben als 10 deiner eigenen Blogartikel.</strong>
+                Reddit, Quora, LinkedIn-Posts, Twitter-Threads, Branchenforen, alles wird von LLMs aufgesaugt wie ein Staubsauger, dem jemand den Turbo-Modus beigebracht hat. Und hier wird es gefährlich: <strong className="text-black">Ein viraler Reddit-Thread über deinen schlechten Kundenservice kann mehr Gewicht haben als 10 deiner eigenen Blogartikel.</strong>
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Die Ironie: Viele Unternehmen investieren Tausende in ihre Website, ignorieren aber komplett, was in Foren über sie geschrieben wird. Das ist, als würdest du dein Wohnzimmer mit Designer-Möbeln einrichten und gleichzeitig die Haustür offen lassen.
@@ -306,8 +306,8 @@ export default function KIMarkenwahrnehmungPage() {
               </tr>
               <tr className="border-b border-gray-100">
                 <td className="py-3 pr-4 font-medium text-black">Vergleich</td>
-                <td className="py-3 pr-4">Personalausweis — kontrollierte Fakten</td>
-                <td className="py-3">Nachbarschaftsgerüchte — was alle sagen</td>
+                <td className="py-3 pr-4">Personalausweis: kontrollierte Fakten</td>
+                <td className="py-3">Nachbarschaftsgerüchte: was alle sagen</td>
               </tr>
             </tbody>
           </table>
@@ -318,7 +318,7 @@ export default function KIMarkenwahrnehmungPage() {
             Die Konsequenz ist brutal einfach: <strong className="text-black">Bei Google kontrollierst du, was Leute über dich finden. Bei ChatGPT kontrollierst du, was Leute über dich denken.</strong> Und das Zweite ist auf Dauer mächtiger.
           </p>
           <p>
-            Denn wenn ein potenzieller Kunde ChatGPT fragt „Welche AI SEO Agentur in Hamburg ist empfehlenswert?" und deine Marke nicht genannt wird — oder schlimmer, negativ erwähnt wird — dann ist es egal, ob du bei Google auf Platz 1 rankst. Der Kunde hat seine Entscheidung schon getroffen, bevor er überhaupt bei Google sucht.
+            Denn wenn ein potenzieller Kunde ChatGPT fragt „Welche AI SEO Agentur in Hamburg ist empfehlenswert?" und deine Marke nicht genannt wird (oder schlimmer, negativ erwähnt wird), dann ist es egal, ob du bei Google auf Platz 1 rankst. Der Kunde hat seine Entscheidung schon getroffen, bevor er überhaupt bei Google sucht.
           </p>
         </div>
       </section>
@@ -326,7 +326,7 @@ export default function KIMarkenwahrnehmungPage() {
       {/* Die Pressemeldungs-Illusion */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-          „Wir schicken einfach eine Pressemeldung raus" — und andere fatale Irrtümer
+          „Wir schicken einfach eine Pressemeldung raus" und andere fatale Irrtümer
         </h2>
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-10">
@@ -346,23 +346,23 @@ export default function KIMarkenwahrnehmungPage() {
           <ul className="space-y-4 text-gray-600 leading-relaxed">
             <li className="flex items-start gap-3">
               <span className="text-red-500 font-bold mt-0.5 shrink-0">&#10007;</span>
-              <span><strong className="text-black">„Eine Pressemeldung reicht."</strong> — Nein. Es braucht hunderte konsistente Signale über Monate hinweg.</span>
+              <span><strong className="text-black">„Eine Pressemeldung reicht."</strong> Nein. Es braucht hunderte konsistente Signale über Monate hinweg.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-red-500 font-bold mt-0.5 shrink-0">&#10007;</span>
-              <span><strong className="text-black">„Wir kaufen einen Wikipedia-Eintrag."</strong> — Wird gelöscht, und die Löschung ist ein negatives Signal. Herzlichen Glückwunsch.</span>
+              <span><strong className="text-black">„Wir kaufen einen Wikipedia-Eintrag."</strong> Wird gelöscht, und die Löschung ist ein negatives Signal. Herzlichen Glückwunsch.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-red-500 font-bold mt-0.5 shrink-0">&#10007;</span>
-              <span><strong className="text-black">„Wir blockieren KI-Crawler, dann können sie nichts Schlechtes sagen."</strong> — Dann können sie auch nichts Gutes sagen. Und sie greifen trotzdem auf vorhandene Trainingsdaten zurück.</span>
+              <span><strong className="text-black">„Wir blockieren KI-Crawler, dann können sie nichts Schlechtes sagen."</strong> Dann können sie auch nichts Gutes sagen. Und sie greifen trotzdem auf vorhandene Trainingsdaten zurück.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-red-500 font-bold mt-0.5 shrink-0">&#10007;</span>
-              <span><strong className="text-black">„Wir schreiben auf unsere Website, dass wir die Besten sind."</strong> — KI-Systeme gewichten Eigenaussagen weniger als Drittquellen. „Ich bin toll" sagt jeder.</span>
+              <span><strong className="text-black">„Wir schreiben auf unsere Website, dass wir die Besten sind."</strong> KI-Systeme gewichten Eigenaussagen weniger als Drittquellen. „Ich bin toll" sagt jeder.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-red-500 font-bold mt-0.5 shrink-0">&#10007;</span>
-              <span><strong className="text-black">„Wir lassen Fake-Bewertungen schreiben."</strong> — LLMs erkennen Fake-Bewertungen-Muster, weil sie auf Millionen davon trainiert wurden. Du spielst gegen den Schiedsrichter.</span>
+              <span><strong className="text-black">„Wir lassen Fake-Bewertungen schreiben."</strong> LLMs erkennen Fake-Bewertungen-Muster, weil sie auf Millionen davon trainiert wurden. Du spielst gegen den Schiedsrichter.</span>
             </li>
           </ul>
         </div>
@@ -402,7 +402,7 @@ export default function KIMarkenwahrnehmungPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">2. Konsistente Markeninformationen über alle Kanäle</h3>
             <p className="text-lg text-gray-600 leading-relaxed mb-3">
-              Wenn deine Website sagt, du bist eine „AI SEO Agentur", LinkedIn „Digitalagentur", Google Business „Marketing Beratung" und dein Impressum „Webdesign Studio" — dann hat ChatGPT keine Ahnung, was du bist. <strong className="text-black">Und wenn eine KI nicht weiß, was du bist, wird sie dich nicht empfehlen.</strong>
+              Wenn deine Website sagt, du bist eine „AI SEO Agentur", LinkedIn „Digitalagentur", Google Business „Marketing Beratung" und dein Impressum „Webdesign Studio", dann hat ChatGPT keine Ahnung, was du bist. <strong className="text-black">Und wenn eine KI nicht weiß, was du bist, wird sie dich nicht empfehlen.</strong>
               </p>
             <ul className="space-y-2 text-gray-600">
               <li className="flex items-start gap-3">
@@ -423,7 +423,7 @@ export default function KIMarkenwahrnehmungPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">3. Drittquellen-Erwähnungen systematisch aufbauen</h3>
             <p className="text-lg text-gray-600 leading-relaxed mb-3">
-              Gastbeiträge in Fachmedien, Podcast-Auftritte, Konferenz-Vorträge, Branchen-Interviews. Alles, was eine dritte Partei veranlasst, über dich zu schreiben. Das ist das digitale Äquivalent von Mundpropaganda — nur dass die Mundpropaganda in Trainingsdaten fließt und für die nächsten Jahre dort bleibt.
+              Gastbeiträge in Fachmedien, Podcast-Auftritte, Konferenz-Vorträge, Branchen-Interviews. Alles, was eine dritte Partei veranlasst, über dich zu schreiben. Das ist das digitale Äquivalent von Mundpropaganda, nur dass die Mundpropaganda in Trainingsdaten fließt und für die nächsten Jahre dort bleibt.
             </p>
             <ul className="space-y-2 text-gray-600">
               <li className="flex items-start gap-3">
@@ -519,19 +519,19 @@ export default function KIMarkenwahrnehmungPage() {
           <ul className="space-y-4 text-gray-600 leading-relaxed">
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">1.</span>
-              <span>Frag ChatGPT: „Was ist [deine Marke]?" — Ist die Antwort korrekt? Vollständig? Positiv?</span>
+              <span>Frag ChatGPT: „Was ist [deine Marke]?" Ist die Antwort korrekt? Vollständig? Positiv?</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">2.</span>
-              <span>Frag Perplexity: „Ist [deine Marke] empfehlenswert?" — Welche Quellen werden zitiert?</span>
+              <span>Frag Perplexity: „Ist [deine Marke] empfehlenswert?" Welche Quellen werden zitiert?</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">3.</span>
-              <span>Frag ChatGPT: „Welche Alternativen gibt es zu [deine Marke]?" — Wirst du überhaupt als Option genannt?</span>
+              <span>Frag ChatGPT: „Welche Alternativen gibt es zu [deine Marke]?" Wirst du überhaupt als Option genannt?</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">4.</span>
-              <span>Google „[deine Marke] Erfahrung" — Was steht in den Top 10? Das fließt in Trainingsdaten ein.</span>
+              <span>Google „[deine Marke] Erfahrung" Was steht in den Top 10? Das fließt in Trainingsdaten ein.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">5.</span>
@@ -541,7 +541,7 @@ export default function KIMarkenwahrnehmungPage() {
 
           <div className="mt-6 p-4 bg-gray-50 rounded-xl">
             <p className="text-sm text-gray-600">
-              <strong className="text-black">Alles korrekt und positiv?</strong> Gut, weiter so. <strong className="text-black">Lücken oder Fehler?</strong> Du weißt jetzt, wo du ansetzen musst. <strong className="text-black">ChatGPT kennt dich nicht?</strong> Das ist die schlechteste aller Antworten. Nicht-Existenz ist schlimmer als ein schlechtes Image — denn ein schlechtes Image kann man korrigieren, aber wer nicht existiert, kann nicht korrigiert werden.
+              <strong className="text-black">Alles korrekt und positiv?</strong> Gut, weiter so. <strong className="text-black">Lücken oder Fehler?</strong> Du weißt jetzt, wo du ansetzen musst. <strong className="text-black">ChatGPT kennt dich nicht?</strong> Das ist die schlechteste aller Antworten. Nicht-Existenz ist schlimmer als ein schlechtes Image, denn ein schlechtes Image kann man korrigieren, aber wer nicht existiert, kann nicht korrigiert werden.
             </p>
           </div>
         </div>
@@ -565,7 +565,7 @@ export default function KIMarkenwahrnehmungPage() {
       {/* Fazit */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-          Fazit: Deine Marke hat keine Wahl — aber du schon
+          Fazit: Deine Marke hat keine Wahl, aber du schon
         </h2>
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
@@ -573,7 +573,7 @@ export default function KIMarkenwahrnehmungPage() {
             KI-Systeme bilden sich eine Meinung über deine Marke, ob du mitspielst oder nicht. Die Frage ist nicht, ob ChatGPT, Perplexity und Google AI über dich reden werden. Die Frage ist, was sie sagen werden.
           </p>
           <p>
-            <strong className="text-black">Du kannst das ignorieren. Dann erzählt die KI das, was das Internet eben hergibt — inklusive der frustrierten Kununu-Bewertung von 2019 und dem Reddit-Thread, in dem jemand dein Logo hässlich fand.</strong>
+            <strong className="text-black">Du kannst das ignorieren. Dann erzählt die KI das, was das Internet eben hergibt, inklusive der frustrierten Kununu-Bewertung von 2019 und dem Reddit-Thread, in dem jemand dein Logo hässlich fand.</strong>
           </p>
           <p>
             Oder du nimmst die Sache in die Hand. Nicht mit einer einzelnen Pressemeldung. Nicht mit Fake-Bewertungen. Nicht mit der verzweifelten Hoffnung, dass sich das schon irgendwie regelt. Sondern mit einer konsistenten, langfristigen Strategie, die auf echten Signalen basiert.
@@ -585,7 +585,7 @@ export default function KIMarkenwahrnehmungPage() {
 
         <div className="bg-white border-2 border-brand-accent rounded-xl p-6 shadow-sm mt-10">
           <p className="text-lg md:text-xl font-semibold text-black leading-snug">
-            Zusammenfassung: KI-Markenwahrnehmung entsteht aus dem Konsens aller Quellen im Internet — Wikipedia, Presse, Bewertungen, Foren, deine Website. Du beeinflusst diesen Konsens durch Konsistenz, Drittquellen-Erwähnungen und echte Expertise. Nicht durch Tricks. Nicht durch eine Pressemeldung. Durch Arbeit. Langweilige, effektive, unverzichtbare Arbeit.
+            Zusammenfassung: KI-Markenwahrnehmung entsteht aus dem Konsens aller Quellen im Internet: Wikipedia, Presse, Bewertungen, Foren, deine Website. Du beeinflusst diesen Konsens durch Konsistenz, Drittquellen-Erwähnungen und echte Expertise. Nicht durch Tricks. Nicht durch eine Pressemeldung. Durch Arbeit. Langweilige, effektive, unverzichtbare Arbeit.
           </p>
         </div>
       </section>
@@ -616,7 +616,7 @@ export default function KIMarkenwahrnehmungPage() {
               E-E-A-T und KI-Sichtbarkeit
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Erfahrung, Expertise, Autorität und Vertrauenswürdigkeit — was KI-Systeme wirklich bewerten.
+              Erfahrung, Expertise, Autorität und Vertrauenswürdigkeit, was KI-Systeme wirklich bewerten.
             </p>
           </a>
 

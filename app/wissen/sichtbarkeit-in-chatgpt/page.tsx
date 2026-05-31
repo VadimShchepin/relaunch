@@ -420,7 +420,7 @@ const FactorsSection: React.FC = () => (
                     },
                     {
                         title: 'Strukturierte Daten und technische Signale',
-                        desc: 'Schema.org-Markup, saubere robots.txt, erlaubte AI-Crawler — diese technischen Grundlagen entscheiden, ob ChatGPT deine Inhalte überhaupt verarbeiten kann. Ohne technische KI-Sichtbarkeit hilft der beste Content nichts.',
+                        desc: 'Schema.org-Markup, saubere robots.txt, erlaubte AI-Crawler: diese technischen Grundlagen entscheiden, ob ChatGPT deine Inhalte überhaupt verarbeiten kann. Ohne technische KI-Sichtbarkeit hilft der beste Content nichts.',
                     },
                 ].map((factor, i) => (
                     <FadeIn key={i} delay={i * 50}>
@@ -456,22 +456,22 @@ const StrategiesSection: React.FC = () => (
                     {
                         num: '02',
                         title: 'Mach deine Marke über Bing findbar',
-                        text: 'ChatGPTs Live-Suche läuft über Bing. Nicht Google. Konkret: Melde dich bei Bing Webmaster Tools an. Reiche deine Sitemap ein. Bing bevorzugt exakte Keyword-Matches im Title-Tag, bewertet Social Signals (LinkedIn, Facebook) stärker als Google, und indexiert neue Seiten langsamer — also aktiv über die URL-Einreichung nachhelfen. Prüfe dein Bing-Ranking für „[deine Branche] Hamburg". Wenn du dort auf Seite 3 stehst, wird ChatGPT dich bei Live-Suchen nicht finden.',
+                        text: 'ChatGPTs Live-Suche läuft über Bing. Nicht Google. Konkret: Melde dich bei Bing Webmaster Tools an. Reiche deine Sitemap ein. Bing bevorzugt exakte Keyword-Matches im Title-Tag, bewertet Social Signals (LinkedIn, Facebook) stärker als Google, und indexiert neue Seiten langsamer, also aktiv über die URL-Einreichung nachhelfen. Prüfe dein Bing-Ranking für „[deine Branche] Hamburg". Wenn du dort auf Seite 3 stehst, wird ChatGPT dich bei Live-Suchen nicht finden.',
                     },
                     {
                         num: '03',
                         title: 'Baue lückenlose NAP-Konsistenz auf',
-                        text: 'Name, Adresse, Telefonnummer — überall identisch. ChatGPT gleicht Informationen aus dutzenden Quellen ab. Wenn deine Website „Mustermann GmbH" sagt, Google Business „Mustermann Digital" zeigt und Das Örtliche „Firma Mustermann" listet, wird ChatGPT unsicher und empfiehlt jemand anderen. Erstelle eine Tabelle mit allen Verzeichnissen, in denen du gelistet bist, und gleiche quartalsweise ab. Diese Konsistenz ist auch für AI Overviews bei Google entscheidend.',
+                        text: 'Name, Adresse, Telefonnummer: überall identisch. ChatGPT gleicht Informationen aus dutzenden Quellen ab. Wenn deine Website „Mustermann GmbH" sagt, Google Business „Mustermann Digital" zeigt und Das Örtliche „Firma Mustermann" listet, wird ChatGPT unsicher und empfiehlt jemand anderen. Erstelle eine Tabelle mit allen Verzeichnissen, in denen du gelistet bist, und gleiche quartalsweise ab. Diese Konsistenz ist auch für AI Overviews bei Google entscheidend.',
                     },
                     {
                         num: '04',
                         title: 'Erstelle Inhalte, die exakte ChatGPT-Prompts beantworten',
-                        text: 'ChatGPT-Nutzer fragen anders als Google-Nutzer. Sie schreiben ganze Sätze: „Welcher Steuerberater in Hamburg ist gut für Freelancer?", „Empfiehl mir eine Webdesign-Agentur in Hamburg, die sich mit Shopify auskennt", „Was kostet eine Website für ein kleines Unternehmen in Hamburg?". Erstelle Seiten, die genau diese Prompts als H2 aufgreifen und in den ersten zwei Sätzen direkt beantworten. ChatGPT bevorzugt Quellen, die sofort zur Sache kommen — nicht solche, die mit 500 Wörtern Einleitung beginnen.',
+                        text: 'ChatGPT-Nutzer fragen anders als Google-Nutzer. Sie schreiben ganze Sätze: „Welcher Steuerberater in Hamburg ist gut für Freelancer?", „Empfiehl mir eine Webdesign-Agentur in Hamburg, die sich mit Shopify auskennt", „Was kostet eine Website für ein kleines Unternehmen in Hamburg?". Erstelle Seiten, die genau diese Prompts als H2 aufgreifen und in den ersten zwei Sätzen direkt beantworten. ChatGPT bevorzugt Quellen, die sofort zur Sache kommen, nicht solche, die mit 500 Wörtern Einleitung beginnen.',
                     },
                     {
                         num: '05',
                         title: 'Erlaube GPTBot und OAI-SearchBot den Zugriff',
-                        text: 'OpenAI nutzt zwei Crawler: GPTBot für Trainingsdaten und OAI-SearchBot für die Live-Websuche. Prüfe deine robots.txt — viele CMS-Plugins und Security-Tools blockieren diese Bots pauschal. Stelle sicher, dass auch der Bing-Bot erlaubt ist, da er die Live-Suche speist. Drei Zeilen in der robots.txt entscheiden darüber, ob ChatGPT dich überhaupt finden kann. Mehr dazu in unserem Guide zur technischen KI-Sichtbarkeit.',
+                        text: 'OpenAI nutzt zwei Crawler: GPTBot für Trainingsdaten und OAI-SearchBot für die Live-Websuche. Prüfe deine robots.txt. Viele CMS-Plugins und Security-Tools blockieren diese Bots pauschal. Stelle sicher, dass auch der Bing-Bot erlaubt ist, da er die Live-Suche speist. Drei Zeilen in der robots.txt entscheiden darüber, ob ChatGPT dich überhaupt finden kann. Mehr dazu in unserem Guide zur technischen KI-Sichtbarkeit.',
                     },
                     {
                         num: '06',
@@ -481,7 +481,7 @@ const StrategiesSection: React.FC = () => (
                     {
                         num: '07',
                         title: 'Baue ein konsistentes Bewertungsprofil auf',
-                        text: 'ChatGPT wertet Bewertungen aus — nicht nur die Sterne, sondern auch den Inhalt. „Bester Steuerberater für Freelancer in Hamburg" in einer Google-Bewertung ist ein starkes Signal. Bitte zufriedene Kunden um spezifische Bewertungen, die deine Kernleistung und deinen Standort nennen. 50 generische 5-Sterne-Bewertungen zählen weniger als 20 detaillierte, die deine Spezialisierung beschreiben.',
+                        text: 'ChatGPT wertet Bewertungen aus: nicht nur die Sterne, sondern auch den Inhalt. „Bester Steuerberater für Freelancer in Hamburg" in einer Google-Bewertung ist ein starkes Signal. Bitte zufriedene Kunden um spezifische Bewertungen, die deine Kernleistung und deinen Standort nennen. 50 generische 5-Sterne-Bewertungen zählen weniger als 20 detaillierte, die deine Spezialisierung beschreiben.',
                     },
                 ].map((strategy, i) => (
                     <FadeIn key={i} delay={i * 50}>
@@ -534,11 +534,11 @@ const HamburgSection: React.FC = () => (
                     },
                     {
                         signal: 'Hamburger Branchenverzeichnisse',
-                        detail: 'Hamburg.de Firmenverzeichnis, Handelskammer-Mitgliederliste, Hamburg Tourismus (für Gastro/Hotellerie), lokale Handwerkskammer — diese Quellen bestätigen deine Hamburger Präsenz.',
+                        detail: 'Hamburg.de Firmenverzeichnis, Handelskammer-Mitgliederliste, Hamburg Tourismus (für Gastro/Hotellerie), lokale Handwerkskammer: diese Quellen bestätigen deine Hamburger Präsenz.',
                     },
                     {
                         signal: 'Bewertungen mit Hamburg-Bezug',
-                        detail: '„Bester Zahnarzt in Eppendorf", „Top-Steuerberater Hamburg Altona" — Bewertungen, die Stadtteil und Stadt nennen, sind lokale Ranking-Signale für ChatGPT.',
+                        detail: '„Bester Zahnarzt in Eppendorf", „Top-Steuerberater Hamburg Altona", Bewertungen, die Stadtteil und Stadt nennen, sind lokale Ranking-Signale für ChatGPT.',
                     },
                 ].map((item, i) => (
                     <FadeIn key={i} delay={i * 50}>
@@ -702,7 +702,7 @@ const FAQSection: React.FC = () => {
         },
         {
             q: 'Kann ich beeinflussen, was ChatGPT über mein Unternehmen sagt?',
-            a: 'Ja, indirekt. Du steuerst die Quellen: deine Website, Verzeichniseinträge, Presseartikel, Bewertungen. Konsistente und vertrauenswürdige Quellen verbessern die Darstellung. Ohne aktive Steuerung riskierst du KI-Halluzinationen — ChatGPT erfindet dann Fakten über dich.',
+            a: 'Ja, indirekt. Du steuerst die Quellen: deine Website, Verzeichniseinträge, Presseartikel, Bewertungen. Konsistente und vertrauenswürdige Quellen verbessern die Darstellung. Ohne aktive Steuerung riskierst du KI-Halluzinationen. ChatGPT erfindet dann Fakten über dich.',
         },
         {
             q: 'Wie lange dauert es, bis mein Unternehmen in ChatGPT erscheint?',
@@ -718,7 +718,7 @@ const FAQSection: React.FC = () => {
         },
         {
             q: 'Was ist der Unterschied zwischen GPTBot und OAI-SearchBot?',
-            a: 'GPTBot crawlt für zukünftige Trainingsdaten. OAI-SearchBot crawlt für die Live-Websuche. Beide müssen in der robots.txt erlaubt sein — wer einen blockiert, verliert einen Sichtbarkeitskanal.',
+            a: 'GPTBot crawlt für zukünftige Trainingsdaten. OAI-SearchBot crawlt für die Live-Websuche. Beide müssen in der robots.txt erlaubt sein, wer einen blockiert, verliert einen Sichtbarkeitskanal.',
         },
         {
             q: 'Was kostet ChatGPT-Optimierung für Unternehmen?',

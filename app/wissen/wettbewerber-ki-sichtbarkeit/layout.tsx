@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: 'https://aiseo.hamburg/wissen/wettbewerber-ki-sichtbarkeit',
     title: 'Warum dein Wettbewerber Kunden bekommt, die du nie siehst | aiseo.hamburg',
     description:
-      'Dein Wettbewerber wird von ChatGPT empfohlen. Du nicht. Diese Kunden tauchen nie in deiner Analytik auf — und du wirst es nie erfahren.',
+      'Dein Wettbewerber wird von ChatGPT empfohlen. Du nicht. Diese Kunden tauchen nie in deiner Analytik auf, und du wirst es nie erfahren.',
     siteName: 'aiseo.hamburg',
     images: [{ url: '/images/wissen/wettbewerber-ki-sichtbarkeit.jpg', width: 1200, height: 630, alt: 'Wettbewerber KI-Sichtbarkeit: Unsichtbare Leads' }],
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary',
     title: 'Warum dein Wettbewerber Kunden bekommt, die du nie siehst | aiseo.hamburg',
     description:
-      'Dein Wettbewerber wird von ChatGPT empfohlen. Du nicht. Diese Kunden tauchen nie in deiner Analytik auf — und du wirst es nie erfahren.',
+      'Dein Wettbewerber wird von ChatGPT empfohlen. Du nicht. Diese Kunden tauchen nie in deiner Analytik auf, und du wirst es nie erfahren.',
   },
   robots: {
     index: true,

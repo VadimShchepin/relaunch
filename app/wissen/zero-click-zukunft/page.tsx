@@ -9,15 +9,15 @@ import { Button } from '@/components/ui/Button';
 const FAQS = [
   {
     q: 'Was bedeutet Zero-Click genau?',
-    a: 'Zero-Click beschreibt Suchanfragen, bei denen der Nutzer die Antwort direkt in den Suchergebnissen oder in einer KI-Antwort erhält — ohne auf eine Website zu klicken. Bei Google passiert das durch Featured Snippets, Knowledge Panels und AI Overviews. Bei ChatGPT und Perplexity ist jede Antwort per Definition Zero-Click: Der Nutzer bekommt die Information direkt, ohne deine Website zu besuchen. Laut SparkToro-Daten (2025) enden bereits über 60 % aller Google-Suchen ohne einen einzigen Klick.',
+    a: 'Zero-Click beschreibt Suchanfragen, bei denen der Nutzer die Antwort direkt in den Suchergebnissen oder in einer KI-Antwort erhält, ohne auf eine Website zu klicken. Bei Google passiert das durch Featured Snippets, Knowledge Panels und AI Overviews. Bei ChatGPT und Perplexity ist jede Antwort per Definition Zero-Click: Der Nutzer bekommt die Information direkt, ohne deine Website zu besuchen. Laut SparkToro-Daten (2025) enden bereits über 60 % aller Google-Suchen ohne einen einzigen Klick.',
   },
   {
     q: 'Wie kann ich Geld verdienen, wenn niemand mehr auf meine Website klickt?',
-    a: 'Indem du das Modell umdenkst. Statt Traffic zu monetarisieren, monetarisierst du Vertrauen und Markenbekanntheit. Wenn ChatGPT deine Marke als Experten empfiehlt, kommen die qualifiziertesten Leads direkt — über Branded Search, direkte Anfragen oder Mundpropaganda. Ein Lead, der über eine KI-Empfehlung kommt, hat bereits Vertrauen. Der konvertiert 3–5x besser als ein zufälliger Google-Klick. Weniger Traffic, bessere Conversion, gleicher oder höherer Umsatz.',
+    a: 'Indem du das Modell umdenkst. Statt Traffic zu monetarisieren, monetarisierst du Vertrauen und Markenbekanntheit. Wenn ChatGPT deine Marke als Experten empfiehlt, kommen die qualifiziertesten Leads direkt: über Branded Search, direkte Anfragen oder Mundpropaganda. Ein Lead, der über eine KI-Empfehlung kommt, hat bereits Vertrauen. Der konvertiert 3–5x besser als ein zufälliger Google-Klick. Weniger Traffic, bessere Conversion, gleicher oder höherer Umsatz.',
   },
   {
     q: 'Stimmt die Gartner-Prognose von 50 % Traffic-Verlust wirklich?',
-    a: 'Gartner prognostiziert in „Predicts 2025: Search and AI", dass Marken bis 2028 über 50 % ihres organischen Traffics durch KI-gestützte Suche verlieren werden. Die Prognose bezieht sich auf informationsbasierte Suchanfragen — also genau die Anfragen, die KI-Systeme am besten beantworten können. Transaktionale Suchen (z. B. „Nike Air Max kaufen") sind weniger betroffen. Die Tendenz bestätigen auch Daten von SparkToro und Semrush: Der Anteil der Zero-Click-Suchen steigt seit Jahren kontinuierlich.',
+    a: 'Gartner prognostiziert in „Predicts 2025: Search and AI", dass Marken bis 2028 über 50 % ihres organischen Traffics durch KI-gestützte Suche verlieren werden. Die Prognose bezieht sich auf informationsbasierte Suchanfragen, also genau die Anfragen, die KI-Systeme am besten beantworten können. Transaktionale Suchen (z. B. „Nike Air Max kaufen") sind weniger betroffen. Die Tendenz bestätigen auch Daten von SparkToro und Semrush: Der Anteil der Zero-Click-Suchen steigt seit Jahren kontinuierlich.',
   },
   {
     q: 'Welche KPIs sollte ich statt Traffic messen?',
@@ -29,7 +29,7 @@ const FAQS = [
   },
   {
     q: 'Sollte ich aufhören, in SEO zu investieren?',
-    a: 'Nein. SEO bleibt relevant — es verändert sich nur. Google liefert nach wie vor den größten Teil des Web-Traffics. Aber du solltest SEO nicht mehr als einzigen Kanal betrachten. Die Kombination aus klassischem SEO und KI-Sichtbarkeit ist die Strategie der Zukunft. Wer nur in SEO investiert, verliert langfristig Traffic. Wer nur in KI investiert, lässt kurzfristig Geld liegen. Die Mischung macht es.',
+    a: 'Nein. SEO bleibt relevant. Es verändert sich nur. Google liefert nach wie vor den größten Teil des Web-Traffics. Aber du solltest SEO nicht mehr als einzigen Kanal betrachten. Die Kombination aus klassischem SEO und KI-Sichtbarkeit ist die Strategie der Zukunft. Wer nur in SEO investiert, verliert langfristig Traffic. Wer nur in KI investiert, lässt kurzfristig Geld liegen. Die Mischung macht es.',
   },
   {
     q: 'Betrifft Zero-Click auch Google Maps?',
@@ -37,7 +37,7 @@ const FAQS = [
   },
   {
     q: 'Wie profitieren kleine Unternehmen von der Zero-Click-Zukunft?',
-    a: 'Kleine Unternehmen haben einen entscheidenden Vorteil: Authentizität. KI-Systeme bevorzugen einzigartige Perspektiven und echte Erfahrungsberichte gegenüber generischem Content von Großkonzernen. Ein Handwerksbetrieb mit ehrlichen Case Studies und echter Expertise kann in KI-Antworten neben Branchenriesen erscheinen — weil KI Qualität über Quantität stellt. Die Eintrittsbarriere ist niedriger als bei klassischem SEO, wo große Budgets oft den Ausschlag geben.',
+    a: 'Kleine Unternehmen haben einen entscheidenden Vorteil: Authentizität. KI-Systeme bevorzugen einzigartige Perspektiven und echte Erfahrungsberichte gegenüber generischem Content von Großkonzernen. Ein Handwerksbetrieb mit ehrlichen Case Studies und echter Expertise kann in KI-Antworten neben Branchenriesen erscheinen, weil KI Qualität über Quantität stellt. Die Eintrittsbarriere ist niedriger als bei klassischem SEO, wo große Budgets oft den Ausschlag geben.',
   },
 ];
 
@@ -63,7 +63,7 @@ const articleJsonLd = {
   '@type': 'Article',
   headline: 'Zero-Click-Zukunft: Warum deine Website bald keinen Traffic mehr braucht',
   description:
-    'Gartner prognostiziert 50 % Traffic-Verlust bis 2028. Warum das kein Weltuntergang ist, sondern eine Chance — und welche neuen KPIs jetzt zählen.',
+    'Gartner prognostiziert 50 % Traffic-Verlust bis 2028. Warum das kein Weltuntergang ist, sondern eine Chance, und welche neuen KPIs jetzt zählen.',
   image: 'https://aiseo.hamburg/images/wissen/zero-click-zukunft.jpg',
   author: {
     '@type': 'Person',
@@ -140,7 +140,7 @@ export default function ZeroClickZukunftPage() {
       {/* ============================================================ */}
       <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-12">
         <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
-          <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR — Für die, die keine 50 % ihres Traffics verlieren wollen</h2>
+          <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR: Für die, die keine 50 % ihres Traffics verlieren wollen</h2>
           <ul className="space-y-3 text-gray-700 leading-relaxed">
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">1.</span>
@@ -176,10 +176,10 @@ export default function ZeroClickZukunftPage() {
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
           <p>
-            <strong className="text-black">Über 60 % aller Google-Suchen enden heute ohne einen einzigen Klick.</strong> Der Nutzer bekommt die Antwort direkt in den Suchergebnissen — durch Featured Snippets, Knowledge Panels, People Also Ask, und seit 2024 durch AI Overviews. Tendenz: steil steigend.
+            <strong className="text-black">Über 60 % aller Google-Suchen enden heute ohne einen einzigen Klick.</strong> Der Nutzer bekommt die Antwort direkt in den Suchergebnissen: durch Featured Snippets, Knowledge Panels, People Also Ask, und seit 2024 durch AI Overviews. Tendenz: steil steigend.
           </p>
           <p>
-            Und das ist nur Google. Bei ChatGPT, Perplexity und Claude gibt es gar keine Klicks. Die Antwort ist die Antwort. Fertig. Deine Website taucht vielleicht als Quelle auf — aber besucht wird sie nicht. Das ist, als würde ein Restaurantkritiker dein Restaurant empfehlen, aber alle bestellen bei Lieferando.
+            Und das ist nur Google. Bei ChatGPT, Perplexity und Claude gibt es gar keine Klicks. Die Antwort ist die Antwort. Fertig. Deine Website taucht vielleicht als Quelle auf. Aber besucht wird sie nicht. Das ist, als würde ein Restaurantkritiker dein Restaurant empfehlen, aber alle bestellen bei Lieferando.
           </p>
           <p>
             Das Problem ist nicht, dass die Nutzer faul sind. Das Problem ist, dass die Antwort oft ausreicht. Wenn ChatGPT mir in 3 Sekunden erklärt, was Content Marketing ist, warum sollte ich dann noch auf einen 3.000-Wörter-Blogartikel klicken, der mir das Gleiche mit einer 500-Wörter-Einleitung über „die heutige digitale Landschaft" erzählt?
@@ -188,7 +188,7 @@ export default function ZeroClickZukunftPage() {
 
         <div className="bg-white border-2 border-brand-accent rounded-xl p-6 shadow-sm my-8">
           <p className="text-lg md:text-xl font-semibold text-black leading-snug">
-            SparkToro / Datos (2025): 60 %+ der Google-Suchen enden Zero-Click. Gartner (2024): Bis 2028 verlieren Marken über 50 % ihres organischen Traffics. Das ist keine Prophezeiung — das ist Mathematik.
+            SparkToro / Datos (2025): 60 %+ der Google-Suchen enden Zero-Click. Gartner (2024): Bis 2028 verlieren Marken über 50 % ihres organischen Traffics. Das ist keine Prophezeiung. Das ist Mathematik.
           </p>
         </div>
       </section>
@@ -293,14 +293,14 @@ export default function ZeroClickZukunftPage() {
           Warum 50 % weniger Traffic kein Problem sein muss
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
-          Ja, du hast richtig gelesen. Die Hälfte deines Traffics verschwindet — und du könntest trotzdem mehr Umsatz machen. Klingt paradox? Ist Mathematik.
+          Ja, du hast richtig gelesen. Die Hälfte deines Traffics verschwindet, und du könntest trotzdem mehr Umsatz machen. Klingt paradox? Ist Mathematik.
         </p>
 
         <div className="space-y-6">
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">Die meisten deiner Besucher waren sowieso wertlos</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Sei ehrlich: Wie viel Prozent deines Traffics konvertiert? 1 %? 3 %? Der Rest sind Leute, die nach „Was ist [Begriff]" gesucht haben, 8 Sekunden auf deiner Seite waren und wieder gegangen sind. <strong className="text-black">Dieser Traffic war nie wertvoll. Er hat nur dein Dashboard gut aussehen lassen.</strong> Wenn KI diese Informationssucher direkt bedient, verlierst du Traffic — aber keine Kunden.
+              Sei ehrlich: Wie viel Prozent deines Traffics konvertiert? 1 %? 3 %? Der Rest sind Leute, die nach „Was ist [Begriff]" gesucht haben, 8 Sekunden auf deiner Seite waren und wieder gegangen sind. <strong className="text-black">Dieser Traffic war nie wertvoll. Er hat nur dein Dashboard gut aussehen lassen.</strong> Wenn KI diese Informationssucher direkt bedient, verlierst du Traffic, aber keine Kunden.
             </p>
           </div>
 
@@ -321,7 +321,7 @@ export default function ZeroClickZukunftPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">Marke schlägt Traffic</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              In der Zero-Click-Welt gewinnt die Marke, die KI-Systeme als vertrauenswürdig einstufen. Nicht die mit dem höchsten Traffic. Nicht die mit dem größten Budget. <strong className="text-black">Die mit der stärksten Reputation.</strong> Das ist eine grundlegende Demokratisierung: Ein 5-Personen-Unternehmen mit echter Expertise kann neben einem DAX-Konzern in KI-Antworten erscheinen — wenn der Content stimmt.
+              In der Zero-Click-Welt gewinnt die Marke, die KI-Systeme als vertrauenswürdig einstufen. Nicht die mit dem höchsten Traffic. Nicht die mit dem größten Budget. <strong className="text-black">Die mit der stärksten Reputation.</strong> Das ist eine grundlegende Demokratisierung: Ein 5-Personen-Unternehmen mit echter Expertise kann neben einem DAX-Konzern in KI-Antworten erscheinen, wenn der Content stimmt.
             </p>
           </div>
         </div>
@@ -350,7 +350,7 @@ export default function ZeroClickZukunftPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">2. Citation Rate</h3>
             <p className="text-lg text-gray-600 leading-relaxed mb-2">
-              <strong className="text-black">Wie oft wird deine Website als Quelle verlinkt?</strong> Perplexity zeigt Quellen mit Link. Google AI Overviews verlinken auf Quellen. Diese Zitierungen sind das neue Backlink-Äquivalent — nur wertvoller, weil sie direkt im Antwortkontext stehen.
+              <strong className="text-black">Wie oft wird deine Website als Quelle verlinkt?</strong> Perplexity zeigt Quellen mit Link. Google AI Overviews verlinken auf Quellen. Diese Zitierungen sind das neue Backlink-Äquivalent, nur wertvoller, weil sie direkt im Antwortkontext stehen.
             </p>
             <p className="text-sm text-gray-500">Frequenz: Monatlich messen. Vergleich mit Wettbewerbern.</p>
           </div>
@@ -389,7 +389,7 @@ export default function ZeroClickZukunftPage() {
           Was du jetzt tun solltest (statt in Panik zu verfallen)
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
-          Die Zero-Click-Zukunft kommt nicht übermorgen. Sie ist schon da. Aber du hast noch Zeit, dich richtig zu positionieren. Hier sind 6 konkrete Schritte — sortiert nach Priorität, nicht nach Schwierigkeit.
+          Die Zero-Click-Zukunft kommt nicht übermorgen. Sie ist schon da. Aber du hast noch Zeit, dich richtig zu positionieren. Hier sind 6 konkrete Schritte: sortiert nach Priorität, nicht nach Schwierigkeit.
         </p>
 
         <ol className="space-y-8">
@@ -421,7 +421,7 @@ export default function ZeroClickZukunftPage() {
                 3. Content für Zitierbarkeit optimieren
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Answer-First-Struktur, Quellenangaben, Schema-Markup, FAQ-Sektionen. Dein Content muss nicht für Klicks optimiert sein — er muss so gut sein, dass KI ihn als Quelle empfiehlt. <strong className="text-black">Ein einziger zitierbarer Satz ist mehr wert als 10.000 Wörter Fließtext.</strong>
+                Answer-First-Struktur, Quellenangaben, Schema-Markup, FAQ-Sektionen. Dein Content muss nicht für Klicks optimiert sein, er muss so gut sein, dass KI ihn als Quelle empfiehlt. <strong className="text-black">Ein einziger zitierbarer Satz ist mehr wert als 10.000 Wörter Fließtext.</strong>
               </p>
             </div>
           </li>
@@ -432,7 +432,7 @@ export default function ZeroClickZukunftPage() {
                 4. Markenaufbau priorisieren
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                In der Zero-Click-Welt gewinnt die Marke, die bekannt und vertrauenswürdig ist. PR, Thought Leadership, Kooperationen, Gastbeiträge in Fachmedien — alles, was deine Marke stärkt, stärkt auch deine KI-Sichtbarkeit. <strong className="text-black">KI-Systeme empfehlen bevorzugt Marken, die sie aus vielen vertrauenswürdigen Quellen kennen.</strong>
+                In der Zero-Click-Welt gewinnt die Marke, die bekannt und vertrauenswürdig ist. PR, Thought Leadership, Kooperationen, Gastbeiträge in Fachmedien, alles, was deine Marke stärkt, stärkt auch deine KI-Sichtbarkeit. <strong className="text-black">KI-Systeme empfehlen bevorzugt Marken, die sie aus vielen vertrauenswürdigen Quellen kennen.</strong>
               </p>
             </div>
           </li>
@@ -451,7 +451,7 @@ export default function ZeroClickZukunftPage() {
           <li>
             <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
               <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">
-                6. Diversifiziere — und zwar jetzt
+                6. Diversifiziere, und zwar jetzt
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Wer 80 % seines Traffics von Google bekommt, hat ein Klumpenrisiko, das jeden Risikomanager zum Weinen bringen würde. Baue KI-Sichtbarkeit als zweiten Kanal auf. <strong className="text-black">SEO + KI-Sichtbarkeit + Social + E-Mail + Community.</strong> Nicht alles auf einmal. Aber auch nicht alles auf eine Karte.
@@ -525,7 +525,7 @@ export default function ZeroClickZukunftPage() {
 
         <div className="bg-white border-2 border-brand-accent rounded-xl p-6 shadow-sm mt-8">
           <p className="text-lg md:text-xl font-semibold text-black leading-snug">
-            Die Zero-Click-Zukunft bestraft Mittelmäßigkeit und belohnt Substanz. Das ist die beste Nachricht seit Jahren — wenn du auf der richtigen Seite stehst.
+            Die Zero-Click-Zukunft bestraft Mittelmäßigkeit und belohnt Substanz. Das ist die beste Nachricht seit Jahren, wenn du auf der richtigen Seite stehst.
           </p>
         </div>
       </section>
@@ -575,7 +575,7 @@ export default function ZeroClickZukunftPage() {
               KI-Sichtbarkeit messen
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Alle Tools und Methoden, um deine KI-Präsenz zu tracken — statt nur Traffic zu zählen.
+              Alle Tools und Methoden, um deine KI-Präsenz zu tracken, statt nur Traffic zu zählen.
             </p>
           </a>
 
@@ -587,7 +587,7 @@ export default function ZeroClickZukunftPage() {
               Was ist GEO?
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Generative Engine Optimization — die Optimierung für KI-gestützte Suchmaschinen.
+              Generative Engine Optimization, die Optimierung für KI-gestützte Suchmaschinen.
             </p>
           </a>
 
@@ -599,7 +599,7 @@ export default function ZeroClickZukunftPage() {
               KI-Markenwahrnehmung
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Wie KI-Systeme deine Marke wahrnehmen — und wie du das beeinflusst.
+              Wie KI-Systeme deine Marke wahrnehmen, und wie du das beeinflusst.
             </p>
           </a>
         </div>
@@ -614,7 +614,7 @@ export default function ZeroClickZukunftPage() {
             Bereit für die Zero-Click-Zukunft?
           </h2>
           <p className="text-lg text-gray-400 leading-relaxed mb-8 max-w-xl mx-auto">
-            Finde heraus, wie KI-Systeme deine Marke heute empfehlen — und was du tun musst, damit sie es morgen tun. Kostenlose Analyse. Ehrliche Antworten.
+            Finde heraus, wie KI-Systeme deine Marke heute empfehlen, und was du tun musst, damit sie es morgen tun. Kostenlose Analyse. Ehrliche Antworten.
           </p>
           <Button href="/ai-sichtbarkeit-now" primary text="Kostenlose KI-Sichtbarkeits-Analyse" />
         </div>

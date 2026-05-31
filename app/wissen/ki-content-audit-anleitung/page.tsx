@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/Button';
 const FAQS = [
   {
     q: 'Was ist ein KI-Content-Audit und warum brauche ich einen?',
-    a: 'Ein KI-Content-Audit bewertet deine bestehenden Inhalte danach, ob KI-Systeme wie ChatGPT, Perplexity und Google AI Overviews sie als Quelle nutzen würden. Im Unterschied zu einem klassischen SEO-Audit geht es nicht um Rankings und Keywords, sondern um Zitierbarkeit, Struktur und Aktualität. Du brauchst einen, weil laut Gartner bis 2028 über 50 % des organischen Traffics durch KI-gestützte Suche verloren gehen — und nur zitierbarer Content diesen Verlust kompensiert.',
+    a: 'Ein KI-Content-Audit bewertet deine bestehenden Inhalte danach, ob KI-Systeme wie ChatGPT, Perplexity und Google AI Overviews sie als Quelle nutzen würden. Im Unterschied zu einem klassischen SEO-Audit geht es nicht um Rankings und Keywords, sondern um Zitierbarkeit, Struktur und Aktualität. Du brauchst einen, weil laut Gartner bis 2028 über 50 % des organischen Traffics durch KI-gestützte Suche verloren gehen, und nur zitierbarer Content diesen Verlust kompensiert.',
   },
   {
     q: 'Wie oft sollte ich einen KI-Content-Audit durchführen?',
@@ -17,15 +17,15 @@ const FAQS = [
   },
   {
     q: 'Wie viele Seiten sollte ich beim ersten Audit bewerten?',
-    a: 'Starte mit deinen Top-50-Seiten nach Traffic und Geschäftsrelevanz. Die Versuchung, gleich alle 500 Seiten zu auditieren, ist groß — aber unrealistisch. Fokus schlägt Vollständigkeit. Wenn die Top 50 optimiert sind, nimmst du die nächsten 50. So hast du in 3 Monaten die wichtigsten Inhalte abgearbeitet, statt 6 Monate in einer Excel-Tabelle zu verschwinden.',
+    a: 'Starte mit deinen Top-50-Seiten nach Traffic und Geschäftsrelevanz. Die Versuchung, gleich alle 500 Seiten zu auditieren, ist groß, aber unrealistisch. Fokus schlägt Vollständigkeit. Wenn die Top 50 optimiert sind, nimmst du die nächsten 50. So hast du in 3 Monaten die wichtigsten Inhalte abgearbeitet, statt 6 Monate in einer Excel-Tabelle zu verschwinden.',
   },
   {
     q: 'Was ist der Unterschied zwischen einem klassischen Content-Audit und einem KI-Content-Audit?',
-    a: 'Ein klassischer Content-Audit bewertet SEO-Performance: Rankings, Traffic, Keyword-Abdeckung, Backlinks. Ein KI-Content-Audit bewertet KI-Zitierbarkeit: Answer-First-Struktur, Quellenangaben, Schema-Markup, semantische Vollständigkeit und ob der Content als vertrauenswürdige Quelle extrahierbar ist. Beide Audits ergänzen sich — ein Content, der für KI optimiert ist, performt in der Regel auch bei Google besser.',
+    a: 'Ein klassischer Content-Audit bewertet SEO-Performance: Rankings, Traffic, Keyword-Abdeckung, Backlinks. Ein KI-Content-Audit bewertet KI-Zitierbarkeit: Answer-First-Struktur, Quellenangaben, Schema-Markup, semantische Vollständigkeit und ob der Content als vertrauenswürdige Quelle extrahierbar ist. Beide Audits ergänzen sich, ein Content, der für KI optimiert ist, performt in der Regel auch bei Google besser.',
   },
   {
     q: 'Soll ich schlechten Content löschen oder überarbeiten?',
-    a: 'Kommt auf den KI-Audit-Score an. Seiten mit 0–3 Punkten im Scoring (von 12) und wenig Traffic: löschen oder redirecten. Seiten mit 4–7 Punkten: überarbeiten, wenn sie thematisch relevant sind. Seiten mit 8+ Punkten: Feintuning. Grundregel: Lieber 50 exzellente Seiten als 500 mittelmäßige. KI-Systeme bevorzugen Qualität über Quantität — und Google seit dem Helpful Content Update ebenfalls.',
+    a: 'Kommt auf den KI-Audit-Score an. Seiten mit 0–3 Punkten im Scoring (von 12) und wenig Traffic: löschen oder redirecten. Seiten mit 4–7 Punkten: überarbeiten, wenn sie thematisch relevant sind. Seiten mit 8+ Punkten: Feintuning. Grundregel: Lieber 50 exzellente Seiten als 500 mittelmäßige. KI-Systeme bevorzugen Qualität über Quantität, und Google seit dem Helpful Content Update ebenfalls.',
   },
   {
     q: 'Welche Tools brauche ich für einen KI-Content-Audit?',
@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: 'Wie lange dauert ein KI-Content-Audit für 100 Seiten?',
-    a: 'Mit dem Scoring-System aus diesem Guide: 2–3 Arbeitstage für die Bewertung, plus 1 Tag für die Priorisierung und Aktionsplanung. Die eigentliche Optimierung dauert je nach Umfang 2–8 Wochen. Wichtig: Der Audit selbst ist nur die Diagnose. Die Therapie — also das Umschreiben, Zusammenführen und Löschen — ist der eigentliche Aufwand.',
+    a: 'Mit dem Scoring-System aus diesem Guide: 2–3 Arbeitstage für die Bewertung, plus 1 Tag für die Priorisierung und Aktionsplanung. Die eigentliche Optimierung dauert je nach Umfang 2–8 Wochen. Wichtig: Der Audit selbst ist nur die Diagnose. Die Therapie (also das Umschreiben, Zusammenführen und Löschen) ist der eigentliche Aufwand.',
   },
 ];
 
@@ -127,7 +127,7 @@ export default function KIContentAuditPage() {
           Der große KI-Content-Audit: So prüfst du, ob dein Content 2027 überlebt
         </h1>
         <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
-          Du sitzt auf 500 Blogposts und keiner wird von ChatGPT zitiert. Das ist, als hättest du eine Bibliothek voller Bücher — in einer Sprache, die niemand mehr spricht. Zeit für eine ehrliche Inventur.
+          Du sitzt auf 500 Blogposts und keiner wird von ChatGPT zitiert. Das ist, als hättest du eine Bibliothek voller Bücher, in einer Sprache, die niemand mehr spricht. Zeit für eine ehrliche Inventur.
         </p>
       </section>
 
@@ -136,7 +136,7 @@ export default function KIContentAuditPage() {
       {/* ============================================================ */}
       <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-12">
         <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
-          <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR — Wer keine Zeit hat</h2>
+          <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR: Wer keine Zeit hat</h2>
           <ul className="space-y-3 text-gray-700 leading-relaxed">
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">1.</span>
@@ -172,7 +172,7 @@ export default function KIContentAuditPage() {
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
           <p>
-            Du hast alles richtig gemacht. Keywords recherchiert, Artikel geschrieben, Backlinks aufgebaut. Dein Blog rankt. Dein Marketing-Team ist stolz. <strong className="text-black">Und dann fragt jemand ChatGPT nach deinem Thema — und du existierst nicht.</strong>
+            Du hast alles richtig gemacht. Keywords recherchiert, Artikel geschrieben, Backlinks aufgebaut. Dein Blog rankt. Dein Marketing-Team ist stolz. <strong className="text-black">Und dann fragt jemand ChatGPT nach deinem Thema, und du existierst nicht.</strong>
           </p>
           <p>
             Das ist ungefähr so, als hättest du jahrelang eine Telefonbuch-Anzeige optimiert, während die Welt auf Smartphones umgestiegen ist. Nicht falsch gewesen. Aber jetzt halt auch nicht mehr richtig.
@@ -184,7 +184,7 @@ export default function KIContentAuditPage() {
 
         <div className="bg-white border-2 border-brand-accent rounded-xl p-6 shadow-sm my-8">
           <p className="text-lg md:text-xl font-semibold text-black leading-snug">
-            Gartner (2024): Bis 2028 werden Marken über 50 % ihres organischen Traffics durch KI-gestützte Suche verlieren. Wer seinen Content nicht für KI-Zitierbarkeit optimiert, verliert nicht morgen — aber übermorgen.
+            Gartner (2024): Bis 2028 werden Marken über 50 % ihres organischen Traffics durch KI-gestützte Suche verlieren. Wer seinen Content nicht für KI-Zitierbarkeit optimiert, verliert nicht morgen, aber übermorgen.
           </p>
         </div>
 
@@ -392,7 +392,7 @@ export default function KIContentAuditPage() {
           <li>
             <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
               <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">
-                Schritt 1: Inventar erstellen — Was hast du überhaupt?
+                Schritt 1: Inventar erstellen, was hast du überhaupt?
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-4">
                 Die meisten Unternehmen wissen nicht, wie viele Seiten sie haben. Ernsthaft. Sie haben „irgendwas um die 200", und wenn du Screaming Frog drüberlaufen lässt, sind es 847. Davon 300 mit Thin Content, 50 Duplikate und 12, die seit 2019 nicht aktualisiert wurden.
@@ -400,7 +400,7 @@ export default function KIContentAuditPage() {
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-3">
                   <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-                  <span>Screaming Frog oder Sitemap exportieren — alle URLs in eine Tabelle</span>
+                  <span>Screaming Frog oder Sitemap exportieren, alle URLs in eine Tabelle</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
@@ -421,7 +421,7 @@ export default function KIContentAuditPage() {
           <li>
             <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
               <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">
-                Schritt 2: Priorisieren — Die Top 50 zuerst
+                Schritt 2: Priorisieren, die Top 50 zuerst
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-4">
                 Du willst nicht alle 500 Seiten gleichzeitig bewerten. Das ist, als würdest du versuchen, 500 Patienten gleichzeitig zu operieren. Sortiere nach zwei Kriterien: <strong className="text-black">Traffic (höchster zuerst)</strong> und <strong className="text-black">Geschäftsrelevanz</strong> (Seiten, die direkt Umsatz generieren). Die Schnittmenge sind deine Top 50.
@@ -437,7 +437,7 @@ export default function KIContentAuditPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-                  <span>Duplikate zusammenführen — eine Liste mit 50 Seiten</span>
+                  <span>Duplikate zusammenführen, eine Liste mit 50 Seiten</span>
                 </li>
               </ul>
             </div>
@@ -446,10 +446,10 @@ export default function KIContentAuditPage() {
           <li>
             <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
               <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">
-                Schritt 3: Scoring — Jede Seite durch die 12 Kriterien jagen
+                Schritt 3: Scoring, jede Seite durch die 12 Kriterien jagen
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-4">
-                Jetzt wird es ernst. Öffne jede der 50 Seiten und bewerte sie mit dem Scoring-System oben. 0, 1 oder 2 Punkte pro Kriterium. Maximal 24 Punkte. Sei brutal ehrlich. Dein Content wird es dir nicht übel nehmen — er hat keine Gefühle. Im Gegensatz zu dir, wenn ChatGPT ihn ignoriert.
+                Jetzt wird es ernst. Öffne jede der 50 Seiten und bewerte sie mit dem Scoring-System oben. 0, 1 oder 2 Punkte pro Kriterium. Maximal 24 Punkte. Sei brutal ehrlich. Dein Content wird es dir nicht übel nehmen, er hat keine Gefühle. Im Gegensatz zu dir, wenn ChatGPT ihn ignoriert.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-3">
@@ -462,7 +462,7 @@ export default function KIContentAuditPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-                  <span>Zusätzlich: ChatGPT/Perplexity nach dem Thema fragen — wirst du zitiert?</span>
+                  <span>Zusätzlich: ChatGPT/Perplexity nach dem Thema fragen, wirst du zitiert?</span>
                 </li>
               </ul>
             </div>
@@ -471,7 +471,7 @@ export default function KIContentAuditPage() {
           <li>
             <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
               <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">
-                Schritt 4: Entscheidung — Updaten, Zusammenführen oder Löschen
+                Schritt 4: Entscheidung, updaten, zusammenführen oder löschen
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-4">
                 Jede Seite bekommt genau eine Aktion. Kein „schauen wir mal". Kein „lass ich erstmal so". Das ist der Moment, in dem du dich vom digitalen Messie-Syndrom verabschiedest.
@@ -508,10 +508,10 @@ export default function KIContentAuditPage() {
           <li>
             <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
               <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">
-                Schritt 5: Umsetzen — Und zwar jetzt, nicht nächstes Quartal
+                Schritt 5: Umsetzen, und zwar jetzt, nicht nächstes Quartal
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-4">
-                Die Audit-Ergebnisse verrotten schneller als ein offener Joghurt im Sommer. Plane die Umsetzung sofort. Zuerst die Quick Wins (Feintuning-Seiten), dann die Überarbeitungen, zuletzt die Zusammenführungen. Löschen kannst du zwischendurch — das geht schnell und fühlt sich befreiend an.
+                Die Audit-Ergebnisse verrotten schneller als ein offener Joghurt im Sommer. Plane die Umsetzung sofort. Zuerst die Quick Wins (Feintuning-Seiten), dann die Überarbeitungen, zuletzt die Zusammenführungen. Löschen kannst du zwischendurch, das geht schnell und fühlt sich befreiend an.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-3">
@@ -528,7 +528,7 @@ export default function KIContentAuditPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-                  <span>Woche 12: Ergebnisse prüfen — hat sich die KI-Zitierung verbessert?</span>
+                  <span>Woche 12: Ergebnisse prüfen, hat sich die KI-Zitierung verbessert?</span>
                 </li>
               </ul>
             </div>
@@ -544,26 +544,26 @@ export default function KIContentAuditPage() {
           Die 5 Content-Todsünden: Was KI-Systeme garantiert ignorieren
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
-          Du kannst das beste Scoring-System der Welt haben — wenn dein Content diese Sünden begeht, hilft kein Audit. Nur ein Exorzismus.
+          Du kannst das beste Scoring-System der Welt haben, wenn dein Content diese Sünden begeht, hilft kein Audit. Nur ein Exorzismus.
         </p>
 
         <div className="space-y-6">
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">1. Die 500-Wörter-Einleitung vor der eigentlichen Antwort</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              „In der heutigen schnelllebigen digitalen Welt..." — wenn dein Artikel so anfängt, hat ChatGPT bereits aufgehört zu lesen. Das ist der Content-Equivalent von jemandem, der 10 Minuten braucht, um zu erklären, warum er gleich etwas Wichtiges sagen wird. <strong className="text-black">KI extrahiert die ersten 2–3 Sätze. Wenn dort keine Antwort steht, existiert dein Artikel nicht.</strong>
+              „In der heutigen schnelllebigen digitalen Welt...", wenn dein Artikel so anfängt, hat ChatGPT bereits aufgehört zu lesen. Das ist der Content-Equivalent von jemandem, der 10 Minuten braucht, um zu erklären, warum er gleich etwas Wichtiges sagen wird. <strong className="text-black">KI extrahiert die ersten 2–3 Sätze. Wenn dort keine Antwort steht, existiert dein Artikel nicht.</strong>
             </p>
           </div>
 
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">2. „Laut Experten" ohne zu sagen, welche Experten</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Welche Experten? Wo? Wann? „Studien zeigen" — welche Studien? Das ist, als würdest du in einer Prüfung schreiben „Irgendein schlauer Typ hat mal gesagt...". <strong className="text-black">Keine Quelle = keine Glaubwürdigkeit = keine Zitierung.</strong> KI-Systeme bevorzugen verifizierbare Aussagen. „Laut Gartner (2024)" wird zitiert. „Laut Experten" wird ignoriert.
+              Welche Experten? Wo? Wann? „Studien zeigen", welche Studien? Das ist, als würdest du in einer Prüfung schreiben „Irgendein schlauer Typ hat mal gesagt...". <strong className="text-black">Keine Quelle = keine Glaubwürdigkeit = keine Zitierung.</strong> KI-Systeme bevorzugen verifizierbare Aussagen. „Laut Gartner (2024)" wird zitiert. „Laut Experten" wird ignoriert.
             </p>
           </div>
 
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
-            <h3 className="text-xl font-semibold text-black mb-3">3. Content von 2022 ohne Update — für immer eingefroren</h3>
+            <h3 className="text-xl font-semibold text-black mb-3">3. Content von 2022 ohne Update, für immer eingefroren</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
               Dein „Ultimativer Guide zu SEO 2022" ist jetzt so aktuell wie ein Reiseführer für die DDR. Perplexity und Google AI bevorzugen aktuelle Quellen. ChatGPT gewichtet in neueren Trainingsläufen aktuellere Inhalte höher. <strong className="text-black">Ein Artikel ohne sichtbares Update-Datum ist für KI-Systeme verdächtig.</strong> Entweder aktualisieren oder begraben.
             </p>
@@ -572,14 +572,14 @@ export default function KIContentAuditPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">4. Drei Artikel zum gleichen Thema, die sich gegenseitig kannibalisieren</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Du hast „Was ist SEO?", „SEO erklärt" und „SEO für Anfänger" — drei Artikel, die alle das Gleiche sagen, nur mit unterschiedlichen Überschriften. Das ist, als würdest du drei Bewerbungen für die gleiche Stelle schicken, jede mit einem anderen Foto. <strong className="text-black">Zusammenführen. Ein starker Artikel schlägt drei schwache. Immer.</strong>
+              Du hast „Was ist SEO?", „SEO erklärt" und „SEO für Anfänger", drei Artikel, die alle das Gleiche sagen, nur mit unterschiedlichen Überschriften. Das ist, als würdest du drei Bewerbungen für die gleiche Stelle schicken, jede mit einem anderen Foto. <strong className="text-black">Zusammenführen. Ein starker Artikel schlägt drei schwache. Immer.</strong>
             </p>
           </div>
 
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">5. 3.000 Wörter Fließtext ohne eine einzige Zwischenüberschrift</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Herzlichen Glückwunsch, du hast einen Roman geschrieben. Leider lesen KI-Systeme keine Romane. Sie parsen Inhalte anhand von Struktur — H2, H3, Listen, Tabellen. Ein 3.000-Wörter-Textblock ist für ein LLM wie ein Puzzle ohne Bild auf der Schachtel. <strong className="text-black">Theoretisch lösbar, praktisch ignoriert.</strong>
+              Herzlichen Glückwunsch, du hast einen Roman geschrieben. Leider lesen KI-Systeme keine Romane. Sie parsen Inhalte anhand von Struktur: H2, H3, Listen, Tabellen. Ein 3.000-Wörter-Textblock ist für ein LLM wie ein Puzzle ohne Bild auf der Schachtel. <strong className="text-black">Theoretisch lösbar, praktisch ignoriert.</strong>
             </p>
           </div>
         </div>
@@ -594,7 +594,7 @@ export default function KIContentAuditPage() {
         </h2>
 
         <p className="text-lg text-gray-600 leading-relaxed mb-8">
-          Nehmen wir eine typische B2B-Website mit 200 Seiten. Nach dem Audit sieht die Verteilung erfahrungsgemäß so aus — und ja, das ist deprimierend. Aber es ist ehrlich.
+          Nehmen wir eine typische B2B-Website mit 200 Seiten. Nach dem Audit sieht die Verteilung erfahrungsgemäß so aus, und ja, das ist deprimierend. Aber es ist ehrlich.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-6 mb-8">
@@ -625,7 +625,7 @@ export default function KIContentAuditPage() {
 
         <div className="bg-white border-2 border-brand-accent rounded-xl p-6 shadow-sm">
           <p className="text-lg md:text-xl font-semibold text-black leading-snug">
-            Die typische B2B-Website hat nach dem KI-Audit 65 % Ballast. Das klingt brutal. Ist es auch. Aber nach der Bereinigung hast du 35 % Content, der tatsächlich Wert generiert — statt 200 Seiten, die sich gegenseitig die Sichtbarkeit stehlen.
+            Die typische B2B-Website hat nach dem KI-Audit 65 % Ballast. Das klingt brutal. Ist es auch. Aber nach der Bereinigung hast du 35 % Content, der tatsächlich Wert generiert, statt 200 Seiten, die sich gegenseitig die Sichtbarkeit stehlen.
           </p>
         </div>
       </section>
@@ -649,7 +649,7 @@ export default function KIContentAuditPage() {
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-              <span><strong className="text-black">Top-10-Seiten: Ersten Absatz umschreiben.</strong> Die Antwort muss in den ersten 2–3 Sätzen stehen. Alles davor ist Zeitverschwendung — für den Leser und für die KI.</span>
+              <span><strong className="text-black">Top-10-Seiten: Ersten Absatz umschreiben.</strong> Die Antwort muss in den ersten 2–3 Sätzen stehen. Alles davor ist Zeitverschwendung, für den Leser und für die KI.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
@@ -657,7 +657,7 @@ export default function KIContentAuditPage() {
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-              <span><strong className="text-black">Article-Schema-Markup implementieren</strong> — mit Autor, Datum, Publisher. Gibt KI-Systemen die Metadaten, die sie brauchen.</span>
+              <span><strong className="text-black">Article-Schema-Markup implementieren</strong>, mit Autor, Datum, Publisher. Gibt KI-Systemen die Metadaten, die sie brauchen.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
@@ -763,7 +763,7 @@ export default function KIContentAuditPage() {
             Keine Lust, 500 Seiten selbst zu bewerten?
           </h2>
           <p className="text-lg text-gray-400 leading-relaxed mb-8 max-w-xl mx-auto">
-            Wir machen den KI-Content-Audit für dich. Scoring, Priorisierung, Aktionsplan — in 5 Werktagen statt 5 Wochen. Brutal ehrlich. Garantiert.
+            Wir machen den KI-Content-Audit für dich. Scoring, Priorisierung, Aktionsplan, in 5 Werktagen statt 5 Wochen. Brutal ehrlich. Garantiert.
           </p>
           <Button href="/ai-sichtbarkeit-now" primary text="Kostenlosen KI-Content-Audit anfragen" />
         </div>

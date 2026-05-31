@@ -138,7 +138,14 @@ export default function RootLayout({
                                 "name": "Hamburg",
                                 "sameAs": "https://de.wikipedia.org/wiki/Hamburg"
                             },
-                            "serviceType": ["AI SEO", "KI-Sichtbarkeit", "GEO", "AEO", "ChatGPT Optimierung", "website development"],
+                            "knowsAbout": ["AI SEO", "KI-Sichtbarkeit", "GEO", "AEO", "ChatGPT Optimierung", "website development"],
+                            "makesOffer": [
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI SEO", "serviceType": "AI SEO" } },
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "KI-Sichtbarkeit", "serviceType": "KI-Sichtbarkeit" } },
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Generative Engine Optimization", "serviceType": "GEO" } },
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Answer Engine Optimization", "serviceType": "AEO" } },
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "ChatGPT Optimierung", "serviceType": "ChatGPT Optimierung" } }
+                            ],
                             "priceRange": "€€",
                             "aggregateRating": {
                                 "@type": "AggregateRating",

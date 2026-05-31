@@ -9,11 +9,11 @@ import { Button } from '@/components/ui/Button';
 const FAQS = [
   {
     q: 'Muss ich meine SEO-Agentur kündigen?',
-    a: 'Nicht unbedingt. Wenn deine Agentur gute technische SEO-Arbeit leistet, kannst du sie behalten — und AI SEO als zweiten Kanal dazunehmen. Das Problem entsteht erst, wenn deine Agentur behauptet, dass KI-Sichtbarkeit „nicht nötig" sei oder „automatisch mitkommt". Dann ist es Zeit für ein ernstes Gespräch. Oder einen Wechsel.',
+    a: 'Nicht unbedingt. Wenn deine Agentur gute technische SEO-Arbeit leistet, kannst du sie behalten, und AI SEO als zweiten Kanal dazunehmen. Das Problem entsteht erst, wenn deine Agentur behauptet, dass KI-Sichtbarkeit „nicht nötig" sei oder „automatisch mitkommt". Dann ist es Zeit für ein ernstes Gespräch. Oder einen Wechsel.',
   },
   {
     q: 'Kann ich AI SEO parallel zu klassischem SEO machen?',
-    a: 'Ja, und genau das empfehlen wir. AI SEO baut auf gutem technischem SEO auf. Saubere Seitenstruktur, schnelle Ladezeiten, valides Schema-Markup — all das hilft beiden Kanälen. Der Unterschied liegt in der Content-Strategie: Statt nur für Google-Rankings zu optimieren, optimierst du zusätzlich für KI-Zitierbarkeit. Das eine schließt das andere nicht aus.',
+    a: 'Ja, und genau das empfehlen wir. AI SEO baut auf gutem technischem SEO auf. Saubere Seitenstruktur, schnelle Ladezeiten, valides Schema-Markup, all das hilft beiden Kanälen. Der Unterschied liegt in der Content-Strategie: Statt nur für Google-Rankings zu optimieren, optimierst du zusätzlich für KI-Zitierbarkeit. Das eine schließt das andere nicht aus.',
   },
   {
     q: 'Was kostet AI SEO im Vergleich zu klassischem SEO?',
@@ -21,11 +21,11 @@ const FAQS = [
   },
   {
     q: 'Wie schnell sehe ich Ergebnisse mit AI SEO?',
-    a: 'Die ersten KI-Erwähnungen können bereits nach 2–4 Wochen erscheinen, besonders bei Perplexity und Google AI Overviews. Messbare Business-Ergebnisse — also Leads und Anfragen über KI-Kanäle — sehen wir typischerweise nach 6–10 Wochen. Zum Vergleich: Klassisches SEO braucht 6–12 Monate für vergleichbare Ergebnisse.',
+    a: 'Die ersten KI-Erwähnungen können bereits nach 2–4 Wochen erscheinen, besonders bei Perplexity und Google AI Overviews. Messbare Business-Ergebnisse (also Leads und Anfragen über KI-Kanäle) sehen wir typischerweise nach 6–10 Wochen. Zum Vergleich: Klassisches SEO braucht 6–12 Monate für vergleichbare Ergebnisse.',
   },
   {
     q: 'Funktioniert AI SEO auch für kleine Unternehmen?',
-    a: 'Gerade für kleine Unternehmen. KI-Systeme bevorzugen echte Expertise und Authentizität gegenüber großen Budgets. Ein Handwerksbetrieb mit echten Case Studies und spezifischem Fachwissen kann in KI-Antworten neben Branchenriesen erscheinen — ohne deren Millionenbudgets. Die Eintrittsbarriere ist niedriger als bei klassischem SEO, wo Domain Authority und Backlink-Profile entscheiden.',
+    a: 'Gerade für kleine Unternehmen. KI-Systeme bevorzugen echte Expertise und Authentizität gegenüber großen Budgets. Ein Handwerksbetrieb mit echten Case Studies und spezifischem Fachwissen kann in KI-Antworten neben Branchenriesen erscheinen, ohne deren Millionenbudgets. Die Eintrittsbarriere ist niedriger als bei klassischem SEO, wo Domain Authority und Backlink-Profile entscheiden.',
   },
   {
     q: 'Was passiert, wenn ich gar nichts mache?',
@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: 'Woran erkenne ich, ob meine aktuelle Agentur AI SEO kann?',
-    a: 'Stell drei einfache Fragen: 1) Haben wir eine llms.txt-Datei? 2) Wie oft wird unsere Marke in ChatGPT und Perplexity erwähnt? 3) Welche KI-spezifischen KPIs tracken wir? Wenn die Antwort dreimal „Nein" oder „Weiß ich nicht" lautet, kann deine Agentur kein AI SEO. Das ist nicht böswillig — die meisten Agenturen haben sich einfach noch nicht damit beschäftigt.',
+    a: 'Stell drei einfache Fragen: 1) Haben wir eine llms.txt-Datei? 2) Wie oft wird unsere Marke in ChatGPT und Perplexity erwähnt? 3) Welche KI-spezifischen KPIs tracken wir? Wenn die Antwort dreimal „Nein" oder „Weiß ich nicht" lautet, kann deine Agentur kein AI SEO. Das ist nicht böswillig, die meisten Agenturen haben sich einfach noch nicht damit beschäftigt.',
   },
 ];
 
@@ -57,9 +57,9 @@ const faqJsonLd = {
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Deine SEO-Agentur liefert Rankings, aber keine Kunden — Warum AI SEO der nächste Schritt ist',
+  headline: 'Deine SEO-Agentur liefert Rankings, aber keine Kunden: warum AI SEO der nächste Schritt ist',
   description:
-    'Du zahlst 2.000–10.000 Euro im Monat für SEO, aber KI-Systeme ignorieren dich komplett. Warum klassisches SEO allein nicht mehr reicht — und was AI SEO stattdessen liefert.',
+    'Du zahlst 2.000–10.000 Euro im Monat für SEO, aber KI-Systeme ignorieren dich komplett. Warum klassisches SEO allein nicht mehr reicht, und was AI SEO stattdessen liefert.',
   image: 'https://aiseo.hamburg/images/wissen/seo-agentur-vs-ai-seo.jpg',
   author: {
     '@type': 'Person',

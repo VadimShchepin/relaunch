@@ -59,7 +59,7 @@ const articleJsonLd = {
   '@type': 'Article',
   headline: 'Warum dein Wettbewerber Kunden bekommt, die du nie siehst',
   description:
-    'Dein Wettbewerber wird von ChatGPT empfohlen. Du nicht. Diese Kunden tauchen nie in deiner Analytik auf — und du wirst es nie erfahren.',
+    'Dein Wettbewerber wird von ChatGPT empfohlen. Du nicht. Diese Kunden tauchen nie in deiner Analytik auf, und du wirst es nie erfahren.',
   image: 'https://aiseo.hamburg/images/wissen/wettbewerber-ki-sichtbarkeit.jpg',
   author: {
     '@type': 'Person',

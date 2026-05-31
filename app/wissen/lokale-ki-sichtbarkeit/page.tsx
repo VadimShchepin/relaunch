@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/Button';
 const FAQS = [
   {
     q: 'Reicht Google My Business für KI-Sichtbarkeit?',
-    a: 'Nein. Google My Business ist für Google Maps und die lokale Suche. ChatGPT, Perplexity und Claude haben keinen Zugriff auf Google My Business-Daten. Diese Systeme arbeiten mit Web-Content, Verzeichniseinträgen, Bewertungsportalen und strukturierten Daten auf deiner Website. Dein GMB-Profil kann noch so perfekt sein — wenn deine Website nichts Zitierbares bietet, existierst du für KI nicht.',
+    a: 'Nein. Google My Business ist für Google Maps und die lokale Suche. ChatGPT, Perplexity und Claude haben keinen Zugriff auf Google My Business-Daten. Diese Systeme arbeiten mit Web-Content, Verzeichniseinträgen, Bewertungsportalen und strukturierten Daten auf deiner Website. Dein GMB-Profil kann noch so perfekt sein, wenn deine Website nichts Zitierbares bietet, existierst du für KI nicht.',
   },
   {
     q: 'Wie finde ich heraus, ob mein lokales Unternehmen in ChatGPT sichtbar ist?',
@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: 'Ist lokale KI-Sichtbarkeit nur für Hamburg relevant?',
-    a: 'Nein. Das Prinzip funktioniert für jede Stadt. Wir nutzen Hamburg als Beispiel, weil wir hier arbeiten und die lokale Landschaft kennen. Die Strategien — LocalBusiness-Schema, lokaler Expertise-Content, Verzeichnispräsenz, Bewertungsmanagement — funktionieren in München, Berlin, Köln oder jeder anderen deutschen Stadt genauso.',
+    a: 'Nein. Das Prinzip funktioniert für jede Stadt. Wir nutzen Hamburg als Beispiel, weil wir hier arbeiten und die lokale Landschaft kennen. Die Strategien (LocalBusiness-Schema, lokaler Expertise-Content, Verzeichnispräsenz, Bewertungsmanagement) funktionieren in München, Berlin, Köln oder jeder anderen deutschen Stadt genauso.',
   },
 ];
 

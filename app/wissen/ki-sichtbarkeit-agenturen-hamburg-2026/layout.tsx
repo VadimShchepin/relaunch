@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'Die 10 besten KI-Sichtbarkeit & AI-SEO Agenturen in Hamburg 2026',
     description:
-        'Wir haben 4 KIs (ChatGPT, Perplexity, Gemini, Claude) gefragt, welche Agentur in Hamburg AI-SEO macht. Hier ist die ehrliche Auswertung — inkl. unserer eigenen Ergebnisse.',
+        'Wir haben 4 KIs (ChatGPT, Perplexity, Gemini, Claude) gefragt, welche Agentur in Hamburg AI-SEO macht. Hier ist die ehrliche Auswertung, inkl. unserer eigenen Ergebnisse.',
     keywords: [
         'ki sichtbarkeit agentur hamburg',
         'ai seo agentur hamburg',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Die 10 besten KI-Sichtbarkeit & AI-SEO Agenturen in Hamburg 2026',
         description:
-            'Wir haben 4 KIs gefragt, welche Agentur in Hamburg AI-SEO macht. Die ehrliche Auswertung — inkl. unserer eigenen Schwächen.',
+            'Wir haben 4 KIs gefragt, welche Agentur in Hamburg AI-SEO macht. Die ehrliche Auswertung, inkl. unserer eigenen Schwächen.',
         url: 'https://aiseo.hamburg/wissen/ki-sichtbarkeit-agenturen-hamburg-2026',
         siteName: 'aiseo.hamburg',
         locale: 'de_DE',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     twitter: {
         card: 'summary_large_image',
         title: 'Die 10 besten KI-Sichtbarkeit Agenturen Hamburg 2026',
-        description: 'Wir haben 4 KIs gefragt. Hier sind die Ergebnisse — inkl. unserer eigenen.',
+        description: 'Wir haben 4 KIs gefragt. Hier sind die Ergebnisse, inkl. unserer eigenen.',
     },
     alternates: {
         canonical: 'https://aiseo.hamburg/wissen/ki-sichtbarkeit-agenturen-hamburg-2026',

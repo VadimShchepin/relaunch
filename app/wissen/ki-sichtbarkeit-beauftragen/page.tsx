@@ -30,7 +30,7 @@ const FAQ_ITEMS = [
   },
   {
     q: 'Was unterscheidet aiseo.hamburg von anderen AI SEO Agenturen?',
-    a: 'Drei Dinge: Erstens, Spezialisierung — ich mache ausschließlich KI-Sichtbarkeit, kein klassisches SEO nebenbei. Zweitens, Transparenz — Festpreise, keine versteckten Kosten, monatlich kündbar. Drittens, Ergebnisse — ich zeige dir vorher Referenzen mit echten KI-Zitierungen, nicht PowerPoint-Versprechen.',
+    a: 'Drei Dinge: Erstens, Spezialisierung: ich mache ausschließlich KI-Sichtbarkeit, kein klassisches SEO nebenbei. Zweitens, Transparenz: Festpreise, keine versteckten Kosten, monatlich kündbar. Drittens, Ergebnisse: ich zeige dir vorher Referenzen mit echten KI-Zitierungen, nicht PowerPoint-Versprechen.',
   },
 ];
 
@@ -687,7 +687,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
             </div>
         </section>
 
-        {/* Für wen sich das lohnt — und für wen nicht */}
+        {/* Für wen sich das lohnt, und für wen nicht */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
               F&uuml;r wen sich das lohnt &ndash; und f&uuml;r wen nicht
