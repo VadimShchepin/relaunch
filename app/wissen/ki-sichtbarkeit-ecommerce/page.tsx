@@ -9,11 +9,11 @@ import { Button } from '@/components/ui/Button';
 const FAQS = [
   {
     q: 'Warum empfiehlt ChatGPT keine Produkte aus meinem Online-Shop?',
-    a: 'ChatGPT wurde nicht auf deinen Produktkatalog trainiert. Es kennt keine SKUs, keine Preise, keine Verfügbarkeiten. Was es kennt: Buying Guides, Testberichte, Vergleichsartikel und Expertenmeinungen. Wenn du keinen Content hast, der deine Produkte in einen Kontext einordnet — warum sollte eine KI dich empfehlen? Du bist für ChatGPT ein Regal ohne Schilder.',
+    a: 'ChatGPT wurde nicht auf deinen Produktkatalog trainiert. Es kennt keine SKUs, keine Preise, keine Verfügbarkeiten. Was es kennt: Buying Guides, Testberichte, Vergleichsartikel und Expertenmeinungen. Wenn du keinen Content hast, der deine Produkte in einen Kontext einordnet, warum sollte eine KI dich empfehlen? Du bist für ChatGPT ein Regal ohne Schilder.',
   },
   {
     q: 'Reichen gute Produktbeschreibungen für KI-Sichtbarkeit?',
-    a: 'Nein. Produktbeschreibungen sind transaktional — sie sagen „kauf mich". KI-Systeme suchen informationellen Content — Inhalte, die eine Frage beantworten. „Welche Laufschuhe für Plattfüße?" wird von einem Buying Guide beantwortet, nicht von einer Produktseite mit „atmungsaktives Mesh-Obermaterial, Größen 36-48". Du brauchst beides: Produktseiten für Google Shopping und Expertise-Content für KI.',
+    a: 'Nein. Produktbeschreibungen sind transaktional, sie sagen „kauf mich". KI-Systeme suchen informationellen Content: Inhalte, die eine Frage beantworten. „Welche Laufschuhe für Plattfüße?" wird von einem Buying Guide beantwortet, nicht von einer Produktseite mit „atmungsaktives Mesh-Obermaterial, Größen 36-48". Du brauchst beides: Produktseiten für Google Shopping und Expertise-Content für KI.',
   },
   {
     q: 'Welches Schema-Markup braucht ein Online-Shop für KI?',

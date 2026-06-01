@@ -186,6 +186,12 @@ export default function SeoVsAiSeoPage() {
           href: '/wissen/seo-agentur-vs-ai-seo',
           tag: 'Vergleich',
         },
+        {
+          title: 'Der große KI-Content-Audit: Überlebt dein Content 2027?',
+          description: 'Die Schritt-für-Schritt-Prüfung, ob deine bestehenden Inhalte für KI-Systeme taugen, inklusive Scoring-System.',
+          href: '/wissen/ki-content-audit-anleitung',
+          tag: 'Content Audit',
+        },
       ]}
       ctaTitle="Die Frage ist nicht mehr, ob du SEO oder AI SEO willst."
       ctaText="Die Frage ist, welche Lücken in deiner Sichtbarkeit heute Geld kosten. Ich schaue mir an, was bei dir zuerst den größten Hebel hat."

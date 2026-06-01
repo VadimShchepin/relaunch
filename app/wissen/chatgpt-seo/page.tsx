@@ -189,6 +189,18 @@ export default function ChatgptSeoPage() {
           href: '/wissen/seo-vs-ai-seo',
           tag: 'Vergleich',
         },
+        {
+          title: 'Bing & Copilot KI-Sichtbarkeit: Was echte Citation-Daten verraten',
+          description: 'Die ChatGPT-Websuche läuft über Bing. Dieser Artikel zeigt anhand echter Exportdaten, welche Signale Microsofts KI bei der Quellenwahl belohnt.',
+          href: '/wissen/bing-copilot-ki-sichtbarkeit',
+          tag: 'Bing & Copilot',
+        },
+        {
+          title: 'Warum bannt ChatGPT deine Website? Die größten AIO-Fails 2026',
+          description: 'Welche Tricks bei ChatGPT und Perplexity zum dauerhaften Ausschluss führen, und was stattdessen funktioniert.',
+          href: '/wissen/aio-fails-chatgpt-bann',
+          tag: 'AIO Fails',
+        },
       ]}
       ctaTitle="Wenn du bei ChatGPT genannt werden willst, reicht Hoffnung nicht."
       ctaText="Ich prüfe, wie klar dein Angebot für ChatGPT, Bing und andere KI-Systeme heute schon wirkt und welche Hebel realistisch am meisten bringen."

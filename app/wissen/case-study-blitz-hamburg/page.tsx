@@ -61,6 +61,7 @@ export default function CaseStudyBlitzHamburgPage() {
         'Blitz Hamburg zeigt, wie stark klare lokale Positionierung für ChatGPT-Empfehlungen wirken kann.',
         'Die zentralen Hebel waren kein Content-Volumen, sondern saubere Kategorisierung, Standortbezug und Angebotsklarheit.',
         'Im vorhandenen Projektmaterial ist eine dokumentierte ChatGPT-Empfehlung für das Thema Haushaltsauflösung in Hamburg sichtbar.',
+        'Die Search Console und das Analytics-Tool belegen messbares Wachstum: plus 55 Prozent Klicks, plus 61 Prozent Impressionen und reale Kontaktaktionen wie Anrufe und WhatsApp-Nachrichten.',
         'Der Case ist besonders relevant für lokale Dienstleister, die in austauschbaren Märkten trotzdem empfehlbar werden wollen.',
       ]}
       sections={[
@@ -98,13 +99,13 @@ export default function CaseStudyBlitzHamburgPage() {
         {
           id: 'sichtbare-ergebnisse',
           heading: 'Was sichtbar wurde',
-          stat: 'Im vorhandenen Projektmaterial ist eine dokumentierte ChatGPT-Empfehlung für Blitz Hamburg innerhalb kurzer Zeit sichtbar.',
+          stat: 'In den letzten 30 Tagen verzeichnet die Google Search Console für blitz-hamburg.de 55 Klicks (plus 55 Prozent) und 6.660 Impressionen (plus 61 Prozent). Parallel dokumentiert das Analytics-Tool reale Kontaktaktionen: 20 Anrufe, 14 Klicks auf Google-Bewertungen, 9 WhatsApp-Kontakte und 4 abgeschickte Kostenrechner.',
           paragraphs: [
-            'Die vorhandenen Screenshots zeigen Blitz Hamburg als empfohlenen Anbieter im relevanten lokalen Kontext. Das ist für diese Art Dienstleistung besonders wertvoll, weil Nutzer in KI-Systemen oft keine langen Vergleichslisten wollen, sondern eine plausible Vorauswahl.',
-            'Entscheidend ist hier nicht die Fantasie von Marktbeherrschung, sondern die Qualität der Einordnung. Wenn ein lokaler Dienstleister sauber in die richtige Kategorie rutscht, entstehen Anfragen oft mit deutlich mehr Kontext und weniger Streuverlust.',
-            'Anders gesagt: Nicht jede Sichtbarkeit muss nach Hochglanz-SEO aussehen. Manchmal reicht es, endlich so klar zu sein, dass eine Maschine den Mut hat, dich zu nennen.',
+            'Die Screenshots zeigen beides: Blitz Hamburg als empfohlenen Anbieter in ChatGPT und dazu die gemessene Wirkung in Search Console und Analytics. Das ist für diese Art Dienstleistung besonders wertvoll, weil Nutzer in KI-Systemen oft keine langen Vergleichslisten wollen, sondern eine plausible Vorauswahl.',
+            'Wichtig ist die Verbindung der Ebenen. Die KI-Empfehlung und die organische Sichtbarkeit speisen sich aus denselben Signalen: klare Kategorie, sauberer Stadtbezug, eindeutige Leistungsseiten. Wenn ein lokaler Dienstleister sauber in die richtige Kategorie rutscht, entstehen Anfragen mit deutlich mehr Kontext und weniger Streuverlust.',
+            'Die Kontaktaktionen aus dem Analytics-Tool zeigen, dass diese Sichtbarkeit nicht nur Klicks bringt, sondern konkrete Handlungen: Anrufe, WhatsApp-Nachrichten und Rückfragen über den Kostenrechner. Genau das ist der Punkt, an dem lokale KI-Sichtbarkeit für ein kleines Unternehmen messbar wird.',
           ],
-          note: 'Ich formuliere hier bewusst keine unbelegten Lead- oder Umsatzwerte. Die Stärke dieses Cases liegt in der dokumentierten lokalen KI-Empfehlung und in den nachvollziehbaren Hebeln dahinter.',
+          note: 'Alle genannten Zahlen stammen aus Screenshots der Google Search Console und des Analytics-Tools für blitz-hamburg.de aus einem 30-Tage-Zeitraum. Ich zeige hier nur belegte Werte und keine geschätzten Umsätze.',
         },
         {
           id: 'warum-funktioniert',
@@ -128,22 +129,32 @@ export default function CaseStudyBlitzHamburgPage() {
         },
       ]}
       galleryTitle="Dokumentierte Belege aus dem Blitz-Kontext"
-      galleryIntro="Diese Screenshots liegen im Projektmaterial vor und stützen die lokale Case-Study-Erzählung."
+      galleryIntro="Diese Screenshots stammen aus ChatGPT, der Google Search Console, dem Analytics-Tool und dem Google-Unternehmensprofil für blitz-hamburg.de. Sie stützen die Case-Study-Erzählung mit belegten Werten."
       gallery={[
         {
-          src: '/image/proof/Blitz-ChatGPTProof.webp',
-          alt: 'Blitz Hamburg Empfehlung in ChatGPT',
-          caption: 'ChatGPT-Screenshot mit lokaler Einordnung und Empfehlungskontext.',
+          src: '/photo/wissen_assets/chatgpt_citation.webp',
+          alt: 'ChatGPT empfiehlt Blitz Hamburg auf die Frage nach einer zuverlässigen Entrümpelungsfirma in Hamburg',
+          caption: 'ChatGPT nennt Blitz Hamburg als Antwort auf die Frage nach einer zuverlässigen Entrümpelungsfirma in Hamburg.',
         },
         {
-          src: '/image/kinderAlbum/proof5-blitz-short.webp',
-          alt: 'Kurzer Blitz Hamburg Screenshot',
-          caption: 'Kurze Screenshot-Variante für dokumentierte Sichtbarkeit.',
+          src: '/photo/wissen_assets/gsc_change_last_30d.webp',
+          alt: 'Google Search Console mit 55 Klicks und 6.660 Impressionen für Blitz Hamburg',
+          caption: 'Search Console, 30 Tage: 55 Klicks (plus 55 Prozent) und 6.660 Impressionen (plus 61 Prozent). Die Top-Seiten gehören alle zu blitz-hamburg.de.',
         },
         {
-          src: '/image/kinderAlbum/proof6-blitz-long.webp',
-          alt: 'Langer Blitz Hamburg Screenshot',
-          caption: 'Längere Screenshot-Ansicht mit mehr Kontext zur Antwort.',
+          src: '/photo/wissen_assets/umami_tracked_events_last_30d.webp',
+          alt: 'Analytics-Tool mit Kontaktaktionen wie Anrufen und WhatsApp-Klicks für Blitz Hamburg',
+          caption: 'Gemessene Kontaktaktionen, 30 Tage: 20 Anrufe, 14 Klicks auf Google-Bewertungen, 9 WhatsApp-Kontakte und 4 abgeschickte Kostenrechner.',
+        },
+        {
+          src: '/photo/wissen_assets/gbp.webp',
+          alt: 'Google-Unternehmensprofil von Blitz Hamburg mit 5,0 Sternen aus 35 Bewertungen',
+          caption: 'Google-Unternehmensprofil mit 5,0 Sternen aus 35 Bewertungen als lokales Vertrauenssignal.',
+        },
+        {
+          src: '/photo/wissen_assets/main_page.webp',
+          alt: 'Startseite von Blitz Hamburg mit klarer Positionierung Sanierung und Entrümpelung in Hamburg',
+          caption: 'Die Startseite ordnet das Angebot eindeutig ein: Sanierung und Entrümpelung in Hamburg. Genau diese Klarheit braucht eine KI für Empfehlungen.',
         },
       ]}
       faqs={[
@@ -182,6 +193,12 @@ export default function CaseStudyBlitzHamburgPage() {
           description: 'Die Einordnung, wie lokale SEO-Arbeit und KI-Sichtbarkeit zusammenspielen.',
           href: '/wissen/seo-vs-ai-seo',
           tag: 'Vergleich',
+        },
+        {
+          title: 'Case Study KinderAlbum: Von Nischenprodukt zu KI-Empfehlung',
+          description: 'Ein zweiter belegter Case, diesmal aus einem ganz anderen Markt: eine DSGVO-konforme Foto-Plattform in ChatGPT und Perplexity.',
+          href: '/wissen/case-study-kinderalbum',
+          tag: 'Case Study',
         },
       ]}
       ctaTitle="Wenn du lokal empfohlen werden willst, muss deine Website lokal denkbar sein."
