@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'KI-Sichtbarkeit für Handwerker: Echtes Beispiel aus Hamburg mit Zahlen | aiseo.hamburg',
+    title: 'KI-Sichtbarkeit für Handwerker: echtes Beispiel aus Hamburg',
     description: 'Wie ein Hamburger Betrieb (5,0 Sterne, 35 Bewertungen) von ChatGPT empfohlen wird: echte Zahlen, die MyHammer-Lead-Falle, der häufigste Fehler und 7 Strategien für Handwerker.',
     keywords: [
         'ki sichtbarkeit handwerker',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         'lokale ki sichtbarkeit handwerk',
     ],
     openGraph: {
-        title: 'KI-Sichtbarkeit für Handwerker | Echtes Beispiel aus Hamburg mit Zahlen',
+        title: 'KI-Sichtbarkeit für Handwerker: echtes Beispiel aus Hamburg',
         description: 'Wie ein Hamburger Betrieb von ChatGPT empfohlen wird: echte Zahlen, die MyHammer-Lead-Falle und 7 Strategien für Handwerker.',
         url: 'https://aiseo.hamburg/wissen/ki-sichtbarkeit-handwerker',
         siteName: 'aiseo.hamburg',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'KI-Sichtbarkeit für Handwerker | Echtes Beispiel aus Hamburg mit Zahlen',
+        title: 'KI-Sichtbarkeit für Handwerker: echtes Beispiel aus Hamburg',
         description: 'Wie ein Hamburger Betrieb von ChatGPT empfohlen wird: echte Zahlen, die MyHammer-Lead-Falle und 7 Strategien für Handwerker.',
         images: ['https://aiseo.hamburg/photo/wissen_assets/chatgpt_citation.webp'],
     },

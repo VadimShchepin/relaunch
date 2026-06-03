@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Wie KI-Systeme über deine Marke entscheiden, und was du dagegen tun kannst | aiseo.hamburg',
+  title: 'Wie KI-Systeme über deine Marke entscheiden, und was du tun kannst',
   description:
     'ChatGPT, Perplexity und Google AI bilden sich eine Meinung über deine Marke, ob du willst oder nicht. Trainingsdaten, Reviews, Presse: Wie KI-Markenwahrnehmung entsteht und wie du sie beeinflusst.',
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/wissen/ki-markenwahrnehmung',
-    title: 'Wie KI-Systeme über deine Marke entscheiden, und was du dagegen tun kannst | aiseo.hamburg',
+    title: 'Wie KI-Systeme über deine Marke entscheiden, und was du tun kannst',
     description:
       'ChatGPT, Perplexity und Google AI bilden sich eine Meinung über deine Marke, ob du willst oder nicht. Wie KI-Markenwahrnehmung entsteht und wie du sie beeinflusst.',
     siteName: 'aiseo.hamburg',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Wie KI-Systeme über deine Marke entscheiden, und was du dagegen tun kannst | aiseo.hamburg',
+    title: 'Wie KI-Systeme über deine Marke entscheiden, und was du tun kannst',
     description:
       'ChatGPT, Perplexity und Google AI bilden sich eine Meinung über deine Marke, ob du willst oder nicht. Wie KI-Markenwahrnehmung entsteht und wie du sie beeinflusst.',
   },

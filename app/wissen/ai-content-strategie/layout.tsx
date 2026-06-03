@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'AI Content Strategie: Inhalte die KI-Systeme zitieren wollen | aiseo.hamburg',
+  title: 'AI Content Strategie: Inhalte die KI-Systeme zitieren wollen',
   description:
     'Erfahre, wie du Content erstellst, den ChatGPT, Perplexity und Google AI zitieren. Mit Content-Audit-Checkliste, 7 Strategien und Workflow fur KI-optimierte Inhalte.',
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/wissen/ai-content-strategie',
-    title: 'AI Content Strategie: Inhalte die KI-Systeme zitieren wollen | aiseo.hamburg',
+    title: 'AI Content Strategie: Inhalte die KI-Systeme zitieren wollen',
     description:
       'Erfahre, wie du Content erstellst, den ChatGPT, Perplexity und Google AI zitieren. Mit Content-Audit-Checkliste, 7 Strategien und Workflow fur KI-optimierte Inhalte.',
     siteName: 'aiseo.hamburg',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'AI Content Strategie: Inhalte die KI-Systeme zitieren wollen | aiseo.hamburg',
+    title: 'AI Content Strategie: Inhalte die KI-Systeme zitieren wollen',
     description:
       'Erfahre, wie du Content erstellst, den ChatGPT, Perplexity und Google AI zitieren. Mit Content-Audit-Checkliste, 7 Strategien und Workflow fur KI-optimierte Inhalte.',
   },

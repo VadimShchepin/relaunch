@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Sichtbarkeit in Claude AI: So wird dein Unternehmen empfohlen | aiseo.hamburg',
+    title: 'Sichtbarkeit in Claude AI: So wird dein Unternehmen empfohlen',
     description: 'Wie wird dein Unternehmen in Claude AI sichtbar? Erfahre die wichtigsten Faktoren, Strategien und Praxis-Tipps für Claude AI Optimierung und Sichtbarkeit.',
     keywords: [
         'sichtbarkeit in claude',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         'AI SEO Claude',
     ],
     openGraph: {
-        title: 'Sichtbarkeit in Claude AI | So wird dein Unternehmen empfohlen',
+        title: 'Sichtbarkeit in Claude AI: So wird dein Unternehmen empfohlen',
         description: 'Wie wird dein Unternehmen in Claude AI sichtbar? Die wichtigsten Faktoren und Strategien für Claude-Sichtbarkeit.',
         url: 'https://aiseo.hamburg/wissen/sichtbarkeit-in-claude',
         siteName: 'aiseo.hamburg',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Sichtbarkeit in Claude AI | So wird dein Unternehmen empfohlen',
+        title: 'Sichtbarkeit in Claude AI: So wird dein Unternehmen empfohlen',
         description: 'Wie wird dein Unternehmen in Claude AI sichtbar? Die wichtigsten Faktoren und Strategien für Claude-Sichtbarkeit.',
     },
     alternates: {

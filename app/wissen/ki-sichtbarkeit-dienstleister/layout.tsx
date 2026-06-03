@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'KI-Sichtbarkeit f\u00fcr Dienstleister: Vom unsichtbaren Experten zum empfohlenen Anbieter | aiseo.hamburg',
+    title: 'KI-Sichtbarkeit für Dienstleister: vom Geheimtipp zur KI-Empfehlung',
     description: 'Warum ChatGPT deinen Wettbewerber empfiehlt und nicht dich. 5 Schritte f\u00fcr Steuerberater, Architekten, Berater & Agenturen zur KI-Sichtbarkeit mit ROI-Rechnung.',
     keywords: [
         'ki sichtbarkeit dienstleister',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         'ki empfehlung unternehmensberater',
     ],
     openGraph: {
-        title: 'KI-Sichtbarkeit f\u00fcr Dienstleister | Vom unsichtbaren Experten zum empfohlenen Anbieter',
+        title: 'KI-Sichtbarkeit für Dienstleister: vom Geheimtipp zur KI-Empfehlung',
         description: 'Warum ChatGPT deinen Wettbewerber empfiehlt und nicht dich. 5 Schritte f\u00fcr Steuerberater, Architekten, Berater & Agenturen zur KI-Sichtbarkeit.',
         url: 'https://aiseo.hamburg/wissen/ki-sichtbarkeit-dienstleister',
         siteName: 'aiseo.hamburg',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'KI-Sichtbarkeit f\u00fcr Dienstleister | Vom unsichtbaren Experten zum empfohlenen Anbieter',
+        title: 'KI-Sichtbarkeit für Dienstleister: vom Geheimtipp zur KI-Empfehlung',
         description: 'Warum ChatGPT deinen Wettbewerber empfiehlt und nicht dich. 5 Schritte f\u00fcr Steuerberater, Architekten, Berater & Agenturen zur KI-Sichtbarkeit.',
     },
     alternates: {

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Der große KI-Content-Audit: So prüfst du, ob dein Content 2027 überlebt | aiseo.hamburg',
+  title: 'KI-Content-Audit: So prüfst du, ob dein Content 2027 überlebt',
   description:
     'Schritt-für-Schritt-Anleitung zum KI-Content-Audit: Scoring-System, Checkliste und Priorisierung. Welchen Content updaten, löschen oder zusammenführen, damit KI-Systeme dich zitieren.',
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/wissen/ki-content-audit-anleitung',
-    title: 'Der große KI-Content-Audit: So prüfst du, ob dein Content 2027 überlebt | aiseo.hamburg',
+    title: 'KI-Content-Audit: So prüfst du, ob dein Content 2027 überlebt',
     description:
       'Schritt-für-Schritt-Anleitung zum KI-Content-Audit: Scoring-System, Checkliste und Priorisierung. Welchen Content updaten, löschen oder zusammenführen.',
     siteName: 'aiseo.hamburg',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Der große KI-Content-Audit: So prüfst du, ob dein Content 2027 überlebt | aiseo.hamburg',
+    title: 'KI-Content-Audit: So prüfst du, ob dein Content 2027 überlebt',
     description:
       'Schritt-für-Schritt-Anleitung zum KI-Content-Audit: Scoring-System, Checkliste und Priorisierung. Welchen Content updaten, löschen oder zusammenführen.',
   },

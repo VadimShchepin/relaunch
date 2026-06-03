@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Zero-Click-Zukunft: Warum deine Website bald keinen Traffic mehr braucht | aiseo.hamburg',
+  title: 'Zero-Click-Zukunft: Warum deine Website bald keinen Traffic braucht',
   description:
     'Gartner prognostiziert 50 % Traffic-Verlust bis 2028. Warum das kein Weltuntergang ist, sondern eine Chance, und welche neuen KPIs jetzt zählen: Brand Mentions, Citation Rate, AI Referral Quality.',
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/wissen/zero-click-zukunft',
-    title: 'Zero-Click-Zukunft: Warum deine Website bald keinen Traffic mehr braucht | aiseo.hamburg',
+    title: 'Zero-Click-Zukunft: Warum deine Website bald keinen Traffic braucht',
     description:
       'Gartner prognostiziert 50 % Traffic-Verlust bis 2028. Warum das kein Weltuntergang ist, und welche neuen KPIs jetzt zählen.',
     siteName: 'aiseo.hamburg',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Zero-Click-Zukunft: Warum deine Website bald keinen Traffic mehr braucht | aiseo.hamburg',
+    title: 'Zero-Click-Zukunft: Warum deine Website bald keinen Traffic braucht',
     description:
       'Gartner prognostiziert 50 % Traffic-Verlust bis 2028. Warum das kein Weltuntergang ist, und welche neuen KPIs jetzt zählen.',
   },

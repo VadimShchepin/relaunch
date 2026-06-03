@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-const TITLE = 'Google KI-Optimierung: Was Google offiziell empfiehlt (und welche GEO-Mythen du streichen kannst) | aiseo.hamburg';
+const TITLE = 'Google KI-Optimierung: offizielle Tipps und GEO-Mythen zum Streichen';
 const DESCRIPTION =
   'Googles eigene Search-Central-Dokumentation zur Optimierung für AI Overviews und AI Mode. Was offiziell zählt, was Google ausdrücklich für unnötig erklärt (llms.txt, Content-Chunking, Spezial-Schema) und was das für deutsche Unternehmen bedeutet.';
 

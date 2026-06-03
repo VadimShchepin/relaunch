@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { ArticleTemplate } from '@/components/wissen/ArticleTemplate';
 
 export const metadata: Metadata = {
-  title: 'GEO Agentur Hamburg: Was gute Generative Engine Optimization wirklich leistet',
+  title: 'GEO Agentur Hamburg: Was gute Generative Engine Optimization leistet',
   description:
     'Woran du eine gute GEO Agentur in Hamburg erkennst, für welche Unternehmen sie sich lohnt und wie lokale KI-Sichtbarkeit in ChatGPT, Perplexity und Google AI aufgebaut wird.',
   keywords: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/wissen/geo-agentur-hamburg',
-    title: 'GEO Agentur Hamburg: Was gute Generative Engine Optimization wirklich leistet',
+    title: 'GEO Agentur Hamburg: Was gute Generative Engine Optimization leistet',
     description:
       'Woran du eine gute GEO Agentur in Hamburg erkennst und wie lokale KI-Sichtbarkeit aufgebaut wird.',
     siteName: 'aiseo.hamburg',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'GEO Agentur Hamburg: Was gute Generative Engine Optimization wirklich leistet',
+    title: 'GEO Agentur Hamburg: Was gute Generative Engine Optimization leistet',
     description:
       'Woran du eine gute GEO Agentur in Hamburg erkennst und wie lokale KI-Sichtbarkeit aufgebaut wird.',
   },

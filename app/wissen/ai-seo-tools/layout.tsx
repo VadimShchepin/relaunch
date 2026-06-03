@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'AI SEO Tools 2026: Welche sich lohnen und welche Geldverbrennung sind | aiseo.hamburg',
+  title: 'AI SEO Tools 2026: Welche sich lohnen und welche Geldverbrennung sind',
   description:
     'Ehrlicher Überblick über AI SEO Tools 2026: Ahrefs Brand Radar, Semrush AI Visibility, Gemini CLI und mehr. Welche Tools funktionieren, welche Geld verbrennen, und welche du kostenlos ersetzen kannst.',
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/wissen/ai-seo-tools',
-    title: 'AI SEO Tools 2026: Welche sich lohnen und welche Geldverbrennung sind | aiseo.hamburg',
+    title: 'AI SEO Tools 2026: Welche sich lohnen und welche Geldverbrennung sind',
     description:
       'Ehrlicher Überblick über AI SEO Tools 2026: Ahrefs Brand Radar, Semrush AI Visibility, Gemini CLI und mehr. Welche Tools funktionieren, welche Geld verbrennen, und welche du kostenlos ersetzen kannst.',
     siteName: 'aiseo.hamburg',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'AI SEO Tools 2026: Welche sich lohnen und welche Geldverbrennung sind | aiseo.hamburg',
+    title: 'AI SEO Tools 2026: Welche sich lohnen und welche Geldverbrennung sind',
     description:
       'Ehrlicher Überblick über AI SEO Tools 2026: Ahrefs Brand Radar, Semrush AI Visibility, Gemini CLI und mehr. Welche Tools funktionieren, welche Geld verbrennen, und welche du kostenlos ersetzen kannst.',
   },

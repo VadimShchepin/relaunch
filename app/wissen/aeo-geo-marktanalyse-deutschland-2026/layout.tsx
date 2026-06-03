@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-const TITLE = 'AI SEO Marktanalyse Deutschland 2026: AEO, GEO, LLMO und 3 Keyword-Honigfallen | aiseo.hamburg';
+const TITLE = 'AI SEO Marktanalyse 2026: AEO, GEO, LLMO und 3 Keyword-Honigfallen';
 const DESCRIPTION =
   'Primärrecherche für Unternehmen und Agenturen: 297 deutsche AEO/GEO/LLMO Keywords über DataForSEO. Drei Honigfallen, sechs Begriffe mit +200 bis 1.300% Wachstum, der stille Rückgang von „ChatGPT SEO". Mit Datensatz (CSV).';
 

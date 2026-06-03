@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Sichtbarkeit in Google Gemini: So erscheinst du in Googles KI | aiseo.hamburg',
+    title: 'Sichtbarkeit in Google Gemini: So erscheinst du in Googles KI',
     description: 'Wie wirst du in Google Gemini und AI Overviews sichtbar? 7 Strategien fur Gemini-Optimierung, E-E-A-T, Knowledge Graph und lokale KI-Sichtbarkeit in Hamburg.',
     keywords: [
         'sichtbarkeit in gemini',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         'google gemini unternehmen',
     ],
     openGraph: {
-        title: 'Sichtbarkeit in Google Gemini | So erscheinst du in Googles KI',
+        title: 'Sichtbarkeit in Google Gemini: So erscheinst du in Googles KI',
         description: 'Wie wirst du in Google Gemini und AI Overviews sichtbar? 7 Strategien fur Gemini-Optimierung und lokale KI-Sichtbarkeit.',
         url: 'https://aiseo.hamburg/wissen/sichtbarkeit-in-gemini',
         siteName: 'aiseo.hamburg',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Sichtbarkeit in Google Gemini | So erscheinst du in Googles KI',
+        title: 'Sichtbarkeit in Google Gemini: So erscheinst du in Googles KI',
         description: 'Wie wirst du in Google Gemini und AI Overviews sichtbar? 7 Strategien fur Gemini-Optimierung und lokale KI-Sichtbarkeit.',
     },
     alternates: {

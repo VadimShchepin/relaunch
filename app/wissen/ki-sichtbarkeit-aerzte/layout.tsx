@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'KI-Sichtbarkeit für Ärzte & Praxen: HWG-konform in ChatGPT & Co. | aiseo.hamburg',
+    title: 'KI-Sichtbarkeit für Ärzte & Praxen: HWG-konform in ChatGPT & Co.',
     description: 'Wie Arztpraxen in ChatGPT, Perplexity und Google AI empfohlen werden, ohne gegen das Heilmittelwerbegesetz zu verstoßen. Mit HWG-Formulierungstabelle, KI-Vertrauensleiter und MedicalClinic-Schema.',
     keywords: [
         'ki sichtbarkeit ärzte',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         'chatgpt arzt hamburg',
     ],
     openGraph: {
-        title: 'KI-Sichtbarkeit für Ärzte & Praxen | HWG-konform in ChatGPT & Co.',
+        title: 'KI-Sichtbarkeit für Ärzte & Praxen: HWG-konform in ChatGPT & Co.',
         description: 'Wie Arztpraxen in ChatGPT, Perplexity und Google AI empfohlen werden, ohne gegen das HWG zu verstoßen. Mit Formulierungstabelle, KI-Vertrauensleiter und MedicalClinic-Schema.',
         url: 'https://aiseo.hamburg/wissen/ki-sichtbarkeit-aerzte',
         siteName: 'aiseo.hamburg',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'KI-Sichtbarkeit für Ärzte & Praxen | HWG-konform in ChatGPT & Co.',
+        title: 'KI-Sichtbarkeit für Ärzte & Praxen: HWG-konform in ChatGPT & Co.',
         description: 'Wie Arztpraxen in ChatGPT, Perplexity und Google AI empfohlen werden, ohne gegen das HWG zu verstoßen.',
         images: ['https://aiseo.hamburg/photo/wissen_assets/medical-authority-ladder.webp'],
     },

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Was ist GEO? Generative Engine Optimization endlich verständlich erklärt | aiseo.hamburg',
+  title: 'Was ist GEO? Generative Engine Optimization verständlich erklärt',
   description:
     'Was ist GEO (Generative Engine Optimization)? Der komplette Guide: GEO vs SEO vs AEO im Vergleich, warum GEO 2026 unverzichtbar ist und praktische erste Schritte für deine KI-Sichtbarkeit.',
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/wissen/was-ist-geo',
-    title: 'Was ist GEO? Generative Engine Optimization endlich verständlich erklärt | aiseo.hamburg',
+    title: 'Was ist GEO? Generative Engine Optimization verständlich erklärt',
     description:
       'Was ist GEO (Generative Engine Optimization)? Der komplette Guide: GEO vs SEO vs AEO im Vergleich, warum GEO 2026 unverzichtbar ist und praktische erste Schritte.',
     siteName: 'aiseo.hamburg',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Was ist GEO? Generative Engine Optimization endlich verständlich erklärt | aiseo.hamburg',
+    title: 'Was ist GEO? Generative Engine Optimization verständlich erklärt',
     description:
       'Was ist GEO (Generative Engine Optimization)? Der komplette Guide: GEO vs SEO vs AEO im Vergleich, warum GEO 2026 unverzichtbar ist.',
   },

@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'KI-Sichtbarkeit beauftragen: Der komplette Ablauf von Anfrage bis Ergebnis | aiseo.hamburg',
+    title: 'KI-Sichtbarkeit beauftragen: Ablauf von Anfrage bis Ergebnis',
     description: 'Was passiert, wenn du KI-Sichtbarkeit bei aiseo.hamburg beauftragst? Der komplette Prozess von kostenloser Kurzanalyse bis zur ersten ChatGPT-Empfehlung. Transparent, ehrlich, ohne Buzzwords.',
     keywords: ['ki sichtbarkeit beauftragen', 'ai seo agentur ablauf', 'ki sichtbarkeit buchen', 'ai seo prozess', 'ki sichtbarkeit anfrage'],
     openGraph: {
-        title: 'KI-Sichtbarkeit beauftragen: Der komplette Ablauf von Anfrage bis Ergebnis',
+        title: 'KI-Sichtbarkeit beauftragen: Ablauf von Anfrage bis Ergebnis',
         description: 'Was passiert, wenn du KI-Sichtbarkeit beauftragst? Der komplette Prozess: transparent, ehrlich, ohne Verkaufstricks.',
         url: 'https://aiseo.hamburg/wissen/ki-sichtbarkeit-beauftragen',
         siteName: 'aiseo.hamburg',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'KI-Sichtbarkeit beauftragen: Der komplette Ablauf',
+        title: 'KI-Sichtbarkeit beauftragen: Ablauf von Anfrage bis Ergebnis',
         description: 'Von der kostenlosen Kurzanalyse bis zur ersten ChatGPT-Empfehlung. Der komplette Prozess bei aiseo.hamburg.',
     },
     alternates: {

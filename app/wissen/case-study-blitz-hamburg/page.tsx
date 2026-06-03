@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { ArticleTemplate } from '@/components/wissen/ArticleTemplate';
 
 export const metadata: Metadata = {
-  title: 'Case Study Blitz Hamburg: Wie klare Positionierung zu ChatGPT-Empfehlungen führte',
+  title: 'Case Study Blitz Hamburg: Positionierung führt zu ChatGPT-Empfehlung',
   description:
     'Wie Blitz Hamburg als lokaler Dienstleister durch klare Kategorien, Standortsignale und bessere Seitenstruktur in ChatGPT-Empfehlungen sichtbar wurde.',
   keywords: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/wissen/case-study-blitz-hamburg',
-    title: 'Case Study Blitz Hamburg: Wie klare Positionierung zu ChatGPT-Empfehlungen führte',
+    title: 'Case Study Blitz Hamburg: Positionierung führt zu ChatGPT-Empfehlung',
     description:
       'Wie Blitz Hamburg durch klarere Angebots- und Standortsignale in ChatGPT-Empfehlungen sichtbar wurde.',
     siteName: 'aiseo.hamburg',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Case Study Blitz Hamburg: Wie klare Positionierung zu ChatGPT-Empfehlungen führte',
+    title: 'Case Study Blitz Hamburg: Positionierung führt zu ChatGPT-Empfehlung',
     description:
       'Wie Blitz Hamburg durch klarere Angebots- und Standortsignale in ChatGPT-Empfehlungen sichtbar wurde.',
   },

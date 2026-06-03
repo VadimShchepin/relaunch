@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'KI-Sichtbarkeit für Anwälte & Kanzleien: Mandanten fragen die KI | aiseo.hamburg',
+    title: 'KI-Sichtbarkeit für Anwälte & Kanzleien: Mandanten fragen die KI',
     description: 'Wie Anwälte und Kanzleien in ChatGPT, Perplexity und Google AI sichtbar werden. 7 Strategien für KI-Empfehlungen, E-E-A-T für Rechtsberatung und lokale Sichtbarkeit in Hamburg.',
     keywords: [
         'ki sichtbarkeit anwälte',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         'rechtsanwalt ai seo',
     ],
     openGraph: {
-        title: 'KI-Sichtbarkeit für Anwälte & Kanzleien | Mandanten fragen die KI',
+        title: 'KI-Sichtbarkeit für Anwälte & Kanzleien: Mandanten fragen die KI',
         description: 'Wie Anwälte und Kanzleien in ChatGPT, Perplexity und Google AI sichtbar werden. 7 Strategien für mehr Mandate durch KI-Empfehlungen.',
         url: 'https://aiseo.hamburg/wissen/ki-sichtbarkeit-anwaelte',
         siteName: 'aiseo.hamburg',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'KI-Sichtbarkeit für Anwälte & Kanzleien | Mandanten fragen die KI',
+        title: 'KI-Sichtbarkeit für Anwälte & Kanzleien: Mandanten fragen die KI',
         description: 'Wie Anwälte und Kanzleien in ChatGPT, Perplexity und Google AI sichtbar werden. 7 Strategien für mehr Mandate durch KI-Empfehlungen.',
     },
     alternates: {

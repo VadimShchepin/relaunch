@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'SEO-Agentur liefert Rankings, aber keine Kunden: warum AI SEO der nächste Schritt ist | aiseo.hamburg',
+  title: 'SEO-Agentur bringt Rankings, aber keine Kunden: jetzt AI SEO',
   description:
     'Du zahlst 2.000–10.000 Euro im Monat für SEO, aber KI-Systeme ignorieren dich komplett. Warum klassisches SEO allein nicht mehr reicht, und was AI SEO stattdessen liefert.',
   keywords: [
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/wissen/seo-agentur-vs-ai-seo',
-    title: 'SEO-Agentur liefert Rankings, aber keine Kunden: warum AI SEO der nächste Schritt ist | aiseo.hamburg',
+    title: 'SEO-Agentur bringt Rankings, aber keine Kunden: jetzt AI SEO',
     description:
       'Du zahlst 2.000–10.000 Euro im Monat für SEO, aber KI-Systeme ignorieren dich komplett. Warum klassisches SEO allein nicht mehr reicht.',
     siteName: 'aiseo.hamburg',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'SEO-Agentur liefert Rankings, aber keine Kunden: warum AI SEO der nächste Schritt ist | aiseo.hamburg',
+    title: 'SEO-Agentur bringt Rankings, aber keine Kunden: jetzt AI SEO',
     description:
       'Du zahlst 2.000–10.000 Euro im Monat für SEO, aber KI-Systeme ignorieren dich komplett. Warum klassisches SEO allein nicht mehr reicht.',
   },

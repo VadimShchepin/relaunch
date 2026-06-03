@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Warum bannt ChatGPT deine Website? Die größten AIO-Fails 2026 | aiseo.hamburg',
+  title: 'Warum bannt ChatGPT deine Website? Die größten AIO-Fails 2026',
   description:
     'Keyword-Stuffing, Cloaking, Spam-Content: Warum billige Tricks bei ChatGPT, Perplexity und Google AI zum permanenten Bann führen. Die größten AIO-Fails und was stattdessen funktioniert.',
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/wissen/aio-fails-chatgpt-bann',
-    title: 'Warum bannt ChatGPT deine Website? Die größten AIO-Fails 2026 | aiseo.hamburg',
+    title: 'Warum bannt ChatGPT deine Website? Die größten AIO-Fails 2026',
     description:
       'Keyword-Stuffing, Cloaking, Spam-Content: Warum billige Tricks bei ChatGPT, Perplexity und Google AI zum permanenten Bann führen.',
     siteName: 'aiseo.hamburg',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Warum bannt ChatGPT deine Website? Die größten AIO-Fails 2026 | aiseo.hamburg',
+    title: 'Warum bannt ChatGPT deine Website? Die größten AIO-Fails 2026',
     description:
       'Keyword-Stuffing, Cloaking, Spam-Content: Warum billige Tricks bei ChatGPT, Perplexity und Google AI zum permanenten Bann führen.',
   },

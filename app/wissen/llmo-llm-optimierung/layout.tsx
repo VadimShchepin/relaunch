@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'LLMO – LLM Optimierung: So wirst du von KI-Systemen empfohlen | aiseo.hamburg',
+  title: 'LLMO (LLM Optimierung): So wirst du von KI-Systemen empfohlen',
   description:
     'LLMO (Large Language Model Optimization) ist die Strategie, damit ChatGPT, Claude, Gemini und Perplexity dein Unternehmen empfehlen. Die 5 Säulen, Tools und Schritt-für-Schritt-Anleitung.',
   keywords: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/wissen/llmo-llm-optimierung',
-    title: 'LLMO – LLM Optimierung: So wirst du von KI-Systemen empfohlen | aiseo.hamburg',
+    title: 'LLMO (LLM Optimierung): So wirst du von KI-Systemen empfohlen',
     description:
       'LLMO (Large Language Model Optimization) ist die Strategie, damit ChatGPT, Claude, Gemini und Perplexity dein Unternehmen empfehlen. Die 5 Säulen, Tools und Schritt-für-Schritt-Anleitung.',
     siteName: 'aiseo.hamburg',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'LLMO – LLM Optimierung: So wirst du von KI-Systemen empfohlen | aiseo.hamburg',
+    title: 'LLMO (LLM Optimierung): So wirst du von KI-Systemen empfohlen',
     description:
       'LLMO (Large Language Model Optimization) ist die Strategie, damit ChatGPT, Claude, Gemini und Perplexity dein Unternehmen empfehlen. Die 5 Säulen, Tools und Schritt-für-Schritt-Anleitung.',
   },
