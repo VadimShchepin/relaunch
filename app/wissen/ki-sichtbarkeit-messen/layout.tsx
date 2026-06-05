@@ -24,12 +24,21 @@ export const metadata: Metadata = {
     description:
       'Wie misst du deine Sichtbarkeit in ChatGPT, Perplexity und AI Overviews? Die wichtigsten Tools, KPIs und Tracking-Methoden für KI-Sichtbarkeit.',
     siteName: 'aiseo.hamburg',
+    images: [
+      {
+        url: '/images/wissen/ki-sichtbarkeit-messen/hero-ai-visibility-measurement.webp',
+        width: 1672,
+        height: 941,
+        alt: 'KI-Sichtbarkeit messen: Analytics-Dashboard für AI Visibility Tracking',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'KI-Sichtbarkeit messen | Tools, Methoden & KPIs 2026',
     description:
       'Wie misst du deine Sichtbarkeit in ChatGPT, Perplexity und AI Overviews? Die wichtigsten Tools, KPIs und Tracking-Methoden für KI-Sichtbarkeit.',
+    images: ['/images/wissen/ki-sichtbarkeit-messen/hero-ai-visibility-measurement.webp'],
   },
   robots: {
     index: true,

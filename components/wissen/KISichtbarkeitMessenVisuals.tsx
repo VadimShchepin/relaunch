@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { OpenAIIcon, PerplexityIcon, GoogleIcon } from '@/components/ui/Icons';
 
 /**
@@ -6,56 +7,34 @@ import { OpenAIIcon, PerplexityIcon, GoogleIcon } from '@/components/ui/Icons';
  * Eye-catching summary of the 4-step measurement process.
  */
 export const HeroProcessVisual = () => (
-  <div className="mt-12 w-full max-w-[800px] mx-auto">
-    <div className="bg-[#121212] rounded-[2.5rem] p-8 md:p-12 shadow-2xl relative overflow-hidden border border-white/5">
-      {/* Background patterns */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-brand-accent/20 rounded-full blur-[100px] -mr-32 -mt-32" />
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-accent/10 rounded-full blur-[100px] -ml-32 -mb-32" />
-
-      <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4 lg:gap-8">
-        {[
-          { step: '01', title: 'Logs', sub: 'Bot Detection', icon: '🤖' },
-          { step: '02', title: 'Traffic', sub: 'GA4 Sources', icon: '📈' },
-          { step: '03', title: 'Mentions', sub: 'Brand Radar', icon: '💬' },
-          { step: '04', title: 'Prompts', sub: 'Live Tests', icon: '🧪' },
-        ].map((item, i) => (
-          <div key={i} className="flex flex-col items-center text-center group relative">
-            <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 group-hover:bg-brand-accent/20 group-hover:border-brand-accent/50 transition-all duration-500 shadow-inner">
-              {item.icon}
-            </div>
-            <div className="text-[10px] font-bold text-brand-accent uppercase tracking-[0.2em] mb-1.5">{item.step}</div>
-            <div className="text-white font-bold text-lg mb-1 leading-none">{item.title}</div>
-            <div className="text-gray-400 text-[11px] leading-tight px-2 font-medium">{item.sub}</div>
-            
-            {/* Visual connector for desktop */}
-            {i < 3 && (
-              <div className="hidden md:block absolute top-7 -right-1/2 w-full h-[2px] bg-gradient-to-r from-brand-accent/40 to-transparent -z-10" />
-            )}
+  <div className="mt-12 w-full max-w-[860px] mx-auto">
+    <figure className="relative overflow-hidden rounded-3xl border border-black/10 bg-black shadow-2xl shadow-black/15">
+      <Image
+        src="/images/wissen/ki-sichtbarkeit-messen/hero-ai-visibility-measurement.webp"
+        alt="Analytics-Dashboard zur Messung von KI-Sichtbarkeit über Crawler-Logs, AI-Referral-Traffic, Brand Mentions und Prompt-Tests"
+        width={1672}
+        height={941}
+        priority
+        sizes="(min-width: 1024px) 860px, calc(100vw - 48px)"
+        className="aspect-[16/9] h-auto w-full object-cover"
+      />
+      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent px-5 pb-5 pt-16 md:px-8 md:pb-7">
+        <figcaption className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-brand-accent">
+              Tracking 2026 active
+            </p>
+            <p className="mt-2 text-xl font-semibold leading-tight text-white md:text-2xl">
+              Volle Sichtbarkeit über KI-Plattformen, Traffic und Mentions.
+            </p>
           </div>
-        ))}
-      </div>
-      
-      {/* Footer Info */}
-      <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6">
-        <div className="flex items-center gap-4">
-           <div className="w-12 h-12 rounded-full bg-brand-accent flex items-center justify-center text-white shadow-[0_0_20px_rgba(79,175,140,0.4)]">
-             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-             </svg>
-           </div>
-           <div className="text-left">
-             <div className="text-white font-bold text-lg">Volle Sichtbarkeit</div>
-             <div className="text-gray-400 text-xs font-medium">Alle KI-Plattformen. Alle Kanäle. Echtzeit.</div>
-           </div>
-        </div>
-        <div className="flex gap-3">
-          <div className="bg-white/5 px-4 py-2 rounded-xl text-brand-accent text-[11px] font-bold border border-white/10 flex items-center gap-2">
-            <div className="w-1.5 h-1.5 rounded-full bg-brand-accent animate-pulse" />
-            TRACKING 2026 ACTIVE
+          <div className="flex w-fit items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-semibold text-white backdrop-blur">
+            <span className="h-2 w-2 rounded-full bg-brand-accent shadow-[0_0_14px_rgba(79,175,140,0.9)]" />
+            Live Measurement
           </div>
-        </div>
+        </figcaption>
       </div>
-    </div>
+    </figure>
   </div>
 );
 

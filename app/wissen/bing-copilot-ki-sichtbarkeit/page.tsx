@@ -1,7 +1,10 @@
+'use client';
+
 import React from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
 import { Button } from '@/components/ui/Button';
+import { FadeIn } from '@/components/ui/FadeIn';
 
 /* ------------------------------------------------------------------ */
 /*  FAQ data                                                          */
@@ -138,6 +141,21 @@ export default function BingCopilotKiSichtbarkeitPage() {
       </section>
 
       {/* ============================================================ */}
+      {/*  Hero Image                                                  */}
+      {/* ============================================================ */}
+      <div className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-12">
+        <FadeIn>
+          <img
+            src="/images/wissen/bing-copilot-ki-sichtbarkeit/hero-copilot-visibility.png"
+            alt="Bing & Copilot KI-Sichtbarkeit Dashboard"
+            className="w-full rounded-2xl shadow-lg border border-gray-100"
+            loading="eager"
+          />
+          <p className="text-xs text-gray-400 mt-2">Dashboard-Visualisierung: KI-Sichtbarkeit und Zitate in Microsoft Copilot</p>
+        </FadeIn>
+      </div>
+
+      {/* ============================================================ */}
       {/*  TL;DR                                                       */}
       {/* ============================================================ */}
       <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-12">
@@ -263,6 +281,17 @@ export default function BingCopilotKiSichtbarkeitPage() {
             <li>„KI Sichtbarkeit Überwachung ChatGPT Gemini Perplexity Tools Methoden"</li>
             <li>„Share of Voice Wettbewerber KI Antworten messen Lösungen"</li>
           </ul>
+        </div>
+
+        <div className="my-8">
+          <FadeIn>
+            <img
+              src="/images/wissen/bing-copilot-ki-sichtbarkeit/grounding-queries-map.png"
+              alt="Query Fan-out und Grounding Queries bei Microsoft Copilot"
+              className="w-full rounded-2xl shadow-lg border border-gray-100"
+            />
+            <p className="text-xs text-gray-400 mt-2">Diagramm: Wie ein Benutzer-Prompt in stichwortdichte Grounding Queries zerlegt wird</p>
+          </FadeIn>
         </div>
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
@@ -438,6 +467,17 @@ export default function BingCopilotKiSichtbarkeitPage() {
           <p>
             Google erklärt offiziell, dass ein KI-spezifischer Schreibstil oder Keyword-Phrasing für seine KI-Funktionen nicht nötig sind. Auf Bing war genau das stichwortdichte Begriffsbündel ausschlaggebend. Beide Aussagen stimmen, für unterschiedliche Systeme.
           </p>
+        </div>
+
+        <div className="my-8">
+          <FadeIn>
+            <img
+              src="/images/wissen/bing-copilot-ki-sichtbarkeit/bing-vs-google.png"
+              alt="Visualisierung der unterschiedlichen KI-Optimierungsansätze für Google und Bing"
+              className="w-full rounded-2xl shadow-lg border border-gray-100"
+            />
+            <p className="text-xs text-gray-400 mt-2">Vergleich: Googles organische Relevanz-Cloud vs. Bings strukturierte Begriffsbündel (Term-Blocks)</p>
+          </FadeIn>
         </div>
 
         <div className="overflow-x-auto my-8">

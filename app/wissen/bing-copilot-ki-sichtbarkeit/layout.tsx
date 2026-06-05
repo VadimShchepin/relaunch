@@ -24,12 +24,21 @@ export const metadata: Metadata = {
     description:
       'Echte Citation-Daten aus den Bing Webmaster Tools: Wie Microsoft Copilot Quellen auswählt und das Rezept, mit dem eine Seite 58% aller Zitate gewann.',
     siteName: 'aiseo.hamburg',
+    images: [
+      {
+        url: '/images/wissen/bing-copilot-ki-sichtbarkeit/hero-copilot-visibility.png',
+        width: 1024,
+        height: 1024,
+        alt: 'Bing & Copilot KI-Sichtbarkeit: AI Search Performance und Zitate',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Bing & Copilot KI-Sichtbarkeit | Was 600 Citations verraten',
     description:
       'Echte Citation-Daten aus den Bing Webmaster Tools: Wie Microsoft Copilot Quellen auswählt und das Rezept dahinter.',
+    images: ['/images/wissen/bing-copilot-ki-sichtbarkeit/hero-copilot-visibility.png'],
   },
   robots: {
     index: true,
