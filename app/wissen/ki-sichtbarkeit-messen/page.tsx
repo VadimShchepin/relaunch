@@ -3,6 +3,7 @@ import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
 import { Button } from '@/components/ui/Button';
 import { 
+  HeroProcessVisual,
   BlindSpotVisual, 
   FourLevelsVisual, 
   GA4MockupVisual, 
@@ -143,6 +144,8 @@ export default function KISichtbarkeitMessenPage() {
           <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
             Dein Google-Ranking kennst du. Deine CTR kennst du. Aber weißt du, ob ChatGPT dein Unternehmen empfiehlt? Hier sind die Tools, KPIs und Methoden, um KI-Sichtbarkeit endlich messbar zu machen.
           </p>
+
+          <HeroProcessVisual />
       </section>
 
       {/* ============================================================ */}
