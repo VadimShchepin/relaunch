@@ -2,6 +2,13 @@ import React from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
 import { Button } from '@/components/ui/Button';
+import { 
+  BlindSpotVisual, 
+  FourLevelsVisual, 
+  GA4MockupVisual, 
+  ShareOfVoiceVisual, 
+  DashboardFlowVisual 
+} from '@/components/wissen/KISichtbarkeitMessenVisuals';
 
 /* ------------------------------------------------------------------ */
 /*  FAQ data                                                          */
@@ -184,6 +191,8 @@ export default function KISichtbarkeitMessenPage() {
 
           <StatBox text="35% aller Online-Recherchen laufen 2026 über KI-Plattformen. Dein Reporting deckt 0% davon ab." />
 
+          <BlindSpotVisual />
+
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
             <p>
               Du gibst Tausende für SEO aus und weißt nicht, ob es in der KI-Welt wirkt. Deine Agentur zeigt dir Google-Rankings, aber verschweigt, dass ein wachsender Teil der Recherchen jetzt über ChatGPT, Perplexity und Google AI Overviews läuft.
@@ -233,6 +242,8 @@ export default function KISichtbarkeitMessenPage() {
           <p className="text-lg text-gray-600 leading-relaxed mb-10">
             KI-Sichtbarkeit lässt sich nicht mit einem einzigen Tool erfassen. Du brauchst vier Perspektiven, die zusammen ein vollständiges Bild ergeben.
           </p>
+
+          <FourLevelsVisual />
 
           <div className="grid sm:grid-cols-2 gap-6">
             {/* Ebene 1 */}
@@ -340,6 +351,9 @@ export default function KISichtbarkeitMessenPage() {
             <p className="text-gray-600 leading-relaxed mb-3">
               Kostenlos und sofort einsetzbar. Erstelle einen Custom Report, der Traffic von KI-Plattformen isoliert.
             </p>
+            
+            <GA4MockupVisual />
+
             <div className="bg-gray-50 rounded-xl p-4 my-4 overflow-x-auto">
               <p className="text-sm font-semibold text-black mb-2">GA4 Exploration einrichten:</p>
               <pre className="text-xs text-gray-700 leading-relaxed whitespace-pre-wrap">{`1. GA4 > Explore > Free Form
@@ -414,6 +428,9 @@ export default function KISichtbarkeitMessenPage() {
               <p className="text-gray-600 leading-relaxed mb-2">
                 Wie oft wirst du im Vergleich zu Wettbewerbern in KI-Antworten zitiert? Miss das über 50-100 branchenrelevante Prompts monatlich.
               </p>
+              
+              <ShareOfVoiceVisual />
+
               <p className="text-sm text-brand-accent font-medium">Ziel: Steigerung um 5-10 Prozentpunkte pro Quartal</p>
             </div>
 
@@ -465,6 +482,8 @@ export default function KISichtbarkeitMessenPage() {
           <p className="text-lg text-gray-600 leading-relaxed mb-10">
             Schritt für Schritt zum ersten aussagekräftigen Report. Du brauchst keine Enterprise-Tools - starte mit dem, was du hast.
           </p>
+
+          <DashboardFlowVisual />
 
           <ol className="space-y-8">
             <li>
