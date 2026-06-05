@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
 import { Button } from '@/components/ui/Button';
+import { ArticleHeroImage } from '@/components/wissen/ArticleHeroImage';
 
 /* ------------------------------------------------------------------ */
 /*  FAQ data                                                          */
@@ -106,6 +107,7 @@ const articleJsonLd = {
   headline: 'Technische KI-Sichtbarkeit: Warum KI-Crawler deine Website nicht verstehen',
   description:
     'Die technischen Grundlagen für KI-Sichtbarkeit: robots.txt, llms.txt, Schema.org, semantisches HTML und Core Web Vitals für LLMs.',
+  image: 'https://aiseo.hamburg/images/wissen/technische-ki-sichtbarkeit/hero-technical-ai-crawlers.webp',
   author: {
     '@type': 'Person',
     name: 'Vadim Shchepin',
@@ -193,6 +195,11 @@ export default function TechnischeKISichtbarkeitPage() {
           <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
             Deine IT hat GPTBot blockiert und du wunderst dich, warum ChatGPT dich nicht kennt. Hier sind die technischen Grundlagen, die darüber entscheiden, ob KI deine Website lesen, verstehen und zitieren kann.
           </p>
+          <ArticleHeroImage
+            src="/images/wissen/technische-ki-sichtbarkeit/hero-technical-ai-crawlers.webp"
+            alt="Technisches Dashboard mit KI-Crawler-Pfaden, Server-Logs, robots.txt, llms.txt und Schema-Markup für maschinenlesbare Websites"
+            caption="Crawlbarkeit, semantisches HTML, Schema und serverseitig gerenderte Inhalte entscheiden, ob KI-Systeme deine Website überhaupt verstehen."
+          />
       </section>
 
       {/* ============================================================ */}

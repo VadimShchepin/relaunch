@@ -5,6 +5,7 @@ import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
+import { ArticleHeroImage } from '@/components/wissen/ArticleHeroImage';
 
 /* ------------------------------------------------------------------ */
 /*  FAQ data                                                          */
@@ -64,7 +65,7 @@ const articleJsonLd = {
   headline: 'AEO – Answer Engine Optimization: Der komplette Guide für 2026',
   description:
     'Was ist Answer Engine Optimization (AEO)? Definition, AEO vs SEO, die 5 Säulen der AEO-Strategie und Schritt-für-Schritt-Anleitung für 2026.',
-  image: 'https://aiseo.hamburg/images/wissen/aeo-answer-engine-optimization.jpg',
+  image: 'https://aiseo.hamburg/images/wissen/aeo-answer-engine-optimization/hero-aeo-answer-engine.webp',
   author: {
     '@type': 'Person',
     name: 'Vadim Shchepin',
@@ -176,6 +177,11 @@ export default function AEOAnswerEngineOptimizationPage() {
           <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
             65% aller Suchen enden ohne Klick. Deine Kunden wollen Antworten, keine 10 blauen Links. Answer Engine Optimization sorgt dafür, dass dein Content die Antwort <em>ist</em> – in ChatGPT, Perplexity, Google AI Overviews und Sprachassistenten.
           </p>
+          <ArticleHeroImage
+            src="/images/wissen/aeo-answer-engine-optimization/hero-aeo-answer-engine.webp"
+            alt="Answer-Engine-Dashboard zeigt die Transformation von klassischen Suchergebnissen zu direkten KI-Antworten mit Zitationsknoten"
+            caption="AEO verschiebt den Fokus: nicht mehr nur gefunden werden, sondern als direkte Antwort und zitierte Quelle erscheinen."
+          />
         </FadeIn>
       </section>
 

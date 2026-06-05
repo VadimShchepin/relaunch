@@ -18,11 +18,13 @@ export const metadata: Metadata = {
         siteName: 'aiseo.hamburg',
         locale: 'de_DE',
         type: 'article',
+        images: [{ url: '/images/wissen/ki-sichtbarkeit-anwaelte/hero-law-firm-ai-visibility.webp', width: 1672, height: 941, alt: 'KI-Sichtbarkeit für Anwälte und Kanzleien' }],
     },
     twitter: {
         card: 'summary_large_image',
         title: 'KI-Sichtbarkeit für Anwälte & Kanzleien: Mandanten fragen die KI',
         description: 'Wie Anwälte und Kanzleien in ChatGPT, Perplexity und Google AI sichtbar werden. 7 Strategien für mehr Mandate durch KI-Empfehlungen.',
+        images: ['/images/wissen/ki-sichtbarkeit-anwaelte/hero-law-firm-ai-visibility.webp'],
     },
     alternates: {
         canonical: 'https://aiseo.hamburg/wissen/ki-sichtbarkeit-anwaelte',

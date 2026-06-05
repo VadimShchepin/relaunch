@@ -11,11 +11,13 @@ export const metadata: Metadata = {
         siteName: 'aiseo.hamburg',
         locale: 'de_DE',
         type: 'article',
+        images: [{ url: '/images/wissen/ki-sichtbarkeit-ecommerce/hero-ecommerce-ai-visibility.webp', width: 1672, height: 941, alt: 'KI-Sichtbarkeit für Online-Shops und E-Commerce' }],
     },
     twitter: {
         card: 'summary_large_image',
         title: 'KI-Sichtbarkeit für Online-Shops: Warum ChatGPT deine Produkte meidet',
         description: 'E-Commerce und KI-Sichtbarkeit: Warum Produktseiten für LLMs unsichtbar sind und wie du zitierbaren Content aufbaust.',
+        images: ['/images/wissen/ki-sichtbarkeit-ecommerce/hero-ecommerce-ai-visibility.webp'],
     },
     alternates: {
         canonical: 'https://aiseo.hamburg/wissen/ki-sichtbarkeit-ecommerce',

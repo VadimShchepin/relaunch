@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
 import { Button } from '@/components/ui/Button';
+import { ArticleHeroImage } from '@/components/wissen/ArticleHeroImage';
 
 /* ------------------------------------------------------------------ */
 /*  FAQ data                                                          */
@@ -61,7 +62,7 @@ const articleJsonLd = {
   headline: 'AI Content Strategie: Inhalte die KI-Systeme zitieren wollen',
   description:
     'Der komplette Guide zu KI-optimiertem Content: 7 Strategien, Content-Audit-Checkliste und Workflow für Inhalte, die ChatGPT und Perplexity zitieren.',
-  image: 'https://aiseo.hamburg/images/wissen/ai-content-strategie.jpg',
+  image: 'https://aiseo.hamburg/images/wissen/ai-content-strategie/hero-ai-content-strategy.webp',
   author: {
     '@type': 'Person',
     name: 'Vadim Shchepin',
@@ -148,6 +149,11 @@ export default function AIContentStrategiePage() {
           <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
             Du produzierst Content wie 2020 - aber KI liest anders als Google. Dein Blog hat 100 Artikel, aber kein einziger wird von ChatGPT zitiert. Hier erfährst du, wie du Inhalte erstellst, die KI-Systeme als Quelle nutzen.
           </p>
+          <ArticleHeroImage
+            src="/images/wissen/ai-content-strategie/hero-ai-content-strategy.webp"
+            alt="Content-Strategie-Dashboard mit Answer-First-Artikeln, Quellenkarten, FAQ-Modulen und Zitationspfaden für KI-Systeme"
+            caption="Zitierbarer Content entsteht aus klaren Antworten, belastbaren Quellen und modularer Struktur, nicht aus längeren Keyword-Texten."
+          />
       </section>
 
       {/* ============================================================ */}
