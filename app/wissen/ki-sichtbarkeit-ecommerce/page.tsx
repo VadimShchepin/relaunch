@@ -1,6 +1,7 @@
 import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
 import { Button } from '@/components/ui/Button';
+import { ArticleHeroImage } from '@/components/wissen/ArticleHeroImage';
 
 /* ------------------------------------------------------------------ */
 /*  FAQ data                                                          */
@@ -60,6 +61,7 @@ const articleJsonLd = {
   headline: 'KI-Sichtbarkeit für Online-Shops: Warum ChatGPT deine Produkte nicht empfiehlt',
   description:
     'Warum E-Commerce-Shops für ChatGPT und Perplexity unsichtbar sind. Produktseiten, die KI nicht zitieren kann, und was stattdessen funktioniert.',
+  image: 'https://aiseo.hamburg/images/wissen/ki-sichtbarkeit-ecommerce/hero-ecommerce-ai-visibility.webp',
   author: {
     '@type': 'Person',
     name: 'Vadim Shchepin',
@@ -128,6 +130,11 @@ export default function KiSichtbarkeitEcommercePage() {
           &bdquo;5 Gründe, warum du unsere Produkte liebst&ldquo;. ChatGPT kennt keins davon. Nicht eins.
           Das ist ungefähr so, als hättest du ein Restaurant ohne Tür gebaut.
         </p>
+        <ArticleHeroImage
+          src="/images/wissen/ki-sichtbarkeit-ecommerce/hero-ecommerce-ai-visibility.webp"
+          alt="E-Commerce-Dashboard zeigt, wie Produktseiten durch Buying Guides, Vergleiche und Schema-Markup für KI-Systeme sichtbar werden"
+          caption="Produktdaten allein reichen nicht. KI-Systeme brauchen Kontext, Vergleiche und zitierbare Kaufberatung, um Produkte empfehlen zu können."
+        />
       </section>
 
       {/* TL;DR */}

@@ -5,12 +5,14 @@ import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
+import { ArticleHeroImage } from '@/components/wissen/ArticleHeroImage';
 
 const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: 'KI-Sichtbarkeit für Anwälte & Kanzleien: Mandanten fragen die KI',
     description: 'Wie Anwälte und Kanzleien in ChatGPT, Perplexity und Google AI sichtbar werden. 7 Strategien für KI-Empfehlungen, E-E-A-T für Rechtsberatung und lokale Sichtbarkeit in Hamburg.',
+    image: 'https://aiseo.hamburg/images/wissen/ki-sichtbarkeit-anwaelte/hero-law-firm-ai-visibility.webp',
     author: {
         '@type': 'Person',
         name: 'Vadim Shchepin',
@@ -141,6 +143,11 @@ const HeroSection: React.FC = () => (
                 verliert Mandate - ohne es zu wissen. Dieser Guide zeigt, wie Kanzleien in
                 KI-Empfehlungen sichtbar werden.
             </p>
+            <ArticleHeroImage
+                src="/images/wissen/ki-sichtbarkeit-anwaelte/hero-law-firm-ai-visibility.webp"
+                alt="Legal-Tech-Dashboard zeigt, wie Fachpublikationen, Bewertungen, lokale Signale und LegalService-Schema zu KI-Empfehlungen für Kanzleien führen"
+                caption="Für Kanzleien zählt nicht nur Ranking, sondern bestätigte Expertise über Website, Fachportale, Bewertungen und strukturierte Daten."
+            />
         </FadeIn>
     </section>
 );

@@ -26,13 +26,14 @@ export const metadata: Metadata = {
     description:
       'Was ist Answer Engine Optimization (AEO)? Der komplette Guide: Definition, AEO vs SEO, die 5 Säulen, Strategien für ChatGPT, Perplexity & AI Overviews.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/wissen/aeo-answer-engine-optimization.jpg', width: 1200, height: 630, alt: 'AEO – Answer Engine Optimization Guide 2026' }],
+    images: [{ url: '/images/wissen/aeo-answer-engine-optimization/hero-aeo-answer-engine.webp', width: 1672, height: 941, alt: 'AEO Answer Engine Optimization Guide 2026' }],
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: 'AEO – Answer Engine Optimization: Der Guide für 2026 | aiseo.hamburg',
     description:
       'Was ist Answer Engine Optimization (AEO)? Der komplette Guide: Definition, AEO vs SEO, die 5 Säulen, Strategien für ChatGPT, Perplexity & AI Overviews.',
+    images: ['/images/wissen/aeo-answer-engine-optimization/hero-aeo-answer-engine.webp'],
   },
   robots: {
     index: true,

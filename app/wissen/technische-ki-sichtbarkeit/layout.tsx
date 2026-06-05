@@ -27,9 +27,11 @@ export const metadata: Metadata = {
     description:
       'Die technischen Grundlagen für KI-Sichtbarkeit: robots.txt, llms.txt, Schema.org, semantisches HTML und Core Web Vitals für LLMs.',
     siteName: 'aiseo.hamburg',
+    images: [{ url: '/images/wissen/technische-ki-sichtbarkeit/hero-technical-ai-crawlers.webp', width: 1672, height: 941, alt: 'Technische KI-Sichtbarkeit mit Crawlern, Logs und Schema-Markup' }],
   },
   twitter: {
     card: 'summary_large_image',
+    images: ['/images/wissen/technische-ki-sichtbarkeit/hero-technical-ai-crawlers.webp'],
   },
   robots: {
     index: true,

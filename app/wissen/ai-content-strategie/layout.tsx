@@ -26,13 +26,14 @@ export const metadata: Metadata = {
     description:
       'Erfahre, wie du Content erstellst, den ChatGPT, Perplexity und Google AI zitieren. Mit Content-Audit-Checkliste, 7 Strategien und Workflow fur KI-optimierte Inhalte.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/wissen/ai-content-strategie.jpg', width: 1200, height: 630, alt: 'AI Content Strategie Guide 2026' }],
+    images: [{ url: '/images/wissen/ai-content-strategie/hero-ai-content-strategy.webp', width: 1672, height: 941, alt: 'AI Content Strategie für zitierbare KI-Antworten' }],
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: 'AI Content Strategie: Inhalte die KI-Systeme zitieren wollen',
     description:
       'Erfahre, wie du Content erstellst, den ChatGPT, Perplexity und Google AI zitieren. Mit Content-Audit-Checkliste, 7 Strategien und Workflow fur KI-optimierte Inhalte.',
+    images: ['/images/wissen/ai-content-strategie/hero-ai-content-strategy.webp'],
   },
   robots: {
     index: true,
