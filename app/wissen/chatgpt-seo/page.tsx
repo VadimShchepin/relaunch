@@ -4,7 +4,7 @@ import { ArticleTemplate } from '@/components/wissen/ArticleTemplate';
 export const metadata: Metadata = {
   title: 'ChatGPT SEO: So optimierst du Inhalte für Empfehlungen statt Rankings',
   description:
-    'Was ChatGPT SEO wirklich bedeutet, welche Faktoren Empfehlungen beeinflussen und wie Unternehmen Inhalte für ChatGPT, Bing und KI-Zitate vorbereiten.',
+    'ChatGPT belohnt nicht Rankings, sondern Empfehlungen. Welche Faktoren darüber entscheiden und wie du Inhalte für ChatGPT, Bing und KI-Zitate vorbereitest. Schritt für Schritt.',
   keywords: [
     'ChatGPT SEO',
     'SEO für ChatGPT',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: 'https://aiseo.hamburg/wissen/chatgpt-seo',
     title: 'ChatGPT SEO: So optimierst du Inhalte für Empfehlungen statt Rankings',
     description:
-      'Was ChatGPT SEO wirklich bedeutet, welche Faktoren Empfehlungen beeinflussen und wie Unternehmen Inhalte für ChatGPT vorbereiten.',
+      'ChatGPT belohnt nicht Rankings, sondern Empfehlungen. Welche Faktoren entscheiden und wie du Inhalte dafür vorbereitest.',
     siteName: 'aiseo.hamburg',
     images: [{ url: '/images/wissen/chatgpt.jpg', width: 1200, height: 630, alt: 'ChatGPT SEO Guide' }],
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'ChatGPT SEO: So optimierst du Inhalte für Empfehlungen statt Rankings',
     description:
-      'Was ChatGPT SEO wirklich bedeutet, welche Faktoren Empfehlungen beeinflussen und wie Unternehmen Inhalte für ChatGPT vorbereiten.',
+      'ChatGPT belohnt nicht Rankings, sondern Empfehlungen. Welche Faktoren entscheiden und wie du Inhalte dafür vorbereitest.',
   },
   alternates: {
     canonical: 'https://aiseo.hamburg/wissen/chatgpt-seo',

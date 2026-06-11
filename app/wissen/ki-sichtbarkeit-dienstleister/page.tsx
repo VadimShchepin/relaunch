@@ -127,6 +127,15 @@ export default function KiSichtbarkeitDienstleisterPage() {
           <p className="mt-4 text-sm text-gray-400">
             Von Vadim Shchepin &middot; AI SEO Specialist &middot; 3.&nbsp;April&nbsp;2026 &middot; Lesedauer ca. 12&nbsp;Min.
           </p>
+          <div className="mt-10 rounded-2xl overflow-hidden border border-black/5 bg-white shadow-sm">
+            <img
+              src="/images/wissen/ki-sichtbarkeit-dienstleister/hero-ki-sichtbarkeit-dienstleister.svg"
+              alt="Vom unsichtbaren Experten zum von KI empfohlenen Anbieter: ein Anbieter wird in einem Netzwerk hervorgehoben und nach au&szlig;en empfohlen"
+              width={1200}
+              height={630}
+              className="w-full h-auto"
+            />
+          </div>
         </section>
 
         {/* -------------------------------------------------------- */}

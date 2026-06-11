@@ -5,8 +5,8 @@ import { CookieConsent } from "@/components/ui/CookieConsent";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "KI-Sichtbarkeit Hamburg | Sichtbar in ChatGPT & Perplexity",
-    description: "Professionelle KI-Optimierung (AI SEO/GEO/AEO) für bessere Sichtbarkeit in ChatGPT, Perplexity & Co. Spezialist für Hamburg.",
+    title: "KI-Sichtbarkeit Hamburg: Wirst du von ChatGPT empfohlen?",
+    description: "Wenn Kunden eine KI nach einem Anbieter fragen, wirst du genannt oder dein Wettbewerber? Ich mache Hamburger Unternehmen in ChatGPT, Perplexity und Google AI sichtbar. Mit messbaren Ergebnissen.",
     keywords: "AI SEO, KI Sichtbarkeit, GEO, AEO, Hamburg, ChatGPT Optimierung, Perplexity, Google AI",
     metadataBase: new URL('https://aiseo.hamburg'),
     alternates: {
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
         ]
     },
     openGraph: {
-        title: "KI-Sichtbarkeit Hamburg | Sichtbar in ChatGPT & Perplexity",
-        description: "Professionelle KI-Optimierung für bessere Sichtbarkeit in ChatGPT, Perplexity & Co.",
+        title: "KI-Sichtbarkeit Hamburg: Wirst du von ChatGPT empfohlen?",
+        description: "Wirst du genannt, wenn Kunden eine KI nach einem Anbieter fragen? Ich mache Hamburger Unternehmen in ChatGPT, Perplexity und Google AI sichtbar.",
         url: "https://aiseo.hamburg/",
         siteName: "aiseo.hamburg",
         locale: "de_DE",
@@ -48,8 +48,8 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "KI-Sichtbarkeit Hamburg | Sichtbar in ChatGPT & Perplexity",
-        description: "Professionelle KI-Optimierung für bessere Sichtbarkeit in ChatGPT, Perplexity & Co.",
+        title: "KI-Sichtbarkeit Hamburg: Wirst du von ChatGPT empfohlen?",
+        description: "Wirst du genannt, wenn Kunden eine KI nach einem Anbieter fragen? Ich mache Hamburger Unternehmen in ChatGPT, Perplexity und Google AI sichtbar.",
         images: ["/android-chrome-512x512.png"],
     },
     robots: {

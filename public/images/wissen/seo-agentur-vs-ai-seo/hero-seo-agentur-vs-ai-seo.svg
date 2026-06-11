@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Vergleich von klassischen Rankings und KI-Empfehlungen">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F5F2"/>
+      <stop offset="1" stop-color="#F2EEE8"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4FAF8C"/>
+      <stop offset="1" stop-color="#3D8F73"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#4FAF8C" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#4FAF8C" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1C1917" flood-opacity=".12"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="9" result="b"/>
+      <feColorMatrix in="b" type="matrix" values="1 0 0 0 0.31 0 1 0 0 0.69 0 0 1 0 0.55 0 0 0 .8 0" result="c"/>
+      <feMerge><feMergeNode in="c"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#7D8C9E" opacity=".11"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  <circle cx="200" cy="160" r="200" fill="url(#halo)" opacity=".55"/>
+  <circle cx="960" cy="460" r="250" fill="url(#halo)" opacity=".7"/>
+
+  <line x1="600" y1="72" x2="600" y2="558" stroke="#1C1917" stroke-opacity=".12" stroke-width="1.5" stroke-dasharray="5 8"/>
+  <rect x="598.5" y="70" width="3" height="490" fill="#FF5E3A" opacity=".55"/>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#7D8C9E" stroke-opacity=".6" stroke-width="2">
+      <rect x="126" y="122" width="370" height="18" rx="9"/>
+      <rect x="126" y="164" width="304" height="18" rx="9"/>
+      <rect x="126" y="206" width="344" height="18" rx="9"/>
+      <rect x="126" y="248" width="274" height="18" rx="9"/>
+      <rect x="126" y="290" width="322" height="18" rx="9"/>
+      <rect x="126" y="332" width="250" height="18" rx="9"/>
+      <rect x="126" y="374" width="198" height="18" rx="9"/>
+    </g>
+    <path d="M458 94 C432 102 418 108 392 125" stroke="#1C1917" stroke-opacity=".24" stroke-width="2"/>
+    <circle cx="461" cy="92" r="16" fill="#F7F5F2" stroke="#7D8C9E" stroke-opacity=".5" stroke-width="2"/>
+    <path d="M472 104 L488 120" stroke="#7D8C9E" stroke-opacity=".7" stroke-width="3"/>
+  </g>
+
+  <g fill="#9CA38A" fill-opacity=".25">
+    <circle cx="146" cy="131" r="4"/>
+    <circle cx="146" cy="173" r="4"/>
+    <circle cx="146" cy="215" r="4"/>
+    <circle cx="146" cy="257" r="4"/>
+    <circle cx="146" cy="299" r="4"/>
+    <circle cx="146" cy="341" r="4"/>
+    <circle cx="146" cy="383" r="4"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="682" y="120" width="352" height="390" rx="30" fill="#F7F5F2"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M732 424 C778 380 815 348 866 318" stroke="url(#green)" stroke-width="2.2"/>
+    <path d="M760 372 C810 350 843 331 896 285" stroke="url(#green)" stroke-width="2.2" opacity=".92"/>
+    <path d="M795 444 C845 414 885 385 926 336" stroke="url(#green)" stroke-width="2.2" opacity=".92"/>
+    <path d="M818 386 C861 358 900 318 946 266" stroke="url(#green)" stroke-width="2.2" opacity=".82"/>
+    <path d="M834 326 C878 304 916 268 962 216" stroke="url(#green)" stroke-width="2.2" opacity=".72"/>
+    <path d="M866 318 C898 307 932 300 971 302" stroke="url(#green)" stroke-width="2.2" opacity=".75"/>
+    <path d="M896 285 C932 272 964 256 996 232" stroke="url(#green)" stroke-width="2.2" opacity=".72"/>
+    <path d="M926 336 C951 334 977 338 1010 350" stroke="url(#green)" stroke-width="2.2" opacity=".72"/>
+    <path d="M962 216 C984 197 1008 185 1036 180" stroke="url(#green)" stroke-width="2.2" opacity=".58"/>
+  </g>
+
+  <g filter="url(#glow)">
+    <circle cx="867" cy="318" r="18" fill="#4FAF8C"/>
+    <circle cx="867" cy="318" r="38" fill="none" stroke="#4FAF8C" stroke-opacity=".16" stroke-width="2"/>
+    <circle cx="867" cy="318" r="60" fill="none" stroke="#4FAF8C" stroke-opacity=".08" stroke-width="2"/>
+  </g>
+
+  <g fill="#7D8C9E" fill-opacity=".3">
+    <circle cx="732" cy="424" r="8"/>
+    <circle cx="760" cy="372" r="7"/>
+    <circle cx="795" cy="444" r="7"/>
+    <circle cx="818" cy="386" r="7"/>
+    <circle cx="834" cy="326" r="6"/>
+    <circle cx="896" cy="285" r="7"/>
+    <circle cx="926" cy="336" r="7"/>
+    <circle cx="962" cy="216" r="6"/>
+    <circle cx="971" cy="302" r="6"/>
+    <circle cx="996" cy="232" r="6"/>
+    <circle cx="1010" cy="350" r="6"/>
+    <circle cx="1036" cy="180" r="5"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <circle cx="1071" cy="168" r="18" fill="#4FAF8C"/>
+    <circle cx="1071" cy="168" r="34" fill="#F7F5F2" opacity=".22"/>
+    <path d="M1054 169 L1067 182 L1089 159" fill="none" stroke="#F7F5F2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g fill="none" stroke="#1C1917" stroke-opacity=".08" stroke-width="1.5">
+    <path d="M684 534 C780 520 862 520 1018 526"/>
+    <path d="M102 104 C224 78 344 78 480 102"/>
+  </g>
+</svg>

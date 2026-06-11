@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'Sichtbarkeit in ChatGPT: So werden Unternehmen empfohlen',
-    description: 'Wie werden Unternehmen in ChatGPT sichtbar? Erfahren Sie die wichtigsten Faktoren, Strategien und Praxis-Tipps fur mehr KI-Sichtbarkeit in ChatGPT.',
+    description: 'Warum ChatGPT manche Unternehmen empfiehlt und andere nie nennt. Die Faktoren hinter den Empfehlungen und eine konkrete Anleitung, wie du selbst zur zitierten Quelle wirst.',
     keywords: [
         'Sichtbarkeit in ChatGPT',
         'ChatGPT Sichtbarkeit',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     ],
     openGraph: {
         title: 'Sichtbarkeit in ChatGPT | So werden Unternehmen empfohlen',
-        description: 'Wie werden Unternehmen in ChatGPT sichtbar? Die wichtigsten Faktoren und Strategien.',
+        description: 'Warum ChatGPT manche Unternehmen empfiehlt und andere nie nennt, und wie du selbst zur zitierten Quelle wirst.',
         url: 'https://aiseo.hamburg/wissen/sichtbarkeit-in-chatgpt',
         siteName: 'aiseo.hamburg',
         locale: 'de_DE',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     twitter: {
         card: 'summary_large_image',
         title: 'Sichtbarkeit in ChatGPT | So werden Unternehmen empfohlen',
-        description: 'Wie werden Unternehmen in ChatGPT sichtbar? Die wichtigsten Faktoren und Strategien.',
+        description: 'Warum ChatGPT manche Unternehmen empfiehlt und andere nie nennt, und wie du selbst zur zitierten Quelle wirst.',
     },
     alternates: {
         canonical: 'https://aiseo.hamburg/wissen/sichtbarkeit-in-chatgpt',

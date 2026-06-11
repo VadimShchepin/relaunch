@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'KI-Sichtbarkeit | Der komplette Guide für Unternehmen 2026',
+  title: 'KI-Sichtbarkeit 2026: der Guide, mit dem dich KI empfiehlt',
   description:
-    'Was ist KI-Sichtbarkeit, warum ist sie entscheidend und wie erreichst du sie? Der umfassende Guide mit Strategie, Tools und 10 konkreten Schritten.',
+    'Was KI-Sichtbarkeit ist, warum sie über deinen Umsatz entscheidet und wie du sie in 10 Schritten erreichst. Mit Strategie, Tools und Checkliste für ChatGPT, Perplexity und Google AI.',
   keywords: [
     'KI-Sichtbarkeit',
     'ki sichtbarkeit',
@@ -24,17 +24,17 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/wissen/ki-sichtbarkeit',
-    title: 'KI-Sichtbarkeit | Der komplette Guide für Unternehmen 2026',
+    title: 'KI-Sichtbarkeit 2026: der Guide, mit dem dich KI empfiehlt',
     description:
-      'Was ist KI-Sichtbarkeit, warum ist sie entscheidend und wie erreichst du sie? Der umfassende Guide mit Strategie, Tools und 10 konkreten Schritten.',
+      'Was KI-Sichtbarkeit ist, warum sie über deinen Umsatz entscheidet und wie du sie in 10 Schritten erreichst. Mit Strategie, Tools und Checkliste für ChatGPT, Perplexity und Google AI.',
     siteName: 'aiseo.hamburg',
     images: [{ url: '/images/wissen/ki-sichtbarkeit.jpg', width: 1200, height: 630, alt: 'KI-Sichtbarkeit Guide 2026' }],
   },
   twitter: {
     card: 'summary',
-    title: 'KI-Sichtbarkeit | Der komplette Guide für Unternehmen 2026',
+    title: 'KI-Sichtbarkeit 2026: der Guide, mit dem dich KI empfiehlt',
     description:
-      'Was ist KI-Sichtbarkeit, warum ist sie entscheidend und wie erreichst du sie? Der umfassende Guide mit Strategie, Tools und 10 konkreten Schritten.',
+      'Was KI-Sichtbarkeit ist, warum sie über deinen Umsatz entscheidet und wie du sie in 10 Schritten erreichst. Mit Strategie, Tools und Checkliste für ChatGPT, Perplexity und Google AI.',
   },
   robots: {
     index: true,

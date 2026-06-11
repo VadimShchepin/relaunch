@@ -129,6 +129,15 @@ export default function SeoAgenturVsAiSeoPage() {
         <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
           Du zahlst 3.000&nbsp;&euro; im Monat f&uuml;r Position&nbsp;7 bei Google. Dein Wettbewerber zahlt weniger und wird von ChatGPT empfohlen. Einer von euch hat die Zukunft verstanden.
         </p>
+        <div className="mt-10 rounded-2xl overflow-hidden border border-black/5 bg-white shadow-sm max-w-2xl">
+          <img
+            src="/images/wissen/seo-agentur-vs-ai-seo/hero-seo-agentur-vs-ai-seo.svg"
+            alt="Klassische Google-Rankings im Vergleich zu KI-Empfehlungen: links eine statische Ergebnisliste, rechts ein Empfehlungsfluss, der in einer KI-Antwort m&uuml;ndet"
+            width={1200}
+            height={630}
+            className="w-full h-auto"
+          />
+        </div>
       </section>
 
       {/* ============================================================ */}
