@@ -17,6 +17,12 @@ const PAGES = [
     tag: 'AI SEO',
   },
   {
+    title: 'Google AI Overviews Optimierung Hamburg',
+    description: 'Als Quelle in Googles KI-Antwortkasten und AI Mode auftauchen, ausgerichtet an Googles offizieller Search-Central-Doku.',
+    href: '/hamburg/google-ai-overviews',
+    tag: 'Google AI',
+  },
+  {
     title: 'ChatGPT Optimierung Hamburg',
     description: 'Wie Unternehmen in Hamburg für ChatGPT-Empfehlungen und GPT-Sichtbarkeit aufgebaut werden.',
     href: '/hamburg/chatgpt-optimierung',
