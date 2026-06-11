@@ -25,6 +25,7 @@ Note: Dev/build scripts use `NODE_OPTIONS='--max-old-space-size=8192'` for GSAP 
 - `app/` - Next.js App Router pages and API routes
 - `app/api/contact/` - Contact form handler (nodemailer via Brevo SMTP)
 - `app/api/newsletter/` - Brevo double opt-in newsletter subscription
+- `app/api/booking/` - Booking/intro-call request handler (same Brevo SMTP pattern as contact). Powers `/termin`; success redirects to `/termin/danke` (noindex, excluded from sitemap)
 - `components/sections/` - Major page sections (Hero, Navbar, FAQ, etc.)
 - `components/ui/` - Reusable primitives (Button, FadeIn, Icons, Tag)
 - `components/GoogleTag.tsx` - Google Analytics (gtag.js) with cookie consent gate
@@ -83,6 +84,15 @@ Note: Dev/build scripts use `NODE_OPTIONS='--max-old-space-size=8192'` for GSAP 
 1. Create `app/wissen/<slug>/layout.tsx` (metadata) and `page.tsx` (content)
 2. Add a matching entry to `app/wissen/articles.ts` (title, description, href, tag, `topic`, `readTime`, `date`). Sorting and the topic filter are handled automatically.
 3. `npm run test` runs `articles.guard.test.ts`, which fails if a folder has no registry entry (or vice versa). Run it before committing.
+
+## Search Performance Findings (Search Console + Bing AI, through 2026-06-09)
+
+Diagnosis from GSC and Bing Webmaster AI exports. Keep this in mind before "fixing CTR" with more title rewrites:
+
+- **The problem is rankings + indexing, not meta.** Impressions are climbing (~120/day) but clicks are ~0 because most queries sit at **position 40-90**, where CTR is ~0 regardless of the snippet. Meta only helps the few pages near page 1.
+- **Only the homepage is consistently near page 1** (pos ~11, ~1,000 impr/mo). A handful of articles sit at pos 14-30 with real impressions and zero clicks (`ki-sichtbarkeit-dienstleister`, `sichtbarkeit-in-perplexity`, `seo-agentur-vs-ai-seo`) - those are the only meta-CTR wins worth chasing.
+- **The best AI-cited pages are "Discovered - currently not indexed" by Google** (~23 URLs), including the Bing citation champion `wissen/ki-sichtbarkeit-messen` (400+ Bing AI citations). Google is not indexing the assets AI loves. Internal linking is already strong (messen has 18 inbound internal links), so the bottleneck is **site authority + crawl priority + time**, addressed off-page (`OFF-PAGE-AUTHORITY-PLAYBOOK.md`, `GOOGLE-BUSINESS-PROFILE-SETUP.md` - both kept local, repo is public). IndexNow (`submit-indexnow.sh`) notifies Bing only; it does not force Google indexing.
+- **Bing/Copilot is where citations actually happen.** Do not disturb `ki-sichtbarkeit-messen`'s recipe (defined jargon + named tools + benchmark numbers) - it is the proven citation moat.
 
 ## Testing
 

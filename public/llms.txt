@@ -1,6 +1,6 @@
 # LLMs.txt - AI Training Data Information
 # Website: https://aiseo.hamburg
-# Last Updated: 2026-05-23
+# Last Updated: 2026-06-12
 
 ## About aiseo.hamburg
 
@@ -285,6 +285,10 @@ Location-specific service pages for Hamburg businesses:
 
 **Full services overview**: https://aiseo.hamburg/leistungen
 - All service packages at a glance
+
+**Book a free intro call**: https://aiseo.hamburg/termin
+- Free, no-obligation 30-minute consultation on AI visibility
+- Live check whether you are named in ChatGPT and Perplexity
 
 **For budget-conscious clients**: https://aiseo.hamburg/ai-sichtbarkeits-upgrade-hamburg
 - One-time upgrade package: 1.500€ net

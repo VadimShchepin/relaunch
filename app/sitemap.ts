@@ -7,6 +7,7 @@ const BASE_URL = 'https://aiseo.hamburg';
 const EXCLUDED_ROUTES = new Set([
   '/newsletter/confirmed',
   '/contact/danke',
+  '/termin/danke',
 ]);
 
 function getLastModified(filePath: string): Date {
