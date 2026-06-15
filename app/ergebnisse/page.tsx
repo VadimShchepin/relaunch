@@ -8,9 +8,9 @@ import { CheckIcon, ArrowRightIcon } from "@/components/ui/Icons";
 
 const HEADLINE_STATS = [
   {
-    value: "+55%",
-    label: "Klicks in 30 Tagen",
-    note: "Handwerksbetrieb, Google Search Console",
+    value: "800",
+    label: "KI-Zitate in 3 Monaten",
+    note: "aiseo.hamburg, Microsoft Copilot",
   },
   {
     value: "+847%",
@@ -18,9 +18,41 @@ const HEADLINE_STATS = [
     note: "KinderAlbum, dokumentiert",
   },
   {
-    value: "Platz 1",
-    label: "meistzitiert in Bing & Copilot",
-    note: "unser Mess-Guide als KI-Quelle",
+    value: "+55%",
+    label: "Klicks in 30 Tagen",
+    note: "Handwerksbetrieb, Google Search Console",
+  },
+];
+
+type Citation = {
+  site: string;
+  href: string;
+  total: string;
+  description: string;
+  img: string;
+};
+
+const CITATIONS: Citation[] = [
+  {
+    site: "aiseo.hamburg",
+    href: "https://aiseo.hamburg",
+    total: "800",
+    description: "Unsere eigene Website. Aus dem Stand auf 800 Zitate in drei Monaten, mit den stärksten Wochen zuletzt.",
+    img: "/image/proof/citations-aiseo-hamburg.webp",
+  },
+  {
+    site: "dsgvoschulfotos.de",
+    href: "https://dsgvoschulfotos.de",
+    total: "281",
+    description: "DSGVO-konforme Schulfotografie. Von nahezu null auf 281 Zitate, seit Beginn der Zusammenarbeit klar steigend.",
+    img: "/image/proof/citations-dsgvoschulfotos.webp",
+  },
+  {
+    site: "dybeauty.de",
+    href: "https://dybeauty.de",
+    total: "225",
+    description: "K-Beauty Online-Shop. 225 Zitate in drei Monaten, ein neuer Kanal, der vorher gar nicht existierte.",
+    img: "/image/proof/citations-dybeauty.webp",
   },
 ];
 
@@ -228,6 +260,69 @@ export default function ErgebnissePage() {
               </FadeIn>
             </div>
           </div>
+        </section>
+
+        {/* AI citations proof */}
+        <section className="px-6 md:px-12 lg:px-20 py-16 md:py-20 max-w-[1100px] mx-auto">
+          <FadeIn>
+            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-black mb-4">
+              KI-Zitate: gemessen, nicht behauptet
+            </h2>
+            <p className="text-lg text-gray-600 mb-4 max-w-2xl">
+              Jedes Mal, wenn Microsoft Copilot eine dieser Seiten als Quelle nennt, zählt es als Zitat. Die Werte stammen direkt aus dem AI-Performance-Bericht der Bing Webmaster Tools (Quelle: Microsoft Copilots and Partners), Zeitraum drei Monate.
+            </p>
+            <p className="text-base text-gray-600 mb-12 max-w-2xl">
+              Auf allen drei Projekten startet die Kurve nahe null und steigt nach Beginn unserer Arbeit deutlich an. Das ist kein langsamer SEO-Effekt über Jahre, sondern ein Kanal, der innerhalb von Wochen entsteht.
+            </p>
+          </FadeIn>
+
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+            {CITATIONS.map((c, i) => (
+              <FadeIn key={c.site} delay={100 + i * 100}>
+                <div className="h-full flex flex-col bg-white rounded-card border border-gray-100 overflow-hidden">
+                  <a href={c.href} target="_blank" rel="noopener noreferrer" className="block bg-[#F7F5F2] border-b border-gray-100">
+                    <img
+                      src={c.img}
+                      alt={`AI-Performance-Bericht aus den Bing Webmaster Tools für ${c.site}: ${c.total} KI-Zitate in drei Monaten`}
+                      width={1200}
+                      height={630}
+                      loading="lazy"
+                      className="w-full h-auto"
+                    />
+                  </a>
+                  <div className="flex flex-col flex-1 p-6">
+                    <div className="flex items-baseline gap-2 mb-1">
+                      <span className="text-3xl font-semibold tracking-tight text-black">
+                        {c.total}
+                      </span>
+                      <span className="text-sm text-gray-500">Zitate / 3 Monate</span>
+                    </div>
+                    <a
+                      href={c.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-semibold text-black hover:text-brand-accent transition-colors mb-3"
+                    >
+                      {c.site}
+                    </a>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {c.description}
+                    </p>
+                  </div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+
+          <FadeIn delay={400}>
+            <p className="text-sm text-gray-500 mt-8 max-w-2xl">
+              Die gleiche Methode, mit der wir unsere eigene Website auf 800 Zitate gebracht haben, wenden wir auf Kundenprojekte an. Wie wir KI-Sichtbarkeit messen, zeigen wir offen im{" "}
+              <Link href="/wissen/ki-sichtbarkeit-messen" className="font-semibold text-black hover:text-brand-accent transition-colors underline">
+                Guide zur Messung von KI-Sichtbarkeit
+              </Link>
+              .
+            </p>
+          </FadeIn>
         </section>
 
         {/* Case studies */}

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Ergebnisse & Case Studies | KI-Sichtbarkeit aiseo",
   description:
-    "Nachprüfbare Ergebnisse statt Vanity-Grafiken: +55% Klicks, +847% KI-Traffic und der meistzitierte Inhalt in Bing und Copilot. Echte Case Studies aus Hamburg.",
+    "Nachprüfbare Ergebnisse statt Vanity-Grafiken: 800 KI-Zitate in 3 Monaten, +847% KI-Traffic, +55% Klicks. Echte Case Studies aus Hamburg, mit Quellen.",
   alternates: { canonical: "/ergebnisse" },
   openGraph: {
     title: "Ergebnisse & Case Studies | KI-Sichtbarkeit aiseo",
