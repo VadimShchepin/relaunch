@@ -22,10 +22,12 @@ export const Footer: React.FC = () => (
                         <p className="font-bold uppercase tracking-widest text-xs mb-1 text-white/80">Navigation</p>
                         <a href="/ai-sichtbarkeit-now" className="hover:text-white/80 transition-colors font-semibold">KI-Sichtbarkeit</a>
                         <a href="/leistungen" className="hover:text-white/80 transition-colors">Leistungen</a>
+                        <a href="/ai-seo-agentur" className="hover:text-white/80 transition-colors">AI SEO Agentur</a>
+                        <a href="/chatgpt-sichtbarkeit" className="hover:text-white/80 transition-colors">ChatGPT-Sichtbarkeit</a>
+                        <a href="/ergebnisse" className="hover:text-white/80 transition-colors">Ergebnisse</a>
+                        <a href="/preise" className="hover:text-white/80 transition-colors">Preise</a>
                         <a href="/ai-sichtbarkeits-upgrade-hamburg" className="hover:text-white/80 transition-colors">Upgrade Hamburg</a>
                         <a href="/ai-sichtbarkeit" className="hover:text-white/80 transition-colors">Was ist AI SEO?</a>
-                        <a href="/#proof" className="hover:text-white/80 transition-colors">Proof</a>
-                        <a href="/faq" className="hover:text-white/80 transition-colors">FAQ</a>
                         <a href="/ueber-mich" className="hover:text-white/80 transition-colors">Über mich</a>
                         <a href="/termin" className="hover:text-white/80 transition-colors">Termin buchen</a>
                         <a href="/contact" className="hover:text-white/80 transition-colors">Kontakt</a>

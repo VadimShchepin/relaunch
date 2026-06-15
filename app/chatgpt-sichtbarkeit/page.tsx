@@ -5,6 +5,11 @@ import { Footer } from "@/components/sections/Footer";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Button } from "@/components/ui/Button";
 import { CheckIcon, ArrowRightIcon, OpenAIIcon } from "@/components/ui/Icons";
+import { Proof } from "@/components/sections/Proof";
+import {
+  SourceSelectionVisual,
+  VisibilityCompareVisual,
+} from "@/components/sections/ConversionVisuals";
 
 type FAQItem = {
   q: string;
@@ -169,6 +174,12 @@ export default function ChatGptSichtbarkeitPage() {
               Kostenlose Kurzanalyse. KI-Sichtbarkeit Berater aus Hamburg. Gemessen mit echten Prompt-Tests.
             </p>
           </FadeIn>
+
+          <FadeIn delay={350}>
+            <div className="mt-12 max-w-[480px] mx-auto rounded-card border border-gray-100 bg-white p-6 md:p-7 shadow-sm">
+              <SourceSelectionVisual className="w-full" />
+            </div>
+          </FadeIn>
         </section>
 
         {/* Warum ChatGPT-Sichtbarkeit zählt */}
@@ -199,6 +210,11 @@ export default function ChatGptSichtbarkeitPage() {
                 <p>
                   Die Disziplin dahinter heißt Generative Engine Optimization (GEO), oft auch Answer Engine Optimization (AEO) oder AI SEO genannt. ChatGPT-Sichtbarkeit ist der sichtbarste Teil davon. Dieselbe Arbeit macht dich auch in Perplexity, Claude, Gemini und Google AI Overviews auffindbar.
                 </p>
+              </FadeIn>
+              <FadeIn delay={500}>
+                <div className="mt-10 rounded-card border border-gray-100 bg-[#F7F5F2] p-6 md:p-8">
+                  <VisibilityCompareVisual className="w-full max-w-[480px] mx-auto" />
+                </div>
               </FadeIn>
             </div>
           </div>
@@ -346,8 +362,22 @@ export default function ChatGptSichtbarkeitPage() {
                 </FadeIn>
               ))}
             </div>
+            <FadeIn delay={400}>
+              <div className="mt-10">
+                <Link
+                  href="/ergebnisse"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-brand-accent hover:text-white transition-colors group"
+                >
+                  Alle Ergebnisse mit nachprüfbaren Zahlen ansehen
+                  <ArrowRightIcon className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </FadeIn>
           </div>
         </section>
+
+        {/* Echte Belege, animiert */}
+        <Proof />
 
         {/* FAQ */}
         <section className="px-6 md:px-12 lg:px-20 py-16 md:py-24">

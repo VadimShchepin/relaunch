@@ -5,6 +5,8 @@ import { Footer } from "@/components/sections/Footer";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Button } from "@/components/ui/Button";
 import { CheckIcon, ArrowRightIcon } from "@/components/ui/Icons";
+import { Proof } from "@/components/sections/Proof";
+import { CitationGrowthVisual } from "@/components/sections/ConversionVisuals";
 
 const HEADLINE_STATS = [
   {
@@ -276,6 +278,12 @@ export default function ErgebnissePage() {
             </p>
           </FadeIn>
 
+          <FadeIn delay={50}>
+            <div className="mb-12 rounded-card border border-gray-100 bg-white p-6 md:p-8 max-w-[640px]">
+              <CitationGrowthVisual title="KI-ZITATE: TYPISCHER VERLAUF" className="w-full" />
+            </div>
+          </FadeIn>
+
           <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             {CITATIONS.map((c, i) => (
               <FadeIn key={c.site} delay={100 + i * 100}>
@@ -397,6 +405,9 @@ export default function ErgebnissePage() {
             ))}
           </div>
         </section>
+
+        {/* Echte KI-Antworten, animiert */}
+        <Proof />
 
         {/* How we measure */}
         <section className="px-6 md:px-12 lg:px-20 py-16 md:py-20 bg-white">

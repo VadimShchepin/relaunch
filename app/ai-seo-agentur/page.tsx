@@ -5,6 +5,12 @@ import { Footer } from "@/components/sections/Footer";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Button } from "@/components/ui/Button";
 import { CheckIcon, ArrowRightIcon } from "@/components/ui/Icons";
+import { Proof } from "@/components/sections/Proof";
+import {
+  SourceSelectionVisual,
+  ProcessFlowVisual,
+  CitationGrowthVisual,
+} from "@/components/sections/ConversionVisuals";
 
 const VALUES = [
   {
@@ -180,7 +186,9 @@ export default function AiSeoAgenturPage() {
 
       <main className="min-h-screen bg-[#F7F5F2]">
         {/* Hero */}
-        <section className="px-6 md:px-12 lg:px-20 pt-32 pb-16 md:pt-40 md:pb-20 max-w-[1000px] mx-auto">
+        <section className="px-6 md:px-12 lg:px-20 pt-32 pb-16 md:pt-40 md:pb-20 max-w-[1200px] mx-auto">
+          <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-12 lg:gap-16 items-center">
+            <div>
           <FadeIn>
             <p className="text-sm font-semibold text-brand-accent uppercase tracking-widest mb-4">
               AI SEO Agentur
@@ -232,6 +240,12 @@ export default function AiSeoAgenturPage() {
               </span>
             </div>
           </FadeIn>
+            </div>
+
+            <FadeIn delay={200}>
+              <SourceSelectionVisual className="w-full max-w-[460px] mx-auto" />
+            </FadeIn>
+          </div>
         </section>
 
         {/* Das Problem */}
@@ -318,6 +332,12 @@ export default function AiSeoAgenturPage() {
               </p>
             </FadeIn>
 
+            <FadeIn delay={100}>
+              <div className="mb-10 rounded-card border border-gray-100 bg-[#F7F5F2] p-5 md:p-7">
+                <ProcessFlowVisual className="w-full max-w-[560px] mx-auto" />
+              </div>
+            </FadeIn>
+
             <div className="grid md:grid-cols-2 gap-6">
               {PROCESS.map((step, i) => (
                 <FadeIn key={step.title} delay={i * 100}>
@@ -398,8 +418,34 @@ export default function AiSeoAgenturPage() {
                 </FadeIn>
               ))}
             </div>
+
+            <FadeIn delay={300}>
+              <div className="mt-12 grid lg:grid-cols-[0.9fr_1.1fr] gap-8 items-center rounded-card border border-gray-100 bg-white p-6 md:p-8">
+                <CitationGrowthVisual className="w-full" />
+                <div>
+                  <h3 className="text-xl md:text-2xl font-bold tracking-tight text-black mb-3">
+                    Von nahe null auf rund 800 KI-Zitate
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Der Verlauf zeigt das Muster, das wir anstreben: messbares
+                    Wachstum nach Projektbeginn, nicht ein einmaliger Ausschlag.
+                    Die echten Dashboards dazu findest du auf der{" "}
+                    <Link
+                      href="/ergebnisse"
+                      className="text-brand-accent font-semibold underline underline-offset-2 hover:text-black transition-colors"
+                    >
+                      Ergebnisseite
+                    </Link>
+                    .
+                  </p>
+                </div>
+              </div>
+            </FadeIn>
           </div>
         </section>
+
+        {/* Echte Belege, animiert */}
+        <Proof />
 
         {/* Für wen */}
         <section className="px-6 md:px-12 lg:px-20 py-16 md:py-20 bg-white">
