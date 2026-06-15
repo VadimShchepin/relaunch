@@ -85,6 +85,10 @@ const FAQS: FAQItem[] = [
     a: "Die Kurzanalyse ist kostenlos. Erst danach reden wir über Umsetzung, und du weißt vorher, woran du bist. Die transparenten Pakete für Umsetzung und laufende Betreuung findest du auf der Preisseite.",
   },
   {
+    q: "Ist ChatGPT-Optimierung dasselbe wie GEO?",
+    a: "ChatGPT-Sichtbarkeit ist der sichtbarste Teil einer größeren Disziplin: Generative Engine Optimization (GEO). GEO sorgt dafür, dass eine Marke in den Antworten generativer KI-Systeme genannt und zitiert wird, ChatGPT ist dabei nur eine von mehreren Oberflächen. Verwandt sind die Begriffe AEO (Answer Engine Optimization) und AI SEO. Die Hebel sind dieselben: zitierbare Inhalte, eine saubere technische Basis und Autorität. Wer für ChatGPT richtig aufgestellt ist, wird in Perplexity, Claude, Gemini und Google AI Overviews ebenfalls auffindbar.",
+  },
+  {
     q: "Gilt das auch für Perplexity und Google AI Overviews?",
     a: "Ja. Die Grundlagen, also zitierbare Inhalte, saubere Technik und Autorität, wirken auf alle großen KI-Systeme. Perplexity reagiert wegen seiner Live-Suche besonders schnell, Google AI Overviews und ChatGPT folgen den eigenen Crawl- und Trainingszyklen. Wir messen den Fortschritt parallel über alle Plattformen, damit du nicht nur in ChatGPT genannt wirst, sondern überall dort, wo deine Kunden fragen.",
   },
@@ -95,7 +99,7 @@ export default function ChatGptSichtbarkeitPage() {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "ChatGPT Sichtbarkeit / ChatGPT Optimierung",
-    serviceType: "Generative Engine Optimization / AI SEO",
+    serviceType: "Generative Engine Optimization (GEO) / AI SEO",
     areaServed: "DE",
     url: "https://aiseo.hamburg/chatgpt-sichtbarkeit",
     description:
@@ -189,6 +193,11 @@ export default function ChatGptSichtbarkeitPage() {
               <FadeIn delay={300}>
                 <p className="font-semibold text-black">
                   Die Frage ist nicht mehr, ob deine Kunden KI nutzen. Die Frage ist, ob ChatGPT dich nennt, wenn sie es tun.
+                </p>
+              </FadeIn>
+              <FadeIn delay={400}>
+                <p>
+                  Die Disziplin dahinter heißt Generative Engine Optimization (GEO), oft auch Answer Engine Optimization (AEO) oder AI SEO genannt. ChatGPT-Sichtbarkeit ist der sichtbarste Teil davon. Dieselbe Arbeit macht dich auch in Perplexity, Claude, Gemini und Google AI Overviews auffindbar.
                 </p>
               </FadeIn>
             </div>
