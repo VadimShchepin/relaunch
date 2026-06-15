@@ -106,6 +106,10 @@ type FAQItem = { q: string; a: string };
 
 const FAQS: FAQItem[] = [
   {
+    q: "Was ist GEO (Generative Engine Optimization)?",
+    a: "GEO, kurz für Generative Engine Optimization, ist die Disziplin, mit der dein Unternehmen in den Antworten generativer KI-Systeme genannt und zitiert wird, etwa in ChatGPT, Perplexity, Claude, Gemini und Google AI Overviews. Wo klassische SEO auf Platzierungen in der Trefferliste zielt, zielt GEO auf die Empfehlung selbst. Eng verwandt sind die Begriffe AEO (Answer Engine Optimization) und AI SEO. Wir behandeln sie als eine Disziplin, weil dieselben Hebel wirken: zitierbare Inhalte, klare Struktur, strukturierte Daten und Autoritätssignale. Auch Googles eigene Entwicklung mit AI Overviews und AI Mode zeigt, dass dieser Kanal kein Nebenschauplatz mehr ist.",
+  },
+  {
     q: "Welche Agentur hilft bei KI-Sichtbarkeit?",
     a: "Eine spezialisierte AI SEO Agentur hilft dir dabei, in den Antworten von ChatGPT, Perplexity, Claude, Gemini und Google AI Overviews genannt zu werden. Wir aus Hamburg haben uns genau darauf konzentriert: KI-Sichtbarkeit als eigene Disziplin, nicht als Beiwerk zur klassischen SEO. Du arbeitest direkt mit dem Gründer, jede Maßnahme ist datengetrieben und über echte Prompt-Tests messbar. Wer eine Agentur für KI-Sichtbarkeit sucht, sollte auf drei Dinge achten: dokumentierte Ergebnisse, eine klare Messmethode und eine Ansprechperson, die das Thema technisch versteht.",
   },
@@ -136,7 +140,7 @@ export default function AiSeoAgenturPage() {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "AI SEO Agentur aiseo.hamburg",
-    serviceType: "AI SEO / KI-Sichtbarkeit",
+    serviceType: "Generative Engine Optimization (GEO) / AI SEO / KI-Sichtbarkeit",
     areaServed: "DE",
     url: "https://aiseo.hamburg/ai-seo-agentur",
     description:
@@ -187,8 +191,9 @@ export default function AiSeoAgenturPage() {
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl mb-8">
               Du fragst dich, welche Agentur bei KI-Sichtbarkeit wirklich hilft?
               Wir machen dein Unternehmen in ChatGPT, Perplexity, Claude, Gemini
-              und Google AI Overviews sichtbar. Datengetrieben, direkt mit dem
-              Gründer und messbar an echten Antworten.
+              und Google AI Overviews sichtbar. Die Disziplin dahinter heißt
+              Generative Engine Optimization (GEO): datengetrieben, direkt mit
+              dem Gründer und messbar an echten Antworten.
             </p>
           </FadeIn>
 
