@@ -10,6 +10,7 @@ import {
   SourceSelectionVisual,
   ProcessFlowVisual,
   CitationGrowthVisual,
+  PlatformReachVisual,
 } from "@/components/sections/ConversionVisuals";
 
 const VALUES = [
@@ -279,6 +280,16 @@ export default function AiSeoAgenturPage() {
                   Genau diese Lücke schließen wir. Wir sorgen dafür, dass KI dein
                   Unternehmen als Quelle erkennt und nennt.
                 </p>
+              </FadeIn>
+
+              <FadeIn delay={400}>
+                <div className="mt-6 rounded-card border border-gray-100 bg-[#F7F5F2] p-6 md:p-8">
+                  <PlatformReachVisual className="w-full max-w-[460px] mx-auto" />
+                  <p className="mt-4 text-center text-sm text-gray-500">
+                    Eine Marke, sichtbar über ChatGPT, Perplexity, Claude, Gemini
+                    und Google AI.
+                  </p>
+                </div>
               </FadeIn>
             </div>
           </div>

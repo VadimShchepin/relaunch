@@ -9,6 +9,7 @@ import { Proof } from "@/components/sections/Proof";
 import {
   SourceSelectionVisual,
   VisibilityCompareVisual,
+  PillarsVisual,
 } from "@/components/sections/ConversionVisuals";
 
 type FAQItem = {
@@ -246,6 +247,12 @@ export default function ChatGptSichtbarkeitPage() {
                 </FadeIn>
               ))}
             </div>
+
+            <FadeIn delay={400}>
+              <div className="mt-10 rounded-card border border-gray-100 bg-[#F7F5F2] p-6 md:p-8 max-w-[640px] mx-auto">
+                <PillarsVisual className="w-full" />
+              </div>
+            </FadeIn>
           </div>
         </section>
 

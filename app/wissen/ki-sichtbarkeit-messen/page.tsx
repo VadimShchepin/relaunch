@@ -702,6 +702,11 @@ export default function KISichtbarkeitMessenPage() {
               Du weißt jetzt, was du messen musst. Aber willst du wirklich selbst 50 Prompts testen und Server-Logs parsen? Lass uns das für dich herausfinden - in einer kostenlosen Kurzanalyse.
             </p>
             <Button href="/ai-sichtbarkeit-now" primary text="Kostenlose KI-Sichtbarkeits-Analyse" />
+            <p className="mt-6 text-sm text-gray-400">
+              Oder sieh dir an, welche{" "}
+              <a href="/ergebnisse" className="text-white underline underline-offset-2 hover:text-brand-accent transition-colors">dokumentierten Ergebnisse</a>{" "}
+              mit genau diesen Messmethoden herauskommen.
+            </p>
           </div>
       </section>
 
