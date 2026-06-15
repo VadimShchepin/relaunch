@@ -54,28 +54,28 @@ const PROCESS = [
 
 const CASES = [
   {
-    metric: "+55 %",
-    label: "Klicks in 30 Tagen",
+    metric: "800",
+    label: "KI-Zitate in 3 Monaten",
     description:
-      "blitz-hamburg.de: plus 55 % Klicks und plus 61 % Impressionen in 30 Tagen laut Google Search Console, dazu reale Anrufe und WhatsApp-Anfragen.",
-    href: "/wissen/ki-sichtbarkeit-messen",
-    cta: "Wie wir messen",
+      "aiseo.hamburg wurde laut Bing Webmaster Tools in drei Monaten 800-mal in Copilot-Antworten zitiert, aus dem Stand. Dieselbe Methode wenden wir für Kundenprojekte an.",
+    href: "/ergebnisse",
+    cta: "Zitate ansehen",
   },
   {
     metric: "+847 %",
     label: "KI-Traffic dokumentiert",
     description:
       "KinderAlbum: plus 847 % KI-Traffic, dokumentiert über einen 90-Tage-Relaunch. Sichtbarkeit, die vorher schlicht nicht da war.",
-    href: "/wissen/ki-sichtbarkeit-messen",
+    href: "/ergebnisse",
     cta: "Fallstudie ansehen",
   },
   {
-    metric: "Nr. 1",
-    label: "in Bing und Copilot zitiert",
+    metric: "+55 %",
+    label: "Klicks in 30 Tagen",
     description:
-      "Unsere Seite zur Messung von KI-Sichtbarkeit ist der meistzitierte Beitrag in den KI-Antworten von Bing und Copilot. Die Methode dahinter wenden wir auch für dich an.",
-    href: "/wissen/ki-sichtbarkeit-messen",
-    cta: "Quelle lesen",
+      "blitz-hamburg.de: plus 55 % Klicks und plus 61 % Impressionen in 30 Tagen laut Google Search Console, dazu reale Anrufe und WhatsApp-Anfragen.",
+    href: "/ergebnisse",
+    cta: "Wie wir messen",
   },
 ];
 
@@ -368,8 +368,9 @@ export default function AiSeoAgenturPage() {
                 Ergebnisse, keine Versprechen
               </h2>
               <p className="text-lg text-gray-600 mb-12 max-w-2xl">
-                Dokumentierte Zahlen aus echten Projekten. Jede Kachel führt zur
-                Methode oder Fallstudie dahinter.
+                Dokumentierte Zahlen aus echten Projekten, inklusive Quellen aus
+                den Bing Webmaster Tools und der Google Search Console. Jede
+                Kachel führt zum nachprüfbaren Beleg dahinter.
               </p>
             </FadeIn>
 
