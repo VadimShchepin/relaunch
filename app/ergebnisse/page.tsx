@@ -169,7 +169,7 @@ export default function ErgebnissePage() {
               Ergebnisse, die du selbst nachprüfen kannst
             </h1>
             <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-10">
-              Keine geglätteten Vanity-Grafiken. Jede Zahl auf dieser Seite stammt aus einer Quelle, die du selbst öffnen, nachmessen oder in Echtzeit testen kannst.
+              Echte Ergebnisse aus unserer Arbeit an SEO und Generative Engine Optimization (GEO). Keine geglätteten Vanity-Grafiken: jede Zahl auf dieser Seite stammt aus einer Quelle, die du selbst öffnen, nachmessen oder in Echtzeit testen kannst.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/ai-sichtbarkeit-now">
@@ -311,7 +311,7 @@ export default function ErgebnissePage() {
                 Wie wir messen
               </h2>
               <p className="text-lg text-gray-600 mb-12 max-w-2xl">
-                Wir arbeiten auf drei Ebenen. Auf jeder kommen Werkzeuge zum Einsatz, deren Ergebnisse du selbst kontrollieren kannst.
+                Für Generative Engine Optimization (GEO) reicht ein Ranking-Report nicht. Wir arbeiten auf drei Ebenen. Auf jeder kommen Werkzeuge zum Einsatz, deren Ergebnisse du selbst kontrollieren kannst.
               </p>
             </FadeIn>
 

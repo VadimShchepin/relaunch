@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ergebnisse & Case Studies | KI-Sichtbarkeit aiseo",
     description:
-      "Nachprüfbare Ergebnisse statt Vanity-Grafiken: echte Case Studies zu KI-Sichtbarkeit und AI SEO aus Hamburg.",
+      "Nachprüfbare Ergebnisse statt Vanity-Grafiken: echte Case Studies zu KI-Sichtbarkeit, AI SEO und Generative Engine Optimization (GEO) aus Hamburg.",
     url: "/ergebnisse",
     locale: "de_DE",
     type: "website",
