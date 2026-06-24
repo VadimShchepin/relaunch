@@ -6,6 +6,7 @@ import { FadeIn } from "@/components/ui/FadeIn";
 import { Button } from "@/components/ui/Button";
 import { CheckIcon, ArrowRightIcon } from "@/components/ui/Icons";
 import { Proof } from "@/components/sections/Proof";
+import { HeroDemo } from "@/components/sections/HeroDemo";
 import { CitationGrowthVisual } from "@/components/sections/ConversionVisuals";
 
 const HEADLINE_STATS = [
@@ -213,6 +214,14 @@ export default function ErgebnissePage() {
                 <Button text="Erstgespräch vereinbaren" primary={false} className="justify-center" />
               </Link>
             </div>
+          </FadeIn>
+
+          {/* Live demo */}
+          <FadeIn delay={120}>
+            <HeroDemo
+              className="mt-14 max-w-[560px] mx-auto"
+              caption="Selbst testen: Klick eine Frage und sieh, welche Kundenmarke die KI nennt."
+            />
           </FadeIn>
 
           {/* Stat row */}

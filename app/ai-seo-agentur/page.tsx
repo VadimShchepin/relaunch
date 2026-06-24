@@ -6,8 +6,8 @@ import { FadeIn } from "@/components/ui/FadeIn";
 import { Button } from "@/components/ui/Button";
 import { CheckIcon, ArrowRightIcon } from "@/components/ui/Icons";
 import { Proof } from "@/components/sections/Proof";
+import { HeroDemo } from "@/components/sections/HeroDemo";
 import {
-  SourceSelectionVisual,
   ProcessFlowVisual,
   CitationGrowthVisual,
   PlatformReachVisual,
@@ -244,7 +244,7 @@ export default function AiSeoAgenturPage() {
             </div>
 
             <FadeIn delay={200}>
-              <SourceSelectionVisual className="w-full max-w-[460px] mx-auto" />
+              <HeroDemo className="w-full max-w-[480px] mx-auto" />
             </FadeIn>
           </div>
         </section>

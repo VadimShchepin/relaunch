@@ -6,8 +6,8 @@ import { FadeIn } from "@/components/ui/FadeIn";
 import { Button } from "@/components/ui/Button";
 import { CheckIcon, ArrowRightIcon, OpenAIIcon } from "@/components/ui/Icons";
 import { Proof } from "@/components/sections/Proof";
+import { HeroDemo } from "@/components/sections/HeroDemo";
 import {
-  SourceSelectionVisual,
   VisibilityCompareVisual,
   PillarsVisual,
 } from "@/components/sections/ConversionVisuals";
@@ -177,9 +177,10 @@ export default function ChatGptSichtbarkeitPage() {
           </FadeIn>
 
           <FadeIn delay={350}>
-            <div className="mt-12 max-w-[480px] mx-auto rounded-card border border-gray-100 bg-white p-6 md:p-7 shadow-sm">
-              <SourceSelectionVisual className="w-full" />
-            </div>
+            <HeroDemo
+              className="mt-12 max-w-[520px] mx-auto"
+              caption="Echtes Beispiel: So sieht es aus, wenn eine Marke in der KI-Antwort genannt wird."
+            />
           </FadeIn>
         </section>
 
