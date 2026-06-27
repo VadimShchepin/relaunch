@@ -138,7 +138,7 @@ const HeroSection: React.FC = () => (
             <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
                 Claude von Anthropic ist der am schnellsten wachsende KI-Assistent im professionellen
                 Umfeld. Wenn Entscheider nach Dienstleistern fragen, empfiehlt Claude ein bis drei
-                Unternehmen &mdash; ohne Anzeigen, ohne Rankings. Dieser Guide zeigt dir, wie Claudes
+                Unternehmen, ohne Anzeigen, ohne Rankings. Dieser Guide zeigt dir, wie Claudes
                 Empfehlungssystem funktioniert und wie du dort reinkommst.
             </p>
         </FadeIn>
@@ -244,9 +244,9 @@ const PainSection: React.FC = () => (
 
             <div className="space-y-4 mb-8">
                 {[
-                    'Deine Konkurrenz wird von Claude empfohlen \u2013 du nicht',
-                    'Claude halluziniert m\u00F6glicherweise falsche Infos \u00FCber dein Unternehmen',
-                    'Kein Dashboard, keine Kontrolle \u2013 du fliegst komplett blind',
+                    'Deine Konkurrenz wird von Claude empfohlen, du nicht',
+                    'Claude halluziniert möglicherweise falsche Infos über dein Unternehmen',
+                    'Kein Dashboard, keine Kontrolle, du fliegst komplett blind',
                     'Jede Claude-Empfehlung, die nicht du bist, ist ein verlorener Lead',
                 ].map((pain, i) => (
                     <FadeIn key={i} delay={i * 50}>
@@ -262,8 +262,8 @@ const PainSection: React.FC = () => (
                 <p>
                     Das Kernproblem: Claude hat keine Live-Websuche. Es kann deine Website nicht in
                     Echtzeit crawlen. Alles, was Claude &uuml;ber dich wei&szlig;, stammt aus den
-                    Trainingsdaten. Wenn du dort nicht vorkommst &mdash; oder schlimmer, mit falschen
-                    Informationen vorkommst &mdash; hast du ein ernstes Problem.
+                    Trainingsdaten. Wenn du dort nicht vorkommst, oder schlimmer, mit falschen
+                    Informationen vorkommst, hast du ein ernstes Problem.
                 </p>
             </div>
         </FadeIn>
@@ -291,7 +291,7 @@ const HowClaudeWorksSection: React.FC = () => (
                         Claude arbeitet prim&auml;r mit seinem Trainingskorpus. Es gibt keinen
                         Bing-Zugriff, keine Google-Suche. Was Claude wei&szlig;, stammt aus den Daten,
                         mit denen es trainiert wurde. Das sind Webseiten, B&uuml;cher, wissenschaftliche
-                        Paper und Artikel &mdash; eingefroren zum Trainingszeitpunkt.
+                        Paper und Artikel, eingefroren zum Trainingszeitpunkt.
                     </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-2xl p-6">
@@ -309,7 +309,7 @@ const HowClaudeWorksSection: React.FC = () => (
                 <p className="text-sm font-bold text-brand-accent mb-3 uppercase tracking-wider">Entscheidender Unterschied</p>
                 <p className="text-gray-700 leading-relaxed">
                     ChatGPT kann deine Website in Echtzeit &uuml;ber Bing finden. Claude nicht. Bei Claude
-                    musst du in den Trainingsdaten sein &mdash; das hei&szlig;t, du musst auf Quellen pr&auml;sent sein,
+                    musst du in den Trainingsdaten sein. Das hei&szlig;t, du musst auf Quellen pr&auml;sent sein,
                     die Anthropic f&uuml;r das Training nutzt. Das sind prim&auml;r hochwertige, &ouml;ffentlich
                     zug&auml;ngliche Webseiten mit hoher Autorit&auml;t.
                 </p>
@@ -357,7 +357,7 @@ const FactorsSection: React.FC = () => (
                     {
                         num: '02',
                         title: 'Konsistente Markensignale',
-                        desc: 'Claude cross-referenziert Informationen aus dem Trainingskorpus. Wenn verschiedene Quellen unterschiedliche Dinge \u00FCber dein Unternehmen sagen \u2013 verschiedene Adressen, verschiedene Leistungsbeschreibungen, widersp\u00FCchliche Gr\u00FCndungsdaten \u2013 wird Claude unsicher und empfiehlt lieber ein Unternehmen, bei dem alle Quellen \u00FCbereinstimmen.',
+                        desc: 'Claude cross-referenziert Informationen aus dem Trainingskorpus. Wenn verschiedene Quellen unterschiedliche Dinge \u00FCber dein Unternehmen sagen (verschiedene Adressen, verschiedene Leistungsbeschreibungen, widerspr\u00FCchliche Gr\u00FCndungsdaten), wird Claude unsicher und empfiehlt lieber ein Unternehmen, bei dem alle Quellen \u00FCbereinstimmen.',
                     },
                     {
                         num: '03',
@@ -367,7 +367,7 @@ const FactorsSection: React.FC = () => (
                     {
                         num: '04',
                         title: 'E-E-A-T-Signale',
-                        desc: 'Experience, Expertise, Authoritativeness, Trustworthiness \u2013 was f\u00FCr Google gilt, gilt in verst\u00E4rktem Ma\u00DFe f\u00FCr Claude. Autorenprofile, Fachpublikationen, Zertifizierungen, Mitgliedschaften in Fachverb\u00E4nden und Vortragst\u00E4tigkeiten erh\u00F6hen die Wahrscheinlichkeit, dass Claude dich als vertrauensw\u00FCrdige Quelle einstuft.',
+                        desc: 'Experience, Expertise, Authoritativeness, Trustworthiness, was f\u00FCr Google gilt, gilt in verst\u00E4rktem Ma\u00DFe f\u00FCr Claude. Autorenprofile, Fachpublikationen, Zertifizierungen, Mitgliedschaften in Fachverb\u00E4nden und Vortragst\u00E4tigkeiten erh\u00F6hen die Wahrscheinlichkeit, dass Claude dich als vertrauensw\u00FCrdige Quelle einstuft.',
                     },
                     {
                         num: '05',
@@ -409,12 +409,12 @@ const StrategiesSection: React.FC = () => (
                     {
                         num: '02',
                         title: 'Baue konsistente NAP-Daten \u00FCber alle Verzeichnisse auf',
-                        text: 'Name, Adresse, Telefonnummer \u2013 \u00FCberall identisch. Claude gleicht Informationen aus seinem Trainingskorpus ab. Wenn deine Website \u201eMustermann GmbH\u201C sagt, Das \u00D6rtliche \u201EFirma Mustermann\u201C listet und ProvenExpert \u201EMustermann Digital\u201C zeigt, wird Claude unsicher. Pr\u00FCfe alle Verzeichniseintr\u00E4ge: Gelbe Seiten, Das \u00D6rtliche, WLW, Yelp, ProvenExpert, Google Business Profile, LinkedIn.',
+                        text: 'Name, Adresse, Telefonnummer, \u00FCberall identisch. Claude gleicht Informationen aus seinem Trainingskorpus ab. Wenn deine Website \u201eMustermann GmbH\u201C sagt, Das \u00D6rtliche \u201EFirma Mustermann\u201C listet und ProvenExpert \u201EMustermann Digital\u201C zeigt, wird Claude unsicher. Pr\u00FCfe alle Verzeichniseintr\u00E4ge: Gelbe Seiten, Das \u00D6rtliche, WLW, Yelp, ProvenExpert, Google Business Profile, LinkedIn.',
                     },
                     {
                         num: '03',
                         title: 'Erstelle strukturierte FAQ-Inhalte auf deiner Website',
-                        text: 'Claude beantwortet Fragen. Deine Website muss Fragen beantworten \u2013 strukturiert, direkt, faktenbasiert. Erstelle umfangreiche FAQ-Seiten, die typische Nutzer-Prompts aufgreifen. Nutze Schema.org FAQPage-Markup. Beantworte jede Frage in den ersten zwei S\u00E4tzen direkt und liefere danach Details. Claude bevorzugt Quellen, die ohne Umschweife informieren.',
+                        text: 'Claude beantwortet Fragen. Deine Website muss Fragen beantworten: strukturiert, direkt, faktenbasiert. Erstelle umfangreiche FAQ-Seiten, die typische Nutzer-Prompts aufgreifen. Nutze Schema.org FAQPage-Markup. Beantworte jede Frage in den ersten zwei S\u00E4tzen direkt und liefere danach Details. Claude bevorzugt Quellen, die ohne Umschweife informieren.',
                     },
                     {
                         num: '04',
@@ -424,7 +424,7 @@ const StrategiesSection: React.FC = () => (
                     {
                         num: '05',
                         title: 'Investiere in Pressearbeit und Earned Media',
-                        text: 'Redaktionelle Erw\u00E4hnungen in unabh\u00E4ngigen Medien sind f\u00FCr Claude Gold wert. Pressemitteilungen allein reichen nicht \u2013 es m\u00FCssen echte redaktionelle Beitr\u00E4ge sein. Positioniere dich als Experte in deiner Branche, biete Journalisten Daten und Insights an, kommentiere Branchentrends. Jede Erw\u00E4hnung auf einem Medium, das Anthropic f\u00FCrs Training nutzt, erh\u00F6ht deine Claude-Sichtbarkeit.',
+                        text: 'Redaktionelle Erw\u00E4hnungen in unabh\u00E4ngigen Medien sind f\u00FCr Claude Gold wert. Pressemitteilungen allein reichen nicht, es m\u00FCssen echte redaktionelle Beitr\u00E4ge sein. Positioniere dich als Experte in deiner Branche, biete Journalisten Daten und Insights an, kommentiere Branchentrends. Jede Erw\u00E4hnung auf einem Medium, das Anthropic f\u00FCrs Training nutzt, erh\u00F6ht deine Claude-Sichtbarkeit.',
                     },
                     {
                         num: '06',
@@ -434,7 +434,7 @@ const StrategiesSection: React.FC = () => (
                     {
                         num: '07',
                         title: 'Optimiere die technische Qualit\u00E4t deiner Dokumentation',
-                        text: 'Claude wird h\u00E4ufig f\u00FCr technische Recherche genutzt. Saubere, gut strukturierte Dokumentation \u2013 API-Docs, technische Guides, Implementierungsanleitungen \u2013 signalisiert Professionalit\u00E4t. Nutze klare \u00DCberschriften-Hierarchien, Code-Beispiele, Schema.org-Markup und eine logische Seitenstruktur. ClaudeBot (Anthropics Crawler) muss deine Seiten problemlos crawlen k\u00F6nnen.',
+                        text: 'Claude wird h\u00E4ufig f\u00FCr technische Recherche genutzt. Saubere, gut strukturierte Dokumentation (API-Docs, technische Guides, Implementierungsanleitungen) signalisiert Professionalit\u00E4t. Nutze klare \u00DCberschriften-Hierarchien, Code-Beispiele, Schema.org-Markup und eine logische Seitenstruktur. ClaudeBot (Anthropics Crawler) muss deine Seiten problemlos crawlen k\u00F6nnen.',
                     },
                 ].map((strategy, i) => (
                     <FadeIn key={i} delay={i * 50}>
@@ -547,7 +547,7 @@ const HamburgSection: React.FC = () => (
                 <p>
                     Hamburg ist einer der st&auml;rksten Technologie-Standorte Deutschlands. Die Stadt
                     hat eine dichte Konzentration von Agenturen, Beratungen, Tech-Unternehmen und
-                    innovativen Mittelst&auml;ndlern &mdash; genau die Zielgruppe, die Claude nutzt.
+                    innovativen Mittelst&auml;ndlern, genau die Zielgruppe, die Claude nutzt.
                 </p>
                 <p>
                     Wenn ein Hamburger Entscheider Claude fragt &ldquo;Welche Agentur f&uuml;r digitale
@@ -559,8 +559,8 @@ const HamburgSection: React.FC = () => (
                 <p>
                     F&uuml;r Hamburger Unternehmen hei&szlig;t das: Lokale Pressearbeit, Mitgliedschaften
                     in der Handelskammer Hamburg, Pr&auml;senz auf hamburg.de und Erw&auml;hnungen in lokalen
-                    Fachmedien sind direkte Hebel f&uuml;r Claude-Sichtbarkeit. Das ist kein Zufall &mdash;
-                    das ist eine Strategie, die du heute starten kannst.
+                    Fachmedien sind direkte Hebel f&uuml;r Claude-Sichtbarkeit. Das ist kein Zufall,
+                    sondern eine Strategie, die du heute starten kannst.
                 </p>
             </div>
 
@@ -569,23 +569,23 @@ const HamburgSection: React.FC = () => (
                 <ul className="space-y-2 text-gray-700">
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent flex-shrink-0">&bull;</span>
-                        <span>Handelskammer Hamburg &mdash; Mitgliedschaft und Firmenprofil pflegen</span>
+                        <span>Handelskammer Hamburg: Mitgliedschaft und Firmenprofil pflegen</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent flex-shrink-0">&bull;</span>
-                        <span>hamburg.de Branchenverzeichnis &mdash; aktueller, vollst&auml;ndiger Eintrag</span>
+                        <span>hamburg.de Branchenverzeichnis: aktueller, vollst&auml;ndiger Eintrag</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent flex-shrink-0">&bull;</span>
-                        <span>Hamburger Abendblatt, MOPO &mdash; redaktionelle Erw&auml;hnungen anstreben</span>
+                        <span>Hamburger Abendblatt, MOPO: redaktionelle Erw&auml;hnungen anstreben</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent flex-shrink-0">&bull;</span>
-                        <span>Hamburg Startups, Hamburg News &mdash; Branchenportale f&uuml;r Tech-Sichtbarkeit</span>
+                        <span>Hamburg Startups, Hamburg News: Branchenportale f&uuml;r Tech-Sichtbarkeit</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent flex-shrink-0">&bull;</span>
-                        <span>Lokale Fachveranstaltungen &mdash; Speaker-Slots und Recaps nutzen</span>
+                        <span>Lokale Fachveranstaltungen: Speaker-Slots und Recaps nutzen</span>
                     </li>
                 </ul>
             </div>
@@ -598,7 +598,7 @@ const FAQSection: React.FC = () => {
     const faqItems = [
         {
             q: 'Wie werde ich mit meinem Unternehmen in Claude AI sichtbar?',
-            a: 'Werde auf autoritativen Quellen erw\u00E4hnt, die Anthropic f\u00FCrs Training nutzt: Wikipedia, Fachmedien, Branchenverzeichnisse, Bewertungsplattformen. Anders als bei ChatGPT gibt es keine Live-Websuche \u2013 dein Trainingskorpus-Profil ist alles.',
+            a: 'Werde auf autoritativen Quellen erw\u00E4hnt, die Anthropic f\u00FCrs Training nutzt: Wikipedia, Fachmedien, Branchenverzeichnisse, Bewertungsplattformen. Anders als bei ChatGPT gibt es keine Live-Websuche. Dein Trainingskorpus-Profil ist alles.',
         },
         {
             q: 'Hat Claude AI eine Live-Websuche wie ChatGPT?',
@@ -670,7 +670,7 @@ const SourcesSection: React.FC = () => (
                             rel="noopener noreferrer"
                             className="underline hover:text-brand-accent transition-colors"
                         >
-                            Ahrefs (2025): LLM SEO &mdash; Brand Mentions Correlation Study
+                            Ahrefs (2025): LLM SEO. Brand Mentions Correlation Study
                         </a>
                     </li>
                     <li>
@@ -786,7 +786,7 @@ const CTASection: React.FC = () => (
                         Wird dein Unternehmen von Claude empfohlen?
                     </h2>
                     <p className="text-lg text-gray-300 mb-8 max-w-2xl leading-relaxed">
-                        Ich pr&uuml;fe, ob und wie Claude AI dein Unternehmen aktuell darstellt &mdash;
+                        Ich pr&uuml;fe, ob und wie Claude AI dein Unternehmen aktuell darstellt:
                         Trainingsdaten-Analyse, Prompt-Tests und konkrete Handlungsempfehlungen.
                         Kostenlos, in 48 Stunden.
                     </p>

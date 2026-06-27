@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/Button';
 const FAQS = [
   {
     q: 'Ist E-E-A-T ein Ranking-Faktor bei Google?',
-    a: 'Nein, nicht direkt. E-E-A-T ist kein algorithmischer Ranking-Faktor wie PageSpeed oder Backlinks. Es ist ein Konzept aus den Google Quality Rater Guidelines, das beschreibt, wonach menschliche Qualitätsprüfer suchen. Google nutzt diese Bewertungen, um seine Algorithmen zu trainieren. Für KI-Systeme ist E-E-A-T noch weniger ein „Faktor", es ist eher eine emergente Eigenschaft. Wenn deine Expertise konsistent über viele Quellen bestätigt wird, zitiert dich die KI häufiger. Kein Schalter, den du umlegst. Eher ein Ruf, den du aufbaust.',
+    a: 'Nein, nicht direkt. E-E-A-T ist kein algorithmischer Ranking-Faktor wie PageSpeed oder Backlinks. Es ist ein Konzept aus den Google Quality Rater Guidelines, das beschreibt, wonach menschliche Qualitätsprüfer suchen. Google nutzt diese Bewertungen, um seine Algorithmen zu trainieren. Für KI-Systeme ist E-E-A-T noch weniger ein „Faktor“, es ist eher eine emergente Eigenschaft. Wenn deine Expertise konsistent über viele Quellen bestätigt wird, zitiert dich die KI häufiger. Kein Schalter, den du umlegst. Eher ein Ruf, den du aufbaust.',
   },
   {
     q: 'Reicht eine Autoren-Bio für E-E-A-T bei KI-Systemen?',
@@ -257,7 +257,7 @@ export default function EEATKISichtbarkeitPage() {
             Siehst du das Muster? Google bewertet, <strong className="text-black">wer auf dich zeigt</strong>. KI bewertet, <strong className="text-black">was du sagst und ob es stimmt</strong>. Das ist ein fundamentaler Unterschied, den die meisten SEOs noch nicht verstanden haben.
           </p>
           <p>
-            Bei Google kannst du mit einem starken Backlink-Profil und einer autoritativen Domain auch mittelmäßigen Content auf Seite 1 bringen. Bei KI funktioniert das nicht. Ein LLM fragt sich nicht „Hat diese Domain 10.000 Backlinks?", es fragt sich „Ist diese Aussage korrekt und konsistent mit dem, was ich aus anderen Quellen weiß?"
+            Bei Google kannst du mit einem starken Backlink-Profil und einer autoritativen Domain auch mittelmäßigen Content auf Seite 1 bringen. Bei KI funktioniert das nicht. Ein LLM fragt sich nicht „Hat diese Domain 10.000 Backlinks?“, es fragt sich „Ist diese Aussage korrekt und konsistent mit dem, was ich aus anderen Quellen weiß?“
           </p>
         </div>
       </section>
@@ -288,7 +288,7 @@ export default function EEATKISichtbarkeitPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">2. Semantische Tiefe</h3>
             <p className="text-gray-600 leading-relaxed mb-3">
-              Ein echter Experte benutzt Fachbegriffe natürlich. Er kennt die Nuancen, die Ausnahmen, die Randfälle. Ein Generalist schreibt „KI wird die Suche verändern". Ein Experte schreibt „Retrieval-Augmented Generation ermöglicht KI-Systemen, aktuelle Webinhalte in Echtzeit einzubeziehen, was die statischen Trainingsdaten ergänzt."
+              Ein echter Experte benutzt Fachbegriffe natürlich. Er kennt die Nuancen, die Ausnahmen, die Randfälle. Ein Generalist schreibt „KI wird die Suche verändern“. Ein Experte schreibt „Retrieval-Augmented Generation ermöglicht KI-Systemen, aktuelle Webinhalte in Echtzeit einzubeziehen, was die statischen Trainingsdaten ergänzt.“
             </p>
             <p className="text-gray-600 leading-relaxed">
               <strong className="text-black">KI erkennt den Unterschied.</strong> Nicht durch einen magischen Expertise-Detektor, sondern durch statistische Muster. Experten-Texte korrelieren mit bestimmten sprachlichen Merkmalen, die LLMs in ihren Trainingsdaten gelernt haben.
@@ -298,7 +298,7 @@ export default function EEATKISichtbarkeitPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">3. Verifizierbare Originalität</h3>
             <p className="text-gray-600 leading-relaxed mb-3">
-              Eigene Daten, eigene Studien, eigene Erfahrungsberichte. Wenn du schreibst „Wir haben 200 Hamburger KMU-Websites analysiert und festgestellt, dass nur 12 % ein llms.txt haben", ist das zitierbarer als jede Zusammenfassung einer Gartner-Studie.
+              Eigene Daten, eigene Studien, eigene Erfahrungsberichte. Wenn du schreibst „Wir haben 200 Hamburger KMU-Websites analysiert und festgestellt, dass nur 12 % ein llms.txt haben“, ist das zitierbarer als jede Zusammenfassung einer Gartner-Studie.
             </p>
             <p className="text-gray-600 leading-relaxed">
               Warum? Weil nur du diese Daten hast. KI-Systeme brauchen einzigartige Informationsbausteine. Wenn alle den gleichen Gartner-Report zitieren, braucht die KI nicht noch eine Quelle, die das Gleiche sagt. <strong className="text-black">Sie braucht die Quelle, die etwas Neues beisteuert.</strong>
@@ -308,7 +308,7 @@ export default function EEATKISichtbarkeitPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">4. Widerspruchsfreiheit</h3>
             <p className="text-gray-600 leading-relaxed">
-              Wenn du auf einer Seite schreibst „AI SEO kostet ab 2.000 Euro monatlich" und auf einer anderen „Schon ab 500 Euro monatlich möglich", hast du ein Trust-Problem. Nicht bei Google, der Crawler vergleicht deine Seiten nicht inhaltlich. Aber ein LLM, das beide Seiten in seinen Trainingsdaten hat, registriert den Widerspruch. Und widersprüchliche Quellen sind weniger vertrauenswürdig. So einfach ist das.
+              Wenn du auf einer Seite schreibst „AI SEO kostet ab 2.000 Euro monatlich“ und auf einer anderen „Schon ab 500 Euro monatlich möglich“, hast du ein Trust-Problem. Nicht bei Google, der Crawler vergleicht deine Seiten nicht inhaltlich. Aber ein LLM, das beide Seiten in seinen Trainingsdaten hat, registriert den Widerspruch. Und widersprüchliche Quellen sind weniger vertrauenswürdig. So einfach ist das.
             </p>
           </div>
 
@@ -331,10 +331,10 @@ export default function EEATKISichtbarkeitPage() {
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
           <p>
-            Lass uns das mal durchspielen. Du schreibst auf deine Website: „Max Mustermann ist ein führender Experte für digitales Marketing mit über 15 Jahren Erfahrung." Beeindruckend. Google liest das und denkt: „Ok, da steht was über den Autor." ChatGPT liest das und denkt: „Interessant, sagt er über sich selbst."
+            Spiel das einmal durch. Du schreibst auf deine Website: „Max Mustermann ist ein führender Experte für digitales Marketing mit über 15 Jahren Erfahrung.“ Beeindruckend. Google liest das und denkt: „Ok, da steht was über den Autor.“ ChatGPT liest das und denkt: „Interessant, sagt er über sich selbst.“
           </p>
           <p>
-            Merkst du das Problem? <strong className="text-black">Selbstdeklarierte Expertise ist für KI wertlos.</strong> Es ist, als würdest du beim Bewerbungsgespräch sagen: „Ich bin der Beste", ohne Referenzen, ohne Portfolio, ohne nachweisbare Ergebnisse. Der Personaler lächelt höflich und legt deinen Lebenslauf auf den „Nein"-Stapel.
+            Merkst du das Problem? <strong className="text-black">Selbstdeklarierte Expertise ist für KI wertlos.</strong> Es ist, als würdest du beim Bewerbungsgespräch sagen: „Ich bin der Beste“, ohne Referenzen, ohne Portfolio, ohne nachweisbare Ergebnisse. Der Personaler lächelt höflich und legt deinen Lebenslauf auf den „Nein“-Stapel.
           </p>
           <p>
             Die Autoren-Bio ist nicht nutzlos. Für Google ist sie ein nützliches Signal im Gesamtkontext. Aber wenn sie dein einziges E-E-A-T-Signal ist, hast du kein E-E-A-T. Du hast eine Visitenkarte.
@@ -402,7 +402,7 @@ export default function EEATKISichtbarkeitPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-lg font-semibold text-black mb-3">Ohne Experience</h3>
             <p className="text-gray-600 text-sm leading-relaxed italic">
-              „KI-Sichtbarkeit ist ein wichtiger Trend im digitalen Marketing. Unternehmen sollten ihre Online-Präsenz für KI-Systeme optimieren, um zukunftsfähig zu bleiben."
+              „KI-Sichtbarkeit ist ein wichtiger Trend im digitalen Marketing. Unternehmen sollten ihre Online-Präsenz für KI-Systeme optimieren, um zukunftsfähig zu bleiben.“
             </p>
             <p className="text-sm text-gray-400 mt-3">Klingt wie jeder andere Artikel zum Thema. KI hat keinen Grund, ausgerechnet das zu zitieren.</p>
           </div>
@@ -410,7 +410,7 @@ export default function EEATKISichtbarkeitPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-lg font-semibold text-black mb-3">Mit Experience</h3>
             <p className="text-gray-600 text-sm leading-relaxed italic">
-              „Als ich 2025 die Websites von 50 Hamburger KMUs auf KI-Sichtbarkeit testete, hatte keine einzige ein llms.txt. Die häufigste Reaktion der Geschäftsführer: ‚Was ist ein LLM?'"
+              „Als ich 2025 die Websites von 50 Hamburger KMUs auf KI-Sichtbarkeit testete, hatte keine einzige ein llms.txt. Die häufigste Reaktion der Geschäftsführer: ‚Was ist ein LLM?'“
             </p>
             <p className="text-sm text-gray-400 mt-3">Spezifisch, einzigartig, verifizierbar. Genau das, was KI als zitierbare Quelle braucht.</p>
           </div>
@@ -516,16 +516,16 @@ export default function EEATKISichtbarkeitPage() {
 
         <div className="space-y-6">
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
-            <h3 className="text-xl font-semibold text-black mb-3">1. „Wir sind Experten, weil wir es auf unsere Website schreiben"</h3>
+            <h3 className="text-xl font-semibold text-black mb-3">1. „Wir sind Experten, weil wir es auf unsere Website schreiben“</h3>
             <p className="text-gray-600 leading-relaxed">
-              Wenn selbstdeklarierte Expertise ausreichen würde, wäre jeder LinkedIn-Nutzer ein „Thought Leader". KI-Systeme sind trainiert auf Milliarden von Texten, sie kennen den Unterschied zwischen jemandem, der über ein Thema schreibt, und jemandem, der ein Thema beherrscht. Dein „Über uns"-Text überzeugt niemanden, der nicht bereits überzeugt ist.
+              Wenn selbstdeklarierte Expertise ausreichen würde, wäre jeder LinkedIn-Nutzer ein „Thought Leader“. KI-Systeme sind trainiert auf Milliarden von Texten, sie kennen den Unterschied zwischen jemandem, der über ein Thema schreibt, und jemandem, der ein Thema beherrscht. Dein „Über uns“-Text überzeugt niemanden, der nicht bereits überzeugt ist.
             </p>
           </div>
 
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">2. Autoren-Bio ohne externe Bestätigung</h3>
             <p className="text-gray-600 leading-relaxed">
-              „15 Jahre Erfahrung im digitalen Marketing" steht in deiner Bio. Toll. Kann ich irgendwo nachprüfen, dass du in den letzten 15 Jahren tatsächlich Marketing gemacht hast? Keine LinkedIn-Verlinkung, keine Publikationen, keine Vorträge? Dann ist deine Bio so glaubwürdig wie eine Fünf-Sterne-Bewertung von deiner Mutter.
+              „15 Jahre Erfahrung im digitalen Marketing“ steht in deiner Bio. Toll. Kann ich irgendwo nachprüfen, dass du in den letzten 15 Jahren tatsächlich Marketing gemacht hast? Keine LinkedIn-Verlinkung, keine Publikationen, keine Vorträge? Dann ist deine Bio so glaubwürdig wie eine Fünf-Sterne-Bewertung von deiner Mutter.
             </p>
           </div>
 
@@ -539,14 +539,14 @@ export default function EEATKISichtbarkeitPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">4. Content über alles statt Tiefe in einem Thema</h3>
             <p className="text-gray-600 leading-relaxed">
-              Du schreibst über SEO, Social Media, E-Commerce, HR, Nachhaltigkeit und Kryptowährungen. Auf der gleichen Website. Aus der gleichen Autoren-Bio. KI liest das und denkt: „Der ist Experte für nichts." Thematische Fokussierung ist für KI-E-E-A-T entscheidend. Lieber 30 tiefe Artikel zu einem Kernthema als 300 oberflächliche zu allem.
+              Du schreibst über SEO, Social Media, E-Commerce, HR, Nachhaltigkeit und Kryptowährungen. Auf der gleichen Website. Aus der gleichen Autoren-Bio. KI liest das und denkt: „Der ist Experte für nichts.“ Thematische Fokussierung ist für KI-E-E-A-T entscheidend. Lieber 30 tiefe Artikel zu einem Kernthema als 300 oberflächliche zu allem.
             </p>
           </div>
 
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">5. Widersprüche auf der eigenen Website</h3>
             <p className="text-gray-600 leading-relaxed">
-              Auf Seite A: „Schema-Markup ist der wichtigste Faktor für KI-Sichtbarkeit." Auf Seite B: „Content-Qualität ist wichtiger als jedes technische Signal." Auf Seite C: „Ohne Backlinks keine KI-Sichtbarkeit." Ja, was denn nun? Widersprüche auf der eigenen Website sind für KI-Systeme ein rotes Tuch. Wenn du dir selbst widersprichst, warum sollte eine KI irgendetwas von dir zitieren?
+              Auf Seite A: „Schema-Markup ist der wichtigste Faktor für KI-Sichtbarkeit.“ Auf Seite B: „Content-Qualität ist wichtiger als jedes technische Signal.“ Auf Seite C: „Ohne Backlinks keine KI-Sichtbarkeit.“ Ja, was denn nun? Widersprüche auf der eigenen Website sind für KI-Systeme ein rotes Tuch. Wenn du dir selbst widersprichst, warum sollte eine KI irgendetwas von dir zitieren?
             </p>
           </div>
         </div>

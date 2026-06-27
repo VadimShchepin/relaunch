@@ -134,7 +134,7 @@ export default function LokaleKiSichtbarkeitPage() {
       {/* TL;DR */}
       <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-12">
         <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
-          <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR &mdash; Für die Ungeduldigen</h2>
+          <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR: Für die Ungeduldigen</h2>
           <ul className="space-y-3 text-gray-700 leading-relaxed">
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">1.</span>
@@ -279,7 +279,7 @@ export default function LokaleKiSichtbarkeitPage() {
             </li>
             <li className="flex gap-3">
               <span className="text-brand-accent font-bold shrink-0">6.</span>
-              <span><strong className="text-black">Bewertungen nur auf Google.</strong> ChatGPT sieht deine Google-Bewertungen nicht direkt. Es sieht Bewertungen auf Trustpilot, Yelp, Jameda, Anwalt.de &mdash; Plattformen, die es crawlen kann.</span>
+              <span><strong className="text-black">Bewertungen nur auf Google.</strong> ChatGPT sieht deine Google-Bewertungen nicht direkt. Es sieht Bewertungen auf Trustpilot, Yelp, Jameda, Anwalt.de, also Plattformen, die es crawlen kann.</span>
             </li>
           </ol>
         </div>
@@ -294,7 +294,7 @@ export default function LokaleKiSichtbarkeitPage() {
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-10">
           <p>
             Wir haben es getestet. Zehn typische lokale Suchanfragen bei ChatGPT und Perplexity,
-            alle mit Hamburg-Bezug. Das Ergebnis ist ernüchternd &mdash; aber lehrreich.
+            alle mit Hamburg-Bezug. Das Ergebnis ist ernüchternd, aber lehrreich.
           </p>
         </div>
 
@@ -304,7 +304,7 @@ export default function LokaleKiSichtbarkeitPage() {
             <p className="text-base text-gray-600 leading-relaxed mb-3">
               ChatGPT empfiehlt 5 Restaurants. Keins davon hat den höchsten Google-Bewertungsdurchschnitt. Alle
               5 haben eines gemeinsam: <strong className="text-black">Erwähnungen in Hamburger Gastro-Magazinen, Blogs
-              und Bewertungsportalen außerhalb von Google.</strong> Die KI zitiert, was sie im Web findet &mdash;
+              und Bewertungsportalen außerhalb von Google.</strong> Die KI zitiert, was sie im Web findet,
               nicht was bei Google Maps steht.
             </p>
             <div className="bg-brand-accent/5 rounded-lg p-4">
@@ -340,7 +340,7 @@ export default function LokaleKiSichtbarkeitPage() {
             <div className="bg-brand-accent/5 rounded-lg p-4">
               <p className="text-sm text-gray-700"><strong className="text-black">Lesson learned:</strong> In manchen Branchen
               ist der Wettbewerb um KI-Sichtbarkeit exakt null. Wer als Erster anfängt, dominiert. Wie ein
-              leerer Parkplatz um 5 Uhr morgens &mdash; du kannst dir den besten Platz aussuchen.</p>
+              leerer Parkplatz um 5 Uhr morgens. Du kannst dir den besten Platz aussuchen.</p>
             </div>
           </div>
         </div>
@@ -512,7 +512,7 @@ export default function LokaleKiSichtbarkeitPage() {
               <div>
                 <h3 className="text-lg font-semibold text-black mb-2">NAP-Konsistenz herstellen</h3>
                 <p className="text-base text-gray-600 leading-relaxed">
-                  Name, Adresse, Telefonnummer &mdash; überall identisch. Nicht &bdquo;Müller &amp; Söhne GmbH&ldquo;
+                  Name, Adresse, Telefonnummer: überall identisch. Nicht &bdquo;Müller &amp; Söhne GmbH&ldquo;
                   auf der Website und &bdquo;Müller und Söhne&ldquo; bei Google und &bdquo;Fa. Müller&ldquo; auf
                   Yelp. Für KI sind das drei verschiedene Unternehmen. Prüfe alle Verzeichnisse, Portale und
                   Social-Media-Profile. Ja, das ist mühsam. Ja, es ist notwendig.
@@ -563,7 +563,7 @@ export default function LokaleKiSichtbarkeitPage() {
               <div>
                 <h3 className="text-lg font-semibold text-black mb-2">Bewertungen strategisch managen</h3>
                 <p className="text-base text-gray-600 leading-relaxed">
-                  Aktiv um ausführliche Bewertungen bitten &mdash; nicht nur auf Google, sondern auf
+                  Aktiv um ausführliche Bewertungen bitten, nicht nur auf Google, sondern auch auf
                   Branchenportalen und Trustpilot. Der Text der Bewertung ist wichtiger als die Sterne.
                   &bdquo;Hat mein Dachproblem in Hamburg-Eppendorf innerhalb von 2 Tagen gelöst, faire Preise&ldquo;
                   ist für KI Gold wert. &bdquo;Super, 5 Sterne&ldquo; ist wertlos.
@@ -727,7 +727,7 @@ export default function LokaleKiSichtbarkeitPage() {
             Dein lokales Unternehmen ist für KI unsichtbar. Das muss nicht so bleiben.
           </h2>
           <p className="text-lg text-gray-400 leading-relaxed max-w-xl mx-auto mb-8">
-            In 15 Minuten zeigen wir dir, was ChatGPT über deine Branche in deiner Stadt sagt &mdash;
+            In 15 Minuten zeigen wir dir, was ChatGPT über deine Branche in deiner Stadt sagt
             und warum du nicht dabei bist. Kostenlos, ehrlich, ohne Verpflichtung.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

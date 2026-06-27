@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => (
         </h1>
 
         <p className="text-lg md:text-xl text-gray-700 max-w-2xl mb-5 leading-relaxed">
-          Kunden fragen KI-Systeme längst nach Empfehlungen. Viele Websites werden dabei nicht berücksichtigt – obwohl das
+          Kunden fragen KI-Systeme längst nach Empfehlungen. Viele Websites werden dabei nicht berücksichtigt, obwohl das
           Angebot gut ist.
         </p>
 
@@ -78,14 +78,14 @@ const ProblemSection: React.FC = () => (
 
       <div className="bg-white border border-gray-100 rounded-2xl p-7 md:p-8 mb-8 shadow-sm">
         <p className="text-lg text-gray-700 mb-5 leading-relaxed">
-          Nicht wegen schlechter Qualität – sondern weil KI-Systeme Inhalte anders interpretieren als Google.
+          Nicht wegen schlechter Qualität, sondern weil KI-Systeme Inhalte anders interpretieren als Google.
         </p>
 
         <div className="space-y-4">
           {[
             'Leistungen sind für KI nicht eindeutig zuzuordnen',
             'Hamburg-Bezug (Stadtteile / Einzugsgebiet) ist zu schwach oder fehlt',
-            'Seiten liefern Marketing – aber keine klaren Antworten',
+            'Seiten liefern Marketing, aber keine klaren Antworten',
           ].map((item, i) => (
             <FadeIn key={i} delay={i * 90}>
               <div className="flex items-start gap-3 text-gray-700">
@@ -98,7 +98,7 @@ const ProblemSection: React.FC = () => (
       </div>
 
       <div className="bg-red-50 border-2 border-red-200 rounded-xl p-5">
-        <p className="text-lg font-semibold text-red-800">Ergebnis: Andere Betriebe werden genannt – Ihrer nicht.</p>
+        <p className="text-lg font-semibold text-red-800">Ergebnis: Andere Betriebe werden genannt, Ihrer nicht.</p>
       </div>
     </FadeIn>
   </section>
@@ -123,7 +123,7 @@ const OfferSection: React.FC = () => (
         {[
           {
             title: '1) Analyse',
-            body: 'Ich prüfe, ob und wie Ihr Unternehmen in ChatGPT/Perplexity/Google AI auftaucht – und warum (noch) nicht.',
+            body: 'Ich prüfe, ob und wie Ihr Unternehmen in ChatGPT/Perplexity/Google AI auftaucht, und warum (noch) nicht.',
           },
           {
             title: '2) Website-Upgrade',
@@ -131,7 +131,7 @@ const OfferSection: React.FC = () => (
           },
           {
             title: '3) Technische Basis',
-            body: 'Strukturierte Daten (Schema), saubere Struktur, interne Verlinkung – ohne Overengineering.',
+            body: 'Strukturierte Daten (Schema), saubere Struktur, interne Verlinkung, ohne Overengineering.',
           },
           {
             title: '4) Indexierung',
@@ -237,7 +237,7 @@ const PricingSection: React.FC = () => (
 
           <div className="bg-white/10 border border-white/20 rounded-xl p-6 mb-8">
             <p className="text-gray-200 leading-relaxed">
-              Wenn das Upgrade für Ihre Situation keinen sinnvollen Mehrwert bringt, sage ich das offen – und setze es nicht um.
+              Wenn das Upgrade für Ihre Situation keinen sinnvollen Mehrwert bringt, sage ich das offen und setze es nicht um.
             </p>
           </div>
 

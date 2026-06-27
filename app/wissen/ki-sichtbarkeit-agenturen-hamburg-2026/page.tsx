@@ -129,7 +129,7 @@ const AGENCIES: Agency[] = [
     score: '1 / 4',
     pin: 'KI-Rebrand',
     position:
-      '„Von der Elbe an die Spitze – bundesweit. Während andere noch Keywords zählen, landen wir bereits in den KI-Antworten von Gemini, ChatGPT und Perplexity." Mutigste rhetorische Positionierung im Hamburger Markt.',
+      '„Von der Elbe an die Spitze, bundesweit. Während andere noch Keywords zählen, landen wir bereits in den KI-Antworten von Gemini, ChatGPT und Perplexity." Mutigste rhetorische Positionierung im Hamburger Markt.',
     strengths: [
       'Klare, selbstbewusste KI-Positionierung, die Headline allein ist ein Marketing-Lehrstück.',
       'Tiefe Verankerung in der klassischen SEO-Szene (Ranking #4 für „seo agentur hamburg") plus aktiver Pivot Richtung GEO.',

@@ -15,7 +15,7 @@ const FAQS = [
   },
   {
     q: 'Was ist llms.txt und brauche ich das?',
-    a: 'llms.txt ist ein neuer Standard, der LLMs eine maschinenlesbare Zusammenfassung deiner Website liefert. Es ist kein offizieller W3C-Standard, wird aber von immer mehr KI-Systemen unterstützt. Wenn du KI-Sichtbarkeit ernst meinst, solltest du es implementieren - der Aufwand ist minimal, der potenzielle Nutzen hoch.',
+    a: 'llms.txt ist ein neuer Standard, der LLMs eine maschinenlesbare Zusammenfassung deiner Website liefert. Es ist kein offizieller W3C-Standard, wird aber von immer mehr KI-Systemen unterstützt. Wenn du KI-Sichtbarkeit ernst meinst, solltest du es implementieren. Der Aufwand ist minimal, der potenzielle Nutzen hoch.',
   },
   {
     q: 'Reicht Schema.org Markup allein für KI-Sichtbarkeit?',
@@ -27,11 +27,11 @@ const FAQS = [
   },
   {
     q: 'Wie teste ich, ob KI-Crawler meine Website lesen können?',
-    a: 'Drei Methoden: 1) Server-Logs auf GPTBot, PerplexityBot und ClaudeBot prüfen. 2) curl -A "GPTBot" auf deine URL ausführen und prüfen, ob Content zurückkommt. 3) In der Google Search Console unter "Crawl-Statistiken" nach KI-Bot-Zugriffen suchen. Alternativ die Seite mit deaktiviertem JavaScript im Browser laden - was du siehst, sieht auch der KI-Crawler.',
+    a: 'Drei Methoden: 1) Server-Logs auf GPTBot, PerplexityBot und ClaudeBot prüfen. 2) Die Seite gezielt mit dem User-Agent eines KI-Crawlers abrufen und prüfen, ob Content zurückkommt. 3) In der Google Search Console unter "Crawl-Statistiken" nach KI-Bot-Zugriffen suchen. Alternativ die Seite mit deaktiviertem JavaScript im Browser laden: Was du siehst, sieht auch der KI-Crawler.',
   },
   {
     q: 'Wie schnell wirken technische Optimierungen auf KI-Sichtbarkeit?',
-    a: 'Perplexity crawlt in Echtzeit - Änderungen können innerhalb von Tagen wirken. ChatGPT und Claude trainieren in Zyklen, hier dauert es 4-12 Wochen. Google AI Overviews reagieren ähnlich schnell wie die klassische Google-Suche, also Tage bis wenige Wochen.',
+    a: 'Perplexity crawlt in Echtzeit, Änderungen können innerhalb von Tagen wirken. ChatGPT und Claude trainieren in Zyklen, hier dauert es 4-12 Wochen. Google AI Overviews reagieren ähnlich schnell wie die klassische Google-Suche, also Tage bis wenige Wochen.',
   },
 ];
 
@@ -246,14 +246,14 @@ export default function TechnischeKISichtbarkeitPage() {
             </p>
           </div>
 
-          <StatBox text="70% der Unternehmens-Websites blockieren mindestens einen KI-Crawler - unbewusst." />
+          <StatBox text="70% der Unternehmens-Websites blockieren mindestens einen KI-Crawler, unbewusst." />
 
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
             <p>
               Aus berechtigter Angst vor Datenklau haben viele Unternehmen 2024 alle KI-Crawler ausgesperrt. Jetzt stellen sie entsetzt fest, dass sie sich aus dem Zukunftsmarkt zensiert haben.
             </p>
             <p>
-              Viele Security-Plugins und WAFs blockieren GPTBot, PerplexityBot und ClaudeBot pauschal. Dein IT-Team hat vermutlich keine böse Absicht - aber das Ergebnis ist dasselbe: <strong className="text-black">deine Website ist für KI unsichtbar</strong>.
+              Viele Security-Plugins und WAFs blockieren GPTBot, PerplexityBot und ClaudeBot pauschal. Dein IT-Team hat vermutlich keine böse Absicht, aber das Ergebnis ist dasselbe: <strong className="text-black">deine Website ist für KI unsichtbar</strong>.
             </p>
           </div>
 
@@ -323,7 +323,7 @@ export default function TechnischeKISichtbarkeitPage() {
               Die robots.txt ist die erste Tür, die KI-Crawler öffnen. Ist sie zu, gehen sie weiter. Keine zweite Chance.
             </p>
             <p>
-              Viele Unternehmen haben nach dem KI-Hype 2024 pauschal alle KI-Bots blockiert. Das war nachvollziehbar - aber strategisch ein Fehler. Du kannst selektiv erlauben, was du öffentlich machen willst, und den Rest schützen.
+              Viele Unternehmen haben nach dem KI-Hype 2024 pauschal alle KI-Bots blockiert. Das war nachvollziehbar, aber strategisch ein Fehler. Du kannst selektiv erlauben, was du öffentlich machen willst, und den Rest schützen.
             </p>
           </div>
 
@@ -449,7 +449,7 @@ Wir bieten [Kernleistungen].
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-brand-accent font-bold mt-0.5">3.</span>
-                <span>Halte die Datei aktuell - veraltete Informationen schaden mehr als keine</span>
+                <span>Halte die Datei aktuell, veraltete Informationen schaden mehr als keine</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-brand-accent font-bold mt-0.5">4.</span>
@@ -474,7 +474,7 @@ Wir bieten [Kernleistungen].
             {/* Organization/LocalBusiness */}
             <div className="bg-white border border-gray-100 rounded-2xl p-6">
               <h3 className="text-xl font-semibold text-black mb-2">Organization / LocalBusiness</h3>
-              <p className="text-gray-600 leading-relaxed mb-4">Entity Identity - Wer bist du? Ohne dieses Schema kann KI dich nicht als Entität erkennen.</p>
+              <p className="text-gray-600 leading-relaxed mb-4">Die Entitäts-Identität: Wer bist du? Ohne dieses Schema kann KI dich nicht als Entität erkennen.</p>
               <CodeBlock label="JSON-LD: LocalBusiness">
 {`{
   "@context": "https://schema.org",
@@ -711,11 +711,11 @@ Wir bieten [Kernleistungen].
           <div className="bg-white border border-gray-100 rounded-2xl p-6 my-8">
             <h3 className="text-xl font-semibold text-black mb-4">Frameworks mit SSR/SSG-Support</h3>
             <ul className="space-y-2 text-gray-600 leading-relaxed">
-              <li><strong className="text-black">Next.js</strong> (React) - SSR, SSG, ISR out of the box</li>
-              <li><strong className="text-black">Nuxt</strong> (Vue) - SSR und SSG</li>
-              <li><strong className="text-black">Astro</strong> - Static-first, partial hydration</li>
-              <li><strong className="text-black">SvelteKit</strong> - SSR und SSG</li>
-              <li><strong className="text-black">WordPress</strong> - nativ serverseitig gerendert (aber Achtung bei Headless-Setups)</li>
+              <li><strong className="text-black">Next.js</strong> (React): SSR, SSG, ISR out of the box</li>
+              <li><strong className="text-black">Nuxt</strong> (Vue): SSR und SSG</li>
+              <li><strong className="text-black">Astro</strong>: Static-first, partial hydration</li>
+              <li><strong className="text-black">SvelteKit</strong>: SSR und SSG</li>
+              <li><strong className="text-black">WordPress</strong>: nativ serverseitig gerendert (aber Achtung bei Headless-Setups)</li>
             </ul>
           </div>
       </section>
@@ -783,22 +783,22 @@ Wir bieten [Kernleistungen].
           <div className="bg-gray-50 rounded-xl p-6">
             <ul className="space-y-3 text-gray-600 text-sm leading-relaxed">
               <li>
-                <strong className="text-black">OpenAI (2024):</strong> GPTBot Dokumentation - User-Agent-Spezifikation und robots.txt-Richtlinien für GPTBot und OAI-SearchBot.
+                <strong className="text-black">OpenAI (2024):</strong> GPTBot Dokumentation, User-Agent-Spezifikation und robots.txt-Richtlinien für GPTBot und OAI-SearchBot.
               </li>
               <li>
-                <strong className="text-black">Anthropic (2024):</strong> ClaudeBot Web Crawling - Technische Dokumentation zum ClaudeBot-Crawler und Opt-out-Möglichkeiten.
+                <strong className="text-black">Anthropic (2024):</strong> ClaudeBot Web Crawling, technische Dokumentation zum ClaudeBot-Crawler und Opt-out-Möglichkeiten.
               </li>
               <li>
-                <strong className="text-black">llmstxt.org (2024):</strong> llms.txt Spezifikation - Vorschlag für einen Standard zur maschinenlesbaren Website-Zusammenfassung.
+                <strong className="text-black">llmstxt.org (2024):</strong> llms.txt Spezifikation, Vorschlag für einen Standard zur maschinenlesbaren Website-Zusammenfassung.
               </li>
               <li>
-                <strong className="text-black">Google (2025):</strong> Search Central - Structured Data Guidelines und Core Web Vitals Dokumentation.
+                <strong className="text-black">Google (2025):</strong> Search Central, Structured Data Guidelines und Core Web Vitals Dokumentation.
               </li>
               <li>
-                <strong className="text-black">Perplexity (2024):</strong> PerplexityBot Dokumentation - Crawler-Verhalten und robots.txt-Unterstützung.
+                <strong className="text-black">Perplexity (2024):</strong> PerplexityBot Dokumentation, Crawler-Verhalten und robots.txt-Unterstützung.
               </li>
               <li>
-                <strong className="text-black">Web.dev (2025):</strong> Core Web Vitals - LCP, CLS, INP und TTFB Schwellenwerte und Optimierungsstrategien.
+                <strong className="text-black">Web.dev (2025):</strong> Core Web Vitals, LCP, CLS, INP und TTFB Schwellenwerte und Optimierungsstrategien.
               </li>
             </ul>
           </div>
@@ -871,7 +871,7 @@ Wir bieten [Kernleistungen].
               Ist deine Website KI-ready?
             </h2>
             <p className="text-lg text-gray-300 leading-relaxed mb-8 max-w-xl mx-auto">
-              Finde heraus, ob KI-Crawler deine Website lesen können - oder ob du unbewusst blockierst. Kostenlose technische Kurzanalyse in 48 Stunden.
+              Finde heraus, ob KI-Crawler deine Website lesen können, oder ob du unbewusst blockierst. Kostenlose technische Kurzanalyse in 48 Stunden.
             </p>
             <Button href="/ai-sichtbarkeit-now" primary text="Kostenlose KI-Analyse anfragen" />
           </div>

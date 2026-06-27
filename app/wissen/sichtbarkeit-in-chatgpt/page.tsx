@@ -126,7 +126,7 @@ const HeroSection: React.FC = () => (
             </p>
             <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
                 Wenn du nicht dabei bist, existierst du für diese Nutzer nicht. Und du
-                erfährst es nicht einmal – denn es gibt keine ChatGPT Search Console.
+                erfährst es nicht einmal, denn es gibt keine ChatGPT Search Console.
                 Du fliegst blind.
             </p>
         </FadeIn>
@@ -165,7 +165,7 @@ const TLDRSection: React.FC = () => (
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">3.</span>
-                        <span>Brand Mentions korrelieren mit r=0,664 mit KI-Sichtbarkeit – stärker als Backlinks (Ahrefs-Studie).</span>
+                        <span>Brand Mentions korrelieren mit r=0,664 mit KI-Sichtbarkeit, stärker als Backlinks (Ahrefs-Studie).</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">4.</span>
@@ -195,7 +195,7 @@ const ProblemSection: React.FC = () => (
                 </p>
                 <p>
                     Bei Google kannst du auf Platz 7 stehen und trotzdem Klicks bekommen. Bei ChatGPT gibt es kein
-                    „Platz 7". Du bist entweder in der Empfehlung – oder du existierst nicht.
+                    „Platz 7". Du bist entweder in der Empfehlung oder du existierst nicht.
                     Es gibt keine zweite Seite, kein Scrollen, kein „Weitere Ergebnisse laden".
                 </p>
             </div>
@@ -215,7 +215,7 @@ const ProblemSection: React.FC = () => (
                     <h3 className="font-semibold text-black text-lg mb-2">Die Conversion Rate von ChatGPT-Traffic ist signifikant höher</h3>
                     <p className="text-gray-600 leading-relaxed">
                         Wer über ChatGPT auf deine Website kommt, hat eine klare Kaufabsicht. Diese Nutzer haben
-                        nicht „gegoogelt" – sie haben um eine konkrete Empfehlung gebeten. Das sind
+                        nicht „gegoogelt", sie haben um eine konkrete Empfehlung gebeten. Das sind
                         keine Browser. Das sind Käufer. Erste Daten zeigen: ChatGPT-Referral-Traffic konvertiert
                         deutlich besser als organischer Google-Traffic.
                     </p>
@@ -224,14 +224,14 @@ const ProblemSection: React.FC = () => (
 
             {/* Prompt Test Callout */}
             <div className="bg-[#121212] text-white rounded-xl p-6 md:p-8">
-                <p className="text-sm font-bold text-brand-accent mb-3 uppercase tracking-wider">Mach den Test – jetzt</p>
+                <p className="text-sm font-bold text-brand-accent mb-3 uppercase tracking-wider">Mach den Test, jetzt</p>
                 <p className="text-lg leading-relaxed mb-4">
                     Öffne ChatGPT und frag: „Empfiehl mir einen guten <em>[deine Branche]</em> in Hamburg."
                 </p>
                 <p className="text-gray-300 leading-relaxed">
                     Wirst du genannt? Wenn nicht: Dein Wettbewerber wird gerade empfohlen. Du erfährst es
                     nicht einmal. Es gibt keine Benachrichtigung, kein Dashboard, keine Search Console.
-                    ChatGPT empfiehlt deinen Wettbewerber – und du fliegst blind.
+                    ChatGPT empfiehlt deinen Wettbewerber, und du fliegst blind.
                 </p>
             </div>
         </FadeIn>
@@ -248,7 +248,7 @@ const HallucinationSection: React.FC = () => (
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
                 <p>
                     Die meisten Unternehmer haben nie geprüft, was ChatGPT über sie sagt. Das
-                    ist gefährlich. Denn ChatGPT sagt trotzdem etwas – und oft ist es falsch.
+                    ist gefährlich. Denn ChatGPT sagt trotzdem etwas, und oft ist es falsch.
                 </p>
             </div>
 
@@ -257,7 +257,7 @@ const HallucinationSection: React.FC = () => (
                     <h3 className="font-semibold text-black text-lg mb-2">KI-Halluzinationen: ChatGPT erfindet Fakten über dein Unternehmen</h3>
                     <p className="text-gray-600 leading-relaxed">
                         Falsche Preise. Falsche Öffnungszeiten. Dienstleistungen, die du gar nicht anbietest.
-                        Mitarbeiternamen, die nicht existieren. ChatGPT halluziniert – und präsentiert
+                        Mitarbeiternamen, die nicht existieren. ChatGPT halluziniert, und präsentiert
                         diese Halluzinationen mit der gleichen Selbstsicherheit wie korrekte Informationen.
                         Deine potenziellen Kunden können den Unterschied nicht erkennen.
                     </p>
@@ -265,8 +265,8 @@ const HallucinationSection: React.FC = () => (
                 <div className="bg-white border-2 border-red-200 rounded-xl p-6">
                     <h3 className="font-semibold text-black text-lg mb-2">Widersprüchliche Daten = ChatGPT rät von dir ab</h3>
                     <p className="text-gray-600 leading-relaxed">
-                        Wenn dein digitales Profil widersprüchlich ist – verschiedene Adressen auf verschiedenen
-                        Plattformen, unterschiedliche Leistungsbeschreibungen, veraltete Telefonnummern – wird ChatGPT
+                        Wenn dein digitales Profil widersprüchlich ist (verschiedene Adressen auf verschiedenen
+                        Plattformen, unterschiedliche Leistungsbeschreibungen, veraltete Telefonnummern), wird ChatGPT
                         unsicher. Und unsichere KI empfiehlt lieber den Wettbewerber, bei dem alle Quellen
                         übereinstimmen. Konsistenz ist kein Nice-to-have. Sie entscheidet, ob du empfohlen wirst.
                     </p>
@@ -284,7 +284,7 @@ const HallucinationSection: React.FC = () => (
 
             <div className="bg-brand-accent/10 border border-brand-accent/20 rounded-xl p-6">
                 <p className="text-gray-800 leading-relaxed">
-                    <strong>ChatGPT-Optimierung ist nicht nur Marketing – es ist Schadensverhütung.</strong>{' '}
+                    <strong>ChatGPT-Optimierung ist nicht nur Marketing, es ist Schadensverhütung.</strong>{' '}
                     Wer seine <a href="/wissen/ki-sichtbarkeit" className="text-brand-accent underline hover:no-underline">KI-Sichtbarkeit</a> nicht
                     aktiv steuert, überlässt einer halluzinierenden KI die Darstellung seines Unternehmens.
                 </p>
@@ -329,7 +329,7 @@ const DualSystemSection: React.FC = () => (
                 <div className="bg-white border border-gray-100 rounded-2xl p-6">
                     <h3 className="font-semibold text-black text-lg mb-3">System 2: Bing-Websuche</h3>
                     <p className="text-gray-600 text-base mb-3">
-                        Bei aktuellen Fragen oder wenn ChatGPT unsicher ist, durchsucht es das Web – über Bing.
+                        Bei aktuellen Fragen oder wenn ChatGPT unsicher ist, durchsucht es das Web, über Bing.
                         Nicht Google. Das ist ein entscheidender Unterschied.
                     </p>
                     <p className="text-gray-600 text-base mb-3">
@@ -392,8 +392,8 @@ const FactorsSection: React.FC = () => (
 
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
                 <p>
-                    Die Princeton-Studie zu Earned Media bestätigt das. Redaktionelle Erwähnungen – also
-                    Presseartikel, Fachbeiträge, unabhängige Reviews – beeinflussen ChatGPTs Quellenwahl
+                    Die Princeton-Studie zu Earned Media bestätigt das. Redaktionelle Erwähnungen (also
+                    Presseartikel, Fachbeiträge, unabhängige Reviews) beeinflussen ChatGPTs Quellenwahl
                     am stärksten. Bezahlte Mentions und Werbung haben kaum Effekt. ChatGPT erkennt den Unterschied.
                 </p>
             </div>
@@ -443,7 +443,7 @@ const StrategiesSection: React.FC = () => (
                 7 Strategien: So wirst du bei ChatGPT gefunden
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                ChatGPT-Optimierung für Unternehmen ist kein Hexenwerk – aber es erfordert andere
+                ChatGPT-Optimierung für Unternehmen ist kein Hexenwerk, aber es erfordert andere
                 Maßnahmen als klassisches Google-SEO. Hier sind die sieben wirksamsten Strategien.
             </p>
             <div className="space-y-8">
@@ -555,7 +555,7 @@ const HamburgSection: React.FC = () => (
                     <strong>Hamburg-Vorteil nutzen:</strong> Als Technologie- und Medienstandort generiert Hamburg
                     überdurchschnittlich viel digitale Presse und Online-Präsenz. Hamburger Unternehmen
                     haben damit bessere Voraussetzungen für ChatGPT-Sichtbarkeit als Unternehmen in kleineren
-                    Städten – wenn sie diese Voraussetzungen auch nutzen.
+                    Städten, wenn sie diese Voraussetzungen auch nutzen.
                 </p>
             </div>
         </FadeIn>
@@ -567,7 +567,7 @@ const MeasuringSection: React.FC = () => (
     <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <FadeIn>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
-                Wie werde ich bei ChatGPT gefunden – und wie messe ich es?
+                Wie werde ich bei ChatGPT gefunden, und wie messe ich es?
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
                 <p>
@@ -764,7 +764,7 @@ const SourcesSection: React.FC = () => (
                             rel="noopener noreferrer"
                             className="underline hover:text-brand-accent transition-colors"
                         >
-                            Ahrefs (2025): LLM SEO – Brand Mentions Correlation Study (r=0,664)
+                            Ahrefs (2025): LLM SEO. Brand Mentions Correlation Study (r=0,664)
                         </a>
                     </li>
                     <li>
@@ -861,7 +861,7 @@ const RelatedGuidesSection: React.FC = () => (
                         Technische KI-Sichtbarkeit
                     </p>
                     <p className="text-sm text-gray-500">
-                        robots.txt, Schema.org, Crawler-Steuerung – die technischen Grundlagen.
+                        robots.txt, Schema.org, Crawler-Steuerung: die technischen Grundlagen.
                     </p>
                 </a>
             </div>
@@ -881,7 +881,7 @@ const CTASection: React.FC = () => (
                         <span className="text-gray-400">Du erfährst es nicht einmal.</span>
                     </h2>
                     <p className="text-lg text-gray-300 mb-4 max-w-2xl leading-relaxed">
-                        Ich prüfe, ob und wie ChatGPT dein Unternehmen aktuell darstellt – Trainingsdaten
+                        Ich prüfe, ob und wie ChatGPT dein Unternehmen aktuell darstellt: Trainingsdaten
                         und Live-Suche. Inklusive Halluzinations-Check: Erfindet ChatGPT falsche Fakten über dich?
                     </p>
                     <p className="text-lg text-gray-300 mb-8 max-w-2xl leading-relaxed">

@@ -145,7 +145,7 @@ export default function SeoAgenturVsAiSeoPage() {
       {/* ============================================================ */}
       <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-12">
         <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
-          <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR &mdash; F&uuml;r alle, die keine Lust haben, 3.000&nbsp;&euro; monatlich zu verbrennen</h2>
+          <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR: F&uuml;r alle, die keine Lust haben, 3.000&nbsp;&euro; monatlich zu verbrennen</h2>
           <ul className="space-y-3 text-gray-700 leading-relaxed">
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">1.</span>
@@ -153,7 +153,7 @@ export default function SeoAgenturVsAiSeoPage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">2.</span>
-              <span><strong className="text-black">KI-Systeme ignorieren die meisten Websites komplett.</strong> Kein Schema-Markup, keine llms.txt, keine strukturierten Daten &ndash; f&uuml;r ChatGPT existierst du nicht.</span>
+              <span><strong className="text-black">KI-Systeme ignorieren die meisten Websites komplett.</strong> Kein Schema-Markup, keine llms.txt, keine strukturierten Daten. F&uuml;r ChatGPT existierst du nicht.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">3.</span>
@@ -161,7 +161,7 @@ export default function SeoAgenturVsAiSeoPage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">4.</span>
-              <span><strong className="text-black">AI SEO ersetzt klassisches SEO nicht &ndash; es vervollst&auml;ndigt es.</strong> Aber wer nur auf Google setzt, spielt ein Spiel, dessen Regeln sich gerade &auml;ndern.</span>
+              <span><strong className="text-black">AI SEO ersetzt klassisches SEO nicht. Es vervollst&auml;ndigt es.</strong> Aber wer nur auf Google setzt, spielt ein Spiel, dessen Regeln sich gerade &auml;ndern.</span>
             </li>
           </ul>
         </div>
@@ -192,26 +192,26 @@ export default function SeoAgenturVsAiSeoPage() {
           <ul className="space-y-2 text-gray-700 leading-relaxed">
             <li className="flex items-start gap-2">
               <span className="text-red-500 font-bold mt-0.5 shrink-0">&#10007;</span>
-              <span><strong className="text-black">60&nbsp;%+ Zero-Click-Suchen</strong> &ndash; Nutzer bekommen die Antwort direkt in den Google-Ergebnissen (SparkToro / Datos, 2025)</span>
+              <span><strong className="text-black">60&nbsp;%+ Zero-Click-Suchen.</strong> Nutzer bekommen die Antwort direkt in den Google-Ergebnissen (SparkToro / Datos, 2025)</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-red-500 font-bold mt-0.5 shrink-0">&#10007;</span>
-              <span><strong className="text-black">Google Ads CPC steigt 10&ndash;15&nbsp;% pro Jahr</strong> &ndash; Selbst bezahlte Sichtbarkeit wird immer teurer</span>
+              <span><strong className="text-black">Google Ads CPC steigt 10&ndash;15&nbsp;% pro Jahr.</strong> Selbst bezahlte Sichtbarkeit wird immer teurer</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-red-500 font-bold mt-0.5 shrink-0">&#10007;</span>
-              <span><strong className="text-black">AI&nbsp;Overviews auf 84&nbsp;% der informationellen Suchen</strong> &ndash; Dein organisches Ergebnis rutscht unter den KI-Block</span>
+              <span><strong className="text-black">AI&nbsp;Overviews auf 84&nbsp;% der informationellen Suchen.</strong> Dein organisches Ergebnis rutscht unter den KI-Block</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-red-500 font-bold mt-0.5 shrink-0">&#10007;</span>
-              <span><strong className="text-black">Gartner: 50&nbsp;% Traffic-Verlust bis 2028</strong> &ndash; Das ist keine Prophezeiung, das ist Mathematik</span>
+              <span><strong className="text-black">Gartner: 50&nbsp;% Traffic-Verlust bis 2028.</strong> Das ist keine Prophezeiung, das ist Mathematik</span>
             </li>
           </ul>
         </div>
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
           <p>
-            Du zahlst also 3.000&nbsp;&euro; im Monat daf&uuml;r, auf einer Suchergebnisseite sichtbar zu sein, die zunehmend irrelevant wird. Das ist, als w&uuml;rdest du einen Fitnesstrainer bezahlen, der dir beibringt, schneller zu laufen &ndash; <strong className="text-black">w&auml;hrend dein Wettbewerber gerade fliegen gelernt hat.</strong>
+            Du zahlst also 3.000&nbsp;&euro; im Monat daf&uuml;r, auf einer Suchergebnisseite sichtbar zu sein, die zunehmend irrelevant wird. Das ist, als w&uuml;rdest du einen Fitnesstrainer bezahlen, der dir beibringt, schneller zu laufen, <strong className="text-black">w&auml;hrend dein Wettbewerber gerade fliegen gelernt hat.</strong>
           </p>
         </div>
       </section>
@@ -224,14 +224,14 @@ export default function SeoAgenturVsAiSeoPage() {
           Was deine SEO-Agentur dir nicht sagt
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
-          Nicht aus B&ouml;swilligkeit. Sondern weil sie es entweder selbst nicht wissen &ndash; oder weil es ihrem Gesch&auml;ftsmodell widerspricht. F&uuml;nf unbequeme Wahrheiten.
+          Nicht aus B&ouml;swilligkeit. Sondern weil sie es entweder selbst nicht wissen oder weil es ihrem Gesch&auml;ftsmodell widerspricht. F&uuml;nf unbequeme Wahrheiten.
         </p>
 
         <div className="space-y-6">
           <div className="bg-white border border-gray-100 rounded-2xl p-6">
             <h3 className="text-xl font-semibold text-black mb-3">1. Rankings ohne Klicks sind wertlos</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Position&nbsp;5 bei Google klingt gut im monatlichen Report. Aber wenn ein AI&nbsp;Overview die Antwort direkt &uuml;ber den organischen Ergebnissen zeigt, scrollt niemand zu deinem Ergebnis. <strong className="text-black">Das ist, als h&auml;ttest du einen Tisch im besten Restaurant der Stadt &ndash; aber das Restaurant hat den Eingang zugemauert.</strong> Dein Ranking existiert. Dein Traffic nicht.
+              Position&nbsp;5 bei Google klingt gut im monatlichen Report. Aber wenn ein AI&nbsp;Overview die Antwort direkt &uuml;ber den organischen Ergebnissen zeigt, scrollt niemand zu deinem Ergebnis. <strong className="text-black">Das ist, als h&auml;ttest du einen Tisch im besten Restaurant der Stadt, aber das Restaurant hat den Eingang zugemauert.</strong> Dein Ranking existiert. Dein Traffic nicht.
             </p>
           </div>
 
@@ -245,14 +245,14 @@ export default function SeoAgenturVsAiSeoPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6">
             <h3 className="text-xl font-semibold text-black mb-3">3. Dein &bdquo;Content Marketing&ldquo; ist f&uuml;r Menschen, nicht f&uuml;r KI</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Deine Agentur produziert Blogartikel mit 1.500 W&ouml;rtern, einer 300-Wort-Einleitung &uuml;ber „die heutige digitale Landschaft" und drei Stock-Fotos von L&auml;cheln-mit-Laptop. Sch&ouml;n f&uuml;r Menschen. Irrelevant f&uuml;r KI. <strong className="text-black">KI braucht Answer-First-Struktur, Quellenangaben und Fakten &ndash; keine SEO-optimierten Fl&uuml;stertexte.</strong>
+              Deine Agentur produziert Blogartikel mit 1.500 W&ouml;rtern, einer 300-Wort-Einleitung &uuml;ber „die heutige digitale Landschaft" und drei Stock-Fotos von L&auml;cheln-mit-Laptop. Sch&ouml;n f&uuml;r Menschen. Irrelevant f&uuml;r KI. <strong className="text-black">KI braucht Answer-First-Struktur, Quellenangaben und Fakten, keine SEO-optimierten Fl&uuml;stertexte.</strong>
             </p>
           </div>
 
           <div className="bg-white border border-gray-100 rounded-2xl p-6">
             <h3 className="text-xl font-semibold text-black mb-3">4. Backlink-Profile beeindrucken ChatGPT nicht</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Deine Agentur hat 200 Backlinks aufgebaut. Respekt. Google mag das. ChatGPT? Ist das v&ouml;llig egal. KI-Systeme bewerten Vertrauen &uuml;ber Erw&auml;hnungen in seri&ouml;sen Quellen, Konsistenz der Informationen und Autorit&auml;tssignale &ndash; <strong className="text-black">nicht &uuml;ber Backlinks von Branchenverzeichnissen, die kein Mensch jemals besucht hat.</strong> (Spoiler: Die meisten Backlinks deiner Agentur kommen genau daher.)
+              Deine Agentur hat 200 Backlinks aufgebaut. Respekt. Google mag das. ChatGPT? Ist das v&ouml;llig egal. KI-Systeme bewerten Vertrauen &uuml;ber Erw&auml;hnungen in seri&ouml;sen Quellen, Konsistenz der Informationen und Autorit&auml;tssignale, <strong className="text-black">nicht &uuml;ber Backlinks von Branchenverzeichnissen, die kein Mensch jemals besucht hat.</strong> (Spoiler: Die meisten Backlinks deiner Agentur kommen genau daher.)
             </p>
           </div>
 
@@ -270,7 +270,7 @@ export default function SeoAgenturVsAiSeoPage() {
       {/* ============================================================ */}
       <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-          Klassisches SEO vs. AI&nbsp;SEO &ndash; Der ehrliche Vergleich
+          Klassisches SEO vs. AI&nbsp;SEO: Der ehrliche Vergleich
         </h2>
 
         <div className="overflow-x-auto">
@@ -329,7 +329,7 @@ export default function SeoAgenturVsAiSeoPage() {
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed mt-8">
           <p>
-            Bevor du jetzt denkst „Na klar, der will mir AI SEO verkaufen" &ndash; ja, stimmt. Aber die Tabelle lügt nicht. <strong className="text-black">Frag deine aktuelle Agentur nach ihrem ROI-Nachweis.</strong> Nicht nach Rankings. Nach Euro rein, Euro raus. Die Stille wird vielsagend sein.
+            Bevor du jetzt denkst „Na klar, der will mir AI SEO verkaufen": ja, stimmt. Aber die Tabelle lügt nicht. <strong className="text-black">Frag deine aktuelle Agentur nach ihrem ROI-Nachweis.</strong> Nicht nach Rankings. Nach Euro rein, Euro raus. Die Stille wird vielsagend sein.
           </p>
         </div>
       </section>
@@ -355,7 +355,7 @@ export default function SeoAgenturVsAiSeoPage() {
           <ul className="space-y-2 text-gray-700 leading-relaxed">
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-              <span>Anrufe, Routenplanungen, Website-Klicks &ndash; alles nachweisbar</span>
+              <span>Anrufe, Routenplanungen, Website-Klicks, alles nachweisbar</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
@@ -391,10 +391,10 @@ export default function SeoAgenturVsAiSeoPage() {
             <strong className="text-black">Ja. Und du solltest.</strong>
           </p>
           <p>
-            AI SEO ist kein Ersatz f&uuml;r gutes technisches SEO. Es ist die Weiterentwicklung. Saubere Website-Struktur, schnelle Ladezeiten, valides Schema-Markup &ndash; all das hilft beiden Kan&auml;len. Ein Haus braucht ein solides Fundament. Klassisches SEO ist das Fundament. <strong className="text-black">AI SEO ist das zweite Stockwerk, das du darauf baust.</strong>
+            AI SEO ist kein Ersatz f&uuml;r gutes technisches SEO. Es ist die Weiterentwicklung. Saubere Website-Struktur, schnelle Ladezeiten, valides Schema-Markup: all das hilft beiden Kan&auml;len. Ein Haus braucht ein solides Fundament. Klassisches SEO ist das Fundament. <strong className="text-black">AI SEO ist das zweite Stockwerk, das du darauf baust.</strong>
           </p>
           <p>
-            Das Problem ist nicht, dass du SEO machst. Das Problem ist, dass du <em>nur</em> SEO machst. Das ist, als w&uuml;rdest du ein Restaurant betreiben und nur Laufkundschaft bedienen &ndash; w&auml;hrend dein Nachbar zus&auml;tzlich Lieferando, Uber&nbsp;Eats und einen eigenen Online-Shop hat.
+            Das Problem ist nicht, dass du SEO machst. Das Problem ist, dass du <em>nur</em> SEO machst. Das ist, als w&uuml;rdest du ein Restaurant betreiben und nur Laufkundschaft bedienen, w&auml;hrend dein Nachbar zus&auml;tzlich Lieferando, Uber&nbsp;Eats und einen eigenen Online-Shop hat.
           </p>
           <p>
             Google ist immer noch die gr&ouml;&szlig;te Suchmaschine der Welt. Aber sie ist nicht mehr die einzige. Und die Regeln auf Google selbst &auml;ndern sich gerade fundamental. <strong className="text-black">Wer 2026 nur f&uuml;r klassische Google-Rankings optimiert, spielt Schach, w&auml;hrend die anderen l&auml;ngst 3D-Schach spielen.</strong>
@@ -421,41 +421,41 @@ export default function SeoAgenturVsAiSeoPage() {
         </p>
 
         <div className="bg-red-50 border border-red-100 rounded-xl p-5">
-          <h3 className="text-lg font-semibold text-black mb-4">Red Flags &ndash; wenn deine Agentur das sagt (oder nicht sagt):</h3>
+          <h3 className="text-lg font-semibold text-black mb-4">Red Flags, wenn deine Agentur das sagt (oder nicht sagt):</h3>
           <ul className="space-y-3 text-gray-700 leading-relaxed">
             <li className="flex items-start gap-3">
               <span className="text-red-500 font-bold mt-0.5 shrink-0">&#9873;</span>
-              <span><strong className="text-black">&bdquo;KI-Sichtbarkeit kommt automatisch mit guter SEO&ldquo;</strong> &ndash; Falsch. KI-Systeme nutzen andere Ranking-Signale als Google. Ohne gezielte Optimierung passiert nichts.</span>
+              <span><strong className="text-black">&bdquo;KI-Sichtbarkeit kommt automatisch mit guter SEO&ldquo;.</strong> Falsch. KI-Systeme nutzen andere Ranking-Signale als Google. Ohne gezielte Optimierung passiert nichts.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-red-500 font-bold mt-0.5 shrink-0">&#9873;</span>
-              <span><strong className="text-black">&bdquo;Wir haben noch keine llms.txt eingerichtet&ldquo;</strong> &ndash; Das ist seit 2025 ein Standard f&uuml;r KI-Crawler. Wenn deine Agentur das nicht kennt, kennt sie AI SEO nicht.</span>
+              <span><strong className="text-black">&bdquo;Wir haben noch keine llms.txt eingerichtet&ldquo;.</strong> Das ist seit 2025 ein Standard f&uuml;r KI-Crawler. Wenn deine Agentur das nicht kennt, kennt sie AI SEO nicht.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-red-500 font-bold mt-0.5 shrink-0">&#9873;</span>
-              <span><strong className="text-black">Der monatliche Report enth&auml;lt keine KI-KPIs</strong> &ndash; Keine Brand Mentions in KI-Systemen, keine Citation Rate, kein AI Referral Tracking. Nur Google-Rankings und Traffic.</span>
+              <span><strong className="text-black">Der monatliche Report enth&auml;lt keine KI-KPIs.</strong> Keine Brand Mentions in KI-Systemen, keine Citation Rate, kein AI Referral Tracking. Nur Google-Rankings und Traffic.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-red-500 font-bold mt-0.5 shrink-0">&#9873;</span>
-              <span><strong className="text-black">&bdquo;ChatGPT ist nicht relevant f&uuml;r B2B&ldquo;</strong> &ndash; 78&nbsp;% der B2B-Entscheider nutzen KI-Tools f&uuml;r Recherche (McKinsey, 2025). Deine Agentur lebt in 2022.</span>
+              <span><strong className="text-black">&bdquo;ChatGPT ist nicht relevant f&uuml;r B2B&ldquo;.</strong> 78&nbsp;% der B2B-Entscheider nutzen KI-Tools f&uuml;r Recherche (McKinsey, 2025). Deine Agentur lebt in 2022.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-red-500 font-bold mt-0.5 shrink-0">&#9873;</span>
-              <span><strong className="text-black">Content wird nach Keyword-Volumen erstellt, nicht nach KI-Relevanz</strong> &ndash; Ein Keyword mit 1.000 monatlichen Suchen bringt nichts, wenn AI Overviews 90&nbsp;% der Klicks fressen.</span>
+              <span><strong className="text-black">Content wird nach Keyword-Volumen erstellt, nicht nach KI-Relevanz.</strong> Ein Keyword mit 1.000 monatlichen Suchen bringt nichts, wenn AI Overviews 90&nbsp;% der Klicks fressen.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-red-500 font-bold mt-0.5 shrink-0">&#9873;</span>
-              <span><strong className="text-black">Kein Schema-Markup f&uuml;r FAQ, HowTo oder Article</strong> &ndash; Strukturierte Daten sind das Fundament, auf dem KI-Systeme Inhalte verstehen. Ohne Markup bist du f&uuml;r KI ein unlesbares Buch.</span>
+              <span><strong className="text-black">Kein Schema-Markup f&uuml;r FAQ, HowTo oder Article.</strong> Strukturierte Daten sind das Fundament, auf dem KI-Systeme Inhalte verstehen. Ohne Markup bist du f&uuml;r KI ein unlesbares Buch.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-red-500 font-bold mt-0.5 shrink-0">&#9873;</span>
-              <span><strong className="text-black">Die Agentur erw&auml;hnt Perplexity, Claude oder Gemini nicht einmal</strong> &ndash; Wenn der Fokus ausschlie&szlig;lich auf Google liegt, fehlt die H&auml;lfte der digitalen Suchlandschaft.</span>
+              <span><strong className="text-black">Die Agentur erw&auml;hnt Perplexity, Claude oder Gemini nicht einmal.</strong> Wenn der Fokus ausschlie&szlig;lich auf Google liegt, fehlt die H&auml;lfte der digitalen Suchlandschaft.</span>
             </li>
           </ul>
         </div>
 
         <p className="text-lg text-gray-600 leading-relaxed mt-8">
-          Drei oder mehr dieser Punkte treffen zu? Dann zahlst du f&uuml;r eine Strategie aus 2020 &ndash; <strong className="text-black">zum Preis von 2026.</strong>
+          Drei oder mehr dieser Punkte treffen zu? Dann zahlst du f&uuml;r eine Strategie aus 2020, <strong className="text-black">zum Preis von 2026.</strong>
         </p>
       </section>
 
@@ -501,7 +501,7 @@ export default function SeoAgenturVsAiSeoPage() {
               <div>
                 <h3 className="text-xl font-semibold text-black mb-2">Content f&uuml;r KI-Zitierbarkeit</h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Answer-First-Struktur, quellenbasierte Aussagen, zitierbare Kernsätze, FAQ-Sektionen. Content, der sowohl Menschen als auch KI-Systeme &uuml;berzeugt &ndash; statt 1.500 W&ouml;rter SEO-F&uuml;lltext.
+                  Answer-First-Struktur, quellenbasierte Aussagen, zitierbare Kernsätze, FAQ-Sektionen. Content, der sowohl Menschen als auch KI-Systeme &uuml;berzeugt, statt 1.500 W&ouml;rter SEO-F&uuml;lltext.
                 </p>
               </div>
             </div>
@@ -537,7 +537,7 @@ export default function SeoAgenturVsAiSeoPage() {
               <div>
                 <h3 className="text-xl font-semibold text-black mb-2">ROI-Nachweis ab Woche&nbsp;1</h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Kein „wir brauchen 6 Monate, bis wir erste Ergebnisse sehen". Erste messbare Verbesserungen in KI-Erw&auml;hnungen nach 2&ndash;4 Wochen. Business-relevante Leads nach 6&ndash;10 Wochen. <strong className="text-black">Wenn nach 8 Wochen nichts passiert, stimmt etwas nicht &ndash; und wir sagen dir das.</strong>
+                  Kein „wir brauchen 6 Monate, bis wir erste Ergebnisse sehen". Erste messbare Verbesserungen in KI-Erw&auml;hnungen nach 2&ndash;4 Wochen. Business-relevante Leads nach 6&ndash;10 Wochen. <strong className="text-black">Wenn nach 8 Wochen nichts passiert, stimmt etwas nicht, und wir sagen dir das.</strong>
                 </p>
               </div>
             </div>
@@ -564,7 +564,7 @@ export default function SeoAgenturVsAiSeoPage() {
             Falls ja: Gratulation, du bist in der Minderheit. Falls nein: Dein Wettbewerber, der dort genannt wird, bekommt gerade die Kunden, die eigentlich zu dir geh&ouml;ren. Jeden Tag. 24 Stunden. Ohne einen Cent f&uuml;r Werbung zu bezahlen.
           </p>
           <p>
-            Jetzt mach dasselbe mit Perplexity. Und mit Google &ndash; schau, ob ein AI&nbsp;Overview &uuml;ber deinem organischen Ergebnis steht.
+            Jetzt mach dasselbe mit Perplexity. Und mit Google: schau, ob ein AI&nbsp;Overview &uuml;ber deinem organischen Ergebnis steht.
           </p>
           <p>
             Das ist deine neue Realit&auml;t. <strong className="text-black">Nicht das PDF mit den gr&uuml;nen Pfeilen, das am Ersten im Postfach liegt.</strong>
@@ -617,7 +617,7 @@ export default function SeoAgenturVsAiSeoPage() {
               Zero-Click-Zukunft
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Warum deine Website bald keinen Traffic mehr braucht &ndash; und welche KPIs stattdessen z&auml;hlen.
+              Warum deine Website bald keinen Traffic mehr braucht, und welche KPIs stattdessen z&auml;hlen.
             </p>
           </a>
 
@@ -641,7 +641,7 @@ export default function SeoAgenturVsAiSeoPage() {
               Technische KI-Sichtbarkeit
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed">
-              llms.txt, Schema-Markup, robots.txt &ndash; die technische Grundlage f&uuml;r KI-Empfehlungen.
+              llms.txt, Schema-Markup, robots.txt: die technische Grundlage f&uuml;r KI-Empfehlungen.
             </p>
           </a>
         </div>
@@ -653,10 +653,10 @@ export default function SeoAgenturVsAiSeoPage() {
       <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <div className="bg-[#121212] rounded-3xl p-8 md:p-12 text-center">
           <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-white mb-4">
-            Lass deine KI-Sichtbarkeit pr&uuml;fen &ndash; kostenlos und ohne Verpflichtung
+            Lass deine KI-Sichtbarkeit pr&uuml;fen, kostenlos und ohne Verpflichtung
           </h2>
           <p className="text-lg text-gray-400 leading-relaxed mb-8 max-w-xl mx-auto">
-            Finde in 48 Stunden heraus, ob ChatGPT, Perplexity und Google&nbsp;AI dein Unternehmen empfehlen &ndash; oder deinen Wettbewerber. Ehrliche Analyse. Keine Verkaufspitch. Wenn AI SEO f&uuml;r dich keinen Sinn macht, sagen wir dir das.
+            Finde in 48 Stunden heraus, ob ChatGPT, Perplexity und Google&nbsp;AI dein Unternehmen empfehlen oder deinen Wettbewerber. Ehrliche Analyse. Keine Verkaufspitch. Wenn AI SEO f&uuml;r dich keinen Sinn macht, sagen wir dir das.
           </p>
           <Button href="/ai-sichtbarkeit-now" primary text="Kostenlose KI-Sichtbarkeits-Analyse" />
         </div>

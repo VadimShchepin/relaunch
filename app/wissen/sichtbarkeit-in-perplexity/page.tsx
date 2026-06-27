@@ -168,7 +168,7 @@ export default function SichtbarkeitInPerplexityPage() {
               <ul className="space-y-2 text-gray-800">
                 <li className="flex items-start gap-2">
                   <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">1.</span>
-                  <span>Perplexity durchsucht bei jeder Anfrage live das Web &ndash; über den Bing-Index, nicht Google.</span>
+                  <span>Perplexity durchsucht bei jeder Anfrage live das Web, über den Bing-Index, nicht Google.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">2.</span>
@@ -245,7 +245,7 @@ export default function SichtbarkeitInPerplexityPage() {
               <p>
                 Und: Die Conversion-Rate von Perplexity-Traffic liegt <strong className="text-black">4x höher</strong> als bei
                 organischem Google-Traffic. Perplexity-Nutzer kommen mit klarer Kaufintention. Sie haben recherchiert,
-                verglichen und sich für dich entschieden &ndash; bevor sie überhaupt auf deiner Website landen.
+                verglichen und sich für dich entschieden, bevor sie überhaupt auf deiner Website landen.
               </p>
             </div>
           </FadeIn>
@@ -302,7 +302,7 @@ export default function SichtbarkeitInPerplexityPage() {
                 <h3 className="font-semibold text-black text-lg mb-2">Du brauchst keine große Marke</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Bei ChatGPT gewinnt die bekannteste Marke. Bei Perplexity gewinnt die beste Seite. Ein gut strukturierter
-                  Fachbeitrag mit konkreten Zahlen und klaren Aussagen kann sofort als Quelle zitiert werden &ndash; unabhängig
+                  Fachbeitrag mit konkreten Zahlen und klaren Aussagen kann sofort als Quelle zitiert werden, unabhängig
                   davon, ob jemand dein Unternehmen kennt. Das ist der Equalizer für KMUs.
                 </p>
               </div>
@@ -337,7 +337,7 @@ export default function SichtbarkeitInPerplexityPage() {
                   <p className="text-gray-600 text-base">
                     Perplexity nutzt primär den Bing-Index. Deine Google-Rankings sind irrelevant,
                     wenn Bing deine Seiten nicht kennt. Bing Webmaster Tools sind Pflicht. Das ignorieren
-                    fast alle Unternehmen in Deutschland &ndash; und genau das ist die Lücke, die du nutzen kannst.
+                    fast alle Unternehmen in Deutschland, und genau das ist die Lücke, die du nutzen kannst.
                     Mehr zu den <a href="/wissen/technische-ki-sichtbarkeit" className="text-brand-accent hover:underline">technischen Voraussetzungen</a>.
                   </p>
                 </div>
@@ -346,7 +346,7 @@ export default function SichtbarkeitInPerplexityPage() {
                   <h3 className="font-semibold text-black text-lg mb-2">Tägliche Index-Updates</h3>
                   <p className="text-gray-600 text-base">
                     Der Index wird täglich aktualisiert. Neue Inhalte können in 2&ndash;3 Tagen in Antworten
-                    erscheinen. Bei ChatGPT dauert das Monate. Frische ist bei Perplexity kein Bonus &ndash;
+                    erscheinen. Bei ChatGPT dauert das Monate. Frische ist bei Perplexity kein Bonus,
                     es ist Voraussetzung. Statischer Content verliert gegen frischen Content. Immer.
                   </p>
                 </div>
@@ -373,7 +373,7 @@ export default function SichtbarkeitInPerplexityPage() {
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
               <p>
                 Perplexity wählt Quellen pro Anfrage aus dem Bing-Index. Es gibt keine feste
-                Rangfolge. Fünf Kriterien entscheiden, ob deine Seite zitiert wird &ndash; oder ob dein
+                Rangfolge. Fünf Kriterien entscheiden, ob deine Seite zitiert wird oder ob dein
                 Wettbewerber den Platz bekommt.
               </p>
             </div>
@@ -535,8 +535,8 @@ export default function SichtbarkeitInPerplexityPage() {
                   </tr>
                   <tr className="border-t border-gray-100">
                     <td className="p-4 font-medium text-black">Chance für KMUs</td>
-                    <td className="p-4">Hoch &ndash; einzelne Seite reicht</td>
-                    <td className="p-4">Gering &ndash; Markenbekanntheit zählt</td>
+                    <td className="p-4">Hoch, einzelne Seite reicht</td>
+                    <td className="p-4">Gering, Markenbekanntheit zählt</td>
                   </tr>
                 </tbody>
               </table>
@@ -560,12 +560,12 @@ export default function SichtbarkeitInPerplexityPage() {
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
               <p>
                 Hamburg ist ein Premium-Standort mit hoher Kaufkraft und Tech-Affinität. Perplexitys
-                Zielgruppe &ndash; Akademiker, Führungskräfte, Einkommensstark &ndash; ist in Hamburg
+                Zielgruppe (Akademiker, Führungskräfte, Einkommensstark) ist in Hamburg
                 überproportional vertreten.
               </p>
               <p>
                 Wenn ein Hamburger Entscheider Perplexity fragt &bdquo;Welche Agenturen für KI-Sichtbarkeit
-                gibt es in Hamburg?&ldquo; und du nicht zitiert wirst &ndash; existierst du nicht. Du wirst
+                gibt es in Hamburg?&ldquo; und du nicht zitiert wirst, existierst du nicht. Du wirst
                 nicht verglichen, nicht in Betracht gezogen, nicht kontaktiert.
               </p>
             </div>
@@ -574,7 +574,7 @@ export default function SichtbarkeitInPerplexityPage() {
               <div className="bg-white border border-gray-100 rounded-2xl p-6">
                 <h3 className="font-semibold text-black text-lg mb-2">Lokale Signale nutzen</h3>
                 <p className="text-gray-600 text-base">
-                  Google Business Profile, Hamburger Branchenverzeichnisse, lokale Bewertungsportale &ndash;
+                  Google Business Profile, Hamburger Branchenverzeichnisse, lokale Bewertungsportale:
                   diese Signale fließen über den Bing-Index in Perplexitys Quellenauswahl ein.
                   Konsistente NAP-Daten (Name, Adresse, Telefon) über alle Plattformen sind Pflicht.
                 </p>
@@ -591,7 +591,7 @@ export default function SichtbarkeitInPerplexityPage() {
                 <h3 className="font-semibold text-black text-lg mb-2">Wenig lokale Konkurrenz</h3>
                 <p className="text-gray-600 text-base">
                   Die meisten Hamburger Unternehmen haben keine Perplexity-Strategie. Wer jetzt optimiert,
-                  hat in vielen lokalen Branchen praktisch keinen Wettbewerb. Das Zeitfenster ist offen &ndash;
+                  hat in vielen lokalen Branchen praktisch keinen Wettbewerb. Das Zeitfenster ist offen,
                   aber es schließt sich, je mehr Unternehmen Perplexity als Kanal entdecken.
                 </p>
               </div>
@@ -600,7 +600,7 @@ export default function SichtbarkeitInPerplexityPage() {
                 <p className="text-gray-600 text-base">
                   Dein Google Business Profile wird von Bing indexiert. Bing speist Perplexitys Index.
                   Ein optimiertes GBP mit aktuellen Informationen, Bewertungen und Fotos wirkt sich
-                  direkt auf deine Perplexity-Sichtbarkeit aus &ndash; ein Hebel, den fast niemand nutzt.
+                  direkt auf deine Perplexity-Sichtbarkeit aus, ein Hebel, den fast niemand nutzt.
                 </p>
               </div>
             </div>
@@ -712,23 +712,23 @@ export default function SichtbarkeitInPerplexityPage() {
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>
                   <span className="text-gray-400 mr-2">[1]</span>
-                  BCG (2026): B2B-Einkäufer und KI-Suche &ndash; 67% der unter 35-Jährigen nutzen KI-Suchmaschinen
+                  BCG (2026): B2B-Einkäufer und KI-Suche. 67% der unter 35-Jährigen nutzen KI-Suchmaschinen
                 </li>
                 <li>
                   <span className="text-gray-400 mr-2">[2]</span>
-                  Perplexity AI: Offizielle Nutzerzahlen und Wachstumsdaten (2025/2026) &ndash; 45 Mio. aktive Nutzer, 370% YoY
+                  Perplexity AI: Offizielle Nutzerzahlen und Wachstumsdaten (2025/2026). 45 Mio. aktive Nutzer, 370% YoY
                 </li>
                 <li>
                   <span className="text-gray-400 mr-2">[3]</span>
-                  Ahrefs (2025): Content Freshness und KI-Suchmaschinen &ndash; Einfluss der Aktualität auf Zitierungen
+                  Ahrefs (2025): Content Freshness und KI-Suchmaschinen. Einfluss der Aktualität auf Zitierungen
                 </li>
                 <li>
                   <span className="text-gray-400 mr-2">[4]</span>
-                  Sistrix: Perplexity AI Analyse &ndash; Marktanteile, Bing-Index-Nutzung und Nutzungsverhalten
+                  Sistrix: Perplexity AI Analyse. Marktanteile, Bing-Index-Nutzung und Nutzungsverhalten
                 </li>
                 <li>
                   <span className="text-gray-400 mr-2">[5]</span>
-                  Claneo: Perplexity AI &amp; SEO &ndash; Demographische Daten der Perplexity-Nutzer (80% Akademiker, 30% Führungskräfte)
+                  Claneo: Perplexity AI &amp; SEO. Demographische Daten der Perplexity-Nutzer (80% Akademiker, 30% Führungskräfte)
                 </li>
                 <li>
                   <span className="text-gray-400 mr-2">[6]</span>
@@ -749,31 +749,31 @@ export default function SichtbarkeitInPerplexityPage() {
                   <a href="/wissen/ki-sichtbarkeit" className="text-brand-accent hover:underline transition-colors">
                     KI-Sichtbarkeit: Der komplette Guide
                   </a>
-                  <span className="text-gray-400"> &ndash; Überblick über alle KI-Plattformen</span>
+                  <span className="text-gray-400">: Überblick über alle KI-Plattformen</span>
                 </li>
                 <li>
                   <a href="/wissen/sichtbarkeit-in-chatgpt" className="text-brand-accent hover:underline transition-colors">
                     Sichtbarkeit in ChatGPT
                   </a>
-                  <span className="text-gray-400"> &ndash; Andere Plattform, andere Regeln</span>
+                  <span className="text-gray-400">: Andere Plattform, andere Regeln</span>
                 </li>
                 <li>
                   <a href="/wissen/ai-overviews-sichtbarkeit" className="text-brand-accent hover:underline transition-colors">
                     Google AI Overviews
                   </a>
-                  <span className="text-gray-400"> &ndash; So erscheinst du in Googles KI-Antwortbox</span>
+                  <span className="text-gray-400">: So erscheinst du in Googles KI-Antwortbox</span>
                 </li>
                 <li>
                   <a href="/wissen/ki-sichtbarkeit-messen" className="text-brand-accent hover:underline transition-colors">
                     KI-Sichtbarkeit messen
                   </a>
-                  <span className="text-gray-400"> &ndash; Tools, KPIs und Tracking-Methoden</span>
+                  <span className="text-gray-400">: Tools, KPIs und Tracking-Methoden</span>
                 </li>
                 <li>
                   <a href="/wissen/technische-ki-sichtbarkeit" className="text-brand-accent hover:underline transition-colors">
                     Technische KI-Sichtbarkeit
                   </a>
-                  <span className="text-gray-400"> &ndash; robots.txt, llms.txt und Schema.org</span>
+                  <span className="text-gray-400">: robots.txt, llms.txt und Schema.org</span>
                 </li>
               </ul>
             </div>

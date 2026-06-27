@@ -61,7 +61,7 @@ const faqJsonLd = {
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'LLMO – LLM Optimierung: So wirst du von KI-Systemen empfohlen',
+  headline: 'LLMO: LLM Optimierung: So wirst du von KI-Systemen empfohlen',
   description:
     'Der komplette Guide zu LLMO (Large Language Model Optimization): Definition, die 5 Säulen, Abgrenzung zu SEO/GEO/AEO, Schritt-für-Schritt-Anleitung und Tools.',
   image: 'https://aiseo.hamburg/images/wissen/llmo-llm-optimierung.jpg',
@@ -86,7 +86,7 @@ const breadcrumbJsonLd = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://aiseo.hamburg' },
     { '@type': 'ListItem', position: 2, name: 'Wissen', item: 'https://aiseo.hamburg/wissen' },
-    { '@type': 'ListItem', position: 3, name: 'LLMO – LLM Optimierung' },
+    { '@type': 'ListItem', position: 3, name: 'LLMO: LLM Optimierung' },
   ],
 };
 
@@ -135,15 +135,15 @@ export default function LLMOPage() {
               <li>/</li>
               <li><a href="/wissen" className="hover:text-brand-accent transition-colors">Wissen</a></li>
               <li>/</li>
-              <li className="text-black font-medium">LLMO – LLM Optimierung</li>
+              <li className="text-black font-medium">LLMO: LLM Optimierung</li>
             </ol>
           </nav>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-[-0.04em] text-black mb-6 leading-[1.05]">
-            LLMO – LLM Optimierung: So wirst du von KI-Systemen empfohlen
+            LLMO: LLM Optimierung: So wirst du von KI-Systemen empfohlen
           </h1>
           <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
-            Deine SEO-Agentur optimiert für Google. Aber 40% deiner Zielgruppe fragt bereits ChatGPT, Claude oder Perplexity. LLMO ist die Strategie, damit diese Systeme dich empfehlen – nicht deine Konkurrenz.
+            Deine SEO-Agentur optimiert für Google. Aber 40% deiner Zielgruppe fragt bereits ChatGPT, Claude oder Perplexity. LLMO ist die Strategie, damit diese Systeme dich empfehlen und nicht deine Konkurrenz.
           </p>
         </FadeIn>
       </section>
@@ -194,10 +194,10 @@ export default function LLMOPage() {
               <strong className="text-black">LLMO steht für Large Language Model Optimization.</strong> Es beschreibt die systematische Optimierung von Inhalten, Markenauftritt und technischer Infrastruktur, damit Large Language Models (ChatGPT, Claude, Gemini, Perplexity) ein Unternehmen als relevante Quelle erkennen und in ihren Antworten empfehlen.
             </p>
             <p>
-              Der entscheidende Unterschied zu SEO: Du optimierst nicht für ein Ranking auf einer Suchergebnisseite. Du optimierst dafür, dass ein KI-System dich <strong className="text-black">als vertrauenswürdige Quelle zitiert</strong> – in einer Antwort, die der Nutzer als Empfehlung wahrnimmt.
+              Der entscheidende Unterschied zu SEO: Du optimierst nicht für ein Ranking auf einer Suchergebnisseite. Du optimierst dafür, dass ein KI-System dich <strong className="text-black">als vertrauenswürdige Quelle zitiert</strong>, in einer Antwort, die der Nutzer als Empfehlung wahrnimmt.
             </p>
             <p>
-              LLMO ist dabei der <strong className="text-black">Überbegriff</strong> für alle KI-Sichtbarkeits-Strategien. GEO (Generative Engine Optimization) fokussiert sich auf generative Suchmaschinen. AEO (Answer Engine Optimization) auf Antwort-basierte Systeme. LLMO umfasst beides – plus die Optimierung für das parametrische Wissen der Modelle selbst, also das, was ein LLM während des Trainings gelernt hat.
+              LLMO ist dabei der <strong className="text-black">Überbegriff</strong> für alle KI-Sichtbarkeits-Strategien. GEO (Generative Engine Optimization) fokussiert sich auf generative Suchmaschinen. AEO (Answer Engine Optimization) auf Antwort-basierte Systeme. LLMO umfasst beides, plus die Optimierung für das parametrische Wissen der Modelle selbst, also das, was ein LLM während des Trainings gelernt hat.
             </p>
           </div>
 
@@ -205,7 +205,7 @@ export default function LLMOPage() {
 
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
             <p>
-              Warum ein eigener Begriff? Weil LLMs grundlegend anders funktionieren als Suchmaschinen. Google indexiert Seiten und rankt sie nach Relevanz. Ein LLM <strong className="text-black">synthetisiert Wissen</strong> aus Milliarden von Textfragmenten und generiert daraus eine Antwort. Die Optimierungslogik ist eine andere – und sie erfordert ein eigenes Framework.
+              Warum ein eigener Begriff? Weil LLMs grundlegend anders funktionieren als Suchmaschinen. Google indexiert Seiten und rankt sie nach Relevanz. Ein LLM <strong className="text-black">synthetisiert Wissen</strong> aus Milliarden von Textfragmenten und generiert daraus eine Antwort. Die Optimierungslogik ist eine andere, und sie erfordert ein eigenes Framework.
             </p>
             <p>
               Begriffe wie „AI SEO", „LLM SEO" oder „KI-Sichtbarkeit" beschreiben verwandte Konzepte. LLMO ist der präziseste technische Term, weil er den Optimierungsgegenstand benennt: das Large Language Model.
@@ -224,11 +224,11 @@ export default function LLMOPage() {
           </h2>
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
             <p>
-              Du investierst in SEO, deine Rankings sind stabil – und trotzdem sinkt der organische Traffic. Das ist kein Bug. Das ist der Shift zu KI-gestützter Suche.
+              Du investierst in SEO, deine Rankings sind stabil, und trotzdem sinkt der organische Traffic. Das ist kein Bug. Das ist der Shift zu KI-gestützter Suche.
             </p>
           </div>
 
-          <AccentBox text="Deine SEO-Agentur optimiert für ein System, das an Relevanz verliert. Google bleibt wichtig – aber es ist nicht mehr der einzige Kanal." />
+          <AccentBox text="Deine SEO-Agentur optimiert für ein System, das an Relevanz verliert. Google bleibt wichtig, aber es ist nicht mehr der einzige Kanal." />
 
           <div className="space-y-6 mt-4">
             <div className="bg-white border border-gray-100 rounded-2xl p-6">
@@ -253,7 +253,7 @@ export default function LLMOPage() {
             </div>
           </div>
 
-          <AccentBox text="LLMs empfehlen 2-3 Anbieter pro Kategorie – bist du dabei? Oder erfährt deine Zielgruppe von dir erst, wenn sie selbst googelt?" />
+          <AccentBox text="LLMs empfehlen 2-3 Anbieter pro Kategorie. Bist du dabei? Oder erfährt deine Zielgruppe von dir erst, wenn sie selbst googelt?" />
         </FadeIn>
       </section>
 
@@ -273,7 +273,7 @@ export default function LLMOPage() {
             <div className="bg-white border border-gray-100 rounded-2xl p-6">
               <h3 className="text-xl font-semibold text-black mb-3">1. Training Data (parametrisches Wissen)</h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-3">
-                Während des Trainings verarbeitet ein LLM Milliarden von Texten – Websites, Wikipedia, Fachpublikationen, Foren, Nachrichtenartikel. Daraus lernt es Muster, Zusammenhänge und Fakten. Dieses Wissen ist im Modell gespeichert und hat einen <strong className="text-black">festen Cutoff-Zeitpunkt</strong>.
+                Während des Trainings verarbeitet ein LLM Milliarden von Texten: Websites, Wikipedia, Fachpublikationen, Foren, Nachrichtenartikel. Daraus lernt es Muster, Zusammenhänge und Fakten. Dieses Wissen ist im Modell gespeichert und hat einen <strong className="text-black">festen Cutoff-Zeitpunkt</strong>.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Für LLMO bedeutet das: Wenn dein Unternehmen in den Trainingsdaten häufig, konsistent und in relevantem Kontext vorkommt, wird das Modell es als relevante Entität erkennen.
@@ -305,7 +305,7 @@ export default function LLMOPage() {
             </div>
           </div>
 
-          <AccentBox text="Google indexiert Seiten. LLMs synthetisieren Wissen. Der Unterschied ist fundamental – und erfordert eine eigene Optimierungsstrategie." />
+          <AccentBox text="Google indexiert Seiten. LLMs synthetisieren Wissen. Der Unterschied ist fundamental und erfordert eine eigene Optimierungsstrategie." />
         </FadeIn>
       </section>
 
@@ -318,7 +318,7 @@ export default function LLMOPage() {
             LLMO vs. SEO vs. GEO vs. AEO
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-8">
-            Vier Disziplinen, vier unterschiedliche Schwerpunkte – aber mit zunehmender Überschneidung. Hier ist die Abgrenzung:
+            Vier Disziplinen, vier unterschiedliche Schwerpunkte, aber mit zunehmender Überschneidung. Hier ist die Abgrenzung:
           </p>
 
           <div className="overflow-x-auto">
@@ -401,7 +401,7 @@ export default function LLMOPage() {
             <li>
               <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
                 <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">
-                  1. Brand Authority – Konsistente Erwähnungen über viele Quellen
+                  1. Brand Authority: Konsistente Erwähnungen über viele Quellen
                 </h3>
                 <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                   <p>
@@ -420,7 +420,7 @@ export default function LLMOPage() {
             <li>
               <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
                 <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">
-                  2. Content Citability – Inhalte, die LLMs zitieren können
+                  2. Content Citability: Inhalte, die LLMs zitieren können
                 </h3>
                 <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                   <p>
@@ -439,7 +439,7 @@ export default function LLMOPage() {
             <li>
               <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
                 <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">
-                  3. Technical Accessibility – KI-Crawlern den Zugang ermöglichen
+                  3. Technical Accessibility: KI-Crawlern den Zugang ermöglichen
                 </h3>
                 <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                   <p>
@@ -449,7 +449,7 @@ export default function LLMOPage() {
                     <strong className="text-black">Essentiell:</strong> robots.txt für GPTBot, ClaudeBot, PerplexityBot, Googlebot öffnen. Eine <strong className="text-black">llms.txt</strong>-Datei im Root-Verzeichnis bereitstellen, die dem LLM eine maschinenlesbare Zusammenfassung deines Unternehmens gibt. Schema.org Markup (Organization, LocalBusiness, Product, FAQ, Article) für Entity-Erkennung.
                   </p>
                   <p>
-                    <strong className="text-black">Praxis-Tipp:</strong> Prüfe deine Server-Logs auf Zugriffe von GPTBot, ClaudeBot und PerplexityBot. Wenn sie nicht kommen, blockierst du sie möglicherweise – oder deine Seite ist technisch nicht crawlbar.
+                    <strong className="text-black">Praxis-Tipp:</strong> Prüfe deine Server-Logs auf Zugriffe von GPTBot, ClaudeBot und PerplexityBot. Wenn sie nicht kommen, blockierst du sie möglicherweise, oder deine Seite ist technisch nicht crawlbar.
                   </p>
                 </div>
               </div>
@@ -458,7 +458,7 @@ export default function LLMOPage() {
             <li>
               <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
                 <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">
-                  4. Source Diversity – Präsenz auf vielen Plattformen
+                  4. Source Diversity: Präsenz auf vielen Plattformen
                 </h3>
                 <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                   <p>
@@ -477,11 +477,11 @@ export default function LLMOPage() {
             <li>
               <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
                 <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">
-                  5. Freshness & Consistency – Aktuelle, widerspruchsfreie Informationen
+                  5. Freshness & Consistency: Aktuelle, widerspruchsfreie Informationen
                 </h3>
                 <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                   <p>
-                    LLMs bewerten Aktualität. Veraltete Informationen werden abgestraft – besonders bei Retrieval-basierten Systemen wie Perplexity, die das Live-Web durchsuchen. Gleichzeitig müssen deine Informationen <strong className="text-black">über alle Quellen hinweg konsistent</strong> sein.
+                    LLMs bewerten Aktualität. Veraltete Informationen werden abgestraft, besonders bei Retrieval-basierten Systemen wie Perplexity, die das Live-Web durchsuchen. Gleichzeitig müssen deine Informationen <strong className="text-black">über alle Quellen hinweg konsistent</strong> sein.
                   </p>
                   <p>
                     <strong className="text-black">Was „Freshness" bedeutet:</strong> Regelmäßig aktualisierte Inhalte, aktuelle Datumsangaben, neue Daten und Statistiken, frische Case Studies. Nicht: jeden Tag einen neuen Blogpost veröffentlichen. Sondern: bestehende Inhalte aktuell halten.
@@ -505,13 +505,13 @@ export default function LLMOPage() {
             LLMO in der Praxis: Schritt-für-Schritt
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10">
-            Sechs konkrete Schritte, um LLMO systematisch umzusetzen. Beginne bei Schritt 1 – die Reihenfolge ist wichtig.
+            Sechs konkrete Schritte, um LLMO systematisch umzusetzen. Beginne bei Schritt 1, die Reihenfolge ist wichtig.
           </p>
 
           <ol className="space-y-8">
             <li>
               <h3 className="text-xl md:text-2xl font-semibold text-black mb-2">
-                Schritt 1: Ist-Analyse – Wie beschreiben LLMs dich heute?
+                Schritt 1: Ist-Analyse, wie beschreiben LLMs dich heute?
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Frag ChatGPT, Claude und Perplexity nach deinem Unternehmen, deiner Kategorie und deinen Wettbewerbern. Dokumentiere die Antworten. Wirst du erwähnt? Richtig beschrieben? Oder gar nicht genannt? Diese Baseline ist dein Ausgangspunkt.
@@ -523,7 +523,7 @@ export default function LLMOPage() {
                 Schritt 2: Entity-Profil schärfen
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Definiere klar: Wer bist du? Was machst du? Für wen? Wo? Warum bist du die beste Wahl? Formuliere das als konsistenten Marken-Claim, der sich durch alle Kanäle zieht. LLMs empfehlen Spezialisten – „Full-Service-Agentur für alles" wird nicht zitiert.
+                Definiere klar: Wer bist du? Was machst du? Für wen? Wo? Warum bist du die beste Wahl? Formuliere das als konsistenten Marken-Claim, der sich durch alle Kanäle zieht. LLMs empfehlen Spezialisten. „Full-Service-Agentur für alles" wird nicht zitiert.
               </p>
             </li>
 
@@ -551,7 +551,7 @@ export default function LLMOPage() {
                 Schritt 5: Source Diversity aufbauen
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Identifiziere die wichtigsten Plattformen für deine Branche und stelle sicher, dass du dort präsent bist – mit konsistenten Informationen. Investiere in PR, Gastbeiträge, Branchenverzeichnisse und Fachportal-Einträge. Jede unabhängige Erwähnung stärkt dein Entity-Profil.
+                Identifiziere die wichtigsten Plattformen für deine Branche und stelle sicher, dass du dort präsent bist, mit konsistenten Informationen. Investiere in PR, Gastbeiträge, Branchenverzeichnisse und Fachportal-Einträge. Jede unabhängige Erwähnung stärkt dein Entity-Profil.
               </p>
             </li>
 
@@ -636,7 +636,7 @@ export default function LLMOPage() {
             <div className="bg-white border border-gray-100 rounded-2xl p-6">
               <h3 className="text-xl font-semibold text-black mb-3">1. KI-Crawler blockieren</h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Viele Websites blockieren GPTBot und ClaudeBot in der robots.txt – oft unbewusst, durch restriktive Standard-Einstellungen. Wenn KI-Crawler dich nicht lesen können, wirst du von Retrieval-basierten Systemen nicht zitiert.
+                Viele Websites blockieren GPTBot und ClaudeBot in der robots.txt, oft unbewusst, durch restriktive Standard-Einstellungen. Wenn KI-Crawler dich nicht lesen können, wirst du von Retrieval-basierten Systemen nicht zitiert.
               </p>
             </div>
 
@@ -657,14 +657,14 @@ export default function LLMOPage() {
             <div className="bg-white border border-gray-100 rounded-2xl p-6">
               <h3 className="text-xl font-semibold text-black mb-3">4. Inkonsistente Markeninformationen</h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Deine Website sagt „AI SEO Agentur Hamburg", dein LinkedIn-Profil „Digital Marketing Berater", dein Google Business Profile „Webentwicklung". LLMs können dich keiner klaren Kategorie zuordnen. Konsistenz ist nicht optional – sie ist die Grundlage für Entity-Erkennung.
+                Deine Website sagt „AI SEO Agentur Hamburg", dein LinkedIn-Profil „Digital Marketing Berater", dein Google Business Profile „Webentwicklung". LLMs können dich keiner klaren Kategorie zuordnen. Konsistenz ist nicht optional, sie ist die Grundlage für Entity-Erkennung.
               </p>
             </div>
 
             <div className="bg-white border border-gray-100 rounded-2xl p-6">
               <h3 className="text-xl font-semibold text-black mb-3">5. SEO-Taktiken auf LLMO übertragen</h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Keyword-Stuffing, Link-Farming, dünne Seiten für jedes Long-Tail-Keyword – was bei SEO fragwürdig ist, schadet bei LLMO aktiv. LLMs bewerten Qualität, Autorität und Konsistenz. Quantität ohne Substanz wird ignoriert.
+                Keyword-Stuffing, Link-Farming, dünne Seiten für jedes Long-Tail-Keyword: was bei SEO fragwürdig ist, schadet bei LLMO aktiv. LLMs bewerten Qualität, Autorität und Konsistenz. Quantität ohne Substanz wird ignoriert.
               </p>
             </div>
 
@@ -708,22 +708,22 @@ export default function LLMOPage() {
           <div className="bg-gray-50 rounded-xl p-6">
             <ul className="space-y-3 text-gray-600 text-sm leading-relaxed">
               <li>
-                <strong className="text-black">Gartner (2024):</strong> "Predicts 2025: Search and AI" – Prognose zum Rückgang organischen Traffics durch KI-gestützte Suche bis 2028.
+                <strong className="text-black">Gartner (2024):</strong> "Predicts 2025: Search and AI". Prognose zum Rückgang organischen Traffics durch KI-gestützte Suche bis 2028.
               </li>
               <li>
-                <strong className="text-black">Princeton University (2024):</strong> "GEO: Generative Engine Optimization" – Erste akademische Studie zur Optimierung von Inhalten für generative Suchmaschinen. Zeigt den Einfluss von Zitationen, Statistiken und Quellenangaben auf die Sichtbarkeit in KI-Antworten.
+                <strong className="text-black">Princeton University (2024):</strong> "GEO: Generative Engine Optimization". Erste akademische Studie zur Optimierung von Inhalten für generative Suchmaschinen. Zeigt den Einfluss von Zitationen, Statistiken und Quellenangaben auf die Sichtbarkeit in KI-Antworten.
               </li>
               <li>
-                <strong className="text-black">OpenAI (2023):</strong> "GPTBot Documentation" – Offizielle Dokumentation zum GPTBot-Crawler und robots.txt-Konfiguration für KI-Zugang.
+                <strong className="text-black">OpenAI (2023):</strong> "GPTBot Documentation". Offizielle Dokumentation zum GPTBot-Crawler und robots.txt-Konfiguration für KI-Zugang.
               </li>
               <li>
-                <strong className="text-black">Anthropic (2024):</strong> "ClaudeBot and AI Training" – Richtlinien für Website-Betreiber zum Umgang mit KI-Crawlern und Trainingsdaten.
+                <strong className="text-black">Anthropic (2024):</strong> "ClaudeBot and AI Training". Richtlinien für Website-Betreiber zum Umgang mit KI-Crawlern und Trainingsdaten.
               </li>
               <li>
-                <strong className="text-black">Ahrefs (2025):</strong> "Brand Radar: Measuring AI Visibility" – Methodik zur Messung von Markenpräsenz in LLM-Antworten.
+                <strong className="text-black">Ahrefs (2025):</strong> "Brand Radar: Measuring AI Visibility". Methodik zur Messung von Markenpräsenz in LLM-Antworten.
               </li>
               <li>
-                <strong className="text-black">Search Engine Journal (2025):</strong> "LLMO: The Next Evolution of SEO" – Analyse der Verschiebung von klassischem SEO zu Large Language Model Optimization.
+                <strong className="text-black">Search Engine Journal (2025):</strong> "LLMO: The Next Evolution of SEO". Analyse der Verschiebung von klassischem SEO zu Large Language Model Optimization.
               </li>
             </ul>
           </div>
@@ -756,7 +756,7 @@ export default function LLMOPage() {
               className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
             >
               <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">
-                AEO – Answer Engine Optimization
+                AEO: Answer Engine Optimization
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
                 Optimierung für Antwort-basierte Systeme: Featured Snippets, Voice Search und KI-Antworten.
@@ -824,7 +824,7 @@ export default function LLMOPage() {
               Wirst du von LLMs empfohlen?
             </h2>
             <p className="text-lg text-gray-400 leading-relaxed mb-8 max-w-xl mx-auto">
-              Finde heraus, wie ChatGPT, Claude und Perplexity dein Unternehmen heute beschreiben – und was du tun kannst, um in den Top-Empfehlungen zu landen.
+              Finde heraus, wie ChatGPT, Claude und Perplexity dein Unternehmen heute beschreiben und was du tun kannst, um in den Top-Empfehlungen zu landen.
             </p>
             <Button href="/ai-sichtbarkeit-now" primary text="Kostenlose LLMO-Kurzanalyse anfragen" />
           </div>

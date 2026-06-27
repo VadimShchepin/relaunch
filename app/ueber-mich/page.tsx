@@ -108,7 +108,7 @@ export default function UeberMichPage() {
                   Vadim Shchepin
                 </h1>
                 <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl">
-                  Senior Engineer aus Hamburg. Ich baue keine SEO-Pakete &ndash; ich mache Unternehmen in KI-Systemen sichtbar.
+                  Senior Engineer aus Hamburg. Ich baue keine SEO-Pakete. Ich mache Unternehmen in KI-Systemen sichtbar.
                 </p>
               </div>
             </div>
@@ -138,7 +138,7 @@ export default function UeberMichPage() {
 
             <FadeIn delay={300}>
               <p>
-                Was mich antreibt: Ich möchte, dass gute Unternehmen gefunden werden. Nicht die mit dem größten Budget, sondern die mit dem besten Angebot. KI-Systeme belohnen echte Expertise &ndash; und genau das mache ich sichtbar.
+                Was mich antreibt: Ich möchte, dass gute Unternehmen gefunden werden. Nicht die mit dem größten Budget, sondern die mit dem besten Angebot. KI-Systeme belohnen echte Expertise, und genau das mache ich sichtbar.
               </p>
             </FadeIn>
 
@@ -197,7 +197,7 @@ export default function UeberMichPage() {
 
             <FadeIn delay={200}>
               <p>
-                Ich komme aus der Technik. Das heißt: Ich verstehe nicht nur, <em>was</em> optimiert werden muss, sondern auch <em>wie</em> es implementiert wird. Schema Markup, technisches SEO, Content-Strategie &ndash; alles aus einer Hand, ohne Übergabe-Verluste.
+                Ich komme aus der Technik. Das heißt: Ich verstehe nicht nur, <em>was</em> optimiert werden muss, sondern auch <em>wie</em> es implementiert wird. Schema Markup, technisches SEO, Content-Strategie, alles aus einer Hand, ohne Übergabe-Verluste.
               </p>
             </FadeIn>
 
@@ -220,13 +220,13 @@ export default function UeberMichPage() {
 
             <FadeIn delay={100}>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                KI-Sichtbarkeit ist mein Fokus &ndash; aber nicht alles, was ich mache. Unter <a href="https://webseite.hamburg/" target="_blank" rel="noopener noreferrer" className="text-brand-accent font-semibold underline underline-offset-2 hover:text-black transition-colors">webseite.hamburg</a> biete ich klassische digitale Dienstleistungen an: Webseiten-Erstellung, Google Ads, SEO und Online-Promotion.
+                KI-Sichtbarkeit ist mein Fokus, aber nicht alles, was ich mache. Unter <a href="https://webseite.hamburg/" target="_blank" rel="noopener noreferrer" className="text-brand-accent font-semibold underline underline-offset-2 hover:text-black transition-colors">webseite.hamburg</a> biete ich klassische digitale Dienstleistungen an: Webseiten-Erstellung, Google Ads, SEO und Online-Promotion.
               </p>
             </FadeIn>
 
             <FadeIn delay={200}>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Viele meiner Kunden starten dort mit einer neuen Website oder Ads-Kampagne und kommen dann hierher, wenn sie den nächsten Schritt machen wollen: sichtbar werden in ChatGPT, Perplexity und Co. Beide Seiten ergänzen sich &ndash; je nachdem, wo du gerade stehst.
+                Viele meiner Kunden starten dort mit einer neuen Website oder Ads-Kampagne und kommen dann hierher, wenn sie den nächsten Schritt machen wollen: sichtbar werden in ChatGPT, Perplexity und Co. Beide Seiten ergänzen sich, je nachdem, wo du gerade stehst.
               </p>
             </FadeIn>
 
@@ -291,7 +291,7 @@ export default function UeberMichPage() {
               Lass uns reden
             </h2>
             <p className="text-lg text-gray-600 mb-8 max-w-xl mx-auto">
-              Du willst wissen, ob KI-Sichtbarkeit für dein Unternehmen Sinn macht? Schreib mir &ndash; ich antworte persönlich.
+              Du willst wissen, ob KI-Sichtbarkeit für dein Unternehmen Sinn macht? Schreib mir, ich antworte persönlich.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button

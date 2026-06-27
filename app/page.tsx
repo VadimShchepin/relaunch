@@ -117,7 +117,7 @@ export default function Page() {
                                     Was ist KI-Sichtbarkeit?
                                 </h3>
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    KI-Sichtbarkeit bedeutet, dass dein Unternehmen von KI-Systemen wie ChatGPT, Perplexity oder Google AI aktiv genannt und empfohlen wird – nicht nur in Suchergebnissen gefunden, sondern als vertrauenswürdige Quelle ausgewählt. Während klassische Suchmaschinen zehn blaue Links anzeigen, wählt KI nur zwei bis sieben Quellen pro Antwort. Wer dort nicht erscheint, wird von einer wachsenden Zielgruppe nicht wahrgenommen.
+                                    KI-Sichtbarkeit bedeutet, dass dein Unternehmen von KI-Systemen wie ChatGPT, Perplexity oder Google AI aktiv genannt und empfohlen wird, nicht nur in Suchergebnissen gefunden, sondern als vertrauenswürdige Quelle ausgewählt. Während klassische Suchmaschinen zehn blaue Links anzeigen, wählt KI nur zwei bis sieben Quellen pro Antwort. Wer dort nicht erscheint, wird von einer wachsenden Zielgruppe nicht wahrgenommen.
                                 </p>
                             </div>
 
@@ -126,7 +126,7 @@ export default function Page() {
                                     Warum reicht klassische SEO nicht mehr aus?
                                 </h3>
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    KI zeigt keine Suchlisten. Sie wählt wenige Quellen aus und fasst sie zu einer einzigen Empfehlung zusammen. Wer dort nicht erscheint, wird nicht verglichen – sondern komplett ignoriert. Laut Gartner verlieren Marken bis 2028 über 50 % ihres organischen Traffics an KI-gestützte Suche. SEO bleibt wichtig als Fundament, aber ohne gezielte KI-Optimierung verpasst du den Kanal, über den immer mehr Kaufentscheidungen getroffen werden.
+                                    KI zeigt keine Suchlisten. Sie wählt wenige Quellen aus und fasst sie zu einer einzigen Empfehlung zusammen. Wer dort nicht erscheint, wird nicht verglichen, sondern komplett ignoriert. Laut Gartner verlieren Marken bis 2028 über 50 % ihres organischen Traffics an KI-gestützte Suche. SEO bleibt wichtig als Fundament, aber ohne gezielte KI-Optimierung verpasst du den Kanal, über den immer mehr Kaufentscheidungen getroffen werden.
                                 </p>
                             </div>
 
@@ -135,7 +135,7 @@ export default function Page() {
                                     Wie entscheidet KI, welche Unternehmen sie nennt?
                                 </h3>
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    KI-Systeme bewerten vier zentrale Faktoren: Klarheit, Relevanz, Autorität und Konsistenz. Klarheit heißt, deine Website kommuniziert eindeutig, was du anbietest. Autorität entsteht durch Markennennungen auf vertrauenswürdigen Plattformen und konsistente Unternehmensdaten. In der Regel berücksichtigt KI nur fünf bis zehn Quellen pro Antwort – alle anderen spielen keine Rolle.
+                                    KI-Systeme bewerten vier zentrale Faktoren: Klarheit, Relevanz, Autorität und Konsistenz. Klarheit heißt, deine Website kommuniziert eindeutig, was du anbietest. Autorität entsteht durch Markennennungen auf vertrauenswürdigen Plattformen und konsistente Unternehmensdaten. In der Regel berücksichtigt KI nur fünf bis zehn Quellen pro Antwort. Alle anderen spielen keine Rolle.
                                 </p>
                             </div>
 
@@ -153,7 +153,7 @@ export default function Page() {
                                     Ist KI-Sichtbarkeit für jedes Unternehmen sinnvoll?
                                 </h3>
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    Nein. Sie ist besonders sinnvoll für Unternehmen mit klarem Angebot und definierter Zielgruppe: Dienstleister, Berater, Agenturen, SaaS-Anbieter und spezialisierte lokale Unternehmen. Am meisten profitieren Unternehmen, die Kontrolle über ihre Positionierung übernehmen wollen – nicht diejenigen, die auf Rankings, Zufall oder Hoffnung setzen.
+                                    Nein. Sie ist besonders sinnvoll für Unternehmen mit klarem Angebot und definierter Zielgruppe: Dienstleister, Berater, Agenturen, SaaS-Anbieter und spezialisierte lokale Unternehmen. Am meisten profitieren Unternehmen, die Kontrolle über ihre Positionierung übernehmen wollen, nicht diejenigen, die auf Rankings oder Zufall setzen.
                                 </p>
                             </div>
 
@@ -162,7 +162,7 @@ export default function Page() {
                                     Wie arbeitest du konkret?
                                 </h3>
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    Ich arbeite nicht mit Tricks oder Prompt-Optimierung. Zuerst prüfe ich, wie KI dein Unternehmen aktuell beschreibt – in ChatGPT, Perplexity und Google AI. Dann identifiziere ich Lücken und setze konkrete Änderungen um: Schema.org Markup, Content-Überarbeitung, Seitenarchitektur und externe Signale. Fortschritte werden kontinuierlich gemessen.
+                                    Ich arbeite nicht mit Tricks oder Prompt-Optimierung. Zuerst prüfe ich, wie KI dein Unternehmen aktuell beschreibt, in ChatGPT, Perplexity und Google AI. Dann identifiziere ich Lücken und setze konkrete Änderungen um: zitierbare Inhalte, klare Seitenstruktur, strukturierte Daten und externe Signale. Fortschritte werden kontinuierlich gemessen.
                                 </p>
                             </div>
                         </div>

@@ -148,7 +148,7 @@ export default function KIContentAuditPage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">3.</span>
-              <span><strong className="text-black">3 Aktionen pro Seite: Updaten, Zusammenführen oder Löschen.</strong> Es gibt kein „mal schauen". Jede Seite bekommt eine Entscheidung.</span>
+              <span><strong className="text-black">3 Aktionen pro Seite: Updaten, Zusammenführen oder Löschen.</strong> Es gibt kein „mal schauen“. Jede Seite bekommt eine Entscheidung.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">4.</span>
@@ -264,7 +264,7 @@ export default function KIContentAuditPage() {
           Das KI-Content-Scoring: 12 Kriterien, 0–2 Punkte
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-8">
-          Kein Bauchgefühl. Kein „fühlt sich gut an". Jede Seite bekommt eine Zahl. Und diese Zahl entscheidet, was passiert. Kalt? Ja. Effektiv? Absolut.
+          Kein Bauchgefühl. Kein „fühlt sich gut an“. Jede Seite bekommt eine Zahl. Und diese Zahl entscheidet, was passiert. Kalt? Ja. Effektiv? Absolut.
         </p>
 
         <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
@@ -292,7 +292,7 @@ export default function KIContentAuditPage() {
               <span className="text-brand-accent font-bold mt-0.5 shrink-0 w-6 text-center">3</span>
               <div>
                 <p className="font-medium text-black">Quellenangaben</p>
-                <p className="text-sm text-gray-500">Sind Aussagen mit konkreten Quellen, Studien oder Daten belegt (nicht nur „Experten sagen")?</p>
+                <p className="text-sm text-gray-500">Sind Aussagen mit konkreten Quellen, Studien oder Daten belegt (nicht nur „Experten sagen“)?</p>
               </div>
             </div>
 
@@ -316,7 +316,7 @@ export default function KIContentAuditPage() {
               <span className="text-brand-accent font-bold mt-0.5 shrink-0 w-6 text-center">6</span>
               <div>
                 <p className="font-medium text-black">Eindeutigkeit</p>
-                <p className="text-sm text-gray-500">Gibt es klare Aussagen statt vager Formulierungen? Wird „es kommt darauf an" immer mit Kontext ergänzt?</p>
+                <p className="text-sm text-gray-500">Gibt es klare Aussagen statt vager Formulierungen? Wird „es kommt darauf an“ immer mit Kontext ergänzt?</p>
               </div>
             </div>
 
@@ -385,7 +385,7 @@ export default function KIContentAuditPage() {
           Der 5-Schritte-Audit-Prozess: Von der Bestandsaufnahme zur Aktion
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
-          Kein „analysiere erstmal 6 Monate lang". Du brauchst Ergebnisse, keine Beschäftigungstherapie. Dieser Prozess funktioniert für 50 oder 5.000 Seiten.
+          Kein „analysiere erstmal 6 Monate lang“. Du brauchst Ergebnisse, keine Beschäftigungstherapie. Dieser Prozess funktioniert für 50 oder 5.000 Seiten.
         </p>
 
         <ol className="space-y-8">
@@ -395,7 +395,7 @@ export default function KIContentAuditPage() {
                 Schritt 1: Inventar erstellen, was hast du überhaupt?
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-4">
-                Die meisten Unternehmen wissen nicht, wie viele Seiten sie haben. Ernsthaft. Sie haben „irgendwas um die 200", und wenn du Screaming Frog drüberlaufen lässt, sind es 847. Davon 300 mit Thin Content, 50 Duplikate und 12, die seit 2019 nicht aktualisiert wurden.
+                Die meisten Unternehmen wissen nicht, wie viele Seiten sie haben. Ernsthaft. Sie haben „irgendwas um die 200“, und wenn du Screaming Frog drüberlaufen lässt, sind es 847. Davon 300 mit Thin Content, 50 Duplikate und 12, die seit 2019 nicht aktualisiert wurden.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-3">
@@ -474,7 +474,7 @@ export default function KIContentAuditPage() {
                 Schritt 4: Entscheidung, updaten, zusammenführen oder löschen
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-4">
-                Jede Seite bekommt genau eine Aktion. Kein „schauen wir mal". Kein „lass ich erstmal so". Das ist der Moment, in dem du dich vom digitalen Messie-Syndrom verabschiedest.
+                Jede Seite bekommt genau eine Aktion. Kein „schauen wir mal“. Kein „lass ich erstmal so“. Das ist der Moment, in dem du dich vom digitalen Messie-Syndrom verabschiedest.
               </p>
               <div className="space-y-4 mt-4">
                 <div className="bg-green-50 border border-green-100 rounded-xl p-5">
@@ -551,28 +551,28 @@ export default function KIContentAuditPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">1. Die 500-Wörter-Einleitung vor der eigentlichen Antwort</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              „In der heutigen schnelllebigen digitalen Welt...", wenn dein Artikel so anfängt, hat ChatGPT bereits aufgehört zu lesen. Das ist der Content-Equivalent von jemandem, der 10 Minuten braucht, um zu erklären, warum er gleich etwas Wichtiges sagen wird. <strong className="text-black">KI extrahiert die ersten 2–3 Sätze. Wenn dort keine Antwort steht, existiert dein Artikel nicht.</strong>
+              „In der heutigen schnelllebigen digitalen Welt...“, wenn dein Artikel so anfängt, hat ChatGPT bereits aufgehört zu lesen. Das ist der Content-Equivalent von jemandem, der 10 Minuten braucht, um zu erklären, warum er gleich etwas Wichtiges sagen wird. <strong className="text-black">KI extrahiert die ersten 2–3 Sätze. Wenn dort keine Antwort steht, existiert dein Artikel nicht.</strong>
             </p>
           </div>
 
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
-            <h3 className="text-xl font-semibold text-black mb-3">2. „Laut Experten" ohne zu sagen, welche Experten</h3>
+            <h3 className="text-xl font-semibold text-black mb-3">2. „Laut Experten“ ohne zu sagen, welche Experten</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Welche Experten? Wo? Wann? „Studien zeigen", welche Studien? Das ist, als würdest du in einer Prüfung schreiben „Irgendein schlauer Typ hat mal gesagt...". <strong className="text-black">Keine Quelle = keine Glaubwürdigkeit = keine Zitierung.</strong> KI-Systeme bevorzugen verifizierbare Aussagen. „Laut Gartner (2024)" wird zitiert. „Laut Experten" wird ignoriert.
+              Welche Experten? Wo? Wann? „Studien zeigen“, welche Studien? Das ist, als würdest du in einer Prüfung schreiben „Irgendein schlauer Typ hat mal gesagt...“. <strong className="text-black">Keine Quelle = keine Glaubwürdigkeit = keine Zitierung.</strong> KI-Systeme bevorzugen verifizierbare Aussagen. „Laut Gartner (2024)“ wird zitiert. „Laut Experten“ wird ignoriert.
             </p>
           </div>
 
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">3. Content von 2022 ohne Update, für immer eingefroren</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Dein „Ultimativer Guide zu SEO 2022" ist jetzt so aktuell wie ein Reiseführer für die DDR. Perplexity und Google AI bevorzugen aktuelle Quellen. ChatGPT gewichtet in neueren Trainingsläufen aktuellere Inhalte höher. <strong className="text-black">Ein Artikel ohne sichtbares Update-Datum ist für KI-Systeme verdächtig.</strong> Entweder aktualisieren oder begraben.
+              Dein „Ultimativer Guide zu SEO 2022“ ist jetzt so aktuell wie ein Reiseführer für die DDR. Perplexity und Google AI bevorzugen aktuelle Quellen. ChatGPT gewichtet in neueren Trainingsläufen aktuellere Inhalte höher. <strong className="text-black">Ein Artikel ohne sichtbares Update-Datum ist für KI-Systeme verdächtig.</strong> Entweder aktualisieren oder begraben.
             </p>
           </div>
 
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">4. Drei Artikel zum gleichen Thema, die sich gegenseitig kannibalisieren</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Du hast „Was ist SEO?", „SEO erklärt" und „SEO für Anfänger", drei Artikel, die alle das Gleiche sagen, nur mit unterschiedlichen Überschriften. Das ist, als würdest du drei Bewerbungen für die gleiche Stelle schicken, jede mit einem anderen Foto. <strong className="text-black">Zusammenführen. Ein starker Artikel schlägt drei schwache. Immer.</strong>
+              Du hast „Was ist SEO?“, „SEO erklärt“ und „SEO für Anfänger“, drei Artikel, die alle das Gleiche sagen, nur mit unterschiedlichen Überschriften. Das ist, als würdest du drei Bewerbungen für die gleiche Stelle schicken, jede mit einem anderen Foto. <strong className="text-black">Zusammenführen. Ein starker Artikel schlägt drei schwache. Immer.</strong>
             </p>
           </div>
 
@@ -665,7 +665,7 @@ export default function KIContentAuditPage() {
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-              <span><strong className="text-black">3 Quellenangaben pro Artikel ergänzen.</strong> Echte Quellen, echte Studien, echte Zahlen. Nicht „Studien zeigen". Welche Studien?</span>
+              <span><strong className="text-black">3 Quellenangaben pro Artikel ergänzen.</strong> Echte Quellen, echte Studien, echte Zahlen. Nicht „Studien zeigen“. Welche Studien?</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>

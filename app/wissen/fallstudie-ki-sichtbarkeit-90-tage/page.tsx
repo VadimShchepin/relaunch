@@ -9,11 +9,11 @@ import { Button } from '@/components/ui/Button';
 const FAQS = [
   {
     q: 'Wie lange dauert es, bis man KI-sichtbar wird?',
-    a: 'Die ersten messbaren Ergebnisse sehen wir typischerweise nach 4\u20136 Wochen. Volle KI-Sichtbarkeit \u2014 also Empfehlungen in ChatGPT, Perplexity und Google AI Overviews \u2014 erreichen die meisten Kunden innerhalb von 90 Tagen. Der genaue Zeitraum h\u00e4ngt vom Ausgangszustand ab: Je schlechter die Basis, desto schneller sind die ersten Verbesserungen sichtbar (weil die Messlatte so niedrig liegt).',
+    a: 'Die ersten messbaren Ergebnisse sehen wir typischerweise nach 4\u20136 Wochen. Volle KI-Sichtbarkeit, also Empfehlungen in ChatGPT, Perplexity und Google AI Overviews, erreichen die meisten Kunden innerhalb von 90 Tagen. Der genaue Zeitraum h\u00e4ngt vom Ausgangszustand ab: Je schlechter die Basis, desto schneller sind die ersten Verbesserungen sichtbar (weil die Messlatte so niedrig liegt).',
   },
   {
     q: 'Ist diese Fallstudie ein echtes Unternehmen?',
-    a: 'Diese Fallstudie ist ein Composite Case Study \u2014 sie kombiniert reale, verifizierbare Daten aus mehreren Kundenprojekten zu einer zusammenh\u00e4ngenden Geschichte. Alle Zahlen sind echt, alle Ergebnisse sind echt. Wir haben sie anonymisiert und kombiniert, weil unsere Kunden nicht m\u00f6chten, dass ihre Konkurrenz genau erf\u00e4hrt, was wir gemacht haben. Verst\u00e4ndlich, oder?',
+    a: 'Diese Fallstudie ist ein Composite Case Study. Sie kombiniert reale, verifizierbare Daten aus mehreren Kundenprojekten zu einer zusammenh\u00e4ngenden Geschichte. Alle Zahlen sind echt, alle Ergebnisse sind echt. Wir haben sie anonymisiert und kombiniert, weil unsere Kunden nicht m\u00f6chten, dass ihre Konkurrenz genau erf\u00e4hrt, was wir gemacht haben. Verst\u00e4ndlich, oder?',
   },
   {
     q: 'Was kostet so eine KI-Sichtbarkeitsoptimierung?',
@@ -21,7 +21,7 @@ const FAQS = [
   },
   {
     q: 'Funktioniert das auch f\u00fcr E-Commerce und nicht nur f\u00fcr Dienstleister?',
-    a: 'Ja. Wir haben f\u00fcr einen Online-Shop mit 723 Produkten den organischen Traffic in 90 Tagen verdoppelt \u2014 von praktisch null auf 1.860 Klicks und 78.500 Impressions pro Quartal. E-Commerce hat sogar den Vorteil, dass Produktseiten nat\u00fcrliche Antwortformate f\u00fcr KI-Systeme liefern.',
+    a: 'Ja. Wir haben f\u00fcr einen Online-Shop mit 723 Produkten den organischen Traffic in 90 Tagen verdoppelt, von praktisch null auf 1.860 Klicks und 78.500 Impressions pro Quartal. E-Commerce hat sogar den Vorteil, dass Produktseiten nat\u00fcrliche Antwortformate f\u00fcr KI-Systeme liefern.',
   },
   {
     q: 'Muss ich meine gesamte Website neu bauen lassen?',
@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: 'Was passiert nach den 90 Tagen?',
-    a: 'KI-Sichtbarkeit ist kein Projekt mit Enddatum \u2014 es ist ein laufender Prozess. Nach den ersten 90 Tagen wechseln die meisten Kunden in ein monatliches Monitoring- und Optimierungspaket. Die gro\u00dfe Arbeit ist getan, aber Content-Updates, neue Seiten und technisches Monitoring bleiben wichtig. Die KI-Landschaft ver\u00e4ndert sich schnell \u2014 wer stehen bleibt, wird \u00fcberholt.',
+    a: 'KI-Sichtbarkeit ist kein Projekt mit Enddatum. Es ist ein laufender Prozess. Nach den ersten 90 Tagen wechseln die meisten Kunden in ein monatliches Monitoring- und Optimierungspaket. Die gro\u00dfe Arbeit ist getan, aber Content-Updates, neue Seiten und technisches Monitoring bleiben wichtig. Die KI-Landschaft ver\u00e4ndert sich schnell, wer stehen bleibt, wird \u00fcberholt.',
   },
 ];
 
@@ -127,8 +127,8 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
           Heute empfiehlt es ChatGPT als erste Wahl.
         </h1>
         <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
-          Eine Fallstudie mit echten Zahlen aus echten Projekten. Kein &ldquo;wir haben den Traffic um 300&nbsp;% gesteigert&rdquo;-Marketing-M&auml;rchen.
-          Keine &ldquo;Ergebnisse k&ouml;nnen variieren&rdquo;-Fu&szlig;noten in Schriftgr&ouml;&szlig;e&nbsp;4. Einfach: Was war vorher. Was haben wir gemacht. Was ist jetzt.
+          Eine Fallstudie mit echten Zahlen aus echten Projekten. Kein &bdquo;wir haben den Traffic um 300&nbsp;% gesteigert&ldquo;-Marketing-M&auml;rchen.
+          Keine &bdquo;Ergebnisse k&ouml;nnen variieren&ldquo;-Fu&szlig;noten in Schriftgr&ouml;&szlig;e&nbsp;4. Einfach: Was war vorher. Was haben wir gemacht. Was ist jetzt.
         </p>
         <p className="text-sm text-gray-400 mt-4">
           Von Vadim Shchepin &middot; AI&nbsp;SEO Specialist &middot; 3.&nbsp;April&nbsp;2026 &middot; Lesezeit ca.&nbsp;12&nbsp;Min.
@@ -140,11 +140,11 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
       {/* ============================================================ */}
       <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-12">
         <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
-          <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR &mdash; Die harten Zahlen</h2>
+          <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR: Die harten Zahlen</h2>
           <ul className="space-y-3 text-gray-700 leading-relaxed">
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">1.</span>
-              <span><strong className="text-black">Lighthouse-Performance: 35&nbsp;&rarr;&nbsp;99/100.</strong> Ja, das ist kein Tippfehler. Von &ldquo;deine Website l&auml;dt langsamer als ein Fax&rdquo; zu &ldquo;nahezu perfekt&rdquo;.</span>
+              <span><strong className="text-black">Lighthouse-Performance: 35&nbsp;&rarr;&nbsp;99/100.</strong> Ja, das ist kein Tippfehler. Von &bdquo;deine Website l&auml;dt langsamer als ein Fax&ldquo; zu &bdquo;nahezu perfekt&ldquo;.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">2.</span>
@@ -152,7 +152,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">3.</span>
-              <span><strong className="text-black">ROI nach 7&nbsp;Wochen.</strong> Nicht 7&nbsp;Monate, nicht &ldquo;irgendwann n&auml;chstes Quartal&rdquo; &ndash; sieben Wochen.</span>
+              <span><strong className="text-black">ROI nach 7&nbsp;Wochen.</strong> Nicht 7&nbsp;Monate, nicht &bdquo;irgendwann n&auml;chstes Quartal&ldquo;, sondern sieben Wochen.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">4.</span>
@@ -160,7 +160,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">5.</span>
-              <span><strong className="text-black">~40&nbsp;Kunden pro Monat</strong> &ndash; rein organisch, ohne einen Cent f&uuml;r Google Ads auszugeben.</span>
+              <span><strong className="text-black">~40&nbsp;Kunden pro Monat</strong>, rein organisch, ohne einen Cent f&uuml;r Google Ads auszugeben.</span>
             </li>
           </ul>
         </div>
@@ -193,15 +193,15 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
             <strong className="text-black">Und online? Ein Desaster.</strong>
           </p>
           <p>
-            Lighthouse-Performance: <strong className="text-black">35 von 100</strong>. Das ist nicht &ldquo;verbesserungsw&uuml;rdig&rdquo;, das ist &ldquo;deine Website ist ein digitales Mahnmal f&uuml;r alles, was 2018 schiefgelaufen ist&rdquo;. SEO-Score: <strong className="text-black">43 von 100</strong>. Die Website war so schlecht optimiert, dass selbst Google sie nur widerwillig indexiert hat. (Und Google indexiert buchst&auml;blich Spam-Seiten.)
+            Lighthouse-Performance: <strong className="text-black">35 von 100</strong>. Das ist nicht &bdquo;verbesserungsw&uuml;rdig&ldquo;, das ist &bdquo;deine Website ist ein digitales Mahnmal f&uuml;r alles, was 2018 schiefgelaufen ist&ldquo;. SEO-Score: <strong className="text-black">43 von 100</strong>. Die Website war so schlecht optimiert, dass selbst Google sie nur widerwillig indexiert hat. (Und Google indexiert buchst&auml;blich Spam-Seiten.)
           </p>
           <p>
-            Keine strukturierten Daten. Kein Schema-Markup. Keine Meta-Descriptions, die diesen Namen verdienen. Produktbeschreibungen? Von ChatGPT generiert und ohne jede Redaktion auf die Seite geworfen. Die Fonts luden in einer Gr&ouml;&szlig;e, die verm&ouml;gen l&auml;sst, dass jemand mal &ldquo;alle Google Fonts einbinden&rdquo; gegoogelt und die erstbeste Antwort kopiert hat.
+            Keine strukturierten Daten. Kein Schema-Markup. Keine Meta-Descriptions, die diesen Namen verdienen. Produktbeschreibungen? Von ChatGPT generiert und ohne jede Redaktion auf die Seite geworfen. Die Fonts luden in einer Gr&ouml;&szlig;e, die verm&ouml;gen l&auml;sst, dass jemand mal &bdquo;alle Google Fonts einbinden&ldquo; gegoogelt und die erstbeste Antwort kopiert hat.
           </p>
         </div>
 
         <div className="bg-white border border-gray-100 rounded-2xl p-6 my-8">
-          <h3 className="font-semibold text-black text-lg mb-4">Der Ist-Zustand &ndash; in Zahlen, die wehtun</h3>
+          <h3 className="font-semibold text-black text-lg mb-4">Der Ist-Zustand, in Zahlen, die wehtun</h3>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
               { label: 'Lighthouse Performance', value: '35/100' },
@@ -226,13 +226,13 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
             Das Unternehmen hatte das gleiche Problem wie 90&nbsp;% aller KMU in Deutschland: <strong className="text-black">Sie waren offline hervorragend und online unsichtbar.</strong> Wie ein Michelin-Sternekoch, der sein Restaurant in einem Keller ohne Stra&szlig;enschild betreibt.
           </p>
           <p>
-            Die Website war ein One-Pager aus der &Auml;ra, als &ldquo;responsive Design&rdquo; noch ein Fremdwort war. Ladezeit auf dem Handy: jenseits der 6&nbsp;Sekunden. (Google empfiehlt unter 2,5. Sechs Sekunden sind eine Ewigkeit. In dieser Zeit h&auml;tte ein Nutzer die Seite dreimal geschlossen, bei der Konkurrenz bestellt und sich einen Kaffee gemacht.)
+            Die Website war ein One-Pager aus der &Auml;ra, als &bdquo;responsive Design&ldquo; noch ein Fremdwort war. Ladezeit auf dem Handy: jenseits der 6&nbsp;Sekunden. (Google empfiehlt unter 2,5. Sechs Sekunden sind eine Ewigkeit. In dieser Zeit h&auml;tte ein Nutzer die Seite dreimal geschlossen, bei der Konkurrenz bestellt und sich einen Kaffee gemacht.)
           </p>
           <p>
-            Die Textinhalte? Eine bunte Mischung aus nichtssagenden Marketingfloskeln, kopierten Branchentexten und ein paar Abs&auml;tzen, die offensichtlich von einer KI generiert und nie redigiert wurden. Du erkennst sie an S&auml;tzen wie &ldquo;Wir bieten ma&szlig;geschneiderte L&ouml;sungen f&uuml;r Ihre individuellen Bed&uuml;rfnisse.&rdquo; (Wenn du gerade zusammengezuckt bist: Geh auf deine eigene Website und pr&uuml;fe, ob dieser Satz dort steht. Bei jedem dritten KMU tut er das.)
+            Die Textinhalte? Eine bunte Mischung aus nichtssagenden Marketingfloskeln, kopierten Branchentexten und ein paar Abs&auml;tzen, die offensichtlich von einer KI generiert und nie redigiert wurden. Du erkennst sie an S&auml;tzen wie &bdquo;Wir bieten ma&szlig;geschneiderte L&ouml;sungen f&uuml;r Ihre individuellen Bed&uuml;rfnisse.&ldquo; (Wenn du gerade zusammengezuckt bist: Geh auf deine eigene Website und pr&uuml;fe, ob dieser Satz dort steht. Bei jedem dritten KMU tut er das.)
           </p>
           <p>
-            Und das Schlimmste? Sie wussten es nicht mal. Weil die Kunden ja kamen &ndash; durch Empfehlungen, durch Bestandskunden, durch Zufall. Aber die Kunden, die ChatGPT fragten &ldquo;Welcher Dienstleister in Hamburg ist gut?&rdquo; &ndash; die landeten bei der Konkurrenz. Oder, noch wahrscheinlicher, bei einer Firma, die objektiv schlechter war, aber eine ordentliche Website hatte.
+            Und das Schlimmste? Sie wussten es nicht mal. Weil die Kunden ja kamen, durch Empfehlungen, durch Bestandskunden, durch Zufall. Aber die Kunden, die ChatGPT fragten &bdquo;Welcher Dienstleister in Hamburg ist gut?&ldquo;, die landeten bei der Konkurrenz. Oder, noch wahrscheinlicher, bei einer Firma, die objektiv schlechter war, aber eine ordentliche Website hatte.
           </p>
           <p>
             Wir haben das in den ersten Stunden des Audits getestet. ChatGPT gefragt. Perplexity gefragt. Claude gefragt. Gemini gefragt. Vier KI-Systeme, zwanzig verschiedene Formulierungen der gleichen Frage. <strong className="text-black">Ergebnis: null Erw&auml;hnungen.</strong> Nicht eine. Das Unternehmen mit 10+ Jahren Erfahrung und &uuml;ber 1.650 Projekten existierte in der KI-Welt schlicht nicht. Als h&auml;tte jemand es aus dem Internet radiert.
@@ -248,7 +248,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
           Der 90-Tage-Plan: Was wir gemacht haben
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-12">
-          Kein Geheimwissen. Keine &ldquo;propriet&auml;re KI-Technologie&rdquo;. (Wenn jemand dir das verkaufen will, renn.) Einfach systematische Arbeit in drei Phasen.
+          Kein Geheimwissen. Keine &bdquo;propriet&auml;re KI-Technologie&ldquo;. (Wenn jemand dir das verkaufen will, renn.) Einfach systematische Arbeit in drei Phasen.
         </p>
 
         {/* Phase 1 */}
@@ -266,7 +266,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
               <strong className="text-black">Woche&nbsp;1: Der schonungslose Audit.</strong> Wir haben jeden Winkel der Website durchleuchtet. Lighthouse, Screaming Frog, manuelle ChatGPT-Tests, Perplexity-Abfragen, Google Search Console. Das Ergebnis war ein 47-seitiger Report, der sich las wie ein Unfallbericht.
             </p>
             <p>
-              <strong className="text-black">Woche&nbsp;2: Technisches Fundament.</strong> Hier passiert das, was niemand sexy findet, aber ohne das nichts funktioniert: JS-Bundle um <strong className="text-black">76&nbsp;%</strong> reduziert. Fonts um <strong className="text-black">83&nbsp;%</strong> geschrumpft. (83&nbsp;Prozent. Deine Fonts waren 83&nbsp;% zu gro&szlig;. Das ist, als w&uuml;rdest du mit einem Umzugslaster zum B&auml;cker fahren.) Render-blocking Resources eliminiert. Lazy Loading implementiert. Core Web Vitals von &ldquo;alle rot&rdquo; auf &ldquo;alle gr&uuml;n&rdquo;.
+              <strong className="text-black">Woche&nbsp;2: Technisches Fundament.</strong> Hier passiert das, was niemand sexy findet, aber ohne das nichts funktioniert: JS-Bundle um <strong className="text-black">76&nbsp;%</strong> reduziert. Fonts um <strong className="text-black">83&nbsp;%</strong> geschrumpft. (83&nbsp;Prozent. Deine Fonts waren 83&nbsp;% zu gro&szlig;. Das ist, als w&uuml;rdest du mit einem Umzugslaster zum B&auml;cker fahren.) Render-blocking Resources eliminiert. Lazy Loading implementiert. Core Web Vitals von &bdquo;alle rot&ldquo; auf &bdquo;alle gr&uuml;n&ldquo;.
             </p>
           </div>
 
@@ -298,13 +298,13 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
 
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
             <p>
-              Die technische Basis stand. Jetzt kam der Teil, bei dem die meisten Agenturen aufh&ouml;ren &ndash; und wir erst anfangen.
+              Die technische Basis stand. Jetzt kam der Teil, bei dem die meisten Agenturen aufh&ouml;ren und wir erst anfangen.
             </p>
             <p>
-              <strong className="text-black">Content-Audit und -Strategie.</strong> Wir haben jede einzelne Seite analysiert. Was beantwortet eine echte Kundenfrage? Was ist d&uuml;nner Filler-Content? Was fehlt komplett? Bei einem unserer E-Commerce-Kunden hie&szlig; das: <strong className="text-black">723&nbsp;Produktseiten</strong> &uuml;berarbeiten. Jede einzelne. (Ja, du hast richtig gelesen. 723. Und nein, wir haben nicht einfach ChatGPT dr&uuml;berlaufen lassen und &ldquo;fertig&rdquo; gesagt. Das war ja das Problem des Kunden vorher.)
+              <strong className="text-black">Content-Audit und -Strategie.</strong> Wir haben jede einzelne Seite analysiert. Was beantwortet eine echte Kundenfrage? Was ist d&uuml;nner Filler-Content? Was fehlt komplett? Bei einem unserer E-Commerce-Kunden hie&szlig; das: <strong className="text-black">723&nbsp;Produktseiten</strong> &uuml;berarbeiten. Jede einzelne. (Ja, du hast richtig gelesen. 723. Und nein, wir haben nicht einfach ChatGPT dr&uuml;berlaufen lassen und &bdquo;fertig&ldquo; gesagt. Das war ja das Problem des Kunden vorher.)
             </p>
             <p>
-              <strong className="text-black">Strukturierte Daten.</strong> Schema.org-Markup f&uuml;r alles: LocalBusiness, Service, FAQ, Product, Review. Die KI braucht maschinenlesbare Daten. Ohne Schema-Markup bist du f&uuml;r ChatGPT wie ein Buch ohne Inhaltsverzeichnis &ndash; es existiert, aber niemand findet, was er sucht.
+              <strong className="text-black">Strukturierte Daten.</strong> Schema.org-Markup f&uuml;r alles: LocalBusiness, Service, FAQ, Product, Review. Die KI braucht maschinenlesbare Daten. Ohne Schema-Markup bist du f&uuml;r ChatGPT wie ein Buch ohne Inhaltsverzeichnis. Es existiert, aber niemand findet, was er sucht.
             </p>
             <p>
               <strong className="text-black">Lokale Signale.</strong> NAP-Konsistenz (Name, Adresse, Telefon) auf 12&nbsp;Plattformen synchronisiert. Google Business Profil komplett &uuml;berarbeitet. Stadtteil-spezifische Leistungsseiten erstellt. (F&uuml;r Hamburg-Kenner: Ja, der Unterschied zwischen Eimsb&uuml;ttel und Ottensen ist f&uuml;r die KI relevant.)
@@ -313,10 +313,10 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
 
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed mt-6">
             <p>
-              <strong className="text-black">Google Merchant Center.</strong> F&uuml;r den E-Commerce-Kunden war das ein Game-Changer: Vorher null Pr&auml;senz in Google Shopping. Nachher alle 723&nbsp;Produkte sauber eingepflegt, mit strukturierten Daten, korrekten Preisen und Verf&uuml;gbarkeiten. Google Shopping ist &uuml;brigens auch eine Datenquelle f&uuml;r KI-Systeme &ndash; das vergessen die meisten.
+              <strong className="text-black">Google Merchant Center.</strong> F&uuml;r den E-Commerce-Kunden war das ein Game-Changer: Vorher null Pr&auml;senz in Google Shopping. Nachher alle 723&nbsp;Produkte sauber eingepflegt, mit strukturierten Daten, korrekten Preisen und Verf&uuml;gbarkeiten. Google Shopping ist &uuml;brigens auch eine Datenquelle f&uuml;r KI-Systeme, das vergessen die meisten.
             </p>
             <p>
-              <strong className="text-black">Leistungsseiten statt &ldquo;Wir machen alles&rdquo;.</strong> Statt einer generischen Seite mit &ldquo;Unsere Leistungen&rdquo; haben wir f&uuml;r jede Kernleistung eine eigene Seite erstellt. Mit echten Fragen, die Kunden stellen. Mit konkreten Antworten. Mit Fallbeispielen. Jede einzelne Seite ist eine potenzielle Antwort auf eine KI-Anfrage.
+              <strong className="text-black">Leistungsseiten statt &bdquo;Wir machen alles&ldquo;.</strong> Statt einer generischen Seite mit &bdquo;Unsere Leistungen&ldquo; haben wir f&uuml;r jede Kernleistung eine eigene Seite erstellt. Mit echten Fragen, die Kunden stellen. Mit konkreten Antworten. Mit Fallbeispielen. Jede einzelne Seite ist eine potenzielle Antwort auf eine KI-Anfrage.
             </p>
           </div>
 
@@ -324,7 +324,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
             <h4 className="font-semibold text-black mb-3">Phase-2-Ma&szlig;nahmen</h4>
             <ul className="space-y-2 text-gray-600">
               {[
-                '723 Produktseiten inhaltlich \u00fcberarbeitet (nicht automatisiert \u2014 redaktionell)',
+                '723 Produktseiten inhaltlich \u00fcberarbeitet (nicht automatisiert, sondern redaktionell)',
                 'Schema.org-Markup f\u00fcr LocalBusiness, Service, FAQ, Product implementiert',
                 'Google Merchant Center eingerichtet und alle Produkte eingepflegt',
                 'Leistungsseiten pro Service-Kategorie mit FAQ-Bl\u00f6cken erstellt',
@@ -353,10 +353,10 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
               Phase&nbsp;3 ist der Punkt, an dem die Magie passiert. (Keine echte Magie. Korrelation, keine Kausalit&auml;t. Aber es f&uuml;hlt sich an wie Magie, wenn nach Wochen harter Arbeit pl&ouml;tzlich die Zahlen explodieren.)
             </p>
             <p>
-              <strong className="text-black">KI-Autorit&auml;t aufbauen.</strong> Wir haben systematisch die Signale verst&auml;rkt, die ChatGPT und Perplexity als Vertrauensindikatoren nutzen: Konsistente Erw&auml;hnungen auf autorit&auml;ren Plattformen, Bewertungsmanagement, Content-Partnerschaften, und &ndash; das ist der Teil, den niemand h&ouml;ren will &ndash; <strong className="text-black">Geduld</strong>.
+              <strong className="text-black">KI-Autorit&auml;t aufbauen.</strong> Wir haben systematisch die Signale verst&auml;rkt, die ChatGPT und Perplexity als Vertrauensindikatoren nutzen: Konsistente Erw&auml;hnungen auf autorit&auml;ren Plattformen, Bewertungsmanagement, Content-Partnerschaften, und (das ist der Teil, den niemand h&ouml;ren will) <strong className="text-black">Geduld</strong>.
             </p>
             <p>
-              <strong className="text-black">Woche&nbsp;7: Der Wendepunkt.</strong> Der ROI war positiv. Sieben Wochen nach Projektstart hat die Investition sich amortisiert. Nicht &ldquo;theoretisch&rdquo; oder &ldquo;wenn man den Branding-Effekt mitrechnet&rdquo; &ndash; sondern in echtem, nachvollziehbarem Umsatz durch nachverfolgbare Kundenanfragen.
+              <strong className="text-black">Woche&nbsp;7: Der Wendepunkt.</strong> Der ROI war positiv. Sieben Wochen nach Projektstart hat die Investition sich amortisiert. Nicht &bdquo;theoretisch&ldquo; oder &bdquo;wenn man den Branding-Effekt mitrechnet&ldquo;, sondern in echtem, nachvollziehbarem Umsatz durch nachverfolgbare Kundenanfragen.
             </p>
             <p>
               <strong className="text-black">Kontinuierliches Monitoring.</strong> Ab Woche&nbsp;8 haben wir w&ouml;chentlich ChatGPT, Perplexity und Claude mit den relevanten Branchenanfragen getestet. Wir haben getrackt, wann unser Kunde erstmals erw&auml;hnt wird, wann er auf Position&nbsp;1 steht, und wann die Konkurrenz reagiert. (Spoiler: Die Konkurrenz hat bis heute nicht reagiert.)
@@ -391,7 +391,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
           Die Ergebnisse: Zahlen, die f&uuml;r sich sprechen
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-8">
-          Keine Interpretationen, keine &ldquo;wir glauben, dass&rdquo;-Formulierungen. Nur Vorher. Nachher. Fertig.
+          Keine Interpretationen, keine &bdquo;wir glauben, dass&ldquo;-Formulierungen. Nur Vorher. Nachher. Fertig.
         </p>
 
         {/* Before/After Table */}
@@ -436,7 +436,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
             <strong className="text-black">Lies diese Tabelle nochmal.</strong> Lies sie langsam. Lighthouse von 35 auf 99. SEO von 43 auf 100. Von null KI-Sichtbarkeit zu Platz&nbsp;1 in ChatGPT und Perplexity. CPC um Faktor&nbsp;7 gesenkt.
           </p>
           <p>
-            Und das ist kein theoretisches Potenzial. Das sind keine &ldquo;projected results&rdquo;. Das ist passiert. In 90&nbsp;Tagen. In Hamburg. F&uuml;r ein ganz normales mittelst&auml;ndisches Unternehmen, das vorher eine Website hatte, die aussah wie ein GeoCities-Relikt aus der Schr&ouml;der-&Auml;ra.
+            Und das ist kein theoretisches Potenzial. Das sind keine &bdquo;projected results&ldquo;. Das ist passiert. In 90&nbsp;Tagen. In Hamburg. F&uuml;r ein ganz normales mittelst&auml;ndisches Unternehmen, das vorher eine Website hatte, die aussah wie ein GeoCities-Relikt aus der Schr&ouml;der-&Auml;ra.
           </p>
           <p>
             (Und falls du dich fragst: Ja, 99/100/100/100 im Lighthouse ist fast ein Highscore. Es gibt Websites von DAX-Konzernen, die das nicht schaffen. Mit Budgets, die das Hundertfache betragen.)
@@ -445,7 +445,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
 
         {/* ROI Breakdown */}
         <div className="bg-white border-2 border-brand-accent rounded-xl p-6 mt-8 shadow-sm">
-          <h3 className="text-xl font-bold text-brand-accent mb-4">ROI-Rechnung &mdash; f&uuml;r die Zahlenfreaks</h3>
+          <h3 className="text-xl font-bold text-brand-accent mb-4">ROI-Rechnung f&uuml;r die Zahlenfreaks</h3>
           <div className="space-y-3 text-gray-700 leading-relaxed">
             <p>
               <strong className="text-black">474&nbsp;Klicks &times; 2,57&nbsp;&euro;&nbsp;CPC = 1.218&nbsp;&euro; &bdquo;&Auml;quivalentwert&ldquo; pro Monat.</strong> Das hei&szlig;t: Um die gleichen Klicks &uuml;ber Google Ads zu bekommen, m&uuml;sstest du 1.218&nbsp;&euro; pro Monat ausgeben. Bei Marktpreisen (18&ndash;20&nbsp;&euro;&nbsp;CPC) w&auml;ren es <strong className="text-black">8.532&ndash;9.480&nbsp;&euro;</strong>. Pro Monat. Jedes Monat. Ohne dass der Traffic dir geh&ouml;rt.
@@ -454,7 +454,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
               <strong className="text-black">~40&nbsp;Kunden/Monat bei geschätztem Auftragswert:</strong> Selbst konservativ gerechnet mit 500&nbsp;&euro; durchschnittlichem Auftragswert (f&uuml;r einen Dienstleister in Hamburg eher niedrig angesetzt) sind das <strong className="text-black">20.000&nbsp;&euro; Umsatz pro Monat</strong>, der direkt auf die KI-Sichtbarkeitsoptimierung zur&uuml;ckzuf&uuml;hren ist.
             </p>
             <p>
-              <strong className="text-black">19&nbsp;Conversions bei 27,80&nbsp;&euro;&nbsp;CPA</strong> &ndash; das sind die h&auml;rtesten Zahlen. 27,80&nbsp;&euro; pro zahlenden Kunden. Vergleich: Google Ads im gleichen Segment liegen bei 80&ndash;120&nbsp;&euro;&nbsp;CPA. Facebook Ads bei 60&ndash;90&nbsp;&euro;. Wir reden hier &uuml;ber <strong className="text-black">Faktor&nbsp;3&ndash;4 g&uuml;nstiger</strong> als jeder bezahlte Kanal.
+              <strong className="text-black">19&nbsp;Conversions bei 27,80&nbsp;&euro;&nbsp;CPA.</strong> Das sind die h&auml;rtesten Zahlen. 27,80&nbsp;&euro; pro zahlenden Kunden. Vergleich: Google Ads im gleichen Segment liegen bei 80&ndash;120&nbsp;&euro;&nbsp;CPA. Facebook Ads bei 60&ndash;90&nbsp;&euro;. Wir reden hier &uuml;ber <strong className="text-black">Faktor&nbsp;3&ndash;4 g&uuml;nstiger</strong> als jeder bezahlte Kanal.
             </p>
           </div>
         </div>
@@ -473,17 +473,17 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
             {
               num: '01',
               title: 'Sie haben zugehört statt diskutiert',
-              text: 'Die meisten Kunden kommen mit einer festen Vorstellung: „Wir brauchen einfach mehr Content." Oder: „Mach mal was mit KI." Dieses Unternehmen hat uns den Audit machen lassen, die Ergebnisse gelesen (alle 47 Seiten), und dann gesagt: „Okay, macht das." Keine endlosen Abstimmungsrunden. Keine „aber mein Schwager hat gesagt"-Diskussionen. Vertrauen in die Expertise. Das ist seltener, als du denkst.',
+              text: 'Die meisten Kunden kommen mit einer festen Vorstellung: „Wir brauchen einfach mehr Content.“ Oder: „Mach mal was mit KI.“ Dieses Unternehmen hat uns den Audit machen lassen, die Ergebnisse gelesen (alle 47 Seiten), und dann gesagt: „Okay, macht das.“ Keine endlosen Abstimmungsrunden. Keine „aber mein Schwager hat gesagt“-Diskussionen. Vertrauen in die Expertise. Das ist seltener, als du denkst.',
             },
             {
               num: '02',
               title: 'Technik vor Content (ja, wirklich)',
-              text: 'Jeder will sofort Content produzieren. Keiner will über JS-Bundles, Font-Loading-Strategien und Render-Blocking Resources reden. Dieses Unternehmen hat akzeptiert, dass die ersten zwei Wochen „langweilig" sein würden. Keine neuen Blogposts, kein Social Media. Nur: Die technische Basis reparieren. Das hat den Unterschied gemacht. Denn der beste Content nützt nichts auf einer Website, die 8 Sekunden zum Laden braucht.',
+              text: 'Jeder will sofort Content produzieren. Keiner will über JS-Bundles, Font-Loading-Strategien und Render-Blocking Resources reden. Dieses Unternehmen hat akzeptiert, dass die ersten zwei Wochen „langweilig“ sein würden. Keine neuen Blogposts, kein Social Media. Nur: Die technische Basis reparieren. Das hat den Unterschied gemacht. Denn der beste Content nützt nichts auf einer Website, die 8 Sekunden zum Laden braucht.',
             },
             {
               num: '03',
               title: 'Echte Daten statt Bauchgefühl',
-              text: 'Wir haben 72 Interaktionen pro Monat getrackt. Nicht „geschätzt", nicht „gefühlt mehr", sondern: getrackt. Mit UTM-Parametern, Call-Tracking und CRM-Integration. Wenn der Geschäftsführer fragt „Bringt das was?", zeigen wir ihm ein Dashboard mit 19 Conversions bei 27,80\u00a0\u20ac pro Conversion. Versuch das mal mit einer Zeitungsanzeige.',
+              text: 'Wir haben 72 Interaktionen pro Monat getrackt. Nicht „geschätzt“, nicht „gefühlt mehr“, sondern: getrackt. Mit UTM-Parametern, Call-Tracking und CRM-Integration. Wenn der Geschäftsführer fragt „Bringt das was?“, zeigen wir ihm ein Dashboard mit 19 Conversions bei 27,80\u00a0\u20ac pro Conversion. Versuch das mal mit einer Zeitungsanzeige.',
             },
             {
               num: '04',
@@ -492,7 +492,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
             },
             {
               num: '05',
-              title: 'Keine Angst vor „unsichtbarer" Arbeit',
+              title: 'Keine Angst vor „unsichtbarer“ Arbeit',
               text: 'Schema-Markup sieht kein Kunde. robots.txt liest kein Mensch. llms.txt kennt kaum jemand. Aber die KI? Die KI lebt davon. Dieses Unternehmen hat verstanden, dass 60\u00a0% der Arbeit im Backend passiert. Im Code. In den Metadaten. In den strukturierten Daten. Die unsichtbare Arbeit ist die wichtigste.',
             },
           ].map((item, i) => (
@@ -543,7 +543,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
             </div>
             <div className="space-y-2 text-gray-600 leading-relaxed">
               <p>
-                Ein Nischenprodukt im Bildungsbereich &ndash; DSGVO-konform, spezialisiert, kleines Team. Die Art von Unternehmen, die Google in den Weiten des Internets schlicht &uuml;bersieht.
+                Ein Nischenprodukt im Bildungsbereich: DSGVO-konform, spezialisiert, kleines Team. Die Art von Unternehmen, die Google in den Weiten des Internets schlicht &uuml;bersieht.
               </p>
               <p>
                 <strong className="text-black">Ergebnis:</strong> <strong className="text-black">#1&nbsp;in ChatGPT</strong> f&uuml;r die prim&auml;re Nischenanfrage. <strong className="text-black">#1&nbsp;in Perplexity.</strong> 100&nbsp;% Marktf&uuml;hrerschaft in der KI-Sichtbarkeit f&uuml;r diese Nische. Der gesamte adressierbare Markt wird jetzt zuerst auf diesen Anbieter verwiesen, wenn er die KI fragt. (Stell dir vor, jeder potenzielle Kunde deiner Branche bekommt von seinem pers&ouml;nlichen Berater zuerst deinen Namen genannt. Das ist KI-Sichtbarkeit.)
@@ -559,10 +559,10 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
             </div>
             <div className="space-y-2 text-gray-600 leading-relaxed">
               <p>
-                Ein Hamburger Handwerksbetrieb mit &uuml;ber 1.650 abgeschlossenen Projekten, der online praktisch nicht existierte. SEO-Score: 34/100. Kein Schema-Markup, kein Google Business Profil, keine strukturierten Daten. Alles, was man falsch machen kann &ndash; falsch gemacht.
+                Ein Hamburger Handwerksbetrieb mit &uuml;ber 1.650 abgeschlossenen Projekten, der online praktisch nicht existierte. SEO-Score: 34/100. Kein Schema-Markup, kein Google Business Profil, keine strukturierten Daten. Alles, was man falsch machen kann, falsch gemacht.
               </p>
               <p>
-                <strong className="text-black">Ergebnis:</strong> <strong className="text-black">728&nbsp;lokale Aktionen pro Monat</strong> (Anrufe, Wegbeschreibungen, Website-Besuche &uuml;ber Google). <strong className="text-black">19&nbsp;Conversions pro Monat</strong> bei <strong className="text-black">27,80&nbsp;&euro; pro Conversion</strong>. F&uuml;r ein Unternehmen, das vorher null digitale Pr&auml;senz hatte, ist das wie von Null auf Hundert &ndash; nur dass es nicht um Km/h geht, sondern um Kunden.
+                <strong className="text-black">Ergebnis:</strong> <strong className="text-black">728&nbsp;lokale Aktionen pro Monat</strong> (Anrufe, Wegbeschreibungen, Website-Besuche &uuml;ber Google). <strong className="text-black">19&nbsp;Conversions pro Monat</strong> bei <strong className="text-black">27,80&nbsp;&euro; pro Conversion</strong>. F&uuml;r ein Unternehmen, das vorher null digitale Pr&auml;senz hatte, ist das wie von Null auf Hundert, nur dass es nicht um Km/h geht, sondern um Kunden.
               </p>
             </div>
           </div>
@@ -586,7 +586,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
           <p>
-            KI-Sichtbarkeit ist kein Lichtschalter. Es ist ein Schwungrad. Hier siehst du, wie sich die Ergebnisse &uuml;ber die 90&nbsp;Tage aufgebaut haben &ndash; und warum Geduld in den ersten Wochen entscheidend ist.
+            KI-Sichtbarkeit ist kein Lichtschalter. Es ist ein Schwungrad. Hier siehst du, wie sich die Ergebnisse &uuml;ber die 90&nbsp;Tage aufgebaut haben, und warum Geduld in den ersten Wochen entscheidend ist.
           </p>
         </div>
 
@@ -620,7 +620,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
               {
                 period: 'Woche 8\u201310',
                 title: 'Exponentielles Wachstum',
-                detail: '474 Klicks/Monat. 40+ Kundenanfragen. ChatGPT-Position #1 f\u00fcr die prim\u00e4re Nischenanfrage. Perplexity folgt. Die Konkurrenz hat noch nicht reagiert \u2014 vermutlich wissen sie nicht mal, dass es passiert.',
+                detail: '474 Klicks/Monat. 40+ Kundenanfragen. ChatGPT-Position #1 f\u00fcr die prim\u00e4re Nischenanfrage. Perplexity folgt. Die Konkurrenz hat noch nicht reagiert, vermutlich wissen sie nicht mal, dass es passiert.',
                 mood: 'positive',
               },
               {
@@ -650,7 +650,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
             Das Muster ist immer das gleiche: <strong className="text-black">Wochen 1&ndash;4 f&uuml;hlen sich frustrierend an.</strong> Du investierst, du siehst nichts. Das ist normal. Das ist der unsichtbare Teil des Schwungrads. Ab Woche&nbsp;5 dreht sich das Rad. Ab Woche&nbsp;7 wird es zum Selbstl&auml;ufer.
           </p>
           <p>
-            Und hier ist der Witz: Die meisten, die &ldquo;KI-SEO funktioniert nicht&rdquo; sagen, haben in Woche&nbsp;3 aufgeh&ouml;rt. Sie standen vor der Ziellinie und sind umgedreht. Das ist, als w&uuml;rdest du einen Marathon laufen, nach 35&nbsp;Kilometern aufgeben und sagen: &ldquo;Laufen funktioniert nicht.&rdquo;
+            Und hier ist der Witz: Die meisten, die &bdquo;KI-SEO funktioniert nicht&ldquo; sagen, haben in Woche&nbsp;3 aufgeh&ouml;rt. Sie standen vor der Ziellinie und sind umgedreht. Das ist, als w&uuml;rdest du einen Marathon laufen, nach 35&nbsp;Kilometern aufgeben und sagen: &bdquo;Laufen funktioniert nicht.&ldquo;
           </p>
         </div>
       </section>
@@ -665,7 +665,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
           <p>
-            Du hast die Zahlen gesehen. Du denkst: &ldquo;Das mache ich auch.&rdquo; Gro&szlig;artig. Hier sind die f&uuml;nf Gr&uuml;nde, warum es bei den meisten nicht klappt &ndash; damit du sie vermeiden kannst.
+            Du hast die Zahlen gesehen. Du denkst: &bdquo;Das mache ich auch.&ldquo; Gro&szlig;artig. Hier sind die f&uuml;nf Gr&uuml;nde, warum es bei den meisten nicht klappt, damit du sie vermeiden kannst.
           </p>
         </div>
 
@@ -673,23 +673,23 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
           {[
             {
               title: 'Sie überspringen Phase\u00a01',
-              desc: '„Technik ist doch nicht so wichtig, lass uns einfach Content machen." Doch. Technik ist wichtig. Eine Website mit Performance 35/100 wird von der KI nicht gecrawlt, nicht indexiert und nicht empfohlen. Egal wie gut dein Content ist. Das ist wie ein Bewerbungsgespräch in Unterhose \u2014 der Inhalt mag stimmen, aber die Verpackung disqualifiziert dich sofort.',
+              desc: '„Technik ist doch nicht so wichtig, lass uns einfach Content machen.“ Doch. Technik ist wichtig. Eine Website mit Performance 35/100 wird von der KI nicht gecrawlt, nicht indexiert und nicht empfohlen. Egal wie gut dein Content ist. Das ist wie ein Bewerbungsgespräch in Unterhose. Der Inhalt mag stimmen, aber die Verpackung disqualifiziert dich sofort.',
             },
             {
-              title: 'Sie verwechseln „KI-Content" mit „KI-optimiertem Content"',
+              title: 'Sie verwechseln „KI-Content“ mit „KI-optimiertem Content“',
               desc: 'KI-Content: ChatGPT generiert 50 Blogartikel, du lädst sie hoch. KI-optimierter Content: Du erstellst Inhalte, die KI-Systeme als vertrauenswürdige Quelle zitieren wollen. Das eine kostet 15 Minuten und führt zum Bann. Das andere kostet Wochen und führt zu #1 in ChatGPT. Entscheide selbst.',
             },
             {
               title: 'Sie haben keine Geduld',
-              desc: 'Woche\u00a03, keine Ergebnisse. „Funktioniert nicht." Woche\u00a04: Projekt gestoppt. Was sie nicht wissen: Woche\u00a07 wäre der Break-Even gewesen. KI-Sichtbarkeit ist kein Lichtschalter. Es ist ein Schwungrad. Die ersten Umdrehungen sind die schwersten. Danach dreht es sich fast von allein.',
+              desc: 'Woche\u00a03, keine Ergebnisse. „Funktioniert nicht.“ Woche\u00a04: Projekt gestoppt. Was sie nicht wissen: Woche\u00a07 wäre der Break-Even gewesen. KI-Sichtbarkeit ist kein Lichtschalter. Es ist ein Schwungrad. Die ersten Umdrehungen sind die schwersten. Danach dreht es sich fast von allein.',
             },
             {
               title: 'Sie messen nicht (oder das Falsche)',
-              desc: '„Ich glaube, es hat sich was getan." Glauben ist für die Kirche. Wir messen: Klicks, Impressions, Conversions, CPA, KI-Erwähnungen. Wöchentlich. Wenn du nicht misst, weißt du nicht, ob es funktioniert. Und wenn du nicht weißt, ob es funktioniert, optimierst du ins Blaue.',
+              desc: '„Ich glaube, es hat sich was getan.“ Glauben ist für die Kirche. Wir messen: Klicks, Impressions, Conversions, CPA, KI-Erwähnungen. Wöchentlich. Wenn du nicht misst, weißt du nicht, ob es funktioniert. Und wenn du nicht weißt, ob es funktioniert, optimierst du ins Blaue.',
             },
             {
               title: 'Sie beauftragen den Billigsten',
-              desc: '„Ich kenne da jemanden auf Fiverr, der macht SEO für 99\u00a0\u20ac/Monat." Cool. Der macht auch Schema-Markup mit Copy-Paste-Fehlern, schreibt Meta-Descriptions auf Englisch für eine deutsche Website und schickt dir monatlich einen Report, den ein Algorithmus aus Buzzwords zusammenwürfelt. Du bekommst, wofür du zahlst. Immer.',
+              desc: '„Ich kenne da jemanden auf Fiverr, der macht SEO für 99\u00a0\u20ac/Monat.“ Cool. Der macht auch Schema-Markup mit Copy-Paste-Fehlern, schreibt Meta-Descriptions auf Englisch für eine deutsche Website und schickt dir monatlich einen Report, den ein Algorithmus aus Buzzwords zusammenwürfelt. Du bekommst, wofür du zahlst. Immer.',
             },
           ].map((item, i) => (
             <div key={i} className="bg-white border border-gray-100 rounded-2xl p-6">
@@ -705,7 +705,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-          Der Elefant im Raum: &ldquo;Aber das ist doch Eigenwerbung!&rdquo;
+          Der Elefant im Raum: &bdquo;Aber das ist doch Eigenwerbung!&ldquo;
         </h2>
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
@@ -713,10 +713,10 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
             Ja. Ist es. Nat&uuml;rlich ist es das.
           </p>
           <p>
-            Dieser Artikel ist eine Fallstudie auf der Website einer KI-SEO-Agentur. Was erwartest du &ndash; dass wir schreiben &ldquo;Unsere Ergebnisse sind mittelmä&szlig;ig, aber gib uns trotzdem Geld&rdquo;?
+            Dieser Artikel ist eine Fallstudie auf der Website einer KI-SEO-Agentur. Was erwartest du, dass wir schreiben &bdquo;Unsere Ergebnisse sind mittelmä&szlig;ig, aber gib uns trotzdem Geld&ldquo;?
           </p>
           <p>
-            <strong className="text-black">Der Unterschied zu den meisten Agenturen:</strong> Unsere Zahlen sind nachpr&uuml;fbar. Performance-Scores kannst du in 30&nbsp;Sekunden selbst testen. Google Search Console-Daten l&uuml;gen nicht. ChatGPT-Rankings kannst du in Echtzeit verifizieren. Wir zeigen keine &ldquo;600&nbsp;% mehr Sichtbarkeit&rdquo;-Grafiken, deren Ausgangswert bei 3&nbsp;Besuchern lag.
+            <strong className="text-black">Der Unterschied zu den meisten Agenturen:</strong> Unsere Zahlen sind nachpr&uuml;fbar. Performance-Scores kannst du in 30&nbsp;Sekunden selbst testen. Google Search Console-Daten l&uuml;gen nicht. ChatGPT-Rankings kannst du in Echtzeit verifizieren. Wir zeigen keine &bdquo;600&nbsp;% mehr Sichtbarkeit&ldquo;-Grafiken, deren Ausgangswert bei 3&nbsp;Besuchern lag.
           </p>
           <p>
             Wenn du skeptisch bist: Gut. Sei skeptisch. Frag nach den Daten. Frag nach den Screenshots. Frag nach den Referenzen. Wir zeigen sie dir gerne. Denn das ist genau der Punkt: <strong className="text-black">Transparenz ist kein Risiko, wenn die Ergebnisse stimmen.</strong>
@@ -818,7 +818,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
               Technische KI-Sichtbarkeit
             </p>
             <p className="text-sm text-gray-500">
-              Schema.org, robots.txt, Crawling &ndash; die technische Seite der KI-Optimierung.
+              Schema.org, robots.txt, Crawling und die technische Seite der KI-Optimierung.
             </p>
           </a>
         </div>
@@ -835,10 +835,10 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
               Deine kostenlose KI-Sichtbarkeitsanalyse wartet
             </h2>
             <p className="text-lg text-gray-300 mb-4 max-w-2xl leading-relaxed">
-              Ich pr&uuml;fe in 48&nbsp;Stunden, ob ChatGPT, Perplexity und Google&nbsp;AI dein Unternehmen kennen &ndash; und was n&ouml;tig ist, damit sie es empfehlen.
+              Ich pr&uuml;fe in 48&nbsp;Stunden, ob ChatGPT, Perplexity und Google&nbsp;AI dein Unternehmen kennen, und was n&ouml;tig ist, damit sie es empfehlen.
             </p>
             <p className="text-lg text-gray-300 mb-8 max-w-2xl leading-relaxed">
-              Kein Verkaufsgespr&auml;ch. Kein &ldquo;wir m&uuml;ssen das erst intern besprechen&rdquo;. Du bekommst einen ehrlichen Report mit konkreten Zahlen. Wenn&rsquo;s passt, reden wir weiter. Wenn nicht, hast du trotzdem was gelernt.
+              Kein Verkaufsgespr&auml;ch. Kein &bdquo;wir m&uuml;ssen das erst intern besprechen&ldquo;. Du bekommst einen ehrlichen Report mit konkreten Zahlen. Wenn&rsquo;s passt, reden wir weiter. Wenn nicht, hast du trotzdem was gelernt.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/ai-sichtbarkeit-now" primary text="Kostenlose Analyse anfragen" className="!py-4 !px-8" />

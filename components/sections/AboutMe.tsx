@@ -5,7 +5,7 @@ const ABOUT_CONTENT = {
     headline: "Warum ich das mache.",
     bodyParagraphs: [
         "Ich verkaufe keine Rankings. Ich verkaufe keine SEO-Pakete. Ich helfe Unternehmen dabei, von KI gefunden und verstanden zu werden.",
-        "Die meisten SEO-Agenturen optimieren für Google-Algorithmen von gestern. Ich fokussiere mich auf die KI-Systeme von heute und morgen – ChatGPT, Perplexity, Claude und was noch kommt.",
+        "Die meisten SEO-Agenturen optimieren für Google-Algorithmen von gestern. Ich fokussiere mich auf die KI-Systeme von heute und morgen: ChatGPT, Perplexity, Claude und was noch kommt.",
         "Mein Ansatz ist simpel: Klare Websites, die echte Expertise vermitteln. Keine Tricks, keine Hacks, keine leeren Versprechen. Nur strukturierte Inhalte, die KI-Systeme verstehen und weiterempfehlen können."
     ],
     closingLine: "KI-Sichtbarkeit ist kein Trick. Sie ist das Ergebnis einer klaren Website."

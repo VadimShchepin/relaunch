@@ -27,7 +27,7 @@ const STEPS = [
             "Aufbau & Überarbeitung der relevanten Seiten",
             "Strukturierung von Inhalten für KI-Verständnis",
             "Autoritäts-Signale (Verlinkung, Referenzen, Klarheit)",
-            "Messung: Wirst du genannt – ja oder nein"
+            "Messung: Wirst du genannt, ja oder nein"
         ]
     }
 ];
@@ -38,7 +38,7 @@ export const Process: React.FC = () => {
             <div className="max-w-7xl mx-auto">
                 <FadeIn>
                     <p className="text-lg md:text-xl font-medium text-gray-600 text-center mb-6 leading-relaxed">
-                        KI-Sichtbarkeit entsteht nicht durch Tools – sondern durch klare Websites.
+                        KI-Sichtbarkeit entsteht nicht durch Tools, sondern durch klare Websites.
                     </p>
                     <h2 className="text-4xl md:text-6xl font-bold tracking-tighter mb-24 text-center">
                         Der Weg zur <span className="text-brand-accent">Relevanz.</span>

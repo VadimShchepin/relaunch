@@ -17,7 +17,7 @@ const FAQS = [
   },
   {
     q: 'Bestraft Google KI-generierte Inhalte?',
-    a: 'Nein, nicht pauschal. Google bewertet Qualität, nicht die Herstellungsmethode. Verboten ist „Missbrauch mit in großem Umfang generierten Inhalten" (scaled content abuse): viele Seiten, die primär erstellt werden, um Rankings zu manipulieren, statt Nutzern zu helfen. Ein einzelner, wirklich hilfreicher KI-unterstützter Artikel ist erlaubt. Zehntausend dünne Seiten sind es nicht. Entscheidend sind Absicht und Maßstab, nicht der Einsatz von KI.',
+    a: 'Nein, nicht pauschal. Google bewertet Qualität, nicht die Herstellungsmethode. Verboten ist „Missbrauch mit in großem Umfang generierten Inhalten“ (scaled content abuse): viele Seiten, die primär erstellt werden, um Rankings zu manipulieren, statt Nutzern zu helfen. Ein einzelner, wirklich hilfreicher KI-unterstützter Artikel ist erlaubt. Zehntausend dünne Seiten sind es nicht. Entscheidend sind Absicht und Maßstab, nicht der Einsatz von KI.',
   },
   {
     q: 'Muss ich Content in kurze Blöcke (Chunks) aufteilen, damit die KI ihn versteht?',
@@ -149,7 +149,7 @@ export default function GoogleKiOptimierungPage() {
           Die GEO-Branche verkauft dir Dateien, Tricks und Spezial-Markup für Google AI Overviews. Google selbst sagt in seiner offiziellen Dokumentation: Das meiste davon brauchst du nicht. Hier steht, was wirklich zählt, was du dir sparen kannst, und warum die ehrliche Antwort am Ende mehr Sichtbarkeit bringt.
         </p>
         <p className="mt-6 text-sm text-gray-500">
-          Grundlage: Google Search Central, „AI optimization guide" und „Using AI-generated content". Stand Mai 2026.
+          Grundlage: Google Search Central, „AI optimization guide“ und „Using AI-generated content“. Stand Mai 2026.
         </p>
       </section>
 
@@ -185,7 +185,7 @@ export default function GoogleKiOptimierungPage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">3.</span>
-              <span><strong className="text-black">Originalität schlägt Masse.</strong> Eigener Blickwinkel, Ersthand-Erfahrung, klarer Autor. Massenhaft dünne KI-Seiten fallen unter „scaled content abuse" und sind ein Spam-Verstoß.</span>
+              <span><strong className="text-black">Originalität schlägt Masse.</strong> Eigener Blickwinkel, Ersthand-Erfahrung, klarer Autor. Massenhaft dünne KI-Seiten fallen unter „scaled content abuse“ und sind ein Spam-Verstoß.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">4.</span>
@@ -231,7 +231,7 @@ export default function GoogleKiOptimierungPage() {
         <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8 mt-8">
           <h3 className="text-xl font-semibold text-black mb-3">Beispiel: Query Fan-out in der Praxis</h3>
           <p className="text-gray-600 leading-relaxed mb-4">
-            Jemand fragt: „Wer ist die beste Firma für Haushaltsauflösung in Hamburg?" Intern zerlegt das System diese eine Frage in viele Teilfragen, die du nie zu sehen bekommst:
+            Jemand fragt: „Wer ist die beste Firma für Haushaltsauflösung in Hamburg?“ Intern zerlegt das System diese eine Frage in viele Teilfragen, die du nie zu sehen bekommst:
           </p>
           <ul className="space-y-2 text-gray-600 leading-relaxed mb-4">
             <li className="flex items-start gap-2"><span className="text-brand-accent mt-1">&bull;</span><span>Welche Firmen sind in Hamburg aktiv?</span></li>
@@ -254,7 +254,7 @@ export default function GoogleKiOptimierungPage() {
           Die 4 Dinge, die Google dir tatsächlich aufträgt
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
-          Der „AI optimization guide" lässt sich auf vier Empfehlungen eindampfen. Keine davon ist exotisch.
+          Der „AI optimization guide“ lässt sich auf vier Empfehlungen eindampfen. Keine davon ist exotisch.
         </p>
 
         <div className="space-y-6">
@@ -282,7 +282,7 @@ export default function GoogleKiOptimierungPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">4. Bei KI-Tools die Qualitätslatte halten</h3>
             <p className="text-gray-600 leading-relaxed">
-              Wenn du KI zur Content-Erstellung einsetzt, muss das Ergebnis die Search Essentials und die Spam-Richtlinien erfüllen, allen voran die Regel gegen „scaled content abuse". Dazu unten mehr.
+              Wenn du KI zur Content-Erstellung einsetzt, muss das Ergebnis die Search Essentials und die Spam-Richtlinien erfüllen, allen voran die Regel gegen „scaled content abuse“. Dazu unten mehr.
             </p>
           </div>
         </div>
@@ -334,7 +334,7 @@ export default function GoogleKiOptimierungPage() {
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
           <p>
-            <strong className="text-black">Die praktische Faustregel:</strong> Wenn eine Maßnahme nur existiert, um „die KI zu füttern", und einem menschlichen Leser nichts bringt, kannst du sie für Google streichen. Diese Zeit ist in echten Inhalten und sauberer Technik besser angelegt.
+            <strong className="text-black">Die praktische Faustregel:</strong> Wenn eine Maßnahme nur existiert, um „die KI zu füttern“, und einem menschlichen Leser nichts bringt, kannst du sie für Google streichen. Diese Zeit ist in echten Inhalten und sauberer Technik besser angelegt.
           </p>
           <p>
             Und jetzt die ehrliche Einordnung, die viele Anbieter dir verschweigen: <strong className="text-black">llms.txt ist nicht wertlos. Sie ist nur für Google wertlos.</strong> ChatGPT, Perplexity und andere RAG-Systeme arbeiten anders, und dort kann eine gepflegte <a href="/wissen/llms-txt-anleitung" className="text-brand-accent underline hover:no-underline">llms.txt</a> sowie eine hohe Zitierfähigkeit sehr wohl etwas bringen. Wer plattformübergreifend denkt, behält diese Maßnahmen. Wer nur über Google AI Overviews redet und dir llms.txt als Wundermittel verkauft, hat den offiziellen Leitfaden nicht gelesen.
@@ -356,7 +356,7 @@ export default function GoogleKiOptimierungPage() {
           Technische Voraussetzungen: die Checkliste
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
-          Jeder Punkt mit „Nein" schließt eine Seite von KI-Funktionen aus, egal wie gut der Inhalt ist. Prüfe der Reihe nach.
+          Jeder Punkt mit „Nein“ schließt eine Seite von KI-Funktionen aus, egal wie gut der Inhalt ist. Prüfe der Reihe nach.
         </p>
 
         <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
@@ -478,7 +478,7 @@ export default function GoogleKiOptimierungPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6">
             <h3 className="text-lg font-semibold text-black mb-3">Warum (Why)</h3>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Entsteht der Inhalt primär, um Menschen zu helfen, und nicht, um Rankings zu manipulieren? Das ist die Definition von „people-first content".
+              Entsteht der Inhalt primär, um Menschen zu helfen, und nicht, um Rankings zu manipulieren? Das ist die Definition von „people-first content“.
             </p>
           </div>
         </div>
@@ -518,7 +518,7 @@ export default function GoogleKiOptimierungPage() {
 
         <div className="bg-brand-accent/5 border-l-4 border-brand-accent rounded-r-xl p-6 md:p-8 my-8">
           <p className="text-xl md:text-2xl font-semibold text-black leading-snug">
-            „Der größte Teil der KI-Sichtbarkeit entsteht dadurch, dass man eine bessere Quelle wird, nicht dadurch, dass man KI-Systeme besser austrickst."
+            „Der größte Teil der KI-Sichtbarkeit entsteht dadurch, dass man eine bessere Quelle wird, nicht dadurch, dass man KI-Systeme besser austrickst.“
           </p>
         </div>
 
@@ -571,16 +571,16 @@ export default function GoogleKiOptimierungPage() {
 
         <div className="grid sm:grid-cols-2 gap-4 mt-10">
           <div className="bg-[#121212] rounded-2xl p-6">
-            <p className="text-white font-medium leading-snug">„KI-Optimierung ersetzt SEO nicht. Sie ist SEO, Autoritätsaufbau und digitale PR, betrachtet durch eine neue Linse."</p>
+            <p className="text-white font-medium leading-snug">„KI-Optimierung ersetzt SEO nicht. Sie ist SEO, Autoritätsaufbau und digitale PR, betrachtet durch eine neue Linse.“</p>
           </div>
           <div className="bg-[#121212] rounded-2xl p-6">
-            <p className="text-white font-medium leading-snug">„Die Unternehmen, denen man am leichtesten vertraut, sind meist die, die KI-Systeme empfehlen."</p>
+            <p className="text-white font-medium leading-snug">„Die Unternehmen, denen man am leichtesten vertraut, sind meist die, die KI-Systeme empfehlen.“</p>
           </div>
           <div className="bg-[#121212] rounded-2xl p-6">
-            <p className="text-white font-medium leading-snug">„Wenn niemand mit Fachwissen den Inhalt geprüft hat, macht KI ihn nicht auf magische Weise wertvoll."</p>
+            <p className="text-white font-medium leading-snug">„Wenn niemand mit Fachwissen den Inhalt geprüft hat, macht KI ihn nicht auf magische Weise wertvoll.“</p>
           </div>
           <div className="bg-[#121212] rounded-2xl p-6">
-            <p className="text-white font-medium leading-snug">„Vertrauen entsteht, wenn jedes Signal online dieselbe Geschichte erzählt."</p>
+            <p className="text-white font-medium leading-snug">„Vertrauen entsteht, wenn jedes Signal online dieselbe Geschichte erzählt.“</p>
           </div>
         </div>
       </section>

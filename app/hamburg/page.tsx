@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/Button';
 const PAGES = [
   {
     title: 'KI-Sichtbarkeit Agentur Hamburg',
-    description: 'Die umbrechende Service-Seite für Unternehmen, die in KI-Systemen konkret genannt werden wollen.',
+    description: 'Die zentrale Service-Seite für Unternehmen, die in KI-Systemen konkret genannt werden wollen.',
     href: '/hamburg/ki-sichtbarkeit-agentur',
     tag: 'Kernleistung',
   },

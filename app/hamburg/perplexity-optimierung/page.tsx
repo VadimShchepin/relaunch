@@ -59,7 +59,7 @@ export default function PerplexityOptimierungHamburgPage() {
         },
         {
           title: 'Semantische Verdichtung',
-          text: 'Weniger Fasertext, mehr klare Abschnitte, definierte Begriffe, relevante Beispiele und echte Antwortbloecke.',
+          text: 'Weniger Fasertext, mehr klare Abschnitte, definierte Begriffe und echte Antwortblöcke.',
         },
         {
           title: 'Lokaler Beweisaufbau',
@@ -73,7 +73,7 @@ export default function PerplexityOptimierungHamburgPage() {
         },
         {
           title: 'Fachliche Tiefe',
-          text: 'Ich erklaere nicht nur, dass Perplexity Quellen liebt. Ich strukturiere Seiten so, dass diese Quellenlogik praktisch bedient wird.',
+          text: 'Ich erkläre nicht nur, dass Perplexity Quellen liebt. Ich strukturiere Seiten so, dass diese Quellenlogik praktisch bedient wird.',
         },
         {
           title: 'Autorität über Konsistenz',
@@ -96,7 +96,7 @@ export default function PerplexityOptimierungHamburgPage() {
         },
         {
           title: 'Antwort-Engineering',
-          text: 'Ich baue die entscheidenden Seiten, FAQs und Kontextbloecke so um, dass sie sowohl nativ lesbar als auch AI-extrahierbar sind.',
+          text: 'Ich baue die entscheidenden Seiten, FAQs und Kontextblöcke so um, dass sie sowohl nativ lesbar als auch AI-extrahierbar sind.',
         },
         {
           title: 'Iteration',
@@ -110,7 +110,7 @@ export default function PerplexityOptimierungHamburgPage() {
         },
         {
           q: 'Ist Perplexity Optimierung dasselbe wie ChatGPT Optimierung?',
-          a: 'Nein. Perplexity zitiert eher einzelne Seiten und Quellen, während ChatGPT stärker über Marke, Entitaet und Bing-Layer denkt. Es gibt Überschneidungen, aber nicht dieselbe Logik.',
+          a: 'Nein. Perplexity zitiert eher einzelne Seiten und Quellen, während ChatGPT stärker über Marke, Entität und Bing-Layer denkt. Es gibt Überschneidungen, aber nicht dieselbe Logik.',
         },
         {
           q: 'Muss ich dafür ständig neue Inhalte veröffentlichen?',

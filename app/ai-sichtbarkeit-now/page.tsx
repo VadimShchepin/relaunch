@@ -365,7 +365,7 @@ const AIVisibilityNowPage = () => {
             <div className="text-center mb-10">
               <Tag text="Live-Demo" />
               <h2 className="text-3xl lg:text-4xl font-extrabold text-brand-text mb-3 mt-4">
-                So empfiehlt KI Ihre Konkurrenz – oder bald Sie
+                So empfiehlt KI Ihre Konkurrenz, oder bald Sie
               </h2>
               <p className="text-stone-600 text-lg">
                 Echte KI-Antwort bei der Suche nach Ihren Dienstleistungen
@@ -508,7 +508,7 @@ const AIVisibilityNowPage = () => {
             <div className="text-center">
               <div className="inline-block bg-brand-accent/10 px-8 py-4 rounded-xl border border-brand-accent/20">
                 <p className="text-brand-text font-semibold">
-                  ⏱️ Durchschnittliche Projektdauer: <span className="text-brand-accent">4-6 Wochen bis zur Dominanz</span>
+                  Durchschnittliche Projektdauer: <span className="text-brand-accent">4-6 Wochen bis zur Dominanz</span>
                 </p>
               </div>
             </div>

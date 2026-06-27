@@ -45,7 +45,7 @@ const STEPS = [
 const DONT_GET = [
   {
     title: 'Keine Garantie f\u00fcr Position 1',
-    desc: 'Wer dir verspricht, dass ChatGPT dich garantiert als Nummer 1 empfiehlt, l\u00fcgt. KI-Antworten sind kontextabh\u00e4ngig und ver\u00e4ndern sich st\u00e4ndig. Ich optimiere die Wahrscheinlichkeit \u2014 nicht die Gewissheit.',
+    desc: 'Wer dir verspricht, dass ChatGPT dich garantiert als Nummer 1 empfiehlt, l\u00fcgt. KI-Antworten sind kontextabh\u00e4ngig und ver\u00e4ndern sich st\u00e4ndig. Ich optimiere die Wahrscheinlichkeit, nicht die Gewissheit.',
   },
   {
     title: 'Keine 12-Monats-Vertragsbindung',
@@ -157,14 +157,14 @@ export default function KiSichtbarkeitBeauftragenPage() {
               KI-Sichtbarkeit beauftragen: Der komplette Ablauf
             </h1>
             <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
-              Du &uuml;berlegst, ob sich KI-Sichtbarkeit f&uuml;r dein Unternehmen lohnt? Hier ist exakt, was passiert &ndash; von der ersten Anfrage bis zur ersten ChatGPT-Empfehlung. Ohne Buzzwords, ohne Verkaufstricks.
+              Du &uuml;berlegst, ob sich KI-Sichtbarkeit f&uuml;r dein Unternehmen lohnt? Hier ist exakt, was passiert, von der ersten Anfrage bis zur ersten ChatGPT-Empfehlung. Ohne Buzzwords, ohne Verkaufstricks.
             </p>
         </section>
 
         {/* TL;DR */}
         <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-16">
             <div className="bg-white border-2 border-brand-accent rounded-2xl p-6 md:p-8 shadow-sm">
-              <p className="text-sm font-bold text-brand-accent mb-4">TL;DR &ndash; Der Ablauf auf einen Blick</p>
+              <p className="text-sm font-bold text-brand-accent mb-4">TL;DR, Der Ablauf auf einen Blick</p>
               <div className="flex flex-col sm:flex-row gap-3 mb-6">
                 {STEPS.map((step) => (
                   <div key={step.num} className={`${step.color} rounded-lg p-3 flex-1 text-center`}>
@@ -175,7 +175,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
                 ))}
               </div>
               <p className="text-sm text-gray-500">
-                Von der ersten Anfrage bis zu messbaren Ergebnissen: 15&nbsp;Minuten f&uuml;r die kostenlose Analyse, 10&ndash;14&nbsp;Tage f&uuml;r das technische Upgrade, 3&ndash;6&nbsp;Monate f&uuml;r konsistente KI-Sichtbarkeit. Kein Hexenwerk &ndash; aber auch kein Overnight-Erfolg.
+                Von der ersten Anfrage bis zu messbaren Ergebnissen: 15&nbsp;Minuten f&uuml;r die kostenlose Analyse, 10&ndash;14&nbsp;Tage f&uuml;r das technische Upgrade, 3&ndash;6&nbsp;Monate f&uuml;r konsistente KI-Sichtbarkeit. Kein Hexenwerk, aber auch kein Overnight-Erfolg.
               </p>
             </div>
         </section>
@@ -190,10 +190,10 @@ export default function KiSichtbarkeitBeauftragenPage() {
                 Weil die meisten Agenturen dir eine &bdquo;kostenlose Erstberatung&ldquo; anbieten und dann 45&nbsp;Minuten lang PowerPoint-Folien zeigen, bis du aus reiner Ersch&ouml;pfung unterschreibst. (Das ist ungef&auml;hr so effektiv wie Zahnarztbesuche als Verkaufstaktik f&uuml;r Zahnb&uuml;rsten.)
               </p>
               <p>
-                Hier ist der Deal: <strong className="text-black">Du sollst vorher wissen, was passiert.</strong> Jeden Schritt. Jede Entscheidung. Jeden Euro. Damit du eine informierte Entscheidung treffen kannst &ndash; nicht eine emotionale.
+                Hier ist der Deal: <strong className="text-black">Du sollst vorher wissen, was passiert.</strong> Jeden Schritt. Jede Entscheidung. Jeden Euro. Damit du eine informierte Entscheidung treffen kannst, nicht eine emotionale.
               </p>
               <p>
-                Die meisten Dienstleister behandeln ihren Prozess wie ein Staatsgeheimnis. Als w&uuml;rde die Konkurrenz sofort alles kopieren, wenn man transparent ist. (Newsflash: Die Konkurrenz kopiert sowieso. Transparenz ist kein Risiko &ndash; es ist ein Vorteil.)
+                Die meisten Dienstleister behandeln ihren Prozess wie ein Staatsgeheimnis. Als w&uuml;rde die Konkurrenz sofort alles kopieren, wenn man transparent ist. (Newsflash: Die Konkurrenz kopiert sowieso. Transparenz ist kein Risiko, es ist ein Vorteil.)
               </p>
               <p>
                 Und ja, vielleicht liest du das hier und entscheidest: &bdquo;Brauche ich nicht.&ldquo; Auch gut. Dann habe ich dir 15&nbsp;Minuten Lebenszeit gespart. Das ist mehr, als die meisten Agenturen f&uuml;r dich tun, bevor du bezahlst.
@@ -263,7 +263,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
 
             <div className="bg-white border-2 border-brand-accent rounded-2xl p-6 md:p-8 shadow-sm mt-8">
               <p className="text-base text-gray-700 leading-relaxed">
-                <strong className="text-black">Kein Pitch, kein Druck.</strong> Wenn es sich nicht lohnt, sage ich dir das. Ich habe kein Interesse daran, Projekte anzunehmen, die nicht funktionieren &ndash; das macht weder dich noch mich gl&uuml;cklich. (Und schlechte Referenzen brauche ich wie ein Fahrrad einen Bootf&uuml;hrerschein.)
+                <strong className="text-black">Kein Pitch, kein Druck.</strong> Wenn es sich nicht lohnt, sage ich dir das. Ich habe kein Interesse daran, Projekte anzunehmen, die nicht funktionieren, das macht weder dich noch mich gl&uuml;cklich. (Und schlechte Referenzen brauche ich wie ein Fahrrad einen Bootf&uuml;hrerschein.)
               </p>
             </div>
         </section>
@@ -275,7 +275,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
               <p>
-                Du hast dich entschieden. Ab hier wird es ernst. Ich tauche in deine Website ein wie ein U-Boot in einen Ozean aus HTML &ndash; und komme mit einer kompletten Bestandsaufnahme zur&uuml;ck.
+                Du hast dich entschieden. Ab hier wird es ernst. Ich tauche in deine Website ein wie ein U-Boot in einen Ozean aus HTML, und komme mit einer kompletten Bestandsaufnahme zur&uuml;ck.
               </p>
               <p>
                 Das ist der Teil, in dem ich herausfinde, <strong className="text-black">warum KI-Systeme dich ignorieren</strong> und was wir dagegen tun k&ouml;nnen. Spoiler: Es ist fast nie ein einzelnes Problem. Es ist meistens ein fr&ouml;hliches Zusammenspiel aus zehn kleinen Problemen, die sich gegenseitig verst&auml;rken.
@@ -289,7 +289,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
                   <div>
                     <h3 className="text-lg font-semibold text-black mb-2">Vollst&auml;ndiges technisches Audit</h3>
                     <p className="text-base text-gray-600 leading-relaxed">
-                      Schema-Markup, Seitenstruktur, Ladezeiten, Mobile-Optimierung, robots.txt, Crawlability f&uuml;r KI-Bots. Alles, was unter der Haube passiert &ndash; oder eben nicht passiert.
+                      Schema-Markup, Seitenstruktur, Ladezeiten, Mobile-Optimierung, robots.txt, Crawlability f&uuml;r KI-Bots. Alles, was unter der Haube passiert, oder eben nicht passiert.
                     </p>
                   </div>
                 </div>
@@ -301,7 +301,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
                   <div>
                     <h3 className="text-lg font-semibold text-black mb-2">Wettbewerber-Analyse (KI-Sichtbarkeit)</h3>
                     <p className="text-base text-gray-600 leading-relaxed">
-                      Wer wird in deiner Branche von ChatGPT empfohlen? Warum? Was machen die anders? Das ist keine &bdquo;Competitive Analysis&ldquo; aus einem SEO-Tool &ndash; das ist manuelle Recherche auf echten KI-Plattformen.
+                      Wer wird in deiner Branche von ChatGPT empfohlen? Warum? Was machen die anders? Das ist keine &bdquo;Competitive Analysis&ldquo; aus einem SEO-Tool, das ist manuelle Recherche auf echten KI-Plattformen.
                     </p>
                   </div>
                 </div>
@@ -340,7 +340,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
               <p>
-                Das ist der Teil, wo ich Code schreibe und du nichts tun musst. Ernsthaft. Du kannst in dieser Phase Urlaub machen, ein Buch lesen oder endlich den Keller aufr&auml;umen. (Wobei &ndash; r&auml;um lieber den Keller auf. Das Buch l&auml;uft nicht weg.)
+                Das ist der Teil, wo ich Code schreibe und du nichts tun musst. Ernsthaft. Du kannst in dieser Phase Urlaub machen, ein Buch lesen oder endlich den Keller aufr&auml;umen. (Wobei: r&auml;um lieber den Keller auf. Das Buch l&auml;uft nicht weg.)
               </p>
               <p>
                 Was passiert unter der Haube:
@@ -351,14 +351,14 @@ export default function KiSichtbarkeitBeauftragenPage() {
               <div className="bg-white border border-gray-100 rounded-2xl p-6">
                 <h3 className="text-lg font-semibold text-black mb-3">Schema-Markup (JSON-LD)</h3>
                 <p className="text-base text-gray-600 leading-relaxed">
-                  Strukturierte Daten, die KI-Systemen sagen, wer du bist, was du machst und warum du relevant bist. Das ist wie ein Lebenslauf f&uuml;r deine Website &ndash; nur dass ihn Maschinen lesen statt gelangweilte Personaler.
+                  Strukturierte Daten, die KI-Systemen sagen, wer du bist, was du machst und warum du relevant bist. Das ist wie ein Lebenslauf f&uuml;r deine Website, nur dass ihn Maschinen lesen statt gelangweilte Personaler.
                 </p>
               </div>
 
               <div className="bg-white border border-gray-100 rounded-2xl p-6">
                 <h3 className="text-lg font-semibold text-black mb-3">llms.txt &&nbsp;ai.txt</h3>
                 <p className="text-base text-gray-600 leading-relaxed">
-                  Spezielle Dateien, die KI-Crawlern erkl&auml;ren, welche Informationen sie von deiner Website extrahieren sollen. Ohne die fliegen KI-Bots blind &uuml;ber deine Seite &ndash; und nehmen nichts mit.
+                  Spezielle Dateien, die KI-Crawlern erkl&auml;ren, welche Informationen sie von deiner Website extrahieren sollen. Ohne die fliegen KI-Bots blind &uuml;ber deine Seite, und nehmen nichts mit.
                 </p>
               </div>
 
@@ -379,10 +379,10 @@ export default function KiSichtbarkeitBeauftragenPage() {
 
             <div className="bg-gray-50 rounded-2xl p-6 mt-8">
               <p className="text-base text-gray-700 leading-relaxed mb-4">
-                <strong className="text-black">Dein Aufwand in dieser Phase:</strong> Mir Zugang zu deinem CMS geben (oder deinen Entwickler kurz einweihen). Alles andere passiert auf meiner Seite. Du bekommst t&auml;gliche Kurz-Updates per E-Mail &ndash; nicht als H&ouml;flichkeit, sondern damit du wei&szlig;t, was passiert.
+                <strong className="text-black">Dein Aufwand in dieser Phase:</strong> Mir Zugang zu deinem CMS geben (oder deinen Entwickler kurz einweihen). Alles andere passiert auf meiner Seite. Du bekommst t&auml;gliche Kurz-Updates per E-Mail, nicht als H&ouml;flichkeit, sondern damit du wei&szlig;t, was passiert.
               </p>
               <p className="text-base text-gray-700 leading-relaxed">
-                <strong className="text-black">Was du NICHT tun musst:</strong> Texte schreiben, Bilder liefern, stundenlang in Meetings sitzen oder irgendwelche &bdquo;Brand Guidelines&ldquo;-Dokumente zusammensuchen, die seit 2019 niemand mehr ge&ouml;ffnet hat. Ich arbeite mit dem, was deine Website bereits hat &ndash; und mache es f&uuml;r KI-Systeme lesbar.
+                <strong className="text-black">Was du NICHT tun musst:</strong> Texte schreiben, Bilder liefern, stundenlang in Meetings sitzen oder irgendwelche &bdquo;Brand Guidelines&ldquo;-Dokumente zusammensuchen, die seit 2019 niemand mehr ge&ouml;ffnet hat. Ich arbeite mit dem, was deine Website bereits hat, und mache es f&uuml;r KI-Systeme lesbar.
               </p>
             </div>
         </section>
@@ -394,10 +394,10 @@ export default function KiSichtbarkeitBeauftragenPage() {
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
               <p>
-                <strong className="text-black">Nur f&uuml;r laufende Betreuungspakete.</strong> Wenn du das einmalige Upgrade gew&auml;hlt hast, bist du nach Schritt&nbsp;3 fertig und hast eine solide Basis. Das hier ist die Kur nach der Operation &ndash; optional, aber deutlich effektiver als nur die technische Basis.
+                <strong className="text-black">Nur f&uuml;r laufende Betreuungspakete.</strong> Wenn du das einmalige Upgrade gew&auml;hlt hast, bist du nach Schritt&nbsp;3 fertig und hast eine solide Basis. Das hier ist die Kur nach der Operation, optional, aber deutlich effektiver als nur die technische Basis.
               </p>
               <p>
-                (Stell dir vor, du gehst ins Fitnessstudio, l&auml;sst dir einen perfekten Trainingsplan schreiben &ndash; und gehst dann nie wieder hin. Die Basis stimmt, aber die Ergebnisse kommen erst durchs Training.)
+                (Stell dir vor, du gehst ins Fitnessstudio, l&auml;sst dir einen perfekten Trainingsplan schreiben, und gehst dann nie wieder hin. Die Basis stimmt, aber die Ergebnisse kommen erst durchs Training.)
               </p>
             </div>
 
@@ -408,7 +408,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
                   <div>
                     <h3 className="text-lg font-semibold text-black mb-2">Content f&uuml;r KI-Zitierbarkeit</h3>
                     <p className="text-base text-gray-600 leading-relaxed">
-                      Inhalte, die nicht nur gut klingen, sondern von KI-Systemen als autoritative Quelle erkannt werden. Fachbeitr&auml;ge, Anleitungen, FAQ-Inhalte &ndash; alles strukturiert f&uuml;r maximale Extrahierbarkeit.
+                      Inhalte, die nicht nur gut klingen, sondern von KI-Systemen als autoritative Quelle erkannt werden. Fachbeitr&auml;ge, Anleitungen, FAQ-Inhalte, alles strukturiert f&uuml;r maximale Extrahierbarkeit.
                     </p>
                   </div>
                 </div>
@@ -420,7 +420,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
                   <div>
                     <h3 className="text-lg font-semibold text-black mb-2">Autorit&auml;ts-Aufbau</h3>
                     <p className="text-base text-gray-600 leading-relaxed">
-                      Verzeichniseintr&auml;ge, Erw&auml;hnungen in Fachmedien, konsistente NAP-Daten. KI-Systeme vertrauen Quellen, die von anderen Quellen best&auml;tigt werden. Das ist wie ein Empfehlungsschreiben &ndash; nur digital und f&uuml;r Algorithmen.
+                      Verzeichniseintr&auml;ge, Erw&auml;hnungen in Fachmedien, konsistente NAP-Daten. KI-Systeme vertrauen Quellen, die von anderen Quellen best&auml;tigt werden. Das ist wie ein Empfehlungsschreiben, nur digital und f&uuml;r Algorithmen.
                     </p>
                   </div>
                 </div>
@@ -432,7 +432,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
                   <div>
                     <h3 className="text-lg font-semibold text-black mb-2">Plattform-spezifisches Monitoring</h3>
                     <p className="text-base text-gray-600 leading-relaxed">
-                      W&ouml;chentliche Checks auf ChatGPT, Perplexity, Google&nbsp;AI Overviews, Claude und Copilot. Wo wirst du erw&auml;hnt? Wo nicht? Was hat sich ver&auml;ndert? Das ist Detektivarbeit &ndash; manuell, nicht automatisiert, weil es noch kein Tool gibt, das das zuverl&auml;ssig macht.
+                      W&ouml;chentliche Checks auf ChatGPT, Perplexity, Google&nbsp;AI Overviews, Claude und Copilot. Wo wirst du erw&auml;hnt? Wo nicht? Was hat sich ver&auml;ndert? Das ist Detektivarbeit, manuell, nicht automatisiert, weil es noch kein Tool gibt, das das zuverl&auml;ssig macht.
                     </p>
                   </div>
                 </div>
@@ -447,7 +447,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
               <p>
-                Hier wird es interessant. Und hier trennt sich die Spreu vom Weizen &ndash; weil ich dir <strong className="text-black">echte Zahlen zeige, nicht Vanity-Metriken</strong>. Kein &bdquo;dein Domain-Rating ist um 3&nbsp;Punkte gestiegen&ldquo;. Sondern: &bdquo;ChatGPT empfiehlt dich jetzt bei diesen 12&nbsp;Fragen.&ldquo;
+                Hier wird es interessant. Und hier trennt sich die Spreu vom Weizen, weil ich dir <strong className="text-black">echte Zahlen zeige, nicht Vanity-Metriken</strong>. Kein &bdquo;dein Domain-Rating ist um 3&nbsp;Punkte gestiegen&ldquo;. Sondern: &bdquo;ChatGPT empfiehlt dich jetzt bei diesen 12&nbsp;Fragen.&ldquo;
               </p>
             </div>
 
@@ -466,7 +466,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
                 <div className="w-12 h-12 bg-brand-accent/10 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <span className="text-brand-accent font-bold text-lg">&#8596;</span>
                 </div>
-                <h3 className="text-lg font-semibold text-black mb-2">Vorher &ndash; Nachher</h3>
+                <h3 className="text-lg font-semibold text-black mb-2">Vorher und Nachher</h3>
                 <p className="text-base text-gray-600 leading-relaxed">
                   Direkte Vergleiche: Wo standest du vor dem Projekt? Wo stehst du jetzt? Klar, visuell, unbestreitbar.
                 </p>
@@ -518,7 +518,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
 
             <div className="bg-white border-2 border-brand-accent rounded-2xl p-6 md:p-8 shadow-sm mt-8">
               <p className="text-base text-gray-700 leading-relaxed">
-                <strong className="text-black">Warum ich dir das sage?</strong> Weil Ehrlichkeit das Einzige ist, was langfristig funktioniert. Sowohl im Marketing als auch in der Kundenbeziehung. Wenn du nach jemandem suchst, der dir das Blaue vom Himmel verspricht, bin ich der Falsche. Wenn du jemanden suchst, der liefert &ndash; dann reden wir.
+                <strong className="text-black">Warum ich dir das sage?</strong> Weil Ehrlichkeit das Einzige ist, was langfristig funktioniert. Sowohl im Marketing als auch in der Kundenbeziehung. Wenn du nach jemandem suchst, der dir das Blaue vom Himmel verspricht, bin ich der Falsche. Wenn du jemanden suchst, der liefert, dann reden wir.
               </p>
             </div>
         </section>
@@ -526,11 +526,11 @@ export default function KiSichtbarkeitBeauftragenPage() {
         {/* Die 3 häufigsten Bedenken */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-              Die 3&nbsp;h&auml;ufigsten Bedenken &ndash; und ehrliche Antworten
+              Die 3&nbsp;h&auml;ufigsten Bedenken, und ehrliche Antworten
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed mb-10">
               <p>
-                Jeder hat Bedenken. Das ist normal. Wer keine Bedenken hat, hat nicht richtig nachgedacht. Hier sind die drei, die ich am h&auml;ufigsten h&ouml;re &ndash; und meine ungefilterten Antworten.
+                Jeder hat Bedenken. Das ist normal. Wer keine Bedenken hat, hat nicht richtig nachgedacht. Hier sind die drei, die ich am h&auml;ufigsten h&ouml;re, und meine ungefilterten Antworten.
               </p>
             </div>
 
@@ -546,7 +546,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
                     Die ehrliche Rechnung: Wenn dein durchschnittlicher Auftragswert bei 3.000&nbsp;&euro; liegt und ein einziger Kunde &uuml;ber eine KI-Empfehlung kommt, hat sich die Investition doppelt gerechnet. <strong className="text-black">Ein Kunde. Ein.</strong>
                   </p>
                   <p>
-                    Teuer ist nicht, was du bezahlst. Teuer ist, was du verpasst. Und gerade sind das die Kunden, die ChatGPT fragen: &bdquo;Wer ist der beste Anbieter f&uuml;r X in Hamburg?&ldquo; &ndash; und dich nicht finden.
+                    Teuer ist nicht, was du bezahlst. Teuer ist, was du verpasst. Und gerade sind das die Kunden, die ChatGPT fragen: &bdquo;Wer ist der beste Anbieter f&uuml;r X in Hamburg?&ldquo;, und dich nicht finden.
                   </p>
                 </div>
               </div>
@@ -573,7 +573,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
                     </p>
                   </div>
                   <p>
-                    Frag mich nach Referenzen. Ich zeige dir gerne konkrete Beispiele &ndash; mit echten URLs und echten Screenshots, nicht anonymisierte Fallstudien.
+                    Frag mich nach Referenzen. Ich zeige dir gerne konkrete Beispiele, mit echten URLs und echten Screenshots, nicht anonymisierte Fallstudien.
                   </p>
                 </div>
               </div>
@@ -604,7 +604,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
                     </div>
                   </div>
                   <p>
-                    Das ist <strong className="text-black">schneller als klassisches SEO</strong> (6&ndash;12 Monate), aber kein Lichtschalter. Wer dir &bdquo;Ergebnisse in 48&nbsp;Stunden&ldquo; verspricht, hat entweder ein anderes Verst&auml;ndnis von &bdquo;Ergebnissen&ldquo; &ndash; oder ein sehr lockeres Verh&auml;ltnis zur Wahrheit.
+                    Das ist <strong className="text-black">schneller als klassisches SEO</strong> (6&ndash;12 Monate), aber kein Lichtschalter. Wer dir &bdquo;Ergebnisse in 48&nbsp;Stunden&ldquo; verspricht, hat entweder ein anderes Verst&auml;ndnis von &bdquo;Ergebnissen&ldquo;, oder ein sehr lockeres Verh&auml;ltnis zur Wahrheit.
                   </p>
                 </div>
               </div>
@@ -614,11 +614,11 @@ export default function KiSichtbarkeitBeauftragenPage() {
         {/* Der ganze Prozess auf einer Seite */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-              Der ganze Prozess &ndash; zusammengefasst
+              Der ganze Prozess, zusammengefasst
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed mb-10">
               <p>
-                Falls du ein Mensch bist, der gerne Tabellen liest (und seien wir ehrlich &ndash; wer nicht), hier ist der komplette Ablauf in komprimierter Form:
+                Falls du ein Mensch bist, der gerne Tabellen liest (und seien wir ehrlich, wer nicht), hier ist der komplette Ablauf in komprimierter Form:
               </p>
             </div>
 
@@ -668,20 +668,20 @@ export default function KiSichtbarkeitBeauftragenPage() {
             </div>
 
             <p className="text-base text-gray-500 mt-6">
-              Der wichtigste Punkt: <strong className="text-black">Dein Zeitaufwand ist minimal.</strong> Das Meiste passiert auf meiner Seite. Du musst kein KI-Experte werden &ndash; daf&uuml;r bezahlst du mich.
+              Der wichtigste Punkt: <strong className="text-black">Dein Zeitaufwand ist minimal.</strong> Das Meiste passiert auf meiner Seite. Du musst kein KI-Experte werden, daf&uuml;r bezahlst du mich.
             </p>
 
             <div className="bg-white border-2 border-brand-accent rounded-2xl p-6 md:p-8 shadow-sm mt-8">
               <p className="text-sm font-bold text-brand-accent mb-3">Das Kleingedruckte (das eigentlich gro&szlig;gedruckt sein sollte)</p>
               <div className="space-y-3 text-base text-gray-600 leading-relaxed">
                 <p>
-                  &#8226; <strong className="text-black">Keine Mindestlaufzeit</strong> &ndash; das einmalige Upgrade ist ein Projekt mit Anfang und Ende. Kein Abo, das sich automatisch verl&auml;ngert.
+                  &#8226; <strong className="text-black">Keine Mindestlaufzeit</strong>, das einmalige Upgrade ist ein Projekt mit Anfang und Ende. Kein Abo, das sich automatisch verl&auml;ngert.
                 </p>
                 <p>
-                  &#8226; <strong className="text-black">Festpreise</strong> &ndash; der Preis, den ich nenne, ist der Preis, den du zahlst. Keine &bdquo;unvorhergesehenen Mehraufw&auml;nde&ldquo;.
+                  &#8226; <strong className="text-black">Festpreise</strong>, der Preis, den ich nenne, ist der Preis, den du zahlst. Keine &bdquo;unvorhergesehenen Mehraufw&auml;nde&ldquo;.
                 </p>
                 <p>
-                  &#8226; <strong className="text-black">Zufriedenheit vor Rechnung</strong> &ndash; ich stelle die Schlussrechnung erst, wenn die Umsetzung abgenommen ist. Nicht vorher.
+                  &#8226; <strong className="text-black">Zufriedenheit vor Rechnung</strong>, ich stelle die Schlussrechnung erst, wenn die Umsetzung abgenommen ist. Nicht vorher.
                 </p>
               </div>
             </div>
@@ -690,7 +690,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
         {/* Für wen sich das lohnt, und für wen nicht */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-              F&uuml;r wen sich das lohnt &ndash; und f&uuml;r wen nicht
+              F&uuml;r wen sich das lohnt, und f&uuml;r wen nicht
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <div className="bg-white border border-gray-100 rounded-2xl p-6">
@@ -768,7 +768,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
                   className="bg-white border border-gray-100 rounded-2xl p-5 hover:border-brand-accent transition-colors group"
                 >
                   <p className="text-base font-semibold text-black group-hover:text-brand-accent transition-colors">KI-Sichtbarkeit Kosten</p>
-                  <p className="text-sm text-gray-500 mt-1">Was AI SEO wirklich kostet &ndash; transparente Preise und ROI-Rechnung.</p>
+                  <p className="text-sm text-gray-500 mt-1">Was AI SEO wirklich kostet, transparente Preise und ROI-Rechnung.</p>
                 </a>
                 <a
                   href="/wissen/ai-seo-agentur"

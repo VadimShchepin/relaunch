@@ -46,16 +46,16 @@ export default function AISeoAgenturHamburgPage() {
       painPoints={[
         'Viele Agenturen nennen plötzlich AI SEO, liefern aber nur die alte Mischung aus Keywords, Content-Paketen und Hoffnungsmanagement.',
         'Unternehmen investieren in Content, ohne dass klar ist, ob dieser jemals in ChatGPT, Perplexity oder Google AI als Quelle taucht.',
-        'Es fehlt eine technische und strategische Klammer zwischen Website, Entitaet, Belegen und lokalen Suchintentionen.',
+        'Es fehlt eine technische und strategische Klammer zwischen Website, Entität, Belegen und lokalen Suchintentionen.',
       ]}
       serviceCards={[
         {
           title: 'AI-SEO-Strategie für kaufnahe Queries',
-          text: 'Ich priorisiere Seiten und Suchanfragen, die in Richtung Beratung, Vergleich oder direkter Kontakt gehen. Keine Content-Inseln ohne Geschaeftsbezug.',
+          text: 'Ich priorisiere Seiten und Suchanfragen, die in Richtung Beratung, Vergleich oder direkter Kontakt gehen. Keine Content-Inseln ohne Geschäftsbezug.',
         },
         {
           title: 'Umbau bestehender Seiten',
-          text: 'Oft muss nicht alles neu. Haeufig reichen bessere Hauptaussagen, sauberere Informationsarchitektur, FAQs, lokale Signale und deutlichere Trust-Elemente.',
+          text: 'Oft muss nicht alles neu. Häufig reichen bessere Hauptaussagen, eine sauberere Informationsarchitektur und deutlichere Trust-Elemente.',
         },
         {
           title: 'Commercial Cluster Pages',

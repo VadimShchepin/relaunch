@@ -87,7 +87,7 @@ const faqSchema = {
             name: 'Verlieren Immobilienportale durch KI an Bedeutung?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Ja, teilweise. Wenn Käufer die KI fragen "Welcher Makler in Winterhude ist gut?", empfiehlt die KI direkt einzelne Makler - nicht ImmoScout24-Listings. Portale bleiben für die Objektsuche relevant, aber für die Maklerauswahl verschiebt sich der Erstkontakt zur KI.',
+                text: 'Ja, teilweise. Wenn Käufer die KI fragen "Welcher Makler in Winterhude ist gut?", empfiehlt die KI direkt einzelne Makler, nicht ImmoScout24-Listings. Portale bleiben für die Objektsuche relevant, aber für die Maklerauswahl verschiebt sich der Erstkontakt zur KI.',
             },
         },
     ],
@@ -136,7 +136,7 @@ const HeroSection: React.FC = () => (
                 Wenn Käufer die KI fragen
             </h1>
             <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
-                &ldquo;Welcher Immobilienmakler in Hamburg-Eppendorf ist empfehlenswert?&rdquo; &ndash; Diese Frage
+                &bdquo;Welcher Immobilienmakler in Hamburg-Eppendorf ist empfehlenswert?&ldquo; Diese Frage
                 geht immer öfter an ChatGPT statt an Google. Wer bei der Antwort fehlt, verliert den
                 Erstkontakt. Dieser Guide zeigt dir, wie du als Makler in KI-Empfehlungen reinkommst.
             </p>
@@ -195,21 +195,21 @@ const ProblemSection: React.FC = () => (
             <div className="bg-white border-2 border-brand-accent rounded-xl p-6 my-8 shadow-sm">
                 <p className="text-sm font-bold text-brand-accent mb-3 uppercase tracking-wider">Typischer Prompt</p>
                 <p className="text-xl md:text-2xl font-semibold text-black italic">
-                    &ldquo;Welcher Immobilienmakler in Hamburg-Eppendorf ist empfehlenswert? Wir suchen eine
-                    3-Zimmer-Wohnung bis 600.000 Euro.&rdquo;
+                    &bdquo;Welcher Immobilienmakler in Hamburg-Eppendorf ist empfehlenswert? Wir suchen eine
+                    3-Zimmer-Wohnung bis 600.000 Euro.&ldquo;
                 </p>
             </div>
 
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                 <p>
                     ChatGPT antwortet nicht mit einer Liste von zehn Maklern. Es empfiehlt zwei bis drei
-                    konkrete Namen &ndash; mit Begründung. &ldquo;Makler X ist auf Eppendorf spezialisiert,
+                    konkrete Namen, mit Begründung. &bdquo;Makler X ist auf Eppendorf spezialisiert,
                     hat 120 Google-Bewertungen mit 4,9 Sternen und wurde vom Hamburger Abendblatt als
-                    lokaler Experte zitiert.&rdquo;
+                    lokaler Experte zitiert.&ldquo;
                 </p>
                 <p>
                     ImmoScout24 dominiert nach wie vor die Google-Suchergebnisse. Aber wenn die KI
-                    gefragt wird, empfiehlt sie nicht das Portal &ndash; sie empfiehlt einzelne Makler.
+                    gefragt wird, empfiehlt sie nicht das Portal, sondern einzelne Makler.
                     Das verändert die Spielregeln fundamental.
                 </p>
                 <p>
@@ -217,7 +217,7 @@ const ProblemSection: React.FC = () => (
                     Wohnung für 500.000 Euro sind das 15.000 bis 30.000 Euro. Jeder KI-generierte
                     Kontakt hat damit einen potenziellen Wert, der klassische Google-Ads-Leads in
                     den Schatten stellt. Und das Entscheidende: Eine KI-Empfehlung kommt mit einem
-                    Vertrauensvorschuss. Der Kunde hat nicht zehn Makler verglichen &ndash; die KI hat
+                    Vertrauensvorschuss. Der Kunde hat nicht zehn Makler verglichen. Die KI hat
                     für ihn entschieden.
                 </p>
             </div>
@@ -234,7 +234,7 @@ const WhyItMattersSection: React.FC = () => (
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
                 <p>
-                    Immobilien sind ein klassisches YMYL-Thema &ndash; Your Money, Your Life. Eine
+                    Immobilien sind ein klassisches YMYL-Thema (Your Money, Your Life). Eine
                     Immobilientransaktion ist für die meisten Menschen die größte finanzielle
                     Entscheidung ihres Lebens. KI-Systeme behandeln solche Anfragen mit besonderer
                     Sorgfalt und empfehlen nur Anbieter mit eindeutigem Vertrauensprofil.
@@ -256,7 +256,7 @@ const WhyItMattersSection: React.FC = () => (
                     <p className="text-gray-600 text-base">
                         Immobilien sind hyperlokal. Ein Makler, der Winterhude kennt, ist für einen
                         Winterhude-Verkäufer relevanter als ein bundesweiter Franchise. KI-Systeme
-                        verstehen das &ndash; und bevorzugen nachweisbare lokale Spezialisierung gegenüber
+                        verstehen das und bevorzugen nachweisbare lokale Spezialisierung gegenüber
                         generischer Marktabdeckung.
                     </p>
                 </div>
@@ -264,7 +264,7 @@ const WhyItMattersSection: React.FC = () => (
                     <h3 className="font-semibold text-black text-lg mb-3">Portale verlieren den Erstkontakt</h3>
                     <p className="text-gray-600 text-base">
                         Wenn die KI direkt Makler empfiehlt, umgeht der Käufer ImmoScout24, Immowelt
-                        und Co. komplett. Der Erstkontakt findet über die KI-Empfehlung statt &ndash; ohne
+                        und Co. komplett. Der Erstkontakt findet über die KI-Empfehlung statt, ohne
                         Portal-Provision, ohne Vergleich mit zehn anderen Anbietern. Das ist ein
                         Paradigmenwechsel.
                     </p>
@@ -274,7 +274,7 @@ const WhyItMattersSection: React.FC = () => (
                     <p className="text-gray-600 text-base">
                         Bei Provisionen von 15.000 bis 30.000 Euro pro Transaktion ist der ROI von
                         KI-Sichtbarkeit im Immobilienbereich extrem hoch. Zwei bis drei KI-generierte
-                        Abschlüsse pro Jahr finanzieren eine komplette KI-SEO-Strategie &ndash; mit Gewinn.
+                        Abschlüsse pro Jahr finanzieren eine komplette KI-SEO-Strategie, mit Gewinn.
                     </p>
                 </div>
             </div>
@@ -316,7 +316,7 @@ const FactorsSection: React.FC = () => (
                     },
                     {
                         title: 'Spezialisierung',
-                        desc: 'Luxusimmobilien, Gewerbeimmobilien, Eigentumswohnungen, Kapitalanlagen, Neubauprojekte &ndash; klare Spezialisierung hilft der KI bei der Zuordnung. Wer alles kann, wird für nichts empfohlen. Wer sich als Spezialist für Altbau-ETW in Eimsbüttel positioniert, bekommt genau diese Anfragen.',
+                        desc: 'Luxusimmobilien, Gewerbeimmobilien, Eigentumswohnungen, Kapitalanlagen, Neubauprojekte: klare Spezialisierung hilft der KI bei der Zuordnung. Wer alles kann, wird für nichts empfohlen. Wer sich als Spezialist für Altbau-ETW in Eimsbüttel positioniert, bekommt genau diese Anfragen.',
                     },
                 ].map((factor, i) => (
                     <FadeIn key={i} delay={i * 50}>
@@ -363,12 +363,12 @@ const StrategiesSection: React.FC = () => (
                     {
                         num: '05',
                         title: 'Bewertungsmanagement nach jedem Abschluss',
-                        text: 'Systematischer Prozess: Nach jeder Schlüsselübergabe innerhalb von 48 Stunden eine persönliche Bewertungsbitte senden. Google, ProvenExpert und ImmoScout24 abdecken. Auf jede Bewertung antworten &ndash; auch auf positive. Ziel: Mindestens 5 neue Bewertungen pro Quartal. Die KI gewichtet Aktualität und Kontinuität.',
+                        text: 'Systematischer Prozess: Nach jeder Schlüsselübergabe innerhalb von 48 Stunden eine persönliche Bewertungsbitte senden. Google, ProvenExpert und ImmoScout24 abdecken. Auf jede Bewertung antworten, auch auf positive. Ziel: Mindestens 5 neue Bewertungen pro Quartal. Die KI gewichtet Aktualität und Kontinuität.',
                     },
                     {
                         num: '06',
                         title: 'Marktexpertise durch Blog und Ratgeber zeigen',
-                        text: 'Regelmäßige Artikel zu Themen, die Käufer und Verkäufer bewegen: "Was kostet ein Makler in Hamburg?", "Immobilie verkaufen ohne Makler &ndash; lohnt sich das?", "Grunderwerbsteuer Hamburg: Was Käufer wissen müssen." Beantworte exakt die Fragen, die auch an KI-Systeme gestellt werden. Direkte Antwort in den ersten zwei Sätzen.',
+                        text: 'Regelmäßige Artikel zu Themen, die Käufer und Verkäufer bewegen: "Was kostet ein Makler in Hamburg?", "Immobilie verkaufen ohne Makler, lohnt sich das?", "Grunderwerbsteuer Hamburg: Was Käufer wissen müssen." Beantworte exakt die Fragen, die auch an KI-Systeme gestellt werden. Direkte Antwort in den ersten zwei Sätzen.',
                     },
                     {
                         num: '07',
@@ -415,7 +415,7 @@ const MaklerTypesSection: React.FC = () => (
                     <p className="text-gray-600 leading-relaxed">
                         <strong>Strategie:</strong> Positioniere dich als der Experte für zwei bis drei Stadtteile.
                         Persönliche Marke aufbauen, Gesicht zeigen, Expertise durch Content belegen. Du brauchst
-                        weniger Volumen als große Büros &ndash; dafür mehr Tiefe.
+                        weniger Volumen als große Büros, dafür mehr Tiefe.
                     </p>
                 </div>
 
@@ -442,7 +442,7 @@ const MaklerTypesSection: React.FC = () => (
                         <strong>Herausforderung:</strong> Die KI empfiehlt oft die Marke generisch, nicht
                         deinen spezifischen Standort. Lösung: Lokale Differenzierung durch eigene Inhalte,
                         eigenes Google-Business-Profil und standortspezifische Bewertungen. Die Franchise-Marke
-                        öffnet die Tür &ndash; lokale Expertise schließt den Deal.
+                        öffnet die Tür, lokale Expertise schließt den Deal.
                     </p>
                 </div>
 
@@ -450,7 +450,7 @@ const MaklerTypesSection: React.FC = () => (
                     <h3 className="font-semibold text-black text-lg mb-2">Bauträger-Vertrieb</h3>
                     <p className="text-gray-600 leading-relaxed mb-3">
                         <strong>Vorteil:</strong> Neubauprojekte sind konkret, aktuell und hoch relevant
-                        für KI-Anfragen wie &ldquo;Neubau kaufen in Hamburg&rdquo;.
+                        für KI-Anfragen wie &bdquo;Neubau kaufen in Hamburg&ldquo;.
                     </p>
                     <p className="text-gray-600 leading-relaxed">
                         <strong>Strategie:</strong> Projektseiten mit detaillierten Informationen (Grundrisse,
@@ -479,8 +479,8 @@ const HamburgSection: React.FC = () => (
                     wettbewerbsrelevant.
                 </p>
                 <p>
-                    Die Stadtteile sind der Schlüssel. Käufer suchen nicht &ldquo;Makler Hamburg&rdquo; &ndash;
-                    sie suchen &ldquo;Makler Eppendorf&rdquo; oder &ldquo;Immobilien Blankenese&rdquo;. Jeder
+                    Die Stadtteile sind der Schlüssel. Käufer suchen nicht &bdquo;Makler Hamburg&ldquo;,
+                    sondern &bdquo;Makler Eppendorf&ldquo; oder &bdquo;Immobilien Blankenese&ldquo;. Jeder
                     Stadtteil hat sein eigenes Preisniveau, seine eigene Käuferstruktur und seinen
                     eigenen Charakter. Wer das in Content abbildet, wird von der KI als lokaler
                     Experte erkannt.
@@ -527,7 +527,7 @@ const HamburgSection: React.FC = () => (
                 <p>
                     Eine IVD-Nord-Mitgliedschaft stärkt dein Vertrauensprofil bei KI-Systemen.
                     Der IVD (Immobilienverband Deutschland) ist eine der meistzitierten Branchenquellen
-                    in Immobilien-Kontexten. Wenn die KI &ldquo;IVD-zertifizierter Makler&rdquo; als Qualitätsmerkmal
+                    in Immobilien-Kontexten. Wenn die KI &bdquo;IVD-zertifizierter Makler&ldquo; als Qualitätsmerkmal
                     erkennt, ist das ein Empfehlungssignal.
                 </p>
                 <p>
@@ -569,7 +569,7 @@ const FAQSection: React.FC = () => {
         },
         {
             q: 'Verlieren Immobilienportale durch KI an Bedeutung?',
-            a: 'Teilweise ja. Für die Objektsuche bleiben Portale relevant. Aber für die Maklerauswahl verschiebt sich der Erstkontakt zur KI. Wenn Käufer fragen "Welcher Makler in Winterhude ist gut?", empfiehlt die KI direkt &ndash; ohne den Umweg über ein Portal.',
+            a: 'Teilweise ja. Für die Objektsuche bleiben Portale relevant. Aber für die Maklerauswahl verschiebt sich der Erstkontakt zur KI. Wenn Käufer fragen "Welcher Makler in Winterhude ist gut?", empfiehlt die KI direkt, ohne den Umweg über ein Portal.',
         },
     ];
 
@@ -607,7 +607,7 @@ const SourcesSection: React.FC = () => (
                             rel="noopener noreferrer"
                             className="underline hover:text-brand-accent transition-colors"
                         >
-                            Ahrefs (2025): LLM SEO &ndash; Brand Mentions Correlation Study
+                            Ahrefs (2025): LLM SEO, Brand Mentions Correlation Study
                         </a>
                     </li>
                     <li>
@@ -690,7 +690,7 @@ const CTASection: React.FC = () => (
                         Werden Käufer und Verkäufer von der KI zu dir geschickt?
                     </h2>
                     <p className="text-lg text-gray-300 mb-8 max-w-2xl leading-relaxed">
-                        Ich prüfe, ob und wie KI-Systeme dein Maklerbüro aktuell empfehlen &ndash;
+                        Ich prüfe, ob und wie KI-Systeme dein Maklerbüro aktuell empfehlen:
                         ChatGPT, Perplexity und Google AI Overviews. Kostenlos, in 48 Stunden.
                     </p>
                     <Button href="/ai-sichtbarkeit-now" primary text="Kostenlose Kurzanalyse anfragen" className="!py-4 !px-8" />

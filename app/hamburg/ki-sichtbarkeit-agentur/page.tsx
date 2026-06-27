@@ -39,7 +39,7 @@ export default function KISichtbarkeitAgenturHamburgPage() {
       imageCaption="Lokale KI-Sichtbarkeit ist kein Effekt-SEO. Sie ist die saubere Übersetzung deines Angebots in ein Format, das Antwortsysteme verstehen."
       summaryItems={[
         'Die Seite zielt auf kaufnahe Suchanfragen von Unternehmen, die bereits aktiv nach einem AI-SEO-Partner in Hamburg suchen.',
-        'Sie verknuepft lokale Relevanz, Service-Klarheit und nachweisbare Expertise statt nur allgemeines KI-Gerede.',
+        'Sie verknüpft lokale Relevanz, Service-Klarheit und nachweisbare Expertise statt nur allgemeines KI-Gerede.',
         'EEAT wird über reale Cases, technische Kompetenz, Personensignale und klare Methodik transportiert.',
         'CTA und Seitenaufbau sind bewusst auf Kontakt und Audit ausgelegt, nicht auf reine Wissensnutzung.',
       ]}

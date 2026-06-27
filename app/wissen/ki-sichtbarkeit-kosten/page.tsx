@@ -180,14 +180,14 @@ export default function KiSichtbarkeitKostenPage() {
               KI-Sichtbarkeit Kosten: Was AI&nbsp;SEO wirklich kostet
             </h1>
             <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
-              Du gibst 3.000&nbsp;&euro;/Monat f&uuml;r Google Ads aus, aber KI-Empfehlungen bringen qualifiziertere Leads &ndash; kostenlos. Hier ist die ehrliche Aufschl&uuml;sselung, was KI-Sichtbarkeit 2026 kostet und wann sich die Investition rechnet.
+              Du gibst 3.000&nbsp;&euro;/Monat f&uuml;r Google Ads aus, aber KI-Empfehlungen bringen qualifiziertere Leads, und das kostenlos. Hier ist die ehrliche Aufschl&uuml;sselung, was KI-Sichtbarkeit 2026 kostet und wann sich die Investition rechnet.
             </p>
         </section>
 
         {/* TL;DR Preise */}
         <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-16">
                       <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
-              <p className="text-sm font-bold text-brand-accent mb-4">TL;DR &ndash; Preise auf einen Blick</p>
+              <p className="text-sm font-bold text-brand-accent mb-4">TL;DR: Preise auf einen Blick</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                 <div className="bg-gray-50 rounded-lg p-4">
                   <p className="text-sm text-gray-500 mb-1">Einmaliges Upgrade</p>
@@ -219,7 +219,7 @@ export default function KiSichtbarkeitKostenPage() {
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
               <p>
-                Der Markt f&uuml;r KI-Sichtbarkeit ist jung. Es gibt noch keine standardisierten Preise wie bei Google Ads oder klassischem SEO. Das macht die Kostenfrage schwieriger &ndash; aber auch ehrlicher. Denn es bedeutet: du zahlst f&uuml;r echte Arbeit, nicht f&uuml;r aufgebl&auml;hte Pakete.
+                Der Markt f&uuml;r KI-Sichtbarkeit ist jung. Es gibt noch keine standardisierten Preise wie bei Google Ads oder klassischem SEO. Das macht die Kostenfrage schwieriger, aber auch ehrlicher. Denn es bedeutet: du zahlst f&uuml;r echte Arbeit, nicht f&uuml;r aufgebl&auml;hte Pakete.
               </p>
               <p>
                 Hier sind die realistischen Preisbereiche, basierend auf dem, was seri&ouml;se Anbieter 2026 berechnen:
@@ -265,7 +265,7 @@ export default function KiSichtbarkeitKostenPage() {
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
               <p>
-                Die eigentliche Frage lautet nicht &bdquo;Was kostet KI-Sichtbarkeit?&ldquo; &ndash; sondern &bdquo;Was kostet es, NICHT sichtbar zu sein?&ldquo;
+                Die eigentliche Frage lautet nicht &bdquo;Was kostet KI-Sichtbarkeit?&ldquo;, sondern &bdquo;Was kostet es, NICHT sichtbar zu sein?&ldquo;
               </p>
               <p>
                 Jeder potenzielle Kunde, der ChatGPT, Perplexity oder Google AI nach einer L&ouml;sung fragt und dich nicht findet, ist ein verlorener Kunde. Du siehst ihn nicht mal in deiner Analytics. Er taucht nicht als Bounce auf, nicht als verlorener Lead. Er war nie da.
@@ -304,7 +304,7 @@ export default function KiSichtbarkeitKostenPage() {
                 </div>
               </div>
               <p className="text-sm text-gray-500 mt-4">
-                Selbst wenn nur die H&auml;lfte realistisch ist: 36.000&nbsp;&euro; entgangener Umsatz pro Jahr &ndash; verglichen mit einer Investition von 1.500&nbsp;&euro; f&uuml;r ein einmaliges Upgrade.
+                Selbst wenn nur die H&auml;lfte realistisch ist: 36.000&nbsp;&euro; entgangener Umsatz pro Jahr, verglichen mit einer Investition von 1.500&nbsp;&euro; f&uuml;r ein einmaliges Upgrade.
               </p>
             </div>
         </section>
@@ -675,7 +675,7 @@ export default function KiSichtbarkeitKostenPage() {
             <ul className="space-y-3 text-base text-gray-600 leading-relaxed">
               <li>
                 <span className="font-medium text-black">Aggarwal et al. (2023):</span>{' '}
-                &quot;GEO: Generative Engine Optimization&quot; &ndash; akademische Grundlage f&uuml;r AI SEO Methodik und ROI-Bewertung.
+                &quot;GEO: Generative Engine Optimization&quot;, akademische Grundlage f&uuml;r AI SEO Methodik und ROI-Bewertung.
               </li>
               <li>
                 <span className="font-medium text-black">Gartner (2025):</span>{' '}

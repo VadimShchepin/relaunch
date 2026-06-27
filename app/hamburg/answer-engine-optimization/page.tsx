@@ -59,11 +59,11 @@ export default function AnswerEngineOptimizationHamburgPage() {
         },
         {
           title: 'Verzahnung mit SEO und GEO',
-          text: 'AEO steht nicht isoliert. Es funktioniert am besten auf einem sauberen SEO-Fundament und mit guten Entity- und Autoritaetssignalen.',
+          text: 'AEO steht nicht isoliert. Es funktioniert am besten auf einem sauberen SEO-Fundament und mit guten Entity- und Autoritätssignalen.',
         },
         {
           title: 'Lokaler Conversion-Fokus',
-          text: 'Hamburger Nachfrage, lokale Leistungsanfälle und regionale Vertrauenssignale werden bewusst eingearbeitet statt generisch über Deutschland gestreut.',
+          text: 'Hamburger Nachfrage, lokale Leistungsanfragen und regionale Vertrauenssignale werden bewusst eingearbeitet statt generisch über Deutschland gestreut.',
         },
       ]}
       eeatCards={[
@@ -100,7 +100,7 @@ export default function AnswerEngineOptimizationHamburgPage() {
         },
         {
           title: 'Signale verdichten',
-          text: 'Mit Struktur, Verlinkung, lokalen Entitaeten und klaren CTA entsteht daraus eine Seite, die nicht nur informiert, sondern auch verkauft.',
+          text: 'Mit Struktur, Verlinkung, lokalen Entitäten und klaren CTA entsteht daraus eine Seite, die nicht nur informiert, sondern auch verkauft.',
         },
       ]}
       faqItems={[
@@ -114,7 +114,7 @@ export default function AnswerEngineOptimizationHamburgPage() {
         },
         {
           q: 'Brauche ich dafür neue Seiten?',
-          a: 'Haefig ja, aber gezielt. Gute AEO-Arbeit bedeutet nicht 30 neue Artikel, sondern die richtigen Money-Pages mit echter Antwortlogik.',
+          a: 'Häufig ja, aber gezielt. Gute AEO-Arbeit bedeutet nicht 30 neue Artikel, sondern die richtigen Money-Pages mit echter Antwortlogik.',
         },
       ]}
       relatedLinks={[

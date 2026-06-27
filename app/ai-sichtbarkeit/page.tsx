@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => (
                     Wirst du genannt,<br />wenn KI gefragt wird?
                 </h1>
                 <p className="text-lg md:text-xl text-gray-700 max-w-2xl mb-8 leading-relaxed">
-                    Ich helfe Hamburger Unternehmen dabei, in ChatGPT, Perplexity und Google AI empfohlen zu werden – und messe, ob daraus echte Anfragen entstehen.
+                    Ich helfe Hamburger Unternehmen dabei, in ChatGPT, Perplexity und Google AI empfohlen zu werden, und messe, ob daraus echte Anfragen entstehen.
                 </p>
 
                 {/* Micro-proof strip */}
@@ -53,7 +53,7 @@ const HeroSection: React.FC = () => (
                     </div>
                     <div className="flex items-start gap-3 text-sm md:text-base text-gray-600">
                         <CheckIcon className="w-5 h-5 text-brand-accent flex-shrink-0 mt-0.5" />
-                        <span><strong className="text-black">Technik + Content:</strong> nicht nur Texte – auch Struktur, Schema, Tracking, Performance</span>
+                        <span><strong className="text-black">Technik + Content:</strong> nicht nur Texte, auch Struktur, Schema, Tracking, Performance</span>
                     </div>
                 </div>
 
@@ -86,9 +86,9 @@ const ProblemSection: React.FC = () => (
                 <span className="text-gray-400">KI bringt Empfehlungen.</span>
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed max-w-2xl mb-12">
-                <p>Viele Websites sind "auffindbar" – aber werden von KI nicht als Quelle genannt.</p>
+                <p>Viele Websites sind "auffindbar", werden von KI aber nicht als Quelle genannt.</p>
                 <p>LLMs empfehlen nicht die schönste Seite, sondern die, die sie verstehen und der sie vertrauen.</p>
-                <p>Das lässt sich beeinflussen – mit klarer Struktur, Signalen und Content, der für KI "zitierbar" ist.</p>
+                <p>Das lässt sich beeinflussen, mit klarer Struktur, Signalen und Content, der für KI "zitierbar" ist.</p>
             </div>
 
             {/* Key Points */}
@@ -154,7 +154,7 @@ const APPROACH_STEPS = [
     {
         num: "01",
         title: "Sichtbarkeits-Check in LLMs",
-        desc: "Welche Fragen führen zu euch – und wo taucht ihr nicht auf?"
+        desc: "Welche Fragen führen zu euch, und wo taucht ihr nicht auf?"
     },
     {
         num: "02",
@@ -423,7 +423,7 @@ const WhyMeSection: React.FC = () => {
 const FAQ_ITEMS = [
     {
         q: "Was ist KI-Sichtbarkeit überhaupt?",
-        a: "Genannt und empfohlen werden, wenn KI Fragen beantwortet – in ChatGPT, Perplexity, Google AI."
+        a: "Genannt und empfohlen werden, wenn KI Fragen beantwortet, in ChatGPT, Perplexity, Google AI."
     },
     {
         q: "Ist das nur SEO?",
@@ -439,7 +439,7 @@ const FAQ_ITEMS = [
     },
     {
         q: "Was kostet das?",
-        a: "Einstieg via Kurzanalyse (kostenlos), danach Umsetzung je nach Umfang – Fixpreis oder auf Projektbasis."
+        a: "Einstieg via Kurzanalyse (kostenlos), danach Umsetzung je nach Umfang (Fixpreis oder auf Projektbasis)."
     },
     {
         q: "Arbeitest du alleine?",
@@ -474,7 +474,7 @@ const FinalCTASection: React.FC = () => (
                 Willst du wissen, ob KI euch aktuell empfiehlt?
             </h2>
             <p className="text-lg text-gray-600 mb-6 max-w-2xl">
-                Schick mir eure Website + 1–2 Sätze, was ihr verkauft. Ich sag dir in 15 Minuten, ob das Thema bei euch hebelt – oder ob ihr etwas anderes priorisieren solltet.
+                Schick mir eure Website + 1–2 Sätze, was ihr verkauft. Ich sag dir in 15 Minuten, ob das Thema bei euch hebelt, oder ob ihr etwas anderes priorisieren solltet.
             </p>
             <p className="text-gray-500 mb-8 text-sm">Unsicher, ob KI euch überhaupt empfiehlt?</p>
             <div className="flex flex-col sm:flex-row gap-4">

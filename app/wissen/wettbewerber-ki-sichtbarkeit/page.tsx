@@ -9,11 +9,11 @@ import { Button } from '@/components/ui/Button';
 const FAQS = [
   {
     q: 'Wie finde ich heraus, ob mein Wettbewerber in KI-Systemen sichtbar ist?',
-    a: 'Frag ChatGPT, Perplexity und Google Gemini nach deiner Branche und deinem Standort. Zum Beispiel: \u201EWer ist der beste [deine Branche] in [deine Stadt]?\u201C Wenn dein Wettbewerber erw\u00E4hnt wird und du nicht \u2014 dann hast du deine Antwort. Mach das f\u00FCr 20\u201330 relevante Fragen. Dokumentiere die Ergebnisse. Das ist dein erster KI-Sichtbarkeits-Audit. Kostenlos, aber schmerzhaft ehrlich.',
+    a: 'Frag ChatGPT, Perplexity und Google Gemini nach deiner Branche und deinem Standort. Zum Beispiel: \u201EWer ist der beste [deine Branche] in [deine Stadt]?\u201C Wenn dein Wettbewerber erw\u00E4hnt wird und du nicht, dann hast du deine Antwort. Mach das f\u00FCr 20\u201330 relevante Fragen. Dokumentiere die Ergebnisse. Das ist dein erster KI-Sichtbarkeits-Audit. Kostenlos, aber schmerzhaft ehrlich.',
   },
   {
     q: 'Warum sehe ich diese verlorenen Leads nicht in Google Analytics?',
-    a: 'Weil diese Leads nie auf deiner Website waren. Google Analytics trackt Besucher \u2014 aber wenn jemand ChatGPT fragt und die Empfehlung deines Wettbewerbers bekommt, besucht er deine Seite gar nicht erst. Kein Besuch = kein Datenpunkt. Du kannst nicht messen, was nie passiert ist. Deshalb sind diese Leads \u201Eunsichtbar\u201C \u2014 sie existieren in einer Parallelwelt, die dein Analytics-Dashboard nicht kennt.',
+    a: 'Weil diese Leads nie auf deiner Website waren. Google Analytics trackt Besucher, aber wenn jemand ChatGPT fragt und die Empfehlung deines Wettbewerbers bekommt, besucht er deine Seite gar nicht erst. Kein Besuch = kein Datenpunkt. Du kannst nicht messen, was nie passiert ist. Deshalb sind diese Leads \u201Eunsichtbar\u201C: Sie existieren in einer Parallelwelt, die dein Analytics-Dashboard nicht kennt.',
   },
   {
     q: 'Wie lange dauert es, bis ich in KI-Antworten erscheine?',
@@ -21,7 +21,7 @@ const FAQS = [
   },
   {
     q: 'Ist KI-Sichtbarkeit nur f\u00FCr gro\u00DFe Unternehmen relevant?',
-    a: 'Im Gegenteil. KI-Systeme bevorzugen authentische Expertise \u00FCber gro\u00DFe Budgets. Ein Handwerksbetrieb mit echten Fallstudien und spezifischem Fachwissen kann in KI-Antworten neben Konzernen erscheinen \u2014 weil KI Qualit\u00E4t und Relevanz \u00FCber Domain Authority stellt. Die Eintrittsbarriere ist niedriger als bei klassischem SEO. Das macht KI-Sichtbarkeit gerade f\u00FCr kleine und mittlere Unternehmen zur gr\u00F6\u00DFten Chance seit Jahren.',
+    a: 'Im Gegenteil. KI-Systeme bevorzugen authentische Expertise \u00FCber gro\u00DFe Budgets. Ein Handwerksbetrieb mit echten Fallstudien und spezifischem Fachwissen kann in KI-Antworten neben Konzernen erscheinen, weil KI Qualit\u00E4t und Relevanz \u00FCber Domain Authority stellt. Die Eintrittsbarriere ist niedriger als bei klassischem SEO. Das macht KI-Sichtbarkeit gerade f\u00FCr kleine und mittlere Unternehmen zur gr\u00F6\u00DFten Chance seit Jahren.',
   },
   {
     q: 'Was kostet KI-Sichtbarkeits-Optimierung?',
@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: 'Ersetzt KI-Sichtbarkeit klassisches SEO?',
-    a: 'Nein. KI-Sichtbarkeit erg\u00E4nzt SEO. Google liefert immer noch den gr\u00F6\u00DFten Teil des Web-Traffics. Aber die Verteilung verschiebt sich: Laut SparkToro enden bereits \u00FCber 60\u00A0% aller Google-Suchen ohne Klick, und Gartner prognostiziert 25\u00A0% KI-basierte Suchen bis 2026. Die optimale Strategie kombiniert beides \u2014 klassisches SEO f\u00FCr die heutigen Klicks und KI-Sichtbarkeit f\u00FCr die Empfehlungen von morgen.',
+    a: 'Nein. KI-Sichtbarkeit erg\u00E4nzt SEO. Google liefert immer noch den gr\u00F6\u00DFten Teil des Web-Traffics. Aber die Verteilung verschiebt sich: Laut SparkToro enden bereits \u00FCber 60\u00A0% aller Google-Suchen ohne Klick, und Gartner prognostiziert 25\u00A0% KI-basierte Suchen bis 2026. Die optimale Strategie kombiniert beides: klassisches SEO f\u00FCr die heutigen Klicks und KI-Sichtbarkeit f\u00FCr die Empfehlungen von morgen.',
   },
 ];
 
@@ -127,7 +127,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
           Warum dein Wettbewerber Kunden bekommt, die du nie siehst
         </h1>
         <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
-          Es gibt Kunden, die dich suchen. Sie fragen ChatGPT. Sie fragen Perplexity. Sie bekommen eine Empfehlung &ndash; aber nicht deine. Und das Schlimmste: Du wirst nie erfahren, dass sie existiert haben.
+          Es gibt Kunden, die dich suchen. Sie fragen ChatGPT. Sie fragen Perplexity. Sie bekommen eine Empfehlung, aber nicht deine. Und das Schlimmste: Du wirst nie erfahren, dass sie existiert haben.
         </p>
       </section>
 
@@ -136,11 +136,11 @@ export default function WettbewerberKiSichtbarkeitPage() {
       {/* ============================================================ */}
       <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-12">
         <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
-          <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR &ndash; F&uuml;r die, die keine Kunden an Geister verlieren wollen</h2>
+          <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR: F&uuml;r die, die keine Kunden an Geister verlieren wollen</h2>
           <ul className="space-y-3 text-gray-700 leading-relaxed">
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">1.</span>
-              <span><strong className="text-black">KI-Systeme empfehlen deine Wettbewerber &ndash; und du bekommst es nie mit.</strong> Kein Analytics-Event. Kein Bounce. Einfach: nichts.</span>
+              <span><strong className="text-black">KI-Systeme empfehlen deine Wettbewerber, und du bekommst es nie mit.</strong> Kein Analytics-Event. Kein Bounce. Einfach: nichts.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">2.</span>
@@ -167,7 +167,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-          Stell dir vor, du verlierst einen Kunden &ndash; und wei&szlig;t es nicht einmal
+          Stell dir vor, du verlierst einen Kunden und wei&szlig;t es nicht einmal
         </h2>
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
@@ -190,7 +190,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
 
         <div className="bg-red-50 border border-red-100 rounded-xl p-5 my-8">
           <p className="text-lg font-semibold text-black leading-snug">
-            Das ist kein hypothetisches Szenario. Das passiert gerade. Jeden Tag. In jeder Branche. Und das Perfide daran: Du merkst es nicht, weil es nichts gibt, was du merken k&ouml;nntest. Das ist, als w&uuml;rdest du versuchen, einen Dieb zu fangen, der nie in dein Haus eingebrochen ist &ndash; weil er direkt beim Nachbarn reingegangen ist.
+            Das ist kein hypothetisches Szenario. Das passiert gerade. Jeden Tag. In jeder Branche. Und das Perfide daran: Du merkst es nicht, weil es nichts gibt, was du merken k&ouml;nntest. Das ist, als w&uuml;rdest du versuchen, einen Dieb zu fangen, der nie in dein Haus eingebrochen ist, weil er direkt beim Nachbarn reingegangen ist.
           </p>
         </div>
       </section>
@@ -211,22 +211,22 @@ export default function WettbewerberKiSichtbarkeitPage() {
             (Spoiler: Ist es nicht.)
           </p>
           <p>
-            Das Problem ist nicht, was du in deinem Dashboard siehst. <strong className="text-black">Das Problem ist, was du nicht siehst.</strong> Dein Dashboard zeigt dir die Menschen, die auf deine Website kommen. Es zeigt dir nicht die Menschen, die nie kommen &ndash; weil eine KI sie vorher abgefangen hat.
+            Das Problem ist nicht, was du in deinem Dashboard siehst. <strong className="text-black">Das Problem ist, was du nicht siehst.</strong> Dein Dashboard zeigt dir die Menschen, die auf deine Website kommen. Es zeigt dir nicht die Menschen, die nie kommen, weil eine KI sie vorher abgefangen hat.
           </p>
           <p>
-            Das ist, als w&uuml;rdest du die Gesundheit deines Restaurants daran messen, wie zufrieden die G&auml;ste sind &ndash; w&auml;hrend du nicht merkst, dass der Laden nebenan einen Lieferservice gestartet hat und 40&nbsp;% der Nachbarschaft nie mehr durch deine T&uuml;r kommt.
+            Das ist, als w&uuml;rdest du die Gesundheit deines Restaurants daran messen, wie zufrieden die G&auml;ste sind, w&auml;hrend du nicht merkst, dass der Laden nebenan einen Lieferservice gestartet hat und 40&nbsp;% der Nachbarschaft nie mehr durch deine T&uuml;r kommt.
           </p>
         </div>
 
         <div className="bg-white border-2 border-brand-accent rounded-xl p-6 shadow-sm my-8">
           <p className="text-lg md:text-xl font-semibold text-black leading-snug">
-            SparkToro / Datos (2025): &Uuml;ber 60&nbsp;% aller Google-Suchen enden ohne einen einzigen Klick. Gartner (2025): Bis 2026 werden 25&nbsp;% aller Suchanfragen &uuml;ber KI-Systeme laufen. Das sind keine Prognosen aus Science-Fiction-Romanen &ndash; das ist n&auml;chstes Jahr.
+            SparkToro / Datos (2025): &Uuml;ber 60&nbsp;% aller Google-Suchen enden ohne einen einzigen Klick. Gartner (2025): Bis 2026 werden 25&nbsp;% aller Suchanfragen &uuml;ber KI-Systeme laufen. Das sind keine Prognosen aus Science-Fiction-Romanen, das ist n&auml;chstes Jahr.
           </p>
         </div>
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
           <p>
-            Und hier wird es richtig unangenehm: <strong className="text-black">Die wertvollsten Leads sind oft die, die du nie siehst.</strong> Warum? Weil jemand, der ChatGPT nach einer Empfehlung fragt, kaufbereit ist. Der recherchiert nicht mehr. Der vergleicht nicht 15 Anbieter. Der will eine Antwort &ndash; und er bekommt eine.
+            Und hier wird es richtig unangenehm: <strong className="text-black">Die wertvollsten Leads sind oft die, die du nie siehst.</strong> Warum? Weil jemand, der ChatGPT nach einer Empfehlung fragt, kaufbereit ist. Der recherchiert nicht mehr. Der vergleicht nicht 15 Anbieter. Der will eine Antwort, und er bekommt eine.
           </p>
           <p>
             Nur halt nicht deine.
@@ -283,7 +283,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
               <tr className="border-b border-gray-100">
                 <td className="py-3 pr-4 font-medium text-black">Analytics-Sichtbarkeit</td>
                 <td className="py-3 pr-4">KI-Referral-Traffic messbar</td>
-                <td className="py-3">Kein Datenpunkt &ndash; Lead war nie da</td>
+                <td className="py-3">Kein Datenpunkt, Lead war nie da</td>
               </tr>
               <tr className="border-b border-gray-100">
                 <td className="py-3 pr-4 font-medium text-black">Wettbewerbsvorteil</td>
@@ -319,10 +319,10 @@ export default function WettbewerberKiSichtbarkeitPage() {
           <li>
             <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
               <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">
-                1. ChatGPT erw&auml;hnt ihn &ndash; und dich nicht
+                1. ChatGPT erw&auml;hnt ihn, dich aber nicht
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Der offensichtlichste Test: Frag ChatGPT nach deiner Branche und deinem Standort. <em>&bdquo;Wer ist der beste [Branche] in [Stadt]?&ldquo;</em> Wenn dein Wettbewerber erscheint und du nicht &ndash; dann ist das kein Zufall. <strong className="text-black">KI-Systeme empfehlen nicht zuf&auml;llig. Sie empfehlen auf Basis von Daten, Struktur und Reputation.</strong> Dein Wettbewerber hat diese Hausaufgaben gemacht. Du nicht.
+                Der offensichtlichste Test: Frag ChatGPT nach deiner Branche und deinem Standort. <em>&bdquo;Wer ist der beste [Branche] in [Stadt]?&ldquo;</em> Wenn dein Wettbewerber erscheint und du nicht, dann ist das kein Zufall. <strong className="text-black">KI-Systeme empfehlen nicht zuf&auml;llig. Sie empfehlen auf Basis von Daten, Struktur und Reputation.</strong> Dein Wettbewerber hat diese Hausaufgaben gemacht. Du nicht.
               </p>
             </div>
           </li>
@@ -333,7 +333,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
                 2. Seine Website hat strukturierte Daten, die du nicht hast
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Schema-Markup, FAQ-Sektionen, klare Answer-First-Strukturen, eine <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm">llms.txt</code> im Root-Verzeichnis. Das sind keine nerdigen Nice-to-haves. <strong className="text-black">Das sind Signale, die KI-Systemen sagen: &bdquo;Hier gibt es zitierbaren Content.&ldquo;</strong> Schau dir den Quellcode deines Wettbewerbers an. Wenn du dort JSON-LD, FAQPage-Schema und klare Heading-Hierarchien siehst &ndash; dann wei&szlig;t du, warum er sichtbar ist.
+                Schema-Markup, FAQ-Sektionen, klare Answer-First-Strukturen, eine <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm">llms.txt</code> im Root-Verzeichnis. Das sind keine nerdigen Nice-to-haves. <strong className="text-black">Das sind Signale, die KI-Systemen sagen: &bdquo;Hier gibt es zitierbaren Content.&ldquo;</strong> Schau dir den Quellcode deines Wettbewerbers an. Wenn du dort JSON-LD, FAQPage-Schema und klare Heading-Hierarchien siehst, dann wei&szlig;t du, warum er sichtbar ist.
               </p>
             </div>
           </li>
@@ -344,7 +344,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
                 3. Er wird in Perplexity als Quelle zitiert
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Perplexity zeigt seine Quellen transparent. Frag Perplexity nach Themen in deiner Branche. Wenn dein Wettbewerber als Quelle erscheint &ndash; mit Link &ndash; hat er es geschafft. Das ist das neue Backlink-&Auml;quivalent: <strong className="text-black">Eine Perplexity-Zitierung ist wertvoller als 100 Gastbeitr&auml;ge auf mittleren Blogs.</strong> Weil sie direkt im Moment der Kaufentscheidung sichtbar ist.
+                Perplexity zeigt seine Quellen transparent. Frag Perplexity nach Themen in deiner Branche. Wenn dein Wettbewerber als Quelle erscheint, mit Link, hat er es geschafft. Das ist das neue Backlink-&Auml;quivalent: <strong className="text-black">Eine Perplexity-Zitierung ist wertvoller als 100 Gastbeitr&auml;ge auf mittleren Blogs.</strong> Weil sie direkt im Moment der Kaufentscheidung sichtbar ist.
               </p>
             </div>
           </li>
@@ -352,10 +352,10 @@ export default function WettbewerberKiSichtbarkeitPage() {
           <li>
             <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
               <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">
-                4. Sein Branded Search Volume steigt &ndash; deins stagniert
+                4. Sein Branded Search Volume steigt, deins stagniert.
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Wenn KI-Systeme eine Marke empfehlen, googeln die Leute danach. Check mit Google Trends oder Ahrefs: Steigt das Suchvolumen f&uuml;r den Markennamen deines Wettbewerbers? <strong className="text-black">Steigendes Branded Search Volume ist der st&auml;rkste Indikator f&uuml;r funktionierende KI-Sichtbarkeit.</strong> Wenn sein Name h&auml;ufiger gesucht wird und deiner nicht &ndash; dann arbeitet KI f&uuml;r ihn und gegen dich.
+                Wenn KI-Systeme eine Marke empfehlen, googeln die Leute danach. Check mit Google Trends oder Ahrefs: Steigt das Suchvolumen f&uuml;r den Markennamen deines Wettbewerbers? <strong className="text-black">Steigendes Branded Search Volume ist der st&auml;rkste Indikator f&uuml;r funktionierende KI-Sichtbarkeit.</strong> Wenn sein Name h&auml;ufiger gesucht wird und deiner nicht, dann arbeitet KI f&uuml;r ihn und gegen dich.
               </p>
             </div>
           </li>
@@ -366,7 +366,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
                 5. Er bekommt Kunden, die &bdquo;aus dem Nichts&ldquo; kommen
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Frag mal bei deinem Wettbewerber (oder dessen Kunden). Woher kommen seine neuen Mandanten? Wenn die Antwort &ouml;fter &bdquo;Empfehlung&ldquo; oder &bdquo;online gefunden&ldquo; lautet, aber keine spezifische Website genannt wird &ndash; <strong className="text-black">dann kommen sie &uuml;ber KI. Sie wissen es nur selbst nicht.</strong> Der Kunde sagt &bdquo;Ich habe recherchiert&ldquo; und meint &bdquo;Ich habe ChatGPT gefragt&ldquo;. (Spoiler: Das passiert h&auml;ufiger als du denkst.)
+                Frag mal bei deinem Wettbewerber (oder dessen Kunden). Woher kommen seine neuen Mandanten? Wenn die Antwort &ouml;fter &bdquo;Empfehlung&ldquo; oder &bdquo;online gefunden&ldquo; lautet, aber keine spezifische Website genannt wird, <strong className="text-black">dann kommen sie &uuml;ber KI. Sie wissen es nur selbst nicht.</strong> Der Kunde sagt &bdquo;Ich habe recherchiert&ldquo; und meint &bdquo;Ich habe ChatGPT gefragt&ldquo;. (Spoiler: Das passiert h&auml;ufiger als du denkst.)
               </p>
             </div>
           </li>
@@ -383,13 +383,13 @@ export default function WettbewerberKiSichtbarkeitPage() {
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
           <p>
-            Lass uns das mal auseinandernehmen. Der klassische Marketing-Funnel sieht so aus: Impression &rarr; Klick &rarr; Website-Besuch &rarr; Conversion. Sch&ouml;n linear. Sch&ouml;n messbar. Sch&ouml;n falsch.
+            Schauen wir genauer hin. Der klassische Marketing-Funnel sieht so aus: Impression &rarr; Klick &rarr; Website-Besuch &rarr; Conversion. Sch&ouml;n linear. Sch&ouml;n messbar. Sch&ouml;n falsch.
           </p>
           <p>
             Der KI-Funnel sieht anders aus: <strong className="text-black">Frage an KI &rarr; Empfehlung &rarr; Vertrauen &rarr; direkte Kontaktaufnahme.</strong> Keine Website dazwischen. Kein Analytics-Event. Kein Tracking-Pixel. Einfach: jemand ruft an oder schreibt eine E-Mail, weil ChatGPT gesagt hat, du bist gut.
           </p>
           <p>
-            Das ist, als w&uuml;rdest du einen Laden betreiben und dein bester Verk&auml;ufer steht drau&szlig;en auf der Stra&szlig;e und schickt Kunden rein &ndash; aber du hast vergessen, ihn einzustellen. Er arbeitet f&uuml;r deinen Nachbarn.
+            Das ist, als w&uuml;rdest du einen Laden betreiben und dein bester Verk&auml;ufer steht drau&szlig;en auf der Stra&szlig;e und schickt Kunden rein, aber du hast vergessen, ihn einzustellen. Er arbeitet f&uuml;r deinen Nachbarn.
           </p>
         </div>
 
@@ -440,7 +440,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
             </div>
             <h3 className="text-xl font-semibold text-black mb-3">Von 0 auf konsistente KI-Sichtbarkeit in 90 Tagen</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Ein Hamburger Service-Unternehmen hatte exzellente Google-Rankings, aber null Pr&auml;senz in KI-Systemen. Kein ChatGPT. Kein Perplexity. Unsichtbar. Nach einer systematischen KI-Sichtbarkeits-Strategie &ndash; strukturierte Daten, E-E-A-T-Optimierung, zitierbarer Content &ndash; <strong className="text-black">erschien das Unternehmen innerhalb von 90 Tagen konsistent in KI-Empfehlungen f&uuml;r seine Branche und Region.</strong> Die Anfragen &uuml;ber &bdquo;unbekannte Quellen&ldquo; (sprich: KI-Empfehlungen) stiegen um 340&nbsp;%.
+              Ein Hamburger Service-Unternehmen hatte exzellente Google-Rankings, aber null Pr&auml;senz in KI-Systemen. Kein ChatGPT. Kein Perplexity. Unsichtbar. Nach einer systematischen KI-Sichtbarkeits-Strategie (strukturierte Daten, E-E-A-T-Optimierung, zitierbarer Content) <strong className="text-black">erschien das Unternehmen innerhalb von 90 Tagen konsistent in KI-Empfehlungen f&uuml;r seine Branche und Region.</strong> Die Anfragen &uuml;ber &bdquo;unbekannte Quellen&ldquo; (sprich: KI-Empfehlungen) stiegen um 340&nbsp;%.
             </p>
           </div>
 
@@ -451,7 +451,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
             </div>
             <h3 className="text-xl font-semibold text-black mb-3">Organischen Traffic verdoppelt durch KI-optimierten Content</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Ein K-Beauty-Shop setzte auf klassisches SEO &ndash; guter Content, gute Backlinks, gute Rankings. Dann wurde der Content f&uuml;r KI-Zitierbarkeit umstrukturiert: Answer-First-Format, FAQ-Schema, klare Produktvergleiche mit Quellenangaben. <strong className="text-black">Ergebnis: Der organische Traffic verdoppelte sich innerhalb von 6 Monaten</strong> &ndash; nicht weil Google den Content besser rankte, sondern weil KI-Systeme (besonders Google AI Overviews und Perplexity) den Shop als Quelle zitierten und neuen Traffic generierten.
+              Ein K-Beauty-Shop setzte auf klassisches SEO, guter Content, gute Backlinks, gute Rankings. Dann wurde der Content f&uuml;r KI-Zitierbarkeit umstrukturiert: Answer-First-Format, FAQ-Schema, klare Produktvergleiche mit Quellenangaben. <strong className="text-black">Ergebnis: Der organische Traffic verdoppelte sich innerhalb von 6 Monaten</strong>, nicht weil Google den Content besser rankte, sondern weil KI-Systeme (besonders Google AI Overviews und Perplexity) den Shop als Quelle zitierten und neuen Traffic generierten.
             </p>
           </div>
 
@@ -462,7 +462,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
             </div>
             <h3 className="text-xl font-semibold text-black mb-3">40 Kunden pro Monat durch KI-Sichtbarkeit</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Ein Entr&uuml;mpelungsunternehmen &ndash; keine sexy Branche, keine gro&szlig;en Budgets. Aber konsequente KI-Sichtbarkeits-Arbeit: lokale Strukturdaten, echte Kundenbewertungen, zitierbarer Content zu H&auml;usentr&uuml;mpelungs-Fragen. <strong className="text-black">Ergebnis: 40 qualifizierte Kundenanfragen pro Monat &ndash; der Gro&szlig;teil davon &uuml;ber KI-Empfehlungen und Voice Search.</strong> Der Gesch&auml;ftsf&uuml;hrer sagte: &bdquo;Ich verstehe nicht, woher die Kunden kommen, aber sie kommen.&ldquo; (Spoiler: Wir wussten es.)
+              Ein Entr&uuml;mpelungsunternehmen, keine sexy Branche, keine gro&szlig;en Budgets. Aber konsequente KI-Sichtbarkeits-Arbeit: lokale Strukturdaten, echte Kundenbewertungen, zitierbarer Content zu H&auml;usentr&uuml;mpelungs-Fragen. <strong className="text-black">Ergebnis: 40 qualifizierte Kundenanfragen pro Monat, der Gro&szlig;teil davon &uuml;ber KI-Empfehlungen und Voice Search.</strong> Der Gesch&auml;ftsf&uuml;hrer sagte: &bdquo;Ich verstehe nicht, woher die Kunden kommen, aber sie kommen.&ldquo; (Spoiler: Wir wussten es.)
             </p>
           </div>
         </div>
@@ -478,7 +478,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
           <p>
-            Vielleicht denkst du: &bdquo;Ist doch Zufall, wen ChatGPT empfiehlt.&ldquo; Nein. Ist es nicht. KI-Systeme empfehlen auf Basis von drei Faktoren &ndash; und keiner davon ist W&uuml;rfel.
+            Vielleicht denkst du: &bdquo;Ist doch Zufall, wen ChatGPT empfiehlt.&ldquo; Nein. Ist es nicht. KI-Systeme empfehlen auf Basis von drei Faktoren, und keiner davon ist W&uuml;rfel.
           </p>
         </div>
 
@@ -492,13 +492,13 @@ export default function WettbewerberKiSichtbarkeitPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6">
             <h3 className="text-lg font-semibold text-black mb-3">2. Strukturierte Signale</h3>
             <p className="text-gray-600 leading-relaxed">
-              Schema-Markup, FAQ-Sektionen, klare Heading-Hierarchien, <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm">llms.txt</code> &ndash; das sind die Signale, die KI-Systemen sagen: <strong className="text-black">&bdquo;Hier ist zitierbarer, vertrauensw&uuml;rdiger Content.&ldquo;</strong> Ohne diese Signale bist du Rauschen im Datenmeer.
+              Schema-Markup, FAQ-Sektionen, klare Heading-Hierarchien, <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm">llms.txt</code>, das sind die Signale, die KI-Systemen sagen: <strong className="text-black">&bdquo;Hier ist zitierbarer, vertrauensw&uuml;rdiger Content.&ldquo;</strong> Ohne diese Signale bist du Rauschen im Datenmeer.
             </p>
           </div>
           <div className="bg-white border border-gray-100 rounded-2xl p-6">
             <h3 className="text-lg font-semibold text-black mb-3">3. E-E-A-T-Reputation</h3>
             <p className="text-gray-600 leading-relaxed">
-              Experience, Expertise, Authoritativeness, Trustworthiness. KI-Systeme bewerten, ob du echte Expertise hast &ndash; <strong className="text-black">nicht ob du behauptest, sie zu haben.</strong> Echte Fallstudien, echte Autoren, echte Bewertungen. Alles andere ist Dekoration.
+              Experience, Expertise, Authoritativeness, Trustworthiness. KI-Systeme bewerten, ob du echte Expertise hast, <strong className="text-black">nicht ob du behauptest, sie zu haben.</strong> Echte Fallstudien, echte Autoren, echte Bewertungen. Alles andere ist Dekoration.
             </p>
           </div>
         </div>
@@ -523,7 +523,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
           <p>
-            Lass uns rechnen. Nicht mit Bauchgef&uuml;hl, sondern mit Zahlen.
+            Rechnen wir das durch. Nicht mit Bauchgef&uuml;hl, sondern mit Zahlen.
           </p>
           <p>
             Angenommen, in deiner Branche stellen pro Monat 200 potenzielle Kunden eine relevante Frage an KI-Systeme. (Konservativ. F&uuml;r Branchen wie Steuerberatung, Immobilien oder Handwerk ist die Zahl deutlich h&ouml;her.)
@@ -531,7 +531,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
         </div>
 
         <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8 my-8">
-          <h3 className="text-xl font-semibold text-black mb-4">Einfache Rechnung &ndash; pro Quartal, das du wartest:</h3>
+          <h3 className="text-xl font-semibold text-black mb-4">Einfache Rechnung, pro Quartal, das du wartest:</h3>
           <ul className="space-y-3 text-lg text-gray-600 leading-relaxed">
             <li className="flex items-start gap-2">
               <span className="text-red-500 font-bold mt-0.5 shrink-0">&bull;</span>
@@ -557,7 +557,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
             Und das Schlimmste: <strong className="text-black">W&auml;hrend du wartest, wird dein Wettbewerber sichtbarer.</strong> KI-Systeme lernen kontinuierlich. Je l&auml;nger dein Wettbewerber in KI-Antworten erscheint, desto st&auml;rker wird seine Position. Je l&auml;nger du unsichtbar bist, desto schwerer wird es, aufzuholen.
           </p>
           <p>
-            Das ist, als w&uuml;rdest du versuchen, einen B&auml;ren mit einer nassen Nudel zu bek&auml;mpfen &ndash; und der B&auml;r wird jeden Tag gr&ouml;&szlig;er.
+            Das ist, als w&uuml;rdest du versuchen, einen B&auml;ren mit einer nassen Nudel zu bek&auml;mpfen, und der B&auml;r wird jeden Tag gr&ouml;&szlig;er.
           </p>
         </div>
 
@@ -608,7 +608,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
                 3. Identifiziere deine 5 wichtigsten KI-Fragen
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Welche 5 Fragen stellen deine Kunden am h&auml;ufigsten? Nicht die Keywords &ndash; die echten Fragen. <em>&bdquo;Was kostet eine Badezimmer-Sanierung in Hamburg?&ldquo;</em> statt <em>&bdquo;Badezimmer Sanierung Hamburg Kosten&ldquo;</em>. <strong className="text-black">F&uuml;r jede dieser 5 Fragen brauchst du eine definitive, zitierbare Antwort auf deiner Website.</strong>
+                Welche 5 Fragen stellen deine Kunden am h&auml;ufigsten? Nicht die Keywords, die echten Fragen. <em>&bdquo;Was kostet eine Badezimmer-Sanierung in Hamburg?&ldquo;</em> statt <em>&bdquo;Badezimmer Sanierung Hamburg Kosten&ldquo;</em>. <strong className="text-black">F&uuml;r jede dieser 5 Fragen brauchst du eine definitive, zitierbare Antwort auf deiner Website.</strong>
               </p>
             </div>
           </li>
@@ -630,7 +630,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
                 5. Hol dir eine professionelle Analyse
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Du kannst die ersten 4 Schritte selbst machen. F&uuml;r eine systematische Strategie brauchst du jemanden, der das t&auml;glich macht. <strong className="text-black">Unsere kostenlose KI-Sichtbarkeitsanalyse zeigt dir in 30 Minuten, wo du stehst, wo dein Wettbewerber steht &ndash; und was du in den n&auml;chsten 90 Tagen tun musst.</strong> Kein Verkaufsgespr&auml;ch. Echte Daten. Ehrliche Einsch&auml;tzung.
+                Du kannst die ersten 4 Schritte selbst machen. F&uuml;r eine systematische Strategie brauchst du jemanden, der das t&auml;glich macht. <strong className="text-black">Unsere kostenlose KI-Sichtbarkeitsanalyse zeigt dir in 30 Minuten, wo du stehst, wo dein Wettbewerber steht, und was du in den n&auml;chsten 90 Tagen tun musst.</strong> Kein Verkaufsgespr&auml;ch. Echte Daten. Ehrliche Einsch&auml;tzung.
               </p>
             </div>
           </li>
@@ -656,7 +656,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
             Aber nicht alle.
           </p>
           <p>
-            Einer deiner Wettbewerber liest diesen Artikel &ndash; oder einen &auml;hnlichen &ndash; und handelt. Heute. Er bucht eine Analyse. Er &auml;ndert seine Content-Strategie. Er implementiert Schema-Markup. Er f&auml;ngt an, in KI-Systemen sichtbar zu werden.
+            Einer deiner Wettbewerber liest diesen Artikel, oder einen &auml;hnlichen, und handelt. Heute. Er bucht eine Analyse. Er &auml;ndert seine Content-Strategie. Er implementiert Schema-Markup. Er f&auml;ngt an, in KI-Systemen sichtbar zu werden.
           </p>
           <p>
             <strong className="text-black">In 90 Tagen bekommt er Kunden, die du nie siehst. In 180 Tagen hat er eine Position, die du nicht mehr einholen kannst. In einem Jahr fragst du dich, warum dein Gesch&auml;ft stagniert, obwohl dein Google-Ranking stabil ist.</strong>
@@ -668,7 +668,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
 
         <div className="bg-brand-accent/5 rounded-2xl p-6 md:p-8 mt-8">
           <p className="text-lg text-gray-700 leading-relaxed">
-            <strong className="text-black">Der gr&ouml;&szlig;te Wettbewerbsvorteil im KI-Zeitalter ist nicht Technologie. Es ist Geschwindigkeit.</strong> Nicht wer die beste Strategie hat, gewinnt. Sondern wer als Erster handelt. KI-Sichtbarkeit hat einen First-Mover-Advantage &ndash; und der Vorsprung wird gr&ouml;&szlig;er, nicht kleiner.
+            <strong className="text-black">Der gr&ouml;&szlig;te Wettbewerbsvorteil im KI-Zeitalter ist nicht Technologie. Es ist Geschwindigkeit.</strong> Nicht wer die beste Strategie hat, gewinnt. Sondern wer als Erster handelt. KI-Sichtbarkeit hat einen First-Mover-Advantage, und der Vorsprung wird gr&ouml;&szlig;er, nicht kleiner.
           </p>
         </div>
       </section>
@@ -686,7 +686,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
             Du gibst wahrscheinlich 3.000&ndash;10.000&nbsp;&euro; pro Monat f&uuml;r Marketing aus. Google Ads, SEO-Agentur, Social Media, vielleicht ein Newsletter-Tool. Alles sch&ouml;n messbar. Alles sch&ouml;n in Dashboards.
           </p>
           <p>
-            Und w&auml;hrenddessen bekommt dein Wettbewerber kostenlose Empfehlungen von der m&auml;chtigsten Suchmaschine, die je gebaut wurde &ndash; <strong className="text-black">und zahlt daf&uuml;r keinen Cent pro Klick.</strong>
+            Und w&auml;hrenddessen bekommt dein Wettbewerber kostenlose Empfehlungen von der m&auml;chtigsten Suchmaschine, die je gebaut wurde, <strong className="text-black">und zahlt daf&uuml;r keinen Cent pro Klick.</strong>
           </p>
           <p>
             KI-Empfehlungen sind das neue Word-of-Mouth. Nur schneller. Nur skalierbarer. Und komplett unsichtbar f&uuml;r jeden, der nicht darauf achtet.
@@ -732,7 +732,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
           <p>
-            Die Ironie: <strong className="text-black">Du investierst Tausende in Marketing-Kan&auml;le, die du messen kannst &ndash; und ignorierst den Kanal, der die besten Leads liefert, weil du ihn nicht messen kannst.</strong> Das ist, als w&uuml;rdest du nur in der K&uuml;che nach deinem Schl&uuml;ssel suchen, weil dort das Licht an ist &ndash; obwohl du ihn im Wohnzimmer verloren hast.
+            Die Ironie: <strong className="text-black">Du investierst Tausende in Marketing-Kan&auml;le, die du messen kannst, und ignorierst den Kanal, der die besten Leads liefert, weil du ihn nicht messen kannst.</strong> Das ist, als w&uuml;rdest du nur in der K&uuml;che nach deinem Schl&uuml;ssel suchen, weil dort das Licht an ist, obwohl du ihn im Wohnzimmer verloren hast.
           </p>
           <p>
             Die L&ouml;sung ist nicht, dein bestehendes Marketing abzuschalten. Die L&ouml;sung ist, einen Kanal hinzuzuf&uuml;gen, der Leads liefert, die dein Wettbewerber gerade alleine einsammelt.
@@ -785,7 +785,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
               KI-Sichtbarkeit messen
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Alle Tools und Methoden, um deine KI-Pr&auml;senz zu tracken &ndash; statt nur Traffic zu z&auml;hlen.
+              Alle Tools und Methoden, um deine KI-Pr&auml;senz zu tracken, statt nur Traffic zu z&auml;hlen.
             </p>
           </a>
 
@@ -797,7 +797,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
               Zero-Click-Zukunft
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Warum deine Website bald keinen Traffic mehr braucht &ndash; und welche neuen KPIs jetzt z&auml;hlen.
+              Warum deine Website bald keinen Traffic mehr braucht, und welche neuen KPIs jetzt z&auml;hlen.
             </p>
           </a>
 
@@ -809,7 +809,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
               KI-Markenwahrnehmung
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Wie KI-Systeme deine Marke wahrnehmen &ndash; und wie du das aktiv beeinflussen kannst.
+              Wie KI-Systeme deine Marke wahrnehmen, und wie du das aktiv beeinflussen kannst.
             </p>
           </a>
         </div>
@@ -821,7 +821,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
       <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
         <div className="bg-[#121212] rounded-3xl p-8 md:p-12 text-center">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-[-0.03em] text-white mb-4">
-            Finde heraus, ob dein Wettbewerber KI-sichtbar ist &ndash; und du nicht
+            Finde heraus, ob dein Wettbewerber KI-sichtbar ist, du aber nicht
           </h2>
           <p className="text-lg text-gray-400 leading-relaxed max-w-xl mx-auto mb-8">
             Unsere kostenlose KI-Sichtbarkeitsanalyse zeigt dir in 30 Minuten, wer in deiner Branche von KI-Systemen empfohlen wird. Spoiler: Du willst es wissen. Auch wenn es wehtut.

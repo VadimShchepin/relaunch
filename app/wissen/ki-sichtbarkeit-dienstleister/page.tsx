@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/Button';
 const FAQS = [
   {
     q: 'Was genau ist KI-Sichtbarkeit f\u00fcr Dienstleister?',
-    a: 'KI-Sichtbarkeit bedeutet, dass dein Unternehmen von ChatGPT, Perplexity, Claude und Google AI als vertrauensw\u00fcrdiger Anbieter empfohlen wird, wenn potenzielle Kunden nach deiner Dienstleistung fragen. Die KI nennt typischerweise nur 2\u20134 Anbieter pro Anfrage \u2014 der Rest existiert f\u00fcr den Suchenden nicht. F\u00fcr Dienstleister mit hohen Auftragsvolumen (5.000\u201350.000\u00a0\u20ac pro Mandat) kann eine einzige zus\u00e4tzliche KI-Empfehlung den gesamten Monatsumsatz ver\u00e4ndern.',
+    a: 'KI-Sichtbarkeit bedeutet, dass dein Unternehmen von ChatGPT, Perplexity, Claude und Google AI als vertrauensw\u00fcrdiger Anbieter empfohlen wird, wenn potenzielle Kunden nach deiner Dienstleistung fragen. Die KI nennt typischerweise nur 2\u20134 Anbieter pro Anfrage. Der Rest existiert f\u00fcr den Suchenden nicht. F\u00fcr Dienstleister mit hohen Auftragsvolumen (5.000\u201350.000\u00a0\u20ac pro Mandat) kann eine einzige zus\u00e4tzliche KI-Empfehlung den gesamten Monatsumsatz ver\u00e4ndern.',
   },
   {
     q: 'Warum empfiehlt ChatGPT meinen Wettbewerber und nicht mich?',
@@ -26,7 +26,7 @@ const FAQS = [
   },
   {
     q: 'Reicht meine bestehende Website f\u00fcr KI-Sichtbarkeit?',
-    a: 'Wahrscheinlich nicht in der aktuellen Form. Die meisten Dienstleister-Websites sind digitale Visitenkarten: \u201e\u00dcber uns\u201c, \u201eLeistungen\u201c als Aufz\u00e4hlung, ein Kontaktformular. KI-Systeme brauchen spezifische Leistungsseiten, FAQ-Bereiche mit konkreten Antworten, Schema.org-Markup, Fallstudien mit messbaren Ergebnissen und klare Autorit\u00e4tssignale. Die gute Nachricht: Du brauchst keine neue Website \u2014 du musst die bestehende strategisch erweitern.',
+    a: 'Wahrscheinlich nicht in der aktuellen Form. Die meisten Dienstleister-Websites sind digitale Visitenkarten: \u201e\u00dcber uns\u201c, \u201eLeistungen\u201c als Aufz\u00e4hlung, ein Kontaktformular. KI-Systeme brauchen spezifische Leistungsseiten, FAQ-Bereiche mit konkreten Antworten, Schema.org-Markup, Fallstudien mit messbaren Ergebnissen und klare Autorit\u00e4tssignale. Die gute Nachricht: Du brauchst keine neue Website, du musst die bestehende strategisch erweitern.',
   },
   {
     q: 'Was kostet KI-Sichtbarkeit f\u00fcr Dienstleister?',
@@ -120,7 +120,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
           </h1>
           <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
             Du bist seit 15&nbsp;Jahren der beste Steuerberater in deiner Stadt. Deine Mandanten lieben dich.
-            Aber wenn jemand ChatGPT fragt &ldquo;Welcher Steuerberater f&uuml;r Freiberufler in Hamburg?&rdquo;,
+            Aber wenn jemand ChatGPT fragt &bdquo;Welcher Steuerberater f&uuml;r Freiberufler in Hamburg?&ldquo;,
             empfiehlt die KI deinen Wettbewerber. Den mit der h&auml;sslicheren Website. Aber der besseren
             KI-Sichtbarkeit.
           </p>
@@ -143,7 +143,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
         {/* -------------------------------------------------------- */}
         <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-12">
           <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
-            <p className="text-sm font-bold text-brand-accent mb-3 uppercase tracking-wider">TL;DR &ndash; Das Wichtigste in 30&nbsp;Sekunden</p>
+            <p className="text-sm font-bold text-brand-accent mb-3 uppercase tracking-wider">TL;DR, Das Wichtigste in 30&nbsp;Sekunden</p>
             <ul className="space-y-2 text-gray-800">
               <li className="flex items-start gap-2">
                 <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">1.</span>
@@ -155,7 +155,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">3.</span>
-                <span>Die meisten Dienstleister sind KI-unsichtbar, weil sie auf Empfehlungen und Google-Rankings setzen &ndash; beides wird von KI gefressen.</span>
+                <span>Die meisten Dienstleister sind KI-unsichtbar, weil sie auf Empfehlungen und Google-Rankings setzen, beides wird von KI gefressen.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">4.</span>
@@ -179,8 +179,8 @@ export default function KiSichtbarkeitDienstleisterPage() {
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
             <p>
               Du bist gut. Richtig gut sogar. Deine Mandanten empfehlen dich weiter, dein Terminkalender
-              ist voll, und du denkst: <strong className="text-black">&ldquo;Wozu brauche ich diese
-              KI-Geschichte?&rdquo;</strong>
+              ist voll, und du denkst: <strong className="text-black">&bdquo;Wozu brauche ich diese
+              KI-Geschichte?&ldquo;</strong>
             </p>
             <p>
               Das ist, als w&uuml;rdest du als Herzchirurg in einem fensterlosen Keller operieren und dich
@@ -196,8 +196,8 @@ export default function KiSichtbarkeitDienstleisterPage() {
           <div className="bg-red-50 border border-red-100 rounded-xl p-5 my-8">
             <p className="font-semibold text-black mb-2">Die unbequeme Wahrheit</p>
             <p className="text-gray-700 leading-relaxed">
-              Wenn ein potenzieller Mandant ChatGPT fragt &ldquo;Bester Steuerberater f&uuml;r Freiberufler
-              Hamburg&rdquo; und du nicht in der Antwort auftauchst &ndash; dann existierst du f&uuml;r
+              Wenn ein potenzieller Mandant ChatGPT fragt &bdquo;Bester Steuerberater f&uuml;r Freiberufler
+              Hamburg&ldquo; und du nicht in der Antwort auftauchst, dann existierst du f&uuml;r
               diese Person nicht. Egal wie viele Empfehlungen du auf deiner Website hast.
               Egal wie viele Auszeichnungen an deiner Wand h&auml;ngen. <strong className="text-black">Die
               KI kennt dich nicht. Also empfiehlt sie dich nicht.</strong>
@@ -208,7 +208,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
             <p>
               Und hier kommt der paradoxe Teil: Genau die Dienstleister, die am meisten von KI-Empfehlungen
               profitieren w&uuml;rden, ignorieren das Thema am konsequentesten. Steuerberater, Architekten,
-              Unternehmensberater, Rechtsanw&auml;lte &ndash; sie alle verlassen sich auf ihr Netzwerk.
+              Unternehmensberater, Rechtsanw&auml;lte, sie alle verlassen sich auf ihr Netzwerk.
             </p>
             <p>
               (Spoiler: Dein Netzwerk fragt auch die KI. Nur sagt es dir nicht.)
@@ -247,11 +247,11 @@ export default function KiSichtbarkeitDienstleisterPage() {
               </thead>
               <tbody className="text-gray-600 text-[15px] leading-relaxed">
                 <tr className="border-b border-gray-100">
-                  <td className="py-3 pr-4">&ldquo;Steuerberater in Hamburg&rdquo; &ndash; einer von 800</td>
-                  <td className="py-3 pl-4">&ldquo;Steuerberater spezialisiert auf Freiberufler, 15&nbsp;Jahre Erfahrung, 200+ Mandanten, Fachautor&rdquo;</td>
+                  <td className="py-3 pr-4">&bdquo;Steuerberater in Hamburg&ldquo;, einer von 800</td>
+                  <td className="py-3 pl-4">&bdquo;Steuerberater spezialisiert auf Freiberufler, 15&nbsp;Jahre Erfahrung, 200+ Mandanten, Fachautor&ldquo;</td>
                 </tr>
                 <tr className="border-b border-gray-100">
-                  <td className="py-3 pr-4">Eine Seite: &ldquo;Unsere Leistungen&rdquo; (Aufz&auml;hlung)</td>
+                  <td className="py-3 pr-4">Eine Seite: &bdquo;Unsere Leistungen&ldquo; (Aufz&auml;hlung)</td>
                   <td className="py-3 pl-4">Eigene Leistungsseiten mit FAQ, Prozessbeschreibung, Preisrahmen und Fallstudien</td>
                 </tr>
                 <tr className="border-b border-gray-100">
@@ -267,7 +267,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
                   <td className="py-3 pl-4">Gastbeitr&auml;ge, Branchenverzeichnisse, Fachportale, Kammer-Eintr&auml;ge</td>
                 </tr>
                 <tr>
-                  <td className="py-3 pr-4">&ldquo;Kontaktieren Sie uns&rdquo; &ndash; Ende</td>
+                  <td className="py-3 pr-4">&bdquo;Kontaktieren Sie uns&ldquo;, Ende</td>
                   <td className="py-3 pl-4">Content, der KI-Fragen direkt beantwortet und als Quelle zitiert werden kann</td>
                 </tr>
               </tbody>
@@ -292,12 +292,12 @@ export default function KiSichtbarkeitDienstleisterPage() {
         {/* -------------------------------------------------------- */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
           <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-            So suchen Mandanten in der KI &ndash; branchenspezifisch
+            So suchen Mandanten in der KI: branchenspezifisch
           </h2>
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
             <p>
               Jede Branche hat ihre eigenen KI-Suchmuster. Hier siehst du, was potenzielle Mandanten
-              tats&auml;chlich in ChatGPT und Perplexity tippen &ndash; und warum du bei den meisten
+              tats&auml;chlich in ChatGPT und Perplexity tippen, und warum du bei den meisten
               Anfragen nicht auftauchst.
             </p>
           </div>
@@ -308,17 +308,17 @@ export default function KiSichtbarkeitDienstleisterPage() {
               <div className="space-y-3 text-gray-600 leading-relaxed">
                 <p>
                   <span className="font-medium text-gray-800">Typische KI-Anfragen:</span>{' '}
-                  &ldquo;Bester Steuerberater f&uuml;r Freiberufler Hamburg&rdquo; &middot;
-                  &ldquo;Steuerberater f&uuml;r GmbH-Gr&uuml;ndung&rdquo; &middot;
-                  &ldquo;Welcher Steuerberater kennt sich mit Kryptow&auml;hrungen aus?&rdquo;
+                  &bdquo;Bester Steuerberater f&uuml;r Freiberufler Hamburg&ldquo; &middot;
+                  &bdquo;Steuerberater f&uuml;r GmbH-Gr&uuml;ndung&ldquo; &middot;
+                  &bdquo;Welcher Steuerberater kennt sich mit Kryptow&auml;hrungen aus?&ldquo;
                 </p>
                 <p>
                   <span className="font-medium text-brand-accent">Das Problem:</span>{' '}
                   Die KI empfiehlt Kanzleien, die f&uuml;r diese Nischen eigene Leistungsseiten
-                  haben. Deine Seite &ldquo;Unsere Leistungen: Einkommensteuer, Umsatzsteuer,
-                  Lohnbuchhaltung...&rdquo; gibt der KI null Differenzierung.
+                  haben. Deine Seite &bdquo;Unsere Leistungen: Einkommensteuer, Umsatzsteuer,
+                  Lohnbuchhaltung...&ldquo; gibt der KI null Differenzierung.
                   Das ist, als w&uuml;rdest du auf einer Jobmesse einen Sticker tragen mit
-                  &ldquo;Ich kann Sachen&rdquo;.
+                  &bdquo;Ich kann Sachen&ldquo;.
                 </p>
               </div>
             </div>
@@ -328,9 +328,9 @@ export default function KiSichtbarkeitDienstleisterPage() {
               <div className="space-y-3 text-gray-600 leading-relaxed">
                 <p>
                   <span className="font-medium text-gray-800">Typische KI-Anfragen:</span>{' '}
-                  &ldquo;Architekt f&uuml;r energetische Sanierung&rdquo; &middot;
-                  &ldquo;Architekt Dachgeschossausbau Hamburg&rdquo; &middot;
-                  &ldquo;Welcher Architekt macht KfW-Effizienzhaus?&rdquo;
+                  &bdquo;Architekt f&uuml;r energetische Sanierung&ldquo; &middot;
+                  &bdquo;Architekt Dachgeschossausbau Hamburg&ldquo; &middot;
+                  &bdquo;Welcher Architekt macht KfW-Effizienzhaus?&ldquo;
                 </p>
                 <p>
                   <span className="font-medium text-brand-accent">Das Problem:</span>{' '}
@@ -346,15 +346,15 @@ export default function KiSichtbarkeitDienstleisterPage() {
               <div className="space-y-3 text-gray-600 leading-relaxed">
                 <p>
                   <span className="font-medium text-gray-800">Typische KI-Anfragen:</span>{' '}
-                  &ldquo;Berater f&uuml;r Digitalisierung Mittelstand&rdquo; &middot;
-                  &ldquo;Strategieberatung f&uuml;r Familienunternehmen&rdquo; &middot;
-                  &ldquo;Welcher Berater hilft bei der Nachfolgeplanung?&rdquo;
+                  &bdquo;Berater f&uuml;r Digitalisierung Mittelstand&ldquo; &middot;
+                  &bdquo;Strategieberatung f&uuml;r Familienunternehmen&ldquo; &middot;
+                  &bdquo;Welcher Berater hilft bei der Nachfolgeplanung?&ldquo;
                 </p>
                 <p>
                   <span className="font-medium text-brand-accent">Das Problem:</span>{' '}
-                  Berater-Websites sind die K&ouml;nigsklasse der Inhaltsleere. &ldquo;Wir
-                  begleiten Sie bei der Transformation.&rdquo; &ldquo;Wir denken ganzheitlich.&rdquo;
-                  &ldquo;Wir schaffen Mehrwert.&rdquo; Die KI liest das und denkt: Okay, dieser
+                  Berater-Websites sind die K&ouml;nigsklasse der Inhaltsleere. &bdquo;Wir
+                  begleiten Sie bei der Transformation.&ldquo; &bdquo;Wir denken ganzheitlich.&ldquo;
+                  &bdquo;Wir schaffen Mehrwert.&ldquo; Die KI liest das und denkt: Okay, dieser
                   Mensch macht... <em>irgendetwas</em>. N&auml;chster.
                 </p>
               </div>
@@ -365,15 +365,15 @@ export default function KiSichtbarkeitDienstleisterPage() {
               <div className="space-y-3 text-gray-600 leading-relaxed">
                 <p>
                   <span className="font-medium text-gray-800">Typische KI-Anfragen:</span>{' '}
-                  &ldquo;Anwalt f&uuml;r Arbeitsrecht K&uuml;ndigung&rdquo; &middot;
-                  &ldquo;Fachanwalt Mietrecht Hamburg Mietminderung&rdquo; &middot;
-                  &ldquo;Welcher Anwalt hilft bei Abfindungsverhandlung?&rdquo;
+                  &bdquo;Anwalt f&uuml;r Arbeitsrecht K&uuml;ndigung&ldquo; &middot;
+                  &bdquo;Fachanwalt Mietrecht Hamburg Mietminderung&ldquo; &middot;
+                  &bdquo;Welcher Anwalt hilft bei Abfindungsverhandlung?&ldquo;
                 </p>
                 <p>
                   <span className="font-medium text-brand-accent">Das Problem:</span>{' '}
                   Kanzleien, die auf anwalt.de, JUVE und in Fachzeitschriften pr&auml;sent sind,
                   werden von der KI als vertrauensw&uuml;rdiger eingestuft. Deine Website allein
-                  reicht nicht &ndash; die KI will Konsistenz &uuml;ber mehrere Quellen.
+                  reicht nicht, die KI will Konsistenz &uuml;ber mehrere Quellen.
                   <em> (Ja, auch die IHK z&auml;hlt.)</em>
                 </p>
               </div>
@@ -390,7 +390,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
           </h2>
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
             <p>
-              &ldquo;Ich lebe von Empfehlungen, das hat immer funktioniert.&rdquo;
+              &bdquo;Ich lebe von Empfehlungen, das hat immer funktioniert.&ldquo;
             </p>
             <p>
               Stimmt. Hat es. Aber die Empfehlungskette bricht gerade.
@@ -422,14 +422,14 @@ export default function KiSichtbarkeitDienstleisterPage() {
             <div className="bg-white border border-gray-100 rounded-2xl p-6">
               <h3 className="font-semibold text-black text-lg mb-2">KI ersetzt Empfehlungen</h3>
               <p className="text-gray-600 text-base">
-                &ldquo;Welchen Steuerberater empfiehlst du?&rdquo; wird nicht mehr dem Nachbarn
+                &bdquo;Welchen Steuerberater empfiehlst du?&ldquo; wird nicht mehr dem Nachbarn
                 gestellt, sondern ChatGPT. Und ChatGPT hat eine Antwort. Immer.
               </p>
             </div>
             <div className="bg-white border border-gray-100 rounded-2xl p-6">
               <h3 className="font-semibold text-black text-lg mb-2">Mandanten validieren alles</h3>
               <p className="text-gray-600 text-base">
-                Selbst wenn jemand dich empfiehlt &ndash; der potenzielle Mandant pr&uuml;ft bei
+                Selbst wenn jemand dich empfiehlt, der potenzielle Mandant pr&uuml;ft bei
                 der KI gegen. Bist du dort unsichtbar, w&auml;chst der Zweifel.
               </p>
             </div>
@@ -506,7 +506,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
             5 Schritte vom unsichtbaren Experten zum empfohlenen Anbieter
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10">
-            Kein theoretisches Framework. Kein &ldquo;es kommt drauf an&rdquo;. F&uuml;nf Schritte,
+            Kein theoretisches Framework. Kein &bdquo;es kommt drauf an&ldquo;. F&uuml;nf Schritte,
             die du (oder dein Team) in den n&auml;chsten 8&nbsp;Wochen umsetzen kannst.
           </p>
 
@@ -515,12 +515,12 @@ export default function KiSichtbarkeitDienstleisterPage() {
             <div className="flex gap-5">
               <div className="text-brand-accent font-bold text-2xl mt-0.5 flex-shrink-0 w-10">01</div>
               <div>
-                <h3 className="font-semibold text-black text-xl mb-3">Spezialisierung sichtbar machen &ndash; nicht nur leben</h3>
+                <h3 className="font-semibold text-black text-xl mb-3">Spezialisierung sichtbar machen, nicht nur leben</h3>
                 <div className="space-y-3 text-gray-600 leading-relaxed">
                   <p>
-                    Du bist spezialisiert. Aber deine Website sagt: &ldquo;Wir bieten umfassende
-                    Beratung.&rdquo; Das ist, als w&uuml;rdest du als Herzchirurg eine Visitenkarte
-                    verteilen mit &ldquo;Ich mach was mit K&ouml;rpern&rdquo;.
+                    Du bist spezialisiert. Aber deine Website sagt: &bdquo;Wir bieten umfassende
+                    Beratung.&ldquo; Das ist, als w&uuml;rdest du als Herzchirurg eine Visitenkarte
+                    verteilen mit &bdquo;Ich mach was mit K&ouml;rpern&ldquo;.
                   </p>
                   <p>
                     <strong className="text-black">Erstelle f&uuml;r jede Spezialisierung eine eigene
@@ -542,7 +542,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
             <div className="flex gap-5">
               <div className="text-brand-accent font-bold text-2xl mt-0.5 flex-shrink-0 w-10">02</div>
               <div>
-                <h3 className="font-semibold text-black text-xl mb-3">Autorit&auml;tssignale aufbauen &ndash; die KI will Beweise</h3>
+                <h3 className="font-semibold text-black text-xl mb-3">Autorit&auml;tssignale aufbauen: die KI will Beweise</h3>
                 <div className="space-y-3 text-gray-600 leading-relaxed">
                   <p>
                     Die KI empfiehlt nicht einfach den Ersten, den sie findet. Sie empfiehlt den,
@@ -570,23 +570,23 @@ export default function KiSichtbarkeitDienstleisterPage() {
             <div className="flex gap-5">
               <div className="text-brand-accent font-bold text-2xl mt-0.5 flex-shrink-0 w-10">03</div>
               <div>
-                <h3 className="font-semibold text-black text-xl mb-3">Fallstudien erstellen &ndash; messbare Ergebnisse statt Floskeln</h3>
+                <h3 className="font-semibold text-black text-xl mb-3">Fallstudien erstellen: messbare Ergebnisse statt Floskeln</h3>
                 <div className="space-y-3 text-gray-600 leading-relaxed">
                   <p>
-                    &ldquo;Wir haben einem Kunden geholfen.&rdquo; Sch&ouml;n. Aber die KI braucht
+                    &bdquo;Wir haben einem Kunden geholfen.&ldquo; Sch&ouml;n. Aber die KI braucht
                     mehr. Sie braucht: Wem? Wobei? Mit welchem Ergebnis? In welchem Zeitraum?
                   </p>
                   <p>
                     <strong className="text-black">Eine gute Fallstudie f&uuml;r KI-Sichtbarkeit:</strong>{' '}
                     Branche des Mandanten, Ausgangslage (konkret, mit Zahlen wenn m&ouml;glich),
-                    dein Ansatz (nicht &ldquo;ganzheitliche Beratung&rdquo;, sondern was du
+                    dein Ansatz (nicht &bdquo;ganzheitliche Beratung&ldquo;, sondern was du
                     tats&auml;chlich gemacht hast), messbares Ergebnis, Zeitraum.
                   </p>
                   <p>
                     Ein Beispiel aus unserer eigenen Praxis: Das Landschaftsbauunternehmen
                     <strong className="text-black"> GL&nbsp;Sommer</strong> kam mit einem
-                    SEO-Score von 34/100 zu uns. Nach der Optimierung &ndash; strukturierte Daten,
-                    lokale Signale, Content-Architektur &ndash; generiert die Website jetzt
+                    SEO-Score von 34/100 zu uns. Nach der Optimierung, strukturierte Daten,
+                    lokale Signale, Content-Architektur, generiert die Website jetzt
                     <strong className="text-black"> 728 lokale Aktionen pro Monat</strong>.
                     Das sind Anrufe, Routenplanungen und Website-Besuche von Menschen, die aktiv
                     nach genau dieser Dienstleistung suchen.
@@ -604,7 +604,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
             <div className="flex gap-5">
               <div className="text-brand-accent font-bold text-2xl mt-0.5 flex-shrink-0 w-10">04</div>
               <div>
-                <h3 className="font-semibold text-black text-xl mb-3">Strukturierte Daten implementieren &ndash; der KI einen Bauplan geben</h3>
+                <h3 className="font-semibold text-black text-xl mb-3">Strukturierte Daten implementieren: der KI einen Bauplan geben</h3>
                 <div className="space-y-3 text-gray-600 leading-relaxed">
                   <p>
                     Strukturierte Daten sind wie ein Organigramm f&uuml;r die KI. Ohne Organigramm
@@ -631,7 +631,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
             <div className="flex gap-5">
               <div className="text-brand-accent font-bold text-2xl mt-0.5 flex-shrink-0 w-10">05</div>
               <div>
-                <h3 className="font-semibold text-black text-xl mb-3">Bewertungen strategisch aufbauen &ndash; die neue W&auml;hrung</h3>
+                <h3 className="font-semibold text-black text-xl mb-3">Bewertungen strategisch aufbauen: die neue W&auml;hrung</h3>
                 <div className="space-y-3 text-gray-600 leading-relaxed">
                   <p>
                     Bewertungen sind f&uuml;r KI-Systeme das, was Empfehlungsschreiben fr&uuml;her
@@ -639,9 +639,9 @@ export default function KiSichtbarkeitDienstleisterPage() {
                   </p>
                   <p>
                     <strong className="text-black">Die KI unterscheidet zwischen:</strong>{' '}
-                    &ldquo;Super Berater, 5&nbsp;Sterne&rdquo; (wertlos) und &ldquo;Herr&nbsp;X
+                    &bdquo;Super Berater, 5&nbsp;Sterne&ldquo; (wertlos) und &bdquo;Herr&nbsp;X
                     hat uns bei der GmbH-Gr&uuml;ndung begleitet, die steuerliche Strukturierung
-                    hat uns im ersten Jahr &uuml;ber 15.000&nbsp;&euro; gespart&rdquo; (Gold).
+                    hat uns im ersten Jahr &uuml;ber 15.000&nbsp;&euro; gespart&ldquo; (Gold).
                   </p>
                   <p>
                     Inhaltliche Bewertungen mit konkreten Leistungsbeschreibungen sind KI-Futter.
@@ -651,9 +651,9 @@ export default function KiSichtbarkeitDienstleisterPage() {
                   <p>
                     <strong className="text-black">Praktisch:</strong> Bitte zufriedene Mandanten
                     nach Abschluss eines Projekts gezielt um eine Bewertung. Gib ihnen
-                    Orientierung: &ldquo;Wenn du magst, erw&auml;hne gerne, wobei ich dir geholfen
-                    habe und was das Ergebnis war.&rdquo; Antworte auf jede Bewertung innerhalb
-                    von 48&nbsp;Stunden &ndash; professionell und mit Substanz.
+                    Orientierung: &bdquo;Wenn du magst, erw&auml;hne gerne, wobei ich dir geholfen
+                    habe und was das Ergebnis war.&ldquo; Antworte auf jede Bewertung innerhalb
+                    von 48&nbsp;Stunden, professionell und mit Substanz.
                   </p>
                 </div>
               </div>
@@ -677,9 +677,9 @@ export default function KiSichtbarkeitDienstleisterPage() {
 
           <div className="space-y-5">
             <div className="bg-red-50 border border-red-100 rounded-xl p-5">
-              <p className="font-semibold text-black mb-2">Fehler 1: Die &ldquo;digitale Visitenkarte&rdquo;</p>
+              <p className="font-semibold text-black mb-2">Fehler 1: Die &bdquo;digitale Visitenkarte&ldquo;</p>
               <p className="text-gray-700 leading-relaxed">
-                Eine Website mit &ldquo;&Uuml;ber uns&rdquo;, &ldquo;Leistungen&rdquo; und &ldquo;Kontakt&rdquo;.
+                Eine Website mit &bdquo;&Uuml;ber uns&ldquo;, &bdquo;Leistungen&ldquo; und &bdquo;Kontakt&ldquo;.
                 Drei Seiten. Null Content. F&uuml;r die KI bist du ein Eintrag im Telefonbuch. Die KI
                 empfiehlt keine Telefonbucheintr&auml;ge.
               </p>
@@ -688,8 +688,8 @@ export default function KiSichtbarkeitDienstleisterPage() {
             <div className="bg-red-50 border border-red-100 rounded-xl p-5">
               <p className="font-semibold text-black mb-2">Fehler 2: Berater-Deutsch statt Klartext</p>
               <p className="text-gray-700 leading-relaxed">
-                &ldquo;Wir begleiten Sie auf Ihrer Reise der digitalen Transformation mit ganzheitlichen
-                L&ouml;sungen.&rdquo; Die KI liest das und denkt: Dieser Mensch hat nichts Konkretes
+                &bdquo;Wir begleiten Sie auf Ihrer Reise der digitalen Transformation mit ganzheitlichen
+                L&ouml;sungen.&ldquo; Die KI liest das und denkt: Dieser Mensch hat nichts Konkretes
                 zu sagen. Und sie hat recht. <strong className="text-black">Schreib, was du tust.
                 F&uuml;r wen. Mit welchem Ergebnis. In Deutsch, nicht in Berater-Deutsch.</strong>
               </p>
@@ -698,21 +698,21 @@ export default function KiSichtbarkeitDienstleisterPage() {
             <div className="bg-red-50 border border-red-100 rounded-xl p-5">
               <p className="font-semibold text-black mb-2">Fehler 3: Referenzen ohne Substanz</p>
               <p className="text-gray-700 leading-relaxed">
-                &ldquo;Unsere Mandanten vertrauen uns.&rdquo; Sch&ouml;n. Aber welche Mandanten?
+                &bdquo;Unsere Mandanten vertrauen uns.&ldquo; Sch&ouml;n. Aber welche Mandanten?
                 In welcher Branche? Mit welchem Problem? Und was war das Ergebnis? Eine Referenz
-                ohne Details ist wie ein Lebenslauf ohne Berufserfahrung &ndash; technisch vorhanden,
+                ohne Details ist wie ein Lebenslauf ohne Berufserfahrung, technisch vorhanden,
                 praktisch wertlos.
               </p>
             </div>
 
             <div className="bg-red-50 border border-red-100 rounded-xl p-5">
-              <p className="font-semibold text-black mb-2">Fehler 4: &ldquo;Ich brauch kein Marketing, ich hab Empfehlungen&rdquo;</p>
+              <p className="font-semibold text-black mb-2">Fehler 4: &bdquo;Ich brauch kein Marketing, ich hab Empfehlungen&ldquo;</p>
               <p className="text-gray-700 leading-relaxed">
                 Der gef&auml;hrlichste Fehler. Nicht weil Empfehlungen nicht funktionieren &ndash;
                 sie tun es. Sondern weil <strong className="text-black">jede Empfehlung heute gegen
-                eine KI-Antwort antritt</strong>. Dein Empfehlungsgeber sagt: &ldquo;Geh zu
-                Steuerberater M&uuml;ller.&rdquo; Der Empfangene tippt: &ldquo;Steuerberater
-                M&uuml;ller vs. Alternativen.&rdquo; Wenn die KI bessere Alternativen findet,
+                eine KI-Antwort antritt</strong>. Dein Empfehlungsgeber sagt: &bdquo;Geh zu
+                Steuerberater M&uuml;ller.&ldquo; Der Empfangene tippt: &bdquo;Steuerberater
+                M&uuml;ller vs. Alternativen.&ldquo; Wenn die KI bessere Alternativen findet,
                 verlierst du den Mandanten trotz Empfehlung.
               </p>
             </div>
@@ -804,7 +804,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-3 pr-4">Branchenbuch-Eintr&auml;ge (Gelbe Seiten, 11880)</td>
-                  <td className="py-3 pl-4">KI-Systeme als neues &ldquo;Branchenbuch&rdquo;</td>
+                  <td className="py-3 pl-4">KI-Systeme als neues &bdquo;Branchenbuch&ldquo;</td>
                 </tr>
                 <tr>
                   <td className="py-3 pr-4">Conversion Rate: 1&ndash;3&nbsp;%</td>
@@ -817,8 +817,8 @@ export default function KiSichtbarkeitDienstleisterPage() {
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
             <p>
               Der entscheidende Unterschied: Ein Lead, der &uuml;ber eine KI-Empfehlung kommt,
-              hat bereits Vertrauen. Die KI hat gesagt: &ldquo;Ich empfehle dir diesen
-              Anbieter.&rdquo; <strong className="text-black">Das ist eine Empfehlung von einer
+              hat bereits Vertrauen. Die KI hat gesagt: &bdquo;Ich empfehle dir diesen
+              Anbieter.&ldquo; <strong className="text-black">Das ist eine Empfehlung von einer
               Instanz, der 400&nbsp;Millionen Menschen vertrauen.</strong> Die Conversion Rate
               ist 3&ndash;5x h&ouml;her als bei einem kalten Google-Klick.
             </p>
@@ -844,15 +844,15 @@ export default function KiSichtbarkeitDienstleisterPage() {
             </p>
             <p>
               <strong className="text-black">Das hei&szlig;t im Klartext:</strong> Wenn du jetzt
-              als &ldquo;Steuerberater f&uuml;r Freiberufler in Hamburg-Eppendorf&rdquo; oder
-              als &ldquo;Architekt f&uuml;r energetische Sanierung in Hamburg-Altona&rdquo;
+              als &bdquo;Steuerberater f&uuml;r Freiberufler in Hamburg-Eppendorf&ldquo; oder
+              als &bdquo;Architekt f&uuml;r energetische Sanierung in Hamburg-Altona&ldquo;
               KI-sichtbar wirst, hast du das Feld f&uuml;r dich. Weil deine Wettbewerber noch
               dar&uuml;ber diskutieren, ob sie &uuml;berhaupt eine neue Website brauchen.
             </p>
             <p>
               Hamburgs Stadtteilstruktur ist f&uuml;r KI-SEO ein Geschenk. Jeder Stadtteil ist ein
-              eigener Suchcluster. &ldquo;Unternehmensberater Hamburg-Hafen&shy;City&rdquo; ist eine
-              andere KI-Anfrage als &ldquo;Unternehmensberater Hamburg-Wandsbek&rdquo;. Und bei
+              eigener Suchcluster. &bdquo;Unternehmensberater Hamburg-Hafen&shy;City&ldquo; ist eine
+              andere KI-Anfrage als &bdquo;Unternehmensberater Hamburg-Wandsbek&ldquo;. Und bei
               beiden ist der erste Platz noch frei.
             </p>
           </div>
@@ -969,7 +969,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
                   rel="noopener noreferrer"
                   className="underline hover:text-brand-accent transition-colors"
                 >
-                  Ahrefs (2025): LLM SEO &ndash; Brand Mentions Correlation Study
+                  Ahrefs (2025): LLM SEO, Brand Mentions Correlation Study
                 </a>
               </li>
               <li>
@@ -989,7 +989,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
                   rel="noopener noreferrer"
                   className="underline hover:text-brand-accent transition-colors"
                 >
-                  Gartner: Predicts 2025 &ndash; Search and AI (Traffic-Prognose)
+                  Gartner: Predicts 2025, Search and AI (Traffic-Prognose)
                 </a>
               </li>
               <li>
@@ -1071,7 +1071,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
               </h2>
               <p className="text-lg text-gray-300 mb-4 max-w-2xl leading-relaxed">
                 Ich pr&uuml;fe, ob und wie ChatGPT, Perplexity und andere KI-Systeme dich aktuell
-                empfehlen &ndash; oder deinen Wettbewerber. Kostenlos, in 48&nbsp;Stunden.
+                empfehlen, oder deinen Wettbewerber. Kostenlos, in 48&nbsp;Stunden.
               </p>
               <p className="text-gray-400 mb-8 max-w-2xl">
                 F&uuml;r Steuerberater, Architekten, Berater, Rechtsanw&auml;lte und Agenturen in Hamburg.

@@ -16,7 +16,7 @@ export default function PressekitPage() {
               Pressekit
             </h1>
             <p className="text-lg md:text-xl font-medium text-gray-800/80 leading-relaxed max-w-2xl">
-              Ich helfe Hamburger Unternehmen, von KI empfohlen zu werden – nicht nur gefunden.
+              Ich helfe Hamburger Unternehmen, von KI empfohlen zu werden, nicht nur gefunden.
             </p>
           </header>
 

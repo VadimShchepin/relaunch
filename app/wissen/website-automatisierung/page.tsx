@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/Button';
 const FAQ_ITEMS = [
   {
     q: 'Was ist Website-Automatisierung?',
-    a: 'Website-Automatisierung bedeutet, wiederkehrende digitale Prozesse durch Software erledigen zu lassen -- zum Beispiel Kontaktformular-Antworten, E-Mail-Sequenzen, Social-Media-Posts oder Rechnungserstellung. Ziel ist es, manuelle Arbeit zu reduzieren und Fehler zu vermeiden.',
+    a: 'Website-Automatisierung bedeutet, wiederkehrende digitale Prozesse durch Software erledigen zu lassen, zum Beispiel Kontaktformular-Antworten, E-Mail-Sequenzen, Social-Media-Posts oder Rechnungserstellung. Ziel ist es, manuelle Arbeit zu reduzieren und Fehler zu vermeiden.',
   },
   {
     q: 'Welches Automatisierungs-Tool ist das beste für deutsche Unternehmen?',
@@ -18,11 +18,11 @@ const FAQ_ITEMS = [
   },
   {
     q: 'Was kostet Website-Automatisierung?',
-    a: 'Die Tools selbst starten oft kostenlos: Make.com ab 0 EUR/Monat (1.000 Operationen), n8n ist komplett kostenlos bei Self-Hosting. Professionelle Einrichtung und Strategie kosten je nach Umfang zwischen 2.000 und 10.000 EUR -- bis zu 80 % davon können über BAFA-Förderung gedeckt werden.',
+    a: 'Die Tools selbst starten oft kostenlos: Make.com ab 0 EUR/Monat (1.000 Operationen), n8n ist komplett kostenlos bei Self-Hosting. Professionelle Einrichtung und Strategie kosten je nach Umfang zwischen 2.000 und 10.000 EUR. Bis zu 80 % davon können über BAFA-Förderung gedeckt werden.',
   },
   {
     q: 'Kann ich Automatisierung selbst einrichten oder brauche ich Hilfe?',
-    a: 'Einfache Workflows (z.B. Formular-Antworten, E-Mail-Sequenzen) kannst du mit etwas Einarbeitung selbst umsetzen. Für komplexere Szenarien -- etwa CRM-Integration, Lead-Scoring oder DSGVO-konforme Datenverarbeitung -- lohnt sich professionelle Unterstützung.',
+    a: 'Einfache Workflows (z.B. Formular-Antworten, E-Mail-Sequenzen) kannst du mit etwas Einarbeitung selbst umsetzen. Für komplexere Szenarien wie CRM-Integration, Lead-Scoring oder DSGVO-konforme Datenverarbeitung lohnt sich professionelle Unterstützung.',
   },
 ];
 
@@ -112,7 +112,7 @@ export default function WebsiteAutomatisierungPage() {
         {/* TLDR */}
         <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-16">
                       <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
-              <h2 className="text-lg font-semibold text-black mb-4">TL;DR -- Das Wichtigste in 30 Sekunden</h2>
+              <h2 className="text-lg font-semibold text-black mb-4">TL;DR: Das Wichtigste in 30 Sekunden</h2>
               <ul className="space-y-3 text-base text-gray-600 leading-relaxed">
                 <li className="flex gap-3"><span className="text-brand-accent font-bold mt-0.5">&#10003;</span><span><strong>Beste Tools:</strong> Make.com (EU-gehostet, ideal für KMU), n8n (Open-Source, Self-Hosting), Zapier (mächtig, aber US-Server)</span></li>
                 <li className="flex gap-3"><span className="text-brand-accent font-bold mt-0.5">&#10003;</span><span><strong>DSGVO:</strong> EU-gehostete oder selbst gehostete Lösungen bevorzugen</span></li>
@@ -135,7 +135,7 @@ export default function WebsiteAutomatisierungPage() {
                 Seit 2025 gilt der EU AI Act mit klaren Regeln für KI in Unternehmen. Wer jetzt nicht strategisch automatisiert, riskiert Wettbewerbsnachteile und Compliance-Probleme.
               </p>
               <p>
-                Die gute Nachricht: Automatisierung ist nicht nur für Konzerne. KMU setzen die richtigen Tools oft schneller um -- weniger Bürokratie, kürzere Entscheidungswege.
+                Die gute Nachricht: Automatisierung ist nicht nur für Konzerne. KMU setzen die richtigen Tools oft schneller um, weil Bürokratie und Entscheidungswege kürzer sind.
               </p>
             </div>
 
@@ -205,7 +205,7 @@ export default function WebsiteAutomatisierungPage() {
               </p>
               <ul className="list-disc list-inside space-y-2 ml-2">
                 <li><strong>EU-Hosting wählen:</strong> Make.com bietet EU-Server und einen vollständigen Auftragsverarbeitungsvertrag (AVV).</li>
-                <li><strong>Self-Hosting nutzen:</strong> n8n auf eigenen Servern oder bei deutschen Anbietern (Hetzner, IONOS) betreiben -- volle Datenkontrolle.</li>
+                <li><strong>Self-Hosting nutzen:</strong> n8n auf eigenen Servern oder bei deutschen Anbietern (Hetzner, IONOS) betreiben, für volle Datenkontrolle.</li>
                 <li><strong>AVV abschließen:</strong> Bei jedem Tool prüfen, welche Daten wohin fließen.</li>
               </ul>
               <p>
@@ -226,7 +226,7 @@ export default function WebsiteAutomatisierungPage() {
           <div className="grid gap-4 md:grid-cols-2">
             {[
               { nr: '01', title: 'Kontaktformular-Antworten', desc: 'Automatische Bestätigungs-E-Mails und KI-Chatbots für sofortige Reaktion, auch außerhalb der Geschäftszeiten.' },
-              { nr: '02', title: 'Social-Media-Planung', desc: 'Beiträge vorplanen und automatisch veröffentlichen -- spart Stunden pro Woche.' },
+              { nr: '02', title: 'Social-Media-Planung', desc: 'Beiträge vorplanen und automatisch veröffentlichen. Spart Stunden pro Woche.' },
               { nr: '03', title: 'E-Mail-Sequenzen', desc: 'Willkommens-E-Mails, Follow-ups und Newsletter, die automatisch zum richtigen Zeitpunkt rausgehen.' },
               { nr: '04', title: 'Rechnungserstellung', desc: 'Automatische Rechnungen nach Auftragseingang, inklusive Zahlungserinnerungen.' },
               { nr: '05', title: 'Terminbuchung', desc: 'Kunden buchen selbst, du bekommst automatisch alle Infos.' },
@@ -262,7 +262,7 @@ export default function WebsiteAutomatisierungPage() {
                 Hamburg ist ein Hotspot für KI und Automatisierung. Die Otto Group nutzt mit ogGPT ein eigenes KI-System für Prozessautomatisierung, Jung von Matt setzt mit Stables auf KI-gestützte Kreativprozesse, und das ARIC vernetzt Unternehmen, Forschung und Startups.
               </p>
               <p>
-                Für KMU heißt das: Lokale Expertise, Förderprogramme und ein starkes Netzwerk sind da. Die Hamburger Wirtschaftsbehörde fördert digitale Transformation aktiv -- in Kombination mit BAFA-Förderung sind Automatisierungsprojekte mit minimalem Eigenanteil möglich.
+                Für KMU heißt das: Lokale Expertise, Förderprogramme und ein starkes Netzwerk sind da. Die Hamburger Wirtschaftsbehörde fördert digitale Transformation aktiv. In Kombination mit BAFA-Förderung sind Automatisierungsprojekte mit minimalem Eigenanteil möglich.
               </p>
             </div>
         </section>
@@ -274,7 +274,7 @@ export default function WebsiteAutomatisierungPage() {
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
               <p>
-                Automatisierung hilft nicht nur bei internen Prozessen -- sie ist auch ein Hebel für deine Sichtbarkeit in KI-Systemen wie ChatGPT oder Perplexity. Content-Freshness, strukturierte Daten und KI-Monitoring lassen sich automatisieren. Mehr dazu in unserem <a href="/wissen/ki-sichtbarkeit" className="text-brand-accent underline underline-offset-2 hover:text-black transition-colors">Guide zu KI-Sichtbarkeit</a>.
+                Automatisierung hilft nicht nur bei internen Prozessen, sie ist auch ein Hebel für deine Sichtbarkeit in KI-Systemen wie ChatGPT oder Perplexity. Content-Freshness, strukturierte Daten und KI-Monitoring lassen sich automatisieren. Mehr dazu in unserem <a href="/wissen/ki-sichtbarkeit" className="text-brand-accent underline underline-offset-2 hover:text-black transition-colors">Guide zu KI-Sichtbarkeit</a>.
               </p>
             </div>
         </section>
@@ -332,10 +332,10 @@ export default function WebsiteAutomatisierungPage() {
                       <div className="bg-gray-50 rounded-xl p-6">
               <h3 className="text-sm font-semibold text-black mb-3 uppercase tracking-wide">Quellen</h3>
               <ul className="text-sm text-gray-500 space-y-2">
-                <li>Deloitte AI Institute -- &quot;State of AI in the Enterprise&quot; (Studie zur KI-Tool-Nutzung in Unternehmen)</li>
-                <li>Institut der deutschen Wirtschaft -- Studie zur Steigerung der Arbeitsproduktivität durch KI-Einsatz</li>
-                <li>Bundesamt für Wirtschaft und Ausfuhrkontrolle (BAFA) -- Förderung unternehmerischen Know-hows</li>
-                <li>hamburg-business.com -- Hamburger Unternehmen und KI-Transformation</li>
+                <li>Deloitte AI Institute, &quot;State of AI in the Enterprise&quot; (Studie zur KI-Tool-Nutzung in Unternehmen)</li>
+                <li>Institut der deutschen Wirtschaft, Studie zur Steigerung der Arbeitsproduktivität durch KI-Einsatz</li>
+                <li>Bundesamt für Wirtschaft und Ausfuhrkontrolle (BAFA), Förderung unternehmerischen Know-hows</li>
+                <li>hamburg-business.com, Hamburger Unternehmen und KI-Transformation</li>
               </ul>
             </div>
         </section>
@@ -361,7 +361,7 @@ export default function WebsiteAutomatisierungPage() {
                 Du willst deine Website und Prozesse automatisieren?
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-10">
-                Ich helfe dir, die richtigen Tools auszuwählen, DSGVO-konform einzurichten und mit deiner KI-Sichtbarkeit zu verbinden. Kein Verkaufsgespräch -- nur eine ehrliche Einschätzung.
+                Ich helfe dir, die richtigen Tools auszuwählen, DSGVO-konform einzurichten und mit deiner KI-Sichtbarkeit zu verbinden. Kein Verkaufsgespräch, nur eine ehrliche Einschätzung.
               </p>
               <Button href="/contact" text="Kostenlos beraten lassen" primary />
             </div>

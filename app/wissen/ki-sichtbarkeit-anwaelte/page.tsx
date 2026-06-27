@@ -89,7 +89,7 @@ const faqSchema = {
             name: 'Verstößt KI-SEO für Anwälte gegen das anwaltliche Werberecht?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Nein. KI-SEO basiert auf sachlicher Information, Fachpublikationen und der Optimierung öffentlicher Profile - das ist nach der liberalisierten BRAO und den Berufsordnungen der Rechtsanwaltskammern zulässig. Es gelten die gleichen Regeln wie für klassische Kanzlei-Websites und SEO: sachlich, nicht irreführend, keine Erfolgsversprechen.',
+                text: 'Nein. KI-SEO basiert auf sachlicher Information, Fachpublikationen und der Optimierung öffentlicher Profile. Das ist nach der liberalisierten BRAO und den Berufsordnungen der Rechtsanwaltskammern zulässig. Es gelten die gleichen Regeln wie für klassische Kanzlei-Websites und SEO: sachlich, nicht irreführend, keine Erfolgsversprechen.',
             },
         },
     ],
@@ -138,9 +138,9 @@ const HeroSection: React.FC = () => (
                 Mandanten fragen die KI
             </h1>
             <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
-                Potenzielle Mandanten googlen nicht mehr &ldquo;Anwalt Arbeitsrecht Hamburg&rdquo;.
+                Potenzielle Mandanten googlen nicht mehr &bdquo;Anwalt Arbeitsrecht Hamburg&ldquo;.
                 Sie fragen ChatGPT. Die KI empfiehlt zwei bis drei Kanzleien. Wer nicht dabei ist,
-                verliert Mandate - ohne es zu wissen. Dieser Guide zeigt, wie Kanzleien in
+                verliert Mandate, ohne es zu wissen. Dieser Guide zeigt, wie Kanzleien in
                 KI-Empfehlungen sichtbar werden.
             </p>
             <ArticleHeroImage
@@ -161,7 +161,7 @@ const TLDRSection: React.FC = () => (
                 <ul className="space-y-2 text-gray-800">
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">1.</span>
-                        <span>Mandanten fragen KI-Systeme nach Anwaltsempfehlungen - wer dort nicht auftaucht, wird nicht kontaktiert.</span>
+                        <span>Mandanten fragen KI-Systeme nach Anwaltsempfehlungen. Wer dort nicht auftaucht, wird nicht kontaktiert.</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">2.</span>
@@ -194,21 +194,21 @@ const ProblemSection: React.FC = () => (
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                 <p>
-                    Die Mandantenakquise hat sich fundamental verändert. Statt &ldquo;Anwalt Arbeitsrecht
-                    Hamburg&rdquo; in Google einzugeben, fragen immer mehr Menschen ChatGPT, Perplexity
-                    oder Google AI: &ldquo;Welchen Anwalt für Arbeitsrecht kannst du in Hamburg
-                    empfehlen?&rdquo;
+                    Die Mandantenakquise hat sich fundamental verändert. Statt &bdquo;Anwalt Arbeitsrecht
+                    Hamburg&ldquo; in Google einzugeben, fragen immer mehr Menschen ChatGPT, Perplexity
+                    oder Google AI: &bdquo;Welchen Anwalt für Arbeitsrecht kannst du in Hamburg
+                    empfehlen?&ldquo;
                 </p>
                 <p>
                     Die KI antwortet nicht mit zehn blauen Links. Sie empfiehlt zwei bis drei Kanzleien
-                    namentlich - mit Begründung. Wer in dieser Empfehlung auftaucht, bekommt den Anruf.
+                    namentlich, mit Begründung. Wer in dieser Empfehlung auftaucht, bekommt den Anruf.
                     Wer nicht auftaucht, erfährt nicht einmal, dass ein potenzieller Mandant nach genau
                     seiner Spezialisierung gesucht hat.
                 </p>
                 <p>
                     Das Tückische: Klassische Sichtbarkeit schützt nicht. Ein Top-Profil auf anwalt.de,
                     eine JUVE-Empfehlung oder ein gutes Google-Ranking bedeuten nicht automatisch, dass
-                    ChatGPT Ihre Kanzlei empfiehlt. KI-Systeme bewerten nach eigenen Kriterien - und
+                    ChatGPT Ihre Kanzlei empfiehlt. KI-Systeme bewerten nach eigenen Kriterien, und
                     diese Kriterien sind für Kanzleien besonders anspruchsvoll.
                 </p>
             </div>
@@ -217,7 +217,7 @@ const ProblemSection: React.FC = () => (
                 <div className="bg-white border border-gray-100 rounded-2xl p-6">
                     <h3 className="font-semibold text-black text-lg mb-3">Früher: Google-Suche</h3>
                     <p className="text-gray-600 text-base">
-                        Mandant googelt &ldquo;Anwalt Arbeitsrecht Hamburg&rdquo;, sieht 10 Ergebnisse,
+                        Mandant googelt &bdquo;Anwalt Arbeitsrecht Hamburg&ldquo;, sieht 10 Ergebnisse,
                         klickt 3-4 Kanzlei-Websites an, vergleicht und ruft an. Mehrere Kanzleien
                         bekommen eine Chance.
                     </p>
@@ -225,8 +225,8 @@ const ProblemSection: React.FC = () => (
                 <div className="bg-white border border-gray-100 rounded-2xl p-6">
                     <h3 className="font-semibold text-black text-lg mb-3">Heute: KI-Empfehlung</h3>
                     <p className="text-gray-600 text-base">
-                        Mandant fragt ChatGPT &ldquo;Empfiehl mir einen guten Arbeitsrechtler in
-                        Hamburg&rdquo;. Die KI nennt 2-3 Kanzleien mit Begründung. Der Mandant
+                        Mandant fragt ChatGPT &bdquo;Empfiehl mir einen guten Arbeitsrechtler in
+                        Hamburg&ldquo;. Die KI nennt 2-3 Kanzleien mit Begründung. Der Mandant
                         kontaktiert die erste Empfehlung. Fertig.
                     </p>
                 </div>
@@ -254,7 +254,7 @@ const WhyImportantSection: React.FC = () => (
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
                 <p>
                     Rechtsberatung gehört zu den sensibelsten Bereichen im Internet. Google nennt es
-                    YMYL - &ldquo;Your Money Your Life&rdquo;. KI-Systeme übernehmen dieses Prinzip
+                    YMYL, &bdquo;Your Money Your Life&ldquo;. KI-Systeme übernehmen dieses Prinzip
                     und verschärfen es sogar. Die Hürde für eine Kanzlei-Empfehlung ist höher als
                     für einen Restauranttipp.
                 </p>
@@ -276,7 +276,7 @@ const WhyImportantSection: React.FC = () => (
                     },
                     {
                         title: 'Wettbewerbsvorteil durch frühe Positionierung',
-                        desc: 'Die meisten Kanzleien ignorieren KI-Sichtbarkeit noch vollständig. Wer jetzt die richtigen Signale setzt, baut einen Vorsprung auf, den Wettbewerber später nur schwer aufholen können. KI-Trainingsdaten sind kumulativ - frühe und konsistente Erwähnungen wiegen schwerer als späte Aufholjagden.',
+                        desc: 'Die meisten Kanzleien ignorieren KI-Sichtbarkeit noch vollständig. Wer jetzt die richtigen Signale setzt, baut einen Vorsprung auf, den Wettbewerber später nur schwer aufholen können. KI-Trainingsdaten sind kumulativ, frühe und konsistente Erwähnungen wiegen schwerer als späte Aufholjagden.',
                     },
                 ].map((item, i) => (
                     <FadeIn key={i} delay={i * 50}>
@@ -358,7 +358,7 @@ const StrategiesSection: React.FC = () => (
                     {
                         num: '02',
                         title: 'Fachbeiträge und Legal-Tech-Content publizieren',
-                        text: 'Schreiben Sie regelmäßig Fachbeiträge - nicht nur auf Ihrer Website, sondern in Fachzeitschriften, auf anwalt.de, auf LinkedIn. Kommentieren Sie aktuelle Urteile. Ordnen Sie Gesetzesänderungen ein. KI-Systeme lernen aus diesen Quellen und ordnen Ihre Expertise bestimmten Rechtsgebieten zu. Ein monatlicher Fachbeitrag ist mehr wert als eine perfekte Kanzlei-Website ohne aktuelle Inhalte.',
+                        text: 'Schreiben Sie regelmäßig Fachbeiträge, nicht nur auf Ihrer Website, sondern in Fachzeitschriften, auf anwalt.de, auf LinkedIn. Kommentieren Sie aktuelle Urteile. Ordnen Sie Gesetzesänderungen ein. KI-Systeme lernen aus diesen Quellen und ordnen Ihre Expertise bestimmten Rechtsgebieten zu. Ein monatlicher Fachbeitrag ist mehr wert als eine perfekte Kanzlei-Website ohne aktuelle Inhalte.',
                     },
                     {
                         num: '03',
@@ -368,22 +368,22 @@ const StrategiesSection: React.FC = () => (
                     {
                         num: '04',
                         title: 'Schema.org LegalService Markup implementieren',
-                        text: 'Strukturierte Daten machen Ihre Website für KI-Systeme maschinenlesbar. Implementieren Sie Schema.org-Markup: LegalService für die Kanzlei, Attorney für einzelne Anwälte, FAQPage für FAQ-Bereiche, Review für Mandantenbewertungen. Das ist kein optionales Extra - es ist die Sprache, die KI-Crawler verstehen.',
+                        text: 'Strukturierte Daten machen Ihre Website für KI-Systeme maschinenlesbar. Implementieren Sie Schema.org-Markup: LegalService für die Kanzlei, Attorney für einzelne Anwälte, FAQPage für FAQ-Bereiche, Review für Mandantenbewertungen. Das ist kein optionales Extra, sondern die Sprache, die KI-Crawler verstehen.',
                     },
                     {
                         num: '05',
                         title: 'Mandantenbewertungen systematisch aufbauen',
-                        text: 'Bitten Sie zufriedene Mandanten aktiv um Bewertungen - auf Google, auf anwalt.de, auf ProvenExpert. Machen Sie es einfach: QR-Code in der Kanzlei, Link in der Abschluss-E-Mail, kurze Anleitung. Reagieren Sie auf jede Bewertung professionell und zeitnah. KI-Systeme bewerten nicht nur die Sterne, sondern auch die Aktualität und Ihre Antworten.',
+                        text: 'Bitten Sie zufriedene Mandanten aktiv um Bewertungen, auf Google, auf anwalt.de, auf ProvenExpert. Machen Sie es einfach: QR-Code in der Kanzlei, Link in der Abschluss-E-Mail, kurze Anleitung. Reagieren Sie auf jede Bewertung professionell und zeitnah. KI-Systeme bewerten nicht nur die Sterne, sondern auch die Aktualität und Ihre Antworten.',
                     },
                     {
                         num: '06',
                         title: 'Kanzlei-Profile auf Fachportalen pflegen',
-                        text: 'anwalt.de, JUVE, Chambers, Legal 500, anwaltssuche.de, Deutsches Anwaltsregister - all diese Profile müssen vollständig, aktuell und konsistent sein. Gleicher Name, gleiche Adresse, gleiche Telefonnummer, gleiche Rechtsgebiete überall. KI-Systeme cross-referenzieren diese Quellen. Inkonsistenzen senken das Vertrauen.',
+                        text: 'anwalt.de, JUVE, Chambers, Legal 500, anwaltssuche.de, Deutsches Anwaltsregister: all diese Profile müssen vollständig, aktuell und konsistent sein. Gleicher Name, gleiche Adresse, gleiche Telefonnummer, gleiche Rechtsgebiete überall. KI-Systeme cross-referenzieren diese Quellen. Inkonsistenzen senken das Vertrauen.',
                     },
                     {
                         num: '07',
                         title: 'Thought Leadership durch Gastbeiträge aufbauen',
-                        text: 'Schreiben Sie Gastbeiträge für Wirtschaftsmedien, geben Sie Interviews zu aktuellen Rechtsfragen, sprechen Sie auf Branchenveranstaltungen. Jede redaktionelle Erwähnung durch Dritte ist ein starkes Signal für KI-Systeme. Ziel: Wenn ein Journalist "Experte für Arbeitsrecht Hamburg" sucht, sollte Ihr Name fallen - denn genau diese Medienberichte fließen in KI-Trainingsdaten ein.',
+                        text: 'Schreiben Sie Gastbeiträge für Wirtschaftsmedien, geben Sie Interviews zu aktuellen Rechtsfragen, sprechen Sie auf Branchenveranstaltungen. Jede redaktionelle Erwähnung durch Dritte ist ein starkes Signal für KI-Systeme. Ziel: Wenn ein Journalist "Experte für Arbeitsrecht Hamburg" sucht, sollte Ihr Name fallen, denn genau diese Medienberichte fließen in KI-Trainingsdaten ein.',
                     },
                 ].map((strategy, i) => (
                     <FadeIn key={i} delay={i * 50}>
@@ -427,7 +427,7 @@ const KanzleiTypesSection: React.FC = () => (
                             <strong>Strategie:</strong> Fokussieren Sie auf ein bis zwei Rechtsgebiete. Bauen Sie
                             tiefe Inhalte zu genau diesen Themen. Pflegen Sie Google Business und anwalt.de
                             besonders sorgfältig. Sammeln Sie systematisch Bewertungen. Ihr Ziel: Bei der Frage
-                            &ldquo;Wer ist ein guter Arbeitsrechtler in Hamburg?&rdquo; als Spezialist empfohlen
+                            &bdquo;Wer ist ein guter Arbeitsrechtler in Hamburg?&ldquo; als Spezialist empfohlen
                             werden.
                         </p>
                     </div>
@@ -443,8 +443,8 @@ const KanzleiTypesSection: React.FC = () => (
                         <p className="text-gray-600 leading-relaxed">
                             <strong>Strategie:</strong> Positionieren Sie die Kanzlei als Team-Expertise.
                             Individuelle Anwaltsprofile mit Publikationslisten. Gemeinsame Fachbeiträge.
-                            Kanzlei-eigener Newsletter zu Ihrem Fachgebiet. Ziel: Als &ldquo;die Kanzlei
-                            für [Rechtsgebiet]&rdquo; in Ihrer Region wahrgenommen werden.
+                            Kanzlei-eigener Newsletter zu Ihrem Fachgebiet. Ziel: Als &bdquo;die Kanzlei
+                            für [Rechtsgebiet]&ldquo; in Ihrer Region wahrgenommen werden.
                         </p>
                     </div>
                 </FadeIn>
@@ -459,7 +459,7 @@ const KanzleiTypesSection: React.FC = () => (
                         <p className="text-gray-600 leading-relaxed">
                             <strong>Strategie:</strong> Erstellen Sie für jedes Rechtsgebiet eigene
                             Content-Hubs mit Experten-Profilen. Nutzen Sie die Breite als Stärke:
-                            &ldquo;Wirtschaftsrechtliche Beratung aus einer Hand&rdquo;. Investieren
+                            &bdquo;Wirtschaftsrechtliche Beratung aus einer Hand&ldquo;. Investieren
                             Sie in PR und Fachpublikationen. Implementieren Sie umfassendes Schema.org-Markup
                             für jeden Praxisbereich.
                         </p>
@@ -477,7 +477,7 @@ const KanzleiTypesSection: React.FC = () => (
                             <strong>Strategie:</strong> Technische Optimierung der bestehenden Inhalte:
                             Schema.org-Markup, strukturierte FAQ, optimierte Anwaltsprofile. Sicherstellen,
                             dass GPTBot und andere KI-Crawler nicht blockiert werden. Die vorhandene
-                            Reputation gezielt für KI-Systeme aufbereiten - oft ist das meiste Material
+                            Reputation gezielt für KI-Systeme aufbereiten. Oft ist das meiste Material
                             vorhanden, nur nicht maschinenlesbar.
                         </p>
                     </div>
@@ -498,7 +498,7 @@ const HamburgSection: React.FC = () => (
                 <p>
                     Hamburg ist einer der größten Rechtsstandorte Deutschlands. Die Hanseatische
                     Rechtsanwaltskammer zählt über 10.000 zugelassene Anwälte. Der Wettbewerb ist
-                    intensiv - und genau deshalb ist KI-Sichtbarkeit hier besonders wertvoll.
+                    intensiv, und genau deshalb ist KI-Sichtbarkeit hier besonders wertvoll.
                 </p>
             </div>
 
@@ -528,7 +528,7 @@ const HamburgSection: React.FC = () => (
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                 <p>
                     Hamburger Kanzleien haben einen spezifischen Vorteil: Die Stadt ist groß genug
-                    für spezialisierte Anfragen (&ldquo;Anwalt Seerecht Hamburg&rdquo;), aber
+                    für spezialisierte Anfragen (&bdquo;Anwalt Seerecht Hamburg&ldquo;), aber
                     überschaubar genug, dass gezielte lokale Maßnahmen schnell wirken. Ein
                     Fachanwalt für maritimes Wirtschaftsrecht in Hamburg hat bei der entsprechenden
                     KI-Anfrage deutlich weniger Wettbewerb als ein Arbeitsrechtler.
@@ -572,7 +572,7 @@ const FAQSection: React.FC = () => {
         },
         {
             q: 'Verstößt KI-SEO für Anwälte gegen das anwaltliche Werberecht?',
-            a: 'Nein. KI-SEO basiert auf sachlicher Information, Fachpublikationen und der Optimierung öffentlicher Profile. Das ist nach der liberalisierten BRAO und den Berufsordnungen zulässig - gleiche Regeln wie für klassische Kanzlei-Websites und SEO.',
+            a: 'Nein. KI-SEO basiert auf sachlicher Information, Fachpublikationen und der Optimierung öffentlicher Profile. Das ist nach der liberalisierten BRAO und den Berufsordnungen zulässig. Es gelten die gleichen Regeln wie für klassische Kanzlei-Websites und SEO.',
         },
     ];
 

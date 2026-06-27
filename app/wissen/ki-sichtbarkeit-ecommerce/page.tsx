@@ -140,7 +140,7 @@ export default function KiSichtbarkeitEcommercePage() {
       {/* TL;DR */}
       <section className="px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto pb-12">
         <div className="bg-white border-2 border-brand-accent rounded-xl p-6 md:p-8 shadow-sm">
-          <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR &mdash; Für die Ungeduldigen</h2>
+          <h2 className="text-xl font-bold text-brand-accent mb-4">TL;DR: Für die Ungeduldigen</h2>
           <ul className="space-y-3 text-gray-700 leading-relaxed">
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">1.</span>
@@ -152,7 +152,7 @@ export default function KiSichtbarkeitEcommercePage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">3.</span>
-              <span><strong className="text-black">Zitierbarer Content ist der Schlüssel.</strong> Buying Guides, Vergleiche, Expertise-Artikel &mdash; Inhalte, die eine Frage beantworten, nicht ein Produkt verkaufen.</span>
+              <span><strong className="text-black">Zitierbarer Content ist der Schlüssel.</strong> Buying Guides, Vergleiche, Expertise-Artikel: Inhalte, die eine Frage beantworten, nicht ein Produkt verkaufen.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">4.</span>
@@ -198,7 +198,7 @@ export default function KiSichtbarkeitEcommercePage() {
             </li>
             <li className="flex gap-3">
               <span className="text-brand-accent font-bold shrink-0">2.</span>
-              <span><strong className="text-black">Duplicate Content in Serie.</strong> 500 Produkte mit der gleichen Template-Beschreibung &mdash; &bdquo;hochwertige Materialien, schneller Versand, 30 Tage Rückgabe&ldquo;. Das ist kein Content. Das ist Copy-Paste mit Preisänderung.</span>
+              <span><strong className="text-black">Duplicate Content in Serie.</strong> 500 Produkte mit der gleichen Template-Beschreibung: &bdquo;hochwertige Materialien, schneller Versand, 30 Tage Rückgabe&ldquo;. Das ist kein Content. Das ist Copy-Paste mit Preisänderung.</span>
             </li>
             <li className="flex gap-3">
               <span className="text-brand-accent font-bold shrink-0">3.</span>
@@ -354,7 +354,7 @@ export default function KiSichtbarkeitEcommercePage() {
                 <p className="text-sm font-bold text-brand-accent mb-3">Was tatsächlich funktioniert</p>
                 <p className="text-base text-gray-600 leading-relaxed">
                   Google-Rankings und KI-Zitierungen korrelieren nur teilweise. KI bevorzugt Content
-                  mit klaren Fakten, Quellenangaben und Answer-First-Struktur &mdash; nicht den Content mit
+                  mit klaren Fakten, Quellenangaben und Answer-First-Struktur, nicht den Content mit
                   den meisten Backlinks. Du kannst Platz 1 bei Google sein und bei ChatGPT nicht existieren.
                   <strong className="text-black"> Passiert häufiger, als du denkst.</strong>
                 </p>
@@ -383,14 +383,14 @@ export default function KiSichtbarkeitEcommercePage() {
             <h3 className="text-xl font-semibold text-black mb-3">Buying Guides mit echtem Fachwissen</h3>
             <p className="text-base text-gray-600 leading-relaxed mb-4">
               Nicht &bdquo;Die 10 besten Zelte 2026&ldquo; mit Amazon-Affiliate-Links. Sondern:
-              &bdquo;Zelt kaufen: Was du über Materialien, Wassersäule und Konstruktion wissen musst &mdash;
+              &bdquo;Zelt kaufen: Was du über Materialien, Wassersäule und Konstruktion wissen musst,
               von einem Bergführer erklärt.&ldquo; Mit deinem Experten als Autor, mit messbaren Fakten,
               mit Vergleichstabellen.
             </p>
             <div className="bg-brand-accent/5 rounded-lg p-4">
               <p className="text-sm text-gray-700"><strong className="text-black">KI-Bonus:</strong> Dieser Content beantwortet
               Dutzende Long-Tail-Fragen gleichzeitig. &bdquo;Welches Zelt für 2 Personen?&ldquo;, &bdquo;Zelt mit
-              niedriger Wassersäule?&ldquo;, &bdquo;Tunnelzelt vs. Kuppelzelt?&ldquo; &mdash; ein Guide, viele KI-Antworten.</p>
+              niedriger Wassersäule?&ldquo;, &bdquo;Tunnelzelt vs. Kuppelzelt?&ldquo;: ein Guide, viele KI-Antworten.</p>
             </div>
           </div>
 
@@ -411,15 +411,15 @@ export default function KiSichtbarkeitEcommercePage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">Problemlösungs-Content</h3>
             <p className="text-base text-gray-600 leading-relaxed mb-4">
-              &bdquo;Knieschmerzen beim Laufen: Welche Schuhe helfen?&ldquo; &mdash; geschrieben mit Input
+              &bdquo;Knieschmerzen beim Laufen: Welche Schuhe helfen?&ldquo;, geschrieben mit Input
               eines Sportmediziners, mit Quellenangaben aus Fachpublikationen. Du verkaufst nicht
               direkt, du baust Vertrauen auf. Und wenn ChatGPT dann gefragt wird, welcher Shop sich
-              mit Laufschuhen für Knieprobleme auskennt &mdash; ratet mal, wen es empfiehlt.
+              mit Laufschuhen für Knieprobleme auskennt, ratet mal, wen es empfiehlt.
             </p>
             <div className="bg-brand-accent/5 rounded-lg p-4">
               <p className="text-sm text-gray-700"><strong className="text-black">KI-Bonus:</strong> Problemlösungs-Content
               triggert E-E-A-T-Signale wie nichts anderes. Experience + Expertise + Authoritativeness +
-              Trustworthiness &mdash; alles in einem Artikel.</p>
+              Trustworthiness, alles in einem Artikel.</p>
             </div>
           </div>
 
@@ -460,35 +460,35 @@ export default function KiSichtbarkeitEcommercePage() {
           <ul className="space-y-3 text-base text-gray-600 leading-relaxed">
             <li className="flex gap-3">
               <span className="text-brand-accent font-bold shrink-0 mt-0.5">&#10003;</span>
-              <span><strong className="text-black">name</strong> &mdash; Der vollständige Produktname, nicht &bdquo;Artikel 48372&ldquo;</span>
+              <span><strong className="text-black">name</strong>: Der vollständige Produktname, nicht &bdquo;Artikel 48372&ldquo;</span>
             </li>
             <li className="flex gap-3">
               <span className="text-brand-accent font-bold shrink-0 mt-0.5">&#10003;</span>
-              <span><strong className="text-black">description</strong> &mdash; Mindestens 100 Wörter mit echtem Informationsgehalt, nicht nur Features</span>
+              <span><strong className="text-black">description</strong>: Mindestens 100 Wörter mit echtem Informationsgehalt, nicht nur Features</span>
             </li>
             <li className="flex gap-3">
               <span className="text-brand-accent font-bold shrink-0 mt-0.5">&#10003;</span>
-              <span><strong className="text-black">brand</strong> &mdash; Als eigenständiges Brand-Objekt, nicht nur ein String</span>
+              <span><strong className="text-black">brand</strong>: Als eigenständiges Brand-Objekt, nicht nur ein String</span>
             </li>
             <li className="flex gap-3">
               <span className="text-brand-accent font-bold shrink-0 mt-0.5">&#10003;</span>
-              <span><strong className="text-black">offers</strong> &mdash; Mit price, priceCurrency (EUR), availability (InStock/OutOfStock) und url</span>
+              <span><strong className="text-black">offers</strong>: Mit price, priceCurrency (EUR), availability (InStock/OutOfStock) und url</span>
             </li>
             <li className="flex gap-3">
               <span className="text-brand-accent font-bold shrink-0 mt-0.5">&#10003;</span>
-              <span><strong className="text-black">aggregateRating</strong> &mdash; Nur mit echten Bewertungen. Fake-Ratings erkennt KI sofort (siehe oben, Preisschild ohne Tür)</span>
+              <span><strong className="text-black">aggregateRating</strong>: Nur mit echten Bewertungen. Fake-Ratings erkennt KI sofort (siehe oben, Preisschild ohne Tür)</span>
             </li>
             <li className="flex gap-3">
               <span className="text-brand-accent font-bold shrink-0 mt-0.5">&#10003;</span>
-              <span><strong className="text-black">review</strong> &mdash; Mindestens 3 echte Kundenbewertungen als Review-Objekte mit author und reviewBody</span>
+              <span><strong className="text-black">review</strong>: Mindestens 3 echte Kundenbewertungen als Review-Objekte mit author und reviewBody</span>
             </li>
             <li className="flex gap-3">
               <span className="text-brand-accent font-bold shrink-0 mt-0.5">&#10003;</span>
-              <span><strong className="text-black">image</strong> &mdash; Hochauflösende Produktbilder (mindestens 1200px breit)</span>
+              <span><strong className="text-black">image</strong>: Hochauflösende Produktbilder (mindestens 1200px breit)</span>
             </li>
             <li className="flex gap-3">
               <span className="text-brand-accent font-bold shrink-0 mt-0.5">&#10003;</span>
-              <span><strong className="text-black">sku &amp; gtin</strong> &mdash; Eindeutige Identifikatoren, damit KI dein Produkt zuordnen kann</span>
+              <span><strong className="text-black">sku &amp; gtin</strong>: Eindeutige Identifikatoren, damit KI dein Produkt zuordnen kann</span>
             </li>
           </ul>
         </div>
@@ -541,7 +541,7 @@ export default function KiSichtbarkeitEcommercePage() {
                 <h3 className="text-lg font-semibold text-black mb-2">Technische Basis: Schema &amp; Crawlability</h3>
                 <p className="text-base text-gray-600 leading-relaxed">
                   Product Schema erweitern (siehe Checkliste oben). llms.txt konfigurieren. Server-Side
-                  Rendering sicherstellen, damit KI-Bots deine Inhalte sehen. robots.txt prüfen &mdash;
+                  Rendering sicherstellen, damit KI-Bots deine Inhalte sehen. robots.txt prüfen:
                   blockierst du GPTBot oder PerplexityBot? Viele Shops tun das versehentlich.
                 </p>
               </div>
@@ -574,7 +574,7 @@ export default function KiSichtbarkeitEcommercePage() {
                 <p className="text-base text-gray-600 leading-relaxed">
                   Externe Erwähnungen in Fachmedien. Echte Produkttests auf unabhängigen Portalen.
                   Gastbeiträge in Branchenblogs. KI-Systeme validieren über externe Quellen. Wenn
-                  nur deine eigene Website sagt, dass du der Experte bist &mdash; glaubt dir keine KI.
+                  nur deine eigene Website sagt, dass du der Experte bist, glaubt dir keine KI.
                   Genau wie im echten Leben, eigentlich.
                 </p>
               </div>
@@ -629,7 +629,7 @@ export default function KiSichtbarkeitEcommercePage() {
             <p className="text-base text-gray-600 leading-relaxed">
               Elektronik-Shop lässt ChatGPT 500 &bdquo;Buying Guides&ldquo; schreiben und veröffentlicht sie
               in einer Woche. Ergebnis: Google Helpful Content Penalty, 60% Traffic-Verlust. KI-Sichtbarkeit?
-              Negativ &mdash; die Domain wurde als Content-Spam markiert. Jetzt ist der Shop bei Google
+              Negativ, die Domain wurde als Content-Spam markiert. Jetzt ist der Shop bei Google
               UND bei KI unsichtbar. Doppelt bestraft.
               <strong className="text-black"> Manchmal ist Nichtstun die bessere Strategie.</strong>
             </p>
@@ -644,7 +644,7 @@ export default function KiSichtbarkeitEcommercePage() {
               Nahrungsergänzungsmittel-Shop packt 200 Fake-Bewertungen ins Product Schema. Durchschnitt:
               4,9 Sterne. Problem: Die echten Trustpilot-Bewertungen zeigen 3,2 Sterne. KI-Systeme
               vergleichen diese Daten. Ergebnis: Die Domain wird als unzuverlässig eingestuft. Nicht nur
-              die Bewertungen &mdash; der gesamte Content wird angezweifelt.
+              die Bewertungen, der gesamte Content wird angezweifelt.
               <strong className="text-black"> Vertrauen zurückgewinnen: 12-18 Monate. Wenn überhaupt.</strong>
             </p>
           </div>
@@ -710,7 +710,7 @@ export default function KiSichtbarkeitEcommercePage() {
             Dein Shop ist für KI unsichtbar. Lass uns das ändern.
           </h2>
           <p className="text-lg text-gray-400 leading-relaxed max-w-xl mx-auto mb-8">
-            In 15 Minuten zeigen wir dir, wie ChatGPT und Perplexity über deine Produktkategorien sprechen &mdash;
+            In 15 Minuten zeigen wir dir, wie ChatGPT und Perplexity über deine Produktkategorien sprechen
             und warum du nicht dabei bist. Kostenlos, ehrlich, ohne Verkaufsdruck.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
