@@ -1,10 +1,12 @@
 import React from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Hero } from '@/components/sections/Hero';
+import { ProofStrip } from '@/components/sections/ProofStrip';
 import { WhatWeDo } from '@/components/sections/WhatWeDo';
 import { LiveDemo } from '@/components/sections/LiveDemo';
 import { BeforeAfter } from '@/components/sections/BeforeAfter';
 import { Proof } from '@/components/sections/Proof';
+import { AskAI } from '@/components/sections/AskAI';
 
 import { Differentiation } from '@/components/sections/Differentiation';
 import { Process } from '@/components/sections/Process';
@@ -20,6 +22,8 @@ export default function Page() {
         <div className="relative w-full overflow-hidden bg-brand-bg text-brand-text font-sans selection:bg-brand-accent selection:text-white">
             <Navbar />
             <Hero />
+            <div id="proof-strip"><ProofStrip /></div>
+            <div id="ask-ai"><AskAI /></div>
             <div id="what-we-do"><WhatWeDo /></div>
             <div id="demo"><LiveDemo /></div>
             <div id="reality"><BeforeAfter /></div>

@@ -3,6 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import { PerplexityIcon } from './Icons';
 
+type IconComponent = React.FC<{ className?: string }>;
+
 interface PerplexitySimulatorProps {
     promptText?: string;
     answerText?: string;
@@ -17,6 +19,17 @@ interface PerplexitySimulatorProps {
     sources?: string[];
     /** Brand label shown as the highlighted, cited source. */
     citedSource?: string;
+    /** Engine name shown in the header (e.g. "ChatGPT"). Defaults to "Perplexity". */
+    engineLabel?: string;
+    /** Engine icon shown in the header. Defaults to the Perplexity mark. */
+    EngineIcon?: IconComponent;
+    /**
+     * Controlled play state. When set, the simulation only runs while `active`
+     * is true and resets to idle when false (used by the scroll-driven Proof
+     * cards so only the visible card types out). When omitted, behavior is
+     * unchanged (loops, or runs once per scenarioKey).
+     */
+    active?: boolean;
 }
 
 export const PerplexitySimulator: React.FC<PerplexitySimulatorProps> = ({
@@ -26,25 +39,33 @@ export const PerplexitySimulator: React.FC<PerplexitySimulatorProps> = ({
     scenarioKey,
     sources,
     citedSource,
+    engineLabel = "Perplexity",
+    EngineIcon = PerplexityIcon,
+    active,
 }) => {
     const [step, setStep] = useState<'IDLE' | 'TYPING' | 'THINKING' | 'ANSWERING' | 'DONE'>('IDLE');
     const [prompt, setPrompt] = useState('');
     const [answer, setAnswer] = useState('');
     const [showSources, setShowSources] = useState(false);
 
-    const looping = scenarioKey === undefined;
+    const controlled = active !== undefined;
+    // Loop on its own when uncontrolled and no scenarioKey, or while a
+    // controlled card is the active one.
+    const shouldLoop = (!controlled && scenarioKey === undefined) || (controlled && active === true);
 
-    // Reset and start whenever the scenario changes (or on first mount).
+    // Reset and start whenever the scenario changes, the card becomes active,
+    // or on first mount. A controlled card that is not active stays idle.
     useEffect(() => {
         setPrompt('');
         setAnswer('');
         setShowSources(false);
         setStep('IDLE');
+        if (controlled && active === false) return;
         const timer = setTimeout(() => {
             setStep('TYPING');
         }, 700);
         return () => clearTimeout(timer);
-    }, [scenarioKey, promptText, answerText]);
+    }, [scenarioKey, promptText, answerText, controlled, active]);
 
     useEffect(() => {
         if (step === 'TYPING') {
@@ -78,7 +99,7 @@ export const PerplexitySimulator: React.FC<PerplexitySimulatorProps> = ({
             }
         }
 
-        if (step === 'DONE' && looping) {
+        if (step === 'DONE' && shouldLoop) {
             const timer = setTimeout(() => {
                 setPrompt('');
                 setAnswer('');
@@ -88,7 +109,7 @@ export const PerplexitySimulator: React.FC<PerplexitySimulatorProps> = ({
             }, 6000);
             return () => clearTimeout(timer);
         }
-    }, [step, prompt, answer, promptText, answerText, looping]);
+    }, [step, prompt, answer, promptText, answerText, shouldLoop]);
 
     const hasNamedSources = Array.isArray(sources) && sources.length > 0;
 
@@ -96,8 +117,8 @@ export const PerplexitySimulator: React.FC<PerplexitySimulatorProps> = ({
         <div className={`w-full h-full bg-[#191A1A] text-white flex flex-col font-sans select-none overflow-hidden text-left ${condensed ? 'p-3' : 'p-4 lg:p-6'}`}>
             {/* Header */}
             <div className={`flex items-center gap-2 ${condensed ? 'mb-3' : 'mb-6'}`}>
-                <PerplexityIcon className={`${condensed ? 'w-3 h-3' : 'w-4 h-4'} text-white/70`} />
-                <span className={`${condensed ? 'text-[10px]' : 'text-xs'} font-medium tracking-tight whitespace-nowrap text-white/70`}>Perplexity Simulation</span>
+                <EngineIcon className={`${condensed ? 'w-3 h-3' : 'w-4 h-4'} text-white/70`} />
+                <span className={`${condensed ? 'text-[10px]' : 'text-xs'} font-medium tracking-tight whitespace-nowrap text-white/70`}>{engineLabel} Simulation</span>
             </div>
 
             {/* Prompt View */}
