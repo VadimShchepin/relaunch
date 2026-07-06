@@ -75,3 +75,24 @@ body {
   --font-fd-display: var(--font-fd-display);
   --font-fd-sans: var(--font-fd-sans);
 }
+
+/* Namespaced theme for the /redesigns/tiemann-co client-pitch page.
+   Prefixed "tc-" so it never collides with the site's own brand-* tokens. */
+@theme {
+  --color-tc-ink: #12172b;
+  --color-tc-charcoal: #1a2038;
+  --color-tc-slate: #454c63;
+  --color-tc-mist: #8a90a4;
+
+  --color-tc-navy: #1a2694;
+  --color-tc-navy-light: #4c58c9;
+  --color-tc-navy-dark: #0d123f;
+
+  --color-tc-powder: #c7d1f7;
+  --color-tc-powder-dark: #9aabe8;
+}
+
+@theme inline {
+  --font-tc-display: var(--font-tc-display);
+  --font-tc-sans: var(--font-tc-sans);
+}
