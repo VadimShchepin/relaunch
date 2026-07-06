@@ -8,6 +8,7 @@ const EXCLUDED_ROUTES = new Set([
   '/newsletter/confirmed',
   '/contact/danke',
   '/termin/danke',
+  '/redesigns/fraembs-dach',
 ]);
 
 function getLastModified(filePath: string): Date {

@@ -57,3 +57,21 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Namespaced theme for the /redesigns/fraembs-dach client-pitch page.
+   Prefixed "fd-" so it never collides with the site's own brand-* tokens. */
+@theme {
+  --color-fd-ink: #14171a;
+  --color-fd-charcoal: #1d2126;
+  --color-fd-slate: #444b52;
+  --color-fd-mist: #8b9198;
+
+  --color-fd-copper: #b3602e;
+  --color-fd-copper-light: #d99456;
+  --color-fd-copper-dark: #7c401d;
+}
+
+@theme inline {
+  --font-fd-display: var(--font-fd-display);
+  --font-fd-sans: var(--font-fd-sans);
+}

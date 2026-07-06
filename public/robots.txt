@@ -2,6 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /newsletter/confirmed
+Disallow: /redesigns/
 
 # Sitemap
 Sitemap: https://aiseo.hamburg/sitemap.xml
