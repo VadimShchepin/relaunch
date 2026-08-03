@@ -25,8 +25,8 @@ const PLANS = [
   },
   {
     name: "Umsetzungs-Sprint",
-    price: "Auf Anfrage",
-    cadence: "projektbasiert",
+    price: "ab 1.500 €",
+    cadence: "einmalig, Ergebnis in 10 bis 14 Tagen",
     tagline: "Projektbasiert",
     description:
       "Wir setzen die wichtigsten Maßnahmen aus dem Call um: Inhalte, Struktur und technische Grundlagen für KI-Sichtbarkeit.",
@@ -41,8 +41,8 @@ const PLANS = [
   },
   {
     name: "Laufende Betreuung",
-    price: "Auf Anfrage",
-    cadence: "monatlich kündbar",
+    price: "ab 600 €",
+    cadence: "pro Monat, monatlich kündbar",
     tagline: "Empfohlen",
     description:
       "Kontinuierliche Arbeit an deiner KI-Sichtbarkeit: neue Inhalte, laufendes Monitoring und Reaktion auf Veränderungen der AI-Engines.",
@@ -147,7 +147,7 @@ export default function PreisePage() {
 
           <FadeIn delay={400}>
             <p className="text-center text-sm text-gray-500 mt-10 max-w-2xl mx-auto">
-              Warum hier keine Zahlen stehen: Der Aufwand hängt von Branche, Wettbewerb und Ausgangslage ab, und eine erfundene &bdquo;ab&ldquo;-Zahl hilft dir bei der Entscheidung nicht. Nach dem kostenlosen Call bekommst du einen Festpreis (zzgl. USt.), an den wir uns halten.
+              Das sind Einstiegspreise, keine Pauschalen: Der Aufwand hängt von Branche, Wettbewerb und Ausgangslage ab. Nach dem kostenlosen Call bekommst du einen Festpreis (zzgl. USt.), an den wir uns halten, und du weißt vorher, in welchem Rahmen du dich bewegst.
             </p>
           </FadeIn>
         </section>
