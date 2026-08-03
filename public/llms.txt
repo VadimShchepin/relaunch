@@ -287,8 +287,13 @@ Location-specific service pages for Hamburg businesses:
 - All service packages at a glance
 
 **Book a free intro call**: https://aiseo.hamburg/termin
-- Free, no-obligation 30-minute consultation on AI visibility
+- Free, no-obligation 15-minute call on AI visibility
 - Live check whether you are named in ChatGPT and Perplexity
+- The free call is the only free step. Written audits, strategy documents and reports are part of the paid engagement.
+
+**Pricing and packages**: https://aiseo.hamburg/preise
+- Three steps: free 15-minute call, one-off implementation sprint, ongoing monthly retainer
+- No list prices published. Scope depends on industry, competition and starting position; a fixed price is quoted after the free call.
 
 **For budget-conscious clients**: https://aiseo.hamburg/ai-sichtbarkeits-upgrade-hamburg
 - One-time upgrade package: 1.500€ net

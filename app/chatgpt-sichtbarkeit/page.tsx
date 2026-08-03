@@ -84,11 +84,11 @@ const FAQS: FAQItem[] = [
   },
   {
     q: "Ist meine Website aktuell in ChatGPT sichtbar?",
-    a: "Das lässt sich testen. Wir fragen ChatGPT (und Perplexity, Claude, Gemini sowie Google AI Overviews) mit den Formulierungen, die deine Kunden tatsächlich nutzen, und schauen, ob deine Marke genannt wird, wer stattdessen empfohlen wird und warum. Diese Bestandsaufnahme ist der erste Schritt und in der kostenlosen Kurzanalyse enthalten.",
+    a: "Das lässt sich testen. Wir fragen ChatGPT (und Perplexity, Claude, Gemini sowie Google AI Overviews) mit den Formulierungen, die deine Kunden tatsächlich nutzen, und schauen, ob deine Marke genannt wird, wer stattdessen empfohlen wird und warum. Diese Bestandsaufnahme machen wir live im kostenlosen 15-Minuten-Call.",
   },
   {
     q: "Was kostet das?",
-    a: "Die Kurzanalyse ist kostenlos. Erst danach reden wir über Umsetzung, und du weißt vorher, woran du bist. Die transparenten Pakete für Umsetzung und laufende Betreuung findest du auf der Preisseite.",
+    a: "Der 15-Minuten-Call ist kostenlos. Erst danach reden wir über Umsetzung, und du weißt vorher, woran du bist. Welche Pakete es für Umsetzung und laufende Betreuung gibt, siehst du auf der Preisseite, den Festpreis für deinen Fall nennen wir nach dem Call.",
   },
   {
     q: "Ist ChatGPT-Optimierung dasselbe wie GEO?",
@@ -172,7 +172,7 @@ export default function ChatGptSichtbarkeitPage() {
 
           <FadeIn delay={250}>
             <p className="mt-8 text-sm text-gray-500">
-              Kostenlose Kurzanalyse. KI-Sichtbarkeit Berater aus Hamburg. Gemessen mit echten Prompt-Tests.
+              Kostenloser 15-Minuten-Call. KI-Sichtbarkeit Berater aus Hamburg. Gemessen mit echten Prompt-Tests.
             </p>
           </FadeIn>
 
@@ -418,14 +418,14 @@ export default function ChatGptSichtbarkeitPage() {
                 Lass uns prüfen, ob ChatGPT dich nennt
               </h2>
               <p className="text-lg text-gray-700 mb-8 max-w-xl mx-auto">
-                Starte mit der kostenlosen Kurzanalyse. Du erfährst, ob du in ChatGPT genannt wirst, wer stattdessen empfohlen wird und welche drei Hebel am meisten bringen.
+                Starte mit dem kostenlosen 15-Minuten-Call. Du erfährst, ob du in ChatGPT genannt wirst, wer stattdessen empfohlen wird und welche drei Hebel am meisten bringen.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/ai-sichtbarkeit-now">
-                  <Button text="Kostenlose Analyse anfragen" primary={true} className="justify-center" />
-                </Link>
                 <Link href="/termin">
-                  <Button text="Erstgespräch vereinbaren" primary={false} className="justify-center" />
+                  <Button text="Kostenlosen 15-Min-Call buchen" primary={true} className="justify-center" />
+                </Link>
+                <Link href="/contact">
+                  <Button text="Lieber schreiben" primary={false} className="justify-center" />
                 </Link>
               </div>
               <p className="mt-8 text-sm text-gray-500">

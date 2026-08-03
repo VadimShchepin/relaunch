@@ -52,7 +52,7 @@ export default function BookingSuccessPage() {
                     3
                   </div>
                   <p className="text-gray-700">
-                    Wir sprechen 30 Minuten über deine KI-Sichtbarkeit
+                    Wir sprechen 15 Minuten über deine KI-Sichtbarkeit
                   </p>
                 </div>
               </div>

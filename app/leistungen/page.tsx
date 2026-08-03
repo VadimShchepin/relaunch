@@ -778,7 +778,7 @@ export default function LeistungenPage() {
                 >
                   {PHONE_DISPLAY}
                 </a>
-                <p className="text-sm text-gray-500 mt-2">Kostenlose Erstberatung</p>
+                <p className="text-sm text-gray-500 mt-2">Kostenloser 15-Minuten-Call</p>
               </div>
 
               <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">

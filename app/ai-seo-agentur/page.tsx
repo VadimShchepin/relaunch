@@ -122,7 +122,7 @@ const FAQS: FAQItem[] = [
   },
   {
     q: "Was kostet eine AI SEO Agentur?",
-    a: "Das hängt von Branche, Wettbewerb und Ausgangslage ab. Die Erstanalyse ist bei uns kostenlos: Du erfährst, ob du aktuell in KI-Antworten genannt wirst und welche drei Hebel am meisten bringen. Danach gibt es einen projektbasierten Umsetzungs-Sprint und eine laufende Betreuung pro Monat. Konkrete Preise und Pakete findest du auf der Preise-Seite, einen festen Preis nennen wir im Erstgespräch. Keine versteckten Stunden, keine Überraschungen.",
+    a: "Das hängt von Branche, Wettbewerb und Ausgangslage ab. Der Einstieg ist ein kostenloser 15-Minuten-Call: Du erfährst, ob du aktuell in KI-Antworten genannt wirst und welche drei Hebel am meisten bringen. Danach gibt es einen projektbasierten Umsetzungs-Sprint und eine laufende Betreuung pro Monat. Die Pakete findest du auf der Preise-Seite, den festen Preis für deinen Fall nennen wir nach dem Call. Keine versteckten Stunden, keine Überraschungen.",
   },
   {
     q: "Wie unterscheidet sich AI SEO von klassischer SEO?",
@@ -208,16 +208,16 @@ export default function AiSeoAgenturPage() {
 
           <FadeIn delay={150}>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/ai-sichtbarkeit-now">
+              <Link href="/termin">
                 <Button
-                  text="Kostenlose KI-Sichtbarkeitsanalyse"
+                  text="Kostenlosen 15-Min-Call buchen"
                   primary={true}
                   className="justify-center"
                 />
               </Link>
-              <Link href="/termin">
+              <Link href="/contact">
                 <Button
-                  text="Erstgespräch vereinbaren"
+                  text="Lieber schreiben"
                   primary={false}
                   className="justify-center"
                 />
@@ -606,20 +606,20 @@ export default function AiSeoAgenturPage() {
                 Lass uns deine KI-Sichtbarkeit prüfen
               </h2>
               <p className="text-gray-700 mb-8 max-w-xl mx-auto">
-                Starte mit der kostenlosen Analyse oder buche direkt ein
-                Erstgespräch. Du weißt vorher, woran du bist.
+                15 Minuten, kostenlos, kein Verkaufsdruck. Du weißt danach,
+                woran du bist.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/ai-sichtbarkeit-now">
+                <Link href="/termin">
                   <Button
-                    text="Kostenlose KI-Sichtbarkeitsanalyse"
+                    text="Kostenlosen 15-Min-Call buchen"
                     primary={true}
                     className="justify-center"
                   />
                 </Link>
-                <Link href="/termin">
+                <Link href="/contact">
                   <Button
-                    text="Erstgespräch vereinbaren"
+                    text="Lieber schreiben"
                     primary={false}
                     className="justify-center"
                   />

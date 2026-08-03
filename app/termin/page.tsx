@@ -83,7 +83,7 @@ export default function BookingPage() {
               Erstgespräch vereinbaren
             </h1>
             <p className="text-xl text-gray-700 max-w-2xl">
-              Schlag zwei Wunschtermine vor. Wir bestätigen per E-Mail und schicken dir den Google-Meet-Link. 30 Minuten, kostenlos und unverbindlich.
+              Schlag zwei Wunschtermine vor. Wir bestätigen per E-Mail und schicken dir den Google-Meet-Link. 15 Minuten, kostenlos und unverbindlich.
             </p>
           </FadeIn>
         </section>
@@ -117,12 +117,13 @@ export default function BookingPage() {
                     Lieber schreiben statt sprechen?{' '}
                     <a href="/contact" className="underline hover:text-black">
                       Schick uns eine Nachricht
+                    </a>
+                    . Ein ausgearbeitetes Audit gehört nicht in diesen Call, das ist der
+                    bezahlte Schritt danach. Was die{' '}
+                    <a href="/preise" className="underline hover:text-black">
+                      Pakete
                     </a>{' '}
-                    oder fordere direkt eine{' '}
-                    <a href="/ai-sichtbarkeit-now" className="underline hover:text-black">
-                      kostenlose Kurzanalyse
-                    </a>{' '}
-                    an.
+                    umfassen, siehst du auf der Preise-Seite.
                   </p>
                 </div>
               </div>

@@ -180,11 +180,11 @@ const faqs = [
   },
   {
     question: 'Funktioniert das auch für meine Branche?',
-    answer: 'Ja, wenn Ihre Zielgruppe online nach Lösungen sucht. Besonders effektiv bei: Dienstleistungen, E-Commerce, B2B SaaS, Handwerk, Beratung. In jedem Fall machen wir vorab einen kostenlosen KI-Check für Ihre Nische.'
+    answer: 'Ja, wenn Ihre Zielgruppe online nach Lösungen sucht. Besonders effektiv bei: Dienstleistungen, E-Commerce, B2B SaaS, Handwerk, Beratung. Ob es sich in Ihrer Nische lohnt, klären wir vorab im kostenlosen KI-Check, 15 Minuten am Telefon.'
   },
   {
     question: 'Was kostet KI-Sichtbarkeit?',
-    answer: 'Das hängt von Wettbewerb und Umfang ab. Die meisten Kunden investieren 3.500-7.500 € für Setup + 3 Monate Optimierung. Danach optional 1.500 €/Monat für Monitoring & Weiterentwicklung. Wir besprechen die genaue Investition nach dem KI-Check.'
+    answer: 'Das hängt von Wettbewerb und Umfang ab. Es gibt zwei Bausteine: einen einmaligen Umsetzungs-Sprint und eine laufende Betreuung pro Monat, beide zum Festpreis. Eine Pauschalzahl auf einer Website wäre geraten, deshalb nennen wir sie nicht. Nach dem kostenlosen KI-Check bekommen Sie eine konkrete Zahl, an die wir uns halten. Die Pakete im Überblick finden Sie auf der Preise-Seite.'
   },
   {
     question: 'Garantieren Sie Ergebnisse?',
@@ -315,7 +315,7 @@ const AIVisibilityNowPage = () => {
                 >
                   {PHONE_DISPLAY}
                 </a>
-                <p className="text-sm text-stone-500 mt-2">Kostenlose Erstberatung & KI-Check</p>
+                <p className="text-sm text-stone-500 mt-2">Kostenloser KI-Check: 15 Minuten am Telefon</p>
               </div>
             </FadeIn>
 
@@ -868,7 +868,7 @@ const AIVisibilityNowPage = () => {
               Bereit für KI-Dominanz?
             </h2>
             <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
-              Kostenlose Erstberatung & KI-Check für Ihr Unternehmen. Wir analysieren, wo Sie heute stehen und wie wir Sie zur Top-Empfehlung machen.
+              Kostenloser KI-Check, 15 Minuten am Telefon. Wir schauen live nach, wo Sie heute stehen, und Sie hören, was der schnellste Hebel wäre.
             </p>
 
             <div className="mb-8">

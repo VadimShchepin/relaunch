@@ -5,8 +5,8 @@ import { Button } from '@/components/ui/Button';
 
 const FAQ_ITEMS = [
   {
-    q: 'Was kostet die kostenlose Kurzanalyse wirklich?',
-    a: 'Nichts. Null Euro. Kein Kleingedrucktes. Du bekommst in 15 Minuten eine ehrliche Einschätzung, ob KI-Sichtbarkeit für dein Unternehmen Sinn macht. Wenn nicht, sage ich dir das. Es gibt keinen automatischen Übergang in ein kostenpflichtiges Paket.',
+    q: 'Was kostet der kostenlose 15-Minuten-Call wirklich?',
+    a: 'Nichts. Null Euro. Kein Kleingedrucktes. Du bekommst in 15 Minuten eine ehrliche Einschätzung, ob KI-Sichtbarkeit für dein Unternehmen Sinn macht. Wenn nicht, sage ich dir das. Es gibt keinen automatischen Übergang in ein kostenpflichtiges Paket. Was nicht dabei ist: ein ausgearbeitetes Audit oder ein schriftlicher Report. Das gehört zum bezahlten Teil, sonst müsste ich es über die Preise der anderen Kunden finanzieren.',
   },
   {
     q: 'Muss ich technisches Wissen mitbringen?',
@@ -204,11 +204,11 @@ export default function KiSichtbarkeitBeauftragenPage() {
         {/* Schritt 1: Kostenlose Kurzanalyse */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-              Schritt&nbsp;1: Kostenlose Kurzanalyse (15&nbsp;Minuten)
+              Schritt&nbsp;1: Kostenloser 15-Minuten-Call
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
               <p>
-                Du schickst mir deine Website-URL. Ich pr&uuml;fe sie. Fertig. Das ist kein &bdquo;Discovery Call&ldquo; mit drei Account Managern und einem Praktikanten, der Notizen macht. Das bin ich, deine URL, und 15&nbsp;Minuten meiner ungeteilten Aufmerksamkeit.
+                Du buchst 15&nbsp;Minuten, schickst mir vorab deine Website-URL, und wir schauen im Call gemeinsam nach. Das ist kein &bdquo;Discovery Call&ldquo; mit drei Account Managern und einem Praktikanten, der Notizen macht. Das bin ich, deine URL, und 15&nbsp;Minuten meiner ungeteilten Aufmerksamkeit.
               </p>
               <p>
                 (Stell dir vor, ein Arzt w&uuml;rde dich tats&auml;chlich untersuchen, bevor er dir Tabletten verschreibt. Ungef&auml;hr so revolution&auml;r ist das im Agentur-Business.)
@@ -243,7 +243,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
                 <ul className="space-y-3 text-base text-gray-600">
                   <li className="flex gap-3">
                     <span className="text-brand-accent shrink-0 mt-1">&#10003;</span>
-                    <span>Screenshots deiner aktuellen KI-Sichtbarkeit (oder Nicht-Sichtbarkeit)</span>
+                    <span>Wir testen live mit, du siehst deine KI-Sichtbarkeit (oder Nicht-Sichtbarkeit) direkt auf dem Schirm</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-brand-accent shrink-0 mt-1">&#10003;</span>
@@ -251,13 +251,16 @@ export default function KiSichtbarkeitBeauftragenPage() {
                   </li>
                   <li className="flex gap-3">
                     <span className="text-brand-accent shrink-0 mt-1">&#10003;</span>
-                    <span>Falls ja: Grobe Einsch&auml;tzung des Aufwands und der Kosten</span>
+                    <span>Falls ja: die drei gr&ouml;&szlig;ten Hebel und eine grobe Einordnung des Aufwands</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-brand-accent shrink-0 mt-1">&#10003;</span>
-                    <span>Falls nein: Alternative Empfehlungen (kostenlos, weil ich kein Interesse habe, dir Unsinn zu verkaufen)</span>
+                    <span>Falls nein: alternative Empfehlungen, weil ich kein Interesse habe, dir Unsinn zu verkaufen</span>
                   </li>
                 </ul>
+                <p className="mt-4 text-sm text-gray-500">
+                  Was du <strong className="text-black">nicht</strong> bekommst: einen ausgearbeiteten Report. Das schriftliche Audit mit Strategie und Festpreis ist Schritt&nbsp;2 und beginnt erst, wenn du dich entschieden hast.
+                </p>
               </div>
             </div>
 
@@ -636,8 +639,8 @@ export default function KiSichtbarkeitBeauftragenPage() {
                   <tr className="border-t border-gray-100">
                     <td className="p-4 font-medium text-black">Kurzanalyse</td>
                     <td className="p-4 text-gray-600">15 Min</td>
-                    <td className="p-4 text-gray-600">URL schicken</td>
-                    <td className="p-4 text-gray-600">Ehrliche Einsch&auml;tzung</td>
+                    <td className="p-4 text-gray-600">Call, URL schicken</td>
+                    <td className="p-4 text-gray-600">Ehrliche Einsch&auml;tzung im Gespr&auml;ch</td>
                   </tr>
                   <tr className="border-t border-gray-100 bg-gray-50/50">
                     <td className="p-4 font-medium text-black">Audit & Strategie</td>
@@ -799,13 +802,13 @@ export default function KiSichtbarkeitBeauftragenPage() {
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
             <div className="bg-[#121212] rounded-3xl p-8 md:p-12 text-center">
               <h2 className="text-2xl md:text-3xl font-semibold tracking-[-0.03em] text-white mb-4">
-                Starte mit der kostenlosen Kurzanalyse
+                Starte mit dem kostenlosen 15-Minuten-Call
               </h2>
               <p className="text-lg text-gray-400 leading-relaxed max-w-xl mx-auto mb-8">
                 15&nbsp;Minuten. Deine URL. Eine ehrliche Einsch&auml;tzung, ob KI-Sichtbarkeit f&uuml;r dich Sinn macht. Kein Pitch, kein Druck, kein Kleingedrucktes.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button href="/ai-sichtbarkeit-now" text="Kostenlose Kurzanalyse starten" primary />
+                <Button href="/termin" text="Kostenlosen 15-Min-Call buchen" primary />
                 <a
                   href="/wissen/ki-sichtbarkeit-kosten"
                   className="text-gray-400 hover:text-white transition-colors text-base underline underline-offset-4"

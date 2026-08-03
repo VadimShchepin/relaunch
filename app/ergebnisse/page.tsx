@@ -66,6 +66,8 @@ type CaseStudy = {
   getan: string;
   numbers: string[];
   href: string;
+  /* Fällt auf "Vollständige Fallstudie lesen" zurück, wenn es keine eigene Fallstudienseite gibt. */
+  ctaLabel?: string;
 };
 
 const CASE_STUDIES: CaseStudy[] = [
@@ -97,6 +99,23 @@ const CASE_STUDIES: CaseStudy[] = [
       "Relaunch in 90 Tagen statt teurer Reparatur am Altbestand",
     ],
     href: "/wissen/fallstudie-ki-sichtbarkeit-90-tage",
+  },
+  {
+    name: "Google Ads, zwei Konten im Vergleich",
+    client: "Gartenbau und Handwerk, Hamburg",
+    ausgangslage:
+      "Zwei Kunden, fast identisches Werbebudget, gleicher Zeitraum (6. April bis 3. August 2026). Wir zeigen beide Konten nebeneinander, weil ein einzelner guter Wert für dich nichts aussagt.",
+    getan:
+      "Kampagnenstruktur, Suchbegriffe und Anzeigentexte auf echte Anfragen ausgerichtet und das Conversion-Tracking so gesetzt, dass jede Anfrage über Formular oder Anruf gezählt wird.",
+    numbers: [
+      "Konto A: 4.511 € Budget, 603 Anfragen, 7,48 € pro Anfrage",
+      "Konto A: 29.226 Impressionen, 2.934 Klicks, 20,6 % Conversion-Rate",
+      "Konto B: 4.639 € Budget, 65 Anfragen, 71,37 € pro Anfrage",
+      "Konto B: 130.929 Impressionen, 3.177 Klicks, 2,0 % Conversion-Rate",
+      "Faktor 9,5 Unterschied bei gleichem Budget, allein durch Branche und Wettbewerb",
+    ],
+    href: "/termin",
+    ctaLabel: "Deine Zahlen im 15-Min-Call einordnen",
   },
   {
     name: "KinderAlbum",
@@ -134,7 +153,7 @@ const MEASUREMENT = [
 const FAQS = [
   {
     q: "Sind diese Ergebnisse garantiert?",
-    a: "Nein, und jeder, der das verspricht, sollte dich skeptisch machen. Branche, Wettbewerb und Ausgangslage entscheiden mit. Wir senken dein Risiko anders: Die Erstanalyse ist kostenlos, du siehst vorher, wo du stehst, und erst danach reden wir über Umsetzung. Du gehst keine Verpflichtung ein, bevor klar ist, dass sich die Arbeit lohnt.",
+    a: "Nein, und jeder, der das verspricht, sollte dich skeptisch machen. Branche, Wettbewerb und Ausgangslage entscheiden mit. Wir senken dein Risiko anders: Der Einstieg ist ein kostenloser 15-Minuten-Call, du siehst vorher, wo du stehst, und erst danach reden wir über Umsetzung. Du gehst keine Verpflichtung ein, bevor klar ist, dass sich die Arbeit lohnt.",
   },
   {
     q: "Kann ich die Zahlen selbst prüfen?",
@@ -150,7 +169,7 @@ const FAQS = [
   },
   {
     q: "Was kostet die Zusammenarbeit?",
-    a: "Die Erstanalyse ist kostenlos. Danach hängt der Preis von Aufwand und Ausgangslage ab. Auf unserer Preisseite findest du die ab-Beträge für Umsetzung und laufende Betreuung, und im Erstgespräch nennen wir dir einen festen Preis ohne Überraschungen.",
+    a: "Der Einstieg ist ein kostenloser 15-Minuten-Call. Danach hängt der Preis von Aufwand und Ausgangslage ab. Auf unserer Preisseite siehst du, welche Pakete es für Umsetzung und laufende Betreuung gibt, und nach dem Call nennen wir dir einen festen Preis ohne Überraschungen.",
   },
 ];
 
@@ -207,11 +226,11 @@ export default function ErgebnissePage() {
               Echte Ergebnisse aus unserer Arbeit an SEO und Generative Engine Optimization (GEO). Keine geglätteten Vanity-Grafiken: jede Zahl auf dieser Seite stammt aus einer Quelle, die du selbst öffnen, nachmessen oder in Echtzeit testen kannst.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/ai-sichtbarkeit-now">
-                <Button text="Kostenlose Analyse anfragen" primary={true} className="justify-center" />
-              </Link>
               <Link href="/termin">
-                <Button text="Erstgespräch vereinbaren" primary={false} className="justify-center" />
+                <Button text="Kostenlosen 15-Min-Call buchen" primary={true} className="justify-center" />
+              </Link>
+              <Link href="/contact">
+                <Button text="Lieber schreiben" primary={false} className="justify-center" />
               </Link>
             </div>
           </FadeIn>
@@ -405,7 +424,7 @@ export default function ErgebnissePage() {
                       href={cs.href}
                       className="inline-flex items-center gap-2 text-sm font-semibold text-black hover:text-brand-accent transition-colors group"
                     >
-                      Vollständige Fallstudie lesen
+                      {cs.ctaLabel ?? "Vollständige Fallstudie lesen"}
                       <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </div>
@@ -564,14 +583,14 @@ export default function ErgebnissePage() {
                 Sieh dir deine eigenen Zahlen an
               </h2>
               <p className="text-gray-700 mb-8 max-w-xl mx-auto">
-                In der kostenlosen Analyse prüfen wir, wo du heute in Suche und KI-Antworten stehst. Danach entscheidest du in Ruhe.
+                In 15 kostenlosen Minuten prüfen wir live, wo du heute in Suche und KI-Antworten stehst. Danach entscheidest du in Ruhe.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/ai-sichtbarkeit-now">
-                  <Button text="Kostenlose Analyse anfragen" primary={true} className="justify-center" />
-                </Link>
                 <Link href="/termin">
-                  <Button text="Erstgespräch vereinbaren" primary={false} className="justify-center" />
+                  <Button text="Kostenlosen 15-Min-Call buchen" primary={true} className="justify-center" />
+                </Link>
+                <Link href="/contact">
+                  <Button text="Lieber schreiben" primary={false} className="justify-center" />
                 </Link>
               </div>
             </FadeIn>

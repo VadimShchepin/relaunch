@@ -58,8 +58,8 @@ const PROJECTS: Project[] = [
         logo: '/image/proof/gl-sommer-logo.webp',
         engine: 'Google Ads',
         Icon: GoogleIcon,
-        result: 'Conversions deutlich gesteigert, Google Ads mit rund 8 € pro Conversion.',
-        metric: { value: '~8 €', label: 'pro Conversion' },
+        result: '603 Anfragen aus 4.511 € Google-Ads-Budget, 6. April bis 3. August 2026. Eine Conversion ist hier eine Anfrage über Formular oder Anruf.',
+        metric: { value: '7,48 €', label: 'pro Anfrage, Google Ads' },
     },
     {
         name: 'KinderAlbum',
@@ -149,6 +149,12 @@ export const ProofStrip: React.FC = () => (
 
         <div className="px-6 md:px-12 lg:px-20 max-w-[1200px] mx-auto">
             <FadeIn>
+                <p className="mt-8 text-sm text-gray-500 max-w-2xl leading-relaxed">
+                    Zu den Anfragekosten eine Einordnung, damit die 7,48&nbsp;&euro; nicht als Versprechen gelesen werden: Im
+                    gleichen Zeitraum lag ein zweites Google-Ads-Konto bei 71,37&nbsp;&euro; pro Anfrage, bei fast identischem
+                    Budget. Der Unterschied liegt an Branche, Wettbewerb und Angebot, nicht an der Kampagnenarbeit. Was bei
+                    dir realistisch ist, lässt sich erst nach einem Blick auf deinen Markt sagen.
+                </p>
                 <div className="mt-8">
                     <a
                         href="/ergebnisse"

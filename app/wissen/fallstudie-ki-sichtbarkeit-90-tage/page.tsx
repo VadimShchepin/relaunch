@@ -17,7 +17,7 @@ const FAQS = [
   },
   {
     q: 'Was kostet so eine KI-Sichtbarkeitsoptimierung?',
-    a: 'Das h\u00e4ngt vom Umfang ab. Eine technische Basis-Optimierung beginnt bei ca. 2.500\u00a0\u20ac, ein vollst\u00e4ndiges 90-Tage-Programm mit Content-Strategie und laufendem Monitoring liegt zwischen 5.000 und 15.000\u00a0\u20ac. Zum Vergleich: Der Kunde in dieser Fallstudie zahlt jetzt 2,57\u00a0\u20ac pro Klick statt 18\u201320\u00a0\u20ac Marktdurchschnitt. Die Investition hat sich in 7 Wochen amortisiert.',
+    a: 'Das h\u00e4ngt vom Umfang ab. Markt\u00fcblich liegt eine technische Basis-Optimierung bei rund 2.500\u00a0\u20ac, ein vollst\u00e4ndiges 90-Tage-Programm mit Content-Strategie und laufendem Monitoring zwischen 5.000 und 15.000\u00a0\u20ac. Was es bei uns konkret kostet, h\u00e4ngt von deiner Ausgangslage ab und steht als Festpreis nach dem kostenlosen 15-Minuten-Call fest. Zum Vergleich: Der Kunde in dieser Fallstudie zahlt jetzt 2,57\u00a0\u20ac pro Klick statt 18\u201320\u00a0\u20ac Marktdurchschnitt. Die Investition hat sich in 7 Wochen amortisiert.',
   },
   {
     q: 'Funktioniert das auch f\u00fcr E-Commerce und nicht nur f\u00fcr Dienstleister?',
@@ -451,10 +451,13 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
               <strong className="text-black">474&nbsp;Klicks &times; 2,57&nbsp;&euro;&nbsp;CPC = 1.218&nbsp;&euro; &bdquo;&Auml;quivalentwert&ldquo; pro Monat.</strong> Das hei&szlig;t: Um die gleichen Klicks &uuml;ber Google Ads zu bekommen, m&uuml;sstest du 1.218&nbsp;&euro; pro Monat ausgeben. Bei Marktpreisen (18&ndash;20&nbsp;&euro;&nbsp;CPC) w&auml;ren es <strong className="text-black">8.532&ndash;9.480&nbsp;&euro;</strong>. Pro Monat. Jedes Monat. Ohne dass der Traffic dir geh&ouml;rt.
             </p>
             <p>
-              <strong className="text-black">~40&nbsp;Kunden/Monat bei geschätztem Auftragswert:</strong> Selbst konservativ gerechnet mit 500&nbsp;&euro; durchschnittlichem Auftragswert (f&uuml;r einen Dienstleister in Hamburg eher niedrig angesetzt) sind das <strong className="text-black">20.000&nbsp;&euro; Umsatz pro Monat</strong>, der direkt auf die KI-Sichtbarkeitsoptimierung zur&uuml;ckzuf&uuml;hren ist.
+              <strong className="text-black">~40&nbsp;Kunden/Monat (Gesamtzahl, inkl. nicht l&uuml;ckenlos zuordenbarer Anfragen) bei gesch&auml;tztem Auftragswert:</strong> Selbst konservativ gerechnet mit 500&nbsp;&euro; durchschnittlichem Auftragswert (f&uuml;r einen Dienstleister in Hamburg eher niedrig angesetzt) sind das <strong className="text-black">20.000&nbsp;&euro; Umsatz pro Monat</strong>, der direkt auf die KI-Sichtbarkeitsoptimierung zur&uuml;ckzuf&uuml;hren ist.
             </p>
             <p>
-              <strong className="text-black">19&nbsp;Conversions bei 27,80&nbsp;&euro;&nbsp;CPA.</strong> Das sind die h&auml;rtesten Zahlen. 27,80&nbsp;&euro; pro zahlenden Kunden. Vergleich: Google Ads im gleichen Segment liegen bei 80&ndash;120&nbsp;&euro;&nbsp;CPA. Facebook Ads bei 60&ndash;90&nbsp;&euro;. Wir reden hier &uuml;ber <strong className="text-black">Faktor&nbsp;3&ndash;4 g&uuml;nstiger</strong> als jeder bezahlte Kanal.
+              <strong className="text-black">19&nbsp;eindeutig zugeordnete Neukunden pro Monat bei 27,80&nbsp;&euro;&nbsp;CPA (organischer Kanal, Monat&nbsp;3).</strong> Das sind die h&auml;rtesten Zahlen, weil sie die konservativsten sind: nur die F&auml;lle, die sich per Tracking l&uuml;ckenlos bis zum Auftrag verfolgen lie&szlig;en. 27,80&nbsp;&euro; pro zahlenden Kunden, gerechnet auf das monatliche Honorar, nicht auf Werbebudget. Vergleich: Google Ads im gleichen Segment liegen bei 80&ndash;120&nbsp;&euro;&nbsp;CPA pro Neukunde. Facebook Ads bei 60&ndash;90&nbsp;&euro;. Wir reden hier &uuml;ber <strong className="text-black">Faktor&nbsp;3&ndash;4 g&uuml;nstiger</strong> als jeder bezahlte Kanal.
+            </p>
+            <p className="text-sm text-gray-500">
+              Damit die Zahlen vergleichbar bleiben, drei Abgrenzungen. <strong className="text-black">19 gegen ~40:</strong> Die 19 sind die l&uuml;ckenlos zugeordneten Neukunden, die ~40 die Gesamtzahl inklusive der F&auml;lle, bei denen die Zuordnung abbricht (Anruf ohne Call-Tracking, sp&auml;tere Direkteingabe der URL). <strong className="text-black">Kunde gegen Lead:</strong> 27,80&nbsp;&euro; ist der Preis f&uuml;r einen <strong className="text-black">zahlenden Kunden</strong>. Kennzahlen wie &bdquo;7,48&nbsp;&euro; pro Anfrage&ldquo; aus unseren Google-Ads-Konten messen eine <strong className="text-black">Anfrage</strong> (Formular oder Anruf), von denen nur ein Teil zum Auftrag wird. Und auch die schwankt: im selben Zeitraum lag ein zweites Ads-Konto bei 71,37&nbsp;&euro; pro Anfrage. <strong className="text-black">Organisch gegen bezahlt:</strong> Hier steckt Honorar dahinter, dort Werbebudget, das mit dem letzten Klick aufh&ouml;rt zu wirken.
             </p>
           </div>
         </div>
@@ -483,7 +486,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
             {
               num: '03',
               title: 'Echte Daten statt Bauchgefühl',
-              text: 'Wir haben 72 Interaktionen pro Monat getrackt. Nicht „geschätzt“, nicht „gefühlt mehr“, sondern: getrackt. Mit UTM-Parametern, Call-Tracking und CRM-Integration. Wenn der Geschäftsführer fragt „Bringt das was?“, zeigen wir ihm ein Dashboard mit 19 Conversions bei 27,80\u00a0\u20ac pro Conversion. Versuch das mal mit einer Zeitungsanzeige.',
+              text: 'Wir haben 72 Interaktionen pro Monat getrackt. Nicht „geschätzt“, nicht „gefühlt mehr“, sondern: getrackt. Mit UTM-Parametern, Call-Tracking und CRM-Integration. Wenn der Geschäftsführer fragt „Bringt das was?“, zeigen wir ihm ein Dashboard mit 19 eindeutig zugeordneten Neukunden pro Monat bei 27,80\u00a0\u20ac pro Neukunde, organisch, ohne Ad-Spend. Versuch das mal mit einer Zeitungsanzeige.',
             },
             {
               num: '04',
@@ -562,7 +565,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
                 Ein Hamburger Handwerksbetrieb mit &uuml;ber 1.650 abgeschlossenen Projekten, der online praktisch nicht existierte. SEO-Score: 34/100. Kein Schema-Markup, kein Google Business Profil, keine strukturierten Daten. Alles, was man falsch machen kann, falsch gemacht.
               </p>
               <p>
-                <strong className="text-black">Ergebnis:</strong> <strong className="text-black">728&nbsp;lokale Aktionen pro Monat</strong> (Anrufe, Wegbeschreibungen, Website-Besuche &uuml;ber Google). <strong className="text-black">19&nbsp;Conversions pro Monat</strong> bei <strong className="text-black">27,80&nbsp;&euro; pro Conversion</strong>. F&uuml;r ein Unternehmen, das vorher null digitale Pr&auml;senz hatte, ist das wie von Null auf Hundert, nur dass es nicht um Km/h geht, sondern um Kunden.
+                <strong className="text-black">Ergebnis:</strong> <strong className="text-black">728&nbsp;lokale Aktionen pro Monat</strong> (Anrufe, Wegbeschreibungen, Website-Besuche &uuml;ber Google). <strong className="text-black">19&nbsp;eindeutig zugeordnete Neukunden pro Monat</strong> bei <strong className="text-black">27,80&nbsp;&euro; pro Neukunde</strong> (organisch, ohne Werbebudget). F&uuml;r ein Unternehmen, das vorher null digitale Pr&auml;senz hatte, ist das wie von Null auf Hundert, nur dass es nicht um Km/h geht, sondern um Kunden.
               </p>
             </div>
           </div>

@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/Button';
 const FAQ_ITEMS = [
   {
     q: 'Was kostet eine AI SEO Agentur?',
-    a: 'Ein einmaliges KI-Sichtbarkeits-Audit liegt zwischen 500 und 2.000 Euro. Laufende Optimierung kostet zwischen 1.000 und 5.000 Euro pro Monat. Entscheidend ist nicht der Preis, sondern ob die Agentur echte KI-Zitierungen messen kann. Viele Anbieter verkaufen klassisches SEO unter neuem Label. Bei aiseo.hamburg gibt es eine kostenlose Kurzanalyse, damit du vorher weißt, wo du stehst.',
+    a: 'Marktüblich liegt ein einmaliges KI-Sichtbarkeits-Audit zwischen 500 und 2.000 Euro, laufende Optimierung zwischen 1.000 und 5.000 Euro pro Monat. Entscheidend ist nicht der Preis, sondern ob die Agentur echte KI-Zitierungen messen kann. Viele Anbieter verkaufen klassisches SEO unter neuem Label. Bei aiseo.hamburg startest du mit einem kostenlosen 15-Minuten-Call und bekommst danach einen Festpreis für deinen Fall.',
   },
   {
     q: 'Wie schnell sehe ich Ergebnisse bei AI SEO?',

@@ -225,9 +225,10 @@ const OfferSection: React.FC = () => (
 
                     <div className="space-y-4 mb-8">
                         {[
-                            "Kurzer Blick auf eure Website + KI-Nennungen",
+                            "Live im Call: kurzer Blick auf eure Website + KI-Nennungen",
                             "3 klare Punkte: Was blockiert euch? Was bringt am meisten? Was ist unnötig?",
-                            "Wenn's passt: nächster Schritt als konkreter Vorschlag"
+                            "Wenn's passt: nächster Schritt als konkreter Vorschlag",
+                            "Kein schriftlicher Report, kein Audit-PDF, keine Verpflichtung"
                         ].map((item, i) => (
                             <div key={i} className="flex items-start gap-3 text-gray-300">
                                 <CheckIcon className="w-5 h-5 text-brand-accent flex-shrink-0 mt-0.5" />

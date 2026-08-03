@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Erstgespräch vereinbaren | KI-Sichtbarkeit Hamburg",
   description:
-    "Kostenloses 30-Minuten-Erstgespräch zur KI-Sichtbarkeit. Wir schauen live, ob du in ChatGPT und Perplexity genannt wirst, und nennen dir konkrete nächste Schritte. Unverbindlich.",
+    "Kostenloser 15-Minuten-Call zur KI-Sichtbarkeit. Wir schauen live, ob du in ChatGPT und Perplexity genannt wirst, und nennen dir konkrete nächste Schritte. Unverbindlich.",
   alternates: {
     canonical: "/termin",
     languages: {
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Erstgespräch vereinbaren | KI-Sichtbarkeit Hamburg",
     description:
-      "Kostenloses 30-Minuten-Erstgespräch zur KI-Sichtbarkeit. Live-Check in ChatGPT und Perplexity, konkrete nächste Schritte, unverbindlich.",
+      "Kostenloser 15-Minuten-Call zur KI-Sichtbarkeit. Live-Check in ChatGPT und Perplexity, konkrete nächste Schritte, unverbindlich.",
     url: "https://aiseo.hamburg/termin",
     siteName: "aiseo.hamburg",
     locale: "de_DE",
