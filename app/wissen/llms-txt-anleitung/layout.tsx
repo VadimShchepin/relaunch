@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'llms.txt erstellen: So machst du deine Website KI-lesbar | aiseo.hamburg',
+  title: 'llms.txt erstellen: Website KI-lesbar machen',
   description:
     'llms.txt erstellen: Schritt-für-Schritt-Anleitung mit Vorlage und Beispielen. Was gehört rein, was nicht, und warum robots.txt allein nicht reicht für KI-Sichtbarkeit.',
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/wissen/llms-txt-anleitung',
-    title: 'llms.txt erstellen: So machst du deine Website KI-lesbar | aiseo.hamburg',
+    title: 'llms.txt erstellen: Website KI-lesbar machen',
     description:
       'llms.txt erstellen: Schritt-für-Schritt-Anleitung mit Vorlage und Beispielen. Was gehört rein, was nicht, und warum robots.txt allein nicht reicht.',
     siteName: 'aiseo.hamburg',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'llms.txt erstellen: So machst du deine Website KI-lesbar | aiseo.hamburg',
+    title: 'llms.txt erstellen: Website KI-lesbar machen',
     description:
       'llms.txt erstellen: Schritt-für-Schritt-Anleitung mit Vorlage und Beispielen. Was gehört rein, was nicht.',
   },

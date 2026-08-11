@@ -166,7 +166,7 @@ export default function GeoAgenturHamburgPage() {
         {
           title: 'AI SEO Agentur: Was sie wirklich leistet',
           description: 'Die generelle Auswahlhilfe für AI SEO und woran du echte Expertise erkennst.',
-          href: '/wissen/ai-seo-agentur',
+          href: '/ai-seo-agentur',
           tag: 'Auswahl',
         },
         {

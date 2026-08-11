@@ -29,7 +29,7 @@ const FAQS = [
   },
   {
     q: 'Wie lange dauert es, bis GEO-Maßnahmen wirken?',
-    a: 'Bei Perplexity oft schon nach 2–4 Wochen, weil Perplexity das Live-Web durchsucht. Bei Google AI Overviews ähnlich schnell wie klassisches SEO, wenige Wochen nach Indexierung. Bei ChatGPT und Claude dauert es 3–6 Monate, da diese Modelle in Trainingszyklen aktualisiert werden. Der wichtigste Faktor ist nicht Geschwindigkeit, sondern Konsistenz.',
+    a: 'Bei Perplexity oft schon nach 2 bis 4 Wochen, weil Perplexity das Live-Web durchsucht. Bei Google AI Overviews ähnlich schnell wie klassisches SEO, wenige Wochen nach Indexierung. Bei ChatGPT und Claude dauert es 3 bis 6 Monate, da diese Modelle in Trainingszyklen aktualisiert werden. Der wichtigste Faktor ist nicht Geschwindigkeit, sondern Konsistenz.',
   },
   {
     q: 'Kann ich GEO selbst machen oder brauche ich eine Agentur?',
@@ -76,12 +76,12 @@ const articleJsonLd = {
   inLanguage: 'de',
   about: [
     { '@type': 'Thing', name: 'Generative Engine Optimization', sameAs: 'https://aiseo.hamburg/wissen/was-ist-geo' },
-    { '@type': 'Thing', name: 'AI SEO', sameAs: 'https://aiseo.hamburg/wissen/ai-seo-agentur' },
+    { '@type': 'Thing', name: 'AI SEO', sameAs: 'https://aiseo.hamburg/ai-seo-agentur' },
     { '@type': 'Thing', name: 'Answer Engine Optimization', sameAs: 'https://aiseo.hamburg/wissen/aeo-answer-engine-optimization' },
     { '@type': 'Thing', name: 'LLM Optimization', sameAs: 'https://aiseo.hamburg/wissen/llmo-llm-optimierung' },
   ],
   mentions: [
-    { '@type': 'WebPage', '@id': 'https://aiseo.hamburg/wissen/ai-seo-agentur', name: 'AI SEO Agentur Hamburg' },
+    { '@type': 'WebPage', '@id': 'https://aiseo.hamburg/ai-seo-agentur', name: 'AI SEO Agentur Hamburg' },
     { '@type': 'WebPage', '@id': 'https://aiseo.hamburg/wissen/aeo-answer-engine-optimization', name: 'AEO: Answer Engine Optimization' },
     { '@type': 'WebPage', '@id': 'https://aiseo.hamburg/wissen/llmo-llm-optimierung', name: 'LLMO: LLM Optimierung' },
     { '@type': 'WebPage', '@id': 'https://aiseo.hamburg/wissen/ki-sichtbarkeit-agenturen-hamburg-2026', name: 'Hamburg AI-SEO Agency Citation Audit 2026' },
@@ -364,7 +364,7 @@ export default function WasIstGeoPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">4. Answer-First schreiben</h3>
             <p className="text-gray-600 leading-relaxed">
-              Jeder Abschnitt beginnt mit der Kernantwort. Nicht mit einer Einleitung, nicht mit Kontext, nicht mit „In der heutigen digitalen Welt...". Die Antwort zuerst, die Erklärung danach. KI-Systeme extrahieren bevorzugt die ersten 2–3 Sätze. Wenn deine Antwort erst im dritten Absatz kommt, wird sie möglicherweise nie gelesen.
+              Jeder Abschnitt beginnt mit der Kernantwort. Nicht mit einer Einleitung, nicht mit Kontext, nicht mit „In der heutigen digitalen Welt...". Die Antwort zuerst, die Erklärung danach. KI-Systeme extrahieren bevorzugt die ersten 2 bis 3 Sätze. Wenn deine Antwort erst im dritten Absatz kommt, wird sie möglicherweise nie gelesen.
             </p>
           </div>
 
@@ -474,7 +474,7 @@ export default function WasIstGeoPage() {
                 4. FAQ-Sektionen ergänzen
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Jede wichtige Seite braucht 5–7 relevante Fragen mit ausführlichen Antworten. Implementiere FAQPage-Schema-Markup. FAQ-Sektionen sind das Format, das KI am liebsten hat: klare Frage, klare Antwort. Wenn du nur eine einzige GEO-Maßnahme umsetzt, nimm diese.
+                Jede wichtige Seite braucht 5 bis 7 relevante Fragen mit ausführlichen Antworten. Implementiere FAQPage-Schema-Markup. FAQ-Sektionen sind das Format, das KI am liebsten hat: klare Frage, klare Antwort. Wenn du nur eine einzige GEO-Maßnahme umsetzt, nimm diese.
               </p>
             </div>
           </li>
@@ -496,7 +496,7 @@ export default function WasIstGeoPage() {
                 6. Topic Clusters aufbauen
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Einzelne Artikel sind schwächer als vernetzte Content-Cluster. Ein Pillar-Artikel zum Hauptthema plus 5–10 Unterartikel signalisiert KI-Systemen: Diese Quelle hat umfassende Expertise. Ein einzelner Blogpost über <a href="/wissen/ki-sichtbarkeit" className="text-brand-accent underline hover:no-underline">KI-Sichtbarkeit</a> ist gut. Ein ganzes Cluster mit technischer Umsetzung, Content-Strategie und Messung ist besser.
+                Einzelne Artikel sind schwächer als vernetzte Content-Cluster. Ein Pillar-Artikel zum Hauptthema plus 5 bis 10 Unterartikel signalisiert KI-Systemen: Diese Quelle hat umfassende Expertise. Ein einzelner Blogpost über <a href="/wissen/ki-sichtbarkeit" className="text-brand-accent underline hover:no-underline">KI-Sichtbarkeit</a> ist gut. Ein ganzes Cluster mit technischer Umsetzung, Content-Strategie und Messung ist besser.
               </p>
             </div>
           </li>
@@ -562,7 +562,7 @@ export default function WasIstGeoPage() {
               </li>
             </ul>
             <p className="text-sm text-gray-500 mt-4 italic">
-              Aber ehrlich: Auch diese Gruppen werden in 12–18 Monaten an GEO nicht vorbeikommen. „Kann warten" heißt nicht „muss nie".
+              Aber ehrlich: Auch diese Gruppen werden in 12 bis 18 Monaten an GEO nicht vorbeikommen. „Kann warten" heißt nicht „muss nie".
             </p>
           </div>
         </div>

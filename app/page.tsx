@@ -45,7 +45,7 @@ export default function Page() {
 
                     <div className="grid md:grid-cols-3 gap-6 md:gap-8">
                         <a
-                            href="/wissen/ai-seo-agentur"
+                            href="/ai-seo-agentur"
                             className="group bg-white rounded-2xl p-8 border border-gray-100 hover:border-brand-accent hover:shadow-lg transition-all"
                         >
                             <div className="text-xs uppercase tracking-[0.15em] font-semibold text-brand-accent mb-3">AI SEO</div>

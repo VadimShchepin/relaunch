@@ -126,7 +126,7 @@ const SERVICES: ServiceType[] = [
       'Persönliches Strategie-Gespräch (60 Min.)',
     ],
     idealFor: 'Unternehmen, die erstmal verstehen wollen, wo sie stehen, bevor sie investieren.',
-    timeline: 'Ergebnisse in 5–7 Werktagen',
+    timeline: 'Ergebnisse in 5 bis 7 Werktagen',
     primaryArticle: { title: 'KI-Sichtbarkeit beauftragen: so geht\'s', href: '/wissen/ki-sichtbarkeit-beauftragen' },
     relatedArticles: [
       { title: 'Was kostet KI-Sichtbarkeit?', href: '/wissen/ki-sichtbarkeit-kosten' },
@@ -151,7 +151,7 @@ const SERVICES: ServiceType[] = [
       'Monatliches KI-Zitations-Monitoring',
     ],
     idealFor: 'Dienstleister und Berater, deren Kunden aktiv in KI-Assistenten recherchieren.',
-    timeline: 'Erste Ergebnisse bei Perplexity nach 2–4 Wochen',
+    timeline: 'Erste Ergebnisse bei Perplexity nach 2 bis 4 Wochen',
     primaryArticle: { title: 'AEO: Der komplette Leitfaden', href: '/wissen/aeo-answer-engine-optimization' },
     relatedArticles: [
       { title: 'ChatGPT SEO: so wirst du gefunden', href: '/wissen/chatgpt-seo' },
@@ -176,7 +176,7 @@ const SERVICES: ServiceType[] = [
       'Plattformübergreifendes Zitations-Monitoring',
     ],
     idealFor: 'Unternehmen, die KI-Sichtbarkeit als Ganzes denken wollen, nicht nur eine einzelne Plattform.',
-    timeline: 'Erste Zitationen nach 3–6 Wochen, je nach Ausgangslage',
+    timeline: 'Erste Zitationen nach 3 bis 6 Wochen, je nach Ausgangslage',
     primaryArticle: { title: 'Was ist GEO? Generative Engine Optimization erklärt', href: '/wissen/was-ist-geo' },
     relatedArticles: [
       { title: 'GEO-Agentur Hamburg', href: '/wissen/geo-agentur-hamburg' },
@@ -201,8 +201,8 @@ const SERVICES: ServiceType[] = [
       'KI-Crawler-Zugänglichkeit sicherstellen',
     ],
     idealFor: 'Unternehmen, die in Google AI Overviews und KI-Antworten gleichzeitig sichtbar sein wollen.',
-    timeline: '4–8 Wochen bis zu messbaren Veränderungen',
-    primaryArticle: { title: 'AI SEO Agentur: was du wissen musst', href: '/wissen/ai-seo-agentur' },
+    timeline: '4 bis 8 Wochen bis zu messbaren Veränderungen',
+    primaryArticle: { title: 'AI SEO Agentur: was du wissen musst', href: '/ai-seo-agentur' },
     relatedArticles: [
       { title: 'SEO vs. AI SEO: die Unterschiede', href: '/wissen/seo-vs-ai-seo' },
       { title: 'AI SEO Tools im Vergleich', href: '/wissen/ai-seo-tools' },
@@ -226,7 +226,7 @@ const SERVICES: ServiceType[] = [
       'Responsive Design mit Conversion-Fokus',
     ],
     idealFor: 'Unternehmen mit veralteter Website oder ohne klare KI-Sichtbarkeitsstrategie.',
-    timeline: '4–8 Wochen bis zum Launch',
+    timeline: '4 bis 8 Wochen bis zum Launch',
     primaryArticle: { title: 'Technische KI-Sichtbarkeit', href: '/wissen/technische-ki-sichtbarkeit' },
     relatedArticles: [
       { title: 'Website-Automatisierung mit KI', href: '/wissen/website-automatisierung' },
@@ -251,7 +251,7 @@ const SERVICES: ServiceType[] = [
       'Keyword-Strategie und Content-Empfehlungen',
     ],
     idealFor: 'Unternehmen, die noch keine stabile Google-Basis haben. Die Grundlage für alles.',
-    timeline: '3–6 Monate für nachhaltige Rankings',
+    timeline: '3 bis 6 Monate für nachhaltige Rankings',
     primaryArticle: { title: 'Lokale KI-Sichtbarkeit', href: '/wissen/lokale-ki-sichtbarkeit' },
     relatedArticles: [
       { title: 'SEO-Agentur vs. AI SEO', href: '/wissen/seo-agentur-vs-ai-seo' },
@@ -301,7 +301,7 @@ const SERVICES: ServiceType[] = [
       'Reporting über Veröffentlichungen und Reichweite',
     ],
     idealFor: 'Unternehmen mit Neuigkeiten, Expertise oder einem Story-Anlass.',
-    timeline: 'Erste Veröffentlichungen nach 2–3 Wochen',
+    timeline: 'Erste Veröffentlichungen nach 2 bis 3 Wochen',
     primaryArticle: { title: 'KI-Markenwahrnehmung aufbauen', href: '/wissen/ki-markenwahrnehmung' },
     relatedArticles: [
       { title: 'E-E-A-T und KI-Sichtbarkeit', href: '/wissen/eeat-ki-sichtbarkeit' },

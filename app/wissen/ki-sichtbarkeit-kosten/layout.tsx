@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'KI-Sichtbarkeit Kosten: Was AI SEO wirklich kostet (2026) | aiseo.hamburg',
+    title: 'KI-Sichtbarkeit Kosten 2026: was AI SEO wirklich kostet',
     description: 'Was kostet KI-Sichtbarkeit? Transparente Preise, ehrlicher Kostenvergleich und ROI-Rechnung. Einmaliges Upgrade ab 1.500€, laufende Betreuung ab 2.500€/Monat.',
     keywords: ['ki sichtbarkeit kosten', 'ai seo kosten', 'ai seo preise', 'was kostet ki sichtbarkeit', 'chatgpt optimierung kosten', 'ki sichtbarkeit investition'],
     openGraph: {

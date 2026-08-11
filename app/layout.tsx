@@ -5,7 +5,7 @@ import { CookieConsent } from "@/components/ui/CookieConsent";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "KI-Sichtbarkeit Hamburg: Wirst du von ChatGPT empfohlen?",
+    title: "aiseo.hamburg | KI-Sichtbarkeit: von ChatGPT empfohlen",
     description: "Wenn Kunden eine KI nach einem Anbieter fragen, wirst du genannt oder dein Wettbewerber? Ich mache Hamburger Unternehmen in ChatGPT, Perplexity und Google AI sichtbar. Mit messbaren Ergebnissen.",
     keywords: "AI SEO, KI Sichtbarkeit, GEO, AEO, Hamburg, ChatGPT Optimierung, Perplexity, Google AI",
     metadataBase: new URL('https://aiseo.hamburg'),
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         ]
     },
     openGraph: {
-        title: "KI-Sichtbarkeit Hamburg: Wirst du von ChatGPT empfohlen?",
+        title: "aiseo.hamburg | KI-Sichtbarkeit: von ChatGPT empfohlen",
         description: "Wirst du genannt, wenn Kunden eine KI nach einem Anbieter fragen? Ich mache Hamburger Unternehmen in ChatGPT, Perplexity und Google AI sichtbar.",
         url: "https://aiseo.hamburg/",
         siteName: "aiseo.hamburg",
@@ -42,13 +42,13 @@ export const metadata: Metadata = {
                 url: "/android-chrome-512x512.png",
                 width: 512,
                 height: 512,
-                alt: "aiseo.hamburg – KI-Sichtbarkeit Hamburg",
+                alt: "aiseo.hamburg, KI-Sichtbarkeit Hamburg",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "KI-Sichtbarkeit Hamburg: Wirst du von ChatGPT empfohlen?",
+        title: "aiseo.hamburg | KI-Sichtbarkeit: von ChatGPT empfohlen",
         description: "Wirst du genannt, wenn Kunden eine KI nach einem Anbieter fragen? Ich mache Hamburger Unternehmen in ChatGPT, Perplexity und Google AI sichtbar.",
         images: ["/android-chrome-512x512.png"],
     },
@@ -147,13 +147,6 @@ export default function RootLayout({
                                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "ChatGPT Optimierung", "serviceType": "ChatGPT Optimierung" } }
                             ],
                             "priceRange": "€€",
-                            "aggregateRating": {
-                                "@type": "AggregateRating",
-                                "ratingValue": "5.0",
-                                "reviewCount": "5",
-                                "bestRating": "5",
-                                "worstRating": "1"
-                            },
                             "logo": {
                                 "@type": "ImageObject",
                                 "url": "https://aiseo.hamburg/android-chrome-512x512.png",

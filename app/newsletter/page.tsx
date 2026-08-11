@@ -25,7 +25,7 @@ export default function NewsletterPage() {
 
             if (data.ok) {
                 setStatus('success');
-                setMessage('Prüf dein Postfach – Bestätigung ist unterwegs.');
+                setMessage('Prüf dein Postfach, Bestätigung ist unterwegs.');
             } else {
                 setStatus('error');
                 setMessage('Das hat nicht geklappt. Versuch es nochmal.');
@@ -77,7 +77,7 @@ export default function NewsletterPage() {
                             </p>
 
                             <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-12 max-w-lg mx-auto">
-                                Ich beweis es dir. Ab in den Newsletter – oder stay im Dunkeln.
+                                Ich beweis es dir. Ab in den Newsletter, oder stay im Dunkeln.
                             </p>
 
                             <form onSubmit={handleSubmit} className="max-w-md mx-auto">

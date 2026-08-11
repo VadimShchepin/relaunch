@@ -14,7 +14,7 @@ import { ArticleHeroImage } from '@/components/wissen/ArticleHeroImage';
 const FAQS = [
   {
     q: 'Was ist der Unterschied zwischen AEO und SEO?',
-    a: 'SEO optimiert für Rankings in klassischen Suchmaschinen – du willst auf Platz 1 bei Google. AEO optimiert dafür, dass dein Content die direkte Antwort in KI-Systemen wird. SEO fokussiert auf Keywords und Backlinks, AEO auf Intent-Abdeckung, Zitierbarkeit und strukturierte Daten. Beide Disziplinen ergänzen sich, haben aber unterschiedliche Mechanismen und KPIs.',
+    a: 'SEO optimiert für Rankings in klassischen Suchmaschinen, du willst auf Platz 1 bei Google. AEO optimiert dafür, dass dein Content die direkte Antwort in KI-Systemen wird. SEO fokussiert auf Keywords und Backlinks, AEO auf Intent-Abdeckung, Zitierbarkeit und strukturierte Daten. Beide Disziplinen ergänzen sich, haben aber unterschiedliche Mechanismen und KPIs.',
   },
   {
     q: 'Welche Answer Engines sind 2026 relevant?',
@@ -22,11 +22,11 @@ const FAQS = [
   },
   {
     q: 'Wie lange dauert es, bis AEO-Maßnahmen wirken?',
-    a: 'Bei Perplexity siehst du Ergebnisse oft nach 2-4 Wochen, weil Perplexity das Live-Web durchsucht. Google AI Overviews reagieren in 4-8 Wochen. ChatGPT und Claude brauchen länger, weil sie auf Trainingszyklen basieren – hier dauert es 3-6 Monate. Strukturierte Daten und Schema-Änderungen wirken am schnellsten.',
+    a: 'Bei Perplexity siehst du Ergebnisse oft nach 2-4 Wochen, weil Perplexity das Live-Web durchsucht. Google AI Overviews reagieren in 4-8 Wochen. ChatGPT und Claude brauchen länger, weil sie auf Trainingszyklen basieren, hier dauert es 3-6 Monate. Strukturierte Daten und Schema-Änderungen wirken am schnellsten.',
   },
   {
     q: 'Brauche ich AEO, wenn ich schon gutes SEO mache?',
-    a: 'Ja. Gutes SEO ist eine Basis, aber keine Garantie für AEO-Sichtbarkeit. Eine Seite kann auf Platz 1 bei Google ranken und trotzdem von ChatGPT ignoriert werden – weil die Inhalte nicht im Answer-First-Format strukturiert sind oder die E-E-A-T-Signale für KI nicht ausreichen. AEO ergänzt dein SEO um eine zusätzliche Sichtbarkeitsebene.',
+    a: 'Ja. Gutes SEO ist eine Basis, aber keine Garantie für AEO-Sichtbarkeit. Eine Seite kann auf Platz 1 bei Google ranken und trotzdem von ChatGPT ignoriert werden, weil die Inhalte nicht im Answer-First-Format strukturiert sind oder die E-E-A-T-Signale für KI nicht ausreichen. AEO ergänzt dein SEO um eine zusätzliche Sichtbarkeitsebene.',
   },
   {
     q: 'Was kostet Answer Engine Optimization?',
@@ -34,7 +34,7 @@ const FAQS = [
   },
   {
     q: 'Kann ich AEO selbst umsetzen oder brauche ich einen Spezialisten?',
-    a: 'Die Grundlagen wie Answer-First-Content und FAQ-Schema kannst du selbst umsetzen. Für eine vollständige AEO-Strategie – inklusive semantischer Analyse, Topic-Cluster-Architektur und plattformspezifischer Optimierung – lohnt sich ein Spezialist. Besonders die Erfolgsmessung erfordert spezialisierte Tools und Erfahrung.',
+    a: 'Die Grundlagen wie Answer-First-Content und FAQ-Schema kannst du selbst umsetzen. Für eine vollständige AEO-Strategie, inklusive semantischer Analyse, Topic-Cluster-Architektur und plattformspezifischer Optimierung, lohnt sich ein Spezialist. Besonders die Erfolgsmessung erfordert spezialisierte Tools und Erfahrung.',
   },
   {
     q: 'Funktioniert AEO auch für lokale Unternehmen in Hamburg?',
@@ -62,7 +62,7 @@ const faqJsonLd = {
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'AEO – Answer Engine Optimization: Der komplette Guide für 2026',
+  headline: 'AEO: Answer Engine Optimization: Der komplette Guide für 2026',
   description:
     'Was ist Answer Engine Optimization (AEO)? Definition, AEO vs SEO, die 5 Säulen der AEO-Strategie und Schritt-für-Schritt-Anleitung für 2026.',
   image: 'https://aiseo.hamburg/images/wissen/aeo-answer-engine-optimization/hero-aeo-answer-engine.webp',
@@ -81,14 +81,14 @@ const articleJsonLd = {
   inLanguage: 'de',
   about: [
     { '@type': 'Thing', name: 'Answer Engine Optimization', sameAs: 'https://aiseo.hamburg/wissen/aeo-answer-engine-optimization' },
-    { '@type': 'Thing', name: 'AI SEO', sameAs: 'https://aiseo.hamburg/wissen/ai-seo-agentur' },
+    { '@type': 'Thing', name: 'AI SEO', sameAs: 'https://aiseo.hamburg/ai-seo-agentur' },
     { '@type': 'Thing', name: 'Generative Engine Optimization', sameAs: 'https://aiseo.hamburg/wissen/was-ist-geo' },
     { '@type': 'Thing', name: 'LLM Optimization', sameAs: 'https://aiseo.hamburg/wissen/llmo-llm-optimierung' },
   ],
   mentions: [
-    { '@type': 'WebPage', '@id': 'https://aiseo.hamburg/wissen/ai-seo-agentur', name: 'AI SEO Agentur Hamburg' },
-    { '@type': 'WebPage', '@id': 'https://aiseo.hamburg/wissen/was-ist-geo', name: 'GEO – Generative Engine Optimization' },
-    { '@type': 'WebPage', '@id': 'https://aiseo.hamburg/wissen/llmo-llm-optimierung', name: 'LLMO – LLM Optimierung' },
+    { '@type': 'WebPage', '@id': 'https://aiseo.hamburg/ai-seo-agentur', name: 'AI SEO Agentur Hamburg' },
+    { '@type': 'WebPage', '@id': 'https://aiseo.hamburg/wissen/was-ist-geo', name: 'GEO: Generative Engine Optimization' },
+    { '@type': 'WebPage', '@id': 'https://aiseo.hamburg/wissen/llmo-llm-optimierung', name: 'LLMO: LLM Optimierung' },
     { '@type': 'WebPage', '@id': 'https://aiseo.hamburg/wissen/ki-sichtbarkeit-agenturen-hamburg-2026', name: 'Hamburg AI-SEO Agency Citation Audit 2026' },
   ],
 };
@@ -99,7 +99,7 @@ const breadcrumbJsonLd = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://aiseo.hamburg' },
     { '@type': 'ListItem', position: 2, name: 'Wissen', item: 'https://aiseo.hamburg/wissen' },
-    { '@type': 'ListItem', position: 3, name: 'AEO – Answer Engine Optimization' },
+    { '@type': 'ListItem', position: 3, name: 'AEO: Answer Engine Optimization' },
   ],
 };
 
@@ -167,15 +167,15 @@ export default function AEOAnswerEngineOptimizationPage() {
               <li>/</li>
               <li><a href="/wissen" className="hover:text-brand-accent transition-colors">Wissen</a></li>
               <li>/</li>
-              <li className="text-black font-medium">AEO – Answer Engine Optimization</li>
+              <li className="text-black font-medium">AEO: Answer Engine Optimization</li>
             </ol>
           </nav>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-[-0.04em] text-black mb-6 leading-[1.05]">
-            AEO – Answer Engine Optimization: Der komplette Guide für 2026
+            AEO: Answer Engine Optimization: Der komplette Guide für 2026
           </h1>
           <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
-            65% aller Suchen enden ohne Klick. Deine Kunden wollen Antworten, keine 10 blauen Links. Answer Engine Optimization sorgt dafür, dass dein Content die Antwort <em>ist</em> – in ChatGPT, Perplexity, Google AI Overviews und Sprachassistenten.
+            65% aller Suchen enden ohne Klick. Deine Kunden wollen Antworten, keine 10 blauen Links. Answer Engine Optimization sorgt dafür, dass dein Content die Antwort <em>ist</em>, in ChatGPT, Perplexity, Google AI Overviews und Sprachassistenten.
           </p>
           <ArticleHeroImage
             src="/images/wissen/aeo-answer-engine-optimization/hero-aeo-answer-engine.webp"
@@ -199,7 +199,7 @@ export default function AEOAnswerEngineOptimizationPage() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-brand-accent font-bold mt-0.5">2.</span>
-                <span><strong className="text-black">Answer Engines</strong> sind ChatGPT, Perplexity, Google AI Overviews, Siri, Alexa – alles, was direkt antwortet statt zu verlinken.</span>
+                <span><strong className="text-black">Answer Engines</strong> sind ChatGPT, Perplexity, Google AI Overviews, Siri, Alexa, alles, was direkt antwortet statt zu verlinken.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-brand-accent font-bold mt-0.5">3.</span>
@@ -207,7 +207,7 @@ export default function AEOAnswerEngineOptimizationPage() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-brand-accent font-bold mt-0.5">4.</span>
-                <span><strong className="text-black">AEO ersetzt SEO nicht</strong> – es ergänzt es. Aber wer nur SEO macht, verliert die wachsende KI-Zielgruppe komplett.</span>
+                <span><strong className="text-black">AEO ersetzt SEO nicht</strong>, es ergänzt es. Aber wer nur SEO macht, verliert die wachsende KI-Zielgruppe komplett.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-brand-accent font-bold mt-0.5">5.</span>
@@ -228,7 +228,7 @@ export default function AEOAnswerEngineOptimizationPage() {
           </h2>
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
             <p>
-              Answer Engine Optimization (AEO) ist die Optimierung von Inhalten für Systeme, die <strong className="text-black">direkte Antworten liefern statt Links</strong>. Diese Systeme heißen Answer Engines – und sie verändern, wie Menschen Informationen konsumieren.
+              Answer Engine Optimization (AEO) ist die Optimierung von Inhalten für Systeme, die <strong className="text-black">direkte Antworten liefern statt Links</strong>. Diese Systeme heißen Answer Engines, und sie verändern, wie Menschen Informationen konsumieren.
             </p>
             <p>
               <strong className="text-black">Answer Engines</strong> sind: ChatGPT, Perplexity, Google AI Overviews (ehemals SGE), Microsoft Copilot, Claude, Siri, Alexa und Google Assistant. Gemeinsam ist ihnen: Sie geben dem Nutzer eine synthetisierte Antwort, keine Liste von Websites.
@@ -237,7 +237,7 @@ export default function AEOAnswerEngineOptimizationPage() {
               Der fundamentale Unterschied zu klassischer Suche: Bei Google konkurrierst du um einen Platz in den Top 10. Bei Answer Engines konkurrierst du darum, <strong className="text-black">die Antwort zu sein</strong>. Oder zumindest als Quelle zitiert zu werden. AEO fokussiert auf die Antwort, nicht das Ranking.
             </p>
             <p>
-              Verwandte Begriffe, die du kennen solltest: <strong className="text-black">GEO (Generative Engine Optimization)</strong> fokussiert auf generative KI-Systeme. <strong className="text-black">LLMO (Large Language Model Optimization)</strong> optimiert speziell für LLMs wie ChatGPT und Claude. AEO ist der breiteste Begriff – er umfasst alle Systeme, die direkte Antworten liefern, einschließlich Sprachassistenten.
+              Verwandte Begriffe, die du kennen solltest: <strong className="text-black">GEO (Generative Engine Optimization)</strong> fokussiert auf generative KI-Systeme. <strong className="text-black">LLMO (Large Language Model Optimization)</strong> optimiert speziell für LLMs wie ChatGPT und Claude. AEO ist der breiteste Begriff, er umfasst alle Systeme, die direkte Antworten liefern, einschließlich Sprachassistenten.
             </p>
           </div>
         </FadeIn>
@@ -256,7 +256,7 @@ export default function AEOAnswerEngineOptimizationPage() {
 
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
             <p>
-              Du produzierst Content, aber keine Answer Engine zitiert dich. Du rankst vielleicht sogar gut bei Google – aber die wachsende Zielgruppe, die KI fragt, sieht dich nicht. Deine Konkurrenz <strong className="text-black">ist</strong> die Antwort – du bist nur ein Suchergebnis.
+              Du produzierst Content, aber keine Answer Engine zitiert dich. Du rankst vielleicht sogar gut bei Google, aber die wachsende Zielgruppe, die KI fragt, sieht dich nicht. Deine Konkurrenz <strong className="text-black">ist</strong> die Antwort, du bist nur ein Suchergebnis.
             </p>
           </div>
 
@@ -264,10 +264,10 @@ export default function AEOAnswerEngineOptimizationPage() {
 
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
             <p>
-              Featured Snippets waren der Anfang. Google hat schon vor Jahren begonnen, Antworten direkt in den SERPs zu zeigen. <strong className="text-black">AI Overviews sind die logische Weiterentwicklung</strong> – und sie werden bis Ende 2026 bei der Mehrheit aller informativen Suchanfragen erscheinen.
+              Featured Snippets waren der Anfang. Google hat schon vor Jahren begonnen, Antworten direkt in den SERPs zu zeigen. <strong className="text-black">AI Overviews sind die logische Weiterentwicklung</strong>, und sie werden bis Ende 2026 bei der Mehrheit aller informativen Suchanfragen erscheinen.
             </p>
             <p>
-              Die Konsequenz: Wenn dein Content nicht so strukturiert ist, dass Answer Engines ihn extrahieren, zusammenfassen und zitieren können, verlierst du nicht nur Traffic – du verlierst <strong className="text-black">Relevanz</strong>. Für eine wachsende Zielgruppe existierst du schlicht nicht.
+              Die Konsequenz: Wenn dein Content nicht so strukturiert ist, dass Answer Engines ihn extrahieren, zusammenfassen und zitieren können, verlierst du nicht nur Traffic, du verlierst <strong className="text-black">Relevanz</strong>. Für eine wachsende Zielgruppe existierst du schlicht nicht.
             </p>
           </div>
 
@@ -362,7 +362,7 @@ export default function AEOAnswerEngineOptimizationPage() {
             Die 5 Säulen der Answer Engine Optimization
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10">
-            AEO steht auf fünf Säulen. Jede einzelne ist wichtig – aber erst zusammen entfalten sie ihre volle Wirkung.
+            AEO steht auf fünf Säulen. Jede einzelne ist wichtig, aber erst zusammen entfalten sie ihre volle Wirkung.
           </p>
 
           <div className="space-y-6">
@@ -393,7 +393,7 @@ export default function AEOAnswerEngineOptimizationPage() {
 
             <PillarCard num={3} title="E-E-A-T Signale">
               <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                Experience, Expertise, Authoritativeness, Trustworthiness – für Answer Engines noch wichtiger als für Google. KI zitiert bevorzugt Quellen, denen sie vertraut.
+                Experience, Expertise, Authoritativeness, Trustworthiness, für Answer Engines noch wichtiger als für Google. KI zitiert bevorzugt Quellen, denen sie vertraut.
               </p>
               <ul className="space-y-2 text-gray-600 text-sm leading-relaxed">
                 <li>Autorenprofile mit nachweisbarer Expertise verlinken</li>
@@ -448,7 +448,7 @@ export default function AEOAnswerEngineOptimizationPage() {
             <EngineCard name="Google AI Overviews">
               <ul className="space-y-2 text-gray-600 text-sm leading-relaxed">
                 <li><strong className="text-black">E-E-A-T ist König:</strong> Google vertraut etablierten Autoritäten</li>
-                <li><strong className="text-black">Featured Snippets</strong> sind der Vorläufer – wer dort erscheint, hat Vorteile</li>
+                <li><strong className="text-black">Featured Snippets</strong> sind der Vorläufer, wer dort erscheint, hat Vorteile</li>
                 <li><strong className="text-black">Strukturierte Daten</strong> werden direkt in AI Overviews integriert</li>
                 <li>Content-Freshness und regelmäßige Updates</li>
                 <li>Lange, umfassende Inhalte schlagen kurze Artikel</li>
@@ -469,7 +469,7 @@ export default function AEOAnswerEngineOptimizationPage() {
               <ul className="space-y-2 text-gray-600 text-sm leading-relaxed">
                 <li><strong className="text-black">Freshness ist kritisch:</strong> Perplexity durchsucht das Live-Web</li>
                 <li><strong className="text-black">Source Quality:</strong> Gut strukturierte, zitierfähige Seiten werden bevorzugt</li>
-                <li>Schnellster Kanal – Ergebnisse nach 2-4 Wochen</li>
+                <li>Schnellster Kanal, Ergebnisse nach 2-4 Wochen</li>
                 <li>Direkte Quellenverlinkung = messbarer Traffic</li>
                 <li>Klare Antwortstrukturen mit Quellenangaben</li>
               </ul>
@@ -479,7 +479,7 @@ export default function AEOAnswerEngineOptimizationPage() {
               <ul className="space-y-2 text-gray-600 text-sm leading-relaxed">
                 <li><strong className="text-black">Schema Markup</strong> ist hier am wichtigsten (LocalBusiness, FAQ)</li>
                 <li><strong className="text-black">Lokale Signale:</strong> NAP-Konsistenz, Google Business Profile</li>
-                <li>Kurze, gesprochene Antworten – max. 2-3 Sätze</li>
+                <li>Kurze, gesprochene Antworten, max. 2-3 Sätze</li>
                 <li>Conversational Keywords und Long-Tail-Fragen</li>
                 <li>Speakeasy-Formulierungen statt Fachsprache</li>
               </ul>
@@ -497,7 +497,7 @@ export default function AEOAnswerEngineOptimizationPage() {
             AEO Content erstellen: Schritt-für-Schritt
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10">
-            Theorie ist gut. Hier ist die Praxis – in 6 Schritten von normalem Content zu AEO-optimiertem Content.
+            Theorie ist gut. Hier ist die Praxis, in 6 Schritten von normalem Content zu AEO-optimiertem Content.
           </p>
 
           <ol className="space-y-10">
@@ -506,7 +506,7 @@ export default function AEOAnswerEngineOptimizationPage() {
                 1. Fragen identifizieren, die deine Zielgruppe an KI stellt
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-4">
-                Frag ChatGPT und Perplexity direkt: "Was sind die häufigsten Fragen zu [dein Thema]?" Nutze AlsoAsked, AnswerThePublic und Google&apos;s "People Also Ask". Sammle die Fragen, die deine Zielgruppe wirklich stellt – nicht die Keywords, die ein Tool vorschlägt.
+                Frag ChatGPT und Perplexity direkt: "Was sind die häufigsten Fragen zu [dein Thema]?" Nutze AlsoAsked, AnswerThePublic und Google&apos;s "People Also Ask". Sammle die Fragen, die deine Zielgruppe wirklich stellt, nicht die Keywords, die ein Tool vorschlägt.
               </p>
             </li>
 
@@ -527,7 +527,7 @@ export default function AEOAnswerEngineOptimizationPage() {
                 <div className="bg-white border-2 border-brand-accent rounded-2xl p-5">
                   <p className="text-sm font-semibold text-brand-accent mb-2">Nachher (AEO-optimiert)</p>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    "Answer Engine Optimization (AEO) ist die Optimierung von Inhalten für Systeme, die direkte Antworten liefern statt Links – wie ChatGPT, Perplexity oder Google AI Overviews."
+                    "Answer Engine Optimization (AEO) ist die Optimierung von Inhalten für Systeme, die direkte Antworten liefern statt Links, wie ChatGPT, Perplexity oder Google AI Overviews."
                   </p>
                 </div>
               </div>
@@ -556,7 +556,7 @@ export default function AEOAnswerEngineOptimizationPage() {
                 5. Expertise sichtbar machen
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Verlinke zum Autorenprofil. Referenziere Primärquellen. Zeige eigene Erfahrung und Daten. Answer Engines bewerten Vertrauenswürdigkeit – und ein anonymer Artikel ohne Quellenangaben wird nicht zitiert. Transparenz ist kein Nice-to-have, sondern AEO-Pflicht.
+                Verlinke zum Autorenprofil. Referenziere Primärquellen. Zeige eigene Erfahrung und Daten. Answer Engines bewerten Vertrauenswürdigkeit, und ein anonymer Artikel ohne Quellenangaben wird nicht zitiert. Transparenz ist kein Nice-to-have, sondern AEO-Pflicht.
               </p>
             </li>
 
@@ -582,7 +582,7 @@ export default function AEOAnswerEngineOptimizationPage() {
           </h2>
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
             <p>
-              AEO-Erfolg lässt sich messen – aber mit anderen KPIs als klassisches SEO. Hier die wichtigsten Metriken:
+              AEO-Erfolg lässt sich messen, aber mit anderen KPIs als klassisches SEO. Hier die wichtigsten Metriken:
             </p>
           </div>
 
@@ -618,7 +618,7 @@ export default function AEOAnswerEngineOptimizationPage() {
             <div className="bg-white border border-gray-100 rounded-2xl p-6">
               <h3 className="text-xl font-semibold text-black mb-3">Schema Validation</h3>
               <p className="text-gray-600 leading-relaxed">
-                Prüfe regelmäßig mit dem Google Rich Results Test und Schema.org Validator, ob deine strukturierten Daten fehlerfrei sind. Fehlerhafte Schemas werden ignoriert – und du verlierst den AEO-Vorteil.
+                Prüfe regelmäßig mit dem Google Rich Results Test und Schema.org Validator, ob deine strukturierten Daten fehlerfrei sind. Fehlerhafte Schemas werden ignoriert, und du verlierst den AEO-Vorteil.
               </p>
             </div>
           </div>
@@ -641,7 +641,7 @@ export default function AEOAnswerEngineOptimizationPage() {
             <div className="bg-white border border-gray-100 rounded-2xl p-6">
               <h3 className="text-xl font-semibold text-black mb-2">1. Die Antwort erst am Ende liefern</h3>
               <p className="text-gray-600 leading-relaxed">
-                Viele Texte beginnen mit langen Einleitungen, bevor die eigentliche Antwort kommt. Answer Engines extrahieren den ersten Absatz – wenn dort nur Floskeln stehen, wirst du nicht zitiert. Antwort zuerst, Kontext danach.
+                Viele Texte beginnen mit langen Einleitungen, bevor die eigentliche Antwort kommt. Answer Engines extrahieren den ersten Absatz, wenn dort nur Floskeln stehen, wirst du nicht zitiert. Antwort zuerst, Kontext danach.
               </p>
             </div>
 
@@ -713,22 +713,22 @@ export default function AEOAnswerEngineOptimizationPage() {
           <div className="bg-gray-50 rounded-xl p-6">
             <ul className="space-y-3 text-gray-600 text-sm leading-relaxed">
               <li>
-                <strong className="text-black">SparkToro / Datos (2024):</strong> "Zero-Click Search Study" – Analyse der Zero-Click-Rate bei Google-Suchen. Über 65% aller Suchen enden ohne Klick.
+                <strong className="text-black">SparkToro / Datos (2024):</strong> "Zero-Click Search Study", Analyse der Zero-Click-Rate bei Google-Suchen. Über 65% aller Suchen enden ohne Klick.
               </li>
               <li>
-                <strong className="text-black">Gartner (2024):</strong> "Predicts 2025: Search and AI" – Prognose zum Rückgang organischen Traffics durch KI-gestützte Suche bis 2028.
+                <strong className="text-black">Gartner (2024):</strong> "Predicts 2025: Search and AI", Prognose zum Rückgang organischen Traffics durch KI-gestützte Suche bis 2028.
               </li>
               <li>
-                <strong className="text-black">Princeton University (2024):</strong> "GEO: Generative Engine Optimization" – Studie zur Optimierung von Inhalten für KI-Suchmaschinen.
+                <strong className="text-black">Princeton University (2024):</strong> "GEO: Generative Engine Optimization", Studie zur Optimierung von Inhalten für KI-Suchmaschinen.
               </li>
               <li>
-                <strong className="text-black">Google (2025):</strong> "AI Overviews: Our approach to Search" – Googles offizielle Dokumentation zu AI Overviews und Quellenauswahl.
+                <strong className="text-black">Google (2025):</strong> "AI Overviews: Our approach to Search", Googles offizielle Dokumentation zu AI Overviews und Quellenauswahl.
               </li>
               <li>
-                <strong className="text-black">Semrush (2025):</strong> "AI Visibility: Measuring Brand Presence in AI Answers" – Methodik zur Messung von KI-Sichtbarkeit.
+                <strong className="text-black">Semrush (2025):</strong> "AI Visibility: Measuring Brand Presence in AI Answers", Methodik zur Messung von KI-Sichtbarkeit.
               </li>
               <li>
-                <strong className="text-black">Ahrefs (2025):</strong> "Brand Radar: How AI Models See Your Brand" – Tool-Analyse zur Markenpräsenz in KI-Antworten.
+                <strong className="text-black">Ahrefs (2025):</strong> "Brand Radar: How AI Models See Your Brand", Tool-Analyse zur Markenpräsenz in KI-Antworten.
               </li>
             </ul>
           </div>
@@ -761,7 +761,7 @@ export default function AEOAnswerEngineOptimizationPage() {
               className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
             >
               <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">
-                LLMO – LLM Optimierung
+                LLMO: LLM Optimierung
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
                 Optimierung speziell für Large Language Models wie ChatGPT und Claude.
@@ -817,7 +817,7 @@ export default function AEOAnswerEngineOptimizationPage() {
               Bereit für Answer Engine Optimization?
             </h2>
             <p className="text-lg text-gray-400 leading-relaxed mb-8 max-w-xl mx-auto">
-              Finde heraus, ob Answer Engines dein Unternehmen zitieren – oder ob du unsichtbar bist. Kostenlose Kurzanalyse in 48 Stunden.
+              Finde heraus, ob Answer Engines dein Unternehmen zitieren, oder ob du unsichtbar bist. Kostenlose Kurzanalyse in 48 Stunden.
             </p>
             <Button href="/ai-sichtbarkeit-now" primary text="Kostenlose AEO-Analyse anfragen" />
           </div>

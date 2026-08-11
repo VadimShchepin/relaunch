@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { LocalIntentTemplate } from '@/components/hamburg/LocalIntentTemplate';
 
 export const metadata: Metadata = {
-  title: 'Google AI Overviews Optimierung Hamburg | In Googles KI-Antworten zitiert werden',
+  title: 'Google AI Overviews Optimierung Hamburg',
   description:
     'Google AI Overviews und AI Mode Optimierung für Hamburger Unternehmen. Auf Basis von Googles offizieller Search-Central-Doku: E-E-A-T, Crawlbarkeit und hilfreicher Content statt llms.txt-Tricks.',
   keywords: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/hamburg/google-ai-overviews',
-    title: 'Google AI Overviews Optimierung Hamburg | In Googles KI-Antworten zitiert werden',
+    title: 'Google AI Overviews Optimierung Hamburg',
     description:
       'Wie Hamburger Unternehmen als Quelle in Google AI Overviews und AI Mode auftauchen. Methodik nach Googles offizieller Doku, mit Benchmarks und konkreten Hebeln.',
     siteName: 'aiseo.hamburg',
@@ -153,7 +153,7 @@ export default function GoogleAiOverviewsHamburgPage() {
         {
           title: 'AI SEO Agentur Hamburg',
           description: 'Die breitere Klammer für AI Visibility und lokale Empfehlungssignale.',
-          href: '/hamburg/ai-seo-agentur',
+          href: '/ai-seo-agentur',
           tag: 'Kernleistung',
         },
       ]}

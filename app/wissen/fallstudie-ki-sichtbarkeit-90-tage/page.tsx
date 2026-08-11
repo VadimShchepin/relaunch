@@ -148,7 +148,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">2.</span>
-              <span><strong className="text-black">474&nbsp;Klicks/Monat bei 2,57&nbsp;&euro;&nbsp;CPC.</strong> Der Marktdurchschnitt liegt bei 18&ndash;20&nbsp;&euro;. Faktor&nbsp;7 g&uuml;nstiger. (Die Buchhaltung hat dreimal nachgefragt.)</span>
+              <span><strong className="text-black">474&nbsp;Klicks/Monat bei 2,57&nbsp;&euro;&nbsp;CPC.</strong> Der Marktdurchschnitt liegt bei 18 bis 20&nbsp;&euro;. Faktor&nbsp;7 g&uuml;nstiger. (Die Buchhaltung hat dreimal nachgefragt.)</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">3.</span>
@@ -255,7 +255,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-6">
             <span className="bg-brand-accent text-white text-sm font-bold px-3 py-1 rounded-full">Phase&nbsp;1</span>
-            <h3 className="text-2xl md:text-3xl font-semibold text-black">Wochen 1&ndash;2: Audit &amp; Technische Basis</h3>
+            <h3 className="text-2xl md:text-3xl font-semibold text-black">Wochen 1 bis 2: Audit &amp; Technische Basis</h3>
           </div>
 
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
@@ -293,7 +293,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-6">
             <span className="bg-brand-accent text-white text-sm font-bold px-3 py-1 rounded-full">Phase&nbsp;2</span>
-            <h3 className="text-2xl md:text-3xl font-semibold text-black">Wochen 3&ndash;6: Content &amp; Struktur</h3>
+            <h3 className="text-2xl md:text-3xl font-semibold text-black">Wochen 3 bis 6: Content &amp; Struktur</h3>
           </div>
 
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
@@ -345,7 +345,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
         <div>
           <div className="flex items-center gap-3 mb-6">
             <span className="bg-brand-accent text-white text-sm font-bold px-3 py-1 rounded-full">Phase&nbsp;3</span>
-            <h3 className="text-2xl md:text-3xl font-semibold text-black">Wochen 7&ndash;12: Autorit&auml;t &amp; Monitoring</h3>
+            <h3 className="text-2xl md:text-3xl font-semibold text-black">Wochen 7 bis 12: Autorit&auml;t &amp; Monitoring</h3>
           </div>
 
           <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
@@ -448,13 +448,13 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
           <h3 className="text-xl font-bold text-brand-accent mb-4">ROI-Rechnung f&uuml;r die Zahlenfreaks</h3>
           <div className="space-y-3 text-gray-700 leading-relaxed">
             <p>
-              <strong className="text-black">474&nbsp;Klicks &times; 2,57&nbsp;&euro;&nbsp;CPC = 1.218&nbsp;&euro; &bdquo;&Auml;quivalentwert&ldquo; pro Monat.</strong> Das hei&szlig;t: Um die gleichen Klicks &uuml;ber Google Ads zu bekommen, m&uuml;sstest du 1.218&nbsp;&euro; pro Monat ausgeben. Bei Marktpreisen (18&ndash;20&nbsp;&euro;&nbsp;CPC) w&auml;ren es <strong className="text-black">8.532&ndash;9.480&nbsp;&euro;</strong>. Pro Monat. Jedes Monat. Ohne dass der Traffic dir geh&ouml;rt.
+              <strong className="text-black">474&nbsp;Klicks &times; 2,57&nbsp;&euro;&nbsp;CPC = 1.218&nbsp;&euro; &bdquo;&Auml;quivalentwert&ldquo; pro Monat.</strong> Das hei&szlig;t: Um die gleichen Klicks &uuml;ber Google Ads zu bekommen, m&uuml;sstest du 1.218&nbsp;&euro; pro Monat ausgeben. Bei Marktpreisen (18 bis 20&nbsp;&euro;&nbsp;CPC) w&auml;ren es <strong className="text-black">8.532 bis 9.480&nbsp;&euro;</strong>. Pro Monat. Jedes Monat. Ohne dass der Traffic dir geh&ouml;rt.
             </p>
             <p>
               <strong className="text-black">~40&nbsp;Kunden/Monat (Gesamtzahl, inkl. nicht l&uuml;ckenlos zuordenbarer Anfragen) bei gesch&auml;tztem Auftragswert:</strong> Selbst konservativ gerechnet mit 500&nbsp;&euro; durchschnittlichem Auftragswert (f&uuml;r einen Dienstleister in Hamburg eher niedrig angesetzt) sind das <strong className="text-black">20.000&nbsp;&euro; Umsatz pro Monat</strong>, der direkt auf die KI-Sichtbarkeitsoptimierung zur&uuml;ckzuf&uuml;hren ist.
             </p>
             <p>
-              <strong className="text-black">19&nbsp;eindeutig zugeordnete Neukunden pro Monat bei 27,80&nbsp;&euro;&nbsp;CPA (organischer Kanal, Monat&nbsp;3).</strong> Das sind die h&auml;rtesten Zahlen, weil sie die konservativsten sind: nur die F&auml;lle, die sich per Tracking l&uuml;ckenlos bis zum Auftrag verfolgen lie&szlig;en. 27,80&nbsp;&euro; pro zahlenden Kunden, gerechnet auf das monatliche Honorar, nicht auf Werbebudget. Vergleich: Google Ads im gleichen Segment liegen bei 80&ndash;120&nbsp;&euro;&nbsp;CPA pro Neukunde. Facebook Ads bei 60&ndash;90&nbsp;&euro;. Wir reden hier &uuml;ber <strong className="text-black">Faktor&nbsp;3&ndash;4 g&uuml;nstiger</strong> als jeder bezahlte Kanal.
+              <strong className="text-black">19&nbsp;eindeutig zugeordnete Neukunden pro Monat bei 27,80&nbsp;&euro;&nbsp;CPA (organischer Kanal, Monat&nbsp;3).</strong> Das sind die h&auml;rtesten Zahlen, weil sie die konservativsten sind: nur die F&auml;lle, die sich per Tracking l&uuml;ckenlos bis zum Auftrag verfolgen lie&szlig;en. 27,80&nbsp;&euro; pro zahlenden Kunden, gerechnet auf das monatliche Honorar, nicht auf Werbebudget. Vergleich: Google Ads im gleichen Segment liegen bei 80 bis 120&nbsp;&euro;&nbsp;CPA pro Neukunde. Facebook Ads bei 60 bis 90&nbsp;&euro;. Wir reden hier &uuml;ber <strong className="text-black">Faktor&nbsp;3 bis 4 g&uuml;nstiger</strong> als jeder bezahlte Kanal.
             </p>
             <p className="text-sm text-gray-500">
               Damit die Zahlen vergleichbar bleiben, drei Abgrenzungen. <strong className="text-black">19 gegen ~40:</strong> Die 19 sind die l&uuml;ckenlos zugeordneten Neukunden, die ~40 die Gesamtzahl inklusive der F&auml;lle, bei denen die Zuordnung abbricht (Anruf ohne Call-Tracking, sp&auml;tere Direkteingabe der URL). <strong className="text-black">Kunde gegen Lead:</strong> 27,80&nbsp;&euro; ist der Preis f&uuml;r einen <strong className="text-black">zahlenden Kunden</strong>. Kennzahlen wie &bdquo;7,48&nbsp;&euro; pro Anfrage&ldquo; aus unseren Google-Ads-Konten messen eine <strong className="text-black">Anfrage</strong> (Formular oder Anruf), von denen nur ein Teil zum Auftrag wird. Und auch die schwankt: im selben Zeitraum lag ein zweites Ads-Konto bei 71,37&nbsp;&euro; pro Anfrage. <strong className="text-black">Organisch gegen bezahlt:</strong> Hier steckt Honorar dahinter, dort Werbebudget, das mit dem letzten Klick aufh&ouml;rt zu wirken.
@@ -650,7 +650,7 @@ export default function FallstudieKiSichtbarkeit90TagePage() {
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed mt-8">
           <p>
-            Das Muster ist immer das gleiche: <strong className="text-black">Wochen 1&ndash;4 f&uuml;hlen sich frustrierend an.</strong> Du investierst, du siehst nichts. Das ist normal. Das ist der unsichtbare Teil des Schwungrads. Ab Woche&nbsp;5 dreht sich das Rad. Ab Woche&nbsp;7 wird es zum Selbstl&auml;ufer.
+            Das Muster ist immer das gleiche: <strong className="text-black">Wochen 1 bis 4 f&uuml;hlen sich frustrierend an.</strong> Du investierst, du siehst nichts. Das ist normal. Das ist der unsichtbare Teil des Schwungrads. Ab Woche&nbsp;5 dreht sich das Rad. Ab Woche&nbsp;7 wird es zum Selbstl&auml;ufer.
           </p>
           <p>
             Und hier ist der Witz: Die meisten, die &bdquo;KI-SEO funktioniert nicht&ldquo; sagen, haben in Woche&nbsp;3 aufgeh&ouml;rt. Sie standen vor der Ziellinie und sind umgedreht. Das ist, als w&uuml;rdest du einen Marathon laufen, nach 35&nbsp;Kilometern aufgeben und sagen: &bdquo;Laufen funktioniert nicht.&ldquo;

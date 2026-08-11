@@ -147,11 +147,11 @@ export default function KiSichtbarkeitDienstleisterPage() {
             <ul className="space-y-2 text-gray-800">
               <li className="flex items-start gap-2">
                 <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">1.</span>
-                <span>Dienstleister haben die h&ouml;chsten Ticket-Sizes (2.000&ndash;50.000&nbsp;&euro; pro Mandant). <strong className="text-black">Eine einzige KI-Empfehlung kann deinen Monat retten.</strong></span>
+                <span>Dienstleister haben die h&ouml;chsten Ticket-Sizes (2.000 bis 50.000&nbsp;&euro; pro Mandant). <strong className="text-black">Eine einzige KI-Empfehlung kann deinen Monat retten.</strong></span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">2.</span>
-                <span>ChatGPT empfiehlt pro Anfrage nur 2&ndash;4 Anbieter. Der Rest existiert f&uuml;r den Suchenden nicht.</span>
+                <span>ChatGPT empfiehlt pro Anfrage nur 2 bis 4 Anbieter. Der Rest existiert f&uuml;r den Suchenden nicht.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">3.</span>
@@ -163,7 +163,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">5.</span>
-                <span>ROI-Rechnung: Bei 5.000&ndash;10.000&nbsp;&euro; Mandatswert refinanziert sich KI-Sichtbarkeit in Wochen, nicht Monaten.</span>
+                <span>ROI-Rechnung: Bei 5.000 bis 10.000&nbsp;&euro; Mandatswert refinanziert sich KI-Sichtbarkeit in Wochen, nicht Monaten.</span>
               </li>
             </ul>
           </div>
@@ -230,7 +230,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
               Und dein Wettbewerber hat bessere Daten.
             </p>
             <p>
-              Das ist, als w&uuml;rdest du bei einer Weinverkostung den besten Wein mitbringen &ndash;
+              Das ist, als w&uuml;rdest du bei einer Weinverkostung den besten Wein mitbringen , 
               aber das Etikett vergessen. Der Sommelier empfiehlt den mittelmä&szlig;igen Bordeaux mit
               dem beeindruckenden Etikett. Weil er schlicht nicht wei&szlig;, was in deiner Flasche ist.
             </p>
@@ -334,7 +334,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
                 </p>
                 <p>
                   <span className="font-medium text-brand-accent">Das Problem:</span>{' '}
-                  Architekten leben vom Portfolio. Aber die KI kann deine Bilder nicht lesen &ndash;
+                  Architekten leben vom Portfolio. Aber die KI kann deine Bilder nicht lesen , 
                   sie braucht Projektbeschreibungen mit Kontext: Ort, Umfang, F&ouml;rderprogramm,
                   Ergebnis. Ein Portfolio ohne Text ist f&uuml;r die KI ein leeres Blatt.
                 </p>
@@ -459,11 +459,11 @@ export default function KiSichtbarkeitDienstleisterPage() {
             <div className="space-y-4 text-gray-800">
               <div className="flex justify-between items-center border-b border-gray-100 pb-3">
                 <span>Durchschnittlicher Mandatswert (Jahresumsatz)</span>
-                <span className="font-semibold text-black">5.000&ndash;10.000&nbsp;&euro;</span>
+                <span className="font-semibold text-black">5.000 bis 10.000&nbsp;&euro;</span>
               </div>
               <div className="flex justify-between items-center border-b border-gray-100 pb-3">
                 <span>Monatliche KI-SEO-Investition</span>
-                <span className="font-semibold text-black">1.500&ndash;3.000&nbsp;&euro;</span>
+                <span className="font-semibold text-black">1.500 bis 3.000&nbsp;&euro;</span>
               </div>
               <div className="flex justify-between items-center border-b border-gray-100 pb-3">
                 <span>Ben&ouml;tigte neue Mandanten f&uuml;r Break-Even</span>
@@ -471,11 +471,11 @@ export default function KiSichtbarkeitDienstleisterPage() {
               </div>
               <div className="flex justify-between items-center border-b border-gray-100 pb-3">
                 <span>Realistischer ROI bei 2 zus&auml;tzlichen Mandanten/Monat</span>
-                <span className="font-semibold text-brand-accent">300&ndash;500&nbsp;%</span>
+                <span className="font-semibold text-brand-accent">300 bis 500&nbsp;%</span>
               </div>
               <div className="flex justify-between items-center">
                 <span>Break-Even-Zeitraum</span>
-                <span className="font-semibold text-brand-accent">2&ndash;6 Wochen</span>
+                <span className="font-semibold text-brand-accent">2 bis 6 Wochen</span>
               </div>
             </div>
           </div>
@@ -484,12 +484,12 @@ export default function KiSichtbarkeitDienstleisterPage() {
             <p>
               Und jetzt der Teil, den die meisten Dienstleister &uuml;bersehen: Ein Mandant bleibt
               nicht einen Monat. <strong className="text-black">Ein Steuerberater-Mandant bleibt
-              durchschnittlich 7&ndash;10 Jahre.</strong> Ein Architekt bekommt nach dem ersten
+              durchschnittlich 7 bis 10 Jahre.</strong> Ein Architekt bekommt nach dem ersten
               Projekt Folgeauftr&auml;ge. Ein Unternehmensberater wird zum Stammberater.
             </p>
             <p>
               Der Lifetime Value eines einzigen KI-gewonnenen Mandanten liegt bei
-              50.000&ndash;200.000&nbsp;&euro;. F&uuml;r eine monatliche Investition von 1.500&nbsp;&euro;.
+              50.000 bis 200.000&nbsp;&euro;. F&uuml;r eine monatliche Investition von 1.500&nbsp;&euro;.
             </p>
             <p>
               (Das ist, als w&uuml;rdest du f&uuml;r 20&nbsp;&euro; Lotto spielen und jedes Mal
@@ -531,7 +531,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
                   </p>
                   <p>
                     Minimale Struktur pro Leistungsseite: Was ist das Problem? Was ist dein Ansatz?
-                    Was kostet es ungef&auml;hr? F&uuml;r wen ist das relevant? FAQ mit 5&ndash;7
+                    Was kostet es ungef&auml;hr? F&uuml;r wen ist das relevant? FAQ mit 5 bis 7
                     konkreten Fragen.
                   </p>
                 </div>
@@ -593,7 +593,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
                   </p>
                   <p>
                     (Und ja, ein weiterer Dienstleister bekam seine ersten KI-Zitierungen innerhalb
-                    weniger Wochen nach der Optimierung. Das ist keine Raketenwissenschaft &ndash;
+                    weniger Wochen nach der Optimierung. Das ist keine Raketenwissenschaft , 
                     es ist Handwerk. Digitales Handwerk.)
                   </p>
                 </div>
@@ -708,7 +708,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
             <div className="bg-red-50 border border-red-100 rounded-xl p-5">
               <p className="font-semibold text-black mb-2">Fehler 4: &bdquo;Ich brauch kein Marketing, ich hab Empfehlungen&ldquo;</p>
               <p className="text-gray-700 leading-relaxed">
-                Der gef&auml;hrlichste Fehler. Nicht weil Empfehlungen nicht funktionieren &ndash;
+                Der gef&auml;hrlichste Fehler. Nicht weil Empfehlungen nicht funktionieren , 
                 sie tun es. Sondern weil <strong className="text-black">jede Empfehlung heute gegen
                 eine KI-Antwort antritt</strong>. Dein Empfehlungsgeber sagt: &bdquo;Geh zu
                 Steuerberater M&uuml;ller.&ldquo; Der Empfangene tippt: &bdquo;Steuerberater
@@ -795,7 +795,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
                   <td className="py-3 pl-4">KI-Empfehlung &rarr; Direkte Anfrage</td>
                 </tr>
                 <tr className="border-b border-gray-100">
-                  <td className="py-3 pr-4">Google Ads: 15&ndash;80&nbsp;&euro; pro Klick</td>
+                  <td className="py-3 pr-4">Google Ads: 15 bis 80&nbsp;&euro; pro Klick</td>
                   <td className="py-3 pl-4">KI-Empfehlung: 0&nbsp;&euro; pro Anfrage</td>
                 </tr>
                 <tr className="border-b border-gray-100">
@@ -807,8 +807,8 @@ export default function KiSichtbarkeitDienstleisterPage() {
                   <td className="py-3 pl-4">KI-Systeme als neues &bdquo;Branchenbuch&ldquo;</td>
                 </tr>
                 <tr>
-                  <td className="py-3 pr-4">Conversion Rate: 1&ndash;3&nbsp;%</td>
-                  <td className="py-3 pl-4">Conversion Rate: 10&ndash;25&nbsp;% (vorqualifizierte Leads)</td>
+                  <td className="py-3 pr-4">Conversion Rate: 1 bis 3&nbsp;%</td>
+                  <td className="py-3 pl-4">Conversion Rate: 10 bis 25&nbsp;% (vorqualifizierte Leads)</td>
                 </tr>
               </tbody>
             </table>
@@ -820,7 +820,7 @@ export default function KiSichtbarkeitDienstleisterPage() {
               hat bereits Vertrauen. Die KI hat gesagt: &bdquo;Ich empfehle dir diesen
               Anbieter.&ldquo; <strong className="text-black">Das ist eine Empfehlung von einer
               Instanz, der 400&nbsp;Millionen Menschen vertrauen.</strong> Die Conversion Rate
-              ist 3&ndash;5x h&ouml;her als bei einem kalten Google-Klick.
+              ist 3 bis 5x h&ouml;her als bei einem kalten Google-Klick.
             </p>
             <p>
               (Und ja, das bedeutet weniger Gesamtanfragen, aber bessere. Qualit&auml;t

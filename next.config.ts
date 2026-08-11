@@ -10,6 +10,14 @@ const nextConfig: NextConfig = {
     tsconfigPath: './tsconfig.json',
   },
   // www -> apex redirect handled at Vercel dashboard level
+  // Consolidated 2026-08-11: three URLs competed for "ai seo agentur" and split
+  // the ranking signal. /ai-seo-agentur is the canonical target.
+  async redirects() {
+    return [
+      { source: '/hamburg/ai-seo-agentur', destination: '/ai-seo-agentur', permanent: true },
+      { source: '/wissen/ai-seo-agentur', destination: '/ai-seo-agentur', permanent: true },
+    ];
+  },
   async headers() {
     return [
       {

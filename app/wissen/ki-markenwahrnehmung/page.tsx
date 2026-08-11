@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: 'Wie lange dauert es, bis Änderungen an meiner Markenwahrnehmung in KI-Systemen sichtbar werden?',
-    a: 'Bei Perplexity: Tage bis Wochen, weil es in Echtzeit crawlt. Bei Google AI Overviews: Wochen bis Monate, abhängig davon, wann Google deine aktualisierten Seiten neu indexiert. Bei ChatGPT: Monate, weil Trainingsdaten-Updates nicht täglich stattfinden. Das Browsing-Feature kann aktuellere Informationen zeigen, aber das Basiswissen ändert sich langsamer. Plane mit einem Horizont von 3–6 Monaten für messbare Veränderungen über alle Plattformen hinweg.',
+    a: 'Bei Perplexity: Tage bis Wochen, weil es in Echtzeit crawlt. Bei Google AI Overviews: Wochen bis Monate, abhängig davon, wann Google deine aktualisierten Seiten neu indexiert. Bei ChatGPT: Monate, weil Trainingsdaten-Updates nicht täglich stattfinden. Das Browsing-Feature kann aktuellere Informationen zeigen, aber das Basiswissen ändert sich langsamer. Plane mit einem Horizont von 3 bis 6 Monaten für messbare Veränderungen über alle Plattformen hinweg.',
   },
 ];
 
@@ -148,7 +148,7 @@ export default function KIMarkenwahrnehmungPage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">4.</span>
-              <span><strong className="text-black">Es dauert 3–6 Monate</strong>, bis Änderungen in KI-Systemen sichtbar werden. Wer jetzt nicht anfängt, verliert jetzt schon.</span>
+              <span><strong className="text-black">Es dauert 3 bis 6 Monate</strong>, bis Änderungen in KI-Systemen sichtbar werden. Wer jetzt nicht anfängt, verliert jetzt schon.</span>
             </li>
           </ul>
         </div>
@@ -374,7 +374,7 @@ export default function KIMarkenwahrnehmungPage() {
           Was tatsächlich funktioniert: Der 6-Punkte-Plan für dein KI-Markenbild
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-10">
-          Keine Tricks, keine Abkürzungen, kein Bullshit. Nur das, was über 3–6 Monate konsistent angewendet zu messbaren Ergebnissen führt. Langweilig? Ja. Effektiv? Extrem.
+          Keine Tricks, keine Abkürzungen, kein Bullshit. Nur das, was über 3 bis 6 Monate konsistent angewendet zu messbaren Ergebnissen führt. Langweilig? Ja. Effektiv? Extrem.
         </p>
 
         <div className="space-y-6">
@@ -579,7 +579,7 @@ export default function KIMarkenwahrnehmungPage() {
             Oder du nimmst die Sache in die Hand. Nicht mit einer einzelnen Pressemeldung. Nicht mit Fake-Bewertungen. Nicht mit der verzweifelten Hoffnung, dass sich das schon irgendwie regelt. Sondern mit einer konsistenten, langfristigen Strategie, die auf echten Signalen basiert.
           </p>
           <p>
-            Das klingt nach Arbeit, weil es Arbeit ist. Aber es ist die Art von Arbeit, die sich in 3–6 Monaten auszahlt und danach jahrelang Rendite bringt. Und das ist mehr, als man von den meisten Marketingmaßnahmen sagen kann.
+            Das klingt nach Arbeit, weil es Arbeit ist. Aber es ist die Art von Arbeit, die sich in 3 bis 6 Monaten auszahlt und danach jahrelang Rendite bringt. Und das ist mehr, als man von den meisten Marketingmaßnahmen sagen kann.
           </p>
         </div>
 

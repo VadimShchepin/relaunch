@@ -176,7 +176,7 @@ export default function SichtbarkeitInPerplexityPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">3.</span>
-                  <span>Tägliche Index-Updates: Neue Inhalte erscheinen in 2&ndash;3 Tagen, nicht in Monaten.</span>
+                  <span>Tägliche Index-Updates: Neue Inhalte erscheinen in 2 bis 3 Tagen, nicht in Monaten.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">4.</span>
@@ -345,7 +345,7 @@ export default function SichtbarkeitInPerplexityPage() {
                 <div className="bg-white border border-gray-100 rounded-2xl p-6">
                   <h3 className="font-semibold text-black text-lg mb-2">Tägliche Index-Updates</h3>
                   <p className="text-gray-600 text-base">
-                    Der Index wird täglich aktualisiert. Neue Inhalte können in 2&ndash;3 Tagen in Antworten
+                    Der Index wird täglich aktualisiert. Neue Inhalte können in 2 bis 3 Tagen in Antworten
                     erscheinen. Bei ChatGPT dauert das Monate. Frische ist bei Perplexity kein Bonus,
                     es ist Voraussetzung. Statischer Content verliert gegen frischen Content. Immer.
                   </p>
@@ -530,7 +530,7 @@ export default function SichtbarkeitInPerplexityPage() {
                   </tr>
                   <tr className="border-t border-gray-100">
                     <td className="p-4 font-medium text-black">Zeit bis Sichtbarkeit</td>
-                    <td className="p-4">2&ndash;3 Tage</td>
+                    <td className="p-4">2 bis 3 Tage</td>
                     <td className="p-4">Wochen bis Monate</td>
                   </tr>
                   <tr className="border-t border-gray-100">

@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/Button';
 const FAQS = [
   {
     q: 'Welche KI-Suchmaschine hat den größten Marktanteil in Deutschland?',
-    a: 'Google dominiert mit über 90 % des deutschen Suchmarktes, wobei AI Overviews zunehmend in die Ergebnisse integriert werden. ChatGPT hat laut Schätzungen über 180 Millionen aktive Nutzer weltweit, wächst aber in Deutschland vor allem im professionellen Umfeld. Perplexity ist kleiner, wächst aber am schnellsten unter informationssuchenden Nutzern. Die Kombination aller drei erreicht die breiteste Zielgruppe. Wer nur eine Plattform optimiert, ignoriert die anderen 30–60 % seines potenziellen Traffics.',
+    a: 'Google dominiert mit über 90 % des deutschen Suchmarktes, wobei AI Overviews zunehmend in die Ergebnisse integriert werden. ChatGPT hat laut Schätzungen über 180 Millionen aktive Nutzer weltweit, wächst aber in Deutschland vor allem im professionellen Umfeld. Perplexity ist kleiner, wächst aber am schnellsten unter informationssuchenden Nutzern. Die Kombination aller drei erreicht die breiteste Zielgruppe. Wer nur eine Plattform optimiert, ignoriert die anderen 30 bis 60 % seines potenziellen Traffics.',
   },
   {
     q: 'Kann ich mit einer einzigen Strategie alle drei Plattformen abdecken?',
@@ -412,7 +412,7 @@ export default function PerplexityVsChatgptVsGooglePage() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-                <span>Featured-Snippet-optimierte Absätze (40–60 Wörter Antwort)</span>
+                <span>Featured-Snippet-optimierte Absätze (40 bis 60 Wörter Antwort)</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>

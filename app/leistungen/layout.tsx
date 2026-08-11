@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'AI SEO Leistungen Hamburg | GEO, AEO & AI SEO',
     description: 'Alle Leistungen: Generative Engine Optimization (GEO), AEO, AI SEO, Beratung, Website-Erstellung, klassisches SEO, Backlink-Aufbau und Pressemitteilungen.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/android-chrome-512x512.png', width: 512, height: 512, alt: 'aiseo.hamburg – Leistungen' }],
+    images: [{ url: '/android-chrome-512x512.png', width: 512, height: 512, alt: 'aiseo.hamburg, Leistungen' }],
   },
   twitter: {
     card: 'summary',

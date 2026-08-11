@@ -29,7 +29,7 @@ const FAQS = [
   },
   {
     q: 'Wie lange dauert es, nach einem Bann wieder sichtbar zu werden?',
-    a: 'Ehrliche Antwort: Monate bis nie. Bei Google kann ein manueller Reconsideration Request 2–6 Monate dauern. Bei ChatGPT und Perplexity gibt es keinen offiziellen Reconsideration-Prozess. Die beste Strategie ist Prävention. Wer einmal gebannt wird, muss oft mit einer neuen Domain komplett von vorne anfangen.',
+    a: 'Ehrliche Antwort: Monate bis nie. Bei Google kann ein manueller Reconsideration Request 2 bis 6 Monate dauern. Bei ChatGPT und Perplexity gibt es keinen offiziellen Reconsideration-Prozess. Die beste Strategie ist Prävention. Wer einmal gebannt wird, muss oft mit einer neuen Domain komplett von vorne anfangen.',
   },
 ];
 
@@ -346,13 +346,13 @@ export default function AIOFailsPage() {
             <tbody className="text-sm text-gray-600">
               <tr className="border-b border-gray-100">
                 <td className="py-3 pr-4 font-medium text-black">Zeitaufwand</td>
-                <td className="py-3 pr-4">1–2 Tage</td>
-                <td className="py-3 pr-4">3–6 Monate</td>
+                <td className="py-3 pr-4">1 bis 2 Tage</td>
+                <td className="py-3 pr-4">3 bis 6 Monate</td>
                 <td className="py-3">0 (du bist raus)</td>
               </tr>
               <tr className="border-b border-gray-100">
                 <td className="py-3 pr-4 font-medium text-black">Wirkung</td>
-                <td className="py-3 pr-4">0–2 Wochen, dann weg</td>
+                <td className="py-3 pr-4">0 bis 2 Wochen, dann weg</td>
                 <td className="py-3 pr-4">Nachhaltig, wachsend</td>
                 <td className="py-3">Permanent negativ</td>
               </tr>
@@ -398,7 +398,7 @@ export default function AIOFailsPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">Answer-First Content schreiben</h3>
             <p className="text-lg text-gray-600 leading-relaxed mb-3">
-              Die Antwort gehört in den ersten Satz. Nicht nach einer philosophischen Einleitung über „die heutige digitale Landschaft". KI-Systeme extrahieren die ersten 2–3 Sätze eines Abschnitts. <strong className="text-black">Wenn deine Antwort dort nicht steht, existiert sie für KI nicht.</strong>
+              Die Antwort gehört in den ersten Satz. Nicht nach einer philosophischen Einleitung über „die heutige digitale Landschaft". KI-Systeme extrahieren die ersten 2 bis 3 Sätze eines Abschnitts. <strong className="text-black">Wenn deine Antwort dort nicht steht, existiert sie für KI nicht.</strong>
             </p>
             <ul className="space-y-2 text-gray-600">
               <li className="flex items-start gap-3">
@@ -524,7 +524,7 @@ export default function AIOFailsPage() {
 
           <div className="mt-6 p-4 bg-gray-50 rounded-xl">
             <p className="text-sm text-gray-600">
-              <strong className="text-black">0 Punkte:</strong> Glückwunsch, du bist ein anständiger Mensch. <strong className="text-black">1–2 Punkte:</strong> Aufhören. Jetzt. <strong className="text-black">3+ Punkte:</strong> Fang schon mal an, eine neue Domain zu suchen.
+              <strong className="text-black">0 Punkte:</strong> Glückwunsch, du bist ein anständiger Mensch. <strong className="text-black">1 bis 2 Punkte:</strong> Aufhören. Jetzt. <strong className="text-black">3+ Punkte:</strong> Fang schon mal an, eine neue Domain zu suchen.
             </p>
           </div>
         </div>

@@ -475,7 +475,7 @@ const FinalCTASection: React.FC = () => (
                 Willst du wissen, ob KI euch aktuell empfiehlt?
             </h2>
             <p className="text-lg text-gray-600 mb-6 max-w-2xl">
-                Schick mir eure Website + 1–2 Sätze, was ihr verkauft. Ich sag dir in 15 Minuten, ob das Thema bei euch hebelt, oder ob ihr etwas anderes priorisieren solltet.
+                Schick mir eure Website + 1 bis 2 Sätze, was ihr verkauft. Ich sag dir in 15 Minuten, ob das Thema bei euch hebelt, oder ob ihr etwas anderes priorisieren solltet.
             </p>
             <p className="text-gray-500 mb-8 text-sm">Unsicher, ob KI euch überhaupt empfiehlt?</p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -535,7 +535,7 @@ const ContactFormSection: React.FC = () => {
                     Kurzanalyse anfragen
                 </h2>
                 <p className="text-gray-600 mb-10">
-                    Ich antworte innerhalb von 24–48h.
+                    Ich antworte innerhalb von 24 bis 48h.
                 </p>
 
                 <form onSubmit={handleSubmit} className="space-y-6">

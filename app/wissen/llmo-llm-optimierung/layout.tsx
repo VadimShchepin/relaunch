@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description:
       'LLMO (Large Language Model Optimization) ist die Strategie, damit ChatGPT, Claude, Gemini und Perplexity dein Unternehmen empfehlen. Die 5 Säulen, Tools und Schritt-für-Schritt-Anleitung.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/wissen/llmo-llm-optimierung.jpg', width: 1200, height: 630, alt: 'LLMO – LLM Optimierung Guide 2026' }],
+    images: [{ url: '/images/wissen/llmo-llm-optimierung.jpg', width: 1200, height: 630, alt: 'LLMO: LLM Optimierung Guide 2026' }],
   },
   twitter: {
     card: 'summary',

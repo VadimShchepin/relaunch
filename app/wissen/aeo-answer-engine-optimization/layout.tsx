@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'AEO – Answer Engine Optimization: Der Guide für 2026 | aiseo.hamburg',
+  title: 'AEO: Answer Engine Optimization: Der Guide für 2026 | aiseo.hamburg',
   description:
     'Was ist Answer Engine Optimization (AEO)? Der komplette Guide: Definition, AEO vs SEO, die 5 Säulen, Strategien für ChatGPT, Perplexity & AI Overviews.',
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/wissen/aeo-answer-engine-optimization',
-    title: 'AEO – Answer Engine Optimization: Der Guide für 2026 | aiseo.hamburg',
+    title: 'AEO: Answer Engine Optimization: Der Guide für 2026 | aiseo.hamburg',
     description:
       'Was ist Answer Engine Optimization (AEO)? Der komplette Guide: Definition, AEO vs SEO, die 5 Säulen, Strategien für ChatGPT, Perplexity & AI Overviews.',
     siteName: 'aiseo.hamburg',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AEO – Answer Engine Optimization: Der Guide für 2026 | aiseo.hamburg',
+    title: 'AEO: Answer Engine Optimization: Der Guide für 2026 | aiseo.hamburg',
     description:
       'Was ist Answer Engine Optimization (AEO)? Der komplette Guide: Definition, AEO vs SEO, die 5 Säulen, Strategien für ChatGPT, Perplexity & AI Overviews.',
     images: ['/images/wissen/aeo-answer-engine-optimization/hero-aeo-answer-engine.webp'],

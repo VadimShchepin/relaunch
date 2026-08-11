@@ -25,7 +25,7 @@ const FAQS = [
   },
   {
     q: 'Soll ich schlechten Content löschen oder überarbeiten?',
-    a: 'Kommt auf den KI-Audit-Score an. Seiten mit 0–3 Punkten im Scoring (von 12) und wenig Traffic: löschen oder redirecten. Seiten mit 4–7 Punkten: überarbeiten, wenn sie thematisch relevant sind. Seiten mit 8+ Punkten: Feintuning. Grundregel: Lieber 50 exzellente Seiten als 500 mittelmäßige. KI-Systeme bevorzugen Qualität über Quantität, und Google seit dem Helpful Content Update ebenfalls.',
+    a: 'Kommt auf den KI-Audit-Score an. Seiten mit 0 bis 3 Punkten im Scoring (von 12) und wenig Traffic: löschen oder redirecten. Seiten mit 4 bis 7 Punkten: überarbeiten, wenn sie thematisch relevant sind. Seiten mit 8+ Punkten: Feintuning. Grundregel: Lieber 50 exzellente Seiten als 500 mittelmäßige. KI-Systeme bevorzugen Qualität über Quantität, und Google seit dem Helpful Content Update ebenfalls.',
   },
   {
     q: 'Welche Tools brauche ich für einen KI-Content-Audit?',
@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: 'Wie lange dauert ein KI-Content-Audit für 100 Seiten?',
-    a: 'Mit dem Scoring-System aus diesem Guide: 2–3 Arbeitstage für die Bewertung, plus 1 Tag für die Priorisierung und Aktionsplanung. Die eigentliche Optimierung dauert je nach Umfang 2–8 Wochen. Wichtig: Der Audit selbst ist nur die Diagnose. Die Therapie (also das Umschreiben, Zusammenführen und Löschen) ist der eigentliche Aufwand.',
+    a: 'Mit dem Scoring-System aus diesem Guide: 2 bis 3 Arbeitstage für die Bewertung, plus 1 Tag für die Priorisierung und Aktionsplanung. Die eigentliche Optimierung dauert je nach Umfang 2 bis 8 Wochen. Wichtig: Der Audit selbst ist nur die Diagnose. Die Therapie (also das Umschreiben, Zusammenführen und Löschen) ist der eigentliche Aufwand.',
   },
 ];
 
@@ -156,7 +156,7 @@ export default function KIContentAuditPage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">5.</span>
-              <span><strong className="text-black">Dieser Guide hat ein Scoring-Template.</strong> 12 Kriterien, 0–2 Punkte pro Kriterium. Kein Bauchgefühl, nur Fakten.</span>
+              <span><strong className="text-black">Dieser Guide hat ein Scoring-Template.</strong> 12 Kriterien, 0 bis 2 Punkte pro Kriterium. Kein Bauchgefühl, nur Fakten.</span>
             </li>
           </ul>
         </div>
@@ -261,7 +261,7 @@ export default function KIContentAuditPage() {
       {/* ============================================================ */}
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
-          Das KI-Content-Scoring: 12 Kriterien, 0–2 Punkte
+          Das KI-Content-Scoring: 12 Kriterien, 0 bis 2 Punkte
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-8">
           Kein Bauchgefühl. Kein „fühlt sich gut an“. Jede Seite bekommt eine Zahl. Und diese Zahl entscheidet, was passiert. Kalt? Ja. Effektiv? Absolut.
@@ -276,7 +276,7 @@ export default function KIContentAuditPage() {
               <span className="text-brand-accent font-bold mt-0.5 shrink-0 w-6 text-center">1</span>
               <div>
                 <p className="font-medium text-black">Answer-First-Struktur</p>
-                <p className="text-sm text-gray-500">Steht die Kernantwort in den ersten 2–3 Sätzen jedes Abschnitts?</p>
+                <p className="text-sm text-gray-500">Steht die Kernantwort in den ersten 2 bis 3 Sätzen jedes Abschnitts?</p>
               </div>
             </div>
 
@@ -371,7 +371,7 @@ export default function KIContentAuditPage() {
 
           <div className="mt-8 p-4 bg-gray-50 rounded-xl">
             <p className="text-sm text-gray-600">
-              <strong className="text-black">Bewertung:</strong> 20–24 Punkte = KI-ready, Feintuning reicht. 12–19 Punkte = Überarbeitung nötig, gute Basis. 5–11 Punkte = Grundlegende Überarbeitung oder Zusammenführung. 0–4 Punkte = Löschen oder komplett neu schreiben. Nicht weinen, machen.
+              <strong className="text-black">Bewertung:</strong> 20 bis 24 Punkte = KI-ready, Feintuning reicht. 12 bis 19 Punkte = Überarbeitung nötig, gute Basis. 5 bis 11 Punkte = Grundlegende Überarbeitung oder Zusammenführung. 0 bis 4 Punkte = Löschen oder komplett neu schreiben. Nicht weinen, machen.
             </p>
           </div>
         </div>
@@ -478,25 +478,25 @@ export default function KIContentAuditPage() {
               </p>
               <div className="space-y-4 mt-4">
                 <div className="bg-green-50 border border-green-100 rounded-xl p-5">
-                  <p className="text-sm font-semibold text-green-800 mb-1">20–24 Punkte: Feintuning</p>
+                  <p className="text-sm font-semibold text-green-800 mb-1">20 bis 24 Punkte: Feintuning</p>
                   <p className="text-sm text-green-700 leading-relaxed">
-                    Kleine Anpassungen: Schema-Markup ergänzen, Quellenangaben aktualisieren, FAQ hinzufügen. Zeitaufwand: 30–60 Minuten pro Seite.
+                    Kleine Anpassungen: Schema-Markup ergänzen, Quellenangaben aktualisieren, FAQ hinzufügen. Zeitaufwand: 30 bis 60 Minuten pro Seite.
                   </p>
                 </div>
                 <div className="bg-yellow-50 border border-yellow-100 rounded-xl p-5">
-                  <p className="text-sm font-semibold text-yellow-800 mb-1">12–19 Punkte: Überarbeitung</p>
+                  <p className="text-sm font-semibold text-yellow-800 mb-1">12 bis 19 Punkte: Überarbeitung</p>
                   <p className="text-sm text-yellow-700 leading-relaxed">
-                    Answer-First umstrukturieren, Quellen einbauen, H2/H3-Hierarchie überarbeiten, Entitäten ergänzen. Zeitaufwand: 2–4 Stunden pro Seite.
+                    Answer-First umstrukturieren, Quellen einbauen, H2/H3-Hierarchie überarbeiten, Entitäten ergänzen. Zeitaufwand: 2 bis 4 Stunden pro Seite.
                   </p>
                 </div>
                 <div className="bg-orange-50 border border-orange-100 rounded-xl p-5">
-                  <p className="text-sm font-semibold text-orange-800 mb-1">5–11 Punkte: Zusammenführen</p>
+                  <p className="text-sm font-semibold text-orange-800 mb-1">5 bis 11 Punkte: Zusammenführen</p>
                   <p className="text-sm text-orange-700 leading-relaxed">
                     Schwache Einzelartikel zu einem starken Pillar-Artikel kombinieren. Drei dünne Blogposts zum gleichen Thema werden ein umfassender Guide. 301-Redirects setzen. Zeitaufwand: 1 Tag pro Cluster.
                   </p>
                 </div>
                 <div className="bg-red-50 border border-red-100 rounded-xl p-5">
-                  <p className="text-sm font-semibold text-red-800 mb-1">0–4 Punkte: Löschen</p>
+                  <p className="text-sm font-semibold text-red-800 mb-1">0 bis 4 Punkte: Löschen</p>
                   <p className="text-sm text-red-700 leading-relaxed">
                     Kein Traffic, keine Relevanz, keine Rettung. 301-Redirect auf die nächstbeste Seite. Auf Wiedersehen. Es tut kurz weh und dann ist es besser. Wie beim Zahnarzt. Nur billiger.
                   </p>
@@ -516,15 +516,15 @@ export default function KIContentAuditPage() {
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-3">
                   <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-                  <span>Woche 1–2: Alle Feintuning-Seiten optimieren</span>
+                  <span>Woche 1 bis 2: Alle Feintuning-Seiten optimieren</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-                  <span>Woche 3–6: Überarbeitungen durchführen (2–3 Seiten pro Woche)</span>
+                  <span>Woche 3 bis 6: Überarbeitungen durchführen (2 bis 3 Seiten pro Woche)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-                  <span>Woche 7–8: Zusammenführungen und Löschungen abschließen</span>
+                  <span>Woche 7 bis 8: Zusammenführungen und Löschungen abschließen</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
@@ -551,7 +551,7 @@ export default function KIContentAuditPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">1. Die 500-Wörter-Einleitung vor der eigentlichen Antwort</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              „In der heutigen schnelllebigen digitalen Welt...“, wenn dein Artikel so anfängt, hat ChatGPT bereits aufgehört zu lesen. Das ist der Content-Equivalent von jemandem, der 10 Minuten braucht, um zu erklären, warum er gleich etwas Wichtiges sagen wird. <strong className="text-black">KI extrahiert die ersten 2–3 Sätze. Wenn dort keine Antwort steht, existiert dein Artikel nicht.</strong>
+              „In der heutigen schnelllebigen digitalen Welt...“, wenn dein Artikel so anfängt, hat ChatGPT bereits aufgehört zu lesen. Das ist der Content-Equivalent von jemandem, der 10 Minuten braucht, um zu erklären, warum er gleich etwas Wichtiges sagen wird. <strong className="text-black">KI extrahiert die ersten 2 bis 3 Sätze. Wenn dort keine Antwort steht, existiert dein Artikel nicht.</strong>
             </p>
           </div>
 
@@ -600,25 +600,25 @@ export default function KIContentAuditPage() {
         <div className="grid sm:grid-cols-2 gap-6 mb-8">
           <div className="bg-white border border-gray-100 rounded-2xl p-6">
             <p className="text-4xl font-bold text-red-500 mb-2">~35 %</p>
-            <p className="font-medium text-black mb-1">Löschen (0–4 Punkte)</p>
+            <p className="font-medium text-black mb-1">Löschen (0 bis 4 Punkte)</p>
             <p className="text-sm text-gray-500">Thin Content, veraltete Blogposts, Duplikate. Tschüss.</p>
           </div>
 
           <div className="bg-white border border-gray-100 rounded-2xl p-6">
             <p className="text-4xl font-bold text-orange-500 mb-2">~30 %</p>
-            <p className="font-medium text-black mb-1">Zusammenführen (5–11 Punkte)</p>
+            <p className="font-medium text-black mb-1">Zusammenführen (5 bis 11 Punkte)</p>
             <p className="text-sm text-gray-500">Schwache Einzelartikel, die als Cluster stärker wären.</p>
           </div>
 
           <div className="bg-white border border-gray-100 rounded-2xl p-6">
             <p className="text-4xl font-bold text-yellow-500 mb-2">~25 %</p>
-            <p className="font-medium text-black mb-1">Überarbeiten (12–19 Punkte)</p>
+            <p className="font-medium text-black mb-1">Überarbeiten (12 bis 19 Punkte)</p>
             <p className="text-sm text-gray-500">Gute Basis, braucht Answer-First, Quellen und Schema.</p>
           </div>
 
           <div className="bg-white border border-gray-100 rounded-2xl p-6">
             <p className="text-4xl font-bold text-brand-accent mb-2">~10 %</p>
-            <p className="font-medium text-black mb-1">KI-ready (20–24 Punkte)</p>
+            <p className="font-medium text-black mb-1">KI-ready (20 bis 24 Punkte)</p>
             <p className="text-sm text-gray-500">Glückwunsch. Diese Seiten dürfen bleiben, wie sie sind.</p>
           </div>
         </div>
@@ -649,11 +649,11 @@ export default function KIContentAuditPage() {
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-              <span><strong className="text-black">Top-10-Seiten: Ersten Absatz umschreiben.</strong> Die Antwort muss in den ersten 2–3 Sätzen stehen. Alles davor ist Zeitverschwendung, für den Leser und für die KI.</span>
+              <span><strong className="text-black">Top-10-Seiten: Ersten Absatz umschreiben.</strong> Die Antwort muss in den ersten 2 bis 3 Sätzen stehen. Alles davor ist Zeitverschwendung, für den Leser und für die KI.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-              <span><strong className="text-black">FAQ-Sektion zu jeder wichtigen Seite hinzufügen.</strong> 5–7 echte Nutzerfragen mit präzisen Antworten. FAQPage-Schema nicht vergessen.</span>
+              <span><strong className="text-black">FAQ-Sektion zu jeder wichtigen Seite hinzufügen.</strong> 5 bis 7 echte Nutzerfragen mit präzisen Antworten. FAQPage-Schema nicht vergessen.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>

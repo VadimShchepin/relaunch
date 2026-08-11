@@ -366,7 +366,7 @@ export default function LLMOPage() {
                   <td className="py-3 pr-4">3-12 Monate</td>
                   <td className="py-3 pr-4">4-8 Wochen (Retrieval)</td>
                   <td className="py-3 pr-4">2-6 Wochen</td>
-                  <td className="py-3">4 Wochen – 6 Monate (je nach System)</td>
+                  <td className="py-3">4 Wochen bis 6 Monate (je nach System)</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-3 pr-4 font-medium text-black">Optimierungsebene</td>

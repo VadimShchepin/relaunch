@@ -233,9 +233,9 @@ export default function BookingPage() {
                       className={inputClass}
                     >
                       <option value="">Keine Präferenz</option>
-                      <option value="Vormittag (9–12 Uhr)">Vormittag (9–12 Uhr)</option>
-                      <option value="Mittag (12–15 Uhr)">Mittag (12–15 Uhr)</option>
-                      <option value="Nachmittag (15–18 Uhr)">Nachmittag (15–18 Uhr)</option>
+                      <option value="Vormittag (9 bis 12 Uhr)">Vormittag (9 bis 12 Uhr)</option>
+                      <option value="Mittag (12 bis 15 Uhr)">Mittag (12 bis 15 Uhr)</option>
+                      <option value="Nachmittag (15 bis 18 Uhr)">Nachmittag (15 bis 18 Uhr)</option>
                     </select>
                   </div>
 

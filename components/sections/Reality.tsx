@@ -24,7 +24,7 @@ export const Reality: React.FC = () => (
                     <FadeIn>
                         <p className="text-base text-gray-700 leading-[1.7] mb-4">
                             KI-Systeme zeigen keine Suchlisten.
-                            Sie wählen wenige Quellen – oft 5–10 – und nennen diese als Empfehlung.
+                            Sie wählen wenige Quellen, oft 5 bis 10, und nennen diese als Empfehlung.
                         </p>
 
                         <p className="text-base text-gray-700 leading-[1.7] mb-4">
@@ -53,7 +53,7 @@ export const Reality: React.FC = () => (
                     <div className="h-[150px] md:h-[190px] lg:h-[200px] rounded-xl overflow-hidden">
                         <img
                             src="/images/reality/Impressions after ai.webp"
-                            alt="Website-Impressionen nach KI-Optimierung – Anstieg der Sichtbarkeit"
+                            alt="Website-Impressionen nach KI-Optimierung, Anstieg der Sichtbarkeit"
                             className="w-full h-full object-contain object-left-bottom"
                             width={400}
                             height={200}
@@ -66,7 +66,7 @@ export const Reality: React.FC = () => (
                     <div className="h-[190px] lg:h-[260px] rounded-xl overflow-hidden">
                         <img
                             src="/images/reality/growth.webp"
-                            alt="Wachstum der KI-Sichtbarkeit – Analytics-Übersicht"
+                            alt="Wachstum der KI-Sichtbarkeit, Analytics-Übersicht"
                             className="w-full h-full object-cover"
                             width={200}
                             height={260}
@@ -88,7 +88,7 @@ export const Reality: React.FC = () => (
                     <div className="h-[260px] md:h-[320px] lg:h-[400px] rounded-2xl overflow-hidden">
                         <img
                             src="/images/reality/hamburg.webp"
-                            alt="Hamburg – Standort für KI-Sichtbarkeit und AI SEO"
+                            alt="Hamburg, Standort für KI-Sichtbarkeit und AI SEO"
                             className="w-full h-full object-cover"
                             width={600}
                             height={400}

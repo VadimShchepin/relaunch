@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { LocalIntentTemplate } from '@/components/hamburg/LocalIntentTemplate';
 
 export const metadata: Metadata = {
-  title: 'KI-Sichtbarkeit Agentur Hamburg | Sichtbar in ChatGPT, Perplexity und Google AI',
+  title: 'KI-Sichtbarkeit Agentur Hamburg: ChatGPT und Perplexity',
   description:
     'KI-Sichtbarkeit Agentur für Hamburg: Strategische, technische und inhaltliche Optimierung für ChatGPT, Perplexity und Google AI mit starkem lokalen Fokus.',
   keywords: [
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/hamburg/ki-sichtbarkeit-agentur',
-    title: 'KI-Sichtbarkeit Agentur Hamburg | Sichtbar in ChatGPT, Perplexity und Google AI',
+    title: 'KI-Sichtbarkeit Agentur Hamburg: ChatGPT und Perplexity',
     description:
       'Lokale KI-Sichtbarkeit für Hamburger Unternehmen mit Fokus auf klare Leistungen, EEAT und AI-Readiness.',
     siteName: 'aiseo.hamburg',
@@ -121,7 +121,7 @@ export default function KISichtbarkeitAgenturHamburgPage() {
         {
           title: 'AI SEO Agentur Hamburg',
           description: 'Für Unternehmen, die explizit nach AI SEO und nicht nur nach KI-Sichtbarkeit suchen.',
-          href: '/hamburg/ai-seo-agentur',
+          href: '/ai-seo-agentur',
           tag: 'AI SEO',
         },
         {

@@ -17,11 +17,11 @@ const FAQS = [
   },
   {
     q: 'Was kostet AI SEO im Vergleich zu klassischem SEO?',
-    a: 'Klassische SEO-Agenturen berechnen typischerweise 2.000–10.000 Euro pro Monat. AI SEO liegt bei 500–3.000 Euro monatlich, je nach Umfang. Der entscheidende Unterschied: AI SEO liefert messbare Ergebnisse in 4–8 Wochen statt 6–12 Monaten. Du investierst weniger und siehst schneller, ob es funktioniert. Das reduziert dein finanzielles Risiko erheblich.',
+    a: 'Klassische SEO-Agenturen berechnen typischerweise 2.000 bis 10.000 Euro pro Monat. AI SEO liegt bei 500 bis 3.000 Euro monatlich, je nach Umfang. Der entscheidende Unterschied: AI SEO liefert messbare Ergebnisse in 4 bis 8 Wochen statt 6 bis 12 Monaten. Du investierst weniger und siehst schneller, ob es funktioniert. Das reduziert dein finanzielles Risiko erheblich.',
   },
   {
     q: 'Wie schnell sehe ich Ergebnisse mit AI SEO?',
-    a: 'Die ersten KI-Erwähnungen können bereits nach 2–4 Wochen erscheinen, besonders bei Perplexity und Google AI Overviews. Messbare Business-Ergebnisse (also Leads und Anfragen über KI-Kanäle) sehen wir typischerweise nach 6–10 Wochen. Zum Vergleich: Klassisches SEO braucht 6–12 Monate für vergleichbare Ergebnisse.',
+    a: 'Die ersten KI-Erwähnungen können bereits nach 2 bis 4 Wochen erscheinen, besonders bei Perplexity und Google AI Overviews. Messbare Business-Ergebnisse (also Leads und Anfragen über KI-Kanäle) sehen wir typischerweise nach 6 bis 10 Wochen. Zum Vergleich: Klassisches SEO braucht 6 bis 12 Monate für vergleichbare Ergebnisse.',
   },
   {
     q: 'Funktioniert AI SEO auch für kleine Unternehmen?',
@@ -29,7 +29,7 @@ const FAQS = [
   },
   {
     q: 'Was passiert, wenn ich gar nichts mache?',
-    a: 'Dann passiert das, was immer passiert, wenn sich eine Branche verändert und man zuschaut: Du verlierst schrittweise Marktanteile an Wettbewerber, die früher handeln. Laut Gartner verlieren Marken bis 2028 über 50 % ihres organischen Traffics durch KI-gestützte Suche. Wer jetzt nicht in KI-Sichtbarkeit investiert, wird in 2–3 Jahren feststellen, dass die Wettbewerber alle KI-Kanäle besetzt haben. Aufholen ist dann 5x teurer als jetzt anfangen.',
+    a: 'Dann passiert das, was immer passiert, wenn sich eine Branche verändert und man zuschaut: Du verlierst schrittweise Marktanteile an Wettbewerber, die früher handeln. Laut Gartner verlieren Marken bis 2028 über 50 % ihres organischen Traffics durch KI-gestützte Suche. Wer jetzt nicht in KI-Sichtbarkeit investiert, wird in 2 bis 3 Jahren feststellen, dass die Wettbewerber alle KI-Kanäle besetzt haben. Aufholen ist dann 5x teurer als jetzt anfangen.',
   },
   {
     q: 'Woran erkenne ich, ob meine aktuelle Agentur AI SEO kann?',
@@ -59,7 +59,7 @@ const articleJsonLd = {
   '@type': 'Article',
   headline: 'Deine SEO-Agentur liefert Rankings, aber keine Kunden: warum AI SEO der nächste Schritt ist',
   description:
-    'Du zahlst 2.000–10.000 Euro im Monat für SEO, aber KI-Systeme ignorieren dich komplett. Warum klassisches SEO allein nicht mehr reicht, und was AI SEO stattdessen liefert.',
+    'Du zahlst 2.000 bis 10.000 Euro im Monat für SEO, aber KI-Systeme ignorieren dich komplett. Warum klassisches SEO allein nicht mehr reicht, und was AI SEO stattdessen liefert.',
   image: 'https://aiseo.hamburg/images/wissen/seo-agentur-vs-ai-seo.jpg',
   author: {
     '@type': 'Person',
@@ -196,7 +196,7 @@ export default function SeoAgenturVsAiSeoPage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-red-500 font-bold mt-0.5 shrink-0">&#10007;</span>
-              <span><strong className="text-black">Google Ads CPC steigt 10&ndash;15&nbsp;% pro Jahr.</strong> Selbst bezahlte Sichtbarkeit wird immer teurer</span>
+              <span><strong className="text-black">Google Ads CPC steigt 10 bis 15&nbsp;% pro Jahr.</strong> Selbst bezahlte Sichtbarkeit wird immer teurer</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-red-500 font-bold mt-0.5 shrink-0">&#10007;</span>
@@ -285,13 +285,13 @@ export default function SeoAgenturVsAiSeoPage() {
             <tbody className="text-sm text-gray-600">
               <tr className="border-b border-gray-100">
                 <td className="py-3 pr-4 font-medium text-black">Monatliche Kosten</td>
-                <td className="py-3 pr-4">2.000&ndash;10.000&nbsp;&euro;</td>
-                <td className="py-3">500&ndash;3.000&nbsp;&euro;</td>
+                <td className="py-3 pr-4">2.000 bis 10.000&nbsp;&euro;</td>
+                <td className="py-3">500 bis 3.000&nbsp;&euro;</td>
               </tr>
               <tr className="border-b border-gray-100">
                 <td className="py-3 pr-4 font-medium text-black">Zeit bis Ergebnis</td>
-                <td className="py-3 pr-4">6&ndash;12 Monate</td>
-                <td className="py-3">4&ndash;8 Wochen</td>
+                <td className="py-3 pr-4">6 bis 12 Monate</td>
+                <td className="py-3">4 bis 8 Wochen</td>
               </tr>
               <tr className="border-b border-gray-100">
                 <td className="py-3 pr-4 font-medium text-black">Nachhaltigkeit</td>
@@ -537,7 +537,7 @@ export default function SeoAgenturVsAiSeoPage() {
               <div>
                 <h3 className="text-xl font-semibold text-black mb-2">ROI-Nachweis ab Woche&nbsp;1</h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Kein „wir brauchen 6 Monate, bis wir erste Ergebnisse sehen". Erste messbare Verbesserungen in KI-Erw&auml;hnungen nach 2&ndash;4 Wochen. Business-relevante Leads nach 6&ndash;10 Wochen. <strong className="text-black">Wenn nach 8 Wochen nichts passiert, stimmt etwas nicht, und wir sagen dir das.</strong>
+                  Kein „wir brauchen 6 Monate, bis wir erste Ergebnisse sehen". Erste messbare Verbesserungen in KI-Erw&auml;hnungen nach 2 bis 4 Wochen. Business-relevante Leads nach 6 bis 10 Wochen. <strong className="text-black">Wenn nach 8 Wochen nichts passiert, stimmt etwas nicht, und wir sagen dir das.</strong>
                 </p>
               </div>
             </div>

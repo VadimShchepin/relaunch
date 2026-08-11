@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'E-E-A-T und KI: Warum Expertise für ChatGPT mehr zählt als für Google',
+  title: 'E-E-A-T und KI: warum Expertise für ChatGPT zählt',
   description:
     'E-E-A-T für KI-Systeme funktioniert anders als für Google. Erfahre, warum Konsistenz über Quellen hinweg wichtiger ist als Backlinks, und warum eine Autoren-Bio allein nichts bringt.',
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/wissen/eeat-ki-sichtbarkeit',
-    title: 'E-E-A-T und KI: Warum Expertise für ChatGPT mehr zählt als für Google',
+    title: 'E-E-A-T und KI: warum Expertise für ChatGPT zählt',
     description:
       'E-E-A-T für KI-Systeme funktioniert anders als für Google. Erfahre, warum Konsistenz über Quellen hinweg wichtiger ist als Backlinks, und warum eine Autoren-Bio allein nichts bringt.',
     siteName: 'aiseo.hamburg',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'E-E-A-T und KI: Warum Expertise für ChatGPT mehr zählt als für Google',
+    title: 'E-E-A-T und KI: warum Expertise für ChatGPT zählt',
     description:
       'E-E-A-T für KI-Systeme funktioniert anders als für Google. Erfahre, warum Konsistenz über Quellen hinweg wichtiger ist als Backlinks, und warum eine Autoren-Bio allein nichts bringt.',
   },

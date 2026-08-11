@@ -277,8 +277,8 @@ export default function WettbewerberKiSichtbarkeitPage() {
               </tr>
               <tr className="border-b border-gray-100">
                 <td className="py-3 pr-4 font-medium text-black">Conversion Rate</td>
-                <td className="py-3 pr-4">3&ndash;5x h&ouml;her als Google-Traffic</td>
-                <td className="py-3">Standard 1&ndash;3&nbsp;%</td>
+                <td className="py-3 pr-4">3 bis 5x h&ouml;her als Google-Traffic</td>
+                <td className="py-3">Standard 1 bis 3&nbsp;%</td>
               </tr>
               <tr className="border-b border-gray-100">
                 <td className="py-3 pr-4 font-medium text-black">Analytics-Sichtbarkeit</td>
@@ -403,7 +403,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
             <p className="text-sm text-gray-600">aller Suchen &uuml;ber KI bis 2026 (Gartner 2025)</p>
           </div>
           <div className="bg-white border border-gray-100 rounded-2xl p-6 text-center">
-            <p className="text-3xl font-bold text-brand-accent mb-2">3&ndash;5x</p>
+            <p className="text-3xl font-bold text-brand-accent mb-2">3 bis 5x</p>
             <p className="text-sm text-gray-600">h&ouml;here Conversion bei KI-empfohlenen Leads</p>
           </div>
         </div>
@@ -683,7 +683,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
 
         <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
           <p>
-            Du gibst wahrscheinlich 3.000&ndash;10.000&nbsp;&euro; pro Monat f&uuml;r Marketing aus. Google Ads, SEO-Agentur, Social Media, vielleicht ein Newsletter-Tool. Alles sch&ouml;n messbar. Alles sch&ouml;n in Dashboards.
+            Du gibst wahrscheinlich 3.000 bis 10.000&nbsp;&euro; pro Monat f&uuml;r Marketing aus. Google Ads, SEO-Agentur, Social Media, vielleicht ein Newsletter-Tool. Alles sch&ouml;n messbar. Alles sch&ouml;n in Dashboards.
           </p>
           <p>
             Und w&auml;hrenddessen bekommt dein Wettbewerber kostenlose Empfehlungen von der m&auml;chtigsten Suchmaschine, die je gebaut wurde, <strong className="text-black">und zahlt daf&uuml;r keinen Cent pro Klick.</strong>
@@ -720,7 +720,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-                <span>Leads mit 3&ndash;5x h&ouml;herer Conversion Rate</span>
+                <span>Leads mit 3 bis 5x h&ouml;herer Conversion Rate</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>

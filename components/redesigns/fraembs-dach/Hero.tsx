@@ -44,7 +44,7 @@ export function Hero() {
         </h1>
         <p className="mt-7 max-w-xl text-lg leading-relaxed text-stone-100/80">
           Steildach, Flachdach, Klempnerei, Zimmererarbeiten und Photovoltaik
-          aus einer Hand &mdash; präzise verarbeitet von einem Hamburger
+          aus einer Hand ,  präzise verarbeitet von einem Hamburger
           Meisterbetrieb.
         </p>
 

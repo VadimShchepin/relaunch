@@ -49,7 +49,7 @@ export const SourceSelectionVisual: React.FC<VisualProps> = ({ className }) => (
     {/* AI hub */}
     <circle cx="232" cy="152" r="38" fill={C.text} />
     <text x="232" y="150" fontSize="14" fontWeight="700" fill="#fff" textAnchor="middle">KI</text>
-    <text x="232" y="166" fontSize="9" fill="#cbd5e1" textAnchor="middle">wählt 2–5</text>
+    <text x="232" y="166" fontSize="9" fill="#cbd5e1" textAnchor="middle">wählt 2 bis 5</text>
 
     {/* connectors AI -> sources */}
     <path d="M270 138 C300 120 312 96 332 96" stroke={C.accent} strokeWidth="2.5" fill="none" />

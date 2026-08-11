@@ -175,7 +175,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
                 ))}
               </div>
               <p className="text-sm text-gray-500">
-                Von der ersten Anfrage bis zu messbaren Ergebnissen: 15&nbsp;Minuten f&uuml;r die kostenlose Analyse, 10&ndash;14&nbsp;Tage f&uuml;r das technische Upgrade, 3&ndash;6&nbsp;Monate f&uuml;r konsistente KI-Sichtbarkeit. Kein Hexenwerk, aber auch kein Overnight-Erfolg.
+                Von der ersten Anfrage bis zu messbaren Ergebnissen: 15&nbsp;Minuten f&uuml;r die kostenlose Analyse, 10 bis 14&nbsp;Tage f&uuml;r das technische Upgrade, 3 bis 6&nbsp;Monate f&uuml;r konsistente KI-Sichtbarkeit. Kein Hexenwerk, aber auch kein Overnight-Erfolg.
               </p>
             </div>
         </section>
@@ -274,7 +274,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
         {/* Schritt 2: Audit & Strategie */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-              Schritt&nbsp;2: Audit &&nbsp;Strategie (Tag&nbsp;1&ndash;3)
+              Schritt&nbsp;2: Audit &&nbsp;Strategie (Tag&nbsp;1 bis 3)
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
               <p>
@@ -339,7 +339,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
         {/* Schritt 3: Technische Umsetzung */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-              Schritt&nbsp;3: Technische Umsetzung (Tag&nbsp;4&ndash;14)
+              Schritt&nbsp;3: Technische Umsetzung (Tag&nbsp;4 bis 14)
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
               <p>
@@ -393,7 +393,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
         {/* Schritt 4: Content & Autorität */}
         <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
-              Schritt&nbsp;4: Content &&nbsp;Autorit&auml;t (Monat&nbsp;2&ndash;3)
+              Schritt&nbsp;4: Content &&nbsp;Autorit&auml;t (Monat&nbsp;2 bis 3)
             </h2>
             <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
               <p>
@@ -591,23 +591,23 @@ export default function KiSichtbarkeitBeauftragenPage() {
                   <div className="bg-gray-50 rounded-lg p-4 space-y-3">
                     <div className="flex justify-between items-center py-2 border-b border-gray-200">
                       <span>Technische Basis steht</span>
-                      <span className="font-semibold text-black">10&ndash;14 Tage</span>
+                      <span className="font-semibold text-black">10 bis 14 Tage</span>
                     </div>
                     <div className="flex justify-between items-center py-2 border-b border-gray-200">
                       <span>Erste KI-Erw&auml;hnungen</span>
-                      <span className="font-semibold text-black">4&ndash;8 Wochen</span>
+                      <span className="font-semibold text-black">4 bis 8 Wochen</span>
                     </div>
                     <div className="flex justify-between items-center py-2 border-b border-gray-200">
                       <span>Konsistente Sichtbarkeit</span>
-                      <span className="font-semibold text-black">2&ndash;4 Monate</span>
+                      <span className="font-semibold text-black">2 bis 4 Monate</span>
                     </div>
                     <div className="flex justify-between items-center py-2">
                       <span>Volle Wirkung</span>
-                      <span className="font-semibold text-black">3&ndash;6 Monate</span>
+                      <span className="font-semibold text-black">3 bis 6 Monate</span>
                     </div>
                   </div>
                   <p>
-                    Das ist <strong className="text-black">schneller als klassisches SEO</strong> (6&ndash;12 Monate), aber kein Lichtschalter. Wer dir &bdquo;Ergebnisse in 48&nbsp;Stunden&ldquo; verspricht, hat entweder ein anderes Verst&auml;ndnis von &bdquo;Ergebnissen&ldquo;, oder ein sehr lockeres Verh&auml;ltnis zur Wahrheit.
+                    Das ist <strong className="text-black">schneller als klassisches SEO</strong> (6 bis 12 Monate), aber kein Lichtschalter. Wer dir &bdquo;Ergebnisse in 48&nbsp;Stunden&ldquo; verspricht, hat entweder ein anderes Verst&auml;ndnis von &bdquo;Ergebnissen&ldquo;, oder ein sehr lockeres Verh&auml;ltnis zur Wahrheit.
                   </p>
                 </div>
               </div>
@@ -644,19 +644,19 @@ export default function KiSichtbarkeitBeauftragenPage() {
                   </tr>
                   <tr className="border-t border-gray-100 bg-gray-50/50">
                     <td className="p-4 font-medium text-black">Audit & Strategie</td>
-                    <td className="p-4 text-gray-600">1&ndash;3 Tage</td>
+                    <td className="p-4 text-gray-600">1 bis 3 Tage</td>
                     <td className="p-4 text-gray-600">Briefing-Gespr&auml;ch</td>
                     <td className="p-4 text-gray-600">Strategie + Festpreis</td>
                   </tr>
                   <tr className="border-t border-gray-100">
                     <td className="p-4 font-medium text-black">Umsetzung</td>
-                    <td className="p-4 text-gray-600">10&ndash;14 Tage</td>
+                    <td className="p-4 text-gray-600">10 bis 14 Tage</td>
                     <td className="p-4 text-gray-600">CMS-Zugang geben</td>
                     <td className="p-4 text-gray-600">KI-ready Website</td>
                   </tr>
                   <tr className="border-t border-gray-100 bg-gray-50/50">
                     <td className="p-4 font-medium text-black">Content & Autorit&auml;t</td>
-                    <td className="p-4 text-gray-600">Monat 2&ndash;3</td>
+                    <td className="p-4 text-gray-600">Monat 2 bis 3</td>
                     <td className="p-4 text-gray-600">Feedback geben</td>
                     <td className="p-4 text-gray-600">Erste KI-Zitierungen</td>
                   </tr>
@@ -774,7 +774,7 @@ export default function KiSichtbarkeitBeauftragenPage() {
                   <p className="text-sm text-gray-500 mt-1">Was AI SEO wirklich kostet, transparente Preise und ROI-Rechnung.</p>
                 </a>
                 <a
-                  href="/wissen/ai-seo-agentur"
+                  href="/ai-seo-agentur"
                   className="bg-white border border-gray-100 rounded-2xl p-5 hover:border-brand-accent transition-colors group"
                 >
                   <p className="text-base font-semibold text-black group-hover:text-brand-accent transition-colors">AI SEO Agentur</p>

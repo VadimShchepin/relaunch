@@ -15,7 +15,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Tiemann & Co. — Website-Vorschau von aiseo.hamburg",
+  title: "Tiemann & Co., Website-Vorschau von aiseo.hamburg",
   description:
     "Vorschau eines Website-Redesigns für Tiemann & Co. KG, umgesetzt von aiseo.hamburg.",
   robots: {

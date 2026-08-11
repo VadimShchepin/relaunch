@@ -26,7 +26,7 @@ export function Contact() {
             <span className="italic text-fd-copper">Ihr Dach sprechen.</span>
           </h2>
           <p className="mt-6 max-w-md text-base leading-relaxed text-fd-ink/60">
-            Ob Neueindeckung, Reparatur oder Photovoltaik &mdash; wir melden
+            Ob Neueindeckung, Reparatur oder Photovoltaik ,  wir melden
             uns innerhalb eines Werktages mit einem Termin für die
             kostenlose Erstberatung.
           </p>

@@ -157,7 +157,7 @@ const TLDRSection: React.FC = () => (
                 <ul className="space-y-2 text-gray-800">
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">1.</span>
-                        <span>ChatGPT empfiehlt 2–3 Unternehmen pro Anfrage. Wer nicht dabei ist, existiert nicht.</span>
+                        <span>ChatGPT empfiehlt 2 bis 3 Unternehmen pro Anfrage. Wer nicht dabei ist, existiert nicht.</span>
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="text-brand-accent font-bold mt-0.5 flex-shrink-0">2.</span>
@@ -186,7 +186,7 @@ const ProblemSection: React.FC = () => (
     <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
         <FadeIn>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-8">
-                Das ChatGPT-Problem: Nur 2–3 Unternehmen werden empfohlen
+                Das ChatGPT-Problem: Nur 2 bis 3 Unternehmen werden empfohlen
             </h2>
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
                 <p>
@@ -615,7 +615,7 @@ const MeasuringSection: React.FC = () => (
                 <div className="bg-white border border-gray-100 rounded-2xl p-6">
                     <h3 className="font-semibold text-black text-lg mb-2">3. Systematische Prompt-Tests</h3>
                     <p className="text-gray-600 leading-relaxed mb-3">
-                        Teste monatlich 10–15 branchenspezifische Prompts. Nutze einen neuen Chat ohne Verlauf.
+                        Teste monatlich 10 bis 15 branchenspezifische Prompts. Nutze einen neuen Chat ohne Verlauf.
                     </p>
                     <ul className="space-y-1.5 text-gray-600 text-base mb-3">
                         <li className="flex items-start gap-2">

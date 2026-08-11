@@ -108,7 +108,7 @@ const CLUSTER_SIZES = [
   { name: 'Deutsche kommerzielle Phrasen', seeds: 29, hits: 10, sv: 1030, note: 'CPC bis 40 €' },
   { name: 'Bildung / Vergleiche', seeds: 24, hits: 12, sv: 990, note: 'Niedrige CPC, hohe Funnel-Position' },
   { name: 'Plattform-spezifisch', seeds: 30, hits: 14, sv: 860, note: 'Rückläufig (siehe „ChatGPT SEO")' },
-  { name: 'Service-Intent (Audit/Strategie)', seeds: 28, hits: 9, sv: 350, note: 'CPC 8–23 €' },
+  { name: 'Service-Intent (Audit/Strategie)', seeds: 28, hits: 9, sv: 350, note: 'CPC 8 bis 23 €' },
   { name: 'Entity / E-E-A-T / Schema', seeds: 22, hits: 5, sv: 280, note: '' },
   { name: 'Lokales AEO/GEO Hamburg', seeds: 29, hits: 2, sv: 270, note: 'Nachfrage unter Messschwelle, SERPs voll' },
   { name: 'Problem-aware („warum erscheint…")', seeds: 21, hits: 0, sv: 0, note: 'Latente Nachfrage, keine SV' },

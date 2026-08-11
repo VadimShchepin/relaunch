@@ -13,7 +13,7 @@ const PAGES = [
   {
     title: 'AI SEO Agentur Hamburg',
     description: 'Kommerzielle Local-Intent-Seite für Unternehmen, die bereits aktiv nach AI SEO suchen.',
-    href: '/hamburg/ai-seo-agentur',
+    href: '/ai-seo-agentur',
     tag: 'AI SEO',
   },
   {

@@ -27,7 +27,7 @@ export function About() {
           <p className="mt-7 max-w-lg text-base leading-relaxed text-stone-200/75">
             Främbs Dachdeckerei ist ein Hamburger Meisterbetrieb mit hohem
             Anspruch an Qualität und Langlebigkeit. Wir bieten
-            Komplettlösungen für Steil- und Flachdach &mdash; von der
+            Komplettlösungen für Steil- und Flachdach ,  von der
             Neueindeckung bis zur behutsamen Sanierung historischer Gebäude,
             bei der wir den ursprünglichen Charakter bewahren.
           </p>

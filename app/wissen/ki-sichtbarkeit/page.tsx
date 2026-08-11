@@ -816,7 +816,7 @@ export default function KISichtbarkeitPage() {
             </a>
 
             <a
-              href="/wissen/ai-seo-agentur"
+              href="/ai-seo-agentur"
               className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
             >
               <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">

@@ -13,7 +13,7 @@ const FAQS = [
   },
   {
     q: 'Wie kann ich Geld verdienen, wenn niemand mehr auf meine Website klickt?',
-    a: 'Indem du das Modell umdenkst. Statt Traffic zu monetarisieren, monetarisierst du Vertrauen und Markenbekanntheit. Wenn ChatGPT deine Marke als Experten empfiehlt, kommen die qualifiziertesten Leads direkt: über Branded Search, direkte Anfragen oder Mundpropaganda. Ein Lead, der über eine KI-Empfehlung kommt, hat bereits Vertrauen. Der konvertiert 3–5x besser als ein zufälliger Google-Klick. Weniger Traffic, bessere Conversion, gleicher oder höherer Umsatz.',
+    a: 'Indem du das Modell umdenkst. Statt Traffic zu monetarisieren, monetarisierst du Vertrauen und Markenbekanntheit. Wenn ChatGPT deine Marke als Experten empfiehlt, kommen die qualifiziertesten Leads direkt: über Branded Search, direkte Anfragen oder Mundpropaganda. Ein Lead, der über eine KI-Empfehlung kommt, hat bereits Vertrauen. Der konvertiert 3 bis 5x besser als ein zufälliger Google-Klick. Weniger Traffic, bessere Conversion, gleicher oder höherer Umsatz.',
   },
   {
     q: 'Stimmt die Gartner-Prognose von 50 % Traffic-Verlust wirklich?',
@@ -25,7 +25,7 @@ const FAQS = [
   },
   {
     q: 'Ist Zero-Click nur ein Thema für informationsbasierte Suchanfragen?',
-    a: 'Primär ja, aber die Grenze verschiebt sich. Heute beantwortet KI hauptsächlich Wissens- und Vergleichsfragen. Aber Perplexity zeigt bereits Produktempfehlungen mit Affiliate-Links, und Google AI Overviews integrieren Shopping-Ergebnisse. In 2–3 Jahren werden auch transaktionale Anfragen zunehmend Zero-Click. Die Frage ist nicht ob, sondern wann.',
+    a: 'Primär ja, aber die Grenze verschiebt sich. Heute beantwortet KI hauptsächlich Wissens- und Vergleichsfragen. Aber Perplexity zeigt bereits Produktempfehlungen mit Affiliate-Links, und Google AI Overviews integrieren Shopping-Ergebnisse. In 2 bis 3 Jahren werden auch transaktionale Anfragen zunehmend Zero-Click. Die Frage ist nicht ob, sondern wann.',
   },
   {
     q: 'Sollte ich aufhören, in SEO zu investieren?',
@@ -368,7 +368,7 @@ export default function ZeroClickZukunftPage() {
             <p className="text-lg text-gray-600 leading-relaxed mb-2">
               <strong className="text-black">Wie groß ist dein Anteil an KI-Erwähnungen im Vergleich zu Wettbewerbern?</strong> Wenn für dein Thema 10 Fragen in ChatGPT gestellt werden, bei wie vielen taucht deine Marke auf? Und bei wie vielen der Wettbewerber? Das ist dein Share of Voice in der KI-Welt.
             </p>
-            <p className="text-sm text-gray-500">Frequenz: Quartalsweise. Systematischer Prompt-Test über 50–100 relevante Fragen.</p>
+            <p className="text-sm text-gray-500">Frequenz: Quartalsweise. Systematischer Prompt-Test über 50 bis 100 relevante Fragen.</p>
           </div>
 
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">

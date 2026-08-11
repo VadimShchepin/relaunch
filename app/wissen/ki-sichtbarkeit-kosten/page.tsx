@@ -191,11 +191,11 @@ export default function KiSichtbarkeitKostenPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                 <div className="bg-gray-50 rounded-lg p-4">
                   <p className="text-sm text-gray-500 mb-1">Einmaliges Upgrade</p>
-                  <p className="text-xl font-semibold text-black">1.500 &ndash; 3.000&nbsp;&euro;</p>
+                  <p className="text-xl font-semibold text-black">1.500 bis 3.000&nbsp;&euro;</p>
                 </div>
                 <div className="bg-gray-50 rounded-lg p-4">
                   <p className="text-sm text-gray-500 mb-1">Monatliche Betreuung</p>
-                  <p className="text-xl font-semibold text-black">1.500 &ndash; 5.000&nbsp;&euro;/Monat</p>
+                  <p className="text-xl font-semibold text-black">1.500 bis 5.000&nbsp;&euro;/Monat</p>
                 </div>
                 <div className="bg-gray-50 rounded-lg p-4">
                   <p className="text-sm text-gray-500 mb-1">Enterprise</p>
@@ -207,7 +207,7 @@ export default function KiSichtbarkeitKostenPage() {
                 </div>
               </div>
               <p className="text-sm text-gray-500">
-                Zum Vergleich: Google Ads CPC steigt j&auml;hrlich um 10-15%. Klassische SEO-Agenturen kosten 2.000&ndash;10.000&nbsp;&euro;/Monat. KI-Sichtbarkeit liefert nachhaltigere Ergebnisse bei oft geringeren Kosten.
+                Zum Vergleich: Google Ads CPC steigt j&auml;hrlich um 10-15%. Klassische SEO-Agenturen kosten 2.000 bis 10.000&nbsp;&euro;/Monat. KI-Sichtbarkeit liefert nachhaltigere Ergebnisse bei oft geringeren Kosten.
               </p>
             </div>
         </section>
@@ -229,14 +229,14 @@ export default function KiSichtbarkeitKostenPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
               <div className="bg-white border border-gray-100 rounded-2xl p-6">
                 <h3 className="text-lg font-semibold text-black mb-2">Einmaliges Upgrade</h3>
-                <p className="text-2xl font-semibold text-brand-accent mb-2">1.500 &ndash; 3.000&nbsp;&euro;</p>
+                <p className="text-2xl font-semibold text-brand-accent mb-2">1.500 bis 3.000&nbsp;&euro;</p>
                 <p className="text-base text-gray-600 leading-relaxed">
                   Schema-Markup, llms.txt, Content-Restrukturierung, technische Basis. Einmalig, kein Abo. Ergebnis: deine Website ist KI-ready.
                 </p>
               </div>
               <div className="bg-white border border-gray-100 rounded-2xl p-6">
                 <h3 className="text-lg font-semibold text-black mb-2">Monatliche Betreuung</h3>
-                <p className="text-2xl font-semibold text-brand-accent mb-2">1.500 &ndash; 5.000&nbsp;&euro;/Monat</p>
+                <p className="text-2xl font-semibold text-brand-accent mb-2">1.500 bis 5.000&nbsp;&euro;/Monat</p>
                 <p className="text-base text-gray-600 leading-relaxed">
                   Laufende Optimierung, Content-Erstellung, Monitoring &uuml;ber alle KI-Plattformen, Autorit&auml;ts-Aufbau und monatliches Reporting.
                 </p>
@@ -332,29 +332,29 @@ export default function KiSichtbarkeitKostenPage() {
                 <tbody>
                   <tr className="border-t border-gray-100">
                     <td className="p-4 font-medium text-black">Google Ads</td>
-                    <td className="p-4 text-gray-600">2.000&ndash;20.000&nbsp;&euro;</td>
+                    <td className="p-4 text-gray-600">2.000 bis 20.000&nbsp;&euro;</td>
                     <td className="p-4 text-gray-600">Sofort</td>
                     <td className="p-4 text-red-500">Keine (Ads aus = weg)</td>
                     <td className="p-4 text-gray-600">Mittel, sinkend</td>
                   </tr>
                   <tr className="border-t border-gray-100 bg-gray-50/50">
                     <td className="p-4 font-medium text-black">Klassisches SEO</td>
-                    <td className="p-4 text-gray-600">2.000&ndash;10.000&nbsp;&euro;</td>
-                    <td className="p-4 text-gray-600">6&ndash;12 Monate</td>
+                    <td className="p-4 text-gray-600">2.000 bis 10.000&nbsp;&euro;</td>
+                    <td className="p-4 text-gray-600">6 bis 12 Monate</td>
                     <td className="p-4 text-brand-accent">Hoch</td>
                     <td className="p-4 text-gray-600">Hoch, aber langsam</td>
                   </tr>
                   <tr className="border-t border-gray-100">
                     <td className="p-4 font-medium text-black">Social Media Ads</td>
-                    <td className="p-4 text-gray-600">1.000&ndash;15.000&nbsp;&euro;</td>
+                    <td className="p-4 text-gray-600">1.000 bis 15.000&nbsp;&euro;</td>
                     <td className="p-4 text-gray-600">Sofort</td>
                     <td className="p-4 text-red-500">Keine</td>
                     <td className="p-4 text-gray-600">Variabel</td>
                   </tr>
                   <tr className="border-t border-gray-100 bg-brand-accent/5">
                     <td className="p-4 font-semibold text-brand-accent">KI-Sichtbarkeit</td>
-                    <td className="p-4 font-medium text-brand-accent">1.500&ndash;5.000&nbsp;&euro;</td>
-                    <td className="p-4 text-gray-600">2&ndash;6 Monate</td>
+                    <td className="p-4 font-medium text-brand-accent">1.500 bis 5.000&nbsp;&euro;</td>
+                    <td className="p-4 text-gray-600">2 bis 6 Monate</td>
                     <td className="p-4 text-brand-accent">Hoch</td>
                     <td className="p-4 font-medium text-brand-accent">Sehr hoch</td>
                   </tr>
@@ -435,7 +435,7 @@ export default function KiSichtbarkeitKostenPage() {
                   <h3 className="text-xl font-semibold text-black">AI-Sichtbarkeits-Upgrade</h3>
                   <span className="text-2xl font-semibold text-brand-accent mt-2 sm:mt-0">1.500&nbsp;&euro; netto</span>
                 </div>
-                <p className="text-sm text-gray-500 mb-6">Einmalig &middot; 10&ndash;14 Tage Umsetzung &middot; Kein Abo</p>
+                <p className="text-sm text-gray-500 mb-6">Einmalig &middot; 10 bis 14 Tage Umsetzung &middot; Kein Abo</p>
                 <div className="space-y-3 text-base text-gray-600 leading-relaxed mb-6">
                   <p className="font-medium text-black">Was du bekommst:</p>
                   <ul className="space-y-2 pl-1">
@@ -605,10 +605,10 @@ export default function KiSichtbarkeitKostenPage() {
               <div className="bg-white border border-gray-100 rounded-2xl p-6">
                 <div className="flex gap-4">
                   <div className="shrink-0 w-16 h-16 bg-brand-accent/10 rounded-xl flex items-center justify-center">
-                    <span className="text-brand-accent font-bold text-sm">1&ndash;2</span>
+                    <span className="text-brand-accent font-bold text-sm">1 bis 2</span>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-black mb-2">Monat 1&ndash;2: Technische Basis</h3>
+                    <h3 className="text-lg font-semibold text-black mb-2">Monat 1 bis 2: Technische Basis</h3>
                     <p className="text-base text-gray-600 leading-relaxed">
                       Schema-Markup, llms.txt, Content-Restrukturierung, technische Optimierung. Deine Website wird KI-ready. Erste Crawls durch KI-Bots beginnen.
                     </p>
@@ -619,10 +619,10 @@ export default function KiSichtbarkeitKostenPage() {
               <div className="bg-white border border-gray-100 rounded-2xl p-6">
                 <div className="flex gap-4">
                   <div className="shrink-0 w-16 h-16 bg-brand-accent/10 rounded-xl flex items-center justify-center">
-                    <span className="text-brand-accent font-bold text-sm">3&ndash;4</span>
+                    <span className="text-brand-accent font-bold text-sm">3 bis 4</span>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-black mb-2">Monat 3&ndash;4: Erste Sichtbarkeit</h3>
+                    <h3 className="text-lg font-semibold text-black mb-2">Monat 3 bis 4: Erste Sichtbarkeit</h3>
                     <p className="text-base text-gray-600 leading-relaxed">
                       KI-Systeme beginnen, deine Inhalte als Quelle zu erkennen. Erste Erw&auml;hnungen in KI-Antworten tauchen auf. Monitoring zeigt Fortschritt.
                     </p>
@@ -633,10 +633,10 @@ export default function KiSichtbarkeitKostenPage() {
               <div className="bg-white border border-gray-100 rounded-2xl p-6">
                 <div className="flex gap-4">
                   <div className="shrink-0 w-16 h-16 bg-brand-accent/10 rounded-xl flex items-center justify-center">
-                    <span className="text-brand-accent font-bold text-sm">5&ndash;6</span>
+                    <span className="text-brand-accent font-bold text-sm">5 bis 6</span>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-black mb-2">Monat 5&ndash;6: Messbare Ergebnisse</h3>
+                    <h3 className="text-lg font-semibold text-black mb-2">Monat 5 bis 6: Messbare Ergebnisse</h3>
                     <p className="text-base text-gray-600 leading-relaxed">
                       Konsistente Zitierungen &uuml;ber mehrere KI-Plattformen. Erste Anfragen, die direkt auf KI-Empfehlungen zur&uuml;ckzuf&uuml;hren sind. ROI wird messbar.
                     </p>
@@ -647,7 +647,7 @@ export default function KiSichtbarkeitKostenPage() {
 
             <div className="bg-white border-2 border-brand-accent rounded-xl p-6 mt-8 shadow-sm">
               <p className="text-base text-gray-700 leading-relaxed">
-                <span className="font-semibold text-black">Break-even typisch nach 3&ndash;6 Monaten.</span> Bei einem einmaligen Upgrade oft noch schneller, weil die Investition gering ist und schon ein einziger zus&auml;tzlicher Auftrag die Kosten deckt.
+                <span className="font-semibold text-black">Break-even typisch nach 3 bis 6 Monaten.</span> Bei einem einmaligen Upgrade oft noch schneller, weil die Investition gering ist und schon ein einziger zus&auml;tzlicher Auftrag die Kosten deckt.
               </p>
             </div>
         </section>
@@ -705,7 +705,7 @@ export default function KiSichtbarkeitKostenPage() {
                   <p className="text-sm text-gray-500 mt-1">Wie Unternehmen in KI-Antworten sichtbar werden.</p>
                 </a>
                 <a
-                  href="/wissen/ai-seo-agentur"
+                  href="/ai-seo-agentur"
                   className="bg-white border border-gray-100 rounded-2xl p-5 hover:border-brand-accent transition-colors group"
                 >
                   <p className="text-base font-semibold text-black group-hover:text-brand-accent transition-colors">AI SEO Agentur</p>

@@ -411,15 +411,6 @@ export const ARTICLES: Article[] = [
     date: '2026-03-12',
   },
   {
-    title: 'AI SEO Agentur: Was sie wirklich leistet',
-    description: 'Was eine gute AI SEO Agentur ausmacht, worauf du bei der Auswahl achten solltest und wann sich Beratung lohnt.',
-    href: '/wissen/ai-seo-agentur',
-    tag: 'Beratung',
-    topic: 'Strategie',
-    readTime: '9 Min.',
-    date: '2026-03-12',
-  },
-  {
     title: 'Website-Automatisierung: Tools und Strategien für 2026',
     description: 'Die besten Automatisierungs-Tools für deutsche Unternehmen. DSGVO-konform, praxiserprobt und mit konkreten Anwendungsfällen.',
     href: '/wissen/website-automatisierung',

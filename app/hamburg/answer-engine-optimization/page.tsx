@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { LocalIntentTemplate } from '@/components/hamburg/LocalIntentTemplate';
 
 export const metadata: Metadata = {
-  title: 'Answer Engine Optimization Hamburg | AEO für Unternehmen mit kaufnaher Nachfrage',
+  title: 'Answer Engine Optimization Hamburg (AEO)',
   description:
     'Answer Engine Optimization in Hamburg für Unternehmen, die in ChatGPT, Perplexity, Copilot und Google AI als Antwort genannt werden wollen.',
   keywords: [
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/hamburg/answer-engine-optimization',
-    title: 'Answer Engine Optimization Hamburg | AEO für Unternehmen mit kaufnaher Nachfrage',
+    title: 'Answer Engine Optimization Hamburg (AEO)',
     description:
       'Kommerzielle Hamburg-Seite für AEO, Antwortmaschinen und strukturierte Kaufintent-Sichtbarkeit.',
     siteName: 'aiseo.hamburg',
@@ -121,7 +121,7 @@ export default function AnswerEngineOptimizationHamburgPage() {
         {
           title: 'AI SEO Agentur Hamburg',
           description: 'Die Seite für den breiteren kommerziellen Suchbegriff AI SEO.',
-          href: '/hamburg/ai-seo-agentur',
+          href: '/ai-seo-agentur',
           tag: 'AI SEO',
         },
         {

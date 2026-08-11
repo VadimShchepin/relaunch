@@ -15,7 +15,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Främbs Dachdeckerei — Website-Vorschau von aiseo.hamburg",
+  title: "Främbs Dachdeckerei, Website-Vorschau von aiseo.hamburg",
   description:
     "Vorschau eines Website-Redesigns für Främbs Dachdeckerei, umgesetzt von aiseo.hamburg.",
   robots: {

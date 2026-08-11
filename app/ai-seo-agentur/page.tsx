@@ -587,7 +587,7 @@ export default function AiSeoAgenturPage() {
                 </Link>
                 . Lokal in Hamburg? Dann ist die{" "}
                 <Link
-                  href="/hamburg/ai-seo-agentur"
+                  href="/ai-seo-agentur"
                   className="text-brand-accent font-semibold underline underline-offset-2 hover:text-black transition-colors"
                 >
                   AI SEO Agentur Hamburg

@@ -149,7 +149,7 @@ export default function LlmsTxtAnleitungPage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">3.</span>
-              <span><strong className="text-black">Erstellen dauert 15 Minuten.</strong> Markdown-Format, 30–100 Zeilen, unter domain.de/llms.txt hochladen. Fertig.</span>
+              <span><strong className="text-black">Erstellen dauert 15 Minuten.</strong> Markdown-Format, 30 bis 100 Zeilen, unter domain.de/llms.txt hochladen. Fertig.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-brand-accent font-bold mt-0.5">4.</span>
@@ -288,7 +288,7 @@ export default function LlmsTxtAnleitungPage() {
                 Schritt 2: Kopfbereich schreiben
               </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Beginne mit einer Markdown-H1-Überschrift: dem Namen deines Unternehmens. Darunter eine kurze Beschreibung in 2–3 Sätzen: Was tust du, für wen, und wo?
+                Beginne mit einer Markdown-H1-Überschrift: dem Namen deines Unternehmens. Darunter eine kurze Beschreibung in 2 bis 3 Sätzen: Was tust du, für wen, und wo?
               </p>
               <div className="bg-gray-50 rounded-xl p-5 font-mono text-sm leading-relaxed">
                 <p className="text-gray-400 mb-2"># Beispiel:</p>
@@ -307,7 +307,7 @@ export default function LlmsTxtAnleitungPage() {
                 Schritt 3: Kernseiten auflisten
               </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Liste deine wichtigsten Seiten mit Titel und URL auf. Nicht alle 500 Seiten. Die 10–20 wichtigsten. Servicepages, Pillar-Guides, Über-uns-Seite. Die KI soll wissen, wo dein bester Content liegt.
+                Liste deine wichtigsten Seiten mit Titel und URL auf. Nicht alle 500 Seiten. Die 10 bis 20 wichtigsten. Servicepages, Pillar-Guides, Über-uns-Seite. Die KI soll wissen, wo dein bester Content liegt.
               </p>
               <div className="bg-gray-50 rounded-xl p-5 font-mono text-sm leading-relaxed">
                 <p className="text-black">## Kernseiten</p>
@@ -460,7 +460,7 @@ export default function LlmsTxtAnleitungPage() {
           <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold text-black mb-3">5. Zu lang und unstrukturiert</h3>
             <p className="text-gray-600 leading-relaxed">
-              500 Zeilen Fließtext in einer llms.txt? Herzlichen Glückwunsch, du hast eine Kurzgeschichte geschrieben, die keine KI lesen wird. 30–100 Zeilen. Klare Markdown-Überschriften. Bullet Points. Kurze Beschreibungen. Wenn deine llms.txt länger ist als dieser Absatz: kürzen.
+              500 Zeilen Fließtext in einer llms.txt? Herzlichen Glückwunsch, du hast eine Kurzgeschichte geschrieben, die keine KI lesen wird. 30 bis 100 Zeilen. Klare Markdown-Überschriften. Bullet Points. Kurze Beschreibungen. Wenn deine llms.txt länger ist als dieser Absatz: kürzen.
             </p>
           </div>
 
@@ -625,7 +625,7 @@ export default function LlmsTxtAnleitungPage() {
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-              <span>10–20 wichtigste Seiten mit funktionierenden URLs verlinkt</span>
+              <span>10 bis 20 wichtigste Seiten mit funktionierenden URLs verlinkt</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
@@ -645,7 +645,7 @@ export default function LlmsTxtAnleitungPage() {
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>
-              <span>Unter 100 Zeilen (Ideal: 30–60)</span>
+              <span>Unter 100 Zeilen (Ideal: 30 bis 60)</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-brand-accent font-bold mt-0.5 shrink-0">&#10003;</span>

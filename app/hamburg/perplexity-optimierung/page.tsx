@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { LocalIntentTemplate } from '@/components/hamburg/LocalIntentTemplate';
 
 export const metadata: Metadata = {
-  title: 'Perplexity Optimierung Hamburg | Als Quelle zitiert werden statt übergangen',
+  title: 'Perplexity Optimierung Hamburg: als Quelle zitiert',
   description:
     'Perplexity Optimierung in Hamburg für Unternehmen, die als zitierbare Quelle in AI Answers auftauchen wollen. Fokus auf Struktur, Frische, Klarheit und Trust-Signale.',
   keywords: [
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/hamburg/perplexity-optimierung',
-    title: 'Perplexity Optimierung Hamburg | Als Quelle zitiert werden statt übergangen',
+    title: 'Perplexity Optimierung Hamburg: als Quelle zitiert',
     description:
       'Lokale Service-Seite für Perplexity-Sichtbarkeit, Zitationen und AI-Search-Quellenarbeit in Hamburg.',
     siteName: 'aiseo.hamburg',

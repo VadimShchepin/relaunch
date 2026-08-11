@@ -23,7 +23,7 @@ export default function ContactSuccessPage() {
             </h1>
             
             <p className="text-xl text-gray-700 mb-8 max-w-xl mx-auto">
-              Deine Nachricht ist bei uns angekommen. Wir melden uns schnellstmöglich bei dir – in der Regel innerhalb von 24 Stunden.
+              Deine Nachricht ist bei uns angekommen. Wir melden uns schnellstmöglich bei dir, in der Regel innerhalb von 24 Stunden.
             </p>
 
             <div className="bg-white rounded-card border border-gray-100 p-8 mb-8">

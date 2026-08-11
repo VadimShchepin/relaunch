@@ -236,7 +236,7 @@ const FAQ_ITEMS = [
   },
   {
     q: 'Was bedeutet R-A-P + Methodik?',
-    a: 'Vier Bewertungsachsen, je 1–5 Punkte. R (Reichweite) = Sichtbarkeit in KI-Systemen. A (Autorität) = Backlinks, Drittquellen, Fachpresse. P (Positionierung) = Klarheit der KI-Sichtbarkeit-Spezialisierung. Methodik = Audit-Qualität, Messbarkeit, Transparenz. Höher heißt besser, aber unterschiedliche Anbieter sind in unterschiedlichen Achsen stark.',
+    a: 'Vier Bewertungsachsen, je 1 bis 5 Punkte. R (Reichweite) = Sichtbarkeit in KI-Systemen. A (Autorität) = Backlinks, Drittquellen, Fachpresse. P (Positionierung) = Klarheit der KI-Sichtbarkeit-Spezialisierung. Methodik = Audit-Qualität, Messbarkeit, Transparenz. Höher heißt besser, aber unterschiedliche Anbieter sind in unterschiedlichen Achsen stark.',
   },
   {
     q: 'Wann lohnt sich ein Spezialist gegenüber einer Full-Service-Agentur?',
@@ -244,7 +244,7 @@ const FAQ_ITEMS = [
   },
   {
     q: 'Was kostet KI-Sichtbarkeit 2026 in Hamburg?',
-    a: 'Einmaliges Audit: 500–2.500 €. 90-Tage-Programm mit Content + Monitoring: 5.000–15.000 €. Laufende Betreuung: 1.000–5.000 €/Monat. Die Spannweite zwischen Anbietern ist groß, weil manche klassisches SEO unter neuem Label verkaufen. Frage konkret: „Wie messt ihr KI-Zitierungen und welche Reports zeigt ihr mir monatlich?"',
+    a: 'Einmaliges Audit: 500 bis 2.500 €. 90-Tage-Programm mit Content + Monitoring: 5.000 bis 15.000 €. Laufende Betreuung: 1.000 bis 5.000 €/Monat. Die Spannweite zwischen Anbietern ist groß, weil manche klassisches SEO unter neuem Label verkaufen. Frage konkret: „Wie messt ihr KI-Zitierungen und welche Reports zeigt ihr mir monatlich?"',
   },
   {
     q: 'Kann ich den 4-KI-Test selbst durchführen?',
@@ -745,7 +745,7 @@ export default function KiSichtbarkeitAgenturenHamburgPage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button href="/ai-sichtbarkeit-now" text="Kostenlose Kurzanalyse anfordern" primary />
-                <Button href="/wissen/ai-seo-agentur" text="Mehr über unsere Arbeit" />
+                <Button href="/ai-seo-agentur" text="Mehr über unsere Arbeit" />
               </div>
               <p className="text-sm text-gray-400 mt-6">
                 Erstellt am 23. Mai 2026 von Vadim Shchepin, Senior Software Engineer und Founder von aiseo.hamburg. Nächste Aktualisierung: 23. Juni 2026.

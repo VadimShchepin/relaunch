@@ -570,19 +570,19 @@ const ReviewBenchmarkSection: React.FC = () => (
                     </thead>
                     <tbody className="text-gray-600">
                         <tr className="border-b border-gray-100">
-                            <td className="py-3 pr-4 font-medium text-gray-800">0&ndash;5</td>
+                            <td className="py-3 pr-4 font-medium text-gray-800">0 bis 5</td>
                             <td className="py-3 pl-4">Schwaches Vertrauenssignal, wirkt dünn (außer in Nischen mit wenig Konkurrenz)</td>
                         </tr>
                         <tr className="border-b border-gray-100">
-                            <td className="py-3 pr-4 font-medium text-gray-800">10&ndash;25</td>
+                            <td className="py-3 pr-4 font-medium text-gray-800">10 bis 25</td>
                             <td className="py-3 pl-4">Grundglaubwürdigkeit, das Profil wirkt nicht mehr leer</td>
                         </tr>
                         <tr className="border-b border-gray-100">
-                            <td className="py-3 pr-4 font-medium text-gray-800">30&ndash;60</td>
+                            <td className="py-3 pr-4 font-medium text-gray-800">30 bis 60</td>
                             <td className="py-3 pl-4">Lokal glaubwürdig, in den meisten Fachrichtungen wettbewerbsfähig</td>
                         </tr>
                         <tr className="border-b border-gray-100">
-                            <td className="py-3 pr-4 font-medium text-gray-800">75&ndash;120</td>
+                            <td className="py-3 pr-4 font-medium text-gray-800">75 bis 120</td>
                             <td className="py-3 pl-4">Starkes Vertrauenssignal, typisch für etablierte Praxen</td>
                         </tr>
                         <tr className="border-b border-gray-100">
@@ -590,7 +590,7 @@ const ReviewBenchmarkSection: React.FC = () => (
                             <td className="py-3 pl-4">Kategorieführer-Signal in umkämpften Fachrichtungen</td>
                         </tr>
                         <tr>
-                            <td className="py-3 pr-4 font-medium text-gray-800">250&ndash;400+</td>
+                            <td className="py-3 pr-4 font-medium text-gray-800">250 bis 400+</td>
                             <td className="py-3 pl-4">Dominanter Reputations-Ausreißer</td>
                         </tr>
                     </tbody>

@@ -231,7 +231,7 @@ const PricingSection: React.FC = () => (
             </span>
             <span className="flex items-center gap-2">
               <CheckIcon className="w-4 h-4 text-brand-accent" />
-              Dauer ca. 10–14 Tage
+              Dauer ca. 10 bis 14 Tage
             </span>
           </div>
 
@@ -293,7 +293,7 @@ const ContactFormSection: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
           Kostenlose AI-Sichtbarkeits-Prüfung
         </h2>
-        <p className="text-gray-600 mb-8">Kurz & unverbindlich. Ich antworte in 24–48h.</p>
+        <p className="text-gray-600 mb-8">Kurz & unverbindlich. Ich antworte in 24 bis 48h.</p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid sm:grid-cols-2 gap-6">
