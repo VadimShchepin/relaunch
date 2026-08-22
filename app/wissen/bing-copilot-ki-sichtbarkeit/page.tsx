@@ -618,6 +618,42 @@ export default function BingCopilotKiSichtbarkeitPage() {
               Wie du in ChatGPT-Antworten erscheinst und was OpenAI als Quelle bevorzugt.
             </p>
           </a>
+
+          <a
+            href="/wissen/gsc-vs-bing-webmaster-tools"
+            className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
+          >
+            <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">
+              Search Console vs Bing Webmaster Tools
+            </h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Googles Generative-AI-Bericht seit Juni 2026 neben dem Bing-Bericht: was jede Konsole liefert und was fehlt.
+            </p>
+          </a>
+
+          <a
+            href="/wissen/citation-rate"
+            className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
+          >
+            <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">
+              Citation Rate richtig berechnen
+            </h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Die Kennzahl hinter diesen Zahlen, mit Formel, Nenner-Problem und der Abgrenzung zu Citation Share.
+            </p>
+          </a>
+
+          <a
+            href="/wissen/share-of-voice-ki"
+            className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
+          >
+            <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">
+              Share of Voice in KI-Antworten
+            </h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Warum fünf Varianten einer Grounding Query über 41% der Citations entschieden, und was das für die Priorisierung heißt.
+            </p>
+          </a>
         </div>
       </section>
 

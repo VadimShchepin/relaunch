@@ -172,6 +172,13 @@ export default function CaseStudyKinderalbumPage() {
       ]}
       relatedArticles={[
         {
+          title: 'KI-Sichtbarkeit für SaaS: wie Software in Tool-Empfehlungen landet',
+          description:
+            'Die verallgemeinerte Version dieses Cases, mit den Citation-Zahlen pro Seitentyp aus dem Bing-Export dieser Domain.',
+          href: '/wissen/ki-sichtbarkeit-saas',
+          tag: 'SaaS',
+        },
+        {
           title: 'Sichtbarkeit in Perplexity AI: So wirst du als Quelle zitiert',
           description: 'Die passende Vertiefung, wenn du verstehen willst, warum Perplexity bei solchen Cases oft früh reagiert.',
           href: '/wissen/sichtbarkeit-in-perplexity',

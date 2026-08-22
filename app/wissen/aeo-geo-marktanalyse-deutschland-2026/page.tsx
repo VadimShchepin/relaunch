@@ -965,6 +965,13 @@ export default function AEOGEOMarktanalyseDeutschland2026Page() {
           <h2 className="text-2xl font-semibold text-black mb-6">Weiterlesen</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <a
+              href="/wissen/geo-vs-seo"
+              className="bg-white border border-gray-200 hover:border-brand-accent rounded-2xl p-5 transition-colors"
+            >
+              <div className="text-xs font-semibold text-brand-accent uppercase tracking-wider mb-2">Begriffe</div>
+              <h3 className="text-lg font-semibold text-black">GEO vs SEO vs AEO vs LLMO. Die Kürzel in einer Tabelle.</h3>
+            </a>
+            <a
               href="/wissen/aeo-answer-engine-optimization"
               className="bg-white border border-gray-200 hover:border-brand-accent rounded-2xl p-5 transition-colors"
             >

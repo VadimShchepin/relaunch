@@ -756,6 +756,30 @@ export default function KISichtbarkeitPage() {
           </h2>
           <div className="grid sm:grid-cols-2 gap-6">
             <a
+              href="/wissen/geo-vs-seo"
+              className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
+            >
+              <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">
+                GEO vs SEO vs AEO vs LLMO
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Die vier Begriffe sauber getrennt: Ziel, Erfolgsmaß und Zielsystem in einer Tabelle.
+              </p>
+            </a>
+
+            <a
+              href="/wissen/warum-nicht-in-chatgpt"
+              className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
+            >
+              <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">
+                Warum erscheint meine Firma nicht in ChatGPT?
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Zehn Ursachen nach Häufigkeit und die Diagnose in vier Schritten, bevor du Inhalte produzierst.
+              </p>
+            </a>
+
+            <a
               href="/wissen/sichtbarkeit-in-chatgpt"
               className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
             >

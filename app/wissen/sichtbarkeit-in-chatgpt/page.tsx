@@ -810,6 +810,17 @@ const RelatedGuidesSection: React.FC = () => (
             <h3 className="font-semibold text-black text-lg mb-4">Verwandte Guides:</h3>
             <div className="grid sm:grid-cols-2 gap-4">
                 <a
+                    href="/wissen/warum-nicht-in-chatgpt"
+                    className="bg-white border border-gray-100 rounded-2xl p-5 hover:border-brand-accent transition-colors group"
+                >
+                    <p className="font-semibold text-black group-hover:text-brand-accent transition-colors mb-1">
+                        Warum erscheint meine Firma nicht in ChatGPT?
+                    </p>
+                    <p className="text-sm text-gray-500">
+                        Die Diagnose vor der Optimierung: zehn Ursachen nach Häufigkeit, vier davon technisch.
+                    </p>
+                </a>
+                <a
                     href="/wissen/ki-sichtbarkeit"
                     className="bg-white border border-gray-100 rounded-2xl p-5 hover:border-brand-accent transition-colors group"
                 >

@@ -689,6 +689,13 @@ export default function LokaleKiSichtbarkeitPage() {
           <h2 className="text-xl font-semibold text-black mb-5">Weiterführende Guides:</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <a
+              href="/wissen/ki-sichtbarkeit-logistik"
+              className="bg-white border border-gray-100 rounded-2xl p-5 hover:border-brand-accent transition-colors group"
+            >
+              <p className="text-base font-semibold text-black group-hover:text-brand-accent transition-colors">KI-Sichtbarkeit für Logistik</p>
+              <p className="text-sm text-gray-500 mt-1">Die lokale Branche mit dem größten Abstand zwischen Marktbedeutung und Sichtbarkeit.</p>
+            </a>
+            <a
               href="/wissen/ki-sichtbarkeit"
               className="bg-white border border-gray-100 rounded-2xl p-5 hover:border-brand-accent transition-colors group"
             >

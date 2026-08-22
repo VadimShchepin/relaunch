@@ -22,14 +22,47 @@ export type ArticleImage = {
   caption?: string;
 };
 
+export type ArticleDefinition = {
+  term: string;
+  definition: string;
+  formula?: string;
+};
+
+export type ArticleTable = {
+  caption?: string;
+  headers: string[];
+  rows: string[][];
+  note?: string;
+};
+
+export type ArticleStep = {
+  title: string;
+  text: string;
+};
+
+export type ArticleWarning = {
+  title: string;
+  text: string;
+};
+
+export type ArticleSource = {
+  label: string;
+  text: string;
+  href?: string;
+};
+
 export type ArticleSection = {
   id: string;
   heading: string;
   intro?: string;
+  definitions?: ArticleDefinition[];
   paragraphs?: string[];
   stat?: string;
+  table?: ArticleTable;
   cards?: ArticleCard[];
   bullets?: string[];
+  steps?: ArticleStep[];
+  warning?: ArticleWarning;
   note?: string;
   quote?: string;
 };
@@ -57,6 +90,7 @@ export type ArticleTemplateProps = {
   galleryTitle?: string;
   galleryIntro?: string;
   gallery?: ArticleImage[];
+  sources?: ArticleSource[];
   relatedArticles?: RelatedArticle[];
   ctaTitle: string;
   ctaText: string;
@@ -80,6 +114,7 @@ export function ArticleTemplate({
   galleryTitle,
   galleryIntro,
   gallery,
+  sources,
   relatedArticles,
   ctaTitle,
   ctaText,
@@ -122,6 +157,16 @@ export function ArticleTemplate({
     })),
   };
 
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://aiseo.hamburg' },
+      { '@type': 'ListItem', position: 2, name: 'Wissen', item: 'https://aiseo.hamburg/wissen' },
+      { '@type': 'ListItem', position: 3, name: breadcrumbLabel },
+    ],
+  };
+
   return (
     <div className="relative w-full overflow-hidden bg-[#F7F5F2] text-brand-text font-sans selection:bg-brand-accent selection:text-white">
       <Navbar />
@@ -133,6 +178,10 @@ export function ArticleTemplate({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       <main>
@@ -212,6 +261,27 @@ export function ArticleTemplate({
                 </p>
               ) : null}
 
+              {section.definitions ? (
+                <dl className="space-y-4 mb-10">
+                  {section.definitions.map((entry) => (
+                    <div
+                      key={entry.term}
+                      className="bg-white border-l-4 border-brand-accent rounded-r-2xl rounded-l-sm p-6 shadow-sm"
+                    >
+                      <dt className="text-lg font-semibold text-black mb-2">{entry.term}</dt>
+                      <dd className="text-base text-gray-600 leading-relaxed">
+                        {entry.definition}
+                        {entry.formula ? (
+                          <span className="mt-3 block rounded-lg bg-gray-50 px-4 py-3 font-mono text-sm text-black">
+                            {entry.formula}
+                          </span>
+                        ) : null}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              ) : null}
+
               {section.stat ? (
                 <div className="bg-white border-2 border-brand-accent rounded-xl p-6 shadow-sm my-8">
                   <p className="text-xl md:text-2xl font-semibold text-black leading-snug">
@@ -226,6 +296,54 @@ export function ArticleTemplate({
                     <p key={paragraph}>{paragraph}</p>
                   ))}
                 </div>
+              ) : null}
+
+              {section.table ? (
+                <figure className="mt-10">
+                  <div className="overflow-x-auto rounded-2xl border border-gray-100 bg-white">
+                    <table className="w-full min-w-[560px] border-collapse text-left text-sm">
+                      <thead>
+                        <tr className="border-b border-gray-200 bg-gray-50">
+                          {section.table.headers.map((header) => (
+                            <th
+                              key={header}
+                              scope="col"
+                              className="px-4 py-3 font-semibold text-black align-bottom"
+                            >
+                              {header}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {section.table.rows.map((row) => (
+                          <tr key={row.join('|')} className="border-b border-gray-100 last:border-0">
+                            {row.map((cell, cellIndex) => (
+                              <td
+                                key={`${row[0]}-${cellIndex}`}
+                                className={
+                                  cellIndex === 0
+                                    ? 'px-4 py-3 font-medium text-black align-top'
+                                    : 'px-4 py-3 text-gray-600 align-top'
+                                }
+                              >
+                                {cell}
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  {section.table.caption ? (
+                    <figcaption className="mt-3 text-sm text-gray-500 leading-relaxed">
+                      {section.table.caption}
+                    </figcaption>
+                  ) : null}
+                  {section.table.note ? (
+                    <p className="mt-2 text-xs text-gray-400 leading-relaxed">{section.table.note}</p>
+                  ) : null}
+                </figure>
               ) : null}
 
               {section.cards ? (
@@ -249,6 +367,31 @@ export function ArticleTemplate({
                       </li>
                     ))}
                   </ul>
+                </div>
+              ) : null}
+
+              {section.steps ? (
+                <ol className="mt-10 space-y-8">
+                  {section.steps.map((step, stepIndex) => (
+                    <li key={step.title} className="flex gap-5">
+                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-accent/10 text-base font-bold text-brand-accent">
+                        {stepIndex + 1}
+                      </span>
+                      <div>
+                        <h3 className="text-lg md:text-xl font-semibold text-black mb-2">
+                          {step.title}
+                        </h3>
+                        <p className="text-base text-gray-600 leading-relaxed">{step.text}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ol>
+              ) : null}
+
+              {section.warning ? (
+                <div className="mt-10 rounded-2xl border-2 border-brand-orange/40 bg-brand-orange/5 p-6 md:p-8">
+                  <h3 className="text-lg font-semibold text-black mb-3">{section.warning.title}</h3>
+                  <p className="text-base text-gray-700 leading-relaxed">{section.warning.text}</p>
                 </div>
               ) : null}
 
@@ -315,6 +458,36 @@ export function ArticleTemplate({
             </div>
           </FadeIn>
         </section>
+
+        {sources && sources.length > 0 ? (
+          <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
+            <FadeIn>
+              <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-8">
+                Quellen
+              </h2>
+              <ul className="space-y-4 rounded-2xl bg-white border border-gray-100 p-6 md:p-8">
+                {sources.map((source) => (
+                  <li key={source.label} className="text-sm text-gray-600 leading-relaxed">
+                    <strong className="text-black">{source.label}:</strong> {source.text}
+                    {source.href ? (
+                      <>
+                        {' '}
+                        <a
+                          href={source.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-brand-accent underline underline-offset-2 break-words"
+                        >
+                          Quelle
+                        </a>
+                      </>
+                    ) : null}
+                  </li>
+                ))}
+              </ul>
+            </FadeIn>
+          </section>
+        ) : null}
 
         {relatedArticles && relatedArticles.length > 0 ? (
           <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">

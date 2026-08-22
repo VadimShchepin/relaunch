@@ -97,6 +97,16 @@ export function LocalIntentTemplate({
     })),
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://aiseo.hamburg' },
+      { '@type': 'ListItem', position: 2, name: 'Hamburg', item: 'https://aiseo.hamburg/hamburg' },
+      { '@type': 'ListItem', position: 3, name: eyebrow },
+    ],
+  };
+
   return (
     <div className="relative w-full overflow-hidden bg-[#F7F5F2] text-brand-text font-sans selection:bg-brand-accent selection:text-white">
       <Navbar />
@@ -108,6 +118,10 @@ export function LocalIntentTemplate({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <main>

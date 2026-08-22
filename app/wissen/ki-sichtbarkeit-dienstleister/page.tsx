@@ -1013,6 +1013,28 @@ export default function KiSichtbarkeitDienstleisterPage() {
           <h3 className="font-semibold text-black text-lg mb-4">Verwandte Guides:</h3>
           <div className="grid sm:grid-cols-2 gap-4">
             <a
+              href="/wissen/ki-sichtbarkeit-logistik"
+              className="bg-white border border-gray-100 rounded-2xl p-5 hover:border-brand-accent transition-colors group"
+            >
+              <p className="font-semibold text-black group-hover:text-brand-accent transition-colors mb-1">
+                KI-Sichtbarkeit f&uuml;r Logistik und Speditionen
+              </p>
+              <p className="text-sm text-gray-500">
+                Welche Fragen zu Zoll, Gefahrgut und Kosten zitiert werden, und warum Suchvolumen hier ein schlechter Indikator ist.
+              </p>
+            </a>
+            <a
+              href="/wissen/ki-sichtbarkeit-saas"
+              className="bg-white border border-gray-100 rounded-2xl p-5 hover:border-brand-accent transition-colors group"
+            >
+              <p className="font-semibold text-black group-hover:text-brand-accent transition-colors mb-1">
+                KI-Sichtbarkeit f&uuml;r SaaS
+              </p>
+              <p className="text-sm text-gray-500">
+                Warum Vergleichs- und Alternativenseiten bei Software die st&auml;rksten Citation-Magneten sind.
+              </p>
+            </a>
+            <a
               href="/wissen/ki-sichtbarkeit"
               className="bg-white border border-gray-100 rounded-2xl p-5 hover:border-brand-accent transition-colors group"
             >

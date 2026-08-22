@@ -672,6 +672,13 @@ export default function KiSichtbarkeitEcommercePage() {
           <h2 className="text-xl font-semibold text-black mb-5">Weiterführende Guides:</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <a
+              href="/wissen/ki-sichtbarkeit-saas"
+              className="bg-white border border-gray-100 rounded-2xl p-5 hover:border-brand-accent transition-colors group"
+            >
+              <p className="text-base font-semibold text-black group-hover:text-brand-accent transition-colors">KI-Sichtbarkeit für SaaS</p>
+              <p className="text-sm text-gray-500 mt-1">Dasselbe Grundproblem bei Software: warum Vergleichs- und Alternativenseiten die Produktseite schlagen.</p>
+            </a>
+            <a
               href="/wissen/ki-sichtbarkeit"
               className="bg-white border border-gray-100 rounded-2xl p-5 hover:border-brand-accent transition-colors group"
             >

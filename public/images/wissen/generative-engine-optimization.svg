@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="KI-Antwort, die ein Hamburger Unternehmen als Quelle nennt, daneben die klassische Ergebnisliste">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBF9F7"/>
+      <stop offset="1" stop-color="#F1ECE6"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#F4FBF8"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4FAF8C"/>
+      <stop offset="1" stop-color="#3E8F72"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#4FAF8C" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#4FAF8C" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#1C1917" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="900" cy="120" r="320" fill="url(#glow)"/>
+  <circle cx="200" cy="600" r="240" fill="url(#glow)"/>
+
+  <!-- prompt bar -->
+  <g filter="url(#shadow)">
+    <rect x="110" y="70" width="720" height="58" rx="29" fill="#ffffff"/>
+  </g>
+  <circle cx="152" cy="99" r="11" fill="none" stroke="#9CA38A" stroke-width="3"/>
+  <line x1="160" y1="107" x2="169" y2="116" stroke="#9CA38A" stroke-width="3" stroke-linecap="round"/>
+  <rect x="188" y="90" width="330" height="10" rx="5" fill="#D9D4CD"/>
+  <rect x="188" y="108" width="196" height="8" rx="4" fill="#E5E1DA"/>
+
+  <!-- generative answer card -->
+  <g filter="url(#shadow)">
+    <rect x="110" y="164" width="720" height="286" rx="24" fill="url(#card)" stroke="#4FAF8C" stroke-width="2"/>
+  </g>
+  <rect x="142" y="196" width="150" height="24" rx="12" fill="url(#accent)"/>
+  <text x="217" y="213" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">KI-Antwort</text>
+
+  <rect x="142" y="244" width="640" height="11" rx="5.5" fill="#C9C3BA"/>
+  <rect x="142" y="268" width="596" height="11" rx="5.5" fill="#D5D0C7"/>
+  <rect x="142" y="292" width="518" height="11" rx="5.5" fill="#D5D0C7"/>
+
+  <!-- cited sources row -->
+  <text x="142" y="340" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#7D8C9E">Quellen</text>
+
+  <g filter="url(#shadow)">
+    <rect x="142" y="354" width="196" height="66" rx="14" fill="#ffffff" stroke="#4FAF8C" stroke-width="2.5"/>
+  </g>
+  <circle cx="170" cy="387" r="12" fill="url(#accent)"/>
+  <text x="170" y="392" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+  <rect x="192" y="374" width="122" height="9" rx="4.5" fill="#1C1917"/>
+  <rect x="192" y="392" width="86" height="8" rx="4" fill="#C9C3BA"/>
+
+  <g filter="url(#shadow)">
+    <rect x="354" y="354" width="196" height="66" rx="14" fill="#ffffff"/>
+  </g>
+  <circle cx="382" cy="387" r="12" fill="#E5E1DA"/>
+  <rect x="404" y="374" width="112" height="9" rx="4.5" fill="#D5D0C7"/>
+  <rect x="404" y="392" width="74" height="8" rx="4" fill="#E5E1DA"/>
+
+  <g filter="url(#shadow)">
+    <rect x="566" y="354" width="196" height="66" rx="14" fill="#ffffff"/>
+  </g>
+  <circle cx="594" cy="387" r="12" fill="#E5E1DA"/>
+  <rect x="616" y="374" width="106" height="9" rx="4.5" fill="#D5D0C7"/>
+  <rect x="616" y="392" width="80" height="8" rx="4" fill="#E5E1DA"/>
+
+  <!-- classic result list, faded -->
+  <g opacity="0.55">
+    <rect x="110" y="482" width="300" height="9" rx="4.5" fill="#B8B2A8"/>
+    <rect x="110" y="502" width="440" height="8" rx="4" fill="#D5D0C7"/>
+    <rect x="110" y="540" width="268" height="9" rx="4.5" fill="#B8B2A8"/>
+    <rect x="110" y="560" width="404" height="8" rx="4" fill="#D5D0C7"/>
+    <rect x="110" y="598" width="286" height="9" rx="4.5" fill="#B8B2A8"/>
+    <rect x="110" y="618" width="368" height="8" rx="4" fill="#D5D0C7"/>
+  </g>
+
+  <!-- side panel: metrics -->
+  <g filter="url(#shadow)">
+    <rect x="878" y="164" width="212" height="286" rx="24" fill="#1C1917"/>
+  </g>
+  <text x="906" y="204" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#9CA38A">Gemessen wird</text>
+
+  <text x="906" y="252" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#ffffff">415</text>
+  <text x="906" y="274" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#9CA38A">Citations</text>
+
+  <line x1="906" y1="296" x2="1062" y2="296" stroke="#3A3633" stroke-width="1.5"/>
+
+  <text x="906" y="338" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#4FAF8C">59,8 %</text>
+  <text x="906" y="360" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#9CA38A">auf einer Seite</text>
+
+  <line x1="906" y1="382" x2="1062" y2="382" stroke="#3A3633" stroke-width="1.5"/>
+
+  <text x="906" y="422" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#9CA38A">Hamburg, Mai 2026</text>
+
+  <!-- connector from source card to metrics -->
+  <path d="M338 387 C 620 387, 700 300, 878 300" fill="none" stroke="#4FAF8C" stroke-width="2.5" stroke-dasharray="7 7" opacity="0.75"/>
+  <circle cx="878" cy="300" r="5" fill="#4FAF8C"/>
+</svg>

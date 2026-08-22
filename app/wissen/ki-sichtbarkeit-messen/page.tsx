@@ -34,7 +34,7 @@ const FAQS = [
   },
   {
     q: 'Warum zeigt Google Search Console keine KI-Sichtbarkeit?',
-    a: 'Google Search Console trackt nur klassische Google-Suche: Impressionen, Klicks, Rankings. Traffic von ChatGPT, Perplexity oder Claude wird dort nicht erfasst. Auch Google AI Overviews tauchen in der GSC nicht zuverlässig auf. Du brauchst GA4 für Referral-Traffic und spezialisierte Tools für KI-Zitationsanalyse.',
+    a: 'Seit dem 3. Juni 2026 zeigt sie einen Teil davon: Der Generative-AI-Bericht weist Impressionen in AI Overviews und AI Mode aus, aufgeschlüsselt nach Seiten, Ländern, Geräten und Datum. Klicks, CTR, Position und Suchanfragen enthält er nicht, und Traffic von ChatGPT, Perplexity oder Claude erfasst er gar nicht. Für Referral-Traffic brauchst du weiter GA4, für Citations die Bing Webmaster Tools und für Zitationsanalyse auf anderen Plattformen spezialisierte Tools. Der Vergleich beider Konsolen steht in unserem Artikel zu Search Console und Bing Webmaster Tools.',
   },
   {
     q: 'Wie messe ich, ob ChatGPT meine Marke empfiehlt?',
@@ -685,6 +685,54 @@ export default function KISichtbarkeitMessenPage() {
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
                 Worauf du bei der Wahl einer AI SEO Agentur achten solltest.
+              </p>
+            </a>
+
+            <a
+              href="/wissen/citation-rate"
+              className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
+            >
+              <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">
+                Citation Rate berechnen
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Formel, Nenner-Problem und die Abgrenzung zu Citation Share, Mention Rate und Share of Voice.
+              </p>
+            </a>
+
+            <a
+              href="/wissen/share-of-voice-ki"
+              className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
+            >
+              <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">
+                Share of Voice in KI-Antworten
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Die Formel, ein Rechenbeispiel und warum derselbe Datensatz 30% oder 8% ergeben kann.
+              </p>
+            </a>
+
+            <a
+              href="/wissen/gsc-vs-bing-webmaster-tools"
+              className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
+            >
+              <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">
+                Search Console vs Bing Webmaster Tools
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Was Googles Generative-AI-Bericht seit Juni 2026 zeigt und was nur Bing liefert.
+              </p>
+            </a>
+
+            <a
+              href="/wissen/ai-visibility-tools-vergleich"
+              className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
+            >
+              <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">
+                AI-Visibility-Tools im Vergleich
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Preise und Abdeckung von Ahrefs Brand Radar, Semrush, Peec AI, Profound, Otterly.ai und Scrunch AI.
               </p>
             </a>
           </div>

@@ -40,6 +40,12 @@ const PAGES = [
     href: '/hamburg/answer-engine-optimization',
     tag: 'AEO',
   },
+  {
+    title: 'Generative Engine Optimization (GEO) Hamburg',
+    description: 'Die plattformübergreifende Klammer: als Quelle in KI-Antworten auftauchen, gemessen über echte Citation-Daten aus Bing und Google.',
+    href: '/hamburg/generative-engine-optimization',
+    tag: 'GEO',
+  },
 ];
 
 const collectionSchema = {

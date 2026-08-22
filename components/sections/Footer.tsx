@@ -23,6 +23,7 @@ export const Footer: React.FC = () => (
                         <a href="/ai-sichtbarkeit-now" className="hover:text-white/80 transition-colors font-semibold">KI-Sichtbarkeit</a>
                         <a href="/leistungen" className="hover:text-white/80 transition-colors">Leistungen</a>
                         <a href="/ai-seo-agentur" className="hover:text-white/80 transition-colors">AI SEO Agentur</a>
+                        <a href="/geo-optimierung" className="hover:text-white/80 transition-colors">GEO-Optimierung</a>
                         <a href="/chatgpt-sichtbarkeit" className="hover:text-white/80 transition-colors">ChatGPT-Sichtbarkeit</a>
                         <a href="/ergebnisse" className="hover:text-white/80 transition-colors">Ergebnisse</a>
                         <a href="/preise" className="hover:text-white/80 transition-colors">Preise</a>

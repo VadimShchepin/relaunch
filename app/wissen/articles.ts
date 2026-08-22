@@ -40,6 +40,87 @@ export const TOPICS: Topic[] = [
 
 export const ARTICLES: Article[] = [
   {
+    title: 'Citation Rate: die wichtigste KPI der KI-Sichtbarkeit, richtig berechnet',
+    description:
+      'Definition, Formel und die Abgrenzung zu Citation Share, Mention Rate und Share of Voice. Mit gemessenen Werten aus zwei echten Bing-Exporten statt der üblichen Benchmark-Behauptungen.',
+    href: '/wissen/citation-rate',
+    tag: 'KPI',
+    topic: 'Strategie',
+    readTime: '11 Min.',
+    date: '2026-08-22',
+    featured: true,
+  },
+  {
+    title: 'Share of Voice in KI-Antworten: Formel, Rechenbeispiel und Grenzen',
+    description:
+      'Die einzige KI-Kennzahl, die dich gegen den Wettbewerb stellt. Mit Microsofts offizieller Citation-Share-Definition und den drei Fehlern, die jeden Wettbewerbsvergleich kippen lassen.',
+    href: '/wissen/share-of-voice-ki',
+    tag: 'KPI',
+    topic: 'Strategie',
+    readTime: '11 Min.',
+    date: '2026-08-22',
+  },
+  {
+    title: 'Search Console gegen Bing Webmaster Tools: welche Konsole KI-Sichtbarkeit zeigt',
+    description:
+      'Google liefert seit Juni 2026 KI-Impressionen, Bing seit Februar 2026 echte Citations und die Grounding Queries dazu. Der direkte Vergleich, inklusive dem, was beide verschweigen.',
+    href: '/wissen/gsc-vs-bing-webmaster-tools',
+    tag: 'Messung',
+    topic: 'Vergleiche',
+    readTime: '12 Min.',
+    date: '2026-08-22',
+  },
+  {
+    title: 'AI-Visibility-Tools im Vergleich: Preise, Abdeckung und blinde Flecken',
+    description:
+      'Ahrefs Brand Radar, Semrush, Peec AI, Profound, Otterly.ai und Scrunch AI nach Listenpreis und Plattformabdeckung, Stand August 2026. Plus der Hinweis, wer diese Vergleiche üblicherweise schreibt.',
+    href: '/wissen/ai-visibility-tools-vergleich',
+    tag: 'Tools',
+    topic: 'Technik',
+    readTime: '11 Min.',
+    date: '2026-08-22',
+  },
+  {
+    title: 'GEO vs SEO vs AEO vs LLMO: vier Kürzel, ein Arbeitsfeld',
+    description:
+      'Ziel, Erfolgsmaß und Zielsystem der vier Disziplinen in einer Tabelle, dazu die deutsche Namensfalle bei GEO und AEO und eine Entscheidungshilfe, welche du wirklich brauchst.',
+    href: '/wissen/geo-vs-seo',
+    tag: 'Vergleich',
+    topic: 'Vergleiche',
+    readTime: '10 Min.',
+    date: '2026-08-22',
+  },
+  {
+    title: 'Warum erscheint meine Firma nicht in ChatGPT? Zehn Ursachen nach Häufigkeit',
+    description:
+      'Vier Ursachenklassen, zehn konkrete Befunde und die Diagnose in vier Schritten. In zwei von drei Fällen liegt es nicht am Content, sondern am Zugang oder am Index.',
+    href: '/wissen/warum-nicht-in-chatgpt',
+    tag: 'Diagnose',
+    topic: 'Technik',
+    readTime: '12 Min.',
+    date: '2026-08-22',
+  },
+  {
+    title: 'KI-Sichtbarkeit für SaaS: wie deine Software in Tool-Empfehlungen landet',
+    description:
+      'B2B-Software wird per Prompt verglichen, nicht per Ergebnisliste. Warum Alternativen- und Vergleichsseiten die stärksten Citation-Magneten sind, mit Zahlen aus einem echten Export.',
+    href: '/wissen/ki-sichtbarkeit-saas',
+    tag: 'SaaS',
+    topic: 'Branchen',
+    readTime: '12 Min.',
+    date: '2026-08-22',
+  },
+  {
+    title: 'KI-Sichtbarkeit für Logistik und Speditionen',
+    description:
+      'Die Branche mit dem größten Abstand zwischen Marktbedeutung und Sichtbarkeit. Welche Fragen gestellt werden, welche Seiten zitiert werden und wie Hamburger Betriebe die Lücke besetzen.',
+    href: '/wissen/ki-sichtbarkeit-logistik',
+    tag: 'Logistik',
+    topic: 'Branchen',
+    readTime: '11 Min.',
+    date: '2026-08-22',
+  },
+  {
     title: 'Bing & Copilot KI-Sichtbarkeit: Was 415 Citations über Microsofts KI verraten',
     description: 'Auswertung eines echten Bing-Webmaster-Tools-Exports: Wie Microsoft Copilot Quellen über Grounding Queries auswählt, warum eine Seite fast 60% aller Zitate gewann und das reproduzierbare Rezept dahinter.',
     href: '/wissen/bing-copilot-ki-sichtbarkeit',
@@ -70,7 +151,7 @@ export const ARTICLES: Article[] = [
   },
   {
     title: 'AI SEO Marktanalyse Deutschland 2026: AEO, GEO, LLMO und 3 Keyword-Honigfallen',
-    description: 'Primärrecherche für Unternehmen und Agenturen: 297 deutsche AEO/GEO/LLMO Keywords. Drei Honigfallen, sechs Begriffe mit starkem Wachstum und der stille Rückgang von „ChatGPT SEO". Mit Datensatz.',
+    description: 'Primärrecherche für Unternehmen und Agenturen: 297 deutsche AEO/GEO/LLMO Keywords. Drei Honigfallen, sechs Begriffe mit starkem Wachstum und der stille Rückgang von „ChatGPT SEO“. Mit Datensatz.',
     href: '/wissen/aeo-geo-marktanalyse-deutschland-2026',
     tag: 'Marktanalyse',
     topic: 'Strategie',
@@ -142,7 +223,7 @@ export const ARTICLES: Article[] = [
   },
   {
     title: 'Was ist GEO? Generative Engine Optimization endlich verständlich erklärt',
-    description: 'GEO ist nicht einfach „SEO für KI". Was Generative Engine Optimization wirklich bedeutet, wie es sich von SEO und AEO unterscheidet und warum es 2026 unverzichtbar ist.',
+    description: 'GEO ist nicht einfach „SEO für KI“. Was Generative Engine Optimization wirklich bedeutet, wie es sich von SEO und AEO unterscheidet und warum es 2026 unverzichtbar ist.',
     href: '/wissen/was-ist-geo',
     tag: 'GEO',
     topic: 'Grundlagen',

@@ -594,6 +594,30 @@ export default function WasIstGeoPage() {
         </h2>
         <div className="grid sm:grid-cols-2 gap-6">
           <a
+            href="/wissen/geo-vs-seo"
+            className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
+          >
+            <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">
+              GEO vs SEO vs AEO vs LLMO
+            </h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Die vier Kürzel in einer Tabelle: Ziel, Erfolgsmaß, Zielsystem und die deutsche Namensfalle.
+            </p>
+          </a>
+
+          <a
+            href="/geo-optimierung"
+            className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
+          >
+            <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">
+              GEO-Optimierung als Leistung
+            </h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Die sechs Bausteine, der Ablauf, die Preise und die Fälle, in denen GEO nichts bringt.
+            </p>
+          </a>
+
+          <a
             href="/wissen/ki-sichtbarkeit"
             className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
           >

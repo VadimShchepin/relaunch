@@ -635,6 +635,18 @@ export default function AISEOToolsPage() {
         </h2>
         <div className="grid sm:grid-cols-2 gap-6">
           <a
+            href="/wissen/ai-visibility-tools-vergleich"
+            className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
+          >
+            <h3 className="text-xl font-semibold text-black mb-2 group-hover:text-brand-accent transition-colors">
+              AI-Visibility-Tools im Preisvergleich
+            </h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Ahrefs Brand Radar, Semrush, Peec AI, Profound, Otterly.ai und Scrunch AI mit Listenpreisen, Stand August 2026.
+            </p>
+          </a>
+
+          <a
             href="/wissen/ki-sichtbarkeit-messen"
             className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent transition-colors group"
           >
