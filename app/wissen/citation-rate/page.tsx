@@ -10,6 +10,13 @@ export default function CitationRatePage() {
       description="Citation Rate klingt nach einer klaren Zahl und ist in der Praxis ein Sammelbegriff für vier verschiedene Metriken. Hier stehen die Definitionen, die Formeln und Messwerte aus zwei echten Bing-Webmaster-Tools-Exporten, statt der übliche Benchmark-Nebel."
       publishedAt="2026-08-22"
       modifiedAt="2026-08-22"
+      image={{
+        src: '/images/wissen/citation-rate/hero.webp',
+        alt: 'Laptop mit Analytics-Dashboard auf einem Holztisch im Morgenlicht',
+        caption: 'Citation Rate ist die Kennzahl, die im Reporting am häufigsten falsch berechnet wird.',
+        width: 1600,
+        height: 800,
+      }}
       summaryItems={[
         'Citation Rate ist der Anteil der geprüften Prompts, bei denen deine Domain als Quelle in der KI-Antwort auftaucht. Nenner sind Prompts, nicht Impressionen.',
         'Citation Share ist etwas anderes: Microsoft definiert sie offiziell als deinen Anteil an allen Citations, die für dieselbe Grounding Query über alle Websites hinweg ausgespielt werden.',
@@ -20,6 +27,13 @@ export default function CitationRatePage() {
       sections={[
         {
           id: 'definitionen',
+          image: {
+            src: '/images/wissen/citation-rate/definitionen.webp',
+            alt: 'Notizbuch, Brille, Taschenrechner und Kaffee von oben auf einem Holztisch',
+            caption: 'Vier Begriffe, vier Nenner. Wer sie vermischt, vergleicht Quartale, die nichts miteinander zu tun haben.',
+            width: 1000,
+            height: 668,
+          },
           heading: 'Vier Metriken, die alle „Citation Rate“ genannt werden',
           intro:
             'Der Begriff wird in Angeboten, Tool-Dashboards und Agenturreports für vier verschiedene Dinge benutzt. Wer sie nicht trennt, vergleicht Quartale gegen Quartale, die nichts miteinander zu tun haben.',
@@ -53,6 +67,13 @@ export default function CitationRatePage() {
         },
         {
           id: 'nenner-problem',
+          image: {
+            src: '/images/wissen/citation-rate/nenner-problem.webp',
+            alt: 'Aufgeklapptes Notebook mit Diagrammen, Brille und Notizblock von oben',
+            caption: 'Die Prompt-Liste ist der Kern der Kennzahl, nicht das Ergebnis.',
+            width: 1000,
+            height: 667,
+          },
           heading: 'Das Nenner-Problem: warum 40 Prozent nichts bedeuten',
           paragraphs: [
             'Eine Citation Rate von 40 Prozent klingt gut. Sie ist trivial zu erzeugen: Nimm 20 Prompts, die deinen Markennamen enthalten, frag ChatGPT danach, und du landest schnell über 50 Prozent. Nimm stattdessen 100 Prompts, die ein Kunde ohne Vorkenntnis eingeben würde, und derselbe Kunde landet oft bei 2 Prozent.',
@@ -99,6 +120,13 @@ export default function CitationRatePage() {
         },
         {
           id: 'echte-zahlen',
+          image: {
+            src: '/images/wissen/citation-rate/echte-zahlen.webp',
+            alt: 'Arbeitsplatz mit Notebook und Balkendiagramm auf dem Bildschirm',
+            caption: '415 Citations, davon 248 auf einer einzigen Seite. Beides aus demselben 30-Tage-Fenster.',
+            width: 1000,
+            height: 667,
+          },
           heading: 'Was zwei echte Exporte zeigen',
           intro:
             'Die folgenden Zahlen kommen aus Bing-Webmaster-Tools-Exporten von zwei Domains, die wir selbst betreuen. Sie sind der Grund, warum wir öffentliche Benchmarks nicht mehr zitieren.',
@@ -137,6 +165,13 @@ export default function CitationRatePage() {
         },
         {
           id: 'messen',
+          image: {
+            src: '/images/wissen/citation-rate/messen.webp',
+            alt: 'Notebook mit Kennzahlen-Übersicht neben einer Kaffeetasse',
+            caption: 'Nur eine Quelle meldet Citations direkt von der Plattform. Alles andere ist Stichprobe.',
+            width: 1000,
+            height: 804,
+          },
           heading: 'Wo du die Zahl tatsächlich herbekommst',
           intro:
             'Es gibt genau eine Quelle, die Citations direkt von der Plattform meldet. Alles andere ist Stichprobe oder Schätzung.',

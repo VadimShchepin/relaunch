@@ -23,11 +23,20 @@ export const metadata: Metadata = {
     description:
       'Zehn Ursachen, nach Häufigkeit sortiert, und die Diagnose-Reihenfolge, mit der du in einer Stunde weißt, wo es klemmt.',
     siteName: 'aiseo.hamburg',
+    images: [
+      {
+        url: '/images/wissen/warum-nicht-in-chatgpt/hero.webp',
+        width: 1600,
+        height: 1067,
+        alt: 'Monitor mit Programmcode in einem Büro mit Ziegelwand',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Warum erscheint meine Firma nicht in ChatGPT?',
     description: 'Die zehn häufigsten Ursachen und die Diagnose in vier Schritten.',
+    images: ['/images/wissen/warum-nicht-in-chatgpt/hero.webp'],
   },
   robots: {
     index: true,

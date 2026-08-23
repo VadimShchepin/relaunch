@@ -24,12 +24,21 @@ export const metadata: Metadata = {
     description:
       'Was Citation Rate wirklich misst, wie sie sich von Citation Share und Share of Voice unterscheidet und welche Werte in zwei echten Bing-Exporten gemessen wurden.',
     siteName: 'aiseo.hamburg',
+    images: [
+      {
+        url: '/images/wissen/citation-rate/hero.webp',
+        width: 1600,
+        height: 800,
+        alt: 'Laptop mit Analytics-Dashboard auf einem Holztisch im Morgenlicht',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Citation Rate: Definition, Formel und echte Benchmarks',
     description:
       'Die wichtigste KPI der KI-Sichtbarkeit, korrekt berechnet. Mit Zahlen aus zwei echten Bing-Webmaster-Tools-Exporten.',
+    images: ['/images/wissen/citation-rate/hero.webp'],
   },
   robots: {
     index: true,

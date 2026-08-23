@@ -23,12 +23,21 @@ export const metadata: Metadata = {
     description:
       'Formel, Rechenbeispiel und Abgrenzung zu Microsofts Citation Share. Plus die drei Fehler, die den Wettbewerbsvergleich in KI-Antworten unbrauchbar machen.',
     siteName: 'aiseo.hamburg',
+    images: [
+      {
+        url: '/images/wissen/share-of-voice-ki/hero.webp',
+        width: 1600,
+        height: 800,
+        alt: 'Notebook mit Diagrammen und Kaffeetasse im Morgenlicht am Fenster',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Share of Voice in KI-Antworten berechnen',
     description:
       'Die Formel, ein Rechenbeispiel mit echten Zahlen und die Abgrenzung zu Citation Share aus den Bing Webmaster Tools.',
+    images: ['/images/wissen/share-of-voice-ki/hero.webp'],
   },
   robots: {
     index: true,

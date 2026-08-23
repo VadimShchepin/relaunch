@@ -10,6 +10,13 @@ export default function WarumNichtInChatgptPage() {
       description="Die Frage kommt in fast jedem Erstgespräch, und die Antwort ist selten „schlechter Content“. In der Praxis sind es vier Klassen von Ursachen, und drei davon lassen sich in einer Stunde prüfen. Hier steht die Reihenfolge, in der wir suchen, mit den Befunden aus echten Projekten."
       publishedAt="2026-08-22"
       modifiedAt="2026-08-22"
+      image={{
+        src: '/images/wissen/warum-nicht-in-chatgpt/hero.webp',
+        alt: 'Monitor mit Programmcode in einem Büro mit Ziegelwand',
+        caption: 'In zwei von drei Fällen liegt es am Zugang oder am Index, nicht am Text.',
+        width: 1600,
+        height: 1067,
+      }}
       summaryItems={[
         'Es gibt vier Ursachenklassen: Der Crawler kommt nicht rein, die Seite ist nicht im Index, die Marke hat zu wenig Autorität, oder der Text lässt sich nicht zitieren.',
         'Der häufigste technische Befund bleibt eine Website, die ihre Inhalte erst im Browser zusammenbaut. KI-Crawler holen HTML und warten nicht auf JavaScript.',
@@ -20,6 +27,13 @@ export default function WarumNichtInChatgptPage() {
       sections={[
         {
           id: 'vier-klassen',
+          image: {
+            src: '/images/wissen/warum-nicht-in-chatgpt/vier-klassen.webp',
+            alt: 'Team vor einem Whiteboard mit Konzeptskizze und Haftnotizen',
+            caption: 'Die Klasse zu kennen ist wichtiger als die Einzelursache.',
+            width: 1000,
+            height: 667,
+          },
           heading: 'Vier Ursachenklassen, nicht zehn Einzelprobleme',
           intro:
             'Die zehn konkreten Ursachen weiter unten fallen alle in eine dieser vier Klassen. Die Klasse zu kennen ist wichtiger als die Einzelursache, weil sie bestimmt, wer die Arbeit macht und wie lange sie dauert.',
@@ -50,6 +64,13 @@ export default function WarumNichtInChatgptPage() {
         },
         {
           id: 'zehn-ursachen',
+          image: {
+            src: '/images/wissen/warum-nicht-in-chatgpt/zehn-ursachen.webp',
+            alt: 'Bildschirm mit Quellcode neben einer grünen Schreibtischlampe',
+            caption: 'Sortiert nach Häufigkeit in eigenen Erstprüfungen, nicht nach Schwere.',
+            width: 1000,
+            height: 667,
+          },
           heading: 'Die zehn Ursachen im Einzelnen',
           table: {
             headers: ['Ursache', 'Klasse', 'So prüfst du es', 'Aufwand zur Behebung'],
@@ -121,6 +142,13 @@ export default function WarumNichtInChatgptPage() {
         },
         {
           id: 'zwei-bots',
+          image: {
+            src: '/images/wissen/warum-nicht-in-chatgpt/zwei-bots.webp',
+            alt: 'Monitor mit Code in einem Loft-Büro mit Ziegelwand',
+            caption: 'GPTBot ist für das Training, OAI-SearchBot für den Live-Abruf. Zwei Zeilen, zwei Wirkungen.',
+            width: 1000,
+            height: 563,
+          },
           heading: 'Der Fehler mit den zwei Bots',
           paragraphs: [
             'OpenAI betreibt getrennte Crawler für verschiedene Zwecke. GPTBot sammelt Inhalte für das Modelltraining. OAI-SearchBot ruft Inhalte ab, wenn ChatGPT während einer Antwort im Web sucht. Wer nach einer Diskussion über Trainingsdaten GPTBot ausgeschlossen hat und dabei auch den zweiten Bot mitgesperrt hat, ist aus der Live-Suche verschwunden.',
@@ -145,6 +173,13 @@ export default function WarumNichtInChatgptPage() {
         },
         {
           id: 'diagnose',
+          image: {
+            src: '/images/wissen/warum-nicht-in-chatgpt/diagnose.webp',
+            alt: 'Klemmbrett mit Lupe, Pflanze und Tasse von oben auf dunklem Untergrund',
+            caption: 'Vier Schritte, etwa 80 Minuten, in den meisten Fällen ein eindeutiger Befund.',
+            width: 1000,
+            height: 563,
+          },
           heading: 'Die Diagnose in vier Schritten',
           intro:
             'Diese Reihenfolge ist nicht beliebig. Jeder Schritt entscheidet, ob der nächste überhaupt sinnvoll ist.',

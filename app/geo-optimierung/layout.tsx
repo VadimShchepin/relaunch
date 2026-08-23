@@ -24,12 +24,21 @@ export const metadata: Metadata = {
     description:
       'Als Quelle in KI-Antworten erscheinen statt nur zu ranken. Leistungen, Messgrößen, Preise und die ehrliche Abgrenzung, wann GEO nichts bringt.',
     siteName: 'aiseo.hamburg',
+    images: [
+      {
+        url: '/images/wissen/generative-engine-optimization.svg',
+        width: 1200,
+        height: 675,
+        alt: 'KI-Antwort, die ein Unternehmen als Quelle nennt, daneben die Citation-Kennzahlen',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Generative Engine Optimization (GEO) | aiseo.hamburg',
     description:
       'Was GEO umfasst, wie es gemessen wird und woran du eine echte GEO-Agentur erkennst.',
+    images: ['/images/wissen/generative-engine-optimization.svg'],
   },
   robots: {
     index: true,

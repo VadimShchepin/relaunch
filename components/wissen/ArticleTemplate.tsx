@@ -20,6 +20,10 @@ export type ArticleImage = {
   src: string;
   alt: string;
   caption?: string;
+  // Intrinsic pixel size. Supply it for photography so the browser reserves the
+  // box before the file arrives; screenshots without it keep the old behaviour.
+  width?: number;
+  height?: number;
 };
 
 export type ArticleDefinition = {
@@ -55,6 +59,7 @@ export type ArticleSection = {
   id: string;
   heading: string;
   intro?: string;
+  image?: ArticleImage;
   definitions?: ArticleDefinition[];
   paragraphs?: string[];
   stat?: string;
@@ -218,8 +223,11 @@ export function ArticleTemplate({
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full rounded-2xl shadow-lg"
+                width={image.width}
+                height={image.height}
+                className="w-full h-auto rounded-2xl shadow-lg"
                 loading="eager"
+                fetchPriority="high"
               />
               {image.caption ? (
                 <p className="text-xs text-gray-400 mt-2">{image.caption}</p>
@@ -259,6 +267,25 @@ export function ArticleTemplate({
                 <p className="text-lg text-gray-600 leading-relaxed mb-8">
                   {section.intro}
                 </p>
+              ) : null}
+
+              {section.image ? (
+                <figure className="mb-10">
+                  <img
+                    src={section.image.src}
+                    alt={section.image.alt}
+                    width={section.image.width}
+                    height={section.image.height}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-auto rounded-2xl shadow-sm"
+                  />
+                  {section.image.caption ? (
+                    <figcaption className="mt-3 text-sm text-gray-500 leading-relaxed">
+                      {section.image.caption}
+                    </figcaption>
+                  ) : null}
+                </figure>
               ) : null}
 
               {section.definitions ? (

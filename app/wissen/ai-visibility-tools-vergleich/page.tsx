@@ -10,6 +10,13 @@ export default function AiVisibilityToolsVergleichPage() {
       description="Sechs Monitoring-Tools für KI-Sichtbarkeit, nebeneinander gestellt nach Listenpreis, abgedeckten Plattformen und Abrechnungsmodell. Stand August 2026. Mit dem Hinweis, den fast jeder Vergleich im Netz weglässt: Wer ihn geschrieben hat."
       publishedAt="2026-08-22"
       modifiedAt="2026-08-22"
+      image={{
+        src: '/images/wissen/ai-visibility-tools-vergleich/hero.webp',
+        alt: 'Schreibtisch mit Euro-Scheinen, Taschenrechner, Kaffee und Notebook',
+        caption: 'Das Abrechnungsmodell entscheidet stärker über die Rechnung als jedes Feature.',
+        width: 1600,
+        height: 1067,
+      }}
       summaryItems={[
         'Zwei Abrechnungsmodelle konkurrieren: pro getrackten Prompt (Peec AI, Otterly.ai, Semrush) und pro Plattform-Index (Ahrefs Brand Radar). Der Unterschied entscheidet stärker über die Rechnung als jedes Feature.',
         'Realistischer Einstieg für ernsthaftes Monitoring über mehrere Plattformen: rund 100 bis 500 US-Dollar pro Monat. Darunter bekommst du eine Stichprobe, keine Zeitreihe.',
@@ -20,6 +27,13 @@ export default function AiVisibilityToolsVergleichPage() {
       sections={[
         {
           id: 'zwei-modelle',
+          image: {
+            src: '/images/wissen/ai-visibility-tools-vergleich/zwei-modelle.webp',
+            alt: 'Grüne Mappe mit Euro-Banknoten auf einer Holzoberfläche',
+            caption: 'Pro Prompt oder pro Plattform-Index: die Wahl kostet oder spart dreistellige Beträge.',
+            width: 1000,
+            height: 696,
+          },
           heading: 'Erst das Abrechnungsmodell verstehen, dann die Preise',
           intro:
             'Die Tools messen ähnliche Dinge, rechnen aber grundverschieden ab. Wer das Modell nicht zur eigenen Situation passend wählt, zahlt für Kapazität, die er nie nutzt.',
@@ -43,6 +57,13 @@ export default function AiVisibilityToolsVergleichPage() {
         },
         {
           id: 'vergleichstabelle',
+          image: {
+            src: '/images/wissen/ai-visibility-tools-vergleich/vergleichstabelle.webp',
+            alt: 'Notebook mit Diagrammen auf einem hellen Holzschreibtisch',
+            caption: 'Listenpreise, Stand August 2026. Vor dem Kauf gehört die Preisseite des Anbieters geprüft.',
+            width: 1000,
+            height: 678,
+          },
           heading: 'Die Tabelle: Preis, Abdeckung, Abrechnung',
           intro:
             'Listenpreise laut Anbieterangaben und öffentlichen Preisvergleichen, Stand August 2026. Jährliche Vorauszahlung, Währungsumstellung und Enterprise-Verhandlungen verändern die Zahlen, deshalb sind sie als Größenordnung zu lesen und nicht als Angebot.',
@@ -114,6 +135,13 @@ export default function AiVisibilityToolsVergleichPage() {
         },
         {
           id: 'offenlegung',
+          image: {
+            src: '/images/wissen/ai-visibility-tools-vergleich/offenlegung.webp',
+            alt: 'Geldbeutel mit Euro-Banknoten auf dunklem Holz',
+            caption: 'Die meisten Tool-Vergleiche im Netz stammen von Anbietern konkurrierender Tools.',
+            width: 1000,
+            height: 667,
+          },
           heading: 'Der Hinweis, den fast jeder Vergleich weglässt',
           paragraphs: [
             'Wer nach einem Vergleich dieser Tools sucht, landet fast ausschließlich auf Seiten von Unternehmen, die selbst ein konkurrierendes Tool verkaufen. Das ist bei der Recherche für diesen Artikel bei der Mehrheit der auffindbaren Reviews der Fall gewesen, inklusive der Reviews mit den prominentesten Rankings.',
@@ -128,6 +156,13 @@ export default function AiVisibilityToolsVergleichPage() {
         },
         {
           id: 'was-tools-nicht-sehen',
+          image: {
+            src: '/images/wissen/ai-visibility-tools-vergleich/was-tools-nicht-sehen.webp',
+            alt: 'Tastatur und Brille auf einem Schreibtisch vor einem Bürofenster',
+            caption: 'Vier blinde Flecken teilen alle Tools, auch die teuren.',
+            width: 1000,
+            height: 667,
+          },
           heading: 'Vier blinde Flecken, die alle Tools teilen',
           cards: [
             {

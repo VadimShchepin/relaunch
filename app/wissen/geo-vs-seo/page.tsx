@@ -10,6 +10,13 @@ export default function GeoVsSeoPage() {
       description="Generative Engine Optimization, Search Engine Optimization, Answer Engine Optimization und LLM Optimization werden ständig durcheinander benutzt, auch von Anbietern. Hier stehen die vier Definitionen nebeneinander, dazu die Messgröße jeder Disziplin und eine Entscheidungshilfe, welche davon dein Unternehmen wirklich braucht."
       publishedAt="2026-08-22"
       modifiedAt="2026-08-22"
+      image={{
+        src: '/images/wissen/geo-vs-seo/hero.webp',
+        alt: 'Person zeichnet ein Ablaufdiagramm auf ein Flipchart',
+        caption: 'Vier Kürzel, ein Arbeitsfeld. Die Unterschiede liegen im Erfolgsmaß.',
+        width: 1600,
+        height: 1067,
+      }}
       summaryItems={[
         'SEO optimiert für Ranking in einer Ergebnisliste. GEO optimiert dafür, in einer generierten Antwort als Quelle vorzukommen. Das sind verschiedene Zielsysteme, nicht verschiedene Modewörter.',
         'AEO ist die engere Disziplin: Content so strukturieren, dass er als direkte Antwort taugt. GEO ist der breitere Begriff und schließt Autorität und Erwähnungen außerhalb der eigenen Domain ein.',
@@ -20,6 +27,13 @@ export default function GeoVsSeoPage() {
       sections={[
         {
           id: 'definitionen',
+          image: {
+            src: '/images/wissen/geo-vs-seo/definitionen.webp',
+            alt: 'Lupe auf einem aufgeschlagenen Buch auf einem Holztisch',
+            caption: 'Jede Definition steht hier so, dass sie ohne den Rest der Seite funktioniert.',
+            width: 1000,
+            height: 667,
+          },
           heading: 'Die vier Definitionen, jeweils in einem Satz',
           intro:
             'Jede Definition steht hier so, dass sie ohne den Rest der Seite funktioniert. Das ist Absicht, denn genau so werden Definitionen zitiert.',
@@ -53,6 +67,13 @@ export default function GeoVsSeoPage() {
         },
         {
           id: 'vergleichstabelle',
+          image: {
+            src: '/images/wissen/geo-vs-seo/vergleichstabelle.webp',
+            alt: 'Menschen diskutieren vor einem Whiteboard mit handgezeichnetem Diagramm',
+            caption: 'Wer GEO betreibt und SEO-Kennzahlen berichtet, bewertet die Arbeit mit dem falschen Maßstab.',
+            width: 1000,
+            height: 667,
+          },
           heading: 'Die Tabelle: Ziel, Messgröße, Zielsystem',
           table: {
             headers: ['Disziplin', 'Ziel', 'Erfolgsmaß', 'Zielsystem', 'Wichtigster Hebel'],
@@ -108,6 +129,13 @@ export default function GeoVsSeoPage() {
         },
         {
           id: 'namensfalle',
+          image: {
+            src: '/images/wissen/geo-vs-seo/namensfalle.webp',
+            alt: 'Lupe auf einem Stapel Bücher',
+            caption: 'GEO trifft im deutschen Suchraum auf Geoportal, AEO auf das Zollrecht.',
+            width: 1000,
+            height: 667,
+          },
           heading: 'Die Namensfalle im deutschen Markt',
           intro:
             'Zwei der vier Kürzel sind im deutschen Suchraum doppelt belegt. Das ist kein Sprachdetail, sondern kostet Budget.',

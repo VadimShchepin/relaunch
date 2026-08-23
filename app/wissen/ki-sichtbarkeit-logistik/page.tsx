@@ -10,6 +10,13 @@ export default function KiSichtbarkeitLogistikPage() {
       description="Kaum eine Branche hat so viel Fachwissen und so wenig davon öffentlich wie die Logistik. Genau das macht KI-Antworten zur Gelegenheit: Wer die konkreten Fragen zu Zoll, Gefahrgut, Laufzeiten und Verpackung beantwortet, wird zitiert, weil es sonst fast niemand tut."
       publishedAt="2026-08-22"
       modifiedAt="2026-08-22"
+      image={{
+        src: '/images/wissen/ki-sichtbarkeit-logistik/hero.webp',
+        alt: 'Containerschiff und Containerbrücken im Hamburger Hafen',
+        caption: '8,3 Millionen TEU im Jahr 2025. Die digitale Sichtbarkeit der Branche hält damit nicht Schritt.',
+        width: 1600,
+        height: 1067,
+      }}
       summaryItems={[
         'Hamburg ist Deutschlands größter Seehafen: 114,6 Millionen Tonnen Gesamtumschlag und 8,3 Millionen TEU im Jahr 2025. Die digitale Sichtbarkeit der Branche steht in keinem Verhältnis dazu.',
         'Logistikwissen liegt fast vollständig in Angeboten, E-Mails und Telefonaten. Es ist damit für KI-Systeme nicht vorhanden, obwohl es genau die Fragen beantwortet, die gestellt werden.',
@@ -20,6 +27,13 @@ export default function KiSichtbarkeitLogistikPage() {
       sections={[
         {
           id: 'missverhaeltnis',
+          image: {
+            src: '/images/wissen/ki-sichtbarkeit-logistik/missverhaeltnis.webp',
+            alt: 'Hamburger Hafenpanorama mit Containerbrücken am Wasser',
+            caption: 'Viel Markt, wenig auffindbares Fachwissen. Genau darin liegt die Gelegenheit.',
+            width: 1000,
+            height: 667,
+          },
           heading: 'Das Missverhältnis: viel Markt, wenig auffindbares Wissen',
           paragraphs: [
             'Der Hamburger Hafen hat 2025 insgesamt 114,6 Millionen Tonnen umgeschlagen, ein Plus von 2,6 Prozent. Im Containersegment waren es 8,3 Millionen TEU, ein Wachstum von 7,3 Prozent. Es ist der größte Seehafen Deutschlands, und die Logistikbranche gehört zu den prägenden Arbeitgebern der Stadt.',
@@ -31,6 +45,13 @@ export default function KiSichtbarkeitLogistikPage() {
         },
         {
           id: 'welche-fragen',
+          image: {
+            src: '/images/wissen/ki-sichtbarkeit-logistik/welche-fragen.webp',
+            alt: 'Container und Güterwaggons im Gegenlicht an einem Umschlagplatz',
+            caption: 'Fachleute fragen präzise: Verfahren, Klasse, Relation, Frist.',
+            width: 1000,
+            height: 667,
+          },
           heading: 'Welche Fragen tatsächlich gestellt werden',
           intro:
             'Kaufnahe Prompts in der Logistik sind auffällig präzise, weil die Fragesteller Fachleute sind. Sie nennen Verfahren, Klassen und Relationen mit.',
@@ -78,6 +99,13 @@ export default function KiSichtbarkeitLogistikPage() {
         },
         {
           id: 'was-zitiert-wird',
+          image: {
+            src: '/images/wissen/ki-sichtbarkeit-logistik/was-zitiert-wird.webp',
+            alt: 'Blick in die Stahlkonstruktion eines Containerkrans',
+            caption: 'Regeln mit Quelle werden zitiert, Leistungsversprechen nicht.',
+            width: 1000,
+            height: 667,
+          },
           heading: 'Was zitiert wird und was ignoriert wird',
           cards: [
             {
@@ -109,6 +137,13 @@ export default function KiSichtbarkeitLogistikPage() {
         },
         {
           id: 'lokale-signale',
+          image: {
+            src: '/images/wissen/ki-sichtbarkeit-logistik/lokale-signale.webp',
+            alt: 'Containerbrücke hebt einen Container gegen den Himmel',
+            caption: 'Nachweisbare Attribute unterscheiden dich von Anbietern mit gleicher Leistungsbeschreibung.',
+            width: 1000,
+            height: 667,
+          },
           heading: 'Lokale Signale, die in dieser Branche wirken',
           bullets: [
             'Vollständiges Unternehmensprofil mit exakt demselben Firmennamen wie im Handelsregister. Abweichungen zwischen Profil, Impressum und Verzeichnissen verhindern, dass Modelle die Angaben zusammenführen.',

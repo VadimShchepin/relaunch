@@ -23,12 +23,21 @@ export const metadata: Metadata = {
     description:
       'Der direkte Vergleich der zwei kostenlosen KI-Berichte: Impressionen bei Google, Citations und Grounding Queries bei Bing. Mit den Grenzen beider Systeme.',
     siteName: 'aiseo.hamburg',
+    images: [
+      {
+        url: '/images/wissen/gsc-vs-bing-webmaster-tools/hero.webp',
+        width: 1600,
+        height: 900,
+        alt: 'Zwei Monitore mit Analyse-Dashboards auf einem Schreibtisch',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Search Console vs Bing Webmaster Tools für KI-Daten',
     description:
       'Warum die kleinere Suchmaschine die besseren Daten über deine KI-Sichtbarkeit liefert.',
+    images: ['/images/wissen/gsc-vs-bing-webmaster-tools/hero.webp'],
   },
   robots: {
     index: true,

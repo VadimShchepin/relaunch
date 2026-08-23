@@ -23,12 +23,21 @@ export const metadata: Metadata = {
     description:
       'Die Branche mit dem größten Abstand zwischen Marktbedeutung und KI-Sichtbarkeit. Was zitiert wird und wie Hamburger Betriebe die Lücke besetzen.',
     siteName: 'aiseo.hamburg',
+    images: [
+      {
+        url: '/images/wissen/ki-sichtbarkeit-logistik/hero.webp',
+        width: 1600,
+        height: 1067,
+        alt: 'Containerschiff und Containerbrücken im Hamburger Hafen',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'KI-Sichtbarkeit für Logistik und Speditionen',
     description:
       'Warum Speditionen in KI-Antworten fehlen und welche Seitentypen tatsächlich zitiert werden.',
+    images: ['/images/wissen/ki-sichtbarkeit-logistik/hero.webp'],
   },
   robots: {
     index: true,

@@ -23,12 +23,21 @@ export const metadata: Metadata = {
     description:
       'Wie B2B-Software in KI-Empfehlungen kommt: Alternativen- und Vergleichsseiten, Doku als Citation-Quelle und die Zahlen aus einem echten Export.',
     siteName: 'aiseo.hamburg',
+    images: [
+      {
+        url: '/images/wissen/ki-sichtbarkeit-saas/hero.webp',
+        width: 1600,
+        height: 1067,
+        alt: 'Entwicklerin arbeitet am Monitor in einem Büro mit Ziegelwand',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'KI-Sichtbarkeit für SaaS: in Tool-Empfehlungen landen',
     description:
       'Alternativen- und Vergleichsseiten sind für SaaS die stärksten Citation-Magneten. Hier stehen die Zahlen und der Aufbau.',
+    images: ['/images/wissen/ki-sichtbarkeit-saas/hero.webp'],
   },
   robots: {
     index: true,

@@ -23,12 +23,21 @@ export const metadata: Metadata = {
     description:
       'Die vier Kürzel in einer Tabelle: Ziel, Messgröße, Zielsystem und Überschneidung. Plus die Entscheidungshilfe, welche Disziplin du wirklich brauchst.',
     siteName: 'aiseo.hamburg',
+    images: [
+      {
+        url: '/images/wissen/geo-vs-seo/hero.webp',
+        width: 1600,
+        height: 1067,
+        alt: 'Person zeichnet ein Ablaufdiagramm auf ein Flipchart',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'GEO vs SEO vs AEO vs LLMO: der Begriffsvergleich',
     description:
       'Ziel, Messgröße und Zielsystem der vier Disziplinen im direkten Vergleich, mit klarer Entscheidungshilfe.',
+    images: ['/images/wissen/geo-vs-seo/hero.webp'],
   },
   robots: {
     index: true,

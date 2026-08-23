@@ -24,12 +24,21 @@ export const metadata: Metadata = {
     description:
       'Sechs Monitoring-Tools für KI-Sichtbarkeit, verglichen nach Preis, Plattformabdeckung und Abrechnungsmodell. Mit dem Hinweis, den fast jeder Vergleich im Netz verschweigt.',
     siteName: 'aiseo.hamburg',
+    images: [
+      {
+        url: '/images/wissen/ai-visibility-tools-vergleich/hero.webp',
+        width: 1600,
+        height: 1067,
+        alt: 'Schreibtisch mit Euro-Scheinen, Taschenrechner, Kaffee und Notebook',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AI-Visibility-Tools im Vergleich 2026: Preise & Lücken',
     description:
       'Ahrefs Brand Radar, Semrush, Peec AI, Profound, Otterly.ai und Scrunch AI: Preise, Abdeckung und blinde Flecken.',
+    images: ['/images/wissen/ai-visibility-tools-vergleich/hero.webp'],
   },
   robots: {
     index: true,

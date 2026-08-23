@@ -210,6 +210,22 @@ export default function GeoOptimierungPage() {
             für Wirkung, die nicht eintreten kann.
           </p>
 
+          <figure className="mb-10">
+            <img
+              src="/images/wissen/geo-optimierung/bausteine.webp"
+              alt="Technikerin prüft Server-Racks in einem Rechenzentrum"
+              width={1000}
+              height={670}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto rounded-2xl shadow-sm"
+            />
+            <figcaption className="mt-3 text-sm text-gray-500 leading-relaxed">
+              Ohne Zugang für die Crawler bleibt jede weitere Maßnahme wirkungslos. Deshalb steht
+              dieser Baustein an erster Stelle.
+            </figcaption>
+          </figure>
+
           <div className="grid gap-6 md:grid-cols-2">
             {BUILDING_BLOCKS.map((block, index) => (
               <div key={block.title} className="bg-white border border-gray-100 rounded-2xl p-6">
@@ -317,6 +333,21 @@ export default function GeoOptimierungPage() {
           <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-10">
             Der Ablauf
           </h2>
+
+          <figure className="mb-10">
+            <img
+              src="/images/wissen/geo-optimierung/ablauf.webp"
+              alt="Team notiert Punkte auf einem Flipchart im Büro"
+              width={1000}
+              height={667}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto rounded-2xl shadow-sm"
+            />
+            <figcaption className="mt-3 text-sm text-gray-500 leading-relaxed">
+              Vier Schritte mit Festpreis statt eines offenen Beratungsvertrags.
+            </figcaption>
+          </figure>
 
           <ol className="space-y-8">
             {[
