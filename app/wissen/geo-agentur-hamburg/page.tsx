@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description:
       'Woran du eine gute GEO Agentur in Hamburg erkennst und wie lokale KI-Sichtbarkeit aufgebaut wird.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/reality/hamburg.webp', width: 1200, height: 630, alt: 'GEO Agentur Hamburg' }],
+    images: [{ url: '/images/reality/hamburg.webp', width: 1024, height: 1024, alt: 'GEO Agentur Hamburg' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -49,14 +49,10 @@ export default function GeoAgenturHamburgPage() {
       title="GEO Agentur Hamburg: Was gute Generative Engine Optimization wirklich leistet"
       description="Hamburger Unternehmen müssen nicht überall sichtbar sein. Sie müssen bei den richtigen Fragen genannt werden. Genau darum geht es bei GEO: Generative Engine Optimization für ChatGPT, Perplexity und Google AI. Die gute Nachricht: Hamburg ist ein starker Markt für klare, lokale Positionierung. Die schlechte: Nicht jede Agentur mit frischem KI-Etikett weiß, was sie da tut."
       publishedAt="2026-03-19"
-      modifiedAt="2026-03-19"
+      modifiedAt="2026-08-24"
       breadcrumbLabel="GEO Agentur Hamburg"
       eyebrow="Hamburg"
-      image={{
-        src: '/images/reality/hamburg.webp',
-        alt: 'Lokale AI SEO und GEO in Hamburg',
-        caption: 'Lokale KI-Sichtbarkeit beginnt nicht bei Buzzwords, sondern bei einem glasklaren Angebot.',
-      }}
+      schemaImage="/images/reality/hamburg.webp"
       summaryItems={[
         'Eine GEO Agentur optimiert nicht nur für Google, sondern für Empfehlungen und Zitate in KI-Systemen.',
         'Für Hamburger Unternehmen sind lokale Entitäts-Signale, Leistungs-Schärfe und technische Sauberkeit entscheidend.',
@@ -77,6 +73,37 @@ export default function GeoAgenturHamburgPage() {
           id: 'green-flags',
           heading: 'Woran du echte GEO-Expertise erkennst',
           intro: 'Diese Signale sprechen für Substanz statt für Show.',
+          chart: {
+            variant: 'column',
+            title: 'Hamburger Agenturen nach Zahl der KI-Systeme, die sie nennen',
+            axis: { title: 'Agenturen' },
+            highlight: 'peak',
+            points: [
+              { label: 'in allen vier Systemen genannt', short: '4 von 4', value: 1 },
+              { label: 'in zwei von vier Systemen genannt', short: '2 von 4', value: 3 },
+              { label: 'in einem von vier Systemen genannt', short: '1 von 4', value: 6 },
+            ],
+            stats: [
+              { label: 'Getestete KI-Systeme', value: '4' },
+              { label: 'Genannte Agenturen', value: '10' },
+              { label: 'Erhebung', value: '23. Mai 2026' },
+            ],
+            table: { label: 'Werte anzeigen', heads: ['Trefferzahl', 'Agenturen'] },
+            caption: (
+              <>
+                Genau eine Hamburger Agentur wird von allen vier Systemen genannt, sechs stehen in genau
+                einem. So sieht eine Messung aus, die man nachrechnen kann. Die vollständige Scorecard mit
+                Namen steht in der{' '}
+                <a
+                  href="/wissen/ki-sichtbarkeit-agenturen-hamburg-2026"
+                  className="text-brand-accent-ink underline decoration-1 underline-offset-4"
+                >
+                  Auswertung zu Hamburger Agenturen
+                </a>
+                .
+              </>
+            ),
+          },
           cards: [
             {
               title: 'Messung statt Märchen',

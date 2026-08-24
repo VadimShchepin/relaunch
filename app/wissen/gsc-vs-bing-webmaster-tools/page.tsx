@@ -10,13 +10,7 @@ export default function GscVsBingPage() {
       description="Seit Juni 2026 hat Google einen eigenen Bericht für KI-Oberflächen, Bing hat einen seit Februar 2026. Die beiden sind nicht vergleichbar: Google zählt Impressionen, Bing zählt Citations und zeigt die Suchanfragen, mit denen Copilot nach Quellen sucht. Was jede Konsole kann, was fehlt und wie man beide zusammen liest."
       publishedAt="2026-08-22"
       modifiedAt="2026-08-22"
-      image={{
-        src: '/images/wissen/gsc-vs-bing-webmaster-tools/hero.webp',
-        alt: 'Zwei Monitore mit Analyse-Dashboards auf einem Schreibtisch',
-        caption: 'Zwei Konsolen, zwei völlig verschiedene Datensätze zur selben Frage.',
-        width: 1600,
-        height: 900,
-      }}
+      schemaImage="/images/wissen/gsc-vs-bing-webmaster-tools/hero.webp"
       summaryItems={[
         'Google Search Console: seit dem 3. Juni 2026 ein eigener Generative-AI-Bericht für AI Overviews und AI Mode. Ausschließlich Impressionen, dazu Seiten, Länder, Geräte und Datum. Daten beginnen am 18. Mai 2026.',
         'Bing Webmaster Tools: seit dem 11. Februar 2026 der AI-Performance-Bericht mit Total Citations, zitierten Seiten und den Grounding Queries selbst. Seit Juni 2026 zusätzlich Intents, Topics, Citation Share und Zeitraumvergleich.',
@@ -27,13 +21,6 @@ export default function GscVsBingPage() {
       sections={[
         {
           id: 'was-neu-ist',
-          image: {
-            src: '/images/wissen/gsc-vs-bing-webmaster-tools/was-neu-ist.webp',
-            alt: 'Notebook mit Datenauswertung in einem dunklen Büro',
-            caption: 'Google seit dem 3. Juni 2026, Bing schon seit dem 11. Februar 2026.',
-            width: 1000,
-            height: 563,
-          },
           heading: 'Was 2026 tatsächlich neu ist',
           intro:
             'Bis Anfang 2026 galt der Satz, dass Suchkonsolen für KI-Sichtbarkeit blind sind. Der Satz ist überholt, und zwar in zwei Schritten.',
@@ -45,13 +32,6 @@ export default function GscVsBingPage() {
         },
         {
           id: 'direktvergleich',
-          image: {
-            src: '/images/wissen/gsc-vs-bing-webmaster-tools/direktvergleich.webp',
-            alt: 'Person arbeitet an zwei Monitoren mit Auswertungen',
-            caption: 'Der entscheidende Unterschied steht in der Zeile Suchanfragen.',
-            width: 1000,
-            height: 563,
-          },
           heading: 'Der direkte Vergleich',
           table: {
             headers: ['Merkmal', 'Google Search Console', 'Bing Webmaster Tools'],
@@ -75,13 +55,6 @@ export default function GscVsBingPage() {
         },
         {
           id: 'grounding-queries',
-          image: {
-            src: '/images/wissen/gsc-vs-bing-webmaster-tools/grounding-queries.webp',
-            alt: 'Hand mit Lupe über einem aufgeschlagenen Buch',
-            caption: 'Nur Bing zeigt, auf welche Frage deine Seite geantwortet hat.',
-            width: 1000,
-            height: 667,
-          },
           heading: 'Grounding Queries: der Grund, warum Bing gewinnt',
           definitions: [
             {
@@ -102,6 +75,24 @@ export default function GscVsBingPage() {
           ],
           stat:
             'Bing liefert die Frage, Google nur die Tatsache. Deshalb ist der kleinere Marktanteil in diesem Fall die bessere Datenquelle.',
+          chart: {
+            variant: 'column',
+            title: 'Woher die 415 Citations kamen, Export vom 30. Mai 2026',
+            axis: { title: 'Citations' },
+            highlight: 'peak',
+            points: [
+              { label: 'Fünf Varianten derselben Frage', short: '5 Varianten', value: 170 },
+              { label: 'Alle übrigen Grounding Queries', short: 'Alle übrigen', value: 245 },
+            ],
+            stats: [
+              { label: 'Citations gesamt', value: '415' },
+              { label: 'Anteil einer einzigen Frage', value: '41 Prozent' },
+              { label: 'Sichtbar in der Search Console', value: 'nichts davon' },
+            ],
+            table: { label: 'Zahlen als Tabelle', heads: ['Herkunft', 'Citations'], sum: ['Summe', '415'] },
+            caption:
+              'Diese Aufteilung ist nur deshalb bekannt, weil Bing die Grounding Queries ausweist. Der Google-Bericht hätte für dieselbe Domain eine Impressionszahl gezeigt und keine Frage. Quelle: eigener Export der Bing Webmaster Tools.',
+          },
         },
         {
           id: 'grenzen',
@@ -136,13 +127,6 @@ export default function GscVsBingPage() {
         },
         {
           id: 'praxis',
-          image: {
-            src: '/images/wissen/gsc-vs-bing-webmaster-tools/praxis.webp',
-            alt: 'Hand notiert etwas neben Tastatur, Taschenrechner und Brille von oben',
-            caption: 'Eine Stunde im Monat. Wenn nur eine, dann für die Bing-Auswertung.',
-            width: 1000,
-            height: 718,
-          },
           heading: 'Die Auswertung, die wir monatlich fahren',
           intro:
             'Beide Konsolen zusammen brauchen etwa eine Stunde im Monat. Diese Reihenfolge hat sich bewährt, weil jeder Schritt die Frage des nächsten beantwortet.',

@@ -1,6 +1,4 @@
-'use client';
-
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
@@ -8,125 +6,45 @@ import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 import { CheckIcon, ArrowRightIcon } from '@/components/ui/Icons';
 import { Tag } from '@/components/ui/Tag';
-import { SpotlightCard } from '@/components/ui/SpotlightCard';
 import { AntigravityBackground } from '@/components/ui/AntigravityBackground';
 import { PlatformIconLoop } from '@/components/ui/PlatformIconLoop';
-
-// Inline SVG icons
-const LightbulbIcon = ({ className = 'w-7 h-7' }) => (
-  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-  </svg>
-);
-
-const SparklesIcon = ({ className = 'w-7 h-7' }) => (
-  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-  </svg>
-);
-
-const BrainIcon = ({ className = 'w-7 h-7' }) => (
-  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714a2.25 2.25 0 00.659 1.591L19 14.5m-4.75-11.396c.251.023.501.05.75.082M12 12a3 3 0 110-6 3 3 0 010 6zm-7 8a7 7 0 0114 0H5z" />
-  </svg>
-);
-
-const CodeIcon = ({ className = 'w-7 h-7' }) => (
-  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-  </svg>
-);
-
-const SearchIcon = ({ className = 'w-7 h-7' }) => (
-  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-  </svg>
-);
-
-const LinkIcon = ({ className = 'w-7 h-7' }) => (
-  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-  </svg>
-);
-
-const MegaphoneIcon = ({ className = 'w-7 h-7' }) => (
-  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
-  </svg>
-);
-
-const ZapIcon = ({ className = 'w-7 h-7' }) => (
-  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-  </svg>
-);
-
-const ShieldIcon = ({ className = 'w-7 h-7' }) => (
-  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-  </svg>
-);
-
-const TargetIcon = ({ className = 'w-7 h-7' }) => (
-  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 3a7 7 0 1 1 0 14 7 7 0 0 1 0-14zm0 3a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" />
-  </svg>
-);
-
-const GlobeIcon = ({ className = 'w-7 h-7' }) => (
-  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 21a9 9 0 100-18 9 9 0 000 18zm0 0c2.5 0 4.5-4.03 4.5-9S14.5 3 12 3 7.5 7.03 7.5 12s2 9 4.5 9zM3.6 9h16.8M3.6 15h16.8" />
-  </svg>
-);
-
-const ChevronDownIcon = ({ className = 'w-5 h-5' }) => (
-  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-  </svg>
-);
-
-const BookOpenIcon = ({ className = 'w-4 h-4' }) => (
-  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-  </svg>
-);
+import { DataChart } from '@/components/ui/DataChart';
 
 const PHONE_NUMBER = '+4917632194754';
 const PHONE_DISPLAY = '+49 176 321 94 754';
 
 interface ServiceType {
-  icon: React.FC<{ className?: string }>;
+  n: string;
+  id: string;
   title: string;
   subtitle: string;
   description: string;
-  benefits: string[];
   deliverables: string[];
   idealFor: string;
   timeline: string;
+  schemaName: string;
+  schemaDescription: string;
   primaryArticle: { title: string; href: string };
   relatedArticles: { title: string; href: string }[];
 }
 
 const SERVICES: ServiceType[] = [
   {
-    icon: LightbulbIcon,
+    n: '01',
+    id: 'beratung',
     title: 'Beratung',
     subtitle: 'Strategische KI-Sichtbarkeitsberatung',
-    description: 'Du weißt genau, wo du stehst, was dich blockiert und welche Schritte den größten Hebel haben. Ich analysiere deine aktuelle Präsenz in ChatGPT, Perplexity und Google AI, identifiziere Lücken und erstelle einen persönlichen Fahrplan mit konkreten Prioritäten.',
-    benefits: [
-      'Klarheit über deine aktuelle KI-Sichtbarkeit',
-      'Konkrete Prioritäten statt vager Empfehlungen',
-      'Persönlicher Fahrplan mit nächsten Schritten',
-      'Fundierte Entscheidungsgrundlage für dein Budget',
-    ],
+    description: 'Ich prüfe, wie ChatGPT, Perplexity und Google AI dein Unternehmen heute beschreiben, und liefere einen priorisierten Fahrplan statt vager Empfehlungen.',
     deliverables: [
       'KI-Sichtbarkeitsanalyse über alle Plattformen',
-      'Wettbewerber-Vergleich (wer wird statt dir empfohlen?)',
+      'Wettbewerber-Vergleich: wer wird statt dir genannt',
       'Priorisierter Maßnahmenplan mit Quick Wins',
       'Persönliches Strategie-Gespräch (60 Min.)',
     ],
-    idealFor: 'Unternehmen, die erstmal verstehen wollen, wo sie stehen, bevor sie investieren.',
-    timeline: 'Ergebnisse in 5 bis 7 Werktagen',
+    idealFor: 'Unternehmen, die erst verstehen wollen, wo sie stehen, bevor sie investieren.',
+    timeline: 'Ergebnisse in 5 bis 7 Tagen',
+    schemaName: 'KI-Sichtbarkeitsberatung',
+    schemaDescription: 'Strategische Beratung für AI Visibility: Analyse, Strategie und Handlungsempfehlungen.',
     primaryArticle: { title: 'KI-Sichtbarkeit beauftragen: so geht\'s', href: '/wissen/ki-sichtbarkeit-beauftragen' },
     relatedArticles: [
       { title: 'Was kostet KI-Sichtbarkeit?', href: '/wissen/ki-sichtbarkeit-kosten' },
@@ -134,24 +52,21 @@ const SERVICES: ServiceType[] = [
     ],
   },
   {
-    icon: SparklesIcon,
+    n: '02',
+    id: 'aeo',
     title: 'AEO',
     subtitle: 'Answer Engine Optimization',
-    description: 'Wenn Kunden ChatGPT oder Perplexity nach deiner Leistung fragen, wirst du als Antwort genannt, nicht deine Konkurrenz. Ich optimiere deine Inhalte so, dass KI-Systeme sie als relevante, zitierbare Quelle erkennen und in ihren Antworten verwenden.',
-    benefits: [
-      'Dein Unternehmen erscheint in KI-Antworten',
-      'Relevante Kundenfragen führen direkt zu dir',
-      'Messbare Nennungen in ChatGPT, Perplexity & Gemini',
-      'Nachvollziehbare Fortschritte durch Monitoring',
-    ],
+    description: 'Deine Inhalte werden so aufgebaut, dass KI-Systeme sie als zitierbare Quelle erkennen und in ihren Antworten nennen. Dich, nicht deine Konkurrenz.',
     deliverables: [
-      'Answer-First Content-Optimierung deiner Kernseiten',
+      'Answer-First-Optimierung deiner Kernseiten',
       'FAQ-Markup und strukturierte Daten',
       'Zitierbarkeits-Audit mit konkreten Änderungen',
       'Monatliches KI-Zitations-Monitoring',
     ],
     idealFor: 'Dienstleister und Berater, deren Kunden aktiv in KI-Assistenten recherchieren.',
-    timeline: 'Erste Ergebnisse bei Perplexity nach 2 bis 4 Wochen',
+    timeline: 'Erste Ergebnisse: 2 bis 4 Wochen',
+    schemaName: 'Answer Engine Optimization (AEO)',
+    schemaDescription: 'Optimierung für ChatGPT, Perplexity, Gemini und andere KI-Antwortmaschinen.',
     primaryArticle: { title: 'AEO: Der komplette Leitfaden', href: '/wissen/aeo-answer-engine-optimization' },
     relatedArticles: [
       { title: 'ChatGPT SEO: so wirst du gefunden', href: '/wissen/chatgpt-seo' },
@@ -159,24 +74,21 @@ const SERVICES: ServiceType[] = [
     ],
   },
   {
-    icon: GlobeIcon,
+    n: '03',
+    id: 'geo',
     title: 'GEO',
     subtitle: 'Generative Engine Optimization',
-    description: 'GEO ist die Disziplin dahinter: deine Inhalte so aufbereiten, dass generative KI-Systeme wie ChatGPT, Perplexity und Google AI dich als Quelle auswählen, wenn sie ihre Antworten zusammensetzen. AEO ist ein Teil davon. GEO denkt deine Sichtbarkeit über alle generativen Engines zusammen, statt jede Plattform einzeln zu behandeln.',
-    benefits: [
-      'Sichtbar in den Antworten aller generativen KI-Systeme',
-      'Eine Strategie statt isolierter Einzelmaßnahmen',
-      'Zukunftssicher, während sich die Suche zu KI verschiebt',
-      'Weniger Abhängigkeit von klassischen Google-Rankings',
-    ],
+    description: 'Eine Strategie für alle generativen Engines statt isolierter Einzelmaßnahmen. AEO ist ein Teil davon.',
     deliverables: [
       'GEO-Audit: Wo wirst du zitiert, wo nicht?',
       'Zitierbare, antwortorientierte Inhaltsstruktur',
-      'Entity- und Autoritätssignale für generative Modelle',
+      'Entity- und Autoritätssignale für KI-Modelle',
       'Plattformübergreifendes Zitations-Monitoring',
     ],
-    idealFor: 'Unternehmen, die KI-Sichtbarkeit als Ganzes denken wollen, nicht nur eine einzelne Plattform.',
-    timeline: 'Erste Zitationen nach 3 bis 6 Wochen, je nach Ausgangslage',
+    idealFor: 'Unternehmen, die KI-Sichtbarkeit als Ganzes denken wollen, nicht nur eine Plattform.',
+    timeline: 'Erste Zitationen: 3 bis 6 Wochen',
+    schemaName: 'Generative Engine Optimization (GEO)',
+    schemaDescription: 'Plattformübergreifende Optimierung, damit generative KI-Systeme wie ChatGPT, Perplexity und Google AI dein Unternehmen als Quelle zitieren.',
     primaryArticle: { title: 'Was ist GEO? Generative Engine Optimization erklärt', href: '/wissen/was-ist-geo' },
     relatedArticles: [
       { title: 'GEO-Agentur Hamburg', href: '/wissen/geo-agentur-hamburg' },
@@ -184,24 +96,21 @@ const SERVICES: ServiceType[] = [
     ],
   },
   {
-    icon: BrainIcon,
+    n: '04',
+    id: 'ai-seo',
     title: 'AI SEO',
     subtitle: 'KI-fokussierte Suchoptimierung',
-    description: 'Deine Website wird von KI-Systemen als vertrauenswürdige Quelle erkannt und bei relevanten Suchanfragen bevorzugt ausgespielt. Die Optimierung umfasst semantische Strukturierung, Entity-Signale und technische KI-Zugänglichkeit. Also alles, was KI braucht, um dein Angebot einzuordnen.',
-    benefits: [
-      'Höheres Vertrauen bei KI-Plattformen',
-      'Bessere Positionierung in KI-gestützten Suchergebnissen',
-      'Dein Angebot wird korrekt eingeordnet und verstanden',
-      'Schnellere Ladezeiten und bessere Nutzererfahrung',
-    ],
+    description: 'Semantische Struktur, Entity-Signale, technische Zugänglichkeit: alles, was KI braucht, um dein Angebot korrekt einzuordnen.',
     deliverables: [
       'Semantische Content-Strukturierung',
-      'Entity-Optimierung (Schema.org, Knowledge Graph)',
+      'Entity-Signale: Schema.org, Knowledge Graph',
       'llms.txt und ai.txt Konfiguration',
       'KI-Crawler-Zugänglichkeit sicherstellen',
     ],
-    idealFor: 'Unternehmen, die in Google AI Overviews und KI-Antworten gleichzeitig sichtbar sein wollen.',
-    timeline: '4 bis 8 Wochen bis zu messbaren Veränderungen',
+    idealFor: 'Unternehmen, die in Google AI Overviews und in KI-Antworten stehen wollen.',
+    timeline: 'Messbar nach 4 bis 8 Wochen',
+    schemaName: 'AI SEO',
+    schemaDescription: 'KI-fokussierte Suchmaschinenoptimierung für die Suche der Zukunft.',
     primaryArticle: { title: 'AI SEO Agentur: was du wissen musst', href: '/ai-seo-agentur' },
     relatedArticles: [
       { title: 'SEO vs. AI SEO: die Unterschiede', href: '/wissen/seo-vs-ai-seo' },
@@ -209,16 +118,11 @@ const SERVICES: ServiceType[] = [
     ],
   },
   {
-    icon: CodeIcon,
+    n: '05',
+    id: 'website',
     title: 'Website-Erstellung',
     subtitle: 'KI-optimierte Websites',
-    description: 'Eine Website, die nicht nur gut aussieht, sondern von KI-Systemen ab dem ersten Tag online verstanden und empfohlen wird. Gebaut mit Next.js, perfekten Core Web Vitals, Schema.org Markup und voller Zugänglichkeit für alle KI-Crawler.',
-    benefits: [
-      'Sofort sichtbar für KI-Plattformen nach Launch',
-      'Mehr Anfragen durch conversion-optimiertes Design',
-      'Schnelle Ladezeiten, die Besucher halten',
-      'Zukunftssicher gebaut mit modernster Technik',
-    ],
+    description: 'Next.js, saubere Core Web Vitals, Schema.org und offene Crawler-Pfade. Ab Tag eins lesbar für KI-Systeme.',
     deliverables: [
       'Next.js Website mit perfekten Core Web Vitals',
       'Schema.org Markup für alle relevanten Entitäten',
@@ -227,6 +131,8 @@ const SERVICES: ServiceType[] = [
     ],
     idealFor: 'Unternehmen mit veralteter Website oder ohne klare KI-Sichtbarkeitsstrategie.',
     timeline: '4 bis 8 Wochen bis zum Launch',
+    schemaName: 'Website-Erstellung',
+    schemaDescription: 'KI-optimierte Websites mit Next.js, Schema.org und perfekten Core Web Vitals.',
     primaryArticle: { title: 'Technische KI-Sichtbarkeit', href: '/wissen/technische-ki-sichtbarkeit' },
     relatedArticles: [
       { title: 'Website-Automatisierung mit KI', href: '/wissen/website-automatisierung' },
@@ -234,24 +140,21 @@ const SERVICES: ServiceType[] = [
     ],
   },
   {
-    icon: SearchIcon,
+    n: '06',
+    id: 'seo',
     title: 'SEO',
     subtitle: 'Klassische Suchmaschinenoptimierung',
-    description: 'Dein Unternehmen wird bei Google gefunden und baut gleichzeitig das Fundament auf, das KI-Sichtbarkeit erst möglich macht. Technisches SEO, On-Page-Optimierung und lokale Sichtbarkeit in Hamburg bilden die Basis für alle weiteren Maßnahmen.',
-    benefits: [
-      'Mehr organischer Traffic aus Google',
-      'Lokale Sichtbarkeit in Hamburg gestärkt',
-      'Saubere technische Basis für alle weiteren Maßnahmen',
-      'Volle Kontrolle über deine Indexierung',
-    ],
+    description: 'Technisches SEO, On-Page und lokale Signale in Hamburg. Das Fundament, ohne das KI-Sichtbarkeit nicht trägt.',
     deliverables: [
       'Technisches SEO-Audit mit Umsetzung',
       'On-Page-Optimierung deiner Kernseiten',
       'Lokales SEO: Google Business, NAP-Konsistenz',
       'Keyword-Strategie und Content-Empfehlungen',
     ],
-    idealFor: 'Unternehmen, die noch keine stabile Google-Basis haben. Die Grundlage für alles.',
-    timeline: '3 bis 6 Monate für nachhaltige Rankings',
+    idealFor: 'Unternehmen ohne stabile Google-Basis. Die Grundlage für alles andere.',
+    timeline: '3 bis 6 Monate für Rankings',
+    schemaName: 'Suchmaschinenoptimierung (SEO)',
+    schemaDescription: 'Klassische SEO als Fundament: technisches SEO, On-Page, lokales SEO für Hamburg.',
     primaryArticle: { title: 'Lokale KI-Sichtbarkeit', href: '/wissen/lokale-ki-sichtbarkeit' },
     relatedArticles: [
       { title: 'SEO-Agentur vs. AI SEO', href: '/wissen/seo-agentur-vs-ai-seo' },
@@ -259,24 +162,21 @@ const SERVICES: ServiceType[] = [
     ],
   },
   {
-    icon: LinkIcon,
+    n: '07',
+    id: 'backlinks',
     title: 'Backlink-Aufbau',
     subtitle: 'Autorität & Vertrauenssignale',
-    description: 'Dein Unternehmen wird als Autorität in deiner Branche wahrgenommen: von Google, von KI-Systemen und von potenziellen Kunden. Gezielte Markennennungen auf relevanten Plattformen stärken die Signale, die KI-Systemen Vertrauen geben.',
-    benefits: [
-      'Steigende Domain-Autorität und Vertrauen',
-      'Erwähnungen auf relevanten Branchenseiten',
-      'Stärkere Positionierung gegenüber Wettbewerbern',
-      'Nachhaltige Signale, die langfristig wirken',
-    ],
+    description: 'Gezielte Markennennungen auf relevanten Plattformen. Genau die Signale, an denen Google und KI-Systeme Vertrauen messen.',
     deliverables: [
-      'Backlink-Strategie basierend auf Wettbewerber-Analyse',
+      'Backlink-Strategie aus der Wettbewerber-Analyse',
       'Gezielte Markennennungen auf Branchenportalen',
       'Digital PR und Gastbeiträge',
       'Monatliches Backlink-Reporting',
     ],
-    idealFor: 'Unternehmen, die technisch sauber aufgestellt sind, aber an Autorität gewinnen müssen.',
-    timeline: 'Erste Backlinks innerhalb von 4 Wochen',
+    idealFor: 'Unternehmen, die technisch sauber sind, aber an Autorität gewinnen müssen.',
+    timeline: 'Erste Backlinks: 4 Wochen',
+    schemaName: 'Backlink-Aufbau',
+    schemaDescription: 'Gezielter Aufbau von Autorität und Vertrauenssignalen für KI-Systeme.',
     primaryArticle: { title: 'E-E-A-T und KI-Sichtbarkeit', href: '/wissen/eeat-ki-sichtbarkeit' },
     relatedArticles: [
       { title: 'KI-Markenwahrnehmung aufbauen', href: '/wissen/ki-markenwahrnehmung' },
@@ -284,16 +184,11 @@ const SERVICES: ServiceType[] = [
     ],
   },
   {
-    icon: MegaphoneIcon,
+    n: '08',
+    id: 'pr',
     title: 'Pressemitteilungen',
     subtitle: 'PR & Pressearbeit',
-    description: 'Dein Unternehmen erscheint in relevanten Medien und KI-Systeme lernen dich als etablierte, vertrauenswürdige Marke kennen. Redaktionelle Erwähnungen in Fachmedien sind eines der stärksten Autoritätssignale für KI-Zitationen.',
-    benefits: [
-      'Sichtbarkeit in Fachmedien und Presseportalen',
-      'Neue Zielgruppen erreichen, die dich noch nicht kennen',
-      'Glaubwürdigkeit durch unabhängige Berichterstattung',
-      'Langfristige Stärkung deiner Markenwahrnehmung',
-    ],
+    description: 'Redaktionelle Erwähnungen in Fachmedien sind eines der stärksten Autoritätssignale für KI-Zitationen.',
     deliverables: [
       'Redaktionelle Pressemitteilungen (deutsch)',
       'Distribution über relevante Presseportale',
@@ -301,7 +196,9 @@ const SERVICES: ServiceType[] = [
       'Reporting über Veröffentlichungen und Reichweite',
     ],
     idealFor: 'Unternehmen mit Neuigkeiten, Expertise oder einem Story-Anlass.',
-    timeline: 'Erste Veröffentlichungen nach 2 bis 3 Wochen',
+    timeline: 'Erste Presse: 2 bis 3 Wochen',
+    schemaName: 'Pressemitteilungen',
+    schemaDescription: 'Professionelle PR und Pressearbeit für Medienerwähnungen und KI-Autorität.',
     primaryArticle: { title: 'KI-Markenwahrnehmung aufbauen', href: '/wissen/ki-markenwahrnehmung' },
     relatedArticles: [
       { title: 'E-E-A-T und KI-Sichtbarkeit', href: '/wissen/eeat-ki-sichtbarkeit' },
@@ -310,29 +207,39 @@ const SERVICES: ServiceType[] = [
   },
 ];
 
-const DIFFERENTIATORS = [
-  {
-    icon: TargetIcon,
-    title: 'Strategie',
-    description: 'Nicht einzelne Tricks, sondern ein klares System, das auf dein Unternehmen zugeschnitten ist.',
-  },
-  {
-    icon: ZapIcon,
-    title: 'Technik',
-    description: 'Saubere Struktur, Schema, Performance. Damit KI dein Angebot wirklich versteht.',
-  },
-  {
-    icon: ShieldIcon,
-    title: 'Autorität',
-    description: 'Backlinks, Erwähnungen, Pressearbeit. Die Signale, die KI-Systemen Vertrauen geben.',
-  },
+const FACTS = [
+  { value: '800', label: 'KI-Zitate in 3 Monaten', note: 'aiseo.hamburg, Copilot, 15.03. bis 13.06.2026' },
+  { value: '281', label: 'Zitate für dsgvoschulfotos.de', note: 'aus dem Stand, 15.03. bis 13.06.2026' },
+  { value: '+55 %', label: 'Klicks in 30 Tagen', note: 'Handwerksbetrieb, Search Console' },
+];
+
+/* Zitate pro Seite, exakt aus dem AI-Page-Stats-Export der Bing Webmaster Tools
+   für dsgvoschulfotos.de, 30-Tage-Fenster bis 06.06.2026: 211 Zitate auf 16
+   Seiten. Hier stehen die sechs stärksten Seiten mit ihren Exportwerten, nichts
+   gerundet, nichts hochgerechnet. Die zehn übrigen Seiten liegen bei 1 bis 13
+   Zitaten (Summe 63), der Schnitt nach Platz 6 trennt keine gleichen Werte.
+   Quelle der Zahlen: dsgvoschulfotos.de_AIPageStatsReport_6_6_2026.csv, dieselben
+   Werte stehen auf /wissen/citation-rate und /wissen/ki-sichtbarkeit-saas. */
+const CITATION_PAGES = [
+  { label: '/dsgvo-schule-apps', value: 45 },
+  { label: '/dsgvo-schulfotos', value: 37 },
+  { label: '/ (Startseite)', value: 18 },
+  { label: '/gruppenfotos-datenschutz', value: 16 },
+  { label: '/klassenfotos-datenschutz', value: 16 },
+  { label: '/einwilligung-fotos-schule', value: 16 },
+];
+
+const PILLARS = [
+  { n: '01', title: 'Strategie', description: 'Ein System, das auf dein Unternehmen zugeschnitten ist, keine einzelnen Tricks.' },
+  { n: '02', title: 'Technik', description: 'Saubere Struktur, Schema, Performance. Damit KI dein Angebot wirklich versteht.' },
+  { n: '03', title: 'Autorität', description: 'Backlinks, Erwähnungen, Pressearbeit. Die Signale, die KI-Systemen Vertrauen geben.' },
 ];
 
 const VERTICALS = [
   { title: 'Handwerker', href: '/wissen/ki-sichtbarkeit-handwerker', description: 'Mehr Aufträge durch KI-Empfehlungen in deiner Region.' },
-  { title: 'Immobilien', href: '/wissen/ki-sichtbarkeit-immobilien', description: 'Makler & Verwalter, die KI als Kanal nutzen.' },
+  { title: 'Immobilien', href: '/wissen/ki-sichtbarkeit-immobilien', description: 'Makler und Verwalter, die KI als Kanal nutzen.' },
   { title: 'Ärzte & Praxen', href: '/wissen/ki-sichtbarkeit-aerzte', description: 'Patienten finden dich über KI-Assistenten.' },
-  { title: 'Anwälte & Kanzleien', href: '/wissen/ki-sichtbarkeit-anwaelte', description: 'Mandanten gewinnen über ChatGPT & Co.' },
+  { title: 'Anwälte & Kanzleien', href: '/wissen/ki-sichtbarkeit-anwaelte', description: 'Mandanten gewinnen über ChatGPT und Co.' },
   { title: 'E-Commerce', href: '/wissen/ki-sichtbarkeit-ecommerce', description: 'Produkte, die KI aktiv empfiehlt.' },
   { title: 'Dienstleister', href: '/wissen/ki-sichtbarkeit-dienstleister', description: 'Agenturen, Berater und Freelancer, sichtbar in KI.' },
 ];
@@ -344,238 +251,52 @@ const PLATFORMS = [
   { name: 'Gemini', href: '/wissen/sichtbarkeit-in-gemini', description: 'Google AI und die Zukunft der Suche.' },
 ];
 
-function ExpandableServiceCard({ service, index }: { service: ServiceType; index: number }) {
-  const [expanded, setExpanded] = useState(false);
-  const Icon = service.icon;
+const ITEM_LIST_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Leistungen von aiseo.hamburg',
+  description: 'Alle Dienstleistungen für KI-Sichtbarkeit in Hamburg',
+  url: 'https://aiseo.hamburg/leistungen',
+  numberOfItems: SERVICES.length,
+  itemListElement: SERVICES.map((service, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    item: {
+      '@type': 'Service',
+      name: service.schemaName,
+      description: service.schemaDescription,
+      provider: { '@id': 'https://aiseo.hamburg/#organization' },
+      areaServed: { '@type': 'City', name: 'Hamburg' },
+    },
+  })),
+};
 
-  return (
-    <FadeIn delay={index * 0.08}>
-      <SpotlightCard className="bg-white rounded-2xl border border-gray-100 hover:shadow-lg transition-all h-full flex flex-col">
-        <div className="relative z-10 p-6 md:p-8 flex flex-col h-full">
-          {/* Header */}
-          <div className="w-14 h-14 rounded-2xl bg-brand-accent/10 flex items-center justify-center mb-6">
-            <Icon className="w-7 h-7 text-brand-accent" />
-          </div>
-          <h3 className="text-xl font-bold text-brand-text mb-1">{service.title}</h3>
-          <p className="text-sm font-medium text-brand-accent mb-3">{service.subtitle}</p>
-          <p className="text-gray-600 mb-5 leading-relaxed text-sm">{service.description}</p>
-
-          {/* Benefits */}
-          <ul className="space-y-2 mb-5">
-            {service.benefits.map((benefit, i) => (
-              <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
-                <CheckIcon className="w-4 h-4 text-brand-accent flex-shrink-0 mt-0.5" />
-                <span>{benefit}</span>
-              </li>
-            ))}
-          </ul>
-
-          {/* Expandable section */}
-          <div
-            className={`overflow-hidden transition-all duration-500 ease-in-out ${expanded ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'}`}
-          >
-            {/* Deliverables */}
-            <div className="border-t border-gray-100 pt-5 mb-5">
-              <p className="text-xs uppercase tracking-wider font-semibold text-gray-400 mb-3">Was du bekommst</p>
-              <ul className="space-y-2">
-                {service.deliverables.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
-                    <span className="w-1.5 h-1.5 rounded-full bg-brand-accent flex-shrink-0 mt-1.5" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Ideal for + Timeline */}
-            <div className="bg-gray-50 rounded-xl p-4 mb-5 space-y-2">
-              <p className="text-sm text-gray-700"><span className="font-semibold text-brand-text">Ideal für:</span> {service.idealFor}</p>
-              <p className="text-sm text-gray-700"><span className="font-semibold text-brand-text">Zeitrahmen:</span> {service.timeline}</p>
-            </div>
-
-            {/* Related articles */}
-            <div className="border-t border-gray-100 pt-5">
-              <p className="text-xs uppercase tracking-wider font-semibold text-gray-400 mb-3">Weiterlesen</p>
-              <div className="space-y-2">
-                <Link
-                  href={service.primaryArticle.href}
-                  className="flex items-center gap-2 text-sm font-medium text-brand-accent hover:text-brand-accent/80 transition-colors group"
-                >
-                  <BookOpenIcon className="w-4 h-4" />
-                  <span className="group-hover:underline">{service.primaryArticle.title}</span>
-                </Link>
-                {service.relatedArticles.map((article, i) => (
-                  <Link
-                    key={i}
-                    href={article.href}
-                    className="flex items-center gap-2 text-sm text-gray-600 hover:text-brand-accent transition-colors group"
-                  >
-                    <ArrowRightIcon className="w-3 h-3 opacity-50 group-hover:opacity-100" />
-                    <span className="group-hover:underline">{article.title}</span>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Expand toggle + CTA - pushed to bottom */}
-          <div className="mt-auto pt-5 flex items-center justify-between gap-3">
-            <button
-              onClick={() => setExpanded(!expanded)}
-              className="flex items-center gap-1.5 text-sm font-medium text-gray-500 hover:text-brand-text transition-colors"
-            >
-              <ChevronDownIcon className={`w-4 h-4 transition-transform duration-300 ${expanded ? 'rotate-180' : ''}`} />
-              {expanded ? 'Weniger anzeigen' : 'Details & Artikel'}
-            </button>
-            <Link
-              href="/contact"
-              className="text-sm font-medium text-brand-accent hover:text-brand-accent/80 transition-colors flex items-center gap-1"
-            >
-              Anfragen
-              <ArrowRightIcon className="w-3 h-3" />
-            </Link>
-          </div>
-        </div>
-      </SpotlightCard>
-    </FadeIn>
-  );
-}
+const linkBase = 'group flex items-baseline justify-between gap-flow border-t border-brand-hairline py-2.5 transition-colors hover:bg-brand-surface';
 
 export default function LeistungenPage() {
   return (
-    <div className="relative w-full overflow-hidden bg-brand-bg text-brand-text font-sans selection:bg-brand-accent selection:text-white">
+    <div className="relative w-full overflow-x-clip bg-brand-bg text-brand-text font-sans selection:bg-brand-accent selection:text-white">
       <Navbar />
 
-      {/* JSON-LD Structured Data */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'ItemList',
-          'name': 'Leistungen von aiseo.hamburg',
-          'description': 'Alle Dienstleistungen für KI-Sichtbarkeit in Hamburg',
-          'url': 'https://aiseo.hamburg/leistungen',
-          'numberOfItems': 8,
-          'itemListElement': [
-            {
-              '@type': 'ListItem',
-              'position': 1,
-              'item': {
-                '@type': 'Service',
-                'name': 'KI-Sichtbarkeitsberatung',
-                'description': 'Strategische Beratung für AI Visibility: Analyse, Strategie und Handlungsempfehlungen.',
-                'provider': { '@id': 'https://aiseo.hamburg/#organization' },
-                'areaServed': { '@type': 'City', 'name': 'Hamburg' },
-              },
-            },
-            {
-              '@type': 'ListItem',
-              'position': 2,
-              'item': {
-                '@type': 'Service',
-                'name': 'Answer Engine Optimization (AEO)',
-                'description': 'Optimierung für ChatGPT, Perplexity, Gemini und andere KI-Antwortmaschinen.',
-                'provider': { '@id': 'https://aiseo.hamburg/#organization' },
-                'areaServed': { '@type': 'City', 'name': 'Hamburg' },
-              },
-            },
-            {
-              '@type': 'ListItem',
-              'position': 3,
-              'item': {
-                '@type': 'Service',
-                'name': 'Generative Engine Optimization (GEO)',
-                'description': 'Plattformübergreifende Optimierung, damit generative KI-Systeme wie ChatGPT, Perplexity und Google AI dein Unternehmen als Quelle zitieren.',
-                'provider': { '@id': 'https://aiseo.hamburg/#organization' },
-                'areaServed': { '@type': 'City', 'name': 'Hamburg' },
-              },
-            },
-            {
-              '@type': 'ListItem',
-              'position': 4,
-              'item': {
-                '@type': 'Service',
-                'name': 'AI SEO',
-                'description': 'KI-fokussierte Suchmaschinenoptimierung für die Suche der Zukunft.',
-                'provider': { '@id': 'https://aiseo.hamburg/#organization' },
-                'areaServed': { '@type': 'City', 'name': 'Hamburg' },
-              },
-            },
-            {
-              '@type': 'ListItem',
-              'position': 5,
-              'item': {
-                '@type': 'Service',
-                'name': 'Website-Erstellung',
-                'description': 'KI-optimierte Websites mit Next.js, Schema.org und perfekten Core Web Vitals.',
-                'provider': { '@id': 'https://aiseo.hamburg/#organization' },
-                'areaServed': { '@type': 'City', 'name': 'Hamburg' },
-              },
-            },
-            {
-              '@type': 'ListItem',
-              'position': 6,
-              'item': {
-                '@type': 'Service',
-                'name': 'Suchmaschinenoptimierung (SEO)',
-                'description': 'Klassische SEO als Fundament: technisches SEO, On-Page, lokales SEO für Hamburg.',
-                'provider': { '@id': 'https://aiseo.hamburg/#organization' },
-                'areaServed': { '@type': 'City', 'name': 'Hamburg' },
-              },
-            },
-            {
-              '@type': 'ListItem',
-              'position': 7,
-              'item': {
-                '@type': 'Service',
-                'name': 'Backlink-Aufbau',
-                'description': 'Gezielter Aufbau von Autorität und Vertrauenssignalen für KI-Systeme.',
-                'provider': { '@id': 'https://aiseo.hamburg/#organization' },
-                'areaServed': { '@type': 'City', 'name': 'Hamburg' },
-              },
-            },
-            {
-              '@type': 'ListItem',
-              'position': 8,
-              'item': {
-                '@type': 'Service',
-                'name': 'Pressemitteilungen',
-                'description': 'Professionelle PR und Pressearbeit für Medienerwähnungen und KI-Autorität.',
-                'provider': { '@id': 'https://aiseo.hamburg/#organization' },
-                'areaServed': { '@type': 'City', 'name': 'Hamburg' },
-              },
-            },
-          ],
-        })
-      }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ITEM_LIST_SCHEMA) }} />
 
       <main>
-        {/* ========================================
-            HERO SECTION
-            ======================================== */}
-        <section className="pt-32 pb-12 lg:pt-40 lg:pb-16 bg-brand-bg relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-accent/5 rounded-full blur-3xl z-0"></div>
+        {/* ========== HERO: 7/5 asymmetric, text-only so the H1 keeps the LCP slot ========== */}
+        <section className="relative overflow-hidden pt-28 pb-block lg:pt-32">
+          <div className="absolute top-0 right-0 z-0 h-[600px] w-[600px] rounded-full bg-brand-accent/5 blur-3xl" />
           <AntigravityBackground />
 
-          <div className="max-w-6xl mx-auto px-6 lg:px-12 relative z-10">
-            <div className="text-center max-w-4xl mx-auto">
+          <div className="relative z-10 mx-auto grid max-w-article gap-block px-6 lg:grid-cols-12 lg:gap-x-rule lg:px-12">
+            <div className="lg:col-span-7">
               <FadeIn>
                 <Tag text="Leistungen" />
-              </FadeIn>
-
-              <FadeIn delay={0.1}>
-                <h1 className="text-4xl lg:text-5xl xl:text-6xl font-semibold tracking-[-0.04em] text-black mb-5 mt-6 leading-[1.05]">
+                <h1 className="mt-flow text-heading sm:text-title xl:text-display font-semibold text-black">
                   Alles, was dein Unternehmen in <span className="text-brand-accent">KI sichtbar</span> macht.
                 </h1>
-              </FadeIn>
-
-              <FadeIn delay={0.2}>
-                <p className="text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
-                  Generative Engine Optimization (GEO), AEO und klassisches SEO. Von der Strategie bis zur Umsetzung: Beratung, Optimierung, Technik und Autorität, alles aus einer Hand und spezialisiert auf Hamburg.
+                <p className="mt-flow max-w-measure text-lead text-brand-muted">
+                  Generative Engine Optimization (GEO), AEO und klassisches SEO aus einer Hand: Beratung, Optimierung, Technik und Autorität, spezialisiert auf Hamburg.
                 </p>
-              </FadeIn>
-
-              <FadeIn delay={0.3}>
-                <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <div className="mt-stack flex flex-col gap-4 sm:flex-row">
                   <Button href="/ai-sichtbarkeit-now" primary className="!py-4 !px-6 !pl-8 group">
                     <span className="relative z-10 flex items-center gap-3">
                       KI-Sichtbarkeit prüfen
@@ -586,93 +307,257 @@ export default function LeistungenPage() {
                 </div>
               </FadeIn>
             </div>
-          </div>
-        </section>
 
-        {/* ========================================
-            SERVICES GRID
-            ======================================== */}
-        <section id="leistungen" className="py-20 md:py-28 px-6 md:px-12 lg:px-20">
-          <div className="max-w-6xl mx-auto">
-            <FadeIn>
-              <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-4">
-                  8 Leistungen. <span className="text-gray-400">Ein Ziel.</span>
-                </h2>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                  Von Generative Engine Optimization (GEO) und AEO bis zu Technik und Autorität: Jede Leistung stärkt deine KI-Sichtbarkeit, zusammen bilden sie ein System, das KI-Plattformen nicht ignorieren können. Klicke auf &quot;Details&quot; für konkrete Liefergegenstände und weiterführende Artikel.
-                </p>
-              </div>
-            </FadeIn>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {SERVICES.map((service, index) => (
-                <ExpandableServiceCard key={index} service={service} index={index} />
-              ))}
+            {/* Hard numbers instead of a hero photo. Source: /ergebnisse */}
+            <div className="lg:col-span-5 lg:pt-2">
+              <FadeIn delay={120}>
+                <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Gemessen, nicht behauptet</p>
+                <dl className="mt-flow">
+                  {FACTS.map((fact) => (
+                    <div key={fact.label} className="flex items-baseline gap-flow border-t border-brand-line py-3">
+                      <dt className="w-24 shrink-0 text-subheading font-semibold tabular-nums text-brand-text">{fact.value}</dt>
+                      <dd className="text-meta text-brand-muted">
+                        {fact.label}
+                        <span className="block text-micro text-brand-subtle">{fact.note}</span>
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+                <Link href="/ergebnisse" className="mt-flow inline-flex items-center gap-1.5 border-t border-brand-line pt-3 text-meta font-medium text-brand-accent-ink hover:gap-2.5">
+                  Alle Ergebnisse mit Screenshots
+                  <ArrowRightIcon className="w-3 h-3" />
+                </Link>
+                <p className="mt-2 text-micro text-brand-subtle">Stand: August 2026</p>
+              </FadeIn>
             </div>
           </div>
         </section>
 
-        {/* ========================================
-            MID-PAGE CTA
-            ======================================== */}
-        <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20">
-          <div className="max-w-4xl mx-auto">
+        {/* ========== LEISTUNGEN: 2 tracks (260px name + one 700px reading column), sticky index on every viewport ========== */}
+        <section id="leistungen" className="border-t border-brand-line pb-rule">
+          <div className="mx-auto max-w-article px-6 lg:px-12">
             <FadeIn>
-              <div className="bg-brand-accent/5 border border-brand-accent/20 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
-                <div className="flex-1">
-                  <h3 className="text-2xl md:text-3xl font-semibold tracking-tight text-black mb-3">
+              <div className="pt-rule">
+                <h2 className="text-subheading md:text-heading font-semibold text-black">
+                  8 Leistungen. <span className="text-brand-subtle">Ein Ziel.</span>
+                </h2>
+                <p className="mt-flow max-w-measure text-body text-brand-muted">
+                  Von Generative Engine Optimization (GEO) und AEO bis zu Technik und Autorität. Liefergegenstände, Zeitrahmen und Quellen stehen offen da, nichts versteckt sich hinter einem Klick.
+                </p>
+              </div>
+            </FadeIn>
+
+            {/* index: sticky on phone and desktop alike, so an 11.000px page always has jump links */}
+            <nav aria-label="Leistungsübersicht" className="sticky top-navbar z-30 -mx-6 mt-stack border-y border-brand-line bg-brand-bg px-6 lg:-mx-12 lg:px-12">
+              <ol className="flex gap-x-flow overflow-x-auto py-3 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                {SERVICES.map((service) => (
+                  <li key={service.id} className="shrink-0">
+                    <a href={`#${service.id}`} className="flex items-baseline gap-1.5 text-micro whitespace-nowrap text-brand-muted transition-colors hover:text-brand-accent-ink">
+                      <span className="tabular-nums text-brand-subtle">{service.n}</span>
+                      {service.title}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+
+            {/* table head, once, instead of a repeated eyebrow in all 8 rows */}
+            <div className="mt-flow hidden lg:grid lg:grid-cols-[260px_1fr] lg:gap-x-stack">
+              <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Leistung</p>
+              <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Was sie leistet und was du bekommst</p>
+            </div>
+
+            <div className="mt-3">
+              {SERVICES.map((service) => (
+                <article
+                  key={service.id}
+                  id={service.id}
+                  className="grid scroll-mt-rule gap-y-3 border-t border-brand-edge py-flow lg:min-h-[18.75rem] lg:grid-cols-[260px_1fr] lg:gap-x-stack"
+                >
+                  <div>
+                    <span className="text-micro font-medium tabular-nums text-brand-subtle">{service.n}</span>
+                    <h3 className="text-subheading font-semibold text-brand-text">{service.title}</h3>
+                    <p className="text-meta font-medium text-brand-accent-ink">{service.subtitle}</p>
+                    <p className="mt-2 text-micro text-brand-subtle">{service.timeline}</p>
+                    <Link href="/contact" className="mt-1 inline-flex items-center gap-1.5 text-micro font-medium text-brand-text hover:gap-2.5">
+                      Anfragen
+                      <ArrowRightIcon className="w-3 h-3" />
+                    </Link>
+                  </div>
+
+                  <div>
+                    <p className="text-meta lg:text-body text-brand-muted">{service.description}</p>
+
+                    {/* the qualifier gets its own rule, so it stops merging optically with the paragraph */}
+                    <div className="mt-4 border-t border-brand-hairline pt-3 lg:flex lg:gap-flow">
+                      <p className="hidden text-micro uppercase tracking-eyebrow text-brand-subtle lg:block lg:w-24 lg:shrink-0">Ideal für</p>
+                      <p className="text-micro lg:text-meta text-brand-muted">
+                        <span className="font-medium text-brand-text lg:hidden">Ideal für: </span>
+                        {service.idealFor}
+                      </p>
+                    </div>
+
+                    <div className="mt-3 border-t border-brand-hairline pt-3">
+                      <p className="mb-2 text-micro uppercase tracking-eyebrow text-brand-subtle lg:hidden">Was du bekommst</p>
+                      <ul className="grid gap-x-flow gap-y-1.5 sm:grid-cols-2">
+                        {service.deliverables.map((item) => (
+                          <li key={item} className="flex items-start gap-2 text-micro text-brand-muted">
+                            <CheckIcon className="mt-1 w-3 h-3 shrink-0 text-brand-accent-ink" />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* the 3 articles sit in the reading column, aligned under the paragraph they belong to */}
+                    <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 border-t border-brand-hairline pt-3 text-micro">
+                      <Link href={service.primaryArticle.href} className="font-medium text-brand-accent-ink underline decoration-brand-accent/50 underline-offset-4 hover:decoration-brand-accent-ink">
+                        {service.primaryArticle.title}
+                      </Link>
+                      {service.relatedArticles.map((article) => (
+                        <Link key={article.href + article.title} href={article.href} className="text-brand-subtle underline decoration-brand-line underline-offset-4 hover:text-brand-accent-ink">
+                          {article.title}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </article>
+              ))}
+
+              {/* Restored from round 1, where this CTA sat in a sidebar that the 2-track rebuild removed.
+                  It stays here, right after the 8 rows, because that is where a reader who just scanned
+                  all of them asks "and where do I start?". Same 260px + 700px tracks as the rows above. */}
+              <div className="-mx-6 grid scroll-mt-rule gap-y-3 border-t border-brand-edge bg-brand-surface px-6 py-flow lg:-mx-12 lg:grid-cols-[260px_1fr] lg:gap-x-stack lg:px-12">
+                <div>
+                  <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Nächster Schritt</p>
+                  <h3 className="mt-1 text-subheading font-semibold text-brand-text">
                     Nicht sicher, wo du anfangen sollst?
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                </div>
+
+                <div>
+                  <p className="text-meta lg:text-body text-brand-muted">
                     In 15 Minuten zeige ich dir, wie KI dein Unternehmen heute beschreibt und was sich ändern muss, damit du empfohlen wirst. Kostenlos, ehrlich, ohne Verkaufsdruck.
                   </p>
+                  <div className="mt-4 flex flex-wrap items-center gap-x-stack gap-y-3 border-t border-brand-hairline pt-4">
+                    <Button href="/ai-sichtbarkeit-now" primary text="KI-Check starten" className="!py-3 !px-6" />
+                    <a href={`tel:${PHONE_NUMBER}`} className="text-meta font-medium text-brand-accent-ink hover:underline">
+                      oder direkt anrufen: {PHONE_DISPLAY}
+                    </a>
+                  </div>
                 </div>
-                <div className="flex flex-col gap-3 flex-shrink-0">
-                  <Button href="/ai-sichtbarkeit-now" primary text="KI-Check starten" className="!py-3 !px-6" />
-                  <a
-                    href={`tel:${PHONE_NUMBER}`}
-                    className="text-sm font-medium text-brand-accent hover:text-brand-accent/80 transition-colors text-center"
-                  >
-                    oder direkt anrufen
-                  </a>
-                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ========== EVIDENCE: two figures carry this band, no body copy ========== */}
+        <section className="border-t border-brand-line py-rule">
+          <div className="mx-auto max-w-article px-6 lg:px-12">
+            <FadeIn>
+              <h2 className="text-subheading md:text-heading font-semibold text-black">So sieht das Ergebnis aus.</h2>
+              <div className="mt-stack grid gap-block lg:grid-cols-12 lg:gap-x-rule">
+                {/* max-w-[780px] below lg is what keeps this raster at or above 1x.
+                    The column is lg:col-span-7, which is 552px at 1440px, but below
+                    lg the grid collapses and the figure takes the whole 975px content
+                    box at a 1023px viewport. The wide crop is 810px of pixels, so it
+                    was rendering at 0,831x there: an upscaled screenshot of text, the
+                    one thing that must never be soft.
+                    The <source> switch moved from 640px to 540px for the same reason
+                    from the other side. Between a 588px and a 640px viewport the box
+                    is wider than the 540px tight crop, so the old breakpoint had a
+                    second sub-1x window (0,914x at 639px). Every real phone width
+                    (390, 393, 414, 430) is still below 540px and still gets the tight,
+                    readable crop.
+                    Measured after the change: 1,58x at 390px, 1,04x at 834px, 1,04x
+                    at 1023px, 1,47x at 1440px. */}
+                <figure className="max-w-[780px] lg:col-span-7 lg:max-w-none">
+                  <picture>
+                    <source media="(min-width: 540px)" srcSet="/image/leistungen/antwort-chatgpt-wide-810.webp" width={810} height={200} />
+                    <img
+                      src="/image/leistungen/antwort-chatgpt-tight-540.webp"
+                      width={540}
+                      height={64}
+                      loading="lazy"
+                      decoding="async"
+                      alt="Ausschnitt einer ChatGPT-Antwort: KinderAlbum wird als DSGVO-konforme Foto-App für Schulen und Kindergärten genannt, mit Quellenangabe."
+                      className="w-full rounded-card border border-brand-line bg-brand-night"
+                    />
+                  </picture>
+                  <figcaption className="mt-3 border-t border-brand-hairline pt-3 text-meta text-brand-subtle">
+                    Ausschnitt einer echten ChatGPT-Antwort. Gefragt war eine DSGVO-konforme Foto-Lösung für Schulen, genannt wird KinderAlbum, mit Quellenangabe. Das ist das Produkt von AEO und GEO.{' '}
+                    <Link href="/wissen/case-study-kinderalbum" className="font-medium text-brand-accent-ink underline decoration-brand-accent/50 underline-offset-4">
+                      Fallstudie
+                    </Link>
+                  </figcaption>
+                </figure>
+
+                <figure className="lg:col-span-5">
+                  {/* Hier lag bis Runde 2 ein Screenshot des Bing-Dashboards: 420px breit,
+                      Achsenbeschriftung bei 4 bis 5px, violett-blaue Fremdfarben in einer
+                      grün-schwarzen Seite. Gleiche Quelle, neu gezeichnet mit dem geteilten
+                      Chart-Primitive: jedes Label ist HTML-Text ab 13px, jede Farbe ein Token.
+                      Die Tagesreihe des Screenshots gibt es nicht als Export, nur den
+                      Seiten-Export, deshalb steht hier die Verteilung statt der Kurve.
+                      Tabelle aus: die Zeilenvariante schreibt jeden Wert schon als Text. */}
+                  <div className="rounded-card border border-brand-line bg-white p-4 sm:p-5">
+                    <DataChart
+                      frame={false}
+                      variant="row"
+                      headingLevel="h3"
+                      title="KI-Zitate pro Seite"
+                      subject="dsgvoschulfotos.de"
+                      axis={{ title: 'Zitate' }}
+                      highlight="peak"
+                      points={CITATION_PAGES}
+                      /* Einwortige Labels: die Kennzahlenspalten sind im 420px-Slot
+                         nur rund 112px breit, alles Längere bricht um und die drei
+                         Werte sitzen dann nicht mehr auf einer Linie. */
+                      stats={[
+                        { label: 'Gesamt', value: '211 Zitate' },
+                        { label: 'Seiten', value: '16' },
+                        { label: 'Top 6', value: '70,1 %' },
+                      ]}
+                      table={false}
+                    />
+                  </div>
+                  <figcaption className="mt-3 border-t border-brand-hairline pt-3 text-meta text-brand-subtle">
+                    Zitate pro Seite im 30-Tage-Fenster bis 06.06.2026, aus dem AI-Page-Stats-Export der Bing Webmaster Tools. Die zehn nicht gezeigten Seiten liegen bei 1 bis 13 Zitaten. Über drei Monate, 15. März bis 13. Juni 2026, zählt Microsoft Copilot 281 Zitate, vorher lag der Wert bei nahezu null.{' '}
+                    <Link href="/wissen/ki-sichtbarkeit-messen" className="font-medium text-brand-accent-ink underline decoration-brand-accent/50 underline-offset-4">
+                      So wird gemessen
+                    </Link>
+                  </figcaption>
+                </figure>
               </div>
             </FadeIn>
           </div>
         </section>
 
-        {/* ========================================
-            DIFFERENTIATOR - Why Together
-            ======================================== */}
-        <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20">
-          <div className="max-w-6xl mx-auto">
+        {/* ========== SYSTEM: full-bleed dark band, hairline rules, no rounded card and no blur blob ========== */}
+        <section className="bg-brand-night py-rule text-white">
+          <div className="mx-auto max-w-article px-6 lg:px-12">
             <FadeIn>
-              <div className="bg-[#121212] text-white rounded-3xl p-8 md:p-12 lg:p-16 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-accent/10 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
-
-                <div className="relative z-10">
-                  <Tag text="Warum ein System?" />
-                  <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] mb-4 mt-6">
-                    KI-Sichtbarkeit entsteht nicht durch <span className="text-gray-500">einen einzelnen Hebel.</span>
+              <div className="grid gap-stack lg:grid-cols-[260px_1fr] lg:gap-x-stack">
+                <div>
+                  <p className="text-micro uppercase tracking-eyebrow text-brand-line">Warum ein System?</p>
+                  <h2 className="mt-flow text-subheading md:text-heading font-semibold lg:text-subheading">
+                    KI-Sichtbarkeit entsteht nicht durch <span className="text-brand-line">einen einzelnen Hebel.</span>
                   </h2>
-                  <p className="text-gray-400 text-lg mb-12 max-w-2xl">
+                </div>
+                <div>
+                  <p className="text-body text-brand-line">
                     KI-Systeme bewerten Klarheit, Technik und Autorität gleichzeitig. Nur wenn alle drei Säulen stimmen, wirst du empfohlen.
                   </p>
-
-                  <div className="grid sm:grid-cols-3 gap-8">
-                    {DIFFERENTIATORS.map((item, index) => {
-                      const Icon = item.icon;
-                      return (
-                        <FadeIn key={index} delay={index * 0.1}>
-                          <div>
-                            <Icon className="w-8 h-8 text-brand-accent mb-4" />
-                            <h3 className="text-lg font-bold mb-2">{item.title}</h3>
-                            <p className="text-gray-400 text-sm leading-relaxed">{item.description}</p>
-                          </div>
-                        </FadeIn>
-                      );
-                    })}
+                  <div className="mt-flow">
+                    {PILLARS.map((pillar) => (
+                      <div key={pillar.title} className="flex gap-flow border-t border-white/15 py-3">
+                        <span className="w-8 shrink-0 pt-1 text-micro tabular-nums text-brand-accent">{pillar.n}</span>
+                        <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-flow">
+                          <h3 className="w-28 shrink-0 text-lead font-semibold">{pillar.title}</h3>
+                          <p className="text-meta text-brand-line">{pillar.description}</p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -680,125 +565,98 @@ export default function LeistungenPage() {
           </div>
         </section>
 
-        {/* ========================================
-            BRANCHEN / VERTICALS
-            ======================================== */}
-        <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 border-t border-gray-100">
-          <div className="max-w-6xl mx-auto">
+        {/* ========== BRANCHEN + PLATTFORMEN: two lists, one band ========== */}
+        <section className="border-t border-brand-line py-rule">
+          <div className="mx-auto max-w-article px-6 lg:px-12">
             <FadeIn>
-              <div className="text-center mb-14">
-                <Tag text="Für deine Branche" />
-                <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4 mt-6">
-                  KI-Sichtbarkeit für <span className="text-brand-accent">deine Branche</span>
-                </h2>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                  Jede Branche hat eigene Suchmuster, Kundenfragen und Wettbewerber. Finde heraus, wie KI-Sichtbarkeit in deinem Bereich funktioniert.
-                </p>
+              <div className="grid gap-block lg:grid-cols-12 lg:gap-x-rule">
+                <div className="lg:col-span-7">
+                  <h2 className="text-subheading md:text-heading font-semibold text-black">
+                    KI-Sichtbarkeit für <span className="text-brand-accent-ink">deine Branche</span>
+                  </h2>
+                  <p className="mt-flow max-w-measure text-body text-brand-muted">
+                    Jede Branche hat eigene Suchmuster, Kundenfragen und Wettbewerber. Der Leitfaden zu deiner zeigt, welche Fragen dein Markt an KI stellt.
+                  </p>
+                  <div className="mt-stack sm:grid sm:grid-cols-2 sm:gap-x-stack">
+                    {VERTICALS.map((vertical) => (
+                      <Link key={vertical.href} href={vertical.href} className={linkBase}>
+                        <div>
+                          <h3 className="text-body font-semibold text-brand-text group-hover:text-brand-accent-ink">{vertical.title}</h3>
+                          <p className="mt-0.5 text-meta text-brand-subtle">{vertical.description}</p>
+                        </div>
+                        <ArrowRightIcon className="mt-1.5 w-3.5 h-3.5 shrink-0 text-brand-subtle group-hover:text-brand-accent-ink" />
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="lg:col-span-5">
+                  <h2 className="text-subheading md:text-heading font-semibold text-black">
+                    Sichtbar auf <span className="text-brand-accent-ink">jeder KI-Plattform</span>
+                  </h2>
+                  <p className="mt-flow text-body text-brand-muted">
+                    Jede Plattform wählt ihre Quellen anders aus. Hier steht, wie du auf welcher erscheinst.
+                  </p>
+                  <div className="mt-stack">
+                    {PLATFORMS.map((platform) => (
+                      <Link key={platform.href} href={platform.href} className={linkBase}>
+                        <div>
+                          <h3 className="text-body font-semibold text-brand-text group-hover:text-brand-accent-ink">{platform.name}</h3>
+                          <p className="mt-0.5 text-meta text-brand-subtle">{platform.description}</p>
+                        </div>
+                        <ArrowRightIcon className="mt-1.5 w-3.5 h-3.5 shrink-0 text-brand-subtle group-hover:text-brand-accent-ink" />
+                      </Link>
+                    ))}
+                  </div>
+                </div>
               </div>
             </FadeIn>
-
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {VERTICALS.map((vertical, index) => (
-                <FadeIn key={index} delay={index * 0.06}>
-                  <Link
-                    href={vertical.href}
-                    className="group block bg-white rounded-xl border border-gray-100 p-6 hover:border-brand-accent/30 hover:shadow-md transition-all"
-                  >
-                    <h3 className="text-lg font-semibold text-brand-text mb-2 group-hover:text-brand-accent transition-colors">
-                      {vertical.title}
-                    </h3>
-                    <p className="text-sm text-gray-600 leading-relaxed mb-3">{vertical.description}</p>
-                    <span className="text-sm font-medium text-brand-accent flex items-center gap-1 group-hover:gap-2 transition-all">
-                      Leitfaden lesen
-                      <ArrowRightIcon className="w-3 h-3" />
-                    </span>
-                  </Link>
-                </FadeIn>
-              ))}
-            </div>
           </div>
         </section>
 
-        {/* ========================================
-            PLATTFORMEN
-            ======================================== */}
-        <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20">
-          <div className="max-w-6xl mx-auto">
+        {/* ========== CLOSE: a face instead of a trust claim ========== */}
+        <section className="border-t border-brand-line py-rule">
+          <div className="mx-auto max-w-article px-6 lg:px-12">
             <FadeIn>
-              <div className="text-center mb-14">
-                <Tag text="Plattformen" />
-                <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4 mt-6">
-                  Sichtbar auf <span className="text-brand-accent">jeder KI-Plattform</span>
-                </h2>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                  Jede Plattform funktioniert anders. Erfahre, wie du auf den wichtigsten KI-Systemen als Quelle erscheinst.
-                </p>
-              </div>
-            </FadeIn>
+              <div className="grid items-center gap-block lg:grid-cols-12 lg:gap-x-rule">
+                <div className="lg:col-span-4">
+                  <img
+                    src="/image/leistungen/vadim-shchepin-720.webp"
+                    srcSet="/image/leistungen/vadim-shchepin-360.webp 360w, /image/leistungen/vadim-shchepin-720.webp 720w"
+                    sizes="(min-width: 1024px) 340px, 60vw"
+                    width={720}
+                    height={720}
+                    loading="lazy"
+                    decoding="async"
+                    alt="Vadim Shchepin, Gründer von aiseo.hamburg"
+                    className="w-40 rounded-card border border-brand-line object-cover sm:w-56 lg:w-full"
+                  />
+                  <p className="mt-3 text-meta text-brand-subtle">
+                    Vadim Shchepin, aiseo.hamburg. Du sprichst mit der Person, die auch umsetzt.
+                  </p>
+                </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-              {PLATFORMS.map((platform, index) => (
-                <FadeIn key={index} delay={index * 0.06}>
-                  <Link
-                    href={platform.href}
-                    className="group block bg-white rounded-xl border border-gray-100 p-6 hover:border-brand-accent/30 hover:shadow-md transition-all text-center"
-                  >
-                    <h3 className="text-xl font-bold text-brand-text mb-2 group-hover:text-brand-accent transition-colors">
-                      {platform.name}
-                    </h3>
-                    <p className="text-sm text-gray-600 leading-relaxed mb-3">{platform.description}</p>
-                    <span className="text-sm font-medium text-brand-accent flex items-center justify-center gap-1 group-hover:gap-2 transition-all">
-                      Mehr erfahren
-                      <ArrowRightIcon className="w-3 h-3" />
-                    </span>
-                  </Link>
-                </FadeIn>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ========================================
-            CTA SECTION
-            ======================================== */}
-        <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 border-t border-gray-100">
-          <div className="max-w-[900px] mx-auto text-center">
-            <FadeIn>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-4">
-                Welche Leistung passt zu dir?
-              </h2>
-              <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-                In 15 Minuten klären wir, wo du stehst und welche Maßnahmen den größten Hebel haben. Kostenlos und unverbindlich.
-              </p>
-
-              <div className="mb-8">
-                <a
-                  href={`tel:${PHONE_NUMBER}`}
-                  className="text-3xl lg:text-4xl font-bold text-brand-accent hover:text-brand-accent/80 transition-colors inline-block"
-                >
-                  {PHONE_DISPLAY}
-                </a>
-                <p className="text-sm text-gray-500 mt-2">Kostenloser 15-Minuten-Call</p>
-              </div>
-
-              <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-                <Button href="/ai-sichtbarkeit-now" primary text="KI-Sichtbarkeit prüfen" className="!py-4 !px-8" />
-                <Button href="/contact" text="Kontakt aufnehmen" className="!py-4 !px-8" />
-              </div>
-
-              <div className="flex items-center justify-center gap-4 text-sm text-gray-500">
-                <span className="flex items-center gap-2">
-                  <CheckIcon className="w-4 h-4 text-brand-accent" />
-                  Kostenlos
-                </span>
-                <span className="flex items-center gap-2">
-                  <CheckIcon className="w-4 h-4 text-brand-accent" />
-                  Unverbindlich
-                </span>
-                <span className="flex items-center gap-2">
-                  <CheckIcon className="w-4 h-4 text-brand-accent" />
-                  Direkt vom Experten
-                </span>
+                <div className="lg:col-span-8">
+                  <h2 className="text-subheading md:text-heading lg:text-title font-semibold text-black">Welche Leistung passt zu dir?</h2>
+                  <p className="mt-flow max-w-measure text-lead text-brand-muted">
+                    In 15 Minuten klären wir, wo du stehst und welche Maßnahmen den größten Hebel haben.
+                  </p>
+                  <a href={`tel:${PHONE_NUMBER}`} className="mt-stack inline-block text-heading font-semibold tabular-nums text-brand-accent-ink hover:underline">
+                    {PHONE_DISPLAY}
+                  </a>
+                  <div className="mt-stack flex flex-col gap-4 sm:flex-row">
+                    <Button href="/ai-sichtbarkeit-now" primary text="KI-Sichtbarkeit prüfen" className="!py-4 !px-8" />
+                    <Button href="/contact" text="Kontakt aufnehmen" className="!py-4 !px-8" />
+                  </div>
+                  <p className="mt-flow flex flex-wrap items-center gap-x-4 gap-y-2 text-meta text-brand-subtle">
+                    {['Kostenlos', 'Unverbindlich', 'Direkt vom Experten'].map((item) => (
+                      <span key={item} className="flex items-center gap-2">
+                        <CheckIcon className="w-3.5 h-3.5 text-brand-accent-ink" />
+                        {item}
+                      </span>
+                    ))}
+                  </p>
+                </div>
               </div>
             </FadeIn>
           </div>

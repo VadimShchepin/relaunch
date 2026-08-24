@@ -4,13 +4,9 @@ import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Button } from "@/components/ui/Button";
-import { CheckIcon, ArrowRightIcon, OpenAIIcon } from "@/components/ui/Icons";
-import { Proof } from "@/components/sections/Proof";
-import { HeroDemo } from "@/components/sections/HeroDemo";
-import {
-  VisibilityCompareVisual,
-  PillarsVisual,
-} from "@/components/sections/ConversionVisuals";
+import { ArrowRightIcon, OpenAIIcon } from "@/components/ui/Icons";
+import { ProofLedger } from "@/components/sections/ProofLedger";
+import { DataChart } from "@/components/ui/DataChart";
 
 type FAQItem = {
   q: string;
@@ -20,34 +16,37 @@ type FAQItem = {
 const MECHANISMS = [
   {
     title: "Trainingsdaten",
-    body: "Vieles, was ChatGPT „weiß“, stammt aus dem Material, mit dem das Modell trainiert wurde. Wer dort oft, klar und im richtigen Zusammenhang vorkommt, wird auch ohne Live-Suche genannt. Das ist der langsame, aber stabile Teil: Er baut sich über Monate auf und hält.",
+    body: "Vieles von dem, was ChatGPT kennt, stammt aus dem Material, mit dem das Modell trainiert wurde. Wer dort oft, klar und im richtigen Zusammenhang vorkommt, wird auch ohne Live-Suche genannt. Der langsame, aber stabile Teil.",
+    speed: "Monate",
   },
   {
     title: "Live-Websuche (Grounding)",
-    body: "Bei aktuellen oder lokalen Fragen sucht ChatGPT im Netz, gestützt auf den Bing-Index, und liest die Treffer aus. Hier zählt, ob deine Seiten gefunden, gecrawlt und sauber verstanden werden. Das ist der schnelle Hebel: Änderungen wirken oft in Wochen, nicht Monaten.",
+    body: "Bei aktuellen oder lokalen Fragen sucht ChatGPT im Netz, gestützt auf den Bing-Index, und liest die Treffer aus. Hier zählt, ob deine Seiten gefunden, gecrawlt und sauber verstanden werden.",
+    speed: "Wochen",
   },
   {
     title: "Zitierte Quellen",
-    body: "Wenn ChatGPT Quellen verlinkt, wählt es Seiten aus, die eine Frage direkt und nachprüfbar beantworten. Definierte Begriffe, benannte Tools und konkrete Zahlen machen eine Seite zitierbar. Genau diese Seiten landen als Beleg unter der Antwort.",
+    body: "Wenn ChatGPT Quellen verlinkt, wählt es Seiten aus, die eine Frage direkt und nachprüfbar beantworten. Definierte Begriffe, benannte Tools und konkrete Zahlen machen eine Seite zitierbar.",
+    speed: "Wochen",
   },
 ];
 
 const STEPS = [
   {
     title: "Zitierbare Inhalte mit klarer Struktur",
-    body: "Wir bauen Seiten, die eine Frage in den ersten Sätzen beantworten und nicht erst nach drei Absätzen Einleitung. Klare Überschriften, kurze Definitionen, beantwortbare Abschnitte. So findet ein Modell die Antwort und kann sie übernehmen.",
+    body: "Seiten, die eine Frage in den ersten Sätzen beantworten und nicht erst nach drei Absätzen Einleitung. Klare Überschriften, kurze Definitionen, beantwortbare Abschnitte. So findet ein Modell die Antwort und kann sie übernehmen.",
   },
   {
     title: "Definierte Begriffe, benannte Tools, echte Zahlen",
-    body: "Das ist das Rezept hinter unserer meistzitierten Seite. Wer Fachbegriffe sauber erklärt, konkrete Tools nennt und mit Benchmark-Zahlen arbeitet, wird von ChatGPT als verlässliche Quelle behandelt. Vage Marketingtexte werden übergangen.",
+    body: "Das Rezept hinter unserer meistzitierten Seite. Wer Fachbegriffe sauber erklärt, konkrete Tools nennt und mit Benchmark-Zahlen arbeitet, wird als verlässliche Quelle behandelt. Vage Marketingtexte werden übergangen.",
   },
   {
     title: "Schema und technische Basis",
-    body: "Strukturierte Daten, saubere Seitenarchitektur und Zugang für KI-Crawler sorgen dafür, dass deine Inhalte überhaupt korrekt eingelesen werden. Ohne diese Basis bleibt der beste Text für die Live-Websuche unsichtbar.",
+    body: "Strukturierte Daten, saubere Seitenarchitektur und Zugang für KI-Crawler sorgen dafür, dass Inhalte überhaupt korrekt eingelesen werden. Ohne diese Basis bleibt der beste Text für die Live-Websuche unsichtbar.",
   },
   {
     title: "Autorität von außen",
-    body: "ChatGPT bewertet nicht nur deine eigene Website. Nennungen auf Branchenseiten, Verzeichnissen und in der Presse, dazu konsistente Unternehmensdaten, geben dem Modell das Vertrauen, deine Marke aktiv zu empfehlen.",
+    body: "ChatGPT bewertet nicht nur deine eigene Website. Nennungen auf Branchenseiten, in Verzeichnissen und in der Presse, dazu konsistente Unternehmensdaten, geben dem Modell das Vertrauen, deine Marke aktiv zu empfehlen.",
   },
 ];
 
@@ -55,36 +54,58 @@ const STATS = [
   {
     value: "+55 %",
     label: "mehr Klicks bei blitz-hamburg.de in 30 Tagen, dazu +61 % Impressionen.",
+    source: "Google Search Console",
     href: "/wissen/chatgpt-seo",
   },
   {
     value: "+847 %",
     label: "KI-Traffic für KinderAlbum, nachdem die Inhalte zitierbar wurden.",
+    source: "Projekt-Analytics",
     href: "/wissen/sichtbarkeit-in-chatgpt",
   },
   {
-    value: "#1",
-    label: "meistzitierte Quelle in Copilot- und Bing-KI-Antworten: unser Leitfaden zum Messen.",
+    value: "248",
+    label: "Citations auf einer einzigen Seite: unser Leitfaden zum Messen, meistzitierte Quelle der Domain.",
+    source: "Bing Webmaster Tools, Export 30.05.2026",
     href: "/wissen/ki-sichtbarkeit-messen",
   },
 ];
 
+/* AI-Page-Stats-Export der Bing Webmaster Tools fuer aiseo.hamburg, Export vom
+   30.05.2026: 415 Citations auf 10 von 42 Seiten. Das ist die Seitenaufteilung
+   desselben Exports, dessen Tagesreihe 420 Zitate zwischen 28.02. und
+   28.05.2026 zaehlt, also kein 30-Tage-Fenster: in den letzten 30 Tagen des
+   Exports liegen nur 382 Zitate. Bing ist relevant, weil das
+   Grounding von ChatGPT ueber den Bing-Index laeuft und weil es die einzige
+   Plattform ist, die Citations exportiert. Dieselben Werte stehen auf
+   /wissen/citation-rate und /wissen/bing-copilot-ki-sichtbarkeit. */
+const CITATION_PAGES = [
+  { label: "/wissen/ki-sichtbarkeit-messen", value: 248 },
+  { label: "/wissen/ki-sichtbarkeit", value: 63 },
+  { label: "/wissen/ki-sichtbarkeit-ecommerce", value: 45 },
+  { label: "/wissen/sichtbarkeit-in-chatgpt", value: 17 },
+  { label: "/wissen/technische-ki-sichtbarkeit", value: 11 },
+  { label: "restliche zitierte Seiten (5)", value: 31 },
+];
+
+const PLATFORMS = ["ChatGPT", "Perplexity", "Claude", "Gemini", "Google AI Overviews"];
+
 const FAQS: FAQItem[] = [
   {
     q: "Wie werde ich von ChatGPT empfohlen?",
-    a: "ChatGPT empfiehlt Marken, die als klare, zitierbare Quelle erkennbar sind. Dafür braucht es drei Dinge: Inhalte, die eine Frage direkt beantworten (mit definierten Begriffen, benannten Tools und konkreten Zahlen), eine technische Basis, über die KI-Crawler deine Seiten sauber einlesen können, und Autoritätssignale von außen wie Nennungen und konsistente Unternehmensdaten. Reine Werbetexte ohne nachprüfbare Substanz werden übergangen. Wir bauen genau diese Substanz auf und prüfen mit Prompt-Tests, ob ChatGPT dich danach nennt.",
+    a: "ChatGPT empfiehlt Marken, die als klare, zitierbare Quelle erkennbar sind. Dafür braucht es drei Dinge: Inhalte, die eine Frage direkt beantworten, mit definierten Begriffen, benannten Tools und konkreten Zahlen, eine technische Basis, über die KI-Crawler deine Seiten sauber einlesen können, und Autoritätssignale von außen wie Nennungen und konsistente Unternehmensdaten. Reine Werbetexte ohne nachprüfbare Substanz werden übergangen.",
   },
   {
     q: "Kann man ChatGPT-Rankings beeinflussen?",
-    a: "ChatGPT hat keine Ranking-Liste wie Google. Es gibt keine Position 1 bis 10, sondern eine Auswahl von wenigen Quellen pro Antwort. Beeinflussen lässt sich, ob deine Marke zu dieser Auswahl gehört. Das geschieht über die Qualität und Struktur deiner Inhalte, über die technische Erreichbarkeit für die Live-Websuche und über die Autorität deiner Marke im Netz. Was nicht funktioniert: clevere Prompts oder Tricks. Die Frage bestimmt nur, was gefragt wird, nicht, welche Quelle ChatGPT als Antwort wählt.",
+    a: "ChatGPT hat keine Ranking-Liste wie Google. Es gibt keine Position 1 bis 10, sondern eine Auswahl von wenigen Quellen pro Antwort. Beeinflussen lässt sich, ob deine Marke zu dieser Auswahl gehört: über Qualität und Struktur der Inhalte, über die technische Erreichbarkeit für die Live-Websuche und über die Autorität deiner Marke im Netz. Was nicht funktioniert: clevere Prompts oder Tricks.",
   },
   {
     q: "Wie lange dauert es, bis ich in ChatGPT auftauche?",
-    a: "Das hängt vom Mechanismus ab. Über die Live-Websuche, bei der ChatGPT aktuelle Fragen mit dem Bing-Index beantwortet, sind erste Veränderungen oft in vier bis acht Wochen sichtbar, sobald deine Seiten gecrawlt und verstanden sind. Über die Trainingsdaten dauert es länger, hier reden wir über mehrere Monate, weil Modelle in Zyklen aktualisiert werden. Der Vorteil: Wer früh als Quelle etabliert ist, wird in späteren Zyklen bestätigt und baut einen Vorsprung auf, den Wettbewerber schwer einholen.",
+    a: "Das hängt vom Mechanismus ab. Über die Live-Websuche, bei der ChatGPT aktuelle Fragen mit dem Bing-Index beantwortet, sind erste Veränderungen oft in vier bis acht Wochen sichtbar, sobald deine Seiten gecrawlt und verstanden sind. Über die Trainingsdaten dauert es länger, hier reden wir über mehrere Monate, weil Modelle in Zyklen aktualisiert werden. Wer früh als Quelle etabliert ist, wird in späteren Zyklen bestätigt.",
   },
   {
     q: "Ist meine Website aktuell in ChatGPT sichtbar?",
-    a: "Das lässt sich testen. Wir fragen ChatGPT (und Perplexity, Claude, Gemini sowie Google AI Overviews) mit den Formulierungen, die deine Kunden tatsächlich nutzen, und schauen, ob deine Marke genannt wird, wer stattdessen empfohlen wird und warum. Diese Bestandsaufnahme machen wir live im kostenlosen 15-Minuten-Call.",
+    a: "Das lässt sich testen. Wir fragen ChatGPT, Perplexity, Claude, Gemini und Google AI Overviews mit den Formulierungen, die deine Kunden tatsächlich nutzen, und schauen, ob deine Marke genannt wird, wer stattdessen empfohlen wird und warum. Diese Bestandsaufnahme machen wir live im kostenlosen 15-Minuten-Call.",
   },
   {
     q: "Was kostet das?",
@@ -92,11 +113,11 @@ const FAQS: FAQItem[] = [
   },
   {
     q: "Ist ChatGPT-Optimierung dasselbe wie GEO?",
-    a: "ChatGPT-Sichtbarkeit ist der sichtbarste Teil einer größeren Disziplin: Generative Engine Optimization (GEO). GEO sorgt dafür, dass eine Marke in den Antworten generativer KI-Systeme genannt und zitiert wird, ChatGPT ist dabei nur eine von mehreren Oberflächen. Verwandt sind die Begriffe AEO (Answer Engine Optimization) und AI SEO. Die Hebel sind dieselben: zitierbare Inhalte, eine saubere technische Basis und Autorität. Wer für ChatGPT richtig aufgestellt ist, wird in Perplexity, Claude, Gemini und Google AI Overviews ebenfalls auffindbar.",
+    a: "ChatGPT-Sichtbarkeit ist der sichtbarste Teil einer größeren Disziplin: Generative Engine Optimization (GEO). GEO sorgt dafür, dass eine Marke in den Antworten generativer KI-Systeme genannt und zitiert wird, ChatGPT ist dabei nur eine von mehreren Oberflächen. Verwandt sind AEO (Answer Engine Optimization) und AI SEO. Die Hebel sind dieselben: zitierbare Inhalte, saubere Technik, Autorität.",
   },
   {
     q: "Gilt das auch für Perplexity und Google AI Overviews?",
-    a: "Ja. Die Grundlagen, also zitierbare Inhalte, saubere Technik und Autorität, wirken auf alle großen KI-Systeme. Perplexity reagiert wegen seiner Live-Suche besonders schnell, Google AI Overviews und ChatGPT folgen den eigenen Crawl- und Trainingszyklen. Wir messen den Fortschritt parallel über alle Plattformen, damit du nicht nur in ChatGPT genannt wirst, sondern überall dort, wo deine Kunden fragen.",
+    a: "Ja. Zitierbare Inhalte, saubere Technik und Autorität wirken auf alle großen KI-Systeme. Perplexity reagiert wegen seiner Live-Suche besonders schnell, Google AI Overviews und ChatGPT folgen den eigenen Crawl- und Trainingszyklen. Wir messen den Fortschritt parallel über alle Plattformen.",
   },
 ];
 
@@ -131,318 +152,326 @@ export default function ChatGptSichtbarkeitPage() {
   };
 
   return (
-    <div className="relative w-full overflow-hidden bg-brand-bg text-brand-text font-sans selection:bg-brand-accent selection:text-white">
+    <div className="relative w-full overflow-x-clip bg-brand-bg text-brand-text font-sans selection:bg-brand-accent selection:text-white">
       <Navbar />
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
-      <main className="min-h-screen bg-[#F7F5F2]">
-        {/* Hero */}
-        <section className="px-6 md:px-12 lg:px-20 pt-32 pb-16 md:pt-40 md:pb-24 max-w-[1000px] mx-auto text-center">
-          <FadeIn>
-            <span className="inline-flex items-center gap-2 rounded-full bg-black/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-gray-600 mb-6">
-              <OpenAIIcon className="w-4 h-4" />
-              ChatGPT Sichtbarkeit
-            </span>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold tracking-[-0.04em] text-black mb-6 leading-[1.05]">
-              In ChatGPT gefunden werden
-            </h1>
-            <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
-              Wenn rund 800 Mio. Menschen ChatGPT um eine Empfehlung bitten, willst du die genannte Antwort sein, nicht die unsichtbare Alternative. Wir machen deine Marke zur Quelle, die ChatGPT empfiehlt.
-            </p>
-          </FadeIn>
-
-          <FadeIn delay={150}>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/ai-sichtbarkeit-now">
-                <Button text="Wirst du in ChatGPT genannt?" primary={true} className="justify-center" />
-              </Link>
-              <Link href="/termin">
-                <Button text="Erstgespräch vereinbaren" primary={false} className="justify-center" />
-              </Link>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={250}>
-            <p className="mt-8 text-sm text-gray-500">
-              Kostenloser 15-Minuten-Call. KI-Sichtbarkeit Berater aus Hamburg. Gemessen mit echten Prompt-Tests.
-            </p>
-          </FadeIn>
-
-          <FadeIn delay={350}>
-            <HeroDemo
-              className="mt-12 max-w-[520px] mx-auto"
-              caption="Echtes Beispiel: So sieht es aus, wenn eine Marke in der KI-Antwort genannt wird."
-            />
-          </FadeIn>
-        </section>
-
-        {/* Warum ChatGPT-Sichtbarkeit zählt */}
-        <section className="px-6 md:px-12 lg:px-20 py-16 md:py-20 bg-white">
-          <div className="max-w-[800px] mx-auto">
-            <FadeIn>
-              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-black mb-8">
-                Warum ChatGPT-Sichtbarkeit zählt
-              </h2>
-            </FadeIn>
-            <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
-              <FadeIn delay={100}>
-                <p>
-                  Immer mehr Menschen googeln nicht mehr, sie fragen. Statt zehn blaue Links und selbst vergleichen, bekommen sie von ChatGPT eine fertige Empfehlung mit zwei bis fünf Namen. Wer in dieser kurzen Liste fehlt, kommt im Entscheidungsprozess gar nicht erst vor.
+      <main>
+        {/* ========== HERO: linksbuendige Lesespalte. Im rechten Kanal lief bis
+            Runde 3 eine nachgebaute KI-Antwort mit erfundenen Quell-Domains
+            (datenschutz-blog.de, edu-tools.de, treatwell.de). Wer Messung von
+            Citations verkauft, darf keine erfundene Quellenzeile zeigen. Die
+            echten Citation-Zahlen stehen weiter unten, mit Quelle und
+            Exportdatum. ========== */}
+        <section className="pt-28 pb-block lg:pt-32">
+          <div className="mx-auto grid max-w-article gap-block px-6 lg:grid-cols-12 lg:gap-x-rule lg:px-12">
+            <div className="lg:col-span-8">
+              <FadeIn>
+                <p className="inline-flex items-center gap-2 text-micro uppercase tracking-eyebrow text-brand-accent-ink">
+                  <OpenAIIcon className="w-3.5 h-3.5" />
+                  ChatGPT Sichtbarkeit
                 </p>
-              </FadeIn>
-              <FadeIn delay={200}>
-                <p>
-                  Und diese Empfehlungen sind nicht harmlos. Wer ChatGPT fragt, hat oft schon eine konkrete Absicht und handelt nach der Antwort: klickt auf den genannten Anbieter, schreibt ihn an, kauft. Eine Nennung in ChatGPT ist deshalb kein Eitelkeitswert, sondern ein Vertriebskanal.
+                <h1 className="mt-flow text-heading sm:text-title xl:text-display font-semibold text-black">
+                  In ChatGPT <span className="text-brand-accent">gefunden werden</span>
+                </h1>
+                <p className="mt-flow max-w-measure text-lead text-brand-muted">
+                  OpenAI nennt für Oktober 2025 rund 800 Millionen Menschen, die ChatGPT wöchentlich nutzen. Wenn sie nach einer Empfehlung fragen, willst du die genannte Antwort sein, nicht die unsichtbare Alternative.
                 </p>
-              </FadeIn>
-              <FadeIn delay={300}>
-                <p className="font-semibold text-black">
-                  Die Frage ist nicht mehr, ob deine Kunden KI nutzen. Die Frage ist, ob ChatGPT dich nennt, wenn sie es tun.
-                </p>
-              </FadeIn>
-              <FadeIn delay={400}>
-                <p>
-                  Die Disziplin dahinter heißt Generative Engine Optimization (GEO), oft auch Answer Engine Optimization (AEO) oder AI SEO genannt. ChatGPT-Sichtbarkeit ist der sichtbarste Teil davon. Dieselbe Arbeit macht dich auch in Perplexity, Claude, Gemini und Google AI Overviews auffindbar.
-                </p>
-              </FadeIn>
-              <FadeIn delay={500}>
-                <div className="mt-10 rounded-card border border-gray-100 bg-[#F7F5F2] p-6 md:p-8">
-                  <VisibilityCompareVisual className="w-full max-w-[480px] mx-auto" />
+                <div className="mt-stack flex flex-col gap-4 sm:flex-row">
+                  <Button href="/ai-sichtbarkeit-now" primary text="Wirst du in ChatGPT genannt?" className="!py-4 !px-8" />
+                  <Button href="/termin" text="Erstgespräch vereinbaren" className="!py-4 !px-8" />
                 </div>
+                <p className="mt-flow text-meta text-brand-subtle">
+                  Kostenloser 15-Minuten-Call. KI-Sichtbarkeit Berater aus Hamburg. Gemessen mit echten Prompt-Tests.
+                </p>
               </FadeIn>
             </div>
           </div>
         </section>
 
-        {/* Wie ChatGPT entscheidet */}
-        <section className="px-6 md:px-12 lg:px-20 py-16 md:py-20">
-          <div className="max-w-[1100px] mx-auto">
+        {/* ========== WARUM: dichte Lesespalte, ein typografischer Anker statt
+            des SVG-Schemas, dessen Beschriftung auf 390px bei 7px landete. ========== */}
+        <section className="border-t border-brand-line py-rule">
+          <div className="mx-auto max-w-article px-6 lg:px-12">
             <FadeIn>
-              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-black mb-4">
-                Wie ChatGPT entscheidet, wen es empfiehlt
-              </h2>
-              <p className="text-lg text-gray-600 mb-12 max-w-2xl">
-                ChatGPT zieht seine Empfehlungen aus drei Quellen. Wer alle drei bedient, wird zuverlässig genannt.
-              </p>
-            </FadeIn>
-            <div className="grid md:grid-cols-3 gap-6">
-              {MECHANISMS.map((m, i) => (
-                <FadeIn key={m.title} delay={100 + i * 100}>
-                  <div className="bg-white rounded-card border border-gray-100 p-7 h-full">
-                    <div className="flex items-center gap-3 mb-4">
-                      <span className="w-9 h-9 rounded-full bg-brand-accent/10 text-brand-accent flex items-center justify-center flex-shrink-0">
-                        <CheckIcon className="w-5 h-5" />
-                      </span>
-                      <h3 className="text-lg font-semibold text-black">{m.title}</h3>
-                    </div>
-                    <p className="text-gray-600 leading-relaxed text-[15px]">{m.body}</p>
-                  </div>
-                </FadeIn>
-              ))}
-            </div>
+              <div className="grid gap-stack lg:grid-cols-[260px_1fr] lg:gap-x-stack">
+                <div>
+                  <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Der Kanal</p>
+                  <h2 className="mt-1 text-subheading md:text-heading font-semibold text-black lg:text-subheading">
+                    Warum ChatGPT-Sichtbarkeit zählt
+                  </h2>
+                </div>
 
-            <FadeIn delay={400}>
-              <div className="mt-10 rounded-card border border-gray-100 bg-[#F7F5F2] p-6 md:p-8 max-w-[640px] mx-auto">
-                <PillarsVisual className="w-full" />
+                <div className="max-w-measure text-body text-brand-muted">
+                  <p>
+                    Immer mehr Menschen googeln nicht mehr, sie fragen. Statt zehn blauer Links zum Selbstvergleichen bekommen sie von ChatGPT eine fertige Empfehlung mit zwei bis fünf Namen. Wer in dieser kurzen Liste fehlt, kommt im Entscheidungsprozess gar nicht erst vor.
+                  </p>
+                  <p className="mt-flow">
+                    Diese Empfehlungen sind nicht harmlos. Wer ChatGPT fragt, hat oft schon eine konkrete Absicht und handelt nach der Antwort: klickt auf den genannten Anbieter, schreibt ihn an, kauft. Eine Nennung ist deshalb kein Eitelkeitswert, sondern ein Vertriebskanal.
+                  </p>
+                  <p className="mt-stack border-t border-brand-edge pt-4 text-subheading font-semibold text-brand-text">
+                    Die Frage ist nicht mehr, ob deine Kunden KI nutzen. Die Frage ist, ob ChatGPT dich nennt, wenn sie es tun.
+                  </p>
+                  <p className="mt-flow">
+                    Die Disziplin dahinter heißt Generative Engine Optimization (GEO), oft auch Answer Engine Optimization (AEO) oder AI SEO. ChatGPT-Sichtbarkeit ist der sichtbarste Teil davon. Dieselbe Arbeit macht dich auch in Perplexity, Claude, Gemini und Google AI Overviews auffindbar.{' '}
+                    <Link href="/geo-optimierung" className="font-medium text-brand-accent-ink underline decoration-brand-accent/50 underline-offset-4">
+                      Was GEO umfasst
+                    </Link>
+                  </p>
+                </div>
               </div>
             </FadeIn>
           </div>
         </section>
 
-        {/* Was wir konkret tun */}
-        <section className="px-6 md:px-12 lg:px-20 py-16 md:py-20 bg-white">
-          <div className="max-w-[900px] mx-auto">
+        {/* ========== MECHANIK: drei Zeilen mit Wirkzeit, statt drei Karten und
+            eines zweiten SVG-Schemas. ========== */}
+        <section className="border-t border-brand-line py-rule">
+          <div className="mx-auto max-w-article px-6 lg:px-12">
             <FadeIn>
-              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-black mb-4">
-                Was wir konkret tun
-              </h2>
-              <p className="text-lg text-gray-600 mb-12 max-w-2xl">
-                Vier Bausteine, die aus einer übergangenen Website eine Marke machen, die ChatGPT empfiehlt.
-              </p>
-            </FadeIn>
-            <div className="space-y-5">
-              {STEPS.map((step, i) => (
-                <FadeIn key={step.title} delay={100 + i * 80}>
-                  <div className="flex gap-5 bg-[#F7F5F2] rounded-card p-6 md:p-7">
-                    <span className="w-9 h-9 rounded-full bg-black text-white flex items-center justify-center text-sm font-bold flex-shrink-0">
-                      {i + 1}
-                    </span>
-                    <div>
-                      <h3 className="text-lg font-semibold text-black mb-2">{step.title}</h3>
-                      <p className="text-gray-600 leading-relaxed">{step.body}</p>
-                    </div>
+              <div className="grid gap-stack lg:grid-cols-[260px_1fr] lg:gap-x-stack">
+                <div>
+                  <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Mechanik</p>
+                  <h2 className="mt-1 text-subheading md:text-heading font-semibold text-black lg:text-subheading">
+                    Wie ChatGPT entscheidet, wen es empfiehlt
+                  </h2>
+                  <p className="mt-flow text-meta text-brand-muted">
+                    Drei Quellen. Wer alle drei bedient, wird zuverlässig genannt.
+                  </p>
+                </div>
+
+                <div>
+                  <div className="hidden lg:grid lg:grid-cols-[1fr_120px] lg:gap-x-flow">
+                    <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Quelle</p>
+                    <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Wirkt in</p>
                   </div>
-                </FadeIn>
-              ))}
-            </div>
-            <FadeIn delay={500}>
-              <p className="mt-10 text-base text-gray-600 leading-relaxed">
-                Tiefer einsteigen? Lies, wie{" "}
-                <Link href="/wissen/sichtbarkeit-in-chatgpt" className="text-brand-accent font-semibold underline underline-offset-2 hover:text-black transition-colors">
-                  Sichtbarkeit in ChatGPT
-                </Link>{" "}
-                entsteht, was hinter{" "}
-                <Link href="/wissen/chatgpt-seo" className="text-brand-accent font-semibold underline underline-offset-2 hover:text-black transition-colors">
-                  ChatGPT SEO
-                </Link>{" "}
-                steckt, oder schau dir die{" "}
-                <Link href="/hamburg/chatgpt-optimierung" className="text-brand-accent font-semibold underline underline-offset-2 hover:text-black transition-colors">
-                  ChatGPT Optimierung für Hamburg
-                </Link>{" "}
-                an.
-              </p>
+                  <div className="mt-2">
+                    {MECHANISMS.map((m, i) => (
+                      <div key={m.title} className="grid gap-y-1 border-t border-brand-edge py-3 lg:grid-cols-[1fr_120px] lg:gap-x-flow">
+                        <div>
+                          <h3 className="flex items-baseline gap-2 text-lead font-semibold text-brand-text">
+                            <span className="text-micro tabular-nums text-brand-subtle">{`0${i + 1}`}</span>
+                            {m.title}
+                          </h3>
+                          <p className="max-w-measure text-meta text-brand-muted">{m.body}</p>
+                        </div>
+                        <p className="text-micro text-brand-subtle lg:pt-1.5">{m.speed}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </FadeIn>
           </div>
         </section>
 
-        {/* So messen wir */}
-        <section className="px-6 md:px-12 lg:px-20 py-16 md:py-20">
-          <div className="max-w-[900px] mx-auto">
+        {/* ========== LEISTUNG: vier Zeilen. ========== */}
+        <section className="border-t border-brand-line py-rule">
+          <div className="mx-auto max-w-article px-6 lg:px-12">
             <FadeIn>
-              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-black mb-6">
-                So messen wir
-              </h2>
+              <div className="grid gap-stack lg:grid-cols-[260px_1fr] lg:gap-x-stack">
+                <div>
+                  <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Umsetzung</p>
+                  <h2 className="mt-1 text-subheading md:text-heading font-semibold text-black lg:text-subheading">
+                    Was wir konkret tun
+                  </h2>
+                  <p className="mt-flow text-meta text-brand-muted">
+                    Vier Bausteine, die aus einer übergangenen Website eine Marke machen, die ChatGPT empfiehlt.
+                  </p>
+                </div>
+
+                <div>
+                  {STEPS.map((step, i) => (
+                    <div key={step.title} className="flex gap-flow border-t border-brand-edge py-3">
+                      <span className="w-7 shrink-0 pt-1 text-micro tabular-nums text-brand-subtle">{`0${i + 1}`}</span>
+                      <div>
+                        <h3 className="text-lead font-semibold text-brand-text">{step.title}</h3>
+                        <p className="max-w-measure text-meta text-brand-muted">{step.body}</p>
+                      </div>
+                    </div>
+                  ))}
+                  <p className="mt-3 max-w-measure text-meta text-brand-subtle">
+                    Tiefer einsteigen:{' '}
+                    <Link href="/wissen/sichtbarkeit-in-chatgpt" className="font-medium text-brand-accent-ink underline decoration-brand-accent/50 underline-offset-4">
+                      Sichtbarkeit in ChatGPT
+                    </Link>
+                    ,{' '}
+                    <Link href="/wissen/chatgpt-seo" className="font-medium text-brand-accent-ink underline decoration-brand-line underline-offset-4">
+                      ChatGPT SEO
+                    </Link>{' '}
+                    oder{' '}
+                    <Link href="/hamburg/chatgpt-optimierung" className="font-medium text-brand-accent-ink underline decoration-brand-line underline-offset-4">
+                      ChatGPT Optimierung für Hamburg
+                    </Link>
+                    .
+                  </p>
+                </div>
+              </div>
             </FadeIn>
-            <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
-              <FadeIn delay={100}>
-                <p>
-                  KI-Sichtbarkeit ist messbar, auch ohne Ranking-Tabelle. Wir definieren die Fragen, die deine Kunden wirklich stellen, und stellen sie vor und nach der Umsetzung. Über ChatGPT, Perplexity, Claude, Gemini und Google AI Overviews. So siehst du schwarz auf weiß, ob sich deine Nennung verändert und wo du Wettbewerbern den Platz wegnimmst.
-                </p>
-              </FadeIn>
-              <FadeIn delay={200}>
-                <div className="flex flex-wrap gap-3">
-                  {["ChatGPT", "Perplexity", "Claude", "Gemini", "Google AI Overviews"].map((p) => (
-                    <span key={p} className="inline-flex items-center gap-2 rounded-full bg-white border border-gray-200 px-4 py-2 text-sm font-medium text-black">
-                      <CheckIcon className="w-4 h-4 text-brand-accent" />
-                      {p}
-                    </span>
+          </div>
+        </section>
+
+        {/* ========== MESSUNG: Text links, eigene Exportzahlen rechts. Bing ist
+            hier kein Umweg: das Grounding von ChatGPT laeuft ueber den
+            Bing-Index, und nur Bing exportiert Citations. ========== */}
+        <section className="border-t border-brand-line py-rule">
+          <div className="mx-auto max-w-article px-6 lg:px-12">
+            <FadeIn>
+              <div className="grid gap-block lg:grid-cols-12 lg:gap-x-rule">
+                <div className="lg:col-span-7">
+                  <h2 className="text-subheading md:text-heading font-semibold text-black">So messen wir</h2>
+                  <p className="mt-flow max-w-measure text-body text-brand-muted">
+                    KI-Sichtbarkeit ist messbar, auch ohne Ranking-Tabelle. Wir definieren die Fragen, die deine Kunden wirklich stellen, und stellen sie vor und nach der Umsetzung, über alle großen Plattformen. So siehst du, ob sich deine Nennung verändert und wo du Wettbewerbern den Platz wegnimmst.
+                  </p>
+                  <ul className="mt-flow flex flex-wrap gap-x-4 gap-y-1.5 border-t border-brand-line pt-3">
+                    {PLATFORMS.map((p) => (
+                      <li key={p} className="text-meta font-medium text-brand-text">
+                        {p}
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="mt-flow max-w-measure text-body text-brand-muted">
+                    Dazu kommen echte Plattformdaten. Das Grounding von ChatGPT läuft über den Bing-Index, und die Bing Webmaster Tools sind die einzige Konsole, die Citations exportiert. Deshalb ist der Bing-Export unser hartes Zahlenfundament, auch für ChatGPT.
+                  </p>
+                  <p className="mt-flow text-meta text-brand-subtle">
+                    Die Methode liegt offen:{' '}
+                    <Link href="/wissen/ki-sichtbarkeit-messen" className="font-medium text-brand-accent-ink underline decoration-brand-accent/50 underline-offset-4">
+                      KI-Sichtbarkeit messen
+                    </Link>
+                    , die meistzitierte Seite, die wir in KI-Antworten haben.
+                  </p>
+                </div>
+
+                <div className="lg:col-span-5">
+                  <div className="rounded-card border border-brand-line bg-white p-4 sm:p-5">
+                    <DataChart
+                      frame={false}
+                      variant="row"
+                      headingLevel="p"
+                      title="Citations pro Seite"
+                      subject="aiseo.hamburg"
+                      axis={{ title: "Citations" }}
+                      highlight="peak"
+                      points={CITATION_PAGES}
+                      stats={[
+                        { label: "Gesamt", value: "415" },
+                        { label: "Seiten", value: "10 von 42" },
+                        { label: "Top-Seite", value: "59,8 %" },
+                      ]}
+                      table={false}
+                    />
+                  </div>
+                  <p className="mt-3 border-t border-brand-hairline pt-3 text-meta text-brand-subtle">
+                    Keine Glocke, sondern eine steile Kurve: eine Seite trägt fast 60 Prozent aller Citations, 32 weitere Artikel bekamen null. Export vom 30. Mai 2026, AI Page Stats der Bing Webmaster Tools.{' '}
+                    <Link href="/wissen/citation-rate" className="font-medium text-brand-accent-ink underline decoration-brand-accent/50 underline-offset-4">
+                      Citation Rate berechnen
+                    </Link>
+                  </p>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
+        {/* ========== ERGEBNISSE: dunkles Vollband, drei Zeilen mit Quelle. ========== */}
+        <section className="bg-brand-night py-rule text-white">
+          <div className="mx-auto max-w-article px-6 lg:px-12">
+            <FadeIn>
+              <div className="grid gap-stack lg:grid-cols-[260px_1fr] lg:gap-x-stack">
+                <div>
+                  <h2 className="text-subheading md:text-heading font-semibold lg:text-subheading">Ergebnisse</h2>
+                  <p className="mt-flow text-meta text-brand-line">Keine Versprechen, sondern Zahlen aus echten Projekten.</p>
+                  <Link href="/ergebnisse" className="mt-flow inline-flex items-center gap-1.5 border-t border-white/15 pt-3 text-meta font-medium text-brand-accent hover:gap-2.5">
+                    Alle Ergebnisse mit nachprüfbaren Zahlen
+                    <ArrowRightIcon className="w-3 h-3" />
+                  </Link>
+                </div>
+
+                <dl>
+                  {STATS.map((stat) => (
+                    <div key={stat.value} className="grid gap-y-1 border-t border-white/15 py-3 lg:grid-cols-[120px_1fr] lg:gap-x-flow">
+                      <dt className="text-heading font-semibold tabular-nums text-brand-accent">{stat.value}</dt>
+                      <dd>
+                        <p className="max-w-measure text-meta lg:text-body text-brand-line">{stat.label}</p>
+                        <p className="mt-1 flex flex-wrap items-center gap-x-3 text-micro text-white/50">
+                          {stat.source}
+                          <Link href={stat.href} className="font-medium text-brand-accent hover:underline">
+                            Mehr lesen
+                          </Link>
+                        </p>
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
+        {/* ========== BELEGE: dieselben sechs Kundenergebnisse wie in der
+            animierten <Proof />-Sektion der Startseite, hier als Tabelle.
+            Die GSAP-Fassung brauchte auf dieser Seite 6.300px Scroll fuer 33
+            Woerter; diese braucht rund 600px und sagt mehr. ========== */}
+        <ProofLedger />
+
+        {/* ========== FAQ: zwei Spalten, Hairlines. ========== */}
+        <section className="border-t border-brand-line py-rule">
+          <div className="mx-auto max-w-article px-6 lg:px-12">
+            <FadeIn>
+              <div className="grid gap-stack lg:grid-cols-[260px_1fr] lg:gap-x-stack">
+                <h2 className="text-subheading md:text-heading font-semibold text-black lg:text-subheading">
+                  Häufige Fragen zur ChatGPT-Sichtbarkeit
+                </h2>
+                <div className="sm:grid sm:grid-cols-2 sm:gap-x-stack">
+                  {FAQS.map((item) => (
+                    <div key={item.q} className="border-t border-brand-line py-3">
+                      <h3 className="text-body font-semibold text-brand-text">{item.q}</h3>
+                      <p className="mt-1 text-meta text-brand-muted">{item.a}</p>
+                    </div>
                   ))}
                 </div>
-              </FadeIn>
-              <FadeIn delay={300}>
-                <p>
-                  Wie genau wir das aufsetzen, haben wir offengelegt. Die Methode steht in unserem Leitfaden{" "}
-                  <Link href="/wissen/ki-sichtbarkeit-messen" className="text-brand-accent font-semibold underline underline-offset-2 hover:text-black transition-colors">
-                    KI-Sichtbarkeit messen
-                  </Link>
-                  , der meistzitierten Seite, die wir in KI-Antworten haben.
-                </p>
-              </FadeIn>
-            </div>
-          </div>
-        </section>
-
-        {/* Ergebnisse */}
-        <section className="px-6 md:px-12 lg:px-20 py-16 md:py-20 bg-[#121212] text-white">
-          <div className="max-w-[1100px] mx-auto">
-            <FadeIn>
-              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4">
-                Ergebnisse
-              </h2>
-              <p className="text-lg text-gray-300 mb-12 max-w-2xl">
-                Keine Versprechen, sondern Zahlen aus echten Projekten.
-              </p>
-            </FadeIn>
-            <div className="grid md:grid-cols-3 gap-6">
-              {STATS.map((stat, i) => (
-                <FadeIn key={stat.value} delay={100 + i * 100}>
-                  <Link
-                    href={stat.href}
-                    className="group block h-full rounded-card border border-white/10 bg-white/5 p-7 transition-colors hover:bg-white/10"
-                  >
-                    <span className="text-4xl md:text-5xl font-semibold tracking-tight text-brand-accent block mb-3">
-                      {stat.value}
-                    </span>
-                    <p className="text-gray-300 leading-relaxed text-[15px]">{stat.label}</p>
-                    <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-white">
-                      Mehr lesen
-                      <ArrowRightIcon className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                    </span>
-                  </Link>
-                </FadeIn>
-              ))}
-            </div>
-            <FadeIn delay={400}>
-              <div className="mt-10">
-                <Link
-                  href="/ergebnisse"
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-brand-accent hover:text-white transition-colors group"
-                >
-                  Alle Ergebnisse mit nachprüfbaren Zahlen ansehen
-                  <ArrowRightIcon className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                </Link>
               </div>
             </FadeIn>
           </div>
         </section>
 
-        {/* Echte Belege, animiert */}
-        <Proof />
-
-        {/* FAQ */}
-        <section className="px-6 md:px-12 lg:px-20 py-16 md:py-24">
-          <div className="max-w-[900px] mx-auto">
+        {/* ========== ABSCHLUSS ========== */}
+        <section className="border-t border-brand-line py-rule">
+          <div className="mx-auto max-w-article px-6 lg:px-12">
             <FadeIn>
-              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-black mb-10">
-                Häufige Fragen zur ChatGPT-Sichtbarkeit
-              </h2>
-            </FadeIn>
-            <div className="space-y-8">
-              {FAQS.map((item, idx) => (
-                <FadeIn key={idx} delay={idx * 60}>
-                  <article className="border-b border-black/10 pb-8 last:border-b-0 last:pb-0">
-                    <h3 className="text-lg md:text-xl font-semibold text-black tracking-tight mb-3">
-                      {item.q}
-                    </h3>
-                    <p className="text-gray-700 text-base leading-relaxed">{item.a}</p>
-                  </article>
-                </FadeIn>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Final CTA */}
-        <section className="px-6 md:px-12 lg:px-20 py-16 md:py-20 border-t border-black/10">
-          <div className="max-w-[900px] mx-auto text-center">
-            <FadeIn>
-              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-black mb-4">
-                Lass uns prüfen, ob ChatGPT dich nennt
-              </h2>
-              <p className="text-lg text-gray-700 mb-8 max-w-xl mx-auto">
-                Starte mit dem kostenlosen 15-Minuten-Call. Du erfährst, ob du in ChatGPT genannt wirst, wer stattdessen empfohlen wird und welche drei Hebel am meisten bringen.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/termin">
-                  <Button text="Kostenlosen 15-Min-Call buchen" primary={true} className="justify-center" />
-                </Link>
-                <Link href="/contact">
-                  <Button text="Lieber schreiben" primary={false} className="justify-center" />
-                </Link>
+              <div className="grid gap-block lg:grid-cols-12 lg:gap-x-rule">
+                <div className="lg:col-span-6">
+                  <h2 className="text-subheading md:text-heading lg:text-title font-semibold text-black">
+                    Lass uns prüfen, ob ChatGPT dich nennt
+                  </h2>
+                </div>
+                <div className="lg:col-span-6">
+                  <p className="max-w-measure text-lead text-brand-muted">
+                    Starte mit dem kostenlosen 15-Minuten-Call. Du erfährst, ob du in ChatGPT genannt wirst, wer stattdessen empfohlen wird und welche drei Hebel am meisten bringen.
+                  </p>
+                  <div className="mt-stack flex flex-col gap-4 sm:flex-row">
+                    <Button href="/termin" primary text="Kostenlosen 15-Min-Call buchen" className="!py-4 !px-8" />
+                    <Button href="/contact" text="Lieber schreiben" className="!py-4 !px-8" />
+                  </div>
+                  <p className="mt-stack border-t border-brand-line pt-3 text-meta text-brand-subtle">
+                    Pakete und Preise auf der{' '}
+                    <Link href="/preise" className="font-medium text-brand-accent-ink underline decoration-brand-accent/50 underline-offset-4">
+                      Preisseite
+                    </Link>
+                    . Wer dahintersteckt, liest du{' '}
+                    <Link href="/ueber-mich" className="font-medium text-brand-accent-ink underline decoration-brand-line underline-offset-4">
+                      über mich
+                    </Link>
+                    , und was die{' '}
+                    <Link href="/ai-seo-agentur" className="font-medium text-brand-accent-ink underline decoration-brand-line underline-offset-4">
+                      AI SEO Agentur
+                    </Link>{' '}
+                    sonst noch macht.
+                  </p>
+                </div>
               </div>
-              <p className="mt-8 text-sm text-gray-500">
-                Mehr zu Paketen und Preisen auf der{" "}
-                <Link href="/preise" className="text-brand-accent font-semibold underline underline-offset-2 hover:text-black transition-colors">
-                  Preisseite
-                </Link>
-                . Wer dahintersteckt, liest du{" "}
-                <Link href="/ueber-mich" className="text-brand-accent font-semibold underline underline-offset-2 hover:text-black transition-colors">
-                  über mich
-                </Link>
-                , und was die{" "}
-                <Link href="/ai-seo-agentur" className="text-brand-accent font-semibold underline underline-offset-2 hover:text-black transition-colors">
-                  AI SEO Agentur
-                </Link>{" "}
-                sonst noch macht.
-              </p>
             </FadeIn>
           </div>
         </section>

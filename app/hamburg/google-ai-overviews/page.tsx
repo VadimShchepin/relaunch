@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: 'aiseo.hamburg',
     images: [
       {
-        url: '/images/wissen/google-ai-overviews.svg',
+        url: '/og/google-ai-overviews.jpg',
         width: 1200,
         height: 675,
         alt: 'Google AI Overview Antwortbox mit zitierten Quellen für Hamburger Unternehmen',
@@ -42,9 +42,15 @@ export default function GoogleAiOverviewsHamburgPage() {
       title="Google AI Overviews Optimierung Hamburg: Als Quelle in Googles KI-Antwort auftauchen, nicht nur in der blauen Liste"
       description="Google AI Overviews sind der KI-Antwortkasten oben in der Suche, AI Mode ist die dialogorientierte Variante daneben. Beide ziehen ihre Aussagen aus normal indexierten Seiten und nennen mehrere Quellen. Wer dort zitiert wird, gewinnt Sichtbarkeit genau in dem Moment, in dem klassische Klicks wegbrechen. Diese Seite zeigt, wie das für ein Hamburger Unternehmen realistisch funktioniert."
       eyebrow="Google AI Overviews & AI Mode Hamburg"
-      imageSrc="/images/wissen/google-ai-overviews.svg"
-      imageAlt="Google AI Overview Antwortbox, die aiseo.hamburg als Quelle zitiert"
-      imageCaption="Eine AI Overview zitiert laut Pew Research in 88 Prozent der Fälle drei oder mehr Quellen. Das Ziel ist, eine dieser Quellen zu sein."
+      facts={[
+        { label: 'Einstieg', value: '15 Minuten, 0 Euro', href: '/termin' },
+        { label: 'Umsetzung', value: 'ab 1.500 Euro, Festpreis vorab', href: '/preise' },
+        { label: 'Belegt', value: '800 KI-Zitate in 3 Monaten', href: '/ergebnisse' },
+      ]}
+      secondaryCtaHref="/preise"
+      secondaryCtaLabel="Preise ansehen"
+      contactPhone="+49 176 321 94 754"
+      contactNote="Ein Ansprechpartner, keine Agentur-Pipeline. Erstgespräch per Video oder in Hamburg."
       summaryItems={[
         'Die Seite bedient die kaufnahe Suche nach Google-AI-Overviews- und AI-Mode-Optimierung im Raum Hamburg.',
         'Die Methodik folgt Googles eigener Search-Central-Doku, nicht den verbreiteten GEO-Mythen rund um llms.txt oder Spezial-Schema.',
@@ -82,6 +88,64 @@ export default function GoogleAiOverviewsHamburgPage() {
           text: 'Mit Werkzeugen wie SISTRIX, Semrush AI Toolkit oder Ahrefs Brand Radar verfolge ich, wo und wie deine Marke in KI-Antworten auftaucht, statt nur auf den klassischen Sichtbarkeitsindex zu schauen.',
         },
       ]}
+      comparison={{
+        navLabel: 'Mythen',
+        heading: 'Was für Google AI Overviews verkauft wird und was Google selbst schreibt',
+        intro:
+          'Fünf Behauptungen kosten in Hamburger Angeboten regelmäßig Budget. Für jede gibt es eine Aussage in Googles eigener Search-Central-Doku. Die dritte Spalte ist die Arbeit, die stattdessen anfällt.',
+        columns: ['Behauptung im Angebot', 'Googles eigene Aussage', 'Was stattdessen zählt'],
+        rows: [
+          [
+            'Eine llms.txt macht dich KI-sichtbar',
+            'für AI Overviews und AI Mode nicht nötig, keine neuen maschinenlesbaren Dateien',
+            'Indexierung, Crawlbarkeit, Snippet-Freigabe',
+          ],
+          [
+            'Es braucht ein KI-Spezial-Schema',
+            'kein eigener Schema-Typ für KI-Funktionen vorgesehen',
+            'Markup, das den sichtbaren Text abbildet',
+          ],
+          [
+            'KI-Antworten nutzen einen eigenen Index',
+            'dieselben Grundlagen wie die normale Suche',
+            'normale Indexierung der einzelnen Seite',
+          ],
+          [
+            'nosnippet betrifft nur Textausschnitte',
+            'Snippet-Regeln begrenzen auch die Nutzung in KI-Antworten',
+            'nosnippet und max-snippet bewusst setzen',
+          ],
+          [
+            'KI-Sichtbarkeit ist messbar wie ein Ranking',
+            'keine deutschlandspezifische Quellenliste in der Search Console',
+            'Stichproben plus Toolmonitoring, getrennt vom Ranking',
+          ],
+        ],
+        note: 'Vier der fünf Zeilen sind reine Grundlagenarbeit. Das ist die unbequeme Nachricht an jedem AI-Overviews-Angebot: Der teure Teil ist selten neu, er wurde nur nie gemacht.',
+      }}
+      proofData={{
+        variant: 'column',
+        title: 'Anteil der Suchen mit Klick auf ein Ergebnis',
+        subject: 'Pew Research Center, US-Nutzer, März 2025',
+        axis: { unit: ' %', title: 'Suchen mit Klick' },
+        highlight: 1,
+        points: [
+          { label: 'Ergebnisseite ohne KI-Antwort', short: 'ohne KI', value: 15 },
+          { label: 'Ergebnisseite mit KI-Antwort', short: 'mit KI', value: 8 },
+        ],
+        stats: [
+          { label: 'Rückgang', value: 'fast die Hälfte' },
+          { label: 'Spitzenplätze', value: 'bis 79 % Klickverlust (Authoritas)' },
+          { label: 'Quellen pro Antwort', value: 'in 88 % der Fälle drei oder mehr' },
+        ],
+        table: {
+          label: 'Zahlen als Tabelle',
+          heads: ['Ergebnisseite', 'Suchen mit Klick'],
+        },
+        caption:
+          'Pew Research Center hat das Klickverhalten auf Ergebnisseiten mit und ohne KI-Antwort verglichen. Der Klick verschwindet in beiden Fällen mehrheitlich, mit KI-Antwort nur noch schneller. Die verbleibende Frage ist nicht, wie du den Klick zurückholst, sondern ob deine Marke in der Antwort überhaupt genannt wird.',
+        source: { href: '/wissen/ai-overviews-sichtbarkeit', label: 'Ausführlich: Sichtbarkeit in AI Overviews' },
+      }}
       eeatCards={[
         {
           title: 'Googles eigene Quelle, nicht mein Bauchgefühl',
@@ -105,6 +169,11 @@ export default function GoogleAiOverviewsHamburgPage() {
         'Dienstleister und B2B-Anbieter, die in Googles AI Overviews und AI Mode als Quelle genannt werden wollen, nicht nur in der zehnten blauen Zeile.',
         'Teams, die eine ehrliche, an Googles Doku ausgerichtete Vorgehensweise wollen statt eines weiteren Pakets aus llms.txt und Schema-Versprechen.',
       ]}
+      fitNote={{
+        label: 'Merksatz',
+        statement: 'Der Klick kommt nicht zurück. Die Nennung ist verhandelbar.',
+        text: 'Wenn oben eine KI-Antwort steht, klickt laut Pew Research nur noch etwa jeder zwölfte Nutzer auf ein Ergebnis. Dieser Traffic ist weg, unabhängig davon, was du tust. Entschieden wird nur noch, ob dein Name in der Antwort steht.',
+      }}
       processCards={[
         {
           title: 'Prüfen',

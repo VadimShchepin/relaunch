@@ -4,8 +4,48 @@ import { Button } from '@/components/ui/Button';
 import { PlatformIconLoop } from '@/components/ui/PlatformIconLoop';
 import { useState, useEffect } from 'react';
 
+/* ---------------------------------------------------------------------------
+   The fixed header, on all 79 pages.
+
+   It has to hold two things at once.
+
+   1. The floating look. In the homepage hero the two pills sit on the artwork
+      with nothing behind them, and that is the intended first impression. So
+      as long as a page has not been scrolled, the band stays transparent and
+      nothing changes.
+
+   2. Legibility on every other pixel of the site. The band used to be
+      transparent at every scroll position, with body text running visibly
+      through the gap between the two pills: on a phone the wordmark pill
+      covered two words of the paragraph beneath it, on desktop the pill row
+      cut through a section intro. After one line of scrolling the band now
+      becomes an opaque surface with a hairline, and it takes pointer events,
+      so no text is ever read or clicked through it.
+
+   The height is exactly --spacing-navbar (h-navbar, 88px). It used to be 94px
+   (py-6 around a 46px button) while every sticky rail on the site offsets
+   itself by top-navbar = 88px, which clipped stuck rails by 6px. One token,
+   one measured box: #site-navbar is also what app/wissen/WissenList.tsx
+   measures instead of hardcoding the number a third time.
+--------------------------------------------------------------------------- */
+
 export const Navbar: React.FC = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    // One line of scroll is the whole trigger: the pills only need to float
+    // while the hero is still underneath them. Runs once on mount too, because
+    // a reload halfway down a page starts out scrolled.
+    useEffect(() => {
+        const onScroll = () => setIsScrolled(window.scrollY > 8);
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+
+    // An open menu gets the same surface, so the panel hangs off a solid band
+    // instead of off nothing.
+    const solid = isScrolled || isMobileMenuOpen;
 
     // Lock/unlock body scroll when menu opens/closes
     useEffect(() => {
@@ -27,10 +67,23 @@ export const Navbar: React.FC = () => {
 
     return (
         <>
-            <nav className="fixed top-0 left-0 w-full px-6 py-6 z-50 flex justify-between items-center pointer-events-none">
+            <nav
+                id="site-navbar"
+                className={`fixed top-0 left-0 z-50 flex h-navbar w-full items-center justify-between border-b px-6 transition-colors duration-300 ${
+                    solid
+                        ? 'pointer-events-auto border-brand-line bg-brand-bg/95 backdrop-blur-md'
+                        : 'pointer-events-none border-transparent'
+                }`}
+            >
                 {/* Logo */}
                 <a href="/" className="pointer-events-auto" aria-label="Zur Startseite">
-                    <div className="bg-white/90 backdrop-blur-md border border-gray-100 shadow-[0_4px_30px_rgba(0,0,0,0.06)] px-4 py-2 rounded-full transition-all hover:scale-105">
+                    <div
+                        className={`px-4 py-2 rounded-full transition-all hover:scale-105 border ${
+                            solid
+                                ? 'border-transparent'
+                                : 'bg-white/90 backdrop-blur-md border-gray-100 shadow-[0_4px_30px_rgba(0,0,0,0.06)]'
+                        }`}
+                    >
                         <div className="font-bold text-xl tracking-tighter text-black uppercase leading-none">
                             aiseo<span className="text-brand-accent">.</span>
                         </div>
@@ -79,7 +132,9 @@ export const Navbar: React.FC = () => {
             {isMobileMenuOpen && (
                 <div className="fixed inset-0 z-40 lg:hidden">
                     <div className="fixed inset-0 bg-black/20 backdrop-blur-sm cursor-pointer" onClick={closeMobileMenu} aria-label="Close menu" />
-                    <div className="fixed top-20 right-6 bg-white/95 backdrop-blur-md border border-gray-100 shadow-2xl rounded-2xl p-6 min-w-[200px]" onClick={(e) => e.stopPropagation()}>
+                    {/* Hangs off the bottom edge of the band, not 8px behind it:
+                        the band is 88px tall and sits at z-50. */}
+                    <div className="fixed top-navbar right-6 mt-2 bg-white/95 backdrop-blur-md border border-gray-100 shadow-2xl rounded-2xl p-6 min-w-[200px]" onClick={(e) => e.stopPropagation()}>
                         <div className="flex flex-col space-y-4">
                             <a
                                 href="/ai-sichtbarkeit-now"

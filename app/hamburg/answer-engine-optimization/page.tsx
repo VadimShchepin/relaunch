@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description:
       'Kommerzielle Hamburg-Seite für AEO, Antwortmaschinen und strukturierte Kaufintent-Sichtbarkeit.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/wissen/ki-sichtbarkeit.jpg', width: 1200, height: 630, alt: 'Answer Engine Optimization Hamburg' }],
+    images: [{ url: '/og/hamburg-answer-engine-optimization.png', width: 1200, height: 630, alt: 'Answer Engine Optimization Hamburg' }],
   },
   alternates: {
     canonical: 'https://aiseo.hamburg/hamburg/answer-engine-optimization',
@@ -34,9 +34,15 @@ export default function AnswerEngineOptimizationHamburgPage() {
       title="Answer Engine Optimization Hamburg: Damit dein Unternehmen in Antworten landet statt in irgendeinem verwaisten Rankingbericht"
       description="AEO ist der praktische Teil der Entwicklung, die viele Unternehmen erst merken, wenn ihre alten SEO-Reports plötzlich weniger Trost spenden. Nutzer wollen Antworten, nicht nur Ergebnislisten. Wer in Hamburg Dienstleistungen, Beratung oder erklärungsbedürftige Angebote verkauft, sollte deshalb nicht nur über Rankings sprechen, sondern über Antwortfähigkeit."
       eyebrow="Answer Engine Optimization Hamburg"
-      imageSrc="/images/wissen/ki-sichtbarkeit.jpg"
-      imageAlt="AEO für Hamburg"
-      imageCaption="AEO ist kein neues Etikett für dieselbe Arbeit. Es ist die bewusste Optimierung für Antwortmaschinen und Auswahlmomente."
+      facts={[
+        { label: 'Einstieg', value: '15 Minuten, 0 Euro', href: '/termin' },
+        { label: 'Umsetzung', value: 'ab 1.500 Euro, Festpreis vorab', href: '/preise' },
+        { label: 'Belegt', value: '800 KI-Zitate in 3 Monaten', href: '/ergebnisse' },
+      ]}
+      secondaryCtaHref="/preise"
+      secondaryCtaLabel="Preise ansehen"
+      contactPhone="+49 176 321 94 754"
+      contactNote="Ein Ansprechpartner, keine Agentur-Pipeline. Erstgespräch per Video oder in Hamburg."
       summaryItems={[
         'Die Seite bedient den Begriff AEO direkt und verankert ihn lokal für Hamburg.',
         'Sie verbindet SEO, GEO und AISEO mit einem klaren kommerziellen Service-Fokus.',
@@ -66,6 +72,49 @@ export default function AnswerEngineOptimizationHamburgPage() {
           text: 'Hamburger Nachfrage, lokale Leistungsanfragen und regionale Vertrauenssignale werden bewusst eingearbeitet statt generisch über Deutschland gestreut.',
         },
       ]}
+      comparison={{
+        navLabel: 'Kürzel',
+        heading: 'AEO, GEO, LLMO und SEO in einer Tabelle',
+        intro:
+          'Die vier Kürzel werden im Verkaufsgespräch gerne vermischt, weil sich damit dasselbe Paket viermal verkaufen lässt. Sie unterscheiden sich aber im Erfolgsmaß, und genau daran erkennst du, ob ein Angebot messbar ist.',
+        columns: ['Kürzel', 'Ziel', 'Erfolgsmaß', 'Zielsystem', 'Namensfalle im Deutschen'],
+        rows: [
+          [
+            'SEO',
+            'Platz in der Ergebnisliste',
+            'Position und Klicks',
+            'Google, Bing',
+            'keine',
+          ],
+          [
+            'AEO',
+            'in der Antwort genannt werden',
+            'Nennungen pro fester Fragenliste',
+            'ChatGPT, Perplexity, Copilot',
+            'AEO ist im Zollrecht der zugelassene Wirtschaftsbeteiligte',
+          ],
+          [
+            'GEO',
+            'als Quelle zitiert werden',
+            'Citations und Citation Share',
+            'AI Overviews, AI Mode, Copilot',
+            'GEO steht in der Suche für Geoportal, Geografie, Magazin GEO',
+          ],
+          [
+            'LLMO',
+            'im Modellwissen vorkommen',
+            'Erwähnungen ohne Suchmodus',
+            'ChatGPT ohne Suche',
+            'keine',
+          ],
+        ],
+        note: 'Praktisch überlappt die Arbeit zu weiten Teilen. Was nicht überlappt, ist die Messung: Wer AEO verkauft und dir Rankings berichtet, hat das Erfolgsmaß gar nicht gewechselt.',
+      }}
+      proofNote={{
+        label: 'Was hier kein Diagramm ist',
+        statement: 'Zwei der vier Antwortsysteme lassen sich überhaupt nicht auslesen.',
+        text: 'Belegbar sind Citations aus den Bing Webmaster Tools, 800 für diese Website zwischen 15.03. und 13.06.2026, bei durchschnittlich einer zitierten Seite pro Antwort, und KI-Impressionen aus der Search Console. Für ChatGPT ohne Suchmodus und für Perplexity gibt es keine Konsole, also auch keine Kurve. Dort zählt nur ein Protokoll aus wiederholten Prompts im identischen Wortlaut. Ein Diagramm daraus wäre gezeichnete Schätzung.',
+      }}
       eeatCards={[
         {
           title: 'Eigene publizierte Guides',
@@ -89,6 +138,11 @@ export default function AnswerEngineOptimizationHamburgPage() {
         'Anbieter in Hamburg, die über generische Rankings hinaus auch in AI-Antworten und Zusammenfassungen auftauchen wollen.',
         'Teams, die SEO, GEO und AEO nicht mehr als getrennte Silos behandeln wollen.',
       ]}
+      fitNote={{
+        label: 'Merksatz',
+        statement: 'AEO ist erkennbar am Erfolgsmaß, nicht am Leistungskatalog.',
+        text: 'Wenn im Angebot AEO steht und im Bericht Positionen, ist es SEO mit neuem Deckblatt. Der Wechsel ist unbequem, weil die neue Kennzahl binär ist: genannt oder nicht.',
+      }}
       processCards={[
         {
           title: 'Fragen priorisieren',
@@ -115,6 +169,18 @@ export default function AnswerEngineOptimizationHamburgPage() {
         {
           q: 'Brauche ich dafür neue Seiten?',
           a: 'Häufig ja, aber gezielt. Gute AEO-Arbeit bedeutet nicht 30 neue Artikel, sondern die richtigen Money-Pages mit echter Antwortlogik.',
+        },
+        {
+          q: 'Was kostet AEO in Hamburg?',
+          a: 'Der erste Schritt ist ein kostenloses 15-Minuten-Gespräch. Danach ein Umsetzungssprint ab 1.500 Euro netto zum Festpreis oder laufende Betreuung ab 600 Euro netto pro Monat. Den Festpreis nenne ich nach dem Gespräch, weil Aufwand und Wettbewerbslage je Branche stark abweichen.',
+        },
+        {
+          q: 'Wie messe ich AEO, wenn es keine Konsole gibt?',
+          a: 'Über eine feste Liste aus 30 bis 50 Fragen, zu mindestens 70 Prozent ohne deinen Markennamen, immer im gleichen Wortlaut und im gleichen Rhythmus abgefragt. Dazu Citations aus den Bing Webmaster Tools und KI-Impressionen aus der Search Console. Ohne diese Liste ist jede Nennungsquote eine Zahl ohne Nenner.',
+        },
+        {
+          q: 'Brauche ich klassisches SEO weiterhin?',
+          a: 'Ja. Zwei der vier Antwortsysteme greifen auf einen Suchindex zu. Wer dort nicht indexiert ist, kann auch nicht zitiert werden. AEO ersetzt SEO nicht, es hängt daran.',
         },
       ]}
       relatedLinks={[

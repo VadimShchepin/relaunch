@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       'ChatGPT belohnt nicht Rankings, sondern Empfehlungen. Welche Faktoren entscheiden und wie du Inhalte dafür vorbereitest.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/wissen/chatgpt.jpg', width: 1200, height: 630, alt: 'ChatGPT SEO Guide' }],
+    images: [{ url: '/og/wissen-chatgpt-seo.png', width: 1200, height: 630, alt: 'ChatGPT SEO Guide' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -50,14 +50,10 @@ export default function ChatgptSeoPage() {
       title="ChatGPT SEO: So optimierst du Inhalte für Empfehlungen statt Rankings"
       description="Viele suchen nach ChatGPT SEO und meinen eigentlich etwas sehr Konkretes: Wie werde ich in ChatGPT empfohlen? Die Antwort ist kein Trick, sondern eine Mischung aus Klarheit, Quellenvertrauen, Bing-Sichtbarkeit und Content, der nicht klingt wie ein übermüdeter Keyword-Hamster."
       publishedAt="2026-03-19"
-      modifiedAt="2026-03-19"
+      modifiedAt="2026-08-24"
       breadcrumbLabel="ChatGPT SEO"
       eyebrow="ChatGPT"
-      image={{
-        src: '/images/wissen/chatgpt.jpg',
-        alt: 'ChatGPT SEO für Unternehmen',
-        caption: 'ChatGPT SEO bedeutet nicht auf Position 1 zu ranken, sondern als Quelle genannt zu werden.',
-      }}
+      schemaImage="/og/wissen-chatgpt-seo.png"
       summaryItems={[
         'ChatGPT SEO ist kein klassisches Ranking-Spiel, sondern Optimierung für Empfehlungen, Zitate und Markenverständnis.',
         'Du brauchst Sichtbarkeit in zwei Ebenen: in den Trainingsdaten deiner Marke und in der Live-Websuche über Bing.',
@@ -73,7 +69,38 @@ export default function ChatgptSeoPage() {
             'Der Begriff ChatGPT SEO ist technisch unsauber, aber als Suchanfrage komplett logisch. Menschen wollen wissen, wie ihr Unternehmen in ChatGPT auftaucht, wie Empfehlungen entstehen und warum manche Marken genannt werden, während andere nicht vorkommen.',
             'Die Mechanik unterscheidet sich klar von Google. ChatGPT zeigt keine Liste mit zehn blauen Links. Es komprimiert den Markt in wenige Namen, wenige Quellen und wenige Aussagen. Das macht Sichtbarkeit wertvoller, aber auch anspruchsvoller.',
             'Wenn du für ChatGPT optimierst, optimierst du also für Vertrauen, Eindeutigkeit und Zitierbarkeit. Nicht für Keyword-Stapeln. Nicht für Textmassen. Und ganz sicher nicht für den alten SEO-Trickkoffer aus der Mottenkiste.',
+            'Der Begriff selbst verliert dabei an Boden, während die Sache wächst. In unserer Keyword-Analyse über 297 deutsche Suchbegriffe fiel „chatgpt seo“ von 867 auf 323 Suchen pro Monat, während „geo seo“ im selben Zeitraum auf 2.567 stieg. Die Nachfrage wandert von plattform-spezifischen zu plattform-übergreifenden Begriffen. Die Arbeit dahinter bleibt dieselbe.',
           ],
+          chart: {
+            variant: 'column',
+            title: 'Suchvolumen für „chatgpt seo“, Deutschland',
+            axis: { title: 'Suchen pro Monat' },
+            highlight: 'peak',
+            points: [
+              { label: 'Mittel Mai bis Juli 2025', short: 'Mai bis Jul 2025', value: 867 },
+              { label: 'Mittel Februar bis April 2026', short: 'Feb bis Apr 2026', value: 323 },
+            ],
+            stats: [
+              { label: 'Veränderung', value: 'minus 63 Prozent' },
+              { label: 'Verlorene Suchen', value: '544 pro Monat' },
+              { label: 'Gegenbewegung', value: '„geo seo“ auf 2.567' },
+            ],
+            table: { label: 'Zahlen als Tabelle', heads: ['Zeitfenster', 'Suchen pro Monat'] },
+            caption: (
+              <>
+                Der Begriff schrumpft, die Aufgabe nicht: Der Verlust von „chatgpt seo“ taucht fast
+                deckungsgleich im Wachstum der plattform-übergreifenden Begriffe wieder auf. Datenbasis und
+                Methode stehen in der{' '}
+                <a
+                  href="/wissen/aeo-geo-marktanalyse-deutschland-2026"
+                  className="text-brand-accent-ink underline decoration-1 underline-offset-4"
+                >
+                  Marktanalyse Deutschland 2026
+                </a>
+                .
+              </>
+            ),
+          },
         },
         {
           id: 'hebel',

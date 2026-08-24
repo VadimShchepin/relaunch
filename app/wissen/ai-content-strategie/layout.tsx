@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'AI Content Strategie: Inhalte die KI-Systeme zitieren wollen',
   description:
-    'Erfahre, wie du Content erstellst, den ChatGPT, Perplexity und Google AI zitieren. Mit Content-Audit-Checkliste, 7 Strategien und Workflow fur KI-optimierte Inhalte.',
+    'Erfahre, wie du Content erstellst, den ChatGPT, Perplexity und Google AI zitieren. Mit Content-Audit-Checkliste, 7 Strategien und Workflow für KI-optimierte Inhalte.',
   keywords: [
     'ai content strategie',
     'inhalte fur ki',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     url: 'https://aiseo.hamburg/wissen/ai-content-strategie',
     title: 'AI Content Strategie: Inhalte die KI-Systeme zitieren wollen',
     description:
-      'Erfahre, wie du Content erstellst, den ChatGPT, Perplexity und Google AI zitieren. Mit Content-Audit-Checkliste, 7 Strategien und Workflow fur KI-optimierte Inhalte.',
+      'Erfahre, wie du Content erstellst, den ChatGPT, Perplexity und Google AI zitieren. Mit Content-Audit-Checkliste, 7 Strategien und Workflow für KI-optimierte Inhalte.',
     siteName: 'aiseo.hamburg',
     images: [{ url: '/images/wissen/ai-content-strategie/hero-ai-content-strategy.webp', width: 1672, height: 941, alt: 'AI Content Strategie für zitierbare KI-Antworten' }],
   },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'AI Content Strategie: Inhalte die KI-Systeme zitieren wollen',
     description:
-      'Erfahre, wie du Content erstellst, den ChatGPT, Perplexity und Google AI zitieren. Mit Content-Audit-Checkliste, 7 Strategien und Workflow fur KI-optimierte Inhalte.',
+      'Erfahre, wie du Content erstellst, den ChatGPT, Perplexity und Google AI zitieren. Mit Content-Audit-Checkliste, 7 Strategien und Workflow für KI-optimierte Inhalte.',
     images: ['/images/wissen/ai-content-strategie/hero-ai-content-strategy.webp'],
   },
   robots: {

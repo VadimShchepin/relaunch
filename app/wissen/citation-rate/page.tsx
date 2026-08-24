@@ -10,13 +10,7 @@ export default function CitationRatePage() {
       description="Citation Rate klingt nach einer klaren Zahl und ist in der Praxis ein Sammelbegriff für vier verschiedene Metriken. Hier stehen die Definitionen, die Formeln und Messwerte aus zwei echten Bing-Webmaster-Tools-Exporten, statt der übliche Benchmark-Nebel."
       publishedAt="2026-08-22"
       modifiedAt="2026-08-22"
-      image={{
-        src: '/images/wissen/citation-rate/hero.webp',
-        alt: 'Laptop mit Analytics-Dashboard auf einem Holztisch im Morgenlicht',
-        caption: 'Citation Rate ist die Kennzahl, die im Reporting am häufigsten falsch berechnet wird.',
-        width: 1600,
-        height: 800,
-      }}
+      schemaImage="/images/wissen/citation-rate/hero.webp"
       summaryItems={[
         'Citation Rate ist der Anteil der geprüften Prompts, bei denen deine Domain als Quelle in der KI-Antwort auftaucht. Nenner sind Prompts, nicht Impressionen.',
         'Citation Share ist etwas anderes: Microsoft definiert sie offiziell als deinen Anteil an allen Citations, die für dieselbe Grounding Query über alle Websites hinweg ausgespielt werden.',
@@ -27,13 +21,6 @@ export default function CitationRatePage() {
       sections={[
         {
           id: 'definitionen',
-          image: {
-            src: '/images/wissen/citation-rate/definitionen.webp',
-            alt: 'Notizbuch, Brille, Taschenrechner und Kaffee von oben auf einem Holztisch',
-            caption: 'Vier Begriffe, vier Nenner. Wer sie vermischt, vergleicht Quartale, die nichts miteinander zu tun haben.',
-            width: 1000,
-            height: 668,
-          },
           heading: 'Vier Metriken, die alle „Citation Rate“ genannt werden',
           intro:
             'Der Begriff wird in Angeboten, Tool-Dashboards und Agenturreports für vier verschiedene Dinge benutzt. Wer sie nicht trennt, vergleicht Quartale gegen Quartale, die nichts miteinander zu tun haben.',
@@ -67,13 +54,6 @@ export default function CitationRatePage() {
         },
         {
           id: 'nenner-problem',
-          image: {
-            src: '/images/wissen/citation-rate/nenner-problem.webp',
-            alt: 'Aufgeklapptes Notebook mit Diagrammen, Brille und Notizblock von oben',
-            caption: 'Die Prompt-Liste ist der Kern der Kennzahl, nicht das Ergebnis.',
-            width: 1000,
-            height: 667,
-          },
           heading: 'Das Nenner-Problem: warum 40 Prozent nichts bedeuten',
           paragraphs: [
             'Eine Citation Rate von 40 Prozent klingt gut. Sie ist trivial zu erzeugen: Nimm 20 Prompts, die deinen Markennamen enthalten, frag ChatGPT danach, und du landest schnell über 50 Prozent. Nimm stattdessen 100 Prompts, die ein Kunde ohne Vorkenntnis eingeben würde, und derselbe Kunde landet oft bei 2 Prozent.',
@@ -82,6 +62,7 @@ export default function CitationRatePage() {
           ],
           table: {
             headers: ['Prompt-Typ', 'Beispiel', 'Anteil an der Liste', 'Was der Wert aussagt'],
+            emphasis: 2,
             rows: [
               [
                 'Kategorie',
@@ -120,18 +101,33 @@ export default function CitationRatePage() {
         },
         {
           id: 'echte-zahlen',
-          image: {
-            src: '/images/wissen/citation-rate/echte-zahlen.webp',
-            alt: 'Arbeitsplatz mit Notebook und Balkendiagramm auf dem Bildschirm',
-            caption: '415 Citations, davon 248 auf einer einzigen Seite. Beides aus demselben 30-Tage-Fenster.',
-            width: 1000,
-            height: 667,
-          },
           heading: 'Was zwei echte Exporte zeigen',
           intro:
             'Die folgenden Zahlen kommen aus Bing-Webmaster-Tools-Exporten von zwei Domains, die wir selbst betreuen. Sie sind der Grund, warum wir öffentliche Benchmarks nicht mehr zitieren.',
           stat:
             'Auf beiden Domains gewinnt eine einzige Seite den größten Teil aller Citations: 59,8 Prozent bei aiseo.hamburg, 21,3 Prozent bei dsgvoschulfotos.de.',
+          chart: {
+            variant: 'row',
+            title: 'Citations pro Seite, aiseo.hamburg, Export vom 30. Mai 2026',
+            axis: { title: 'Citations' },
+            highlight: 'peak',
+            points: [
+              { label: '/wissen/ki-sichtbarkeit-messen', value: 248 },
+              { label: '/wissen/ki-sichtbarkeit', value: 63 },
+              { label: '/wissen/ki-sichtbarkeit-ecommerce', value: 45 },
+              { label: '/wissen/sichtbarkeit-in-chatgpt', value: 17 },
+              { label: '/wissen/technische-ki-sichtbarkeit', value: 11 },
+              { label: 'restliche zitierte Seiten (5)', value: 31 },
+            ],
+            stats: [
+              { label: 'Citations gesamt', value: '415' },
+              { label: 'Zitierte Seiten', value: '10' },
+              { label: 'Anteil der Top-Seite', value: '59,8 Prozent' },
+            ],
+            table: { label: 'Citations als Tabelle', heads: ['Seite', 'Citations'], sum: ['Summe', '415'] },
+            caption:
+              'So sieht eine Citation-Verteilung in der Praxis aus: keine Glocke, sondern eine steile Kurve. Drei von zehn zitierten Seiten tragen 85,8 Prozent. Quelle: eigener AI-Page-Stats-Export der Bing Webmaster Tools.',
+          },
           table: {
             headers: ['Domain', 'Export-Datum', 'Citations gesamt', 'Zitierte Seiten', 'Top-Seite', 'Anteil Top-3'],
             rows: [
@@ -155,7 +151,7 @@ export default function CitationRatePage() {
             caption:
               'Eigene Auswertung der AI-Page-Stats-Berichte aus den Bing Webmaster Tools. Die Summe der Seitenwerte ergibt jeweils den Gesamtwert, es wurde nichts hochgerechnet.',
             note:
-              'Die Werte sind Momentaufnahmen der jeweiligen 30-Tage-Fenster und nicht als Prognose für andere Domains gedacht.',
+              'Die Werte sind Momentaufnahmen zum jeweiligen Exportdatum und nicht als Prognose für andere Domains gedacht. Der aiseo.hamburg-Export deckt den Berichtszeitraum 28.02. bis 28.05.2026 ab und verteilt 415 der 420 Zitate dieser Reihe.',
           },
           paragraphs: [
             'Die Verteilung folgt keinem Mittelwert, sondern einer steilen Kurve. Bei aiseo.hamburg tragen drei von zehn zitierten Seiten fast 86 Prozent der Citations. Der Rest liegt im einstelligen Bereich, obwohl es sich um vergleichbar lange, vergleichbar sorgfältig geschriebene Artikel handelt.',
@@ -165,13 +161,6 @@ export default function CitationRatePage() {
         },
         {
           id: 'messen',
-          image: {
-            src: '/images/wissen/citation-rate/messen.webp',
-            alt: 'Notebook mit Kennzahlen-Übersicht neben einer Kaffeetasse',
-            caption: 'Nur eine Quelle meldet Citations direkt von der Plattform. Alles andere ist Stichprobe.',
-            width: 1000,
-            height: 804,
-          },
           heading: 'Wo du die Zahl tatsächlich herbekommst',
           intro:
             'Es gibt genau eine Quelle, die Citations direkt von der Plattform meldet. Alles andere ist Stichprobe oder Schätzung.',

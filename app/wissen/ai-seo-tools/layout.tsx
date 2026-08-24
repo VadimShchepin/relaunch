@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description:
       'Ehrlicher Überblick über AI SEO Tools 2026: Ahrefs Brand Radar, Semrush AI Visibility, Gemini CLI und mehr. Welche Tools funktionieren, welche Geld verbrennen, und welche du kostenlos ersetzen kannst.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/wissen/ai-seo-tools.jpg', width: 1200, height: 630, alt: 'AI SEO Tools Guide 2026' }],
+    images: [{ url: '/og/wissen-ai-seo-tools.png', width: 1200, height: 630, alt: 'AI SEO Tools Guide 2026' }],
   },
   twitter: {
     card: 'summary',

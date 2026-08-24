@@ -20,11 +20,11 @@ export const metadata: Metadata = {
         siteName: 'aiseo.hamburg',
         locale: 'de_DE',
         type: 'article',
-        images: [{ url: '/images/wissen/ki-sichtbarkeit-dienstleister/hero-ki-sichtbarkeit-dienstleister.svg', width: 1200, height: 630, alt: 'KI-Sichtbarkeit für Dienstleister: vom unsichtbaren Experten zum empfohlenen Anbieter' }],
+        images: [{ url: '/og/wissen-ki-sichtbarkeit-dienstleister.jpg', width: 1200, height: 630, alt: 'KI-Sichtbarkeit für Dienstleister: vom unsichtbaren Experten zum empfohlenen Anbieter' }],
     },
     twitter: {
         card: 'summary_large_image',
-        images: ['/images/wissen/ki-sichtbarkeit-dienstleister/hero-ki-sichtbarkeit-dienstleister.svg'],
+        images: ['/og/wissen-ki-sichtbarkeit-dienstleister.jpg'],
         title: 'KI-Sichtbarkeit für Dienstleister: vom Geheimtipp zur KI-Empfehlung',
         description: 'Warum ChatGPT deinen Wettbewerber empfiehlt und nicht dich. 5 Schritte f\u00fcr Steuerberater, Architekten, Berater & Agenturen zur KI-Sichtbarkeit.',
     },

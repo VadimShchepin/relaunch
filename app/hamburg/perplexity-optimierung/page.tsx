@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description:
       'Lokale Service-Seite für Perplexity-Sichtbarkeit, Zitationen und AI-Search-Quellenarbeit in Hamburg.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/wissen/perplexity.jpg', width: 1200, height: 630, alt: 'Perplexity Optimierung Hamburg' }],
+    images: [{ url: '/og/hamburg-perplexity-optimierung.png', width: 1200, height: 630, alt: 'Perplexity Optimierung Hamburg' }],
   },
   alternates: {
     canonical: 'https://aiseo.hamburg/hamburg/perplexity-optimierung',
@@ -34,9 +34,15 @@ export default function PerplexityOptimierungHamburgPage() {
       title="Perplexity Optimierung Hamburg: Damit dein Unternehmen als Quelle auftaucht und nicht nur hofft, dass jemand scrollt"
       description="Perplexity ist für viele Suchsituationen näher an Recherche als an Smalltalk. Genau deshalb ist die Plattform für kaufnahe Anfragen spannend. Wer dort als Quelle zitiert wird, gewinnt nicht nur Sichtbarkeit, sondern Kontext. Und Kontext ist in der Lead-Qualität meistens attraktiver als ein weiterer lauwarmer Klick aus dem Nirgendwo."
       eyebrow="Perplexity Optimierung Hamburg"
-      imageSrc="/images/wissen/perplexity.jpg"
-      imageAlt="Perplexity Optimierung für Unternehmen in Hamburg"
-      imageCaption="Perplexity bevorzugt oft die Seite, die am klarsten antwortet. Nicht die Seite mit den meisten Kalorien."
+      facts={[
+        { label: 'Einstieg', value: '15 Minuten, 0 Euro', href: '/termin' },
+        { label: 'Umsetzung', value: 'ab 1.500 Euro, Festpreis vorab', href: '/preise' },
+        { label: 'Belegt (Bing)', value: '800 KI-Zitate in 3 Monaten', href: '/ergebnisse' },
+      ]}
+      secondaryCtaHref="/preise"
+      secondaryCtaLabel="Preise ansehen"
+      contactPhone="+49 176 321 94 754"
+      contactNote="Ein Ansprechpartner, keine Agentur-Pipeline. Erstgespräch per Video oder in Hamburg."
       summaryItems={[
         'Die Seite zielt auf Unternehmen mit kaufnaher, zitationsrelevanter Nachfrage in AI-Search-Kontexten.',
         'Der Fokus liegt auf Quellenfähigkeit, Frische, klaren Abschnitten und lokaler Einordnung.',
@@ -66,6 +72,51 @@ export default function PerplexityOptimierungHamburgPage() {
           text: 'Hamburg-Bezug, Leistungen, Erfahrungen und Belege werden sichtbar gemacht, damit eine lokale Einordnung für Perplexity plausibel bleibt.',
         },
       ]}
+      comparison={{
+        navLabel: 'Google vs Perplexity',
+        heading: 'Warum dieselbe Seite bei Google rankt und in Perplexity fehlt',
+        intro:
+          'Beide Systeme lesen dieselbe Seite und bewerten sie nach anderen Regeln. Wer nur auf Ranking-Logik optimiert, baut Seiten, die zu lang, zu vage und zu undatiert sind, um in einer Antwort als Quelle zu erscheinen.',
+        columns: ['Kriterium', 'Google-Ranking', 'Perplexity-Zitat', 'Dein Hebel'],
+        rows: [
+          [
+            'Was gewinnt',
+            'die Seite mit dem besten Gesamtsignal',
+            'die Passage, die die Frage am knappsten beantwortet',
+            'Antwort in den ersten Absatz, nicht in die Mitte',
+          ],
+          [
+            'Wie viele kommen vor',
+            'ein Platz pro Position',
+            'mehrere Quellen, sichtbar verlinkt',
+            'Platz zwei oder drei zählt hier noch',
+          ],
+          [
+            'Aktualität',
+            'bei News wichtig, sonst nachrangig',
+            'sichtbar datierte Aussagen werden eher übernommen',
+            'Stand und Datum in den Text, nicht ins Impressum',
+          ],
+          [
+            'Länge',
+            'lange Ratgeber ranken oft besser',
+            'Fasertext wird selten entnommen',
+            'klare Abschnitte mit je einer Aussage',
+          ],
+          [
+            'Nachlesbar in',
+            'Search Console, Position und Klicks',
+            'keine Konsole, nur Referral-Traffic von perplexity.ai',
+            'feste Prompt-Liste, gleicher Wortlaut, monatlich',
+          ],
+        ],
+        note: 'Die letzte Zeile ist der unangenehme Teil: Perplexity hat keine Herstellerkonsole. Wer dir eine exakte Perplexity-Zitatrate verkauft, verkauft ein Schätzverfahren als Messung.',
+      }}
+      proofNote={{
+        label: 'Was hier kein Diagramm ist',
+        statement: 'Für Perplexity gibt es keine Herstellerkonsole, also auch keine belegbare Zitatzahl.',
+        text: 'Belegen kann ich Citations aus den Bing Webmaster Tools, 800 für diese Website zwischen 15.03. und 13.06.2026, und Referral-Besuche von perplexity.ai im Analytics. Eine Perplexity-Citation-Rate könnte ich nur schätzen, deshalb steht an dieser Stelle bewusst keine Kurve. Gemessen wird stattdessen mit einer festen Liste aus 30 bis 50 Fragen im immer gleichen Wortlaut, zu mindestens 70 Prozent ohne deinen Markennamen.',
+      }}
       eeatCards={[
         {
           title: 'Erfahrung aus dokumentierten Cases',
@@ -89,6 +140,11 @@ export default function PerplexityOptimierungHamburgPage() {
         'Angebote, bei denen Nutzer vor Kontaktaufnahme noch verstehen wollen, wer kompetent, spezialisiert und vertrauenswürdig ist.',
         'Websites mit Substanz, die aber noch nicht als gute AI-Search-Quelle gebaut sind.',
       ]}
+      fitNote={{
+        label: 'Merksatz',
+        statement: 'Perplexity zitiert Passagen, nicht Websites.',
+        text: 'Eine Seite kann fachlich stark sein und trotzdem nie zitiert werden, weil ihre Kernaussage im dritten Absatz steckt und ohne den Rest des Textes nicht funktioniert. Das ist Textarbeit, keine Technikfrage.',
+      }}
       processCards={[
         {
           title: 'Quellen-Audit',
@@ -115,6 +171,18 @@ export default function PerplexityOptimierungHamburgPage() {
         {
           q: 'Muss ich dafür ständig neue Inhalte veröffentlichen?',
           a: 'Nicht zwingend. Oft ist bessere Struktur und Aktualisierung wichtiger als eine weitere Serie mittelmäßiger Blogposts.',
+        },
+        {
+          q: 'Was kostet Perplexity Optimierung in Hamburg?',
+          a: 'Der erste Schritt ist ein kostenloses 15-Minuten-Gespräch. Danach ein Umsetzungssprint ab 1.500 Euro netto zum Festpreis oder laufende Betreuung ab 600 Euro netto pro Monat. Den Festpreis nenne ich nach dem Gespräch, weil Aufwand und Wettbewerbslage je Branche stark abweichen.',
+        },
+        {
+          q: 'Wie lange dauert es, bis ich zitiert werde?',
+          a: 'Ein blockierter Crawler wirkt nach dem nächsten Crawl, also in Tagen. Neu gebaute Antwortseiten tauchen typischerweise nach vier bis zwölf Wochen in Antworten auf. Die Reihenfolge innerhalb von Vergleichsantworten verschiebt sich über Monate, weil sie an Erwähnungen außerhalb deiner eigenen Domain hängt.',
+        },
+        {
+          q: 'Was brauchst du von mir?',
+          a: 'Zugang zur Website oder zum CMS, Zugang zu Search Console und Bing Webmaster Tools und eine Stunde für die Fragen, die deine Kunden wirklich stellen. Die Texte schreibe ich, die Freigabe machst du.',
         },
       ]}
       relatedLinks={[

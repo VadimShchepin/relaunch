@@ -39,9 +39,9 @@ export const metadata: Metadata = {
         type: "website",
         images: [
             {
-                url: "/android-chrome-512x512.png",
-                width: 512,
-                height: 512,
+                url: "/og/default.png",
+                width: 1200,
+                height: 630,
                 alt: "aiseo.hamburg, KI-Sichtbarkeit Hamburg",
             },
         ],
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "aiseo.hamburg | KI-Sichtbarkeit: von ChatGPT empfohlen",
         description: "Wirst du genannt, wenn Kunden eine KI nach einem Anbieter fragen? Ich mache Hamburger Unternehmen in ChatGPT, Perplexity und Google AI sichtbar.",
-        images: ["/android-chrome-512x512.png"],
+        images: ["/og/default.png"],
     },
     robots: {
         index: true,

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Kontakt KI-Sichtbarkeit Hamburg | Kostenloser 15-Min-Call",
-    description: "Kontaktieren Sie uns für professionelle KI-Optimierung. Kostenloser 15-Minuten-Call für Hamburger Unternehmen.",
+    description: "Schreib mir für professionelle KI-Optimierung. Kostenloser 15-Minuten-Call für Hamburger Unternehmen, Antwort in der Regel am selben Werktag.",
     openGraph: {
-        description: "Kontaktieren Sie uns für professionelle KI-Optimierung. Kostenloser 15-Minuten-Call für Hamburger Unternehmen.",
+        description: "Schreib mir für professionelle KI-Optimierung. Kostenloser 15-Minuten-Call für Hamburger Unternehmen, Antwort in der Regel am selben Werktag.",
     },
     alternates: {
         canonical: 'https://aiseo.hamburg/contact',

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description:
       'Du zahlst 2.000 bis 10.000 Euro im Monat für SEO, aber KI-Systeme ignorieren dich komplett. Warum klassisches SEO allein nicht mehr reicht.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/wissen/seo-agentur-vs-ai-seo/hero-seo-agentur-vs-ai-seo.svg', width: 1200, height: 630, alt: 'SEO-Agentur vs. AI SEO: Warum Rankings allein keine Kunden bringen' }],
+    images: [{ url: '/og/wissen-seo-agentur-vs-ai-seo.jpg', width: 1200, height: 630, alt: 'SEO-Agentur vs. AI SEO: Warum Rankings allein keine Kunden bringen' }],
   },
   twitter: {
     card: 'summary',

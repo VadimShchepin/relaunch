@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       'llms.txt erstellen: Schritt-für-Schritt-Anleitung mit Vorlage und Beispielen. Was gehört rein, was nicht, und warum robots.txt allein nicht reicht.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/wissen/llms-txt-anleitung.jpg', width: 1200, height: 630, alt: 'llms.txt erstellen: Anleitung für KI-Sichtbarkeit' }],
+    images: [{ url: '/og/wissen-llms-txt-anleitung.png', width: 1200, height: 630, alt: 'llms.txt erstellen: Anleitung für KI-Sichtbarkeit' }],
   },
   twitter: {
     card: 'summary',

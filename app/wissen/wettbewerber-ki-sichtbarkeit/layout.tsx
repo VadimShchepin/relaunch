@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       'Dein Wettbewerber wird von ChatGPT empfohlen. Du nicht. Diese Kunden tauchen nie in deiner Analytik auf, und du wirst es nie erfahren.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/wissen/wettbewerber-ki-sichtbarkeit.jpg', width: 1200, height: 630, alt: 'Wettbewerber KI-Sichtbarkeit: Unsichtbare Leads' }],
+    images: [{ url: '/og/wissen-wettbewerber-ki-sichtbarkeit.png', width: 1200, height: 630, alt: 'Wettbewerber KI-Sichtbarkeit: Unsichtbare Leads' }],
   },
   twitter: {
     card: 'summary',

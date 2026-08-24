@@ -48,13 +48,43 @@ Note: Dev/build scripts use `NODE_OPTIONS='--max-old-space-size=8192'` for GSAP 
 **Security Headers (next.config.ts):**
 - X-Content-Type-Options, X-Frame-Options (DENY), Referrer-Policy, Permissions-Policy applied to all routes
 
-**Design System (tailwind.config.ts):**
-- `brand-bg`: #FBF9F7 (warm off-white)
-- `brand-text`: #111111 (near black)
-- `brand-accent`: #4FAF8C (green, used for glow effects)
-- `brand-dark`: #1C1917, `brand-olive`: #9CA38A, `brand-slate`: #7D8C9E, `brand-orange`: #FF5E3A, `brand-pink`: #E6A5A5
+**Design System (`app/globals.css` @theme, single source of truth):**
+
+This is Tailwind 4. There is no `tailwind.config.ts` and there must not be one: it was a
+leftover v3 file with no `@config` directive, so nothing in it ever compiled, and
+`brand-orange` / `brand-olive` / `brand-slate` / `brand-pink` rendered nothing for
+months while 7 files used them. It has been deleted. Add tokens to the `@theme` block
+in `app/globals.css` and nowhere else, then verify with
+`grep -E '<hex>' .next/static/chunks/*.css` after a build.
+
+- Colour, core: `brand-bg` #FBF9F7, `brand-text` #111111, `brand-accent` #4FAF8C,
+  `brand-dark` #1C1917
+- Colour, ink hierarchy: `brand-muted` #57524D (body copy), `brand-subtle` #6B645D (meta)
+- Colour, surfaces and rules: `brand-surface` #F7F5F2, `brand-night` #121212,
+  `brand-hairline` #F1EEEA, `brand-line` #E2DCD5, `brand-edge` #C9C2BA
+- Colour, accents: `brand-accent-deep` #2D8A65 (filled buttons),
+  `brand-accent-ink` #267555 (accent as text). Plain `brand-accent` is 2,55:1 on
+  `brand-bg`, so it must never carry small text.
+- Colour, restored: `brand-orange` #B8431F, `brand-orange-vivid` #FF5E3A (decoration
+  only), `brand-slate` #4A5568, `brand-olive` #9CA38A. `brand-pink` was removed, nothing
+  used it.
+- Type scale (semantic, pairs size + line-height + tracking): `text-display`,
+  `text-title`, `text-heading`, `text-subheading`, `text-lead`, `text-body`,
+  `text-meta`, `text-micro`. These sit alongside the stock `text-xs..text-9xl`, which
+  ~3.400 existing classes still use. Never redefine the stock scale.
+- Spacing rhythm: `flow` 24px, `stack` 32px, `block` 48px, `rule` 64px, `section` 96px,
+  `band` 128px, `navbar` 88px (works as `p-flow`, `mt-rule`, `scroll-mt-navbar`, ...)
+- Measure: `max-w-measure` 752px (reading column), `max-w-narrow` 544px,
+  `max-w-shell` 900px (drop-in for the 542 hand-written `max-w-[900px]`),
+  `max-w-article` 1088px, `max-w-toc` 224px. Do **not** name a container token
+  `prose`: `max-w-prose` is a hardcoded Tailwind built-in (65ch) that ignores the
+  `--container-*` namespace.
 - Font: General Sans (loaded from Fontshare CDN)
-- Custom border-radius tokens: `section` (1.5rem), `card` (1rem)
+- Radius: `section` (1.5rem), `card` (1rem). Depth: `shadow-card`, `shadow-lift`.
+  Easing: `ease-reveal`.
+- `.reveal` (see `components/ui/FadeIn.tsx`) only hides its content inside
+  `@media (scripting: enabled) and (prefers-reduced-motion: no-preference)`, so a
+  visitor or crawler without JS gets the text instead of a blank page.
 
 ## SEO Structure
 

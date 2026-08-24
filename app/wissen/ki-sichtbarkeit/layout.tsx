@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description:
       'Was KI-Sichtbarkeit ist, warum sie über deinen Umsatz entscheidet und wie du sie in 10 Schritten erreichst. Mit Strategie, Tools und Checkliste für ChatGPT, Perplexity und Google AI.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/wissen/ki-sichtbarkeit.jpg', width: 1200, height: 630, alt: 'KI-Sichtbarkeit Guide 2026' }],
+    images: [{ url: '/og/wissen-ki-sichtbarkeit.png', width: 1200, height: 630, alt: 'KI-Sichtbarkeit Guide 2026' }],
   },
   twitter: {
     card: 'summary',

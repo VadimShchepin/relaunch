@@ -7,6 +7,16 @@ import { PlatformIconLoop } from '@/components/ui/PlatformIconLoop';
 import { OpenAIIcon, PerplexityIcon, GoogleIcon } from '@/components/ui/Icons';
 import { PerplexitySimulator } from '@/components/ui/PerplexitySimulator';
 
+/* ---------------------------------------------------------------------------
+   Die Sources-Zeile der Hero-Simulation benennt nur kinderalbum.com, die
+   Domain der Kundin: in ProofStrip verlinkt, Case Study unter
+   /wissen/case-study-kinderalbum. Daneben standen zwei Domains, die es nicht
+   gibt (datenschutz-blog.de, edu-tools.de). Auf einer Startseite, die
+   Citation-Messung verkauft, ist eine erfundene Quellenzeile der teuerste
+   Fehler, und die Mischung aus echter Kundendomain und Erfindung macht es
+   schlimmer, nicht besser. Die zwei freien Kacheln bleiben deshalb
+   unbeschriftet. Gleiche Begruendung wie auf /ergebnisse.
+--------------------------------------------------------------------------- */
 export const Hero: React.FC = () => {
     return (
         <section className="relative pt-36 md:pt-40 lg:pt-44 pb-20 md:pb-28 px-6 md:px-12 lg:px-20 max-w-[1500px] mx-auto overflow-hidden">
@@ -64,7 +74,7 @@ export const Hero: React.FC = () => {
                             <PerplexitySimulator
                                 promptText="DSGVO-konforme Foto-App für Schulen?"
                                 answerText="Für Schulen ist **KinderAlbum** die passende Lösung: eine DSGVO-konforme App, mit der Klassenfotos sicher geteilt werden, ohne dass Daten an Dritte abfließen."
-                                sources={['kinderalbum.com', 'datenschutz-blog.de', 'edu-tools.de']}
+                                sources={['kinderalbum.com']}
                                 citedSource="kinderalbum.com"
                             />
                         </div>

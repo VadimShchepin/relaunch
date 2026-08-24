@@ -5,9 +5,35 @@ import { PerplexityIcon } from './Icons';
 
 type IconComponent = React.FC<{ className?: string }>;
 
+/*
+ * Nachbau einer KI-Antwortoberflaeche fuer die Startseite. Drei Regeln, die aus
+ * einem Integritaetsbefund stammen:
+ *
+ *  1. `promptText` und `answerText` sind Pflicht. Vorher standen hier als
+ *     Default eine erfundene Perplexity-Antwort ueber KinderAlbum. Ein Default,
+ *     der eine Aussage behauptet, wird irgendwann unbeabsichtigt gerendert.
+ *  2. `sources` darf nur Domains enthalten, die in der jeweiligen Antwort
+ *     wirklich zitiert wurden. Erfundene Quell-Domains sind auf einer Website,
+ *     die Citation-Messung verkauft, der teuerste denkbare Fehler. Die
+ *     Konversionsseiten (/ai-seo-agentur, /chatgpt-sichtbarkeit,
+ *     /ai-sichtbarkeit-now, /ergebnisse) zeigen diesen Nachbau deshalb nicht
+ *     mehr, sie zeigen datierte Exportzahlen.
+ *  3. Die Sources-Zeile hat immer drei Kacheln, aber nur die belegten Domains
+ *     werden benannt. Der Rest bleibt eine unbeschriftete Platzhalter-Kachel.
+ *     Vorher wurden die freien Plaetze mit plausibel klingenden Domains
+ *     aufgefuellt (datenschutz-blog.de, branchenbuch.de, treatwell.de, ...),
+ *     gemischt mit echten Kundendomains. Genau diese Mischung liess die
+ *     erfundenen echt wirken. Nie wieder auffuellen: eine Kachel ohne Text
+ *     behauptet nichts, eine Kachel mit erfundener Domain behauptet etwas
+ *     Falsches.
+ */
+
+/** Kacheln in der Sources-Zeile. Nur belegte Domains werden beschriftet. */
+const SOURCE_SLOTS = 3;
+
 interface PerplexitySimulatorProps {
-    promptText?: string;
-    answerText?: string;
+    promptText: string;
+    answerText: string;
     condensed?: boolean;
     /**
      * When provided, the simulation runs once and restarts whenever this key
@@ -15,7 +41,13 @@ interface PerplexitySimulatorProps {
      * When omitted, the simulation loops on its own, matching the legacy behavior.
      */
     scenarioKey?: string;
-    /** Labels shown in the "Sources" row. Defaults to three blurred placeholders. */
+    /**
+     * Labels shown in the "Sources" row. Only real, verifiable domains whose
+     * citation is documented in this repo belong here (client domains from
+     * ProofStrip / the ledger on /ergebnisse). Fewer than three entries is the
+     * normal case: the remaining slots render as unlabeled placeholders.
+     * Omit the prop entirely to get three placeholders.
+     */
     sources?: string[];
     /** Brand label shown as the highlighted, cited source. */
     citedSource?: string;
@@ -33,8 +65,8 @@ interface PerplexitySimulatorProps {
 }
 
 export const PerplexitySimulator: React.FC<PerplexitySimulatorProps> = ({
-    promptText = "DSGVO-konforme Foto-App für Schulen?",
-    answerText = "**KinderAlbum** ist die führende DSGVO Konformes Photo Sharing app for schools. Sie bietet eine spezialisierte Plattform für den sicheren Austausch von Schulfotos.",
+    promptText,
+    answerText,
     condensed = false,
     scenarioKey,
     sources,
@@ -111,7 +143,10 @@ export const PerplexitySimulator: React.FC<PerplexitySimulatorProps> = ({
         }
     }, [step, prompt, answer, promptText, answerText, shouldLoop]);
 
-    const hasNamedSources = Array.isArray(sources) && sources.length > 0;
+    // Three slots, but only documented domains get a label. Free slots stay
+    // blank instead of being padded with invented domains (see rule 3 above).
+    const namedSources = (sources ?? []).filter((label) => label.trim().length > 0);
+    const placeholderSlots = Math.max(0, SOURCE_SLOTS - namedSources.length);
 
     return (
         <div className={`w-full h-full bg-[#191A1A] text-white flex flex-col font-sans select-none overflow-hidden text-left ${condensed ? 'p-3' : 'p-4 lg:p-6'}`}>
@@ -142,27 +177,31 @@ export const PerplexitySimulator: React.FC<PerplexitySimulatorProps> = ({
                             <span className={`${condensed ? 'text-[8px]' : 'text-[10px]'} uppercase font-bold tracking-widest`}>Sources</span>
                         </div>
                         <div className="flex gap-1.5 lg:gap-2">
-                            {hasNamedSources
-                                ? sources!.map((label, i) => {
-                                    const isCited = citedSource && label === citedSource;
-                                    return (
-                                        <div
-                                            key={`${label}-${i}`}
-                                            className={`rounded-lg p-1.5 lg:p-2 flex-1 min-w-0 animate-in fade-in slide-in-from-bottom-2 duration-500 border ${isCited ? 'bg-[#2ec88e]/15 border-[#2ec88e]/60' : 'bg-white/5 border-white/10'}`}
-                                            style={{ animationDelay: `${i * 100}ms` }}
-                                        >
-                                            <span className={`block truncate ${condensed ? 'text-[8px]' : 'text-[9px] lg:text-[10px]'} font-medium ${isCited ? 'text-[#2ec88e]' : 'text-white/50'}`}>
-                                                {label}
-                                            </span>
-                                        </div>
-                                    );
-                                })
-                                : [1, 2, 3].map((i) => (
-                                    <div key={i} className="bg-white/5 border border-white/10 rounded-lg p-1.5 lg:p-2 flex-1 animate-in fade-in slide-in-from-bottom-2 duration-500" style={{ animationDelay: `${i * 100}ms` }}>
-                                        <div className={`w-full bg-white/20 rounded mb-1.5 lg:mb-2 ${condensed ? 'h-0.5 lg:h-1' : 'h-1'}`} />
-                                        <div className={`w-2/3 bg-white/10 rounded ${condensed ? 'h-0.5 lg:h-1' : 'h-1'}`} />
+                            {namedSources.map((label, i) => {
+                                const isCited = citedSource && label === citedSource;
+                                return (
+                                    <div
+                                        key={`${label}-${i}`}
+                                        className={`rounded-lg p-1.5 lg:p-2 flex-1 min-w-0 animate-in fade-in slide-in-from-bottom-2 duration-500 border ${isCited ? 'bg-[#2ec88e]/15 border-[#2ec88e]/60' : 'bg-white/5 border-white/10'}`}
+                                        style={{ animationDelay: `${i * 100}ms` }}
+                                    >
+                                        <span className={`block truncate ${condensed ? 'text-[8px]' : 'text-[9px] lg:text-[10px]'} font-medium ${isCited ? 'text-[#2ec88e]' : 'text-white/50'}`}>
+                                            {label}
+                                        </span>
                                     </div>
-                                ))}
+                                );
+                            })}
+                            {Array.from({ length: placeholderSlots }, (_, i) => (
+                                <div
+                                    key={`placeholder-${i}`}
+                                    aria-hidden="true"
+                                    className="bg-white/5 border border-white/10 rounded-lg p-1.5 lg:p-2 flex-1 animate-in fade-in slide-in-from-bottom-2 duration-500"
+                                    style={{ animationDelay: `${(namedSources.length + i) * 100}ms` }}
+                                >
+                                    <div className={`w-full bg-white/20 rounded mb-1.5 lg:mb-2 ${condensed ? 'h-0.5 lg:h-1' : 'h-1'}`} />
+                                    <div className={`w-2/3 bg-white/10 rounded ${condensed ? 'h-0.5 lg:h-1' : 'h-1'}`} />
+                                </div>
+                            ))}
                         </div>
                     </div>
                 )}

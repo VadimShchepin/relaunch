@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description:
       'Keyword-Stuffing, Cloaking, Spam-Content: Warum billige Tricks bei ChatGPT, Perplexity und Google AI zum permanenten Bann führen.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/wissen/aio-fails-chatgpt-bann.jpg', width: 1200, height: 630, alt: 'AIO Fails: Warum ChatGPT deine Website bannt' }],
+    images: [{ url: '/og/wissen-aio-fails-chatgpt-bann.png', width: 1200, height: 630, alt: 'AIO Fails: Warum ChatGPT deine Website bannt' }],
   },
   twitter: {
     card: 'summary',

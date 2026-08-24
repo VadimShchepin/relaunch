@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       'Gartner prognostiziert 50 % Traffic-Verlust bis 2028. Warum das kein Weltuntergang ist, und welche neuen KPIs jetzt zählen.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/wissen/zero-click-zukunft.jpg', width: 1200, height: 630, alt: 'Zero-Click-Zukunft: SEO nach dem Traffic' }],
+    images: [{ url: '/og/wissen-zero-click-zukunft.png', width: 1200, height: 630, alt: 'Zero-Click-Zukunft: SEO nach dem Traffic' }],
   },
   twitter: {
     card: 'summary',

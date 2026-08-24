@@ -1,426 +1,442 @@
-'use client';
-
-import React, { useState } from 'react';
+import React from 'react';
+import Link from 'next/link';
 import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
-import { CheckIcon, ArrowRightIcon, LoadingIcon } from '@/components/ui/Icons';
+import { CheckIcon, ArrowRightIcon } from '@/components/ui/Icons';
 import { PlatformIconLoop } from '@/components/ui/PlatformIconLoop';
 import { AntigravityBackground } from '@/components/ui/AntigravityBackground';
+import { DataChart } from '@/components/ui/DataChart';
+import { CheckForm } from './CheckForm';
 
-const HeroSection: React.FC = () => (
-  <section className="relative pt-28 pb-10 md:pt-40 md:pb-16 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto overflow-hidden">
-    <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-accent/5 rounded-full blur-3xl z-0"></div>
-    <AntigravityBackground />
-    <div className="relative z-10">
-      <FadeIn>
-        <div className="inline-flex items-center gap-2 bg-brand-accent/10 border border-brand-accent/20 rounded-full px-4 py-2 mb-7">
-          <span className="w-2 h-2 bg-brand-accent rounded-full animate-pulse" />
-          <span className="text-sm font-medium text-brand-accent">Für Hamburger Unternehmen</span>
-        </div>
+/* ---------------------------------------------------------------------------
+   Anrede: diese Seite siezt. Das ist nicht Zufall und kein Bruch mit dem
+   Rest der Site, sondern der bestehende H1 und alle indexierten Ueberschriften
+   sind gesiezt ("Wird Ihr Unternehmen ...", "Warum KI Ihre Website ..."). Eine
+   halbe Umstellung, gesiezte Ueberschriften ueber geduzten Absaetzen, waere
+   schlechter als beides. Deshalb bleibt die Seite in sich konsistent bei Sie.
+--------------------------------------------------------------------------- */
 
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-[-0.04em] text-black mb-5 leading-[1.05]">
-          Wird Ihr Unternehmen von <span className="text-brand-accent">ChatGPT</span>
-          <br />
-          als Anbieter für <span className="text-brand-accent">Hamburg</span> genannt?
-        </h1>
+/* Fester Leistungsumfang, unveraendert. Preis und Dauer stehen so schon im
+   Title-Tag der Route, deshalb sind sie hier wortgleich. */
+const SCOPE = [
+  { label: 'Preis', value: '1.500 € netto', note: 'einmalig, kein Abo' },
+  { label: 'Dauer', value: '10 bis 14 Tage', note: 'ab Freigabe der Inhalte' },
+  { label: 'Umfang', value: 'Startseite + 2 Seiten', note: 'Leistung und Vertrauen' },
+  { label: 'Bindung', value: 'keine', note: 'keine Agenturbindung' },
+];
 
-        <p className="text-lg md:text-xl text-gray-700 max-w-2xl mb-5 leading-relaxed">
-          Kunden fragen KI-Systeme längst nach Empfehlungen. Viele Websites werden dabei nicht berücksichtigt, obwohl das
-          Angebot gut ist.
-        </p>
+const BLOCKERS = [
+  {
+    problem: 'Leistungen sind für KI nicht eindeutig zuzuordnen',
+    consequence: 'Das Modell weiß nicht, was Sie anbieten, und nennt lieber jemanden, bei dem es sicher ist.',
+  },
+  {
+    problem: 'Hamburg-Bezug (Stadtteile / Einzugsgebiet) ist zu schwach oder fehlt',
+    consequence: 'Bei einer Frage nach Hamburg fallen Sie aus der Auswahl, obwohl Sie um die Ecke sitzen.',
+  },
+  {
+    problem: 'Seiten liefern Marketing, aber keine klaren Antworten',
+    consequence: 'Es gibt keinen Satz, den eine KI zitieren könnte, also zitiert sie einen anderen.',
+  },
+];
 
-        <p className="text-base text-gray-500 mb-8 max-w-xl">
-          Für Dienstleister, Praxen und lokale Betriebe mit bestehender Website (Hamburg & Umgebung).
-        </p>
+const STEPS = [
+  {
+    n: '1)',
+    title: 'Analyse',
+    body: 'Ich prüfe, ob und wie Ihr Unternehmen in ChatGPT, Perplexity und Google AI auftaucht, und warum (noch) nicht.',
+    out: 'Prompt-Liste mit Ist-Stand',
+  },
+  {
+    n: '2)',
+    title: 'Website-Upgrade',
+    body: 'Startseite und zwei gezielte Unterseiten (Leistung, Vertrauen). Inhalte so strukturiert, dass KI-Systeme sie zuordnen können.',
+    out: '3 überarbeitete Seiten',
+  },
+  {
+    n: '3)',
+    title: 'Technische Basis',
+    body: 'Strukturierte Daten (Schema), saubere Struktur, interne Verlinkung. Ohne Overengineering.',
+    out: 'Schema plus Linkpfade',
+  },
+  {
+    n: '4)',
+    title: 'Indexierung',
+    body: 'Search-Console-Check und saubere Indexierung der neuen Seiten, damit die Arbeit überhaupt gelesen wird.',
+    out: 'Indexierungsnachweis',
+  },
+  {
+    n: '5)',
+    title: 'Erklärung',
+    body: 'Sie verstehen, was geändert wurde und warum es relevant ist. Kein Report, den niemand liest.',
+    out: 'Durchsprache, 30 Minuten',
+  },
+];
 
-        <div className="flex flex-col sm:flex-row gap-4 items-start">
-          <Button href="#kontakt" primary className="!py-4 !px-6 !pl-8 group">
-            <span className="relative z-10 flex items-center gap-3">
-              Kostenlose AI-Sichtbarkeits-Prüfung
-              <PlatformIconLoop className="!p-0" iconClassName="!w-5 !h-5" />
-            </span>
-          </Button>
-        </div>
+/* Copilot-Zitate je Website, Drei-Monats-Fenster, aus dem AI-Performance-Report
+   der Bing Webmaster Tools. Dieselben Werte stehen auf /ergebnisse. Nichts
+   gerundet, nichts hochgerechnet, keine Kundenzahl als eigene ausgegeben. */
+const CITATIONS = [
+  { label: 'aiseo.hamburg', short: 'aiseo', value: 800, note: 'eigene Website' },
+  { label: 'dsgvoschulfotos.de', short: 'dsgvo', value: 281, note: 'aus dem Stand' },
+  { label: 'dybeauty.de', short: 'dybeauty', value: 225, note: 'neuer Kanal' },
+];
 
-        <div className="mt-7 flex items-center gap-4 text-sm text-gray-500">
-          <span className="flex items-center gap-2">
-            <CheckIcon className="w-4 h-4 text-brand-accent" />
-            Kostenlos
-          </span>
-          <span className="flex items-center gap-2">
-            <CheckIcon className="w-4 h-4 text-brand-accent" />
-            Unverbindlich
-          </span>
-          <span className="flex items-center gap-2">
-            <CheckIcon className="w-4 h-4 text-brand-accent" />
-            Direkt vom Experten
-          </span>
-        </div>
-      </FadeIn>
-    </div>
-  </section>
-);
+const SEARCH_FACTS = [
+  { value: '+55 %', label: 'Klicks in 30 Tagen', note: 'Hamburger Handwerksbetrieb, Search Console' },
+  { value: '+61 %', label: 'Impressionen in 30 Tagen', note: '6.660 Impressionen im selben Fenster' },
+  { value: '29', label: 'Anrufe und WhatsApp-Kontakte', note: 'direkt aus der Suche, 30 Tage' },
+];
 
-const ProblemSection: React.FC = () => (
-  <section className="py-14 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-200">
-    <FadeIn>
-      <span className="text-brand-accent font-semibold uppercase tracking-[0.2em] text-[11px] mb-4 block">
-        Das Problem
-      </span>
-
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-7 leading-tight">
-        Warum KI Ihre Website
-        <br />
-        <span className="text-gray-400">oft nicht empfiehlt</span>
-      </h2>
-
-      <div className="bg-white border border-gray-100 rounded-2xl p-7 md:p-8 mb-8 shadow-sm">
-        <p className="text-lg text-gray-700 mb-5 leading-relaxed">
-          Nicht wegen schlechter Qualität, sondern weil KI-Systeme Inhalte anders interpretieren als Google.
-        </p>
-
-        <div className="space-y-4">
-          {[
-            'Leistungen sind für KI nicht eindeutig zuzuordnen',
-            'Hamburg-Bezug (Stadtteile / Einzugsgebiet) ist zu schwach oder fehlt',
-            'Seiten liefern Marketing, aber keine klaren Antworten',
-          ].map((item, i) => (
-            <FadeIn key={i} delay={i * 90}>
-              <div className="flex items-start gap-3 text-gray-700">
-                <span className="text-red-400 font-bold text-lg leading-none mt-0.5">•</span>
-                <span>{item}</span>
-              </div>
-            </FadeIn>
-          ))}
-        </div>
-      </div>
-
-      <div className="bg-red-50 border-2 border-red-200 rounded-xl p-5">
-        <p className="text-lg font-semibold text-red-800">Ergebnis: Andere Betriebe werden genannt, Ihrer nicht.</p>
-      </div>
-    </FadeIn>
-  </section>
-);
-
-const OfferSection: React.FC = () => (
-  <section id="angebot" className="py-14 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-200">
-    <FadeIn>
-      <span className="text-brand-accent font-semibold uppercase tracking-[0.2em] text-[11px] mb-4 block">
-        Das Upgrade
-      </span>
-
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] text-black mb-3">
-        AI-Sichtbarkeits-Upgrade (einmalig)
-      </h2>
-
-      <p className="text-lg text-gray-600 mb-7">
-        Klarer Scope. Kein Abo. Keine Agenturbindung.
-      </p>
-
-      <div className="grid gap-4 mb-10">
-        {[
-          {
-            title: '1) Analyse',
-            body: 'Ich prüfe, ob und wie Ihr Unternehmen in ChatGPT/Perplexity/Google AI auftaucht, und warum (noch) nicht.',
-          },
-          {
-            title: '2) Website-Upgrade',
-            body: 'Startseite + 2 gezielte Unterseiten (Leistung + Vertrauen). Inhalte so strukturiert, dass KI Systeme sie zuordnen können.',
-          },
-          {
-            title: '3) Technische Basis',
-            body: 'Strukturierte Daten (Schema), saubere Struktur, interne Verlinkung, ohne Overengineering.',
-          },
-          {
-            title: '4) Indexierung',
-            body: 'Search Console Check + saubere Indexierung der neuen Seiten.',
-          },
-          {
-            title: '5) Erklärung',
-            body: 'Sie verstehen, was geändert wurde und warum es relevant ist.',
-          },
-        ].map((c, i) => (
-          <FadeIn key={i} delay={i * 70}>
-            <div className="bg-white border border-gray-100 rounded-2xl p-6 hover:border-brand-accent/50 hover:shadow-lg transition-all duration-300">
-              <h3 className="font-semibold text-black text-lg mb-2">{c.title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">{c.body}</p>
-            </div>
-          </FadeIn>
-        ))}
-      </div>
-
-      <div className="bg-gray-50 border border-gray-100 rounded-xl p-4">
-        <p className="text-sm text-gray-600">
-          <strong className="text-gray-800">Wichtig:</strong> Keine Ranking-/Lead-Garantie. Ziel ist, dass KI-Systeme Ihr
-          Angebot technisch & inhaltlich korrekt verstehen können.
-        </p>
-      </div>
-    </FadeIn>
-  </section>
-);
-
-const ProofSection: React.FC = () => (
-  <section className="py-14 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-200">
-    <FadeIn>
-      <span className="text-brand-accent font-semibold uppercase tracking-[0.2em] text-[11px] mb-4 block">
-        Proof
-      </span>
-      <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-6">
-        Aktuelle Signale aus der Praxis
-      </h2>
-
-      <div className="grid sm:grid-cols-2 gap-4 mb-7">
-        <div className="relative group overflow-hidden rounded-2xl border border-gray-100 bg-white">
-          <img
-            src="/images/reality/growth.webp"
-            alt="Impressionen nach AI-Optimierung"
-            className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
-          />
-        </div>
-        <div className="relative group overflow-hidden rounded-2xl border border-gray-100 bg-white">
-          <img
-            src="/images/ChatGPT visits.webp"
-            alt="Besucher durch ChatGPT-Empfehlungen"
-            className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
-          />
-        </div>
-      </div>
-
-      <div className="space-y-3 mb-6">
-        {['Erwähnungen in ChatGPT / Perplexity', 'Echte Anfragen per E-Mail', 'Erste lokale Sichtbarkeitssignale'].map(
-          (item, i) => (
-            <div key={i} className="flex items-center gap-3 text-gray-700">
-              <CheckIcon className="w-5 h-5 text-brand-accent flex-shrink-0" />
-              <span>{item}</span>
-            </div>
-          )
-        )}
-      </div>
-
-      <div className="bg-gray-50 border border-gray-100 rounded-xl p-4">
-        <p className="text-sm text-gray-500">
-          <strong className="text-gray-700">Hinweis:</strong> Ergebnisse hängen von Markt & Wettbewerb ab. Es werden keine
-          Rankings oder Leads garantiert.
-        </p>
-      </div>
-    </FadeIn>
-  </section>
-);
-
-const PricingSection: React.FC = () => (
-  <section className="py-14 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-200">
-    <FadeIn>
-      <span className="text-brand-accent font-semibold uppercase tracking-[0.2em] text-[11px] mb-4 block">Preis</span>
-
-      <div className="bg-[#121212] text-white rounded-3xl p-8 md:p-12 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-accent/10 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2" />
-        <div className="relative z-10">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4">AI-Sichtbarkeits-Upgrade</h2>
-
-          <div className="flex items-baseline gap-2 mb-6">
-            <span className="text-5xl md:text-6xl font-bold text-brand-accent">1.500 €</span>
-            <span className="text-gray-400">netto</span>
-          </div>
-
-          <div className="flex flex-wrap gap-4 text-gray-300 mb-7">
-            <span className="flex items-center gap-2">
-              <CheckIcon className="w-4 h-4 text-brand-accent" />
-              einmalig
-            </span>
-            <span className="flex items-center gap-2">
-              <CheckIcon className="w-4 h-4 text-brand-accent" />
-              Dauer ca. 10 bis 14 Tage
-            </span>
-          </div>
-
-          <div className="bg-white/10 border border-white/20 rounded-xl p-6 mb-8">
-            <p className="text-gray-200 leading-relaxed">
-              Wenn das Upgrade für Ihre Situation keinen sinnvollen Mehrwert bringt, sage ich das offen und setze es nicht um.
-            </p>
-          </div>
-
-          <Button href="#kontakt" primary text="Kostenlose Prüfung anfragen" className="!py-4 !px-8" />
-        </div>
-      </div>
-    </FadeIn>
-  </section>
-);
-
-const ContactFormSection: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    website: '',
-    branche: '',
-    nachricht: '',
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [error, setError] = useState('');
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setError('');
-
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          company: formData.website,
-          message: `[AI-Sichtbarkeits-Check Hamburg]\n\nWebsite: ${formData.website}\nBranche/Angebot: ${formData.branche}\n\nNachricht:\n${formData.nachricht}`,
-        }),
-      });
-
-      const data = await response.json();
-      if (data.ok) window.location.href = '/contact/danke';
-      else setError('Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.');
-    } catch {
-      setError('Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  return (
-    <section id="kontakt" className="py-14 md:py-20 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-200">
-      <FadeIn>
-        <span className="text-brand-accent font-semibold uppercase tracking-[0.2em] text-[11px] mb-4 block">Kontakt</span>
-        <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] text-black mb-4">
-          Kostenlose AI-Sichtbarkeits-Prüfung
-        </h2>
-        <p className="text-gray-600 mb-8">Kurz & unverbindlich. Ich antworte in 24 bis 48h.</p>
-
-        <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid sm:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  Name *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  required
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all shadow-sm"
-                  placeholder="Ihr Name"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  E-Mail *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  required
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all shadow-sm"
-                  placeholder="ihre@email.de"
-                />
-              </div>
-            </div>
-
-            <div>
-              <label htmlFor="website" className="block text-sm font-medium text-gray-700 mb-2">
-                Website *
-              </label>
-              <input
-                type="url"
-                id="website"
-                required
-                value={formData.website}
-                onChange={(e) => setFormData({ ...formData, website: e.target.value })}
-                className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all shadow-sm"
-                placeholder="https://ihre-website.de"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="branche" className="block text-sm font-medium text-gray-700 mb-2">
-                Angebot (1 Satz) *
-              </label>
-              <input
-                type="text"
-                id="branche"
-                required
-                value={formData.branche}
-                onChange={(e) => setFormData({ ...formData, branche: e.target.value })}
-                className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all shadow-sm"
-                placeholder="z.B. Schädlingsbekämpfung in Hamburg-Eimsbüttel"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="nachricht" className="block text-sm font-medium text-gray-700 mb-2">
-                Nachricht (optional)
-              </label>
-              <textarea
-                id="nachricht"
-                rows={4}
-                value={formData.nachricht}
-                onChange={(e) => setFormData({ ...formData, nachricht: e.target.value })}
-                className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all shadow-sm resize-none"
-                placeholder="Optional: Stadtteil / Einzugsgebiet, wichtigste Leistung, Zielkunden"
-              />
-            </div>
-
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="w-full bg-black text-white py-4 px-6 rounded-lg font-medium hover:bg-gray-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-            >
-              {isSubmitting ? (
-                <>
-                  <LoadingIcon className="w-5 h-5" />
-                  Wird gesendet...
-                </>
-              ) : (
-                <>
-                  Anfrage senden
-                  <ArrowRightIcon className="w-5 h-5" />
-                </>
-              )}
-            </button>
-
-            {error && (
-              <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
-                <p className="text-red-700 text-sm">{error}</p>
-              </div>
-            )}
-
-            <p className="text-xs text-gray-500 text-center">
-              Mit dem Absenden erklären Sie sich mit unserer{' '}
-              <a href="/datenschutz" className="underline hover:text-black">
-                Datenschutzerklärung
-              </a>{' '}
-              einverstanden.
-            </p>
-          </form>
-      </FadeIn>
-    </section>
-  );
+const SERVICE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'AI-Sichtbarkeits-Upgrade Hamburg',
+  serviceType: 'Generative Engine Optimization (GEO)',
+  url: 'https://aiseo.hamburg/ai-sichtbarkeits-upgrade-hamburg',
+  description:
+    'Einmaliges AI-Sichtbarkeits-Upgrade für Hamburger Unternehmen: Analyse, Startseite plus zwei Unterseiten, strukturierte Daten und Indexierung in 10 bis 14 Tagen.',
+  provider: { '@id': 'https://aiseo.hamburg/#organization' },
+  areaServed: { '@type': 'City', name: 'Hamburg' },
+  offers: {
+    '@type': 'Offer',
+    price: '1500',
+    priceCurrency: 'EUR',
+    description: 'Einmaliges Upgrade, 1.500 € netto',
+  },
 };
 
 export default function AISichtbarkeitsUpgradeHamburgPage() {
   return (
-    <div className="relative w-full overflow-hidden bg-[#F7F5F2] text-brand-text font-sans selection:bg-brand-accent selection:text-white">
+    <div className="relative w-full overflow-x-clip bg-brand-bg text-brand-text font-sans selection:bg-brand-accent selection:text-white">
       <Navbar />
 
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }} />
+
       <main>
-        <HeroSection />
-        <ProblemSection />
-        <OfferSection />
-        <ProofSection />
-        <PricingSection />
-        <ContactFormSection />
+        {/* ========== HERO: 7/5. Links die Frage, rechts der komplette Deal als
+            Definitionsliste. Wer nur den Preis wissen will, muss nicht scrollen. ========== */}
+        <section className="relative overflow-hidden pt-28 pb-block lg:pt-32">
+          <div className="absolute top-0 right-0 z-0 h-[600px] w-[600px] rounded-full bg-brand-accent/5 blur-3xl" />
+          <AntigravityBackground />
+
+          <div className="relative z-10 mx-auto grid max-w-article gap-block px-6 lg:grid-cols-12 lg:gap-x-rule lg:px-12">
+            <div className="lg:col-span-7">
+              <FadeIn>
+                <p className="text-micro uppercase tracking-eyebrow text-brand-accent-ink">Für Hamburger Unternehmen</p>
+                {/* Zehn Woerter Frage: auf text-display braeuchte der H1 fuenf
+                    Zeilen und 336px Hoehe. text-title haelt ihn bei drei. */}
+                <h1 className="mt-flow text-heading sm:text-title font-semibold text-black">
+                  Wird Ihr Unternehmen von <span className="text-brand-accent">ChatGPT</span> als Anbieter für{' '}
+                  <span className="text-brand-accent">Hamburg</span> genannt?
+                </h1>
+                <p className="mt-flow max-w-measure text-lead text-brand-muted">
+                  Kunden fragen KI-Systeme längst nach Empfehlungen. Viele Websites werden dabei nicht berücksichtigt, obwohl das Angebot gut ist. Für Dienstleister, Praxen und lokale Betriebe mit bestehender Website in Hamburg und Umgebung.
+                </p>
+                <div className="mt-stack flex flex-col gap-4 sm:flex-row">
+                  <Button href="#kontakt" primary className="!py-4 !px-6 !pl-8 group">
+                    <span className="relative z-10 flex items-center gap-3">
+                      Kostenlose Prüfung anfragen
+                      <PlatformIconLoop className="!p-0" iconClassName="!w-5 !h-5" />
+                    </span>
+                  </Button>
+                  <Button href="#angebot" text="Was drin ist" className="!py-4 !px-8" />
+                </div>
+                <p className="mt-flow flex flex-wrap items-center gap-x-4 gap-y-2 text-meta text-brand-subtle">
+                  {['Kostenlos', 'Unverbindlich', 'Direkt vom Experten'].map((item) => (
+                    <span key={item} className="flex items-center gap-2">
+                      <CheckIcon className="w-3.5 h-3.5 text-brand-accent-ink" />
+                      {item}
+                    </span>
+                  ))}
+                </p>
+              </FadeIn>
+            </div>
+
+            <div className="lg:col-span-5 lg:pt-2">
+              <FadeIn delay={120}>
+                <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Der Deal in vier Zeilen</p>
+                <dl className="mt-flow">
+                  {SCOPE.map((row) => (
+                    <div key={row.label} className="flex items-baseline gap-flow border-t border-brand-line py-3">
+                      <dt className="w-20 shrink-0 text-micro uppercase tracking-eyebrow text-brand-subtle">{row.label}</dt>
+                      <dd>
+                        <span className="text-lead font-semibold tabular-nums text-brand-text">{row.value}</span>
+                        <span className="block text-micro text-brand-subtle">{row.note}</span>
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+                <p className="mt-flow border-t border-brand-line pt-3 text-micro text-brand-subtle">
+                  Keine Ranking- oder Lead-Garantie. Ziel ist, dass KI-Systeme Ihr Angebot technisch und inhaltlich korrekt verstehen können.
+                </p>
+              </FadeIn>
+            </div>
+          </div>
+        </section>
+
+        {/* ========== PROBLEM: drei Blocker, je Zeile eine Ursache und ihre Folge.
+            Vorher lag hier eine rote Alarmbox; die Konsequenz steht jetzt im Text. ========== */}
+        <section className="border-t border-brand-line py-rule">
+          <div className="mx-auto max-w-article px-6 lg:px-12">
+            <FadeIn>
+              <div className="grid gap-stack lg:grid-cols-[260px_1fr] lg:gap-x-stack">
+                <div>
+                  <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Das Problem</p>
+                  <h2 className="mt-1 text-subheading md:text-heading font-semibold text-black lg:text-subheading">
+                    Warum KI Ihre Website oft nicht empfiehlt
+                  </h2>
+                </div>
+
+                <div>
+                  <p className="max-w-measure text-body text-brand-muted">
+                    Nicht wegen schlechter Qualität, sondern weil KI-Systeme Inhalte anders interpretieren als Google. Drei Ursachen sehe ich in Hamburg immer wieder.
+                  </p>
+
+                  <div className="mt-flow">
+                    {BLOCKERS.map((item, i) => (
+                      <div key={item.problem} className="flex gap-flow border-t border-brand-edge py-3">
+                        <span className="w-6 shrink-0 pt-1 text-micro tabular-nums text-brand-subtle">{`0${i + 1}`}</span>
+                        <div>
+                          <p className="text-body font-medium text-brand-text">{item.problem}</p>
+                          <p className="mt-1 text-meta text-brand-muted">{item.consequence}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <p className="mt-flow border-t border-brand-edge pt-3 text-body font-medium text-brand-text">
+                    Ergebnis: Andere Betriebe werden genannt, Ihrer nicht.
+                  </p>
+                  <p className="mt-2 text-meta text-brand-subtle">
+                    Wie lokale KI-Antworten zustande kommen, steht ausführlich in{' '}
+                    <Link href="/wissen/lokale-ki-sichtbarkeit" className="font-medium text-brand-accent-ink underline decoration-brand-accent/50 underline-offset-4">
+                      lokale KI-Sichtbarkeit
+                    </Link>
+                    .
+                  </p>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
+        {/* ========== ANGEBOT: fuenf Schritte in denselben zwei Spuren wie oben,
+            plus eine Ergebnisspalte, damit jeder Schritt ein Lieferobjekt hat. ========== */}
+        <section id="angebot" className="border-t border-brand-line py-rule">
+          <div className="mx-auto max-w-article px-6 lg:px-12">
+            <FadeIn>
+              <div className="grid gap-stack lg:grid-cols-[260px_1fr] lg:gap-x-stack">
+                <div>
+                  <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Das Upgrade</p>
+                  <h2 className="mt-1 text-subheading md:text-heading font-semibold text-black lg:text-subheading">
+                    AI-Sichtbarkeits-Upgrade (einmalig)
+                  </h2>
+                  <p className="mt-flow text-meta text-brand-muted">
+                    Klarer Scope. Kein Abo. Keine Agenturbindung.
+                  </p>
+                  <Link href="/leistungen" className="mt-flow inline-flex items-center gap-1.5 border-t border-brand-line pt-3 text-meta font-medium text-brand-accent-ink hover:gap-2.5">
+                    Laufende Betreuung statt Einmalprojekt
+                    <ArrowRightIcon className="w-3 h-3" />
+                  </Link>
+                </div>
+
+                <div>
+                  <div className="hidden lg:grid lg:grid-cols-[1fr_160px] lg:gap-x-flow">
+                    <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Schritt</p>
+                    <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Sie bekommen</p>
+                  </div>
+
+                  <div className="mt-2">
+                    {STEPS.map((step) => (
+                      <div key={step.title} className="grid gap-y-1.5 border-t border-brand-edge py-3 lg:grid-cols-[1fr_160px] lg:gap-x-flow">
+                        <div>
+                          <h3 className="text-lead font-semibold text-brand-text">
+                            <span className="tabular-nums text-brand-subtle">{step.n}</span> {step.title}
+                          </h3>
+                          <p className="max-w-measure text-meta text-brand-muted">{step.body}</p>
+                        </div>
+                        <p className="flex items-start gap-2 text-micro text-brand-subtle lg:pt-1">
+                          <CheckIcon className="mt-0.5 w-3 h-3 shrink-0 text-brand-accent-ink" />
+                          {step.out}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
+        {/* ========== BELEGE: das Diagramm ersetzt zwei Bilder. Das eine war ein
+            KI-Render mit eingebranntem Wort "GROWTH ANALYTICS", das andere ein
+            Analytics-Screenshot mit 5px-Labels. Beide Bildunterschriften
+            behaupteten Zahlen, die im Bild nicht standen. ========== */}
+        <section className="border-t border-brand-line py-rule">
+          <div className="mx-auto max-w-article px-6 lg:px-12">
+            <FadeIn>
+              <div className="grid gap-block lg:grid-cols-12 lg:gap-x-rule">
+                <div className="lg:col-span-7">
+                  <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Proof</p>
+                  <h2 className="mt-1 text-subheading md:text-heading font-semibold text-black">
+                    Aktuelle Signale aus der Praxis
+                  </h2>
+                  <div className="mt-stack rounded-card border border-brand-line bg-white p-4 sm:p-5">
+                    <DataChart
+                      frame={false}
+                      variant="column"
+                      headingLevel="p"
+                      title="KI-Zitate in drei Monaten"
+                      subject="Microsoft Copilot"
+                      axis={{ title: 'Zitate' }}
+                      highlight="peak"
+                      points={CITATIONS}
+                      stats={[
+                        { label: 'Summe', value: '1.306 Zitate' },
+                        { label: 'Quelle', value: 'Bing WMT' },
+                        { label: 'Zeitraum', value: 'bis 13.06.2026' },
+                      ]}
+                      table={{ label: 'Zahlen als Tabelle', heads: ['Website', 'Zitate'] }}
+                    />
+                  </div>
+                  <p className="mt-3 border-t border-brand-hairline pt-3 text-meta text-brand-subtle">
+                    Drei Websites, dieselbe Methode, gemessen im AI-Performance-Report der Bing Webmaster Tools, Zeitraum 15.03. bis 13.06.2026. aiseo.hamburg ist die eigene Seite, die anderen zwei sind Projekte. Vorher lagen alle drei bei nahezu null.{' '}
+                    <Link href="/ergebnisse" className="font-medium text-brand-accent-ink underline decoration-brand-accent/50 underline-offset-4">
+                      Belege mit Screenshots
+                    </Link>
+                  </p>
+                </div>
+
+                <div className="lg:col-span-5 lg:pt-8">
+                  <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Und in der klassischen Suche</p>
+                  <dl className="mt-flow">
+                    {SEARCH_FACTS.map((fact) => (
+                      <div key={fact.label} className="flex items-baseline gap-flow border-t border-brand-line py-3">
+                        <dt className="w-20 shrink-0 text-subheading font-semibold tabular-nums text-brand-text">{fact.value}</dt>
+                        <dd className="text-meta text-brand-muted">
+                          {fact.label}
+                          <span className="block text-micro text-brand-subtle">{fact.note}</span>
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
+                  <p className="mt-flow border-t border-brand-line pt-3 text-micro text-brand-subtle">
+                    Ergebnisse hängen von Markt und Wettbewerb ab. Es werden keine Rankings und keine Leads garantiert.{' '}
+                    <Link href="/wissen/ki-sichtbarkeit-messen" className="font-medium text-brand-accent-ink underline decoration-brand-line underline-offset-4">
+                      So wird gemessen
+                    </Link>
+                  </p>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
+        {/* ========== PREIS: dunkles Vollband statt gerundeter Karte im Karton. ========== */}
+        <section className="bg-brand-night py-rule text-white">
+          <div className="mx-auto max-w-article px-6 lg:px-12">
+            <FadeIn>
+              <div className="grid gap-stack lg:grid-cols-[260px_1fr] lg:gap-x-stack">
+                <div>
+                  <p className="text-micro uppercase tracking-eyebrow text-brand-line">Preis</p>
+                  <h2 className="mt-1 text-subheading md:text-heading font-semibold lg:text-subheading">
+                    AI-Sichtbarkeits-Upgrade
+                  </h2>
+                  <p className="mt-flow border-t border-white/15 pt-3 text-micro text-brand-line">
+                    Nicht enthalten: Anzeigen, Shop-Umbau, Übersetzungen, neue Fotos.
+                  </p>
+                </div>
+
+                <div>
+                  <p className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                    <span className="text-title lg:text-display font-semibold tabular-nums text-brand-accent">1.500 €</span>
+                    <span className="text-lead text-brand-line">netto, einmalig</span>
+                  </p>
+                  <div className="mt-flow flex flex-wrap gap-x-stack gap-y-2 border-t border-white/15 pt-3 text-meta text-brand-line">
+                    <span className="flex items-center gap-2">
+                      <CheckIcon className="w-3.5 h-3.5 text-brand-accent" />
+                      Dauer 10 bis 14 Tage
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <CheckIcon className="w-3.5 h-3.5 text-brand-accent" />
+                      Startseite plus zwei Unterseiten
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <CheckIcon className="w-3.5 h-3.5 text-brand-accent" />
+                      Kein Abo
+                    </span>
+                  </div>
+                  <p className="mt-flow max-w-measure border-t border-white/15 pt-3 text-body text-brand-line">
+                    Wenn das Upgrade für Ihre Situation keinen sinnvollen Mehrwert bringt, sage ich das offen und setze es nicht um.
+                  </p>
+                  <div className="mt-stack flex flex-wrap items-center gap-x-stack gap-y-3">
+                    <Button href="#kontakt" primary text="Kostenlose Prüfung anfragen" className="!py-3 !px-6" />
+                    <Link href="/preise" className="text-meta font-medium text-brand-accent hover:underline">
+                      Alle Pakete im Vergleich
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
+        {/* ========== KONTAKT: Foto links haelt die Spalte, Formular rechts.
+            Das Bild ist 640x800 und wird auf 320x400 gezeigt, also echtes 2x. ========== */}
+        <section id="kontakt" className="border-t border-brand-line py-rule">
+          <div className="mx-auto max-w-article px-6 lg:px-12">
+            <FadeIn>
+              <div className="grid gap-block lg:grid-cols-12 lg:gap-x-rule">
+                <div className="lg:col-span-5">
+                  <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Kontakt</p>
+                  <h2 className="mt-1 text-subheading md:text-heading font-semibold text-black">
+                    Kostenlose AI-Sichtbarkeits-Prüfung
+                  </h2>
+                  <p className="mt-flow text-body text-brand-muted">
+                    Kurz und unverbindlich. Ich antworte in 24 bis 48 Stunden und sage Ihnen, ob sich das Upgrade für Ihren Betrieb lohnt.
+                  </p>
+
+                  {/* Drei Zeilen statt Leerraum: der Absender soll wissen, was
+                      nach dem Klick passiert, bevor er fuenf Felder ausfuellt. */}
+                  <ol className="mt-flow">
+                    {[
+                      'Sie schicken Website und Angebot in einem Satz.',
+                      'Ich stelle drei echte Kundenfragen in ChatGPT und Perplexity.',
+                      'Sie bekommen die Antworten und eine ehrliche Einschätzung.',
+                    ].map((line, i) => (
+                      <li key={line} className="flex gap-flow border-t border-brand-line py-2.5 text-meta text-brand-muted">
+                        <span className="w-4 shrink-0 text-micro tabular-nums text-brand-subtle">{i + 1}</span>
+                        {line}
+                      </li>
+                    ))}
+                  </ol>
+
+                  {/* 640x800 Datei, Anzeige nie breiter als 224px: echtes 2x auf
+                      jedem Viewport, kein Upscale, keine zweite Datei noetig. */}
+                  <img
+                    src="/image/hamburg/speicherstadt-hamburg.webp"
+                    width={640}
+                    height={800}
+                    loading="lazy"
+                    decoding="async"
+                    alt="Speicherstadt in Hamburg, Backsteinlager an einem Kanal"
+                    className="mt-stack w-full max-w-56 rounded-card border border-brand-line object-cover"
+                  />
+                  <p className="mt-3 text-micro text-brand-subtle">
+                    Hamburg und Umgebung. Ich arbeite mit Betrieben, die eine bestehende Website haben.
+                  </p>
+                </div>
+
+                <div className="lg:col-span-7">
+                  <CheckForm />
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
       </main>
 
       <Footer />

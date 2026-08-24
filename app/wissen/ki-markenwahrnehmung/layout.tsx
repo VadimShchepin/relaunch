@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       'ChatGPT, Perplexity und Google AI bilden sich eine Meinung über deine Marke, ob du willst oder nicht. Wie KI-Markenwahrnehmung entsteht und wie du sie beeinflusst.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/wissen/ki-markenwahrnehmung.jpg', width: 1200, height: 630, alt: 'KI-Markenwahrnehmung: Was ChatGPT über deine Marke denkt' }],
+    images: [{ url: '/og/wissen-ki-markenwahrnehmung.png', width: 1200, height: 630, alt: 'KI-Markenwahrnehmung: Was ChatGPT über deine Marke denkt' }],
   },
   twitter: {
     card: 'summary',

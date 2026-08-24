@@ -71,7 +71,10 @@ const PROJECTS: Project[] = [
     },
     {
         name: 'Solovei Beauty',
-        href: 'https://solovei.de',
+        // solovei.de ist geparkt (301 auf notavailable.goneo.de). Die Seite der
+        // Kundin laeuft auf solovei-beauty.com, so steht sie auch in
+        // app/ai-sichtbarkeit.
+        href: 'https://www.solovei-beauty.com/de',
         logo: '/image/proof/solovei-logo.avif',
         engine: 'ChatGPT',
         Icon: OpenAIIcon,

@@ -1,20 +1,91 @@
 'use client';
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { FadeIn } from "@/components/ui/FadeIn";
-import { EmailIcon, PhoneIcon, MapMarkerIcon, LinkedInIcon, InstagramIcon, TwitterIcon, CheckIcon, LoadingIcon, ArrowRightIcon } from "@/components/ui/Icons";
+import {
+  EmailIcon,
+  PhoneIcon,
+  MapMarkerIcon,
+  LinkedInIcon,
+  InstagramIcon,
+  TwitterIcon,
+  LoadingIcon,
+} from "@/components/ui/Icons";
+
+/* ==================================================================== *
+ *  /contact
+ *  --------------------------------------------------------------------
+ *  Four inputs became three. `company` was the one field nobody has to
+ *  fill and nobody reads: it is gone from the form and the address I
+ *  actually need (the website) is asked for inside the message, where a
+ *  visitor is already typing. The key stays in the payload as an empty
+ *  string, because app/api/contact/route.ts renders it conditionally and
+ *  must not be touched.
+ *
+ *  The other three defects:
+ *   - two primary actions. The old page put mail, phone and a black
+ *     submit button at the same weight, so there was no obvious next
+ *     step. Now: one filled button, everything else is a link.
+ *   - no answer to "when do I hear back". Added, because that is the
+ *     single question a contact form leaves open.
+ *   - the labels were placeholders in grey-on-white at 14px inside a
+ *     grey-on-white border. Labels are now brand-text, help text is
+ *     brand-subtle, and required is marked in words, not with a bare
+ *     asterisk.
+ * ==================================================================== */
+
+const CHANNELS = [
+  {
+    icon: EmailIcon,
+    label: "E-Mail",
+    value: "hello@aiseo.hamburg",
+    href: "mailto:hello@aiseo.hamburg",
+  },
+  {
+    icon: PhoneIcon,
+    label: "Telefon",
+    value: "+49 176 321 94 754",
+    href: "tel:+4917632194754",
+  },
+];
+
+const SOCIALS = [
+  { href: "https://www.linkedin.com/in/vadim-shchepin/", label: "LinkedIn", Icon: LinkedInIcon },
+  { href: "https://www.instagram.com/aiseo.hamburg/", label: "Instagram", Icon: InstagramIcon },
+  { href: "https://x.com/aiseo.hamburg", label: "X (Twitter)", Icon: TwitterIcon },
+];
+
+const FIELD =
+  "w-full rounded-lg border border-brand-line bg-white px-4 py-3 text-body text-brand-text placeholder:text-brand-subtle focus:border-brand-accent-deep focus:outline-none focus:ring-2 focus:ring-brand-accent-deep/25";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    /* Kept so the payload shape stays identical to what the API reads. */
     company: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState("");
+
+  const getErrorMessage = (code: string) => {
+    switch (code) {
+      case 'MISSING_FIELDS':
+        return 'Bitte fülle Name, E-Mail und Nachricht aus.';
+      case 'INVALID_EMAIL':
+        return 'Bitte gib eine gültige E-Mail-Adresse ein.';
+      case 'SEND_FAILED':
+        return 'Die E-Mail konnte nicht gesendet werden. Bitte versuche es später erneut.';
+      case 'SERVER_MISCONFIG':
+        return 'Technischer Fehler. Schreib mir direkt an hello@aiseo.hamburg.';
+      default:
+        return 'Ein unbekannter Fehler ist aufgetreten.';
+    }
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -24,38 +95,19 @@ export default function ContactPage() {
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
-
       const data = await response.json();
-
       if (data.ok) {
         window.location.href = '/contact/danke';
       } else {
         setError(getErrorMessage(data.error));
       }
-    } catch (error) {
+    } catch {
       setError("Ein Fehler ist aufgetreten. Bitte versuche es später erneut.");
     } finally {
       setIsSubmitting(false);
-    }
-  };
-
-  const getErrorMessage = (error: string) => {
-    switch (error) {
-      case 'MISSING_FIELDS':
-        return 'Bitte fülle alle Pflichtfelder aus.';
-      case 'INVALID_EMAIL':
-        return 'Bitte gib eine gültige E-Mail-Adresse ein.';
-      case 'SEND_FAILED':
-        return 'Die E-Mail konnte nicht gesendet werden. Bitte versuche es später erneut.';
-      case 'SERVER_MISCONFIG':
-        return 'Technischer Fehler. Bitte kontaktiere uns direkt unter hello@aiseo.hamburg.';
-      default:
-        return 'Ein unbekannter Fehler ist aufgetreten.';
     }
   };
 
@@ -63,216 +115,242 @@ export default function ContactPage() {
     <div className="relative w-full overflow-hidden bg-brand-bg text-brand-text font-sans selection:bg-brand-accent selection:text-white">
       <Navbar />
 
-      <main className="min-h-screen bg-[#F7F5F2]">
-        {/* Hero Section */}
-        <section className="px-6 md:px-12 lg:px-20 py-16 md:py-24 max-w-[900px] mx-auto">
-          <FadeIn>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-[-0.04em] text-black mb-6">
-              Kontakt
-            </h1>
-            <p className="text-xl text-gray-700 max-w-2xl">
-              Hast du Fragen zur KI-Sichtbarkeit? Lass uns sprechen.
-            </p>
-          </FadeIn>
+      <main className="min-h-screen bg-brand-surface">
+        {/* Hero. The form is the primary action, so the hero stays two
+            lines and hands over immediately. */}
+        <section className="px-6 pt-navbar pb-stack md:px-12 lg:px-20">
+          <div className="max-w-article mx-auto">
+            <FadeIn>
+              {/* The eyebrow used to repeat the H1 word for word. It now
+                  names the two paths the page offers instead. */}
+              <p className="text-micro font-semibold uppercase tracking-eyebrow text-brand-subtle">
+                Schreiben oder sprechen
+              </p>
+              <h1 className="mt-3 text-title md:text-display font-semibold text-brand-text">
+                Kontakt für KI-Sichtbarkeit
+              </h1>
+              <p className="mt-flow max-w-measure text-lead text-brand-muted">
+                Schreib mir, was du vorhast. Ich antworte persönlich, in der Regel am
+                selben Werktag, und sage dir ehrlich, ob KI-Sichtbarkeit für dich Sinn
+                macht.
+              </p>
+            </FadeIn>
+          </div>
         </section>
 
-        {/* Contact Content */}
-        <section className="px-6 md:px-12 lg:px-20 pb-16 md:pb-24 max-w-[900px] mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16">
-            {/* Contact Info */}
-            <FadeIn delay={100}>
-              <div className="space-y-10">
-                <div>
-                  <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">
-                    Direkter Kontakt
-                  </h2>
-                  <div className="space-y-4">
-                    <a
-                      href="mailto:hello@aiseo.hamburg"
-                      className="flex items-center gap-3 text-lg text-black hover:text-brand-accent transition-colors group"
+        {/* Form plus channels */}
+        <section className="px-6 pb-block md:px-12 lg:px-20">
+          <div className="max-w-article mx-auto grid items-start gap-stack lg:grid-cols-12 lg:gap-block">
+            <FadeIn className="lg:col-span-7">
+              <form
+                onSubmit={handleSubmit}
+                className="rounded-card border border-brand-line bg-white p-5 md:p-8"
+              >
+                <p className="text-micro font-semibold uppercase tracking-eyebrow text-brand-subtle">
+                  Drei Felder, eine Nachricht
+                </p>
+
+                <div className="mt-flow space-y-flow">
+                  <div>
+                    <label
+                      htmlFor="name"
+                      className="block text-meta font-medium text-brand-text"
                     >
-                      <EmailIcon className="w-5 h-5 text-gray-400 group-hover:text-brand-accent" />
-                      hello@aiseo.hamburg
-                    </a>
-                    <a
-                      href="tel:+4917632194754"
-                      className="flex items-center gap-3 text-lg text-black hover:text-brand-accent transition-colors group"
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      autoComplete="name"
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      className={`mt-1.5 ${FIELD}`}
+                      placeholder="Vor- und Nachname"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="email"
+                      className="block text-meta font-medium text-brand-text"
                     >
-                      <PhoneIcon className="w-5 h-5 text-gray-400 group-hover:text-brand-accent" />
-                      +49 176 321 94 754
-                    </a>
+                      E-Mail
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      autoComplete="email"
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      className={`mt-1.5 ${FIELD}`}
+                      placeholder="name@firma.de"
+                    />
+                    <p className="mt-1.5 text-micro text-brand-subtle">
+                      Hierauf antworte ich, sonst nutze ich die Adresse für nichts.
+                    </p>
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="message"
+                      className="block text-meta font-medium text-brand-text"
+                    >
+                      Nachricht
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      required
+                      rows={5}
+                      value={formData.message}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      className={`mt-1.5 resize-none ${FIELD}`}
+                      placeholder="Worum geht es? Mit deiner Website-Adresse kann ich vorab nachsehen, ob KI dich heute nennt."
+                    />
                   </div>
                 </div>
 
-                <div>
-                  <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">
-                    Standort
-                  </h2>
-                  <div className="flex items-start gap-3 text-gray-700">
-                    <MapMarkerIcon className="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" />
-                    <div>
-                      <p>Flottbeker Drift 1</p>
-                      <p>22607 Hamburg</p>
-                      <p className="text-gray-500 mt-2">Fokus: DACH, Hamburg & Umgebung</p>
-                    </div>
-                  </div>
-                </div>
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="mt-stack inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-accent-deep px-6 py-3.5 text-body font-semibold text-white transition-colors hover:bg-brand-accent-ink disabled:cursor-not-allowed disabled:opacity-60"
+                >
+                  {isSubmitting ? (
+                    <>
+                      <LoadingIcon className="h-5 w-5" />
+                      Wird gesendet
+                    </>
+                  ) : (
+                    <>
+                      Nachricht senden
+                      <span aria-hidden="true">&rarr;</span>
+                    </>
+                  )}
+                </button>
 
-                <div>
-                  <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">
-                    Social Media
-                  </h2>
-                  <div className="flex gap-3">
-                    <a
-                      href="https://www.linkedin.com/in/vadim-shchepin/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:text-black hover:border-black transition-all"
-                      aria-label="LinkedIn"
-                    >
-                      <LinkedInIcon className="w-5 h-5" />
-                    </a>
-                    <a
-                      href="https://www.instagram.com/aiseo.hamburg/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:text-black hover:border-black transition-all"
-                      aria-label="Instagram"
-                    >
-                      <InstagramIcon className="w-5 h-5" />
-                    </a>
-                    <a
-                      href="https://x.com/aiseo.hamburg"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:text-black hover:border-black transition-all"
-                      aria-label="X (Twitter)"
-                    >
-                      <TwitterIcon className="w-5 h-5" />
-                    </a>
+                {error ? (
+                  <p
+                    role="alert"
+                    className="mt-4 rounded-lg border border-brand-orange/40 bg-brand-orange/5 px-4 py-3 text-meta text-brand-orange"
+                  >
+                    {error}
+                  </p>
+                ) : null}
+
+                <p className="mt-4 text-micro text-brand-subtle">
+                  Alle drei Felder sind Pflicht. Mit dem Absenden erklärst du dich mit der{" "}
+                  <Link
+                    href="/datenschutz"
+                    className="font-medium text-brand-accent-ink underline decoration-brand-line underline-offset-4"
+                  >
+                    Datenschutzerklärung
+                  </Link>{" "}
+                  einverstanden.
+                </p>
+              </form>
+            </FadeIn>
+
+            <FadeIn delay={120} className="lg:col-span-5">
+              <div>
+                <h2 className="text-micro font-semibold uppercase tracking-eyebrow text-brand-subtle">
+                  Direkter Kontakt
+                </h2>
+                <ul className="mt-3 border-t border-brand-line">
+                  {CHANNELS.map((channel) => (
+                    <li key={channel.label} className="border-b border-brand-hairline">
+                      <a
+                        href={channel.href}
+                        className="flex items-center gap-3 py-3 transition-colors hover:text-brand-accent-ink"
+                      >
+                        <channel.icon className="h-5 w-5 shrink-0 text-brand-subtle" />
+                        <span>
+                          <span className="block text-micro uppercase tracking-eyebrow text-brand-subtle">
+                            {channel.label}
+                          </span>
+                          <span className="block text-body font-medium text-brand-text">
+                            {channel.value}
+                          </span>
+                        </span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-3 text-micro text-brand-subtle">
+                  Lieber gleich sprechen? Der{" "}
+                  <Link
+                    href="/termin"
+                    className="font-medium text-brand-accent-ink underline decoration-brand-line underline-offset-4"
+                  >
+                    kostenlose 15-Minuten-Call
+                  </Link>{" "}
+                  ist der schnellste Weg zu einer Einschätzung.
+                </p>
+              </div>
+
+              <div className="mt-stack">
+                <h2 className="text-micro font-semibold uppercase tracking-eyebrow text-brand-subtle">
+                  Standort
+                </h2>
+                <div className="mt-3 flex items-start gap-3 border-t border-brand-line pt-3">
+                  <MapMarkerIcon className="mt-0.5 h-5 w-5 shrink-0 text-brand-subtle" />
+                  <div className="text-meta text-brand-muted">
+                    <p className="font-medium text-brand-text">Flottbeker Drift 1</p>
+                    <p>22607 Hamburg</p>
+                    <p className="mt-1 text-brand-subtle">
+                      Fokus: Hamburg und Umgebung, Projekte im gesamten DACH-Raum.
+                    </p>
                   </div>
                 </div>
               </div>
-            </FadeIn>
 
-            {/* Contact Form */}
-            <FadeIn delay={200}>
-              <div className="bg-white rounded-card border border-gray-100 p-8 md:p-10">
-                <form onSubmit={handleSubmit} className="space-y-6">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                        Name *
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        required
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all"
-                        placeholder="Dein Name"
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                        E-Mail *
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        required
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all"
-                        placeholder="deine@email.de"
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
-                        Unternehmen
-                      </label>
-                      <input
-                        type="text"
-                        id="company"
-                        value={formData.company}
-                        onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all"
-                        placeholder="Dein Unternehmen (optional)"
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                        Nachricht *
-                      </label>
-                      <textarea
-                        id="message"
-                        required
-                        rows={5}
-                        value={formData.message}
-                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all resize-none"
-                        placeholder="Erzähle uns von deinem Projekt oder deiner Frage..."
-                      />
-                    </div>
-
-                    <button
-                      type="submit"
-                      disabled={isSubmitting}
-                      className="w-full bg-black text-white py-4 px-6 rounded-lg font-medium hover:bg-gray-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              <div className="mt-stack">
+                <h2 className="text-micro font-semibold uppercase tracking-eyebrow text-brand-subtle">
+                  Social Media
+                </h2>
+                <div className="mt-3 flex gap-2 border-t border-brand-line pt-3">
+                  {SOCIALS.map((social) => (
+                    <a
+                      key={social.label}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex h-10 w-10 items-center justify-center rounded-full border border-brand-line text-brand-subtle transition-colors hover:border-brand-edge hover:text-brand-text"
+                      aria-label={social.label}
                     >
-                      {isSubmitting ? (
-                        <>
-                          <LoadingIcon className="w-5 h-5" />
-                          Wird gesendet...
-                        </>
-                      ) : (
-                        <>
-                          Nachricht senden
-                          <ArrowRightIcon className="w-5 h-5" />
-                        </>
-                      )}
-                    </button>
-
-                    {error && (
-                      <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
-                        <p className="text-red-700 text-sm">{error}</p>
-                      </div>
-                    )}
-
-                    <p className="text-xs text-gray-500 text-center">
-                      Mit dem Absenden erklärst du dich mit unserer{' '}
-                      <a href="/datenschutz" className="underline hover:text-black">
-                        Datenschutzerklärung
-                      </a>{' '}
-                      einverstanden.
-                    </p>
-                  </form>
+                      <social.Icon className="h-5 w-5" />
+                    </a>
+                  ))}
                 </div>
-              </FadeIn>
-            </div>
-          </section>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
 
-        {/* Quick FAQ CTA */}
-        <section className="px-6 md:px-12 lg:px-20 py-16 border-t border-black/10">
-          <div className="max-w-[900px] mx-auto">
-            <FadeIn>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+        {/* FAQ hand-off */}
+        <section className="border-t border-brand-line bg-brand-bg px-6 py-stack md:px-12 lg:px-20">
+          <div className="max-w-article mx-auto grid items-baseline gap-stack lg:grid-cols-12">
+            <div className="lg:col-span-7">
+              <h2 className="text-subheading font-semibold text-brand-text">
                 Hast du Fragen?
               </h2>
-              <p className="text-gray-700 mb-6 max-w-xl">
-                Viele Antworten findest du bereits in unseren FAQs.
+              <p className="mt-2 max-w-measure text-body text-brand-muted">
+                Dreizehn Antworten stehen schon fertig da: was KI-Sichtbarkeit ist, wie
+                lange sie braucht und wann sie sich nicht lohnt.
               </p>
-              <a
+            </div>
+            <div className="lg:col-span-5 lg:justify-self-end">
+              <Link
                 href="/faq"
-                className="inline-flex items-center gap-2 text-sm font-medium text-black hover:text-gray-700 transition-colors group"
+                className="inline-flex items-center gap-1.5 text-meta font-semibold text-brand-accent-ink hover:gap-2.5"
               >
                 Zum FAQ
-                <span className="group-hover:translate-x-1 transition-transform">→</span>
-              </a>
-            </FadeIn>
+                <span aria-hidden="true">&rarr;</span>
+              </Link>
+            </div>
           </div>
         </section>
       </main>

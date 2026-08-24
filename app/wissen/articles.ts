@@ -38,6 +38,68 @@ export const TOPICS: Topic[] = [
   'Case Studies',
 ];
 
+// One sorting line per topic group on the /wissen hub. With 50 guides the
+// group heading alone does not tell a visitor whether the group is for them,
+// so each one says what the guides inside have in common.
+export const TOPIC_INTROS: Record<Topic, string> = {
+  Grundlagen:
+    'Die vier Kürzel und der Pillar-Guide. Der Einstieg, wenn erst noch geklärt werden muss, worüber hier eigentlich geredet wird.',
+  Plattformen:
+    'Ein Guide pro Antwortsystem. ChatGPT, Perplexity, Gemini, Claude, Copilot und Googles KI-Box ziehen ihre Quellen jeweils anders.',
+  Branchen:
+    'Neun Branchen, in denen Kunden inzwischen die KI fragen, bevor sie einen Anbieter fragen. Jede mit ihrer eigenen Quellenlage.',
+  Strategie:
+    'Kennzahlen, Kosten und Reihenfolge. Womit du anfängst, was warten kann und woran du merkst, dass es wirkt.',
+  Technik:
+    'Crawlbarkeit, llms.txt, strukturierte Daten und die Tools, die Nennungen überhaupt messbar machen.',
+  Vergleiche:
+    'Direkte Gegenüberstellungen für den Moment, in dem du zwischen zwei Wegen, zwei Konsolen oder zwei Anbietern wählst.',
+  'Case Studies':
+    'Echte Projekte mit den Zahlen davor und danach, inklusive der Stellen, an denen es länger gedauert hat als geplant.',
+};
+
+const MONTHS_DE = [
+  'Jan.',
+  'Feb.',
+  'März',
+  'Apr.',
+  'Mai',
+  'Juni',
+  'Juli',
+  'Aug.',
+  'Sept.',
+  'Okt.',
+  'Nov.',
+  'Dez.',
+];
+
+/* Hand-rolled instead of Intl.DateTimeFormat on purpose: the hub list is a
+   client component, and Intl output can differ between the Node build and the
+   browser (ICU data, locale availability), which shows up as a hydration
+   mismatch on 50 rows at once. */
+export function formatArticleDate(iso: string): string {
+  const [year, month, day] = iso.split('-');
+  return `${Number(day)}. ${MONTHS_DE[Number(month) - 1]} ${year}`;
+}
+
+/** Newest `date` in the registry. Drives the hub's "Stand" line and the Neu flag. */
+export function latestArticleDate(articles: Article[] = ARTICLES): string {
+  return articles.reduce((latest, a) => (a.date > latest ? a.date : latest), '');
+}
+
+/** Topics in TOPICS order, empty groups dropped, article order preserved. */
+export function groupedByTopic(articles: Article[]): { topic: Topic; items: Article[] }[] {
+  return TOPICS.map((topic) => ({
+    topic,
+    items: articles.filter((a) => a.topic === topic),
+  })).filter((group) => group.items.length > 0);
+}
+
+/** Stable anchor id for a topic group heading. */
+export function topicId(topic: Topic): string {
+  return `thema-${topic.toLowerCase().replace(/\s+/g, '-')}`;
+}
+
 export const ARTICLES: Article[] = [
   {
     title: 'Citation Rate: die wichtigste KPI der KI-Sichtbarkeit, richtig berechnet',
@@ -151,7 +213,7 @@ export const ARTICLES: Article[] = [
   },
   {
     title: 'AI SEO Marktanalyse Deutschland 2026: AEO, GEO, LLMO und 3 Keyword-Honigfallen',
-    description: 'Primärrecherche für Unternehmen und Agenturen: 297 deutsche AEO/GEO/LLMO Keywords. Drei Honigfallen, sechs Begriffe mit starkem Wachstum und der stille Rückgang von „ChatGPT SEO“. Mit Datensatz.',
+    description: 'Primärrecherche für Unternehmen und Agenturen: 297 deutsche AEO/GEO/LLMO Keywords. Drei Honigfallen, sechs Begriffe mit starkem Wachstum und der stille Rückgang des Begriffs ChatGPT SEO. Mit Datensatz.',
     href: '/wissen/aeo-geo-marktanalyse-deutschland-2026',
     tag: 'Marktanalyse',
     topic: 'Strategie',
@@ -223,7 +285,7 @@ export const ARTICLES: Article[] = [
   },
   {
     title: 'Was ist GEO? Generative Engine Optimization endlich verständlich erklärt',
-    description: 'GEO ist nicht einfach „SEO für KI“. Was Generative Engine Optimization wirklich bedeutet, wie es sich von SEO und AEO unterscheidet und warum es 2026 unverzichtbar ist.',
+    description: 'GEO ist nicht einfach SEO für KI. Was Generative Engine Optimization wirklich bedeutet, wie es sich von SEO und AEO unterscheidet und warum es 2026 unverzichtbar ist.',
     href: '/wissen/was-ist-geo',
     tag: 'GEO',
     topic: 'Grundlagen',
@@ -484,7 +546,7 @@ export const ARTICLES: Article[] = [
   },
   {
     title: 'Sichtbarkeit in Perplexity AI: Wie dein Unternehmen zitiert wird',
-    description: 'Perplexity wächst um 370% jährlich. So optimierst du deine Inhalte, um von der KI-Suchmaschine zitiert zu werden.',
+    description: 'Perplexity meldet über 20% mehr Suchanfragen pro Monat. So optimierst du deine Inhalte, um von der KI-Suchmaschine zitiert zu werden.',
     href: '/wissen/sichtbarkeit-in-perplexity',
     tag: 'Perplexity',
     topic: 'Plattformen',

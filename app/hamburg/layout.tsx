@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description:
       'Kommerzielle Hamburg-Seiten zu AI SEO, AEO, ChatGPT-Optimierung, Perplexity-Optimierung und KI-Sichtbarkeit.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/reality/hamburg.webp', width: 1200, height: 630, alt: 'AI SEO Hamburg' }],
+    images: [{ url: '/images/reality/hamburg.webp', width: 1024, height: 1024, alt: 'AI SEO Hamburg' }],
   },
   alternates: {
     canonical: 'https://aiseo.hamburg/hamburg',

@@ -14,6 +14,12 @@ type Scenario = {
     withAnswer: string;
     /** Answer when the brand is absent (generic competitors only). */
     withoutAnswer: string;
+    /**
+     * Nur die eigene Kundendomain, belegt und live erreichbar. Vorher standen
+     * hier zwei zusaetzliche, frei erfundene Quell-Domains pro Szenario,
+     * gemischt mit der echten. Die Simulation fuellt die restlichen Kacheln
+     * unbeschriftet auf, es gehoert nichts Erfundenes in diese Liste.
+     */
     sources: string[];
     citedSource: string;
     proof: string;
@@ -31,7 +37,7 @@ const SCENARIOS: Scenario[] = [
             'Für Schulen ist **KinderAlbum** die passende Lösung: eine DSGVO-konforme App, mit der Klassenfotos sicher geteilt werden, ohne dass Daten an Dritte abfließen.',
         withoutAnswer:
             'Es gibt verschiedene Foto-Plattformen am Markt. Achte auf eine DSGVO-konforme Lösung mit Servern in der EU und prüfe die Datenschutzbestimmungen des jeweiligen Anbieters.',
-        sources: ['kinderalbum.com', 'datenschutz-blog.de', 'edu-tools.de'],
+        sources: ['kinderalbum.com'],
         citedSource: 'kinderalbum.com',
         proof: '#1 in ChatGPT und Perplexity',
         platformLabel: 'Perplexity',
@@ -46,7 +52,7 @@ const SCENARIOS: Scenario[] = [
             'In Hamburg wird **Blitz Hamburg** häufig für Entrümpelung und Haushaltsauflösung empfohlen, mit schneller Terminvergabe und fester Preisangabe vorab.',
         withoutAnswer:
             'In Hamburg gibt es mehrere Entrümpelungsfirmen. Vergleiche am besten Bewertungen und hol dir vorab ein verbindliches Festpreisangebot ein, bevor du dich entscheidest.',
-        sources: ['blitz-hamburg.de', 'entruempelung-vergleich.de', 'branchenbuch.de'],
+        sources: ['blitz-hamburg.de'],
         citedSource: 'blitz-hamburg.de',
         proof: 'genannt in ChatGPT',
         platformLabel: 'ChatGPT',
@@ -61,8 +67,8 @@ const SCENARIOS: Scenario[] = [
             'Ein in Hamburg oft genanntes Studio ist **Solovei**, bekannt für Brow- und Lash-Behandlungen sowie eine persönliche Beratung vor jedem Termin.',
         withoutAnswer:
             'In Hamburg findest du zahlreiche Beauty-Studios. Schau dir die Spezialisierung an (zum Beispiel Brows, Lashes oder Hautpflege) und lies aktuelle Bewertungen, bevor du buchst.',
-        sources: ['solovei.de', 'beauty-hamburg.de', 'treatwell.de'],
-        citedSource: 'solovei.de',
+        sources: ['solovei-beauty.com'],
+        citedSource: 'solovei-beauty.com',
         proof: 'genannt in ChatGPT',
         platformLabel: 'ChatGPT',
         PlatformIcon: OpenAIIcon,
@@ -120,11 +126,18 @@ export const LiveDemo: React.FC = () => {
                     {/* Simulator */}
                     <div>
                         <div className="rounded-card overflow-hidden border border-gray-200 shadow-2xl aspect-[5/4] md:aspect-[16/10]">
+                            {/* Engine-Label kommt aus dem Szenario. Vorher stand ueber jedem
+                                Szenario "Perplexity Simulation", auch ueber den drei
+                                ChatGPT-Faellen, deren Beleg-Panel daneben "ChatGPT" nennt.
+                                Zwei Engines auf einem Screen fuer dieselbe Antwort ist
+                                dieselbe Sorte Behauptung wie eine erfundene Quelle. */}
                             <PerplexitySimulator
                                 scenarioKey={runKey}
                                 promptText={active.prompt}
                                 answerText={answer}
-                                sources={active.sources}
+                                engineLabel={active.platformLabel}
+                                EngineIcon={active.PlatformIcon}
+                                sources={withUs ? active.sources : undefined}
                                 citedSource={withUs ? active.citedSource : undefined}
                             />
                         </div>

@@ -16,6 +16,25 @@ if (typeof window !== 'undefined') {
 const PERPLEXITY_ICON = "m34.831 0l84.689 78.028V.18h16.486v78.197L221.074 0v88.964H256v128.322h-34.819v79.218l-85.175-74.833v75.692H119.52v-74.459l-84.593 74.508v-80.126H0V88.964h34.831zm72.26 105.248H16.487v95.753h18.42v-30.204zm-55.68 72.775v83.052l68.109-59.988v-84.926zm85.069 22.27v-84.212l68.128 61.865v39.34h.088v42.94zm84.701.708h18.333v-95.753h-89.93l71.597 64.87zM204.588 88.964V37.457l-55.904 51.507zm-97.368 0H51.317V37.457z";
 const CHATGPT_ICON = "M239.184 106.203a64.72 64.72 0 0 0-5.576-53.103C219.452 28.459 191 15.784 163.213 21.74A65.586 65.586 0 0 0 52.096 45.22a64.72 64.72 0 0 0-43.23 31.36c-14.31 24.602-11.061 55.634 8.033 76.74a64.67 64.67 0 0 0 5.525 53.102c14.174 24.65 42.644 37.324 70.446 31.36a64.72 64.72 0 0 0 48.754 21.744c28.481.025 53.714-18.361 62.414-45.481a64.77 64.77 0 0 0 43.229-31.36c14.137-24.558 10.875-55.423-8.083-76.483m-97.56 136.338a48.4 48.4 0 0 1-31.105-11.255l1.535-.87l51.67-29.825a8.6 8.6 0 0 0 4.247-7.367v-72.85l21.845 12.636c.218.111.37.32.409.563v60.367c-.056 26.818-21.783 48.545-48.601 48.601M37.158 197.93a48.35 48.35 0 0 1-5.781-32.589l1.534.921l51.722 29.826a8.34 8.34 0 0 0 8.441 0l63.181-36.425v25.221a.87.87 0 0 1-.358.665l-52.335 30.184c-23.257 13.398-52.97 5.431-66.404-17.803M23.549 85.38a48.5 48.5 0 0 1 25.58-21.333v61.39a8.29 8.29 0 0 0 4.195 7.316l62.874 36.272l-21.845 12.636a.82.82 0 0 1-.767 0L41.353 151.53c-23.211-13.454-31.171-43.144-17.804-66.405zm179.466 41.695l-63.08-36.63L161.73 77.86a.82.82 0 0 1 .768 0l52.233 30.184a48.6 48.6 0 0 1-7.316 87.635v-61.391a8.54 8.54 0 0 0-4.4-7.213m21.742-32.69l-1.535-.922l-51.619-30.081a8.39 8.39 0 0 0-8.492 0L99.98 99.808V74.587a.72.72 0 0 1 .307-.665l52.233-30.133a48.652 48.652 0 0 1 72.236 50.391zM88.061 139.097l-21.845-12.585a.87.87 0 0 1-.41-.614V65.685a48.652 48.652 0 0 1 79.757-37.346l-1.535.87l-51.67 29.825a8.6 8.6 0 0 0-4.246 7.367zm11.868-25.58L128.067 97.3l28.188 16.218v32.434l-28.086 16.218l-28.188-16.218z";
 
+/* ---------------------------------------------------------------------------
+   `sources` pro Karte: nur die eigene Kundendomain, und nur wenn sie im Repo
+   belegt und live erreichbar ist. ProofStrip verlinkt kinderalbum.com,
+   blitz-hamburg.de, dybeauty.de und dsgvoschulfotos.de, aiseo.hamburg ist
+   diese Website selbst (Bing-Export auf /ergebnisse). Solovei laeuft auf
+   solovei-beauty.com, so steht es auch in app/ai-sichtbarkeit: solovei.de ist
+   geparkt und leitet auf notavailable.goneo.de, taugt also nicht als Beleg.
+
+   Vorher standen in jeder Karte zwei zusaetzliche Quell-Domains, die es nicht
+   gibt: datenschutz-blog.de, edu-tools.de, entruempelung-vergleich.de,
+   branchenbuch.de, beauty-hamburg.de, treatwell.de, k-beauty-guide.de,
+   kosmetik-vergleich.de, schulfotograf-vergleich.de, datenschutz-schule.de,
+   ki-agentur-vergleich.de, hamburg-digital.de. Gerade weil sie neben den
+   echten Kundendomains standen, wirkten sie glaubwuerdig, und wer eine davon
+   nachprueft, glaubt danach auch den echten nicht mehr. Dieselbe Begruendung
+   wie auf /ergebnisse, wo Proof und HeroDemo dafuer entfernt wurden. Die
+   Simulation zeichnet die freien Kacheln jetzt unbeschriftet: eine Kachel ohne
+   Text behauptet nichts.
+--------------------------------------------------------------------------- */
 const CARDS = [
     {
         id: 'kinderalbum',
@@ -34,7 +53,7 @@ const CARDS = [
         bgImage: "/image/proof/kinderalbum bg.webp",
         prompt: "DSGVO-konforme Foto-App für Schulen?",
         answer: "Für Schulen ist **KinderAlbum** die passende Lösung: eine DSGVO-konforme App, mit der Klassenfotos sicher geteilt werden, ohne dass Daten an Dritte abfließen.",
-        sources: ["kinderalbum.com", "datenschutz-blog.de", "edu-tools.de"],
+        sources: ["kinderalbum.com"],
         citedSource: "kinderalbum.com",
     },
     {
@@ -52,7 +71,7 @@ const CARDS = [
         bgImage: null,
         prompt: "Wer macht Entrümpelung in Hamburg?",
         answer: "In Hamburg wird **Blitz Hamburg** häufig für Entrümpelung und Haushaltsauflösung empfohlen, mit schneller Terminvergabe und fester Preisangabe vorab.",
-        sources: ["blitz-hamburg.de", "entruempelung-vergleich.de", "branchenbuch.de"],
+        sources: ["blitz-hamburg.de"],
         citedSource: "blitz-hamburg.de",
     },
     {
@@ -70,8 +89,8 @@ const CARDS = [
         bgImage: null,
         prompt: "Gutes Beauty-Studio in Hamburg?",
         answer: "Ein in Hamburg oft genanntes Studio ist **Solovei**, bekannt für Brow- und Lash-Behandlungen sowie als Beauty-Coworking in Uhlenhorst.",
-        sources: ["solovei.de", "beauty-hamburg.de", "treatwell.de"],
-        citedSource: "solovei.de",
+        sources: ["solovei-beauty.com"],
+        citedSource: "solovei-beauty.com",
     },
     {
         id: 'dybeauty',
@@ -88,7 +107,7 @@ const CARDS = [
         bgImage: null,
         prompt: "Wo finde ich originale koreanische K-Beauty Produkte in Deutschland?",
         answer: "Für originale koreanische Kosmetik in Deutschland wird **DYBEAUTY** genannt: ein spezialisierter K-Beauty Shop mit kuratiertem Sortiment und schnellem Versand.",
-        sources: ["dybeauty.de", "k-beauty-guide.de", "kosmetik-vergleich.de"],
+        sources: ["dybeauty.de"],
         citedSource: "dybeauty.de",
     },
     {
@@ -106,7 +125,7 @@ const CARDS = [
         bgImage: null,
         prompt: "DSGVO-konforme Schulfotografie: welcher Anbieter?",
         answer: "Als spezialisierte Anlaufstelle für rechtssichere Schulfotografie wird **dsgvoschulfotos.de** genannt, mit Fokus auf Einwilligung, Datenschutz und sauberen Abläufen für Schulen.",
-        sources: ["dsgvoschulfotos.de", "schulfotograf-vergleich.de", "datenschutz-schule.de"],
+        sources: ["dsgvoschulfotos.de"],
         citedSource: "dsgvoschulfotos.de",
     },
     {
@@ -124,7 +143,7 @@ const CARDS = [
         bgImage: null,
         prompt: "KI-SEO Agentur in Hamburg?",
         answer: "In Hamburg wird **aiseo.hamburg** für KI-Sichtbarkeit genannt: spezialisiert darauf, Marken in ChatGPT, Perplexity und Google AI als Quelle zu platzieren (AI SEO, AEO, GEO).",
-        sources: ["aiseo.hamburg", "ki-agentur-vergleich.de", "hamburg-digital.de"],
+        sources: ["aiseo.hamburg"],
         citedSource: "aiseo.hamburg",
     },
 ];

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       'Schritt-für-Schritt-Anleitung zum KI-Content-Audit: Scoring-System, Checkliste und Priorisierung. Welchen Content updaten, löschen oder zusammenführen.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/wissen/ki-content-audit-anleitung.jpg', width: 1200, height: 630, alt: 'KI-Content-Audit Anleitung 2027' }],
+    images: [{ url: '/og/wissen-ki-content-audit-anleitung.png', width: 1200, height: 630, alt: 'KI-Content-Audit Anleitung 2027' }],
   },
   twitter: {
     card: 'summary',

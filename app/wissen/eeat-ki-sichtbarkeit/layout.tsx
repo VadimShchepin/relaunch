@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       'E-E-A-T für KI-Systeme funktioniert anders als für Google. Erfahre, warum Konsistenz über Quellen hinweg wichtiger ist als Backlinks, und warum eine Autoren-Bio allein nichts bringt.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/wissen/eeat-ki-sichtbarkeit.jpg', width: 1200, height: 630, alt: 'E-E-A-T und KI-Sichtbarkeit Guide 2026' }],
+    images: [{ url: '/og/wissen-eeat-ki-sichtbarkeit.png', width: 1200, height: 630, alt: 'E-E-A-T und KI-Sichtbarkeit Guide 2026' }],
   },
   twitter: {
     card: 'summary',

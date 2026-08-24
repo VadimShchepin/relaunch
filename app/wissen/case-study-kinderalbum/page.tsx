@@ -49,14 +49,10 @@ export default function CaseStudyKinderalbumPage() {
       title="Case Study KinderAlbum: Von Nischenprodukt zu KI-Empfehlung"
       description="KinderAlbum ist kein Massenmarkt-Produkt und gerade deshalb spannend. Das Angebot ist spitz, vertrauenssensibel und erklärungsbedürftig: eine DSGVO-konforme Foto-Plattform für Schulen. Genau solche Projekte zeigen gut, wie AI SEO wirklich funktioniert. Nicht über Lautstärke, sondern über Klarheit, Kontext und Vertrauen."
       publishedAt="2026-03-19"
-      modifiedAt="2026-03-19"
+      modifiedAt="2026-08-24"
       breadcrumbLabel="Case Study KinderAlbum"
       eyebrow="Case Study"
-      image={{
-        src: '/image/proof/KinderAlbum-chatgpt-full.webp',
-        alt: 'KinderAlbum in einer ChatGPT-Empfehlung',
-        caption: 'Dokumentierte Sichtbarkeit in KI-Antworten für ein hochspezialisiertes, vertrauensintensives Produkt.',
-      }}
+      schemaImage="/image/proof/KinderAlbum-chatgpt-full.webp"
       summaryItems={[
         'KinderAlbum kombiniert drei starke AI-SEO-Signale: klare Nische, hohe Vertrauensanforderung und eindeutiger Nutzen.',
         'Die Sichtbarkeit entstand nicht durch breite Content-Masse, sondern durch saubere Positionierung, DSGVO-Klarheit und extrahierbare Inhalte.',
@@ -100,11 +96,48 @@ export default function CaseStudyKinderalbumPage() {
           id: 'sichtbare-ergebnisse',
           heading: 'Was dadurch sichtbar wurde',
           stat: '+847 % KI-Traffic sind im bestehenden Projektmaterial für KinderAlbum dokumentiert.',
+          chart: {
+            variant: 'row',
+            title: 'Besucher nach Quelle, Projekt-Analytics KinderAlbum',
+            axis: { title: 'Besucher laut Referrer-Bericht' },
+            highlight: 'peak',
+            points: [
+              { label: 'chatgpt.com', value: 32, note: '44 Prozent der zugeordneten Besucher' },
+              { label: 'deref-gmx.net', value: 20, note: '27 Prozent, Weiterleitung aus Mail' },
+              { label: 'google.com', value: 17, note: '24 Prozent' },
+              { label: 'mail.google.com', value: 2 },
+              { label: 'com.google.android.gm', value: 1 },
+            ],
+            stats: [
+              { label: 'Seitenaufrufe, 24 Stunden', value: '314' },
+              { label: 'Besuche, 24 Stunden', value: '65' },
+              { label: 'Besuchsdauer', value: '7 Min. 7 Sek.' },
+            ],
+            table: { label: 'Quellen als Tabelle', heads: ['Quelle', 'Besucher'] },
+            caption:
+              'ChatGPT ist die stärkste einzelne Quelle, vor Google. Werte aus dem Referrer-Bericht des Projekt-Analytics, Screenshot aus dem Projektmaterial vom Januar 2026. Die drei Kennzahlen unter dem Diagramm beziehen sich auf das 24-Stunden-Fenster derselben Ansicht und haben deshalb eine andere Bezugsgröße als die Balken.',
+          },
           paragraphs: [
             'Im Repo vorhandene Screenshots zeigen, dass KinderAlbum in ChatGPT-Empfehlungen und in Perplexity-Antworten sichtbar wurde. Genau das ist für ein Nischenprodukt mit hoher Vertrauenshürde der entscheidende Beweis: Die Plattform wurde nicht nur indexiert, sondern inhaltlich eingeordnet.',
             'Besonders stark ist hier die Kombination aus Nische und Autorität. Weil das Produkt fachlich klar beschrieben ist, kann KI es besser in passende Kontexte einsortieren als breite, austauschbare Plattformen.',
             'Die Sichtbarkeit war damit kein Zufallstreffer aus einem einzelnen Absatz, sondern das Ergebnis einer saubereren Entität. Oder weniger poetisch gesagt: Die Website hatte endlich aufgehört, kompliziert zu erklären, was sie offensichtlich schon die ganze Zeit war.',
+            'Interessant ist, was beide Systeme übernehmen: nicht Werbeaussagen, sondern überprüfbare Attribute. Einwilligungsverwaltung, Audit-Trail, Mandantentrennung pro Schule, Speicherung in deutschen Rechenzentren. Das sind genau die Angaben, die eine KI braucht, um ein Produkt in einer Auswahlfrage neben anderen einzuordnen. Sie standen auf der Website als Fakten und nicht als Versprechen.',
           ],
+          code: {
+            label: 'Die beiden Nennungen im Wortlaut',
+            lines: [
+              'ChatGPT, Abschnitt Empfehlung (Praxis):',
+              'Einsteigerfreundlich & DSGVO-fokussiert: KinderAlbum',
+              '(spezifisch für Schule/Eltern-Fotos) oder Ziber Kwieb mit Fotoalbum.',
+              '',
+              'Perplexity, Abschnitt Spezialisierte Foto-Plattformen:',
+              'KinderAlbum: Speziell für Schulen/Kitas entwickelt, mit',
+              'Einwilligungsverwaltung, Audit-Trail, Schul-Mandantentrennung',
+              'sowie Speicherung in deutschen Rechenzentren (z.B. Hetzner',
+              'Nürnberg) und verschlüsseltem Storage.',
+              'Quellenangabe der Antwort: dsgvoschulfotos, plus eine weitere',
+            ],
+          },
           note: 'Die Zahlen und Screenshots auf dieser Seite beziehen sich auf bereits im Projektmaterial dokumentierte Ergebnisse. Wo keine exakten Detailwerte belegt sind, formuliere ich bewusst keine Fantasie-Kurve dazu.',
         },
         {
@@ -129,7 +162,7 @@ export default function CaseStudyKinderalbumPage() {
         },
       ]}
       galleryTitle="Screenshots aus dem Projekt"
-      galleryIntro="Diese Bilder liegen bereits im Projektmaterial vor und stützen die inhaltliche Richtung der Fallstudie."
+      galleryIntro="Zahlen und Wortlaut stehen weiter oben als Diagramm und als zitierbarer Text, weil beides in einem Dashboard-Screenshot auf dem Telefon unter 6 Pixel klein rendert. Diese zwei Aufnahmen bleiben als Rohbeleg dazu."
       gallery={[
         {
           src: '/image/proof/KinderAlbum-chagpt-recommendation.webp',
@@ -140,16 +173,6 @@ export default function CaseStudyKinderalbumPage() {
           src: '/image/kinderAlbum/proof4-kinderAlbum-perplexity.webp',
           alt: 'KinderAlbum als Quelle in Perplexity',
           caption: 'Perplexity-Zitation für das Produkt- und Positionierungsthema.',
-        },
-        {
-          src: '/image/proof/KinderAlbum-Metrics.webp',
-          alt: 'KinderAlbum Metriken',
-          caption: 'Metrik-Screenshot aus dem vorhandenen Projektmaterial.',
-        },
-        {
-          src: '/image/proof/ChatGPT visits.webp',
-          alt: 'ChatGPT Referral Traffic',
-          caption: 'Ergänzender Screenshot für KI-Traffic-Signale im Projektkontext.',
         },
       ]}
       faqs={[

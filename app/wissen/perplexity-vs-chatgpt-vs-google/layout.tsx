@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description:
       'Perplexity, ChatGPT oder Google AI Overviews: welche KI-Suchmaschine bringt am meisten? Detaillierter Vergleich mit Vergleichstabelle.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/wissen/perplexity-vs-chatgpt-vs-google.jpg', width: 1200, height: 630, alt: 'Perplexity vs ChatGPT vs Google AI: Plattform-Vergleich' }],
+    images: [{ url: '/og/wissen-perplexity-vs-chatgpt-vs-google.png', width: 1200, height: 630, alt: 'Perplexity vs ChatGPT vs Google AI: Plattform-Vergleich' }],
   },
   twitter: {
     card: 'summary',

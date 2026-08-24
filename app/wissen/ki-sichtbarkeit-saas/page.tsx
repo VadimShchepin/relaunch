@@ -10,13 +10,7 @@ export default function KiSichtbarkeitSaasPage() {
       description="Softwareauswahl beginnt inzwischen mit einem Prompt statt mit einer Google-Liste. Für SaaS-Anbieter verschiebt das die Prioritäten: Vergleichs- und Alternativenseiten schlagen Feature-Seiten, die Dokumentation wird zur Zitatquelle, und Bewertungsplattformen entscheiden über die Reihenfolge in der Antwort."
       publishedAt="2026-08-22"
       modifiedAt="2026-08-22"
-      image={{
-        src: '/images/wissen/ki-sichtbarkeit-saas/hero.webp',
-        alt: 'Entwicklerin arbeitet am Monitor in einem Büro mit Ziegelwand',
-        caption: 'Softwareauswahl beginnt heute mit einem Prompt, nicht mit einer Ergebnisliste.',
-        width: 1600,
-        height: 1067,
-      }}
+      schemaImage="/images/wissen/ki-sichtbarkeit-saas/hero.webp"
       summaryItems={[
         'Der Kaufprozess bei Software beginnt mit einer Kategorie-Frage („Welches Tool für X?“), nicht mit deinem Markennamen. Wer nur zu seinem Namen sichtbar ist, kommt in dieser Phase nicht vor.',
         'Alternativen- und Vergleichsseiten sind die stärksten Citation-Magneten. In einem Bing-Export einer von uns betreuten Software-Domain kamen 20 von 211 Citations aus dem Vergleichsbereich, bei einem Bruchteil der Seitenzahl.',
@@ -27,13 +21,6 @@ export default function KiSichtbarkeitSaasPage() {
       sections={[
         {
           id: 'kaufprozess',
-          image: {
-            src: '/images/wissen/ki-sichtbarkeit-saas/kaufprozess.webp',
-            alt: 'Person tippt am Computer und nutzt einen KI-Assistenten',
-            caption: 'Die Antwort nennt drei bis fünf Anbieter. Diese Auswahl trifft nicht mehr du.',
-            width: 1000,
-            height: 667,
-          },
           heading: 'Der Kaufprozess hat sich um eine Stufe nach vorn verschoben',
           paragraphs: [
             'Früher lief die Softwareauswahl über eine Suchanfrage nach der Kategorie, dann über Vergleichsportale, dann über die Anbieterseite. Der erste Schritt ist heute häufig ein Prompt: Welches Tool eignet sich für diesen Zweck, in dieser Größe, mit dieser Anforderung.',
@@ -45,16 +32,29 @@ export default function KiSichtbarkeitSaasPage() {
         },
         {
           id: 'vergleichsseiten',
-          image: {
-            src: '/images/wissen/ki-sichtbarkeit-saas/vergleichsseiten.webp',
-            alt: 'Person schreibt Code am Monitor neben einer grünen Lampe',
-            caption: '20 von 211 Citations kamen aus einem kleinen Vergleichsbereich.',
-            width: 1000,
-            height: 667,
-          },
           heading: 'Warum Vergleichs- und Alternativenseiten so gut funktionieren',
           intro:
             'Die Beobachtung stammt aus einem Bing-Webmaster-Tools-Export einer Software-Domain, die wir betreuen. Sie hat einen kleinen Vergleichsbereich und einen deutlich größeren Ratgeberbereich.',
+          chart: {
+            variant: 'row',
+            title: 'Citations nach Seitentyp, dsgvoschulfotos.de, Export vom 6. Juni 2026',
+            axis: { title: 'Citations' },
+            highlight: 'peak',
+            points: [
+              { label: 'Regelfrage mit konkretem Fall', value: 45, note: '/dsgvo-schule-apps' },
+              { label: 'Startseite', value: 18, note: 'wird für Markenfragen gezogen' },
+              { label: 'Alternative zu benanntem Anbieter', value: 14, note: 'zwei Seiten zusammen' },
+              { label: 'Vergleich Software-Kategorie', value: 6, note: '/vergleich/schulfotograf-software' },
+            ],
+            stats: [
+              { label: 'Citations gesamt', value: '211' },
+              { label: 'Zitierte Seiten', value: '16' },
+              { label: 'Anteil dieser vier Typen', value: '39 Prozent' },
+            ],
+            table: false,
+            caption:
+              'Nicht die Produktseite gewinnt, sondern die Seite, die eine Fachfrage für einen Anwendungsfall abschließend beantwortet. Auszug aus dem AI-Page-Stats-Export der Bing Webmaster Tools, Details in der Tabelle darunter.',
+          },
           table: {
             headers: ['Seitentyp', 'Beispielseite', 'Citations im Export', 'Beobachtung'],
             rows: [
@@ -96,13 +96,6 @@ export default function KiSichtbarkeitSaasPage() {
         },
         {
           id: 'dokumentation',
-          image: {
-            src: '/images/wissen/ki-sichtbarkeit-saas/dokumentation.webp',
-            alt: 'Person liest Dokumentation am Schreibtisch neben einem Monitor',
-            caption: 'Die Dokumentation ist Content, auch wenn sie nicht so heißt.',
-            width: 1000,
-            height: 667,
-          },
           heading: 'Die Dokumentation ist dein bester Content',
           paragraphs: [
             'Produktdokumentation wird selten als Marketing-Asset betrachtet und ist für KI-Systeme oft die nützlichste Ressource einer SaaS-Domain. Sie beantwortet präzise Fragen, benutzt Fachbegriffe konsistent und enthält konkrete Werte: Limits, Formate, Schnittstellen, Fehlermeldungen.',
@@ -133,13 +126,6 @@ export default function KiSichtbarkeitSaasPage() {
         },
         {
           id: 'ausserhalb',
-          image: {
-            src: '/images/wissen/ki-sichtbarkeit-saas/ausserhalb.webp',
-            alt: 'Person notiert Stichpunkte neben Monitor und Tastatur von oben',
-            caption: 'Die Reihenfolge in Vergleichsantworten entsteht außerhalb der eigenen Domain.',
-            width: 1000,
-            height: 667,
-          },
           heading: 'Was außerhalb der eigenen Domain passieren muss',
           intro:
             'Die Reihenfolge in Vergleichsantworten korreliert stärker mit unabhängigen Erwähnungen als mit der eigenen Seitenqualität. Für SaaS gibt es dafür eingespielte Kanäle.',

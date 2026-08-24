@@ -10,13 +10,7 @@ export default function ShareOfVoiceKiPage() {
       description="Share of Voice ist die einzige KI-Kennzahl, die deine Sichtbarkeit gegen den Wettbewerb stellt statt gegen dich selbst. Hier steht, wie sie berechnet wird, warum Microsofts Citation Share etwas anderes misst und an welchen drei Stellen die Zahl regelmäßig kippt."
       publishedAt="2026-08-22"
       modifiedAt="2026-08-22"
-      image={{
-        src: '/images/wissen/share-of-voice-ki/hero.webp',
-        alt: 'Notebook mit Diagrammen und Kaffeetasse im Morgenlicht am Fenster',
-        caption: 'Share of Voice ist die einzige KI-Kennzahl, die den Wettbewerb im Nenner behält.',
-        width: 1600,
-        height: 800,
-      }}
+      schemaImage="/images/wissen/share-of-voice-ki/hero.webp"
       summaryItems={[
         'Share of Voice misst deinen Anteil an allen Nennungen zu einem Thema, nicht deine Trefferquote. Der Nenner sind alle genannten Anbieter, nicht alle Prompts.',
         'Microsofts Citation Share ist die plattformseitige Variante: dein Anteil an allen Citations für dieselbe Grounding Query, über alle Websites hinweg gerechnet.',
@@ -27,13 +21,6 @@ export default function ShareOfVoiceKiPage() {
       sections={[
         {
           id: 'definition',
-          image: {
-            src: '/images/wissen/share-of-voice-ki/definition.webp',
-            alt: 'Notizbuch, Taschenrechner und Zimmerpflanze von oben auf dunklem Holz',
-            caption: 'Gezählt werden Nennungen, nicht Prompts. Darin liegt der ganze Unterschied zur Citation Rate.',
-            width: 1000,
-            height: 667,
-          },
           heading: 'Definition und Formel',
           intro:
             'Share of Voice kommt aus der Mediaplanung und beschreibt dort den eigenen Anteil an der gesamten Werbepräsenz eines Marktes. In KI-Antworten wird derselbe Gedanke auf Nennungen übertragen.',
@@ -64,16 +51,27 @@ export default function ShareOfVoiceKiPage() {
         },
         {
           id: 'rechenbeispiel',
-          image: {
-            src: '/images/wissen/share-of-voice-ki/rechenbeispiel.webp',
-            alt: 'Notebook mit Jahresbericht-Diagramm auf einem Schreibtisch im Büro',
-            caption: 'Derselbe Datensatz ergibt 30 Prozent oder 8 Prozent, je nach Methode.',
-            width: 1000,
-            height: 563,
-          },
           heading: 'Rechenbeispiel: derselbe Datensatz, drei Ergebnisse',
           intro:
             'Angenommen, du testest 40 Prompts. Deine Marke wird 12 Mal genannt, insgesamt fallen über alle Antworten 150 Anbieternennungen. Je nach Methode kommen drei verschiedene Zahlen heraus, und alle drei sind rechnerisch korrekt.',
+          chart: {
+            variant: 'column',
+            title: 'Dieselben 40 Prompts, zwei Nenner',
+            axis: { unit: ' %', title: 'Ergebnis' },
+            highlight: 'peak',
+            points: [
+              { label: 'Citation Rate, 12 von 40 Prompts', short: 'Rate', value: 30 },
+              { label: 'Share of Voice, 12 von 150 Nennungen', short: 'SoV', value: 8 },
+            ],
+            stats: [
+              { label: 'Getestete Prompts', value: '40' },
+              { label: 'Eigene Nennungen', value: '12' },
+              { label: 'Alle Anbieternennungen', value: '150' },
+            ],
+            table: false,
+            caption:
+              'Konstruiertes Rechenbeispiel, keine Messung: dieselben Testdaten, einmal mit Prompts im Nenner, einmal mit allen Anbieternennungen. Der gewichtete Wert liegt je nach Positionen zwischen 4 und 12 Prozent und steht in der Tabelle darunter.',
+          },
           table: {
             headers: ['Methode', 'Rechnung', 'Ergebnis', 'Was die Zahl beantwortet'],
             rows: [
@@ -106,13 +104,6 @@ export default function ShareOfVoiceKiPage() {
         },
         {
           id: 'wettbewerber',
-          image: {
-            src: '/images/wissen/share-of-voice-ki/wettbewerber.webp',
-            alt: 'Team im Büro diskutiert vor einem Flipchart mit Notizen',
-            caption: 'Vier KI-Systeme nannten elf Anbieter. Sieben standen in keiner Wettbewerbsliste.',
-            width: 1000,
-            height: 667,
-          },
           heading: 'Die Wettbewerber-Liste ist die halbe Kennzahl',
           paragraphs: [
             'Share of Voice reagiert auf jede Veränderung im Feld. Taucht ein neuer Anbieter in den KI-Antworten auf, sinkt dein Anteil, ohne dass sich an deiner Seite etwas geändert hat. Verschwindet ein Wettbewerber, steigt dein Anteil, ohne dass du etwas getan hast.',

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       'Was ist GEO (Generative Engine Optimization)? Der komplette Guide: GEO vs SEO vs AEO im Vergleich, warum GEO 2026 unverzichtbar ist und praktische erste Schritte.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/wissen/was-ist-geo.jpg', width: 1200, height: 630, alt: 'Was ist GEO? Generative Engine Optimization erklärt' }],
+    images: [{ url: '/og/wissen-was-ist-geo.png', width: 1200, height: 630, alt: 'Was ist GEO? Generative Engine Optimization erklärt' }],
   },
   twitter: {
     card: 'summary',

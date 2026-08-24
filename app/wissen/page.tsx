@@ -1,11 +1,25 @@
 import React from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Footer } from '@/components/sections/Footer';
-import { Button } from '@/components/ui/Button';
-import { sortedArticles } from './articles';
+import {
+  TOPICS,
+  formatArticleDate,
+  groupedByTopic,
+  latestArticleDate,
+  sortedArticles,
+} from './articles';
 import { WissenList } from './WissenList';
 
 const ARTICLES = sortedArticles();
+const TOPIC_COUNT = groupedByTopic(ARTICLES).length;
+
+/* Every number in the hero is derived from the registry, so adding a guide
+   updates the page instead of leaving a hardcoded "48 Guides" behind. */
+const FACTS: { label: string; value: string }[] = [
+  { label: 'Guides', value: String(ARTICLES.length) },
+  { label: 'Themen', value: `${TOPIC_COUNT} von ${TOPICS.length}` },
+  { label: 'Zuletzt erweitert', value: formatArticleDate(latestArticleDate(ARTICLES)) },
+];
 
 const collectionSchema = {
     '@context': 'https://schema.org',
@@ -20,6 +34,7 @@ const collectionSchema = {
     },
     mainEntity: {
         '@type': 'ItemList',
+        numberOfItems: ARTICLES.length,
         itemListElement: ARTICLES.map((article, i) => ({
             '@type': 'ListItem',
             position: i + 1,
@@ -29,53 +44,126 @@ const collectionSchema = {
     },
 };
 
+const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://aiseo.hamburg' },
+        { '@type': 'ListItem', position: 2, name: 'Wissen' },
+    ],
+};
+
 export default function WissenPage() {
     return (
-        <div className="relative w-full overflow-hidden bg-[#F7F5F2] text-brand-text font-sans selection:bg-brand-accent selection:text-white">
+        <div className="relative w-full overflow-x-clip bg-brand-bg text-brand-text font-sans selection:bg-brand-accent selection:text-white">
             <Navbar />
 
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
             />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
 
             <main>
-                {/* Hero */}
-                <section className="relative pt-32 pb-20 md:pt-52 md:pb-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
-                        <nav className="text-sm text-gray-500 mb-6">
-                            <a href="/" className="hover:text-brand-accent transition-colors">Startseite</a>
-                            <span className="mx-2">/</span>
-                            <span className="text-gray-900">Wissen</span>
-                        </nav>
+                {/* ---------------- HERO ---------------------------------- */}
+                {/* Same shape as the /hamburg hub: reading column plus a 20rem
+                    gutter that carries the counts. */}
+                <section className="border-b border-brand-line bg-brand-surface">
+                    <div className="mx-auto max-w-article px-6 pt-28 pb-stack md:px-10 md:pt-32 sm:pb-block lg:px-12">
+                        <div className="grid gap-stack lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-end lg:gap-rule">
+                            <div>
+                                <nav aria-label="Breadcrumb" className="text-micro text-brand-subtle">
+                                    <ol className="flex flex-wrap items-center gap-1.5">
+                                        <li>
+                                            <a href="/" className="transition-colors hover:text-brand-accent-ink">
+                                                Startseite
+                                            </a>
+                                        </li>
+                                        <li aria-hidden="true">/</li>
+                                        <li className="font-medium text-brand-text">Wissen</li>
+                                    </ol>
+                                </nav>
 
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-[-0.04em] text-black mb-6 leading-[1.05]">
-                            Wissen &amp; Guides
-                        </h1>
-                        <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
-                            Fundierte Praxis-Guides zu KI-Sichtbarkeit, AI SEO und Website-Automatisierung. Kein Marketing-Blabla, sondern echtes Wissen mit Quellen und konkreten Handlungsempfehlungen.
-                        </p>
-                </section>
-
-                {/* Articles Grid */}
-                <section className="py-10 md:py-16 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto">
-                    <WissenList articles={ARTICLES} />
-                </section>
-
-                {/* CTA */}
-                <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 max-w-[900px] mx-auto border-t border-gray-100">
-                        <div className="bg-[#121212] text-white rounded-3xl p-8 md:p-12 lg:p-16 relative overflow-hidden">
-                            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-accent/10 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2" />
-                            <div className="relative z-10">
-                                <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] mb-6 leading-tight">
-                                    Wissen ist gut.<br />
-                                    <span className="text-gray-500">Umsetzung ist besser.</span>
-                                </h2>
-                                <p className="text-gray-300 mb-8 max-w-lg">
-                                    Du willst wissen, ob KI dein Unternehmen bereits empfiehlt? Starte mit einer kostenlosen Kurzanalyse.
+                                <p className="mt-stack text-micro font-semibold uppercase tracking-eyebrow text-brand-accent-ink">
+                                    Wissensbasis
                                 </p>
-                                <Button href="/ai-sichtbarkeit-now" primary text="KI-Sichtbarkeit prüfen" className="!py-4 !px-8" />
+                                <h1 className="mt-4 text-3xl font-semibold tracking-heading text-brand-text sm:text-[2.5rem] sm:leading-[1.1] lg:text-title">
+                                    Wissen &amp; Guides
+                                </h1>
+                                <p className="mt-flow max-w-measure text-lead text-brand-muted">
+                                    Praxis-Guides zu KI-Sichtbarkeit, AI SEO und Website-Automatisierung: mit
+                                    Quellen, gemessenen Zahlen und konkreten Handlungsempfehlungen statt
+                                    Marketing-Blabla. Der Einstieg steht oben, darunter sortiert sich alles nach
+                                    Thema.
+                                </p>
+                            </div>
+
+                            <div>
+                                <dl className="grid gap-px overflow-hidden rounded-card border border-brand-line bg-brand-line">
+                                    {FACTS.map((fact) => (
+                                        <div
+                                            key={fact.label}
+                                            className="flex items-baseline justify-between gap-4 bg-brand-bg px-4 py-3 sm:px-5"
+                                        >
+                                            <dt className="text-micro uppercase tracking-eyebrow text-brand-subtle">
+                                                {fact.label}
+                                            </dt>
+                                            <dd className="text-meta font-medium tabular-nums text-brand-text">
+                                                {fact.value}
+                                            </dd>
+                                        </div>
+                                    ))}
+                                </dl>
+                                <p className="mt-flow text-micro text-brand-subtle">
+                                    Jeder Guide nennt oben seine Lesezeit und sein Veröffentlichungsdatum.
+                                    Ältere Guides bleiben stehen, solange die Aussage noch trägt.
+                                </p>
                             </div>
                         </div>
+                    </div>
+                </section>
+
+                {/* ---------------- INDEX --------------------------------- */}
+                <div className="mx-auto max-w-article px-6 pt-stack pb-block md:px-10 sm:pb-section lg:px-12">
+                    <WissenList articles={ARTICLES} />
+                </div>
+
+                {/* ---------------- SCHLUSS ------------------------------- */}
+                {/* This used to be a second brand-night band carrying the same
+                    button as the Footer CTA about 350px below it, on a
+                    container indented 56px differently. The Footer owns the
+                    closing ask on all 79 pages, so this band keeps its heading
+                    and its own link, points at the ask instead of repeating it,
+                    and goes light so the document ends in one dark band rather
+                    than two. */}
+                <section className="border-t border-brand-line bg-brand-surface">
+                    <div className="mx-auto max-w-article px-6 py-block md:px-10 sm:py-rule lg:px-12">
+                        <div className="grid gap-stack lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:items-start lg:gap-rule">
+                            <h2 className="text-2xl font-semibold tracking-heading text-brand-text sm:text-heading">
+                                Wissen ist gut.
+                                <br />
+                                <span className="text-brand-subtle">Umsetzung ist besser.</span>
+                            </h2>
+                            <div>
+                                <p className="text-meta text-brand-muted">
+                                    Du willst wissen, ob KI dein Unternehmen bereits empfiehlt? Die kostenlose
+                                    Kurzanalyse steht am Seitenende. Danach ist klar, welcher der{' '}
+                                    {ARTICLES.length} Guides oben für dich zählt.
+                                </p>
+                                <p className="mt-flow text-meta">
+                                    <a
+                                        href="/leistungen"
+                                        className="font-medium text-brand-accent-ink underline decoration-brand-accent-deep/40 decoration-1 underline-offset-4 transition-colors hover:decoration-brand-accent-deep"
+                                    >
+                                        Alle Leistungen ansehen
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </main>
 

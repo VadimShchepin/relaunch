@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: 'aiseo.hamburg',
     images: [
       {
-        url: '/images/wissen/was-ist-geo.jpg',
+        url: '/og/wissen-google-ki-optimierung.png',
         width: 1600,
         height: 900,
         alt: 'Google KI-Optimierung: offizielle Richtlinien fuer AI Overviews und AI Mode, aiseo.hamburg',

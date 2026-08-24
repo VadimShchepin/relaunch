@@ -1,17 +1,167 @@
 @import "tailwindcss";
 
+/* ---------------------------------------------------------------------------
+   aiseo.hamburg design system
+   ---------------------------------------------------------------------------
+   Tailwind 4: this @theme block is the ONLY source of design tokens.
+   tailwind.config.ts was a leftover v3 file with no @config directive, so
+   nothing in it ever compiled. It has been deleted; its four useful colours
+   were promoted here (see COLOUR below).
+
+   Rules for anyone adding tokens:
+   - Never redefine Tailwind's own scales (--text-xs..--text-9xl, --spacing,
+     --tracking-tight, ...). ~3.400 existing size classes and 1.395
+     leading-relaxed classes depend on the stock values. Add semantic names
+     alongside them instead.
+   - Every value below is either measured off the bar (Stripe DE guide) or is a
+     hex/length that already appears literally in the codebase. Nothing is
+     invented for decoration.
+--------------------------------------------------------------------------- */
+
 @theme {
+  /* == COLOUR: core (unchanged, byte-identical to the old values) ========== */
   --color-brand-bg: #FBF9F7;
   --color-brand-text: #111111;
   --color-brand-accent: #4FAF8C;
   --color-brand-dark: #1C1917;
 
-  --radius-section: 1.5rem;
-  /* 24px */
-  --radius-card: 1rem;
-  /* 16px */
+  /* == COLOUR: resurrected from the dead v3 config ========================
+     These classes are used by 7 files and rendered NOTHING until now, so
+     there is no previous appearance to preserve. That freedom was spent on
+     contrast: the original values failed WCAG AA as text on --color-brand-bg,
+     so the two text-grade ones were darkened along the same hue.
+       brand-orange  #FF5E3A  2,89:1  ->  #B8431F  5,18:1  (hue 11deg -> 14deg)
+       brand-slate   #7D8C9E  3,27:1  ->  #4A5568  7,17:1  (hue 213deg -> 220deg)
+       brand-olive   #9CA38A  kept: it is only ever a section background
+                              (Proof.tsx), and #111 on it is 7,21:1
+       brand-pink    dropped: zero usages anywhere outside the dead config */
+  --color-brand-orange: #B8431F;
+  --color-brand-orange-vivid: #FF5E3A; /* decorative fills/borders only, never text */
+  --color-brand-slate: #4A5568;
+  --color-brand-olive: #9CA38A;
 
+  /* == COLOUR: ink hierarchy ==============================================
+     The bar's biggest typographic advantage is that it uses two inks:
+     #0A2540 for headings and #425466 for body. We had exactly one (#111), so
+     every word on the page carried the same weight. Warm-neutral equivalents
+     that harmonise with the #FBF9F7 background: */
+  --color-brand-muted: #57524D;  /* long-form body copy, 7,35:1 on brand-bg */
+  --color-brand-subtle: #6B645D; /* captions, table notes, meta, 5,54:1 */
+
+  /* == COLOUR: surfaces and rules =========================================
+     Each of these is a hex already hardcoded across the site. Tokenising them
+     removes the drift, it does not change any pixel.
+       #F7F5F2  79 raw uses      #E2DCD5   6 raw uses
+       #121212  51 raw uses      #C9C2BA   4 raw uses
+       #F1EEEA   5 raw uses                                           */
+  --color-brand-surface: #F7F5F2;  /* panel one step off the page background */
+  --color-brand-night: #121212;    /* dark inverted sections */
+  --color-brand-hairline: #F1EEEA; /* decorative grid line, as on the bar */
+  --color-brand-line: #E2DCD5;     /* default 1px border, cards and tables */
+  --color-brand-edge: #C9C2BA;     /* emphasised divider, table head rule */
+
+  /* == COLOUR: accent depth ===============================================
+     #2D8A65 and #267555 are already hand-rolled inline in Navbar.tsx. The
+     base accent is 2,55:1 and must never carry small text; accent-ink can. */
+  --color-brand-accent-deep: #2D8A65; /* filled buttons, matches shipped nav */
+  --color-brand-accent-ink: #267555;  /* accent as text, 5,32:1 on brand-bg */
+
+  /* == TYPEFACE (unchanged) ===============================================
+     Loaded in app/layout.tsx from api.fontshare.com with display=swap at
+     weights 400/500/600/700. The fallback chain matters: General Sans is a
+     third-party request, so system-ui carries the first paint. */
   --font-sans: "General Sans", ui-sans-serif, system-ui, sans-serif;
+
+  /* == TYPE SCALE =========================================================
+     Semantic roles, not t-shirt sizes, so this is additive and cannot
+     restyle an existing page by accident. Measured off
+     /tmp/gauntlet-run/bar/stripe-article-desktop.png (1440px wide):
+       H1        ink 228/296/365  -> 56px on a 68px pitch  (1,214)
+       H2        ink height 31px  -> 32px on a 40px pitch  (1,25)
+       H3        24px on a 32px pitch                      (1,333)
+       body      ink 1149/1177/1205 -> 18px on a 28px pitch (1,556)
+       caption   15px on a 24px pitch
+       sidebar   14px on a 21px pitch
+     text-body is deliberately 1,5556 and not the site's habitual
+     text-lg + leading-relaxed (18/29,25): denser, per the brief.
+     Tracking values are the ones the site already uses as arbitrary
+     values 433x (-0.03em), 69x (-0.04em) and 24x (0.2em). */
+  --text-display: 4rem;
+  --text-display--line-height: 1.05;
+  --text-display--letter-spacing: -0.04em;
+
+  --text-title: 3rem;
+  --text-title--line-height: 1.08;
+  --text-title--letter-spacing: -0.03em;
+
+  --text-heading: 2rem;
+  --text-heading--line-height: 1.25;
+  --text-heading--letter-spacing: -0.03em;
+
+  --text-subheading: 1.5rem;
+  --text-subheading--line-height: 1.3333;
+  --text-subheading--letter-spacing: -0.02em;
+
+  --text-lead: 1.25rem;
+  --text-lead--line-height: 1.6;
+  --text-lead--letter-spacing: -0.01em;
+
+  --text-body: 1.125rem;
+  --text-body--line-height: 1.5556;
+  --text-body--letter-spacing: 0em;
+
+  --text-meta: 0.9375rem;
+  --text-meta--line-height: 1.6;
+  --text-meta--letter-spacing: 0em;
+
+  --text-micro: 0.8125rem;
+  --text-micro--line-height: 1.5385;
+  --text-micro--letter-spacing: 0.02em;
+
+  --leading-prose: 1.5556;
+  --tracking-display: -0.04em;
+  --tracking-heading: -0.03em;
+  --tracking-eyebrow: 0.2em;
+
+  /* == SPACING: vertical rhythm ===========================================
+     Named steps, so a page reads as a rhythm instead of ad-hoc mt-6/mt-12.
+     The two that matter most are measured off the bar:
+       paragraph -> paragraph  52px baseline delta - 28px pitch = 24px
+       body -> H2              64px
+     p-4/mt-8 etc. still work: the stock --spacing multiplier is untouched. */
+  --spacing-flow: 1.5rem;    /* 24px  paragraph to paragraph */
+  --spacing-stack: 2rem;     /* 32px  list items, card gaps */
+  --spacing-block: 3rem;     /* 48px  above an H3 */
+  --spacing-rule: 4rem;      /* 64px  above an H2 */
+  --spacing-section: 6rem;   /* 96px  section to section, mobile */
+  --spacing-band: 8rem;      /* 128px section to section, desktop */
+  --spacing-navbar: 5.5rem;  /* 88px  the fixed Navbar box, for scroll-mt */
+
+  /* == MEASURE ============================================================
+     The bar wins partly by using THREE widths where we use one. Ours is
+     max-w-[900px], written out 542 times; max-w-shell is a drop-in for it.
+     Bar measurements: prose column x467..1225 = 758px, sticky TOC 220px,
+     outer content band 1064px.
+
+     NAME TRAP, verified in the compiled output: do NOT call this token
+     --container-prose. `max-w-prose` is a hardcoded Tailwind built-in
+     (`max-width:65ch`) that does not read the --container-* namespace, so the
+     token compiles to nothing and the class silently returns 65ch. Same
+     failure mode as the dead v3 config. It is --container-measure. */
+  --container-measure: 47rem;    /* 752px  reading measure for long-form */
+  --container-narrow: 34rem;     /* 544px  compact commercial column */
+  --container-shell: 56.25rem;   /* 900px  == the existing max-w-[900px] */
+  --container-article: 68rem;    /* 1088px prose + gutter + sticky TOC */
+  --container-toc: 14rem;        /* 224px  sticky table of contents */
+
+  /* == SHAPE, DEPTH, MOTION =============================================== */
+  --radius-section: 1.5rem; /* 24px */
+  --radius-card: 1rem;      /* 16px */
+
+  --shadow-card: 0 4px 30px rgb(0 0 0 / 0.06); /* already inline 3x */
+  --shadow-lift: 0 12px 40px -12px rgb(17 17 17 / 0.16);
+
+  --ease-reveal: cubic-bezier(0.16, 1, 0.3, 1);
 
   --animate-fade-in-up: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 
@@ -47,15 +197,109 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+/* Base element styles live in @layer base so that every Tailwind utility
+   still overrides them. Putting them in the implicit layer would let them
+   beat utilities and silently break pages. */
+@layer base {
+  /* The Navbar is `fixed top-0 ... py-6`, roughly 88px tall, so anchor jumps
+     from a table of contents used to drop the target heading underneath it. */
+  html {
+    scroll-padding-top: 7rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  /* German compounds produce ugly single-word last lines. `balance` is capped
+     by the browser at a few lines, so it only ever touches headings. */
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Dense comparison tables are one of the things the bar wins on, and they
+     only read as a grid if the digits line up. */
+  table {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Only 17 elements ship an explicit focus ring; every link relied on the
+     UA default. This is the floor, and the 17 explicit rings still win. */
+  :focus-visible {
+    outline: 2px solid var(--color-brand-accent-ink);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background-color: color-mix(in oklab, var(--color-brand-accent) 28%, white);
+    color: var(--color-brand-text);
+  }
 }
 
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
+/* ---------------------------------------------------------------------------
+   Scroll reveal (components/ui/FadeIn.tsx adds .active from an
+   IntersectionObserver).
+
+   Three things were wrong and are fixed here without changing what a normal
+   visitor sees:
+
+   1. `opacity: 0` was unconditional, so with JS unavailable the entire page
+      stayed blank: 16+ blocks per page, including all the copy Google reads.
+      The hidden start state now only arms inside
+      `@media (scripting: enabled)`. Browsers with JS off report
+      `scripting: none`, and older engines that do not know the feature
+      evaluate the whole query as false, so both fall through to plain visible
+      content. Non-JS crawlers get the text.
+
+   2. `transition: all` made the browser watch every animatable property and
+      also dragged unrelated changes (a hover colour on the wrapper) out to
+      800ms. Now only opacity and transform transition.
+
+   3. There was no reduced-motion path, so 16+ blocks slid 30px up the screen
+      for people who asked the OS not to do that. Reduced motion is folded
+      into the same media query, so those visitors never get the hidden state
+      at all, which doubles as a second no-JS safety net for them.
+
+   Still not solvable in CSS: JS enabled but the bundle fails to execute. A
+   time-based failsafe would have to fire on a wall clock and would therefore
+   pre-reveal everything below the fold, killing the effect for slow readers.
+   That case belongs in FadeIn.tsx, which this file does not own.
+
+   Note for the screenshot pipeline: headless Chromium reports
+   `scripting: enabled`, so /tmp/gauntlet-run/shot.py is still required.
+--------------------------------------------------------------------------- */
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s var(--ease-reveal),
+                transform 0.8s var(--ease-reveal);
+  }
+
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* WCAG 2.2.2: the marquee runs infinitely and had no stop condition. Setting
+   `animation: none` returns each element to its base style, which is visible
+   (fadeInUp animates 0 -> 1, so removing it leaves opacity 1). */
+@media (prefers-reduced-motion: reduce) {
+
+  .animate-marquee,
+  .animate-fade-in-up {
+    animation: none;
+  }
 }
 
 /* Namespaced theme for the /redesigns/fraembs-dach client-pitch page.

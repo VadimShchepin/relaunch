@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'Sichtbarkeit in Perplexity: so wirst du als Quelle zitiert',
-    description: 'Perplexity nennt pro Antwort nur eine Handvoll Quellen. So sorgst du dafür, dass dein Unternehmen dazugehört. Konkrete Schritte für die KI-Suchmaschine mit über 45 Mio. Nutzern.',
+    description: 'Perplexity nennt pro Antwort nur eine Handvoll Quellen. So sorgst du dafür, dass dein Unternehmen dazugehört. Konkrete Schritte für die KI-Suchmaschine mit 780 Mio. Suchanfragen im Monat.',
     keywords: ['Perplexity Sichtbarkeit', 'Sichtbarkeit auf Perplexity', 'Perplexity SEO', 'Perplexity AI Optimierung', 'Perplexity Unternehmen', 'KI Suchmaschine Perplexity', 'Perplexity zitiert werden'],
     openGraph: {
         title: 'Sichtbarkeit in Perplexity: so wirst du als Quelle zitiert',

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: 'aiseo.hamburg',
     images: [
       {
-        url: '/images/wissen/generative-engine-optimization.svg',
+        url: '/og/generative-engine-optimization.jpg',
         width: 1200,
         height: 675,
         alt: 'KI-Antwort, die ein Unternehmen als Quelle nennt, daneben die Citation-Kennzahlen',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: 'Generative Engine Optimization (GEO) | aiseo.hamburg',
     description:
       'Was GEO umfasst, wie es gemessen wird und woran du eine echte GEO-Agentur erkennst.',
-    images: ['/images/wissen/generative-engine-optimization.svg'],
+    images: ['/og/generative-engine-optimization.jpg'],
   },
   robots: {
     index: true,

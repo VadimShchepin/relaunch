@@ -10,13 +10,7 @@ export default function AiVisibilityToolsVergleichPage() {
       description="Sechs Monitoring-Tools für KI-Sichtbarkeit, nebeneinander gestellt nach Listenpreis, abgedeckten Plattformen und Abrechnungsmodell. Stand August 2026. Mit dem Hinweis, den fast jeder Vergleich im Netz weglässt: Wer ihn geschrieben hat."
       publishedAt="2026-08-22"
       modifiedAt="2026-08-22"
-      image={{
-        src: '/images/wissen/ai-visibility-tools-vergleich/hero.webp',
-        alt: 'Schreibtisch mit Euro-Scheinen, Taschenrechner, Kaffee und Notebook',
-        caption: 'Das Abrechnungsmodell entscheidet stärker über die Rechnung als jedes Feature.',
-        width: 1600,
-        height: 1067,
-      }}
+      schemaImage="/images/wissen/ai-visibility-tools-vergleich/hero.webp"
       summaryItems={[
         'Zwei Abrechnungsmodelle konkurrieren: pro getrackten Prompt (Peec AI, Otterly.ai, Semrush) und pro Plattform-Index (Ahrefs Brand Radar). Der Unterschied entscheidet stärker über die Rechnung als jedes Feature.',
         'Realistischer Einstieg für ernsthaftes Monitoring über mehrere Plattformen: rund 100 bis 500 US-Dollar pro Monat. Darunter bekommst du eine Stichprobe, keine Zeitreihe.',
@@ -27,13 +21,6 @@ export default function AiVisibilityToolsVergleichPage() {
       sections={[
         {
           id: 'zwei-modelle',
-          image: {
-            src: '/images/wissen/ai-visibility-tools-vergleich/zwei-modelle.webp',
-            alt: 'Grüne Mappe mit Euro-Banknoten auf einer Holzoberfläche',
-            caption: 'Pro Prompt oder pro Plattform-Index: die Wahl kostet oder spart dreistellige Beträge.',
-            width: 1000,
-            height: 696,
-          },
           heading: 'Erst das Abrechnungsmodell verstehen, dann die Preise',
           intro:
             'Die Tools messen ähnliche Dinge, rechnen aber grundverschieden ab. Wer das Modell nicht zur eigenen Situation passend wählt, zahlt für Kapazität, die er nie nutzt.',
@@ -57,16 +44,32 @@ export default function AiVisibilityToolsVergleichPage() {
         },
         {
           id: 'vergleichstabelle',
-          image: {
-            src: '/images/wissen/ai-visibility-tools-vergleich/vergleichstabelle.webp',
-            alt: 'Notebook mit Diagrammen auf einem hellen Holzschreibtisch',
-            caption: 'Listenpreise, Stand August 2026. Vor dem Kauf gehört die Preisseite des Anbieters geprüft.',
-            width: 1000,
-            height: 678,
-          },
           heading: 'Die Tabelle: Preis, Abdeckung, Abrechnung',
           intro:
             'Listenpreise laut Anbieterangaben und öffentlichen Preisvergleichen, Stand August 2026. Jährliche Vorauszahlung, Währungsumstellung und Enterprise-Verhandlungen verändern die Zahlen, deshalb sind sie als Größenordnung zu lesen und nicht als Angebot.',
+          chart: {
+            variant: 'row',
+            title: 'Monatlicher Einstiegspreis, Stand August 2026',
+            axis: { title: 'US-Dollar pro Monat' },
+            points: [
+              { label: 'Bing Webmaster Tools', value: 0, note: 'Plattformkonsole, verifizierte Property' },
+              { label: 'Google Search Console', value: 0, note: 'Plattformkonsole, verifizierte Property' },
+              { label: 'Otterly.ai', value: 29 },
+              { label: 'Semrush AI Visibility Toolkit', value: 99, note: 'pro Domain' },
+              { label: 'Peec AI', value: 100, note: 'knapp 100, gestaffelt nach Projekten' },
+              { label: 'Scrunch AI', value: 250, note: 'rund 250' },
+              { label: 'Ahrefs Brand Radar', value: 328, note: '199 pro AI-Index plus Basisabo ab 129' },
+              { label: 'Profound', value: 400, note: 'praxisnaher Tarif, rund 400' },
+            ],
+            stats: [
+              { label: 'Kostenlos und direkt von der Plattform', value: '2 von 8' },
+              { label: 'Realistischer Einstieg für Multi-Plattform', value: '100 bis 500' },
+              { label: 'Abstand teuerstes zu günstigstem Abo', value: '14-fach' },
+            ],
+            table: false,
+            caption:
+              'Die zwei Quellen, die tatsächliche Ausspielungen melden statt Stichproben zu simulieren, kosten null. Alle Werte in US-Dollar ohne Steuern, Details und Abrechnungslogik in der Tabelle darunter.',
+          },
           table: {
             headers: ['Tool', 'Einstiegspreis pro Monat', 'Abrechnung', 'Plattformen', 'Stärke'],
             rows: [
@@ -135,13 +138,6 @@ export default function AiVisibilityToolsVergleichPage() {
         },
         {
           id: 'offenlegung',
-          image: {
-            src: '/images/wissen/ai-visibility-tools-vergleich/offenlegung.webp',
-            alt: 'Geldbeutel mit Euro-Banknoten auf dunklem Holz',
-            caption: 'Die meisten Tool-Vergleiche im Netz stammen von Anbietern konkurrierender Tools.',
-            width: 1000,
-            height: 667,
-          },
           heading: 'Der Hinweis, den fast jeder Vergleich weglässt',
           paragraphs: [
             'Wer nach einem Vergleich dieser Tools sucht, landet fast ausschließlich auf Seiten von Unternehmen, die selbst ein konkurrierendes Tool verkaufen. Das ist bei der Recherche für diesen Artikel bei der Mehrheit der auffindbaren Reviews der Fall gewesen, inklusive der Reviews mit den prominentesten Rankings.',
@@ -156,13 +152,6 @@ export default function AiVisibilityToolsVergleichPage() {
         },
         {
           id: 'was-tools-nicht-sehen',
-          image: {
-            src: '/images/wissen/ai-visibility-tools-vergleich/was-tools-nicht-sehen.webp',
-            alt: 'Tastatur und Brille auf einem Schreibtisch vor einem Bürofenster',
-            caption: 'Vier blinde Flecken teilen alle Tools, auch die teuren.',
-            width: 1000,
-            height: 667,
-          },
           heading: 'Vier blinde Flecken, die alle Tools teilen',
           cards: [
             {

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description:
       'Wo klassisches SEO gewinnt, wo AI SEO nötig wird und warum die stärkste Strategie beide Disziplinen verbindet.',
     siteName: 'aiseo.hamburg',
-    images: [{ url: '/images/wissen/ki-sichtbarkeit.jpg', width: 1200, height: 630, alt: 'SEO vs AI SEO' }],
+    images: [{ url: '/og/wissen-seo-vs-ai-seo.png', width: 1200, height: 630, alt: 'SEO vs AI SEO' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -49,14 +49,10 @@ export default function SeoVsAiSeoPage() {
       title="SEO vs AI SEO: Was du 2026 wirklich brauchst"
       description="Die falsche Frage lautet oft: SEO oder AI SEO? Die richtige lautet: Welche Suchsysteme beeinflussen heute wirklich deine Anfragen? Google bleibt wichtig. KI-Systeme werden wichtiger. Wer das gegeneinander ausspielt, baut am Markt vorbei."
       publishedAt="2026-03-19"
-      modifiedAt="2026-03-19"
+      modifiedAt="2026-08-24"
       breadcrumbLabel="SEO vs AI SEO"
       eyebrow="Vergleich"
-      image={{
-        src: '/images/wissen/ki-sichtbarkeit.jpg',
-        alt: 'Vergleich zwischen SEO und AI SEO',
-        caption: 'SEO bringt Sichtbarkeit in Suchmaschinen. AI SEO bringt Empfehlbarkeit in Antwortsystemen. Gute Strategien können beides.',
-      }}
+      schemaImage="/og/wissen-seo-vs-ai-seo.png"
       summaryItems={[
         'SEO ist nicht tot. Es ist weiter das Fundament für Indexierung, Autorität und organische Nachfrage.',
         'AI SEO erweitert dieses Fundament um Sichtbarkeit in ChatGPT, Perplexity, Google AI und ähnlichen Antwortsystemen.',
@@ -73,6 +69,35 @@ export default function SeoVsAiSeoPage() {
             'AI SEO oder GEO fokussiert sich darauf, dass KI-Systeme dein Unternehmen als hilfreiche Quelle, als Anbieter oder als Expertenstimme einordnen. Das Ziel ist nicht nur ein Klick, sondern eine aktive Erwähnung.',
             'Das eine ersetzt das andere nicht. AI SEO ohne saubere SEO-Basis ist wie ein schickes Dach ohne Haus. SEO ohne AI SEO wird dagegen zunehmend blind für den Teil des Marktes, der Entscheidungen schon in der Antwortmaschine trifft.',
           ],
+          table: {
+            headers: ['Dimension', 'Klassisches SEO', 'AI SEO'],
+            rows: [
+              ['Ziel', 'Platz in der Ergebnisliste', 'Nennung in der generierten Antwort'],
+              ['Erfolgsmaß', 'Position, Klicks, CTR', 'Citations, Mention Rate, Share of Voice'],
+              [
+                'Zielsystem',
+                'Google und Bing als klassische Suche',
+                'ChatGPT, Perplexity, Copilot, AI Overviews, AI Mode',
+              ],
+              [
+                'Messwerkzeug',
+                'Search Console, Rankingtracker, Analytics',
+                'AI-Performance-Bericht in Bing, Generative-AI-Bericht in der Search Console, dokumentierte Prompt-Tests',
+              ],
+              [
+                'Wichtigster Hebel',
+                'Relevanz und Links auf Keyword-Ebene',
+                'Zitierfähige Passagen plus Erwähnungen auf fremden Domains',
+              ],
+              [
+                'Wirkung sichtbar nach',
+                'Wochen bis Monate, abhängig vom Wettbewerb',
+                'Wochen im Live-Abruf, Monate im Modellwissen',
+              ],
+            ],
+            caption:
+              'Die Zeile Erfolgsmaß ist der praktische Unterschied. Wer AI SEO betreibt und SEO-Kennzahlen berichtet, bewertet die Arbeit mit dem falschen Maßstab. Die Zeile Messwerkzeug erklärt, warum beide Disziplinen getrennte Reports brauchen.',
+          },
         },
         {
           id: 'wo-seo-gewinnt',
