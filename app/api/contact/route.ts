@@ -2,9 +2,39 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
+    // Der Body wird getrennt geparst. Vorher lag der JSON.parse im selben
+    // try wie der Mailversand, deshalb kam ein kaputter Request als 500
+    // SEND_FAILED zurueck und war im Log nicht von einem echten SMTP
+    // Fehler zu unterscheiden.
+    let body: unknown;
     try {
-        const body = await req.json();
-        const { name, email, company, message } = body;
+        body = await req.json();
+    } catch (error) {
+        console.error("Contact form error: invalid JSON body", error);
+        return NextResponse.json(
+            { ok: false, error: "BAD_REQUEST" },
+            { status: 400 }
+        );
+    }
+
+    // "null" und '"text"' sind gueltiges JSON, aber nicht destrukturierbar.
+    // Ohne diesen Guard landet so ein Request als 500 im Log und sieht dort
+    // wie ein SMTP Ausfall aus.
+    if (typeof body !== "object" || body === null) {
+        console.error("Contact form error: body is not an object");
+        return NextResponse.json(
+            { ok: false, error: "BAD_REQUEST" },
+            { status: 400 }
+        );
+    }
+
+    try {
+        const { name, email, company, message } = body as {
+            name?: string;
+            email?: string;
+            company?: string;
+            message?: string;
+        };
 
         // Validate required fields
         if (!name || !email || !message) {
@@ -104,7 +134,10 @@ Diese E-Mail wurde über das Kontaktformular auf aiseo.hamburg gesendet.
 
         return NextResponse.json({ ok: true });
     } catch (error) {
-        console.error("Contact form error:", error);
+        // Ab hier kann nur noch der SMTP Versand gescheitert sein. Ein 500
+        // aus dieser Route heisst also immer: Brevo hat die Mail nicht
+        // angenommen.
+        console.error("Contact form error: SMTP send failed", error);
         return NextResponse.json(
             { ok: false, error: "SEND_FAILED" },
             { status: 500 }

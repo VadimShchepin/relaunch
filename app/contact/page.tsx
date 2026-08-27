@@ -78,6 +78,8 @@ export default function ContactPage() {
         return 'Bitte fülle Name, E-Mail und Nachricht aus.';
       case 'INVALID_EMAIL':
         return 'Bitte gib eine gültige E-Mail-Adresse ein.';
+      case 'BAD_REQUEST':
+        return 'Die Anfrage kam unvollständig an. Bitte lade die Seite neu und versuche es erneut.';
       case 'SEND_FAILED':
         return 'Die E-Mail konnte nicht gesendet werden. Bitte versuche es später erneut.';
       case 'SERVER_MISCONFIG':

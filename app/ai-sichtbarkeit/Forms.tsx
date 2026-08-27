@@ -19,6 +19,7 @@ const LABEL = 'mb-1.5 block text-micro uppercase tracking-eyebrow text-brand-sub
 export const KurzanalyseForm: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
+    email: '',
     website: '',
     branche: '',
     ziel: '',
@@ -38,7 +39,7 @@ export const KurzanalyseForm: React.FC = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           name: formData.name,
-          email: '',
+          email: formData.email,
           company: formData.website,
           message: `Website: ${formData.website}\nBranche/Angebot: ${formData.branche}\nZiel: ${formData.ziel}\nKurzanalyse gewünscht: ${formData.kurzanalyse ? 'Ja' : 'Nein'}`,
         }),
@@ -72,19 +73,34 @@ export const KurzanalyseForm: React.FC = () => {
           />
         </div>
         <div>
-          <label htmlFor="website" className={LABEL}>
-            Website
+          <label htmlFor="email" className={LABEL}>
+            E-Mail
           </label>
           <input
-            type="url"
-            id="website"
+            type="email"
+            id="email"
             required
-            value={formData.website}
-            onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+            value={formData.email}
+            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             className={FIELD}
-            placeholder="https://deine-website.de"
+            placeholder="deine@email.de"
           />
         </div>
+      </div>
+
+      <div className="mt-4">
+        <label htmlFor="website" className={LABEL}>
+          Website
+        </label>
+        <input
+          type="url"
+          id="website"
+          required
+          value={formData.website}
+          onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+          className={FIELD}
+          placeholder="https://deine-website.de"
+        />
       </div>
 
       <div className="mt-4">
