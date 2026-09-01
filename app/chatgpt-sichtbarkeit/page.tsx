@@ -307,6 +307,13 @@ export default function ChatGptSichtbarkeitPage() {
                     </Link>
                     .
                   </p>
+                  <p className="mt-3 max-w-measure text-meta text-brand-subtle">
+                    Den Platz unter der Antwort kann man seit dem 31. August 2026 in Deutschland auch kaufen:{' '}
+                    <Link href="/chatgpt-ads" className="font-medium text-brand-accent-ink underline decoration-brand-accent/50 underline-offset-4">
+                      ChatGPT Ads schalten
+                    </Link>
+                    .
+                  </p>
                 </div>
               </div>
             </FadeIn>

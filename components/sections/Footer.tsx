@@ -58,6 +58,7 @@ const navLinks = [
     { href: '/ai-seo-agentur', label: 'AI SEO Agentur' },
     { href: '/geo-optimierung', label: 'GEO-Optimierung' },
     { href: '/chatgpt-sichtbarkeit', label: 'ChatGPT-Sichtbarkeit' },
+    { href: '/chatgpt-ads', label: 'ChatGPT Ads' },
     { href: '/ergebnisse', label: 'Ergebnisse' },
     { href: '/preise', label: 'Preise' },
     { href: '/ai-sichtbarkeits-upgrade-hamburg', label: 'Upgrade Hamburg' },
