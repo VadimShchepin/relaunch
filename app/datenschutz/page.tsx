@@ -96,6 +96,39 @@ const ADS_FACTS = [
   },
 ];
 
+const OPENAI_ADS_FACTS = [
+  {
+    term: "Zweck",
+    value:
+      "Messung von Seitenaufrufen und Conversions aus Anzeigen, die in ChatGPT ausgeliefert werden.",
+  },
+  {
+    term: "Rechtsgrundlage",
+    value:
+      "Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Das Pixel wird erst geladen, nachdem Sie im Cookie-Banner zugestimmt haben. Ohne Ihre Zustimmung wird keine Verbindung zu OpenAI hergestellt.",
+  },
+  {
+    term: "Datenverarbeiter",
+    value:
+      "OpenAI Ireland Limited, 1st Floor, The Liffey Trust Centre, 117-126 Sheriff Street Upper, Dublin 1, D01 YC43, Irland.",
+  },
+  {
+    term: "Verarbeitete Daten",
+    value:
+      "Aufgerufene Seite, Referrer, Zeitpunkt, IP-Adresse, Angaben zu Browser und Gerät sowie Kennungen, die im lokalen Speicher und in Cookies Ihres Browsers abgelegt werden.",
+  },
+  {
+    term: "Erweiterter Abgleich",
+    value:
+      "Wenn Sie ein Formular auf dieser Website ausfüllen, kann das Pixel E-Mail-Adresse, Telefonnummer und Name in gehashter Form (SHA-256) an OpenAI übermitteln, um Ihre Anfrage einer Anzeige zuzuordnen. Die Klartextdaten verlassen Ihren Browser dabei nicht.",
+  },
+  {
+    term: "Widerruf",
+    value:
+      "Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie den lokalen Speicher Ihres Browsers löschen. Der Cookie-Banner wird dann beim nächsten Besuch erneut angezeigt.",
+  },
+];
+
 const SECTIONS: { title: string; id: string; body: React.ReactNode }[] = [
   {
     title: "Datenschutz auf einen Blick",
@@ -258,9 +291,9 @@ const SECTIONS: { title: string; id: string; body: React.ReactNode }[] = [
     body: (
       <div className="space-y-2.5">
         <p className={P}>
-          Diese Website verwendet technisch notwendige Cookies sowie Marketing-Cookies für Google
-          Ads Conversion-Tracking. Marketing-Cookies werden erst nach Ihrer ausdrücklichen
-          Einwilligung über unseren Cookie-Banner gesetzt.
+          Diese Website verwendet technisch notwendige Cookies sowie Marketing-Cookies für das
+          Conversion-Tracking von Google Ads und OpenAI (Anzeigen in ChatGPT). Marketing-Cookies
+          werden erst nach Ihrer ausdrücklichen Einwilligung über unseren Cookie-Banner gesetzt.
         </p>
         <p className={P}>
           Ohne Ihre Zustimmung werden keine personenbezogenen Daten über Cookies erhoben. Sie können
@@ -290,6 +323,31 @@ const SECTIONS: { title: string; id: string; body: React.ReactNode }[] = [
             className="text-brand-text underline decoration-brand-edge decoration-1 underline-offset-4 transition-colors hover:decoration-brand-accent-ink"
           >
             https://policies.google.com/privacy
+          </a>
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "OpenAI Pixel (Anzeigen in ChatGPT)",
+    id: "openai-ads",
+    body: (
+      <div className="space-y-4">
+        <p className={P}>
+          Wir schalten Anzeigen in ChatGPT und setzen dafür das Conversion-Pixel von OpenAI ein.
+          Damit messen wir, ob Sie nach dem Klick auf eine Anzeige unsere Website besuchen und
+          welche Seiten Sie dabei aufrufen.
+        </p>
+        <TermList rows={OPENAI_ADS_FACTS} />
+        <p className={P}>
+          Weitere Informationen zum Datenschutz bei OpenAI finden Sie unter:{' '}
+          <a
+            href="https://openai.com/policies/eu-privacy-policy/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-brand-text underline decoration-brand-edge decoration-1 underline-offset-4 transition-colors hover:decoration-brand-accent-ink"
+          >
+            https://openai.com/policies/eu-privacy-policy/
           </a>
         </p>
       </div>

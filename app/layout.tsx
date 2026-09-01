@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { GoogleTag, GoogleTagNoScript } from "@/components/GoogleTag";
+import { OpenAIPixel } from "@/components/OpenAIPixel";
 import { CookieConsent } from "@/components/ui/CookieConsent";
 import "./globals.css";
 
@@ -175,6 +176,7 @@ export default function RootLayout({
                     {children}
                 </main>
                 <Analytics />
+                <OpenAIPixel />
                 <CookieConsent />
             </body>
         </html>
