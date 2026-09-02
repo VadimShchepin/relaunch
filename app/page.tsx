@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Hero } from '@/components/sections/Hero';
+import { ChatGptAdsAnnouncement } from '@/components/sections/ChatGptAdsAnnouncement';
 import { ProofStrip } from '@/components/sections/ProofStrip';
 import { WhatWeDo } from '@/components/sections/WhatWeDo';
 import { LiveDemo } from '@/components/sections/LiveDemo';
@@ -22,6 +23,7 @@ export default function Page() {
         <div className="relative w-full overflow-hidden bg-brand-bg text-brand-text font-sans selection:bg-brand-accent selection:text-white">
             <Navbar />
             <Hero />
+            <div id="chatgpt-ads"><ChatGptAdsAnnouncement /></div>
             <div id="proof-strip"><ProofStrip /></div>
             <div id="ask-ai"><AskAI /></div>
             <div id="what-we-do"><WhatWeDo /></div>
