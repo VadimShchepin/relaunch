@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { ArrowRightIcon, CheckIcon, LoadingIcon } from '@/components/ui/Icons';
+import { trackOpenAILead } from '@/lib/openai-ads';
 
 /* ---------------------------------------------------------------------------
    Die zwei Formulare der Seite, ausgelagert aus der Route. Vorher stand
@@ -46,8 +47,12 @@ export const KurzanalyseForm: React.FC = () => {
       });
 
       const data = await response.json();
-      if (data.ok) window.location.href = '/contact/danke';
-      else setError('Ein Fehler ist aufgetreten. Bitte versuche es später erneut.');
+      if (data.ok) {
+        await trackOpenAILead(formData.email);
+        window.location.href = '/contact/danke';
+      } else {
+        setError('Ein Fehler ist aufgetreten. Bitte versuche es später erneut.');
+      }
     } catch {
       setError('Ein Fehler ist aufgetreten. Bitte versuche es später erneut.');
     } finally {

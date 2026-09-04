@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { ArrowRightIcon, LoadingIcon } from '@/components/ui/Icons';
+import { trackOpenAILead } from '@/lib/openai-ads';
 
 /* ---------------------------------------------------------------------------
    Das Formular ist der einzige Teil dieser Seite, der Zustand braucht. Bis zur
@@ -46,8 +47,12 @@ export const CheckForm: React.FC = () => {
       });
 
       const data = await response.json();
-      if (data.ok) window.location.href = '/contact/danke';
-      else setError('Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.');
+      if (data.ok) {
+        await trackOpenAILead(formData.email);
+        window.location.href = '/contact/danke';
+      } else {
+        setError('Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.');
+      }
     } catch {
       setError('Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.');
     } finally {

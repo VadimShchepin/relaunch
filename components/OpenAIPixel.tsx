@@ -4,28 +4,10 @@ import Script from 'next/script';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { CONSENT_CHANGE_EVENT, readConsent } from '@/lib/consent';
+import { initializeOpenAIAdsPixel, openAIAdsQueue } from '@/lib/openai-ads';
 
 const PIXEL_ID = 'LTJhkopUbUNsMFWeigf1if';
 const SDK_SRC = 'https://bzrcdn.openai.com/sdk/oaiq.min.js';
-
-/**
- * Creates the command queue if it does not exist yet.
- *
- * Commands pushed here are replayed by the SDK when it finishes loading, so this
- * component never has to wait for the CDN before calling init or measure.
- */
-function queue(): OaiqQueue {
-  if (!window.oaiq) {
-    const buffered: IArguments[] = [];
-    const stub = function () {
-      // Buffers the raw arguments object, matching what the SDK expects to replay.
-      buffered.push(arguments);
-    } as unknown as OaiqQueue;
-    stub.q = buffered;
-    window.oaiq = stub;
-  }
-  return window.oaiq;
-}
 
 /** Verbose SDK logging locally, and on production only via ?oaiq_debug in the URL. */
 function debugEnabled(): boolean {
@@ -63,16 +45,16 @@ export function OpenAIPixel() {
       window.oaiq?.('consent', false);
       return;
     }
-    const oaiq = queue();
+    const oaiq = openAIAdsQueue();
     oaiq('consent', true);
-    oaiq('init', { pixelId: PIXEL_ID, debug: debugEnabled() });
+    initializeOpenAIAdsPixel(PIXEL_ID, debugEnabled());
   }, [granted]);
 
   // The configured conversion is the page visit, so this fires on the landing
   // page and again on every client-side route change.
   useEffect(() => {
     if (!granted) return;
-    queue()('measure', 'page_viewed', { type: 'contents' });
+    openAIAdsQueue()('measure', 'page_viewed', { type: 'contents' });
   }, [granted, pathname]);
 
   if (!granted) return null;

@@ -6,6 +6,7 @@ import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { CheckIcon, LoadingIcon } from "@/components/ui/Icons";
+import { trackOpenAILead } from "@/lib/openai-ads";
 
 /* ==================================================================== *
  *  /termin
@@ -92,6 +93,7 @@ export default function BookingPage() {
       });
       const data = await response.json();
       if (data.ok) {
+        await trackOpenAILead(formData.email);
         window.location.href = '/termin/danke';
       } else {
         setError(getErrorMessage(data.error));

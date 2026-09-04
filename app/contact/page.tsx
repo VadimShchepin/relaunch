@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { FadeIn } from "@/components/ui/FadeIn";
+import { trackOpenAILead } from "@/lib/openai-ads";
 import {
   EmailIcon,
   PhoneIcon,
@@ -102,6 +103,7 @@ export default function ContactPage() {
       });
       const data = await response.json();
       if (data.ok) {
+        await trackOpenAILead(formData.email);
         window.location.href = '/contact/danke';
       } else {
         setError(getErrorMessage(data.error));
