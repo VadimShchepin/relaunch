@@ -46,7 +46,7 @@ export default function CaseStudyKinderalbumPage() {
   return (
     <ArticleTemplate
       canonicalPath="/wissen/case-study-kinderalbum"
-      title="Case Study KinderAlbum: Von Nischenprodukt zu KI-Empfehlung"
+      title="KinderAlbum: Wie ein Nischenprodukt zur KI-Empfehlung wurde"
       description="KinderAlbum ist kein Massenmarkt-Produkt und gerade deshalb spannend. Das Angebot ist spitz, vertrauenssensibel und erklärungsbedürftig: eine DSGVO-konforme Foto-Plattform für Schulen. Genau solche Projekte zeigen gut, wie AI SEO wirklich funktioniert. Nicht über Lautstärke, sondern über Klarheit, Kontext und Vertrauen."
       publishedAt="2026-03-19"
       modifiedAt="2026-08-24"

@@ -6,7 +6,7 @@ export default function SichtbarkeitInGeminiPage() {
       canonicalPath="/wissen/sichtbarkeit-in-gemini"
       breadcrumbLabel="Sichtbarkeit in Gemini"
       eyebrow="Gemini"
-      title="Sichtbarkeit in Google Gemini: So erscheinst du in Googles KI"
+      title="Sichtbarkeit in Gemini: So empfiehlt Googles KI dein Unternehmen"
       description="Gemini ist nicht irgendeine KI, es ist Googles KI: eingebaut in Search, Gmail, Workspace und Android. Mit über 2 Milliarden Chrome-Nutzern und 8,5 Milliarden Suchanfragen pro Tag hat Gemini die größte Reichweite aller KI-Systeme. Dieser Guide zeigt dir, wie du dort sichtbar wirst."
       publishedAt="2026-03-24"
       modifiedAt="2026-08-24"

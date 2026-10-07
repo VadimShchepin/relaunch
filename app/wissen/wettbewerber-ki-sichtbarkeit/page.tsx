@@ -6,7 +6,7 @@ export default function WettbewerberKiSichtbarkeitPage() {
       canonicalPath="/wissen/wettbewerber-ki-sichtbarkeit"
       breadcrumbLabel="Wettbewerber & KI-Sichtbarkeit"
       eyebrow="Wettbewerb"
-      title="Warum dein Wettbewerber Kunden bekommt, die du nie siehst"
+      title="Unsichtbare Konkurrenz: Warum die KI deinen Wettbewerber empfiehlt"
       description="Es gibt Kunden, die dich suchen. Sie fragen ChatGPT. Sie fragen Perplexity. Sie bekommen eine Empfehlung, aber nicht deine. Und das Schlimmste: Du wirst nie erfahren, dass sie existiert haben."
       publishedAt="2026-04-03"
       modifiedAt="2026-08-24"

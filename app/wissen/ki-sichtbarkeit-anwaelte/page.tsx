@@ -12,7 +12,7 @@ export default function KiSichtbarkeitAnwaeltePage() {
       canonicalPath="/wissen/ki-sichtbarkeit-anwaelte"
       breadcrumbLabel="KI-Sichtbarkeit für Anwälte"
       eyebrow="Branche: Recht"
-      title="KI-Sichtbarkeit für Anwälte & Kanzleien: Mandanten fragen die KI"
+      title="KI-Sichtbarkeit für Kanzleien: Wenn Mandanten zuerst die KI fragen"
       description='Potenzielle Mandanten googlen nicht mehr "Anwalt Arbeitsrecht Hamburg". Sie fragen ChatGPT. Die KI empfiehlt zwei bis drei Kanzleien. Wer nicht dabei ist, verliert Mandate, ohne es zu wissen. Dieser Guide zeigt, wie Kanzleien in KI-Empfehlungen sichtbar werden.'
       publishedAt="2026-03-24"
       modifiedAt="2026-08-24"
@@ -231,8 +231,8 @@ export default function KiSichtbarkeitAnwaeltePage() {
       sources={[
         {
           label: 'Ahrefs (2025)',
-          text: 'LLM SEO, Brand Mentions Correlation Study: Zusammenhang zwischen Erwähnungen und Sichtbarkeit in KI-Antworten.',
-          href: 'https://ahrefs.com/blog/llm-seo/',
+          text: 'Brand-Visibility-Korrelationsstudie (75.000 Marken): Zusammenhang zwischen Erwähnungen und Sichtbarkeit in KI-Antworten.',
+          href: 'https://ahrefs.com/blog/ai-overview-brand-correlation/',
         },
         {
           label: 'Princeton University',

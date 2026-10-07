@@ -47,7 +47,7 @@ export default function ChatgptSeoPage() {
   return (
     <ArticleTemplate
       canonicalPath="/wissen/chatgpt-seo"
-      title="ChatGPT SEO: So optimierst du Inhalte für Empfehlungen statt Rankings"
+      title="ChatGPT SEO: Inhalte, die empfohlen werden, statt nur zu ranken"
       description="Viele suchen nach ChatGPT SEO und meinen eigentlich etwas sehr Konkretes: Wie werde ich in ChatGPT empfohlen? Die Antwort ist kein Trick, sondern eine Mischung aus Klarheit, Quellenvertrauen, Bing-Sichtbarkeit und Content, der nicht klingt wie ein übermüdeter Keyword-Hamster."
       publishedAt="2026-03-19"
       modifiedAt="2026-08-24"

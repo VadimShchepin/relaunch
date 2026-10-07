@@ -85,7 +85,7 @@ export default function KiSichtbarkeitAerztePage() {
             caption:
               'Befragung vom 20.11.2025, n=1.145. Die beiden unteren Werte beziehen sich auf die Teilgruppe der KI-Nutzer, nicht auf alle Befragten.',
             source: {
-              href: 'https://www.bitkom.org/Presse/Presseinformation/Digital-Health',
+              href: 'https://www.bitkom.org/Presse/Presseinformation/Dr-KI-Chatbot-medizinischer-Ratgeber',
               label: 'Bitkom, Digital Health 2025',
             },
           },
@@ -507,7 +507,7 @@ export default function KiSichtbarkeitAerztePage() {
         {
           label: 'Bitkom (20.11.2025)',
           text: 'Digital Health 2025: 45 Prozent nutzen KI-Chatbots für Gesundheitsfragen, n=1.145.',
-          href: 'https://www.bitkom.org/Presse/Presseinformation/Digital-Health',
+          href: 'https://www.bitkom.org/Presse/Presseinformation/Dr-KI-Chatbot-medizinischer-Ratgeber',
         },
         {
           label: '§ 3 HWG',

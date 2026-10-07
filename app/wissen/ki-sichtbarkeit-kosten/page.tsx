@@ -292,7 +292,7 @@ export default function KiSichtbarkeitKostenPage() {
           label: 'Gartner (2024)',
           text:
             'Prognose, dass das Suchmaschinen-Volumen bis 2026 um 25 Prozent sinkt, weil Nutzer zu KI-Chatbots wechseln.',
-          href: 'https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026',
+          href: 'https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents',
         },
         {
           label: 'aiseo.hamburg, Preise',

@@ -7,6 +7,7 @@ import { Footer } from "@/components/sections/Footer";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { CheckIcon, LoadingIcon } from "@/components/ui/Icons";
 import { trackOpenAILead } from "@/lib/openai-ads";
+import { QuickAnswers, type QuickAnswer } from "@/components/sections/QuickAnswers";
 
 /* ==================================================================== *
  *  /termin
@@ -38,6 +39,25 @@ const AFTER = [
   "Du schlägst zwei Wunschtermine vor.",
   "Ich bestätige per E-Mail und schicke den Google-Meet-Link.",
   "15 Minuten Call, danach entscheidest du in Ruhe.",
+];
+
+const TERMIN_ANSWERS: QuickAnswer[] = [
+  {
+    q: "Was passiert in den 15 Minuten?",
+    a: "Wir stellen ChatGPT und Perplexity live die Fragen, die deine Kunden stellen würden. Du siehst, ob dein Unternehmen genannt wird, welche Wettbewerber stattdessen auftauchen und woran das vermutlich liegt.",
+  },
+  {
+    q: "Was ist nicht Teil des kostenlosen Calls?",
+    a: "Ein schriftliches Audit, ein Strategiepapier oder ein Festpreisangebot. Das ist der bezahlte zweite Schritt, falls du nach dem Call weitermachen willst. Der Call selbst bleibt ein Gespräch, ohne Unterlagen hinterher.",
+  },
+  {
+    q: "Muss ich etwas vorbereiten?",
+    a: "Nein. Es hilft, wenn du im Feld „Worum geht es?“ deine Website und deine wichtigste Leistung nennst. Dann prüfen wir im Call genau die Suchanfragen, die für dein Geschäft zählen, statt allgemeine Beispiele.",
+  },
+  {
+    q: "Für wen lohnt sich KI-Sichtbarkeit?",
+    a: "Für Unternehmen, deren Kunden vor dem Kauf vergleichen: Dienstleister, Praxen, Kanzleien, Agenturen, Shops mit erklärungsbedürftigen Produkten. Wenn es für dich nicht passt, sage ich dir das im Call direkt.",
+  },
 ];
 
 const FIELD =
@@ -360,6 +380,8 @@ export default function BookingPage() {
             </FadeIn>
           </div>
         </section>
+
+        <QuickAnswers title="Häufige Fragen zum Erstgespräch" items={TERMIN_ANSWERS} />
       </main>
 
       <Footer />

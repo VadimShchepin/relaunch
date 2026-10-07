@@ -1,9 +1,12 @@
 import { Fragment } from 'react';
+import Link from 'next/link';
 import { ArticleTemplate } from '@/components/wissen/ArticleTemplate';
 
 /* Aussenlink auf die bewertete Agentur. nofollow, weil es eine Nennung im
-   Vergleich ist und keine Empfehlung im Sinne einer Linkempfehlung. */
+   Vergleich ist und keine Empfehlung im Sinne einer Linkempfehlung. Die
+   eigene Domain ist ein interner Link und bleibt follow. */
 function AgencyLink({ domain }: { domain: string }) {
+  if (domain === 'aiseo.hamburg') return <Link href="/">{domain}</Link>;
   return (
     <a href={`https://${domain}`} target="_blank" rel="noopener noreferrer nofollow">
       {domain}

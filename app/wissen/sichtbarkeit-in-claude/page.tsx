@@ -6,7 +6,7 @@ export default function SichtbarkeitInClaudePage() {
       canonicalPath="/wissen/sichtbarkeit-in-claude"
       breadcrumbLabel="Sichtbarkeit in Claude"
       eyebrow="KI-Systeme"
-      title="Sichtbarkeit in Claude AI: So wird dein Unternehmen empfohlen"
+      title="Sichtbarkeit in Claude: Wie Anthropics KI Unternehmen auswählt"
       description="Claude von Anthropic ist der am schnellsten wachsende KI-Assistent im professionellen Umfeld. Wenn Entscheider nach Dienstleistern fragen, empfiehlt Claude ein bis drei Unternehmen, ohne Anzeigen, ohne Rankings. Dieser Guide zeigt dir, wie Claudes Empfehlungssystem funktioniert und wie du dort reinkommst."
       publishedAt="2026-03-24"
       modifiedAt="2026-08-24"
@@ -229,8 +229,8 @@ export default function SichtbarkeitInClaudePage() {
         },
         {
           label: 'Ahrefs (2025)',
-          text: 'LLM SEO, Brand Mentions Correlation Study: Zusammenhang zwischen Marken-Erwähnungen und Sichtbarkeit in KI-Antworten.',
-          href: 'https://ahrefs.com/blog/llm-seo/',
+          text: 'Brand-Visibility-Korrelationsstudie (75.000 Marken): Zusammenhang zwischen Marken-Erwähnungen und Sichtbarkeit in KI-Antworten.',
+          href: 'https://ahrefs.com/blog/ai-overview-brand-correlation/',
         },
         {
           label: 'Princeton University',

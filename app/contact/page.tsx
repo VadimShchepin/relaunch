@@ -6,6 +6,7 @@ import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { trackOpenAILead } from "@/lib/openai-ads";
+import { QuickAnswers, type QuickAnswer } from "@/components/sections/QuickAnswers";
 import {
   EmailIcon,
   PhoneIcon,
@@ -50,6 +51,48 @@ const CHANNELS = [
     label: "Telefon",
     value: "+49 176 321 94 754",
     href: "tel:+4917632194754",
+  },
+];
+
+const CONTACT_ANSWERS: QuickAnswer[] = [
+  {
+    q: "Wann bekomme ich eine Antwort?",
+    a: "In der Regel am selben Werktag, spätestens am nächsten. Jede Nachricht lese und beantworte ich selbst, es gibt kein Ticketsystem und keinen Vertrieb dazwischen.",
+  },
+  {
+    q: "Was sollte in meiner Nachricht stehen?",
+    a: "Deine Website, was du anbietest und in welcher Region. Wenn du schon bemerkt hast, dass ChatGPT oder Perplexity Wettbewerber empfiehlt, nenn sie gern. So kann ich vorab gezielt nachsehen.",
+  },
+  {
+    q: "Was kostet die Zusammenarbeit?",
+    a: (
+      <>
+        Das erste Gespräch (15 Minuten) ist kostenlos. Alles danach, vom Audit bis zur
+        laufenden Betreuung, findest du mit Einstiegspreisen auf der{" "}
+        <Link
+          href="/preise"
+          className="font-medium text-brand-accent-ink underline decoration-brand-line underline-offset-4"
+        >
+          Preise-Seite
+        </Link>
+        .
+      </>
+    ),
+  },
+  {
+    q: "Lieber direkt sprechen?",
+    a: (
+      <>
+        Dann buch dir ein{" "}
+        <Link
+          href="/termin"
+          className="font-medium text-brand-accent-ink underline decoration-brand-line underline-offset-4"
+        >
+          kostenloses 15-Minuten-Gespräch
+        </Link>
+        . Darin schauen wir live, ob ChatGPT und Perplexity dein Unternehmen nennen.
+      </>
+    ),
   },
 ];
 
@@ -333,6 +376,8 @@ export default function ContactPage() {
             </FadeIn>
           </div>
         </section>
+
+        <QuickAnswers title="Bevor du schreibst" items={CONTACT_ANSWERS} />
 
         {/* FAQ hand-off */}
         <section className="border-t border-brand-line bg-brand-bg px-6 py-stack md:px-12 lg:px-20">

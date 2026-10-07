@@ -6,7 +6,7 @@ export default function AISEOToolsPage() {
       canonicalPath="/wissen/ai-seo-tools"
       breadcrumbLabel="AI SEO Tools 2026"
       eyebrow="Tools"
-      title="AI SEO Tools 2026: Welche sich lohnen und welche Geldverbrennung sind"
+      title="AI SEO Tools im Vergleich: Was sich lohnt und was du dir sparen kannst"
       description="Der AI-SEO-Tool-Markt 2026 ist wie ein Basar: jeder schreit, alles blinkt, und die Hälfte der Ware fällt auseinander, sobald du sie anfasst. Hier steht, welche Tools ihr Geld wert sind und welche du dir sparen kannst."
       publishedAt="2026-04-02"
       modifiedAt="2026-08-24"

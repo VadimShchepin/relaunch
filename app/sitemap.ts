@@ -5,6 +5,8 @@ import path from 'path';
 const BASE_URL = 'https://aiseo.hamburg';
 
 const EXCLUDED_ROUTES = new Set([
+  /* noindex pages: listing them makes Semrush flag the sitemap as incorrect. */
+  '/newsletter',
   '/newsletter/confirmed',
   '/contact/danke',
   '/termin/danke',

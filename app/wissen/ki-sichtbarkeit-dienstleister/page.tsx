@@ -361,13 +361,13 @@ export default function KiSichtbarkeitDienstleisterPage() {
       sources={[
         {
           label: 'Ahrefs (2025)',
-          text: 'LLM SEO, Brand Mentions Correlation Study: Zusammenhang zwischen Erwähnungen und Sichtbarkeit in KI-Antworten.',
-          href: 'https://ahrefs.com/blog/llm-seo/',
+          text: 'Brand-Visibility-Korrelationsstudie (75.000 Marken): Zusammenhang zwischen Erwähnungen und Sichtbarkeit in KI-Antworten.',
+          href: 'https://ahrefs.com/blog/ai-overview-brand-correlation/',
         },
         {
           label: 'SparkToro / Datos',
           text: 'ChatGPT Traffic- und Marktanteilsanalyse, Grundlage für die Einordnung der Nutzerzahlen.',
-          href: 'https://sparktoro.com/blog/new-research-how-much-traffic-do-ai-tools-send-to-websites/',
+          href: 'https://sparktoro.com/blog/who-sends-traffic-on-the-web-and-how-much-new-research-from-datos-sparktoro/',
         },
         {
           label: 'Gartner',

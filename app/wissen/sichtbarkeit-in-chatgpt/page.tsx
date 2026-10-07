@@ -334,7 +334,7 @@ export default function SichtbarkeitInChatGPTPage() {
         {
           label: 'SparkToro / Datos',
           text: 'ChatGPT-Traffic- und Marktanteilsanalyse.',
-          href: 'https://sparktoro.com/blog/new-research-how-much-traffic-do-ai-tools-send-to-websites/',
+          href: 'https://sparktoro.com/blog/who-sends-traffic-on-the-web-and-how-much-new-research-from-datos-sparktoro/',
         },
         {
           label: 'OpenAI',

@@ -6,7 +6,7 @@ export default function AIOFailsPage() {
       canonicalPath="/wissen/aio-fails-chatgpt-bann"
       breadcrumbLabel="AIO Fails & ChatGPT Bann"
       eyebrow="Risiken"
-      title="Warum bannt ChatGPT deine Website? Die größten AIO-Fails 2026"
+      title="Die größten AIO-Fails: Womit Websites bei ChatGPT rausfliegen"
       description="Du dachtest, du könntest ein Large Language Model mit Keyword-Stuffing austricksen. Das ist, als würdest du versuchen, einen Bären mit einer nassen Nudel zu bekämpfen. Du wirst verlieren. Und der Bär wird lachen."
       publishedAt="2026-04-02"
       modifiedAt="2026-08-24"

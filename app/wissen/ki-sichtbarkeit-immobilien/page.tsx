@@ -6,7 +6,7 @@ export default function KISichtbarkeitImmobilienPage() {
       canonicalPath="/wissen/ki-sichtbarkeit-immobilien"
       breadcrumbLabel="KI-Sichtbarkeit für Immobilienmakler"
       eyebrow="Branche"
-      title="KI-Sichtbarkeit für Immobilienmakler: Wenn Käufer die KI fragen"
+      title="KI-Sichtbarkeit für Makler: So wirst du zur Empfehlung der KI"
       description="Welcher Immobilienmakler in Hamburg-Eppendorf ist empfehlenswert? Diese Frage geht immer öfter an ChatGPT statt an Google. Wer bei der Antwort fehlt, verliert den Erstkontakt. Dieser Guide zeigt, wie du als Makler in KI-Empfehlungen kommst."
       publishedAt="2026-03-24"
       modifiedAt="2026-08-24"
@@ -256,8 +256,8 @@ export default function KISichtbarkeitImmobilienPage() {
       sources={[
         {
           label: 'Ahrefs (2025)',
-          text: 'LLM SEO, Korrelationsstudie zu Brand Mentions und KI-Sichtbarkeit.',
-          href: 'https://ahrefs.com/blog/llm-seo/',
+          text: 'Korrelationsstudie (75.000 Marken) zu Brand Mentions und KI-Sichtbarkeit.',
+          href: 'https://ahrefs.com/blog/ai-overview-brand-correlation/',
         },
         {
           label: 'IVD Immobilienverband Deutschland',

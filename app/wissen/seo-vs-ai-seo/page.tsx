@@ -46,7 +46,7 @@ export default function SeoVsAiSeoPage() {
   return (
     <ArticleTemplate
       canonicalPath="/wissen/seo-vs-ai-seo"
-      title="SEO vs AI SEO: Was du 2026 wirklich brauchst"
+      title="SEO vs. AI SEO: Die Unterschiede und was dein Unternehmen braucht"
       description="Die falsche Frage lautet oft: SEO oder AI SEO? Die richtige lautet: Welche Suchsysteme beeinflussen heute wirklich deine Anfragen? Google bleibt wichtig. KI-Systeme werden wichtiger. Wer das gegeneinander ausspielt, baut am Markt vorbei."
       publishedAt="2026-03-19"
       modifiedAt="2026-08-24"
