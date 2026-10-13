@@ -17,20 +17,21 @@ export const AboutMe: React.FC = () => {
             <div className="max-w-4xl mx-auto">
                 {/* Add photo section */}
                 <FadeIn>
-                    <div className="flex flex-col items-center mb-16">
+                    {/* compact byline: a 72px avatar beside the name, not a 192px hero circle */}
+                    <div className="mb-12 flex items-center justify-center gap-4">
                         <img
-                            src="/image/vadim/vadim-shchepin-480.webp"
+                            src="/image/vadim/vadim-shchepin-360.webp"
                             alt="Vadim Shchepin"
-                            width={480}
-                            height={480}
+                            width={360}
+                            height={360}
                             loading="lazy"
                             decoding="async"
-                            className="w-40 h-40 md:w-48 md:h-48 rounded-full mb-6 object-cover border border-brand-line"
+                            className="h-[72px] w-[72px] shrink-0 rounded-full border border-brand-line object-cover"
                         />
-                        <div className="text-center">
-                            <h3 className="text-xl font-semibold text-black">Vadim Shchepin</h3>
-                            <p className="text-gray-600">Hamburg</p>
-                            <p className="text-sm text-gray-500 mt-2">Senior Engineer, baut klare Websites statt SEO-Pakete.</p>
+                        <div className="text-left">
+                            <h3 className="text-base font-semibold text-black">Vadim Shchepin</h3>
+                            <p className="text-sm text-brand-muted">Hamburg</p>
+                            <p className="text-sm text-brand-subtle">Senior Engineer, baut klare Websites statt SEO-Pakete.</p>
                         </div>
                     </div>
                 </FadeIn>
