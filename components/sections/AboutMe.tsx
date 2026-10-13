@@ -19,9 +19,13 @@ export const AboutMe: React.FC = () => {
                 <FadeIn>
                     <div className="flex flex-col items-center mb-16">
                         <img
-                            src="/vadim_shchepin_2.jpeg"
+                            src="/image/about/vadim-shchepin-480.webp"
                             alt="Vadim Shchepin"
-                            className="w-160 h-160 rounded-full mb-6 object-cover"
+                            width={480}
+                            height={480}
+                            loading="lazy"
+                            decoding="async"
+                            className="w-40 h-40 md:w-48 md:h-48 rounded-full mb-6 object-cover border border-brand-line"
                         />
                         <div className="text-center">
                             <h3 className="text-xl font-semibold text-black">Vadim Shchepin</h3>
