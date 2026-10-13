@@ -6,7 +6,11 @@ import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 import { CheckIcon, ArrowRightIcon } from '@/components/ui/Icons';
 import { DataChart } from '@/components/ui/DataChart';
+import { Archivo_Black } from 'next/font/google';
 import { ShaderBackdrop } from '@/components/ui/shaders/ShaderBackdrop';
+
+// webseite.hamburg's own display face, only for its wordmark in the sister card.
+const archivoBlack = Archivo_Black({ subsets: ['latin'], weight: '400', display: 'swap' });
 
 const PHONE_NUMBER = '+4917632194754';
 const PHONE_DISPLAY = '+49 176 321 94 754';
@@ -26,12 +30,16 @@ interface ServiceType {
   relatedArticles: { title: string; href: string }[];
 }
 
+/* Four services, not eight. GEO, AEO and AI SEO are three names for one job,
+   so they share one row here; the terms keep their own ranking pages
+   (/geo-optimierung, /ai-seo-agentur, the Wissen guides), linked from the row.
+   Website and classic SEO live on webseite.hamburg. */
 const SERVICES: ServiceType[] = [
   {
     n: '01',
     id: 'beratung',
     title: 'Beratung',
-    subtitle: 'Strategische KI-Sichtbarkeitsberatung',
+    subtitle: 'Analyse und Fahrplan',
     description: 'Ich prüfe, wie ChatGPT, Perplexity und Google AI dein Unternehmen heute beschreiben, und liefere einen priorisierten Fahrplan statt vager Empfehlungen.',
     deliverables: [
       'KI-Sichtbarkeitsanalyse über alle Plattformen',
@@ -42,8 +50,8 @@ const SERVICES: ServiceType[] = [
     idealFor: 'Unternehmen, die erst verstehen wollen, wo sie stehen, bevor sie investieren.',
     timeline: 'Ergebnisse in 5 bis 7 Tagen',
     schemaName: 'KI-Sichtbarkeitsberatung',
-    schemaDescription: 'Strategische Beratung für AI Visibility: Analyse, Strategie und Handlungsempfehlungen.',
-    primaryArticle: { title: 'KI-Sichtbarkeit beauftragen: so geht\'s', href: '/wissen/ki-sichtbarkeit-beauftragen' },
+    schemaDescription: 'Strategische Beratung für KI-Sichtbarkeit: Analyse, Wettbewerbervergleich und priorisierter Maßnahmenplan.',
+    primaryArticle: { title: 'KI-Sichtbarkeit beauftragen', href: '/wissen/ki-sichtbarkeit-beauftragen' },
     relatedArticles: [
       { title: 'Was kostet KI-Sichtbarkeit?', href: '/wissen/ki-sichtbarkeit-kosten' },
       { title: 'KI-Sichtbarkeit messen', href: '/wissen/ki-sichtbarkeit-messen' },
@@ -51,121 +59,69 @@ const SERVICES: ServiceType[] = [
   },
   {
     n: '02',
-    id: 'aeo',
-    title: 'AEO',
-    subtitle: 'Answer Engine Optimization',
-    description: 'Deine Inhalte werden so aufgebaut, dass KI-Systeme sie als zitierbare Quelle erkennen und in ihren Antworten nennen. Dich, nicht deine Konkurrenz.',
+    id: 'ki-sichtbarkeit',
+    title: 'KI-Sichtbarkeit',
+    subtitle: 'GEO, AEO und AI SEO',
+    description: 'Deine Seiten werden so aufgebaut, dass ChatGPT, Perplexity, Copilot und Google AI sie verstehen und als Quelle nennen. GEO, AEO und AI SEO sind drei Namen für diese eine Arbeit.',
     deliverables: [
+      'Zitierbarkeits-Audit: wo du genannt wirst, wo nicht',
       'Answer-First-Optimierung deiner Kernseiten',
-      'FAQ-Markup und strukturierte Daten',
-      'Zitierbarkeits-Audit mit konkreten Änderungen',
-      'Monatliches KI-Zitations-Monitoring',
+      'Schema.org, Entity-Signale und llms.txt',
+      'Offene Wege für KI-Crawler',
+      'Zitations-Monitoring über alle Plattformen',
     ],
-    idealFor: 'Dienstleister und Berater, deren Kunden aktiv in KI-Assistenten recherchieren.',
-    timeline: 'Erste Ergebnisse: 2 bis 4 Wochen',
-    schemaName: 'Answer Engine Optimization (AEO)',
-    schemaDescription: 'Optimierung für ChatGPT, Perplexity, Gemini und andere KI-Antwortmaschinen.',
-    primaryArticle: { title: 'AEO: Der komplette Leitfaden', href: '/wissen/aeo-answer-engine-optimization' },
+    idealFor: 'Unternehmen, deren Kunden in ChatGPT und Co. nach Anbietern fragen.',
+    timeline: 'Erste Zitationen nach 3 bis 6 Wochen',
+    schemaName: 'KI-Sichtbarkeit (GEO, AEO, AI SEO)',
+    schemaDescription: 'Generative Engine Optimization, Answer Engine Optimization und AI SEO, damit ChatGPT, Perplexity und Google AI dein Unternehmen als Quelle nennen.',
+    primaryArticle: { title: 'GEO-Optimierung', href: '/geo-optimierung' },
     relatedArticles: [
-      { title: 'ChatGPT SEO: so wirst du gefunden', href: '/wissen/chatgpt-seo' },
-      { title: 'Perplexity vs. ChatGPT vs. Google', href: '/wissen/perplexity-vs-chatgpt-vs-google' },
+      { title: 'AEO-Leitfaden', href: '/wissen/aeo-answer-engine-optimization' },
+      { title: 'AI SEO Agentur', href: '/ai-seo-agentur' },
+      { title: 'Was ist GEO?', href: '/wissen/was-ist-geo' },
     ],
   },
   {
     n: '03',
-    id: 'geo',
-    title: 'GEO',
-    subtitle: 'Generative Engine Optimization',
-    description: 'Eine Strategie für alle generativen Engines statt isolierter Einzelmaßnahmen. AEO ist ein Teil davon.',
+    id: 'autoritaet',
+    title: 'Backlinks & Presse',
+    subtitle: 'Autorität für Google und KI',
+    description: 'Markennennungen auf Branchenportalen und in Fachmedien. An genau diesen Signalen messen Google und KI-Systeme Vertrauen.',
     deliverables: [
-      'GEO-Audit: Wo wirst du zitiert, wo nicht?',
-      'Zitierbare, antwortorientierte Inhaltsstruktur',
-      'Entity- und Autoritätssignale für KI-Modelle',
-      'Plattformübergreifendes Zitations-Monitoring',
+      'Backlink-Strategie aus der Wettbewerber-Analyse',
+      'Markennennungen auf Branchenportalen',
+      'Pressemitteilungen und Fachmedien-Outreach',
+      'Monatliches Reporting',
     ],
-    idealFor: 'Unternehmen, die KI-Sichtbarkeit als Ganzes denken wollen, nicht nur eine Plattform.',
-    timeline: 'Erste Zitationen: 3 bis 6 Wochen',
-    schemaName: 'Generative Engine Optimization (GEO)',
-    schemaDescription: 'Plattformübergreifende Optimierung, damit generative KI-Systeme wie ChatGPT, Perplexity und Google AI dein Unternehmen als Quelle zitieren.',
-    primaryArticle: { title: 'Was ist GEO? Generative Engine Optimization erklärt', href: '/wissen/was-ist-geo' },
+    idealFor: 'Unternehmen, die technisch sauber sind, aber an Autorität gewinnen müssen.',
+    timeline: 'Erste Backlinks nach 4 Wochen',
+    schemaName: 'Backlink-Aufbau und Pressearbeit',
+    schemaDescription: 'Gezielter Aufbau von Backlinks, Markennennungen und Presseerwähnungen als Vertrauenssignal für Google und KI-Systeme.',
+    primaryArticle: { title: 'E-E-A-T und KI-Sichtbarkeit', href: '/wissen/eeat-ki-sichtbarkeit' },
     relatedArticles: [
-      { title: 'GEO-Agentur Hamburg', href: '/wissen/geo-agentur-hamburg' },
-      { title: 'AEO/GEO Marktanalyse Deutschland 2026', href: '/wissen/aeo-geo-marktanalyse-deutschland-2026' },
+      { title: 'KI-Markenwahrnehmung aufbauen', href: '/wissen/ki-markenwahrnehmung' },
+      { title: 'Wettbewerber analysieren', href: '/wissen/wettbewerber-ki-sichtbarkeit' },
     ],
   },
   {
     n: '04',
-    id: 'ai-seo',
-    title: 'AI SEO',
-    subtitle: 'KI-fokussierte Suchoptimierung',
-    description: 'Semantische Struktur, Entity-Signale, technische Zugänglichkeit: alles, was KI braucht, um dein Angebot korrekt einzuordnen.',
+    id: 'ki-entwicklung',
+    title: 'KI-Entwicklung',
+    subtitle: 'Software und Automatisierung, mit KI gebaut',
+    description: 'Tools, interne Anwendungen und Automatisierungen, entwickelt mit KI. Ein klickbarer Prototyp steht in Tagen, ein sicheres, produktionsreifes Projekt in Wochen.',
     deliverables: [
-      'Semantische Content-Strukturierung',
-      'Entity-Signale: Schema.org, Knowledge Graph',
-      'llms.txt und ai.txt Konfiguration',
-      'KI-Crawler-Zugänglichkeit sicherstellen',
+      'Klickbarer Prototyp in wenigen Tagen',
+      'Automatisierung wiederkehrender Abläufe',
+      'KI-Funktionen in bestehender Software',
+      'Tests und Sicherheitsprüfung vor dem Livegang',
     ],
-    idealFor: 'Unternehmen, die in Google AI Overviews und in KI-Antworten stehen wollen.',
-    timeline: 'Messbar nach 4 bis 8 Wochen',
-    schemaName: 'AI SEO',
-    schemaDescription: 'KI-fokussierte Suchmaschinenoptimierung für die Suche der Zukunft.',
-    primaryArticle: { title: 'AI SEO Agentur: was du wissen musst', href: '/ai-seo-agentur' },
-    relatedArticles: [
-      { title: 'SEO vs. AI SEO: die Unterschiede', href: '/wissen/seo-vs-ai-seo' },
-      { title: 'AI SEO Tools im Vergleich', href: '/wissen/ai-seo-tools' },
-    ],
+    idealFor: 'Unternehmen mit einer Idee oder einem Ablauf, der heute Handarbeit ist.',
+    timeline: 'Prototyp in Tagen, Livegang in Wochen',
+    schemaName: 'KI-gestützte Entwicklung und Automatisierung',
+    schemaDescription: 'Schnelle Software-Entwicklung mit KI: Prototypen in Tagen, sichere produktionsreife Anwendungen und Automatisierungen in Wochen.',
+    primaryArticle: { title: 'Website-Automatisierung', href: '/wissen/website-automatisierung' },
+    relatedArticles: [],
   },
-  {
-    n: '05',
-    id: 'backlinks',
-    title: 'Backlink-Aufbau',
-    subtitle: 'Autorität & Vertrauenssignale',
-    description: 'Gezielte Markennennungen auf relevanten Plattformen. Genau die Signale, an denen Google und KI-Systeme Vertrauen messen.',
-    deliverables: [
-      'Backlink-Strategie aus der Wettbewerber-Analyse',
-      'Gezielte Markennennungen auf Branchenportalen',
-      'Digital PR und Gastbeiträge',
-      'Monatliches Backlink-Reporting',
-    ],
-    idealFor: 'Unternehmen, die technisch sauber sind, aber an Autorität gewinnen müssen.',
-    timeline: 'Erste Backlinks: 4 Wochen',
-    schemaName: 'Backlink-Aufbau',
-    schemaDescription: 'Gezielter Aufbau von Autorität und Vertrauenssignalen für KI-Systeme.',
-    primaryArticle: { title: 'E-E-A-T und KI-Sichtbarkeit', href: '/wissen/eeat-ki-sichtbarkeit' },
-    relatedArticles: [
-      { title: 'KI-Markenwahrnehmung aufbauen', href: '/wissen/ki-markenwahrnehmung' },
-      { title: 'Wettbewerber-KI-Sichtbarkeit analysieren', href: '/wissen/wettbewerber-ki-sichtbarkeit' },
-    ],
-  },
-  {
-    n: '06',
-    id: 'pr',
-    title: 'Pressemitteilungen',
-    subtitle: 'PR & Pressearbeit',
-    description: 'Redaktionelle Erwähnungen in Fachmedien sind eines der stärksten Autoritätssignale für KI-Zitationen.',
-    deliverables: [
-      'Redaktionelle Pressemitteilungen (deutsch)',
-      'Distribution über relevante Presseportale',
-      'Fachmedien-Outreach in deiner Branche',
-      'Reporting über Veröffentlichungen und Reichweite',
-    ],
-    idealFor: 'Unternehmen mit Neuigkeiten, Expertise oder einem Story-Anlass.',
-    timeline: 'Erste Presse: 2 bis 3 Wochen',
-    schemaName: 'Pressemitteilungen',
-    schemaDescription: 'Professionelle PR und Pressearbeit für Medienerwähnungen und KI-Autorität.',
-    primaryArticle: { title: 'KI-Markenwahrnehmung aufbauen', href: '/wissen/ki-markenwahrnehmung' },
-    relatedArticles: [
-      { title: 'E-E-A-T und KI-Sichtbarkeit', href: '/wissen/eeat-ki-sichtbarkeit' },
-      { title: 'AI Content-Strategie', href: '/wissen/ai-content-strategie' },
-    ],
-  },
-];
-
-/* Same three numbers as /preise and the AI SEO block on webseite.hamburg. */
-const PRICES = [
-  { label: 'Kurzanalyse', value: '0 €' },
-  { label: 'Sprint', value: 'ab 1.500 €' },
-  { label: 'Betreuung', value: 'ab 600 €/Mt.' },
 ];
 
 /* What lives on the sister site. Prices as published on
@@ -238,35 +194,78 @@ const ITEM_LIST_SCHEMA = {
 
 const chipLink = 'inline-flex items-center gap-1.5 rounded-full border border-brand-line px-4 py-2 text-meta font-medium text-brand-text transition-colors hover:border-brand-accent-ink hover:text-brand-accent-ink';
 
-/* The second door. Used twice: in the hero, and again right before the close,
-   where a reader who scrolled past six AI services and found nothing for a
-   plain website or Google Ads needs it most. */
-function SisterSite({ tone }: { tone: 'dark' | 'light' }) {
-  const dark = tone === 'dark';
+const CARD_NOTES: Record<string, string> = {
+  beratung: 'Analyse, Fahrplan',
+  'ki-sichtbarkeit': 'GEO, AEO, AI SEO',
+  autoritaet: 'Autorität',
+  'ki-entwicklung': 'Prototyp in Tagen',
+};
+
+/* The two doors in the hero carry equal weight: which one is primary depends
+   on what the visitor needs. Same card, two brands. */
+function AiseoCard() {
   return (
-    <a
-      href={SISTER_URL}
-      className={`group flex h-full flex-col rounded-card border p-flow transition-colors sm:p-stack ${
-        dark ? 'border-white/20 bg-white/[0.06] text-white backdrop-blur-sm hover:border-white/50' : 'border-brand-edge bg-white text-brand-text hover:border-brand-text'
-      }`}
-    >
-      <p className={`text-micro uppercase tracking-eyebrow ${dark ? 'text-white/60' : 'text-brand-subtle'}`}>webseite.hamburg</p>
-      <p className="mt-2 text-heading font-semibold">Nicht nur KI.</p>
-      <p className={`mt-2 text-body ${dark ? 'text-white/75' : 'text-brand-muted'}`}>
-        Website, SEO und Google Ads: auf meiner zweiten Seite. Gleicher Ansprechpartner.
-      </p>
-      <ul className={`mt-flow border-t ${dark ? 'border-white/15' : 'border-brand-line'}`}>
-        {SISTER_SERVICES.map((s) => (
-          <li key={s.title} className={`flex items-baseline justify-between gap-4 border-b py-2 text-meta ${dark ? 'border-white/15' : 'border-brand-line'}`}>
-            <span className="font-semibold">{s.title}</span>
-            <span className={`tabular-nums ${dark ? 'text-white/65' : 'text-brand-subtle'}`}>{s.value}</span>
+    <a href="#leistungen" className="group flex h-full min-w-0 flex-col rounded-card border-t-4 border-brand-accent bg-white p-flow text-brand-text shadow-lift transition-transform hover:-translate-y-0.5 sm:p-stack">
+      <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+        <span className="text-subheading font-extrabold tracking-tight">AISEO<span className="text-brand-accent">.</span></span>
+        <span className="rounded-full bg-brand-accent/15 px-3 py-1 text-micro font-semibold text-brand-accent-ink">Du bist hier</span>
+      </div>
+      <p className="mt-flow text-heading font-semibold">Alles rund um KI</p>
+      <ul className="mt-flow border-t border-brand-line">
+        {SERVICES.map((service) => (
+          <li key={service.id} className="flex items-baseline justify-between gap-4 border-b border-brand-line py-2 text-meta">
+            <span className="font-semibold">{service.title}</span>
+            <span className="text-right text-brand-subtle">{CARD_NOTES[service.id]}</span>
           </li>
         ))}
       </ul>
-      <span className="mt-auto inline-flex items-center gap-2 pt-flow text-meta font-semibold group-hover:gap-3 transition-all">
-        Zu den Leistungen auf webseite.hamburg
-        <ArrowRightIcon className="w-3.5 h-3.5 -rotate-45" />
-      </span>
+      <p className="mt-4 text-meta text-brand-muted">
+        Kurzanalyse 0 €, Sprint ab 1.500 €, Betreuung ab 600 €/Mt.
+      </p>
+      <div className="mt-auto pt-flow">
+        <span className="inline-flex w-fit items-center gap-2 rounded-full bg-brand-accent-deep px-5 py-3 text-meta font-semibold text-white transition-all group-hover:gap-3">
+          Leistungen ansehen
+          <ArrowRightIcon className="w-3.5 h-3.5 rotate-90" />
+        </span>
+      </div>
+    </a>
+  );
+}
+
+function WebseiteCard() {
+  return (
+    <a
+      href={SISTER_URL}
+      target="_blank"
+      rel="noopener"
+      className="group flex h-full min-w-0 flex-col rounded-card border-t-4 border-[#E53935] bg-white p-flow text-[#0A192F] shadow-lift transition-transform hover:-translate-y-0.5 sm:p-stack"
+    >
+      <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+        <span className="flex items-center gap-2.5">
+          <img src="/image/leistungen/webseite-hamburg-logo.webp" width={36} height={34} alt="" className="h-8 w-auto" />
+          <span className={`${archivoBlack.className} text-body sm:text-lead`}>webseite.hamburg</span>
+        </span>
+        <span className="inline-flex items-center gap-1 rounded-full bg-[#E53935] px-3 py-1 text-micro font-semibold text-white">
+          Schwesterseite
+          <ArrowRightIcon className="w-3 h-3 -rotate-45" />
+        </span>
+      </div>
+      <p className="mt-flow text-heading font-semibold">Website, SEO und Google Ads</p>
+      <ul className="mt-flow border-t border-[#0A192F]/15">
+        {SISTER_SERVICES.map((s) => (
+          <li key={s.title} className="flex items-baseline justify-between gap-4 border-b border-[#0A192F]/15 py-2 text-meta">
+            <span className="font-semibold">{s.title}</span>
+            <span className="tabular-nums text-[#0A192F]/65">{s.value}</span>
+          </li>
+        ))}
+      </ul>
+      <p className="mt-4 text-meta text-[#0A192F]/70">Gleicher Ansprechpartner, gleiche Nummer.</p>
+      <div className="mt-auto pt-flow">
+        <span className="inline-flex w-fit items-center gap-2 rounded-full bg-[#0A192F] px-5 py-3 text-meta font-semibold text-white transition-all group-hover:gap-3">
+          Zu webseite.hamburg
+          <ArrowRightIcon className="w-3.5 h-3.5 -rotate-45" />
+        </span>
+      </div>
     </a>
   );
 }
@@ -289,49 +288,22 @@ export default function LeistungenPage() {
           <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-r from-black/55 via-black/20 to-transparent" />
 
           <div className="relative z-10 mx-auto max-w-article px-6 lg:px-12">
-            <p className="text-micro uppercase tracking-eyebrow text-white/60">Leistungen</p>
-            <h1 className="mt-flow max-w-[14ch] text-title sm:text-display xl:text-[5.5rem] xl:leading-[1] font-semibold">
-              KI-Sichtbarkeit für dein Unternehmen.
+            <h1 className="max-w-[16ch] text-title sm:text-display xl:text-[5.5rem] xl:leading-[1] font-semibold">
+              KI-Sichtbarkeit und KI-Entwicklung.
             </h1>
-            <p className="mt-flow max-w-narrow text-lead text-white/80">
-              Damit ChatGPT, Perplexity, Copilot und Google AI dich nennen, wenn deine Kunden fragen.
+            <p className="mt-flow max-w-measure text-lead text-white/80">
+              ChatGPT, Perplexity und Google AI sollen dich nennen. Software und Automatisierungen entstehen mit KI in Tagen statt Monaten.
             </p>
-            <a href={SISTER_URL} className="mt-4 inline-block text-meta font-medium text-white underline decoration-white/40 underline-offset-4 lg:hidden">
-              Website, SEO oder Google Ads? webseite.hamburg
-              <ArrowRightIcon className="ml-1 inline w-3 h-3 -rotate-45" />
+            {/* phones see the AISEO card first, so the second door gets a badge up here */}
+            <a href={SISTER_URL} target="_blank" rel="noopener" className="mt-flow inline-flex items-center gap-2 rounded-full bg-white py-1.5 pl-1.5 pr-4 text-meta font-semibold text-[#0A192F] lg:hidden">
+              <span className="rounded-full bg-[#E53935] px-2.5 py-0.5 text-micro text-white">webseite.hamburg</span>
+              Website, SEO, Google Ads
+              <ArrowRightIcon className="w-3 h-3 -rotate-45" />
             </a>
 
-            <div className="mt-rule grid gap-4 lg:grid-cols-12">
-              <a
-                href="#leistungen"
-                className="group flex flex-col rounded-card bg-white p-flow text-brand-text transition-transform hover:-translate-y-0.5 sm:p-stack lg:col-span-7"
-              >
-                <p className="text-micro uppercase tracking-eyebrow text-brand-accent-ink">Auf dieser Seite</p>
-                <p className="mt-2 text-heading font-semibold">KI-Sichtbarkeit</p>
-                <ol className="mt-flow grid gap-y-2 sm:grid-cols-2 sm:gap-x-stack">
-                  {SERVICES.map((service) => (
-                    <li key={service.id} className="flex items-baseline gap-3 border-b border-brand-hairline pb-2 text-body">
-                      <span className="w-5 text-micro tabular-nums text-brand-subtle">{service.n}</span>
-                      {service.title}
-                    </li>
-                  ))}
-                </ol>
-                <dl className="mt-flow grid grid-cols-3 gap-px overflow-hidden rounded-xl border border-brand-line bg-brand-line">
-                  {PRICES.map((price) => (
-                    <div key={price.label} className="bg-brand-surface px-3 py-2.5">
-                      <dt className="text-micro text-brand-subtle">{price.label}</dt>
-                      <dd className="text-body font-semibold tabular-nums">{price.value}</dd>
-                    </div>
-                  ))}
-                </dl>
-                <span className="mt-auto inline-flex items-center gap-2 pt-flow text-meta font-semibold text-brand-accent-ink transition-all group-hover:gap-3">
-                  Alle 6 Leistungen ansehen
-                  <ArrowRightIcon className="w-3.5 h-3.5 rotate-90" />
-                </span>
-              </a>
-              <div className="lg:col-span-5">
-                <SisterSite tone="dark" />
-              </div>
+            <div className="mt-rule grid grid-cols-1 gap-4 lg:grid-cols-2">
+              <AiseoCard />
+              <WebseiteCard />
             </div>
           </div>
         </section>
@@ -340,7 +312,7 @@ export default function LeistungenPage() {
         <section id="leistungen" className="scroll-mt-navbar pb-rule">
           <div className="mx-auto max-w-article px-6 lg:px-12">
             <div className="flex flex-wrap items-baseline justify-between gap-4 pt-rule">
-              <h2 className="text-title font-semibold text-black">6 Leistungen</h2>
+              <h2 className="text-title font-semibold text-black">4 Leistungen</h2>
               <Link href="/preise" className="inline-flex items-center gap-1.5 text-meta font-medium text-brand-accent-ink hover:gap-2.5">
                 Preise im Detail
                 <ArrowRightIcon className="w-3 h-3" />
@@ -538,7 +510,7 @@ export default function LeistungenPage() {
               </div>
             </div>
             <div className="lg:col-span-5">
-              <SisterSite tone="light" />
+              <WebseiteCard />
             </div>
           </div>
         </section>
