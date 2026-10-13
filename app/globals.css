@@ -340,3 +340,24 @@ body {
   --font-tc-display: var(--font-tc-display);
   --font-tc-sans: var(--font-tc-sans);
 }
+
+/* WebGPU backdrops from the open-source `shaders` library (components/ui/shaders).
+   The canvas fades in only once the first frame is drawn; until then, and
+   forever on browsers without WebGPU, the host's CSS background shows. */
+.shader-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+.shader-backdrop.is-ready {
+  opacity: 1;
+}
+
+.shader-backdrop .shader-canvas {
+  width: 100%;
+  height: 100%;
+}

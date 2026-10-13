@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'AI SEO Leistungen Hamburg | GEO, AEO & AI SEO',
-  description: 'Leistungen von aiseo.hamburg: Generative Engine Optimization (GEO), AEO, AI SEO, Beratung, Website-Erstellung, klassisches SEO, Backlink-Aufbau und Pressemitteilungen. Spezialisiert auf KMUs.',
+  description: 'Leistungen für KI-Sichtbarkeit: Beratung, AEO, Generative Engine Optimization (GEO), AI SEO, Backlink-Aufbau und Pressemitteilungen. Kurzanalyse kostenlos, Sprint ab 1.500 €.',
   keywords: [
     'AI SEO Leistungen Hamburg',
     'GEO Generative Engine Optimization',
@@ -10,8 +10,6 @@ export const metadata: Metadata = {
     'GEO Agentur Hamburg',
     'AEO Answer Engine Optimization',
     'KI-Sichtbarkeit Beratung',
-    'Website-Erstellung AI-optimiert',
-    'SEO Hamburg',
     'Backlink-Aufbau',
     'Pressemitteilungen Hamburg',
     'AI SEO Agentur Hamburg',
@@ -21,14 +19,14 @@ export const metadata: Metadata = {
     locale: 'de_DE',
     url: 'https://aiseo.hamburg/leistungen',
     title: 'AI SEO Leistungen Hamburg | GEO, AEO & AI SEO',
-    description: 'Alle Leistungen: Generative Engine Optimization (GEO), AEO, AI SEO, Beratung, Website-Erstellung, klassisches SEO, Backlink-Aufbau und Pressemitteilungen.',
+    description: 'Leistungen für KI-Sichtbarkeit: Beratung, AEO, GEO, AI SEO, Backlink-Aufbau und Pressemitteilungen.',
     siteName: 'aiseo.hamburg',
     images: [{ url: '/og/leistungen.png', width: 1200, height: 630, alt: 'aiseo.hamburg, Leistungen' }],
   },
   twitter: {
     card: 'summary',
     title: 'AI SEO Leistungen Hamburg | GEO, AEO & AI SEO',
-    description: 'Alle Leistungen: Generative Engine Optimization (GEO), AEO, AI SEO, Beratung, Website-Erstellung, klassisches SEO, Backlink-Aufbau und Pressemitteilungen.',
+    description: 'Leistungen für KI-Sichtbarkeit: Beratung, AEO, GEO, AI SEO, Backlink-Aufbau und Pressemitteilungen.',
   },
   robots: {
     index: true,

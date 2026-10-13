@@ -5,10 +5,8 @@ import { Footer } from '@/components/sections/Footer';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 import { CheckIcon, ArrowRightIcon } from '@/components/ui/Icons';
-import { Tag } from '@/components/ui/Tag';
-import { AntigravityBackground } from '@/components/ui/AntigravityBackground';
-import { PlatformIconLoop } from '@/components/ui/PlatformIconLoop';
 import { DataChart } from '@/components/ui/DataChart';
+import { ShaderBackdrop } from '@/components/ui/shaders/ShaderBackdrop';
 
 const PHONE_NUMBER = '+4917632194754';
 const PHONE_DISPLAY = '+49 176 321 94 754';
@@ -119,50 +117,6 @@ const SERVICES: ServiceType[] = [
   },
   {
     n: '05',
-    id: 'website',
-    title: 'Website-Erstellung',
-    subtitle: 'KI-optimierte Websites',
-    description: 'Next.js, saubere Core Web Vitals, Schema.org und offene Crawler-Pfade. Ab Tag eins lesbar für KI-Systeme.',
-    deliverables: [
-      'Next.js Website mit perfekten Core Web Vitals',
-      'Schema.org Markup für alle relevanten Entitäten',
-      'KI-Crawler-Zugang (llms.txt, ai.txt, robots.txt)',
-      'Responsive Design mit Conversion-Fokus',
-    ],
-    idealFor: 'Unternehmen mit veralteter Website oder ohne klare KI-Sichtbarkeitsstrategie.',
-    timeline: '4 bis 8 Wochen bis zum Launch',
-    schemaName: 'Website-Erstellung',
-    schemaDescription: 'KI-optimierte Websites mit Next.js, Schema.org und perfekten Core Web Vitals.',
-    primaryArticle: { title: 'Technische KI-Sichtbarkeit', href: '/wissen/technische-ki-sichtbarkeit' },
-    relatedArticles: [
-      { title: 'Website-Automatisierung mit KI', href: '/wissen/website-automatisierung' },
-      { title: 'AI SEO Tools im Vergleich', href: '/wissen/ai-seo-tools' },
-    ],
-  },
-  {
-    n: '06',
-    id: 'seo',
-    title: 'SEO',
-    subtitle: 'Klassische Suchmaschinenoptimierung',
-    description: 'Technisches SEO, On-Page und lokale Signale in Hamburg. Das Fundament, ohne das KI-Sichtbarkeit nicht trägt.',
-    deliverables: [
-      'Technisches SEO-Audit mit Umsetzung',
-      'On-Page-Optimierung deiner Kernseiten',
-      'Lokales SEO: Google Business, NAP-Konsistenz',
-      'Keyword-Strategie und Content-Empfehlungen',
-    ],
-    idealFor: 'Unternehmen ohne stabile Google-Basis. Die Grundlage für alles andere.',
-    timeline: '3 bis 6 Monate für Rankings',
-    schemaName: 'Suchmaschinenoptimierung (SEO)',
-    schemaDescription: 'Klassische SEO als Fundament: technisches SEO, On-Page, lokales SEO für Hamburg.',
-    primaryArticle: { title: 'Lokale KI-Sichtbarkeit', href: '/wissen/lokale-ki-sichtbarkeit' },
-    relatedArticles: [
-      { title: 'SEO-Agentur vs. AI SEO', href: '/wissen/seo-agentur-vs-ai-seo' },
-      { title: 'Technische KI-Sichtbarkeit', href: '/wissen/technische-ki-sichtbarkeit' },
-    ],
-  },
-  {
-    n: '07',
     id: 'backlinks',
     title: 'Backlink-Aufbau',
     subtitle: 'Autorität & Vertrauenssignale',
@@ -184,7 +138,7 @@ const SERVICES: ServiceType[] = [
     ],
   },
   {
-    n: '08',
+    n: '06',
     id: 'pr',
     title: 'Pressemitteilungen',
     subtitle: 'PR & Pressearbeit',
@@ -205,6 +159,23 @@ const SERVICES: ServiceType[] = [
       { title: 'AI Content-Strategie', href: '/wissen/ai-content-strategie' },
     ],
   },
+];
+
+/* Same three numbers as /preise and the AI SEO block on webseite.hamburg. */
+const PRICES = [
+  { label: 'Kurzanalyse', value: '0 €' },
+  { label: 'Sprint', value: 'ab 1.500 €' },
+  { label: 'Betreuung', value: 'ab 600 €/Mt.' },
+];
+
+/* What lives on the sister site. Prices as published on
+   webseite.hamburg/leistungen (13.10.2026); keep both sites in sync. */
+const SISTER_URL = 'https://webseite.hamburg/leistungen';
+const SISTER_SERVICES = [
+  { title: 'Webdesign', value: 'ab 1.500 €', href: `${SISTER_URL}#webdesign` },
+  { title: 'SEO', value: 'ab 1.000 €/Mt.', href: `${SISTER_URL}#seo` },
+  { title: 'Google Ads', value: 'ab 700 € Setup', href: `${SISTER_URL}#ads` },
+  { title: 'Website-Audit', value: 'kostenlos', href: `${SISTER_URL}#audit` },
 ];
 
 const FACTS = [
@@ -229,33 +200,27 @@ const CITATION_PAGES = [
   { label: '/einwilligung-fotos-schule', value: 16 },
 ];
 
-const PILLARS = [
-  { n: '01', title: 'Strategie', description: 'Ein System, das auf dein Unternehmen zugeschnitten ist, keine einzelnen Tricks.' },
-  { n: '02', title: 'Technik', description: 'Saubere Struktur, Schema, Performance. Damit KI dein Angebot wirklich versteht.' },
-  { n: '03', title: 'Autorität', description: 'Backlinks, Erwähnungen, Pressearbeit. Die Signale, die KI-Systemen Vertrauen geben.' },
-];
-
 const VERTICALS = [
-  { title: 'Handwerker', href: '/wissen/ki-sichtbarkeit-handwerker', description: 'Mehr Aufträge durch KI-Empfehlungen in deiner Region.' },
-  { title: 'Immobilien', href: '/wissen/ki-sichtbarkeit-immobilien', description: 'Makler und Verwalter, die KI als Kanal nutzen.' },
-  { title: 'Ärzte & Praxen', href: '/wissen/ki-sichtbarkeit-aerzte', description: 'Patienten finden dich über KI-Assistenten.' },
-  { title: 'Anwälte & Kanzleien', href: '/wissen/ki-sichtbarkeit-anwaelte', description: 'Mandanten gewinnen über ChatGPT und Co.' },
-  { title: 'E-Commerce', href: '/wissen/ki-sichtbarkeit-ecommerce', description: 'Produkte, die KI aktiv empfiehlt.' },
-  { title: 'Dienstleister', href: '/wissen/ki-sichtbarkeit-dienstleister', description: 'Agenturen, Berater und Freelancer, sichtbar in KI.' },
+  { title: 'Handwerker', href: '/wissen/ki-sichtbarkeit-handwerker' },
+  { title: 'Immobilien', href: '/wissen/ki-sichtbarkeit-immobilien' },
+  { title: 'Ärzte & Praxen', href: '/wissen/ki-sichtbarkeit-aerzte' },
+  { title: 'Anwälte & Kanzleien', href: '/wissen/ki-sichtbarkeit-anwaelte' },
+  { title: 'E-Commerce', href: '/wissen/ki-sichtbarkeit-ecommerce' },
+  { title: 'Dienstleister', href: '/wissen/ki-sichtbarkeit-dienstleister' },
 ];
 
 const PLATFORMS = [
-  { name: 'ChatGPT', href: '/wissen/sichtbarkeit-in-chatgpt', description: 'So wirst du in ChatGPT-Antworten genannt.' },
-  { name: 'Perplexity', href: '/wissen/sichtbarkeit-in-perplexity', description: 'Schnellste Ergebnisse durch Live-Web-Suche.' },
-  { name: 'Claude', href: '/wissen/sichtbarkeit-in-claude', description: 'Anthropics KI mit wachsender Nutzerbasis.' },
-  { name: 'Gemini', href: '/wissen/sichtbarkeit-in-gemini', description: 'Google AI und die Zukunft der Suche.' },
+  { title: 'ChatGPT', href: '/wissen/sichtbarkeit-in-chatgpt' },
+  { title: 'Perplexity', href: '/wissen/sichtbarkeit-in-perplexity' },
+  { title: 'Claude', href: '/wissen/sichtbarkeit-in-claude' },
+  { title: 'Gemini', href: '/wissen/sichtbarkeit-in-gemini' },
 ];
 
 const ITEM_LIST_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
   name: 'Leistungen von aiseo.hamburg',
-  description: 'Alle Dienstleistungen für KI-Sichtbarkeit in Hamburg',
+  description: 'Leistungen für KI-Sichtbarkeit in Hamburg',
   url: 'https://aiseo.hamburg/leistungen',
   numberOfItems: SERVICES.length,
   itemListElement: SERVICES.map((service, index) => ({
@@ -271,7 +236,40 @@ const ITEM_LIST_SCHEMA = {
   })),
 };
 
-const linkBase = 'group flex items-baseline justify-between gap-flow border-t border-brand-hairline py-2.5 transition-colors hover:bg-brand-surface';
+const chipLink = 'inline-flex items-center gap-1.5 rounded-full border border-brand-line px-4 py-2 text-meta font-medium text-brand-text transition-colors hover:border-brand-accent-ink hover:text-brand-accent-ink';
+
+/* The second door. Used twice: in the hero, and again right before the close,
+   where a reader who scrolled past six AI services and found nothing for a
+   plain website or Google Ads needs it most. */
+function SisterSite({ tone }: { tone: 'dark' | 'light' }) {
+  const dark = tone === 'dark';
+  return (
+    <a
+      href={SISTER_URL}
+      className={`group flex h-full flex-col rounded-card border p-flow transition-colors sm:p-stack ${
+        dark ? 'border-white/20 bg-white/[0.06] text-white backdrop-blur-sm hover:border-white/50' : 'border-brand-edge bg-white text-brand-text hover:border-brand-text'
+      }`}
+    >
+      <p className={`text-micro uppercase tracking-eyebrow ${dark ? 'text-white/60' : 'text-brand-subtle'}`}>webseite.hamburg</p>
+      <p className="mt-2 text-heading font-semibold">Nicht nur KI.</p>
+      <p className={`mt-2 text-body ${dark ? 'text-white/75' : 'text-brand-muted'}`}>
+        Website, SEO und Google Ads: auf meiner zweiten Seite. Gleicher Ansprechpartner.
+      </p>
+      <ul className={`mt-flow border-t ${dark ? 'border-white/15' : 'border-brand-line'}`}>
+        {SISTER_SERVICES.map((s) => (
+          <li key={s.title} className={`flex items-baseline justify-between gap-4 border-b py-2 text-meta ${dark ? 'border-white/15' : 'border-brand-line'}`}>
+            <span className="font-semibold">{s.title}</span>
+            <span className={`tabular-nums ${dark ? 'text-white/65' : 'text-brand-subtle'}`}>{s.value}</span>
+          </li>
+        ))}
+      </ul>
+      <span className="mt-auto inline-flex items-center gap-2 pt-flow text-meta font-semibold group-hover:gap-3 transition-all">
+        Zu den Leistungen auf webseite.hamburg
+        <ArrowRightIcon className="w-3.5 h-3.5 -rotate-45" />
+      </span>
+    </a>
+  );
+}
 
 export default function LeistungenPage() {
   return (
@@ -281,79 +279,79 @@ export default function LeistungenPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ITEM_LIST_SCHEMA) }} />
 
       <main>
-        {/* ========== HERO: 7/5 asymmetric, text-only so the H1 keeps the LCP slot ========== */}
-        <section className="relative overflow-hidden pt-28 pb-block lg:pt-32">
-          <div className="absolute top-0 right-0 z-0 h-[600px] w-[600px] rounded-full bg-brand-accent/5 blur-3xl" />
-          <AntigravityBackground />
+        {/* ========== HERO: one H1, then the fork. The CSS gradient is the fallback the shader fades in over ========== */}
+        <section
+          className="relative isolate overflow-hidden pt-32 pb-block text-white lg:pt-40 lg:pb-rule"
+          style={{ background: 'radial-gradient(120% 90% at 85% 10%, #1F6B4E 0%, #0B0F0D 55%), #0B0F0D' }}
+        >
+          <ShaderBackdrop scene="leistungen" />
+          {/* keeps the H1 at full contrast wherever the bright bands drift */}
+          <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-r from-black/55 via-black/20 to-transparent" />
 
-          <div className="relative z-10 mx-auto grid max-w-article gap-block px-6 lg:grid-cols-12 lg:gap-x-rule lg:px-12">
-            <div className="lg:col-span-7">
-              <FadeIn>
-                <Tag text="Leistungen" />
-                <h1 className="mt-flow text-heading sm:text-title xl:text-display font-semibold text-black">
-                  Alles, was dein Unternehmen in <span className="text-brand-accent">KI sichtbar</span> macht.
-                </h1>
-                <p className="mt-flow max-w-measure text-lead text-brand-muted">
-                  Generative Engine Optimization (GEO), AEO und klassisches SEO aus einer Hand: Beratung, Optimierung, Technik und Autorität, spezialisiert auf Hamburg.
-                </p>
-                <div className="mt-stack flex flex-col gap-4 sm:flex-row">
-                  <Button href="/ai-sichtbarkeit-now" primary className="!py-4 !px-6 !pl-8 group">
-                    <span className="relative z-10 flex items-center gap-3">
-                      KI-Sichtbarkeit prüfen
-                      <PlatformIconLoop className="!p-0" iconClassName="!w-5 !h-5" />
-                    </span>
-                  </Button>
-                  <Button href="#leistungen" text="Alle Leistungen" className="!py-4 !px-8" />
-                </div>
-              </FadeIn>
-            </div>
+          <div className="relative z-10 mx-auto max-w-article px-6 lg:px-12">
+            <p className="text-micro uppercase tracking-eyebrow text-white/60">Leistungen</p>
+            <h1 className="mt-flow max-w-[14ch] text-title sm:text-display xl:text-[5.5rem] xl:leading-[1] font-semibold">
+              KI-Sichtbarkeit für dein Unternehmen.
+            </h1>
+            <p className="mt-flow max-w-narrow text-lead text-white/80">
+              Damit ChatGPT, Perplexity, Copilot und Google AI dich nennen, wenn deine Kunden fragen.
+            </p>
+            <a href={SISTER_URL} className="mt-4 inline-block text-meta font-medium text-white underline decoration-white/40 underline-offset-4 lg:hidden">
+              Website, SEO oder Google Ads? webseite.hamburg
+              <ArrowRightIcon className="ml-1 inline w-3 h-3 -rotate-45" />
+            </a>
 
-            {/* Hard numbers instead of a hero photo. Source: /ergebnisse */}
-            <div className="lg:col-span-5 lg:pt-2">
-              <FadeIn delay={120}>
-                <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Gemessen, nicht behauptet</p>
-                <dl className="mt-flow">
-                  {FACTS.map((fact) => (
-                    <div key={fact.label} className="flex items-baseline gap-flow border-t border-brand-line py-3">
-                      <dt className="w-24 shrink-0 text-subheading font-semibold tabular-nums text-brand-text">{fact.value}</dt>
-                      <dd className="text-meta text-brand-muted">
-                        {fact.label}
-                        <span className="block text-micro text-brand-subtle">{fact.note}</span>
-                      </dd>
+            <div className="mt-rule grid gap-4 lg:grid-cols-12">
+              <a
+                href="#leistungen"
+                className="group flex flex-col rounded-card bg-white p-flow text-brand-text transition-transform hover:-translate-y-0.5 sm:p-stack lg:col-span-7"
+              >
+                <p className="text-micro uppercase tracking-eyebrow text-brand-accent-ink">Auf dieser Seite</p>
+                <p className="mt-2 text-heading font-semibold">KI-Sichtbarkeit</p>
+                <ol className="mt-flow grid gap-y-2 sm:grid-cols-2 sm:gap-x-stack">
+                  {SERVICES.map((service) => (
+                    <li key={service.id} className="flex items-baseline gap-3 border-b border-brand-hairline pb-2 text-body">
+                      <span className="w-5 text-micro tabular-nums text-brand-subtle">{service.n}</span>
+                      {service.title}
+                    </li>
+                  ))}
+                </ol>
+                <dl className="mt-flow grid grid-cols-3 gap-px overflow-hidden rounded-xl border border-brand-line bg-brand-line">
+                  {PRICES.map((price) => (
+                    <div key={price.label} className="bg-brand-surface px-3 py-2.5">
+                      <dt className="text-micro text-brand-subtle">{price.label}</dt>
+                      <dd className="text-body font-semibold tabular-nums">{price.value}</dd>
                     </div>
                   ))}
                 </dl>
-                <Link href="/ergebnisse" className="mt-flow inline-flex items-center gap-1.5 border-t border-brand-line pt-3 text-meta font-medium text-brand-accent-ink hover:gap-2.5">
-                  Alle Ergebnisse mit Screenshots
-                  <ArrowRightIcon className="w-3 h-3" />
-                </Link>
-                <p className="mt-2 text-micro text-brand-subtle">Stand: August 2026</p>
-              </FadeIn>
+                <span className="mt-auto inline-flex items-center gap-2 pt-flow text-meta font-semibold text-brand-accent-ink transition-all group-hover:gap-3">
+                  Alle 6 Leistungen ansehen
+                  <ArrowRightIcon className="w-3.5 h-3.5 rotate-90" />
+                </span>
+              </a>
+              <div className="lg:col-span-5">
+                <SisterSite tone="dark" />
+              </div>
             </div>
           </div>
         </section>
 
-        {/* ========== LEISTUNGEN: 2 tracks (260px name + one 700px reading column), sticky index on every viewport ========== */}
-        <section id="leistungen" className="border-t border-brand-line pb-rule">
+        {/* ========== LEISTUNGEN: name on the left, what you get on the right ========== */}
+        <section id="leistungen" className="scroll-mt-navbar pb-rule">
           <div className="mx-auto max-w-article px-6 lg:px-12">
-            <FadeIn>
-              <div className="pt-rule">
-                <h2 className="text-subheading md:text-heading font-semibold text-black">
-                  8 Leistungen. <span className="text-brand-subtle">Ein Ziel.</span>
-                </h2>
-                <p className="mt-flow max-w-measure text-body text-brand-muted">
-                  Von Generative Engine Optimization (GEO) und AEO bis zu Technik und Autorität. Liefergegenstände, Zeitrahmen und Quellen stehen offen da, nichts versteckt sich hinter einem Klick.
-                </p>
-              </div>
-            </FadeIn>
+            <div className="flex flex-wrap items-baseline justify-between gap-4 pt-rule">
+              <h2 className="text-title font-semibold text-black">6 Leistungen</h2>
+              <Link href="/preise" className="inline-flex items-center gap-1.5 text-meta font-medium text-brand-accent-ink hover:gap-2.5">
+                Preise im Detail
+                <ArrowRightIcon className="w-3 h-3" />
+              </Link>
+            </div>
 
-            {/* index: sticky on phone and desktop alike, so an 11.000px page always has jump links */}
-            <nav aria-label="Leistungsübersicht" className="sticky top-navbar z-30 -mx-6 mt-stack border-y border-brand-line bg-brand-bg px-6 lg:-mx-12 lg:px-12">
-              <ol className="flex gap-x-flow overflow-x-auto py-3 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            <nav aria-label="Leistungsübersicht" className="sticky top-navbar z-30 -mx-6 mt-flow border-y border-brand-line bg-brand-bg/95 px-6 backdrop-blur lg:-mx-12 lg:px-12">
+              <ol className="flex gap-x-stack overflow-x-auto py-3 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                 {SERVICES.map((service) => (
                   <li key={service.id} className="shrink-0">
-                    <a href={`#${service.id}`} className="flex items-baseline gap-1.5 text-micro whitespace-nowrap text-brand-muted transition-colors hover:text-brand-accent-ink">
-                      <span className="tabular-nums text-brand-subtle">{service.n}</span>
+                    <a href={`#${service.id}`} className="text-meta whitespace-nowrap font-medium text-brand-muted transition-colors hover:text-brand-text">
                       {service.title}
                     </a>
                   </li>
@@ -361,117 +359,75 @@ export default function LeistungenPage() {
               </ol>
             </nav>
 
-            {/* table head, once, instead of a repeated eyebrow in all 8 rows */}
-            <div className="mt-flow hidden lg:grid lg:grid-cols-[260px_1fr] lg:gap-x-stack">
-              <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Leistung</p>
-              <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Was sie leistet und was du bekommst</p>
-            </div>
-
-            <div className="mt-3">
+            <div>
               {SERVICES.map((service) => (
                 <article
                   key={service.id}
                   id={service.id}
-                  className="grid scroll-mt-rule gap-y-3 border-t border-brand-edge py-flow lg:min-h-[18.75rem] lg:grid-cols-[260px_1fr] lg:gap-x-stack"
+                  className="grid scroll-mt-[9rem] gap-y-flow border-b border-brand-line py-block lg:grid-cols-[320px_1fr] lg:gap-x-rule"
                 >
                   <div>
-                    <span className="text-micro font-medium tabular-nums text-brand-subtle">{service.n}</span>
-                    <h3 className="text-subheading font-semibold text-brand-text">{service.title}</h3>
-                    <p className="text-meta font-medium text-brand-accent-ink">{service.subtitle}</p>
-                    <p className="mt-2 text-micro text-brand-subtle">{service.timeline}</p>
-                    <Link href="/contact" className="mt-1 inline-flex items-center gap-1.5 text-micro font-medium text-brand-text hover:gap-2.5">
-                      Anfragen
-                      <ArrowRightIcon className="w-3 h-3" />
-                    </Link>
+                    <p className="text-meta tabular-nums text-brand-subtle">{service.n}</p>
+                    <h3 className="mt-1 text-heading font-semibold text-brand-text">{service.title}</h3>
+                    <p className="mt-1 text-body text-brand-accent-ink">{service.subtitle}</p>
                   </div>
 
                   <div>
-                    <p className="text-meta lg:text-body text-brand-muted">{service.description}</p>
+                    <p className="text-lead text-brand-text">{service.description}</p>
 
-                    {/* the qualifier gets its own rule, so it stops merging optically with the paragraph */}
-                    <div className="mt-4 border-t border-brand-hairline pt-3 lg:flex lg:gap-flow">
-                      <p className="hidden text-micro uppercase tracking-eyebrow text-brand-subtle lg:block lg:w-24 lg:shrink-0">Ideal für</p>
-                      <p className="text-micro lg:text-meta text-brand-muted">
-                        <span className="font-medium text-brand-text lg:hidden">Ideal für: </span>
-                        {service.idealFor}
-                      </p>
-                    </div>
-
-                    <div className="mt-3 border-t border-brand-hairline pt-3">
-                      <p className="mb-2 text-micro uppercase tracking-eyebrow text-brand-subtle lg:hidden">Was du bekommst</p>
-                      <ul className="grid gap-x-flow gap-y-1.5 sm:grid-cols-2">
-                        {service.deliverables.map((item) => (
-                          <li key={item} className="flex items-start gap-2 text-micro text-brand-muted">
-                            <CheckIcon className="mt-1 w-3 h-3 shrink-0 text-brand-accent-ink" />
-                            <span>{item}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    {/* the 3 articles sit in the reading column, aligned under the paragraph they belong to */}
-                    <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 border-t border-brand-hairline pt-3 text-micro">
-                      <Link href={service.primaryArticle.href} className="font-medium text-brand-accent-ink underline decoration-brand-accent/50 underline-offset-4 hover:decoration-brand-accent-ink">
-                        {service.primaryArticle.title}
-                      </Link>
-                      {service.relatedArticles.map((article) => (
-                        <Link key={article.href + article.title} href={article.href} className="text-brand-subtle underline decoration-brand-line underline-offset-4 hover:text-brand-accent-ink">
-                          {article.title}
-                        </Link>
+                    <ul className="mt-flow grid gap-x-flow gap-y-2 sm:grid-cols-2">
+                      {service.deliverables.map((item) => (
+                        <li key={item} className="flex items-start gap-2.5 text-body text-brand-muted">
+                          <CheckIcon className="mt-1.5 w-3.5 h-3.5 shrink-0 text-brand-accent-ink" />
+                          <span>{item}</span>
+                        </li>
                       ))}
-                    </div>
+                    </ul>
+
+                    <dl className="mt-flow grid gap-y-1 border-t border-brand-line pt-4 text-meta sm:grid-cols-[7rem_1fr]">
+                      <dt className="text-brand-subtle">Zeitrahmen</dt>
+                      <dd className="text-brand-text">{service.timeline}</dd>
+                      <dt className="text-brand-subtle">Passt für</dt>
+                      <dd className="text-brand-text">{service.idealFor}</dd>
+                      <dt className="text-brand-subtle">Mehr dazu</dt>
+                      <dd className="flex flex-wrap gap-x-4 gap-y-1">
+                        {[service.primaryArticle, ...service.relatedArticles].map((article) => (
+                          <Link key={article.href + article.title} href={article.href} className="text-brand-accent-ink underline decoration-brand-accent/40 underline-offset-4 hover:decoration-brand-accent-ink">
+                            {article.title}
+                          </Link>
+                        ))}
+                      </dd>
+                    </dl>
                   </div>
                 </article>
               ))}
-
-              {/* Restored from round 1, where this CTA sat in a sidebar that the 2-track rebuild removed.
-                  It stays here, right after the 8 rows, because that is where a reader who just scanned
-                  all of them asks "and where do I start?". Same 260px + 700px tracks as the rows above. */}
-              <div className="-mx-6 grid scroll-mt-rule gap-y-3 border-t border-brand-edge bg-brand-surface px-6 py-flow lg:-mx-12 lg:grid-cols-[260px_1fr] lg:gap-x-stack lg:px-12">
-                <div>
-                  <p className="text-micro uppercase tracking-eyebrow text-brand-subtle">Nächster Schritt</p>
-                  <h3 className="mt-1 text-subheading font-semibold text-brand-text">
-                    Nicht sicher, wo du anfangen sollst?
-                  </h3>
-                </div>
-
-                <div>
-                  <p className="text-meta lg:text-body text-brand-muted">
-                    In 15 Minuten zeige ich dir, wie KI dein Unternehmen heute beschreibt und was sich ändern muss, damit du empfohlen wirst. Kostenlos, ehrlich, ohne Verkaufsdruck.
-                  </p>
-                  <div className="mt-4 flex flex-wrap items-center gap-x-stack gap-y-3 border-t border-brand-hairline pt-4">
-                    <Button href="/ai-sichtbarkeit-now" primary text="KI-Check starten" className="!py-3 !px-6" />
-                    <a href={`tel:${PHONE_NUMBER}`} className="text-meta font-medium text-brand-accent-ink hover:underline">
-                      oder direkt anrufen: {PHONE_DISPLAY}
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
 
-        {/* ========== EVIDENCE: two figures carry this band, no body copy ========== */}
-        <section className="border-t border-brand-line py-rule">
+        {/* ========== EVIDENCE: numbers first, then the two figures behind them ========== */}
+        <section className="border-t border-brand-line bg-white py-rule">
           <div className="mx-auto max-w-article px-6 lg:px-12">
             <FadeIn>
-              <h2 className="text-subheading md:text-heading font-semibold text-black">So sieht das Ergebnis aus.</h2>
-              <div className="mt-stack grid gap-block lg:grid-cols-12 lg:gap-x-rule">
-                {/* max-w-[780px] below lg is what keeps this raster at or above 1x.
-                    The column is lg:col-span-7, which is 552px at 1440px, but below
-                    lg the grid collapses and the figure takes the whole 975px content
-                    box at a 1023px viewport. The wide crop is 810px of pixels, so it
-                    was rendering at 0,831x there: an upscaled screenshot of text, the
-                    one thing that must never be soft.
-                    The <source> switch moved from 640px to 540px for the same reason
-                    from the other side. Between a 588px and a 640px viewport the box
-                    is wider than the 540px tight crop, so the old breakpoint had a
-                    second sub-1x window (0,914x at 639px). Every real phone width
-                    (390, 393, 414, 430) is still below 540px and still gets the tight,
-                    readable crop.
-                    Measured after the change: 1,58x at 390px, 1,04x at 834px, 1,04x
-                    at 1023px, 1,47x at 1440px. */}
-                <figure className="max-w-[780px] lg:col-span-7 lg:max-w-none">
+              <h2 className="text-title font-semibold text-black">Ergebnisse</h2>
+              <dl className="mt-stack grid gap-y-flow sm:grid-cols-3 sm:gap-x-stack">
+                {FACTS.map((fact) => (
+                  <div key={fact.label} className="border-t-2 border-brand-text pt-4">
+                    <dt className="sr-only">{fact.label}</dt>
+                    <dd>
+                      <span className="block text-display font-semibold tabular-nums">{fact.value}</span>
+                      <span className="mt-1 block text-body text-brand-text">{fact.label}</span>
+                      <span className="block text-meta text-brand-subtle">{fact.note}</span>
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+
+              <div className="mt-block grid gap-block lg:grid-cols-12 lg:gap-x-rule">
+                {/* max-w-[780px] below lg keeps the raster at or above 1x: the wide crop is
+                    810px, the tight crop 540px, and every real phone width gets the tight one.
+                    Measured: 1,58x at 390px, 1,04x at 834px, 1,04x at 1023px, 1,47x at 1440px. */}
+                <div className="max-w-[780px] lg:col-span-7 lg:max-w-none"><figure>
                   <picture>
                     <source media="(min-width: 540px)" srcSet="/image/leistungen/antwort-chatgpt-wide-810.webp" width={810} height={200} />
                     <img
@@ -484,22 +440,20 @@ export default function LeistungenPage() {
                       className="w-full rounded-card border border-brand-line bg-brand-night"
                     />
                   </picture>
-                  <figcaption className="mt-3 border-t border-brand-hairline pt-3 text-meta text-brand-subtle">
-                    Ausschnitt einer echten ChatGPT-Antwort. Gefragt war eine DSGVO-konforme Foto-Lösung für Schulen, genannt wird KinderAlbum, mit Quellenangabe. Das ist das Produkt von AEO und GEO.{' '}
+                  <figcaption className="mt-3 text-meta text-brand-subtle">
+                    Echte ChatGPT-Antwort auf die Frage nach einer DSGVO-konformen Foto-Lösung für Schulen. Genannt wird KinderAlbum, mit Quelle.{' '}
                     <Link href="/wissen/case-study-kinderalbum" className="font-medium text-brand-accent-ink underline decoration-brand-accent/50 underline-offset-4">
                       Fallstudie
                     </Link>
                   </figcaption>
                 </figure>
+                <Link href="/ergebnisse" className="mt-stack inline-flex items-center gap-1.5 text-meta font-medium text-brand-accent-ink hover:gap-2.5">
+                  Alle Ergebnisse mit Screenshots
+                  <ArrowRightIcon className="w-3 h-3" />
+                </Link>
+                </div>
 
                 <figure className="lg:col-span-5">
-                  {/* Hier lag bis Runde 2 ein Screenshot des Bing-Dashboards: 420px breit,
-                      Achsenbeschriftung bei 4 bis 5px, violett-blaue Fremdfarben in einer
-                      grün-schwarzen Seite. Gleiche Quelle, neu gezeichnet mit dem geteilten
-                      Chart-Primitive: jedes Label ist HTML-Text ab 13px, jede Farbe ein Token.
-                      Die Tagesreihe des Screenshots gibt es nicht als Export, nur den
-                      Seiten-Export, deshalb steht hier die Verteilung statt der Kurve.
-                      Tabelle aus: die Zeilenvariante schreibt jeden Wert schon als Text. */}
                   <div className="rounded-card border border-brand-line bg-white p-4 sm:p-5">
                     <DataChart
                       frame={false}
@@ -510,9 +464,6 @@ export default function LeistungenPage() {
                       axis={{ title: 'Zitate' }}
                       highlight="peak"
                       points={CITATION_PAGES}
-                      /* Einwortige Labels: die Kennzahlenspalten sind im 420px-Slot
-                         nur rund 112px breit, alles Längere bricht um und die drei
-                         Werte sitzen dann nicht mehr auf einer Linie. */
                       stats={[
                         { label: 'Gesamt', value: '211 Zitate' },
                         { label: 'Seiten', value: '16' },
@@ -521,144 +472,74 @@ export default function LeistungenPage() {
                       table={false}
                     />
                   </div>
-                  <figcaption className="mt-3 border-t border-brand-hairline pt-3 text-meta text-brand-subtle">
-                    Zitate pro Seite im 30-Tage-Fenster bis 06.06.2026, aus dem AI-Page-Stats-Export der Bing Webmaster Tools. Die zehn nicht gezeigten Seiten liegen bei 1 bis 13 Zitaten. Über drei Monate, 15. März bis 13. Juni 2026, zählt Microsoft Copilot 281 Zitate, vorher lag der Wert bei nahezu null.{' '}
+                  <figcaption className="mt-3 text-meta text-brand-subtle">
+                    30 Tage bis 06.06.2026, Bing Webmaster Tools, AI-Page-Stats-Export.{' '}
                     <Link href="/wissen/ki-sichtbarkeit-messen" className="font-medium text-brand-accent-ink underline decoration-brand-accent/50 underline-offset-4">
                       So wird gemessen
                     </Link>
                   </figcaption>
                 </figure>
               </div>
+
             </FadeIn>
           </div>
         </section>
 
-        {/* ========== SYSTEM: full-bleed dark band, hairline rules, no rounded card and no blur blob ========== */}
-        <section className="bg-brand-night py-rule text-white">
-          <div className="mx-auto max-w-article px-6 lg:px-12">
-            <FadeIn>
-              <div className="grid gap-stack lg:grid-cols-[260px_1fr] lg:gap-x-stack">
-                <div>
-                  <p className="text-micro uppercase tracking-eyebrow text-brand-line">Warum ein System?</p>
-                  <h2 className="mt-flow text-subheading md:text-heading font-semibold lg:text-subheading">
-                    KI-Sichtbarkeit entsteht nicht durch <span className="text-brand-line">einen einzelnen Hebel.</span>
-                  </h2>
-                </div>
-                <div>
-                  <p className="text-body text-brand-line">
-                    KI-Systeme bewerten Klarheit, Technik und Autorität gleichzeitig. Nur wenn alle drei Säulen stimmen, wirst du empfohlen.
-                  </p>
-                  <div className="mt-flow">
-                    {PILLARS.map((pillar) => (
-                      <div key={pillar.title} className="flex gap-flow border-t border-white/15 py-3">
-                        <span className="w-8 shrink-0 pt-1 text-micro tabular-nums text-brand-accent">{pillar.n}</span>
-                        <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-flow">
-                          <h3 className="w-28 shrink-0 text-lead font-semibold">{pillar.title}</h3>
-                          <p className="text-meta text-brand-line">{pillar.description}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </FadeIn>
-          </div>
-        </section>
-
-        {/* ========== BRANCHEN + PLATTFORMEN: two lists, one band ========== */}
+        {/* ========== BRANCHEN + PLATTFORMEN: links only ========== */}
         <section className="border-t border-brand-line py-rule">
-          <div className="mx-auto max-w-article px-6 lg:px-12">
-            <FadeIn>
-              <div className="grid gap-block lg:grid-cols-12 lg:gap-x-rule">
-                <div className="lg:col-span-7">
-                  <h2 className="text-subheading md:text-heading font-semibold text-black">
-                    KI-Sichtbarkeit für <span className="text-brand-accent-ink">deine Branche</span>
-                  </h2>
-                  <p className="mt-flow max-w-measure text-body text-brand-muted">
-                    Jede Branche hat eigene Suchmuster, Kundenfragen und Wettbewerber. Der Leitfaden zu deiner zeigt, welche Fragen dein Markt an KI stellt.
-                  </p>
-                  <div className="mt-stack sm:grid sm:grid-cols-2 sm:gap-x-stack">
-                    {VERTICALS.map((vertical) => (
-                      <Link key={vertical.href} href={vertical.href} className={linkBase}>
-                        <div>
-                          <h3 className="text-body font-semibold text-brand-text group-hover:text-brand-accent-ink">{vertical.title}</h3>
-                          <p className="mt-0.5 text-meta text-brand-subtle">{vertical.description}</p>
-                        </div>
-                        <ArrowRightIcon className="mt-1.5 w-3.5 h-3.5 shrink-0 text-brand-subtle group-hover:text-brand-accent-ink" />
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="lg:col-span-5">
-                  <h2 className="text-subheading md:text-heading font-semibold text-black">
-                    Sichtbar auf <span className="text-brand-accent-ink">jeder KI-Plattform</span>
-                  </h2>
-                  <p className="mt-flow text-body text-brand-muted">
-                    Jede Plattform wählt ihre Quellen anders aus. Hier steht, wie du auf welcher erscheinst.
-                  </p>
-                  <div className="mt-stack">
-                    {PLATFORMS.map((platform) => (
-                      <Link key={platform.href} href={platform.href} className={linkBase}>
-                        <div>
-                          <h3 className="text-body font-semibold text-brand-text group-hover:text-brand-accent-ink">{platform.name}</h3>
-                          <p className="mt-0.5 text-meta text-brand-subtle">{platform.description}</p>
-                        </div>
-                        <ArrowRightIcon className="mt-1.5 w-3.5 h-3.5 shrink-0 text-brand-subtle group-hover:text-brand-accent-ink" />
-                      </Link>
-                    ))}
-                  </div>
-                </div>
+          <div className="mx-auto grid max-w-article gap-block px-6 lg:grid-cols-2 lg:gap-x-rule lg:px-12">
+            <div>
+              <h2 className="text-subheading font-semibold text-black">Nach Branche</h2>
+              <div className="mt-flow flex flex-wrap gap-2">
+                {VERTICALS.map((v) => (
+                  <Link key={v.href} href={v.href} className={chipLink}>{v.title}</Link>
+                ))}
               </div>
-            </FadeIn>
+            </div>
+            <div>
+              <h2 className="text-subheading font-semibold text-black">Nach Plattform</h2>
+              <div className="mt-flow flex flex-wrap gap-2">
+                {PLATFORMS.map((p) => (
+                  <Link key={p.href} href={p.href} className={chipLink}>{p.title}</Link>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* ========== CLOSE: a face instead of a trust claim ========== */}
-        <section className="border-t border-brand-line py-rule">
-          <div className="mx-auto max-w-article px-6 lg:px-12">
-            <FadeIn>
-              <div className="grid items-center gap-block lg:grid-cols-12 lg:gap-x-rule">
-                <div className="lg:col-span-4">
-                  <img
-                    src="/image/leistungen/vadim-shchepin-720.webp"
-                    srcSet="/image/leistungen/vadim-shchepin-360.webp 360w, /image/leistungen/vadim-shchepin-720.webp 720w"
-                    sizes="(min-width: 1024px) 340px, 60vw"
-                    width={720}
-                    height={720}
-                    loading="lazy"
-                    decoding="async"
-                    alt="Vadim Shchepin, Gründer von aiseo.hamburg"
-                    className="w-40 rounded-card border border-brand-line object-cover sm:w-56 lg:w-full"
-                  />
-                  <p className="mt-3 text-meta text-brand-subtle">
-                    Vadim Shchepin, aiseo.hamburg. Du sprichst mit der Person, die auch umsetzt.
-                  </p>
-                </div>
-
-                <div className="lg:col-span-8">
-                  <h2 className="text-subheading md:text-heading lg:text-title font-semibold text-black">Welche Leistung passt zu dir?</h2>
-                  <p className="mt-flow max-w-measure text-lead text-brand-muted">
-                    In 15 Minuten klären wir, wo du stehst und welche Maßnahmen den größten Hebel haben.
-                  </p>
-                  <a href={`tel:${PHONE_NUMBER}`} className="mt-stack inline-block text-heading font-semibold tabular-nums text-brand-accent-ink hover:underline">
-                    {PHONE_DISPLAY}
-                  </a>
-                  <div className="mt-stack flex flex-col gap-4 sm:flex-row">
-                    <Button href="/ai-sichtbarkeit-now" primary text="KI-Sichtbarkeit prüfen" className="!py-4 !px-8" />
-                    <Button href="/contact" text="Kontakt aufnehmen" className="!py-4 !px-8" />
-                  </div>
-                  <p className="mt-flow flex flex-wrap items-center gap-x-4 gap-y-2 text-meta text-brand-subtle">
-                    {['Kostenlos', 'Unverbindlich', 'Direkt vom Experten'].map((item) => (
-                      <span key={item} className="flex items-center gap-2">
-                        <CheckIcon className="w-3.5 h-3.5 text-brand-accent-ink" />
-                        {item}
-                      </span>
-                    ))}
-                  </p>
-                </div>
+        {/* ========== CLOSE: the person, the number, and the second door ========== */}
+        <section className="border-t border-brand-line bg-brand-surface py-rule">
+          <div className="mx-auto grid max-w-article gap-block px-6 lg:grid-cols-12 lg:gap-x-rule lg:px-12">
+            <div className="lg:col-span-7">
+              <div className="flex items-center gap-flow">
+                <img
+                  src="/image/leistungen/vadim-shchepin-360.webp"
+                  width={360}
+                  height={360}
+                  loading="lazy"
+                  decoding="async"
+                  alt="Vadim Shchepin, Gründer von aiseo.hamburg"
+                  className="h-20 w-20 rounded-full border border-brand-line object-cover"
+                />
+                <p className="text-meta text-brand-subtle">
+                  Vadim Shchepin. Du sprichst mit der Person, die auch umsetzt.
+                </p>
               </div>
-            </FadeIn>
+              <h2 className="mt-stack text-title font-semibold text-black">Welche Leistung passt?</h2>
+              <p className="mt-flow max-w-measure text-lead text-brand-muted">
+                In 15 Minuten klären wir, wo du stehst und was den größten Hebel hat. Kostenlos.
+              </p>
+              <a href={`tel:${PHONE_NUMBER}`} className="mt-stack inline-block text-heading font-semibold tabular-nums text-brand-accent-ink hover:underline">
+                {PHONE_DISPLAY}
+              </a>
+              <div className="mt-stack flex flex-col gap-4 sm:flex-row">
+                <Button href="/ai-sichtbarkeit-now" primary text="KI-Sichtbarkeit prüfen" className="!py-4 !px-8" />
+                <Button href="/contact" text="Kontakt aufnehmen" className="!py-4 !px-8" />
+              </div>
+            </div>
+            <div className="lg:col-span-5">
+              <SisterSite tone="light" />
+            </div>
           </div>
         </section>
       </main>
