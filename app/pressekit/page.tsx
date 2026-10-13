@@ -384,7 +384,7 @@ export default function PressekitPage() {
                   {/* 640 x 800 WebP at 160px display, 36 kB. The 337 kB JPEG
                       stays linked below as the press photo. */}
                   <img
-                    src="/image/agentur/vadim-shchepin-640.webp"
+                    src="/image/vadim/vadim-shchepin-640x800.webp"
                     width={640}
                     height={800}
                     loading="lazy"
@@ -394,7 +394,7 @@ export default function PressekitPage() {
                   />
                   <p className="mt-2 w-40 text-micro text-brand-subtle">
                     <a
-                      href="/vadim_shchepin_2.jpeg"
+                      href="/image/vadim/vadim-shchepin-presse.jpg"
                       className="font-medium text-brand-accent-ink underline decoration-brand-line underline-offset-4"
                     >
                       Pressefoto laden

@@ -485,7 +485,7 @@ export default function LeistungenPage() {
             <div className="lg:col-span-7">
               <div className="flex items-center gap-flow">
                 <img
-                  src="/image/leistungen/vadim-shchepin-360.webp"
+                  src="/image/vadim/vadim-shchepin-360.webp"
                   width={360}
                   height={360}
                   loading="lazy"

@@ -456,7 +456,7 @@ export default function AiSeoAgenturPage() {
               <div className="grid gap-block lg:grid-cols-12 lg:gap-x-rule">
                 <div className="lg:col-span-4">
                   <img
-                    src="/image/agentur/vadim-shchepin-640.webp"
+                    src="/image/vadim/vadim-shchepin-640x800.webp"
                     width={640}
                     height={800}
                     loading="lazy"
@@ -465,7 +465,7 @@ export default function AiSeoAgenturPage() {
                     className="w-48 rounded-card border border-brand-line object-cover sm:w-64 lg:w-80"
                   />
                   <p className="mt-3 text-micro text-brand-subtle">
-                    <a href="/vadim_shchepin_2.jpeg" className="font-medium text-brand-accent-ink underline decoration-brand-line underline-offset-4">
+                    <a href="/image/vadim/vadim-shchepin-presse.jpg" className="font-medium text-brand-accent-ink underline decoration-brand-line underline-offset-4">
                       Pressefoto in voller Auflösung
                     </a>{" "}
                     (JPEG, 1920 x 2560). Weiteres Material im{" "}

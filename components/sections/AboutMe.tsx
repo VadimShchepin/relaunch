@@ -19,7 +19,7 @@ export const AboutMe: React.FC = () => {
                 <FadeIn>
                     <div className="flex flex-col items-center mb-16">
                         <img
-                            src="/image/about/vadim-shchepin-480.webp"
+                            src="/image/vadim/vadim-shchepin-480.webp"
                             alt="Vadim Shchepin"
                             width={480}
                             height={480}

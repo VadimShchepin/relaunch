@@ -695,7 +695,7 @@ export default function ErgebnissePage() {
                   {/* 640 x 800 WebP at a 160px display width, 36 kB. Was the
                       1920 x 2560 JPEG (337 kB) squeezed into 128px. */}
                   <img
-                    src="/image/agentur/vadim-shchepin-640.webp"
+                    src="/image/vadim/vadim-shchepin-640x800.webp"
                     width={640}
                     height={800}
                     loading="lazy"
@@ -705,7 +705,7 @@ export default function ErgebnissePage() {
                   />
                   <p className="mt-2 w-40 text-micro text-brand-subtle">
                     <a
-                      href="/vadim_shchepin_2.jpeg"
+                      href="/image/vadim/vadim-shchepin-presse.jpg"
                       className="font-medium text-brand-accent-ink underline decoration-brand-line underline-offset-4"
                     >
                       Pressefoto

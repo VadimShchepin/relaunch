@@ -10,7 +10,7 @@ import { LinkedInIcon, InstagramIcon, TikTokIcon, GoogleIcon } from '@/component
  *  --------------------------------------------------------------------
  *  The site's E-E-A-T anchor. Three defects it had, all fixed here:
  *
- *  1. The portrait was public/vadim_shchepin_2.jpeg, 1920 x 2560 and
+ *  1. The portrait was public/image/vadim/vadim-shchepin-presse.jpg, 1920 x 2560 and
  *     337 kB, scaled by CSS to 208px. That is a 9x over-download and,
  *     because images.unoptimized is true, there was no safety net. It is
  *     now a hand-cut 768 x 960 WebP (55 kB) shown at 384px: a genuine 2x,
@@ -162,7 +162,7 @@ const PERSON_JSON_LD = {
   name: 'Vadim Shchepin',
   jobTitle: 'Senior Engineer und Berater für KI-Sichtbarkeit',
   url: 'https://aiseo.hamburg/ueber-mich',
-  image: 'https://aiseo.hamburg/vadim_shchepin_2.jpeg',
+  image: 'https://aiseo.hamburg/image/vadim/vadim-shchepin-presse.jpg',
   email: 'hello@aiseo.hamburg',
   description:
     'Senior Engineer aus Hamburg. Ich mache Unternehmen in KI-Systemen wie ChatGPT, Perplexity und Google AI Overviews sichtbar und messe jede Veränderung nach.',
@@ -255,7 +255,7 @@ export default function UeberMichPage() {
                     55 kB instead of the 337 kB JPEG that used to be squeezed
                     into 208px. */}
                 <img
-                  src="/image/ueber-mich/vadim-shchepin-768.webp"
+                  src="/image/vadim/vadim-shchepin-768x960.webp"
                   width={768}
                   height={960}
                   loading="eager"
@@ -266,7 +266,7 @@ export default function UeberMichPage() {
                 <figcaption className="mt-3 max-w-[384px] text-micro text-brand-subtle">
                   Hamburg, 2026.{' '}
                   <a
-                    href="/vadim_shchepin_2.jpeg"
+                    href="/image/vadim/vadim-shchepin-presse.jpg"
                     className="font-medium text-brand-accent-ink underline decoration-brand-line underline-offset-4"
                   >
                     Pressefoto in voller Auflösung

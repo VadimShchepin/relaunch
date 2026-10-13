@@ -469,7 +469,7 @@ export default function AISichtbarkeitPage() {
                   <h2 className="text-subheading md:text-heading font-semibold text-black">Warum ich das kann</h2>
                   <div className="mt-stack grid gap-flow sm:grid-cols-[160px_1fr] sm:gap-x-stack">
                     <img
-                      src="/image/leistungen/vadim-shchepin-720.webp"
+                      src="/image/vadim/vadim-shchepin-720.webp"
                       width={720}
                       height={720}
                       loading="lazy"
